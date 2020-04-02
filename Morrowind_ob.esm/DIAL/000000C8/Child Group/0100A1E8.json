@@ -1,0 +1,103 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100A1E8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "aamwDialog", 
+    "PNAM - Previous INFO": "01F8CE75", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "It began here. It will end here. Have you any parting words? Or would you prefer to skip the speeches, and get to our business.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You are the challenger here, after all. So to you goes the courtesy of the first blow. I'm waiting...", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 50, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 65, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0wraithguard", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "FBMWWraithguardJuryRig", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0keening", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0sunder", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "fbmwDagothUr", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "startquest fbmwMQ14\r\naddtopic 1oursbusiness\r\naddtopic 1partingswords", 
+        "References": [
+            "fbmwMQ14", 
+            "1ourSbusiness", 
+            "1partingSwords"
+        ]
+    }
+}

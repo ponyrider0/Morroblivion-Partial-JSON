@@ -1,0 +1,62 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0101010E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "0102A4EA", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "75 6E 69", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Welcome to Arrille's Tradehouse. I barter for goods or coin. I also have a small selection of spells for sale. No credit. You want a little advice?", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "75 6E 69", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "That's free. That's ALL that's free. Would you like to hear about our most popular potions? Our most popular scrolls?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0arrille", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1popularSpotions\r\naddtopic 1popularSscrolls", 
+        "References": [
+            "1popularSpotions", 
+            "1popularSscrolls"
+        ]
+    }
+}

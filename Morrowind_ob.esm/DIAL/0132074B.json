@@ -1,0 +1,86 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0132074B"
+    }, 
+    "EDID - Editor ID": "1joinStheSMagesSGuild2", 
+    "Quests": [
+        "fbmwMGAdvancement"
+    ], 
+    "FULL - Name": "What is the Mage's Oath?", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1joinStheSMagesSGuild2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323004"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1duties"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Perform any duties assigned to you by the masters of the Guild. Learn from them and grow strong.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Always share your knowledge freely with other Guild members. Never strike or steal from another guild member. Does this appeal to you?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "fbmwMagesGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 6.9999999823267, 
+                    "Function": 73, 
+                    "Parameter #1": "fbmwMagesGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1joinStheSMagesSGuild1", 
+                "1joinStheSMagesSGuild3"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

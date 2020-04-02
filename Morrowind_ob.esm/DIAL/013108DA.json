@@ -1,0 +1,99 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "013108DA"
+    }, 
+    "EDID - Editor ID": "1pillowSshipment", 
+    "Quests": [
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Pillow Shipment", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1pillowSshipment", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321091"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1racerSplumes"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "A shipwreck? That's horrible! Oh, all of those wonderful pillows.... Well, I thank you, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "It is good to know what became of my shipment, though the loss of pillows saddens me. A few of those were stuffed with racer plumes. A real shame.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Still, thank you for your help with this. Take this as a token of my appreciation. It has served me well.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0drarayneSthelas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUpillowinvoice", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 50, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "player.removeitem 0bkupillowinvoice 1\r\nplayer.additem 0miscuuniupillowuunique 1\r\nremoveitem 0miscuuniupillowuunique 1", 
+                "References": [
+                    20, 
+                    "0bkUpillowinvoice", 
+                    "0miscUuniUpillowUunique"
+                ]
+            }
+        }
+    ]
+}

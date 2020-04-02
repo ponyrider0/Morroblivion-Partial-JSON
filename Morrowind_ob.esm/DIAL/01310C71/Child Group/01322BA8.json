@@ -1,0 +1,80 @@
+{
+    "Topic": "1duties", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322BA8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRAdvancement", 
+    "PNAM - Previous INFO": "01322BA7", 
+    "Add topics": [
+        "1DruleneSFalen", 
+        "1guar", 
+        "1hostileSmudcrabs"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Drulene Falen has asked for our help. She says her guar herds have been having trouble with hostile mudcrabs.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRMudcrabNest", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 132, 
+            "Parameter #1": "0Redoran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 20, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0neminda", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHRMudcrabNest 10", 
+        "References": [
+            "fbmwHRMudcrabNest"
+        ]
+    }
+}

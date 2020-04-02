@@ -1,0 +1,61 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B997"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "01F8B994", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 69 75", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Hello there. I imagine you've come to see the battles of the Robot Arena. I'm sorry to inform you that there won't be any more battles for some time, unless you think you can help me repair my bots.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSBattleBots1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ignatiusUflaccus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "startquest fbmwmsBattleBots1\r\naddtopic 1repairsmysbots \r\naddtopic 1RobotSarena", 
+        "References": [
+            "fbmwMSBattleBots1", 
+            "1repairSmySbots", 
+            "1RobotSArena"
+        ]
+    }
+}

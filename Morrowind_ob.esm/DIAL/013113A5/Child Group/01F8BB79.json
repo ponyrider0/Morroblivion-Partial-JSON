@@ -1,0 +1,78 @@
+{
+    "Topic": "1assignment", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BB79"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwCOAdvancement", 
+    "PNAM - Previous INFO": "01F8BB78", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6E 69", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "With this awful turn of events, we'll just have to do something about protecting the colony better, won't we? I certainly wouldn't want anyone to have the impression that I haven't done all I can to secure the safety of our beloved colonists.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 69 75", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "So you're going to see to it that we hire guards for our little venture, just to put the investors' minds at ease.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 109.999999722277, 
+            "Function": 58, 
+            "Parameter #1": "fbmwCO10", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 59, 
+            "Parameter #1": "fbmwCOChoice", 
+            "Parameter #2": 50
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0CarniusSMagius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1hiresguards\r\nstartquest fbmwco11", 
+        "References": [
+            "1hireSguards", 
+            "fbmwCO11"
+        ]
+    }
+}

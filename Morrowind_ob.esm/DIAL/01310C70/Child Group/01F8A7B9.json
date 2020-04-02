@@ -1,0 +1,67 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A7B9"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwILAdvancement", 
+    "PNAM - Previous INFO": "01F8A7B8", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have returned the Lord's Mail. Now you must find the Paladin's Blade, Chrysamere.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "0ImperialSLegion", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwILKnightShield", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0VarusSVatinius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 9, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+        "SCTX - Result script source": "addtopic 1chrysamere", 
+        "References": [
+            "1Chrysamere"
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "Topic": "1DisappearanceSofStheSDwarves", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A219"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMGDwarves", 
+    "PNAM - Previous INFO": "01F8A218", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "62 6F 6E", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Oh? Let me see these books. Oh, yes, of course. This \"Egg of Time\" is quite obvious... in its... um... descriptions... of the things...", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "62 6F 6E", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "That happened. Yes, of course. It is all quite clear to me. I would prefer that you wrote a report that... um... simplified your findings, but I trust that you have indeed solved the mystery.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 69.999999823267, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMGDwarves", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0treboniusSartorius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 28, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 19 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwmgdwarves 100\r\nmoddisposition player 25", 
+        "References": [
+            "fbmwMGDwarves", 
+            20
+        ]
+    }
+}

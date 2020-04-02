@@ -1,0 +1,122 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0100A189"
+    }, 
+    "EDID - Editor ID": "fbmwBmMeadHallMassacreBusiness", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 1, 
+        "CompiledSize": 274, 
+        "VariableCount": 13, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 04 01 00 00 16 00 0D 00 08 00 09 00 20 73 0D 00 20 31 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 09 00 20 30 20 3D 3D 15 00 09 00 73 09 00 04 00 20 47 01 00 19 00 00 00 15 00 0F 00 73 06 00 0A 00 20 47 01 00 20 73 09 00 20 2D 16 00 0D 00 02 00 09 00 20 73 06 00 20 37 20 3E 3D 15 00 07 00 73 05 00 02 00 20 31 15 00 07 00 73 04 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 0D 00 04 00 09 00 20 73 0C 00 20 31 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 0A 00 20 30 20 3D 3D 15 00 09 00 73 0A 00 04 00 20 47 01 00 19 00 00 00 15 00 0F 00 73 07 00 0A 00 20 47 01 00 20 73 0A 00 20 2D 19 00 00 00 16 00 19 00 03 00 15 00 20 73 04 00 20 30 20 3D 3D 20 73 05 00 20 31 20 3D 3D 20 26 26 16 00 0D 00 01 00 09 00 20 73 08 00 20 37 20 3E 3D 15 00 07 00 73 04 00 02 00 20 31 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwBmMeadHallMassacreBusiness\n\nshort localdaypassedmead\nshort localdaypassedhunt\nshort localdaypassedprofit\nshort daystartmead\nshort daystarthunter\nshort daystartprofit\nshort orderhunter ;external\nshort ordermead ;external\nshort canprofit\nshort meadarrived\nBegin GameMode\n\n\tif(ordermead == 1)\t;mead shipment\n\t\tif(daystartmead == 0)\n\t\t\tset daystartmead to GameDaysPassed\n\t\tendif\n\t\tset localdaypassedmead to (GameDaysPassed - daystartmead)\n\n\t\tif(localdaypassedmead >= 7)\n\t\t\tset meadarrived to 1\n\t\t\tset canprofit to 1\n\t\tendif\n\tendif\n\tif(orderhunter == 1);hunter in wild(maybe add real hunters?)\n\t\tif(daystarthunter == 0)\n\t\t\tset daystarthunter to GameDaysPassed\n\t\tendif\n\t\tset localdaypassedhunt to (GameDaysPassed - daystarthunter)\n\tendif\n\tif(canprofit == 0)&&(meadarrived == 1)\n\t\tif(localdaypassedprofit >= 7)\n\t\t\tset canprofit to 1\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 173 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "canprofit"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "meadarrived"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "localdaypassedmead"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "localdaypassedhunt"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "01 00 00 D8 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "localdaypassedprofit"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "daystartmead"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 10, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "daystarthunter"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 11, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "daystartprofit"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 12, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "orderhunter"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 13, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ordermead"
+        }
+    ], 
+    "References": [
+        "GameDaysPassed"
+    ]
+}

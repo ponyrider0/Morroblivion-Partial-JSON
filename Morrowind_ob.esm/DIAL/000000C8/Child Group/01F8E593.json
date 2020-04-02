@@ -1,0 +1,90 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E593"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRMissingHand02", 
+    "PNAM - Previous INFO": "0100E86C", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Welcome, outlander. It is time we talked of greater things. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I have watched you since your arrival in Vvardenfell, and you have been a strong and faithful servant to me.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "None but the Nerevarine could have succeeded as you have. How long I have waited for this! My Nerevar, returned to me at last!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "I have watched from my Temple as others have made the claim, and I have seen them fall. I believe now that you are the one who was prophesied.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRMissingHand02", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "fbmwAlmalexia", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "startquest fbmwTRblade\r\naddtopic 1yousaresthesone", 
+        "References": [
+            "fbmwTRBlade", 
+            "1youSareStheSone"
+        ]
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "Topic": "1RufinusSAlleius", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8ACB9"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwFGSilenceMagistrate", 
+    "PNAM - Previous INFO": "01F8ACB8", 
+    "Add topics": [
+        "1work", 
+        "1guard"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Good work. I hope the guards didn't give you any trouble. Here's the 1000 septims I owe you.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0RufinusSAlleius", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0lorbumolSgroTaglakh", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 46, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E E8 03 00 00", 
+        "SCTX - Result script source": "setstage fbmwfgsilencemagistrate 100\r\nmoddisposition player 20\r\nplayer.additem gold001 1000\r\n", 
+        "References": [
+            20, 
+            "fbmwFGSilenceMagistrate", 
+            "Gold001"
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "Topic": "1FortSFrostmoth", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B040"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMRumors", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6B 73 55", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "We are an Imperial fort, obviously. My soldiers have the ability to be among the best in all the Empire. This island of Solstheim is not the easiest assignment, though, and sometimes it makes the men edgy", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMorale", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0falxScarius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "startquest fbmwbmmorale\r\naddtopic 1edgy", 
+        "References": [
+            "fbmwBMMorale", 
+            "1edgy"
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8A9DF"
+    }, 
+    "EDID - Editor ID": "fbmwicmossanonyes", 
+    "Quests": [
+        "fbmwICMossanon"
+    ], 
+    "FULL - Name": "Yes, I have the generous pledge.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwicmossanonyes", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A9E0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwICMossanon", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 76", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you. You have exceeded our greatest expectations. I'm afraid we have no more tasks to challenge your remarkable abilities. I suspect you already outstip your teachers.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 76", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Perhaps you will consider becoming one of our lay healers or shrine sergeants, if you have not already sampled these duties. I have also passed your name to our Oracle here, Lalatia Varian.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 76", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "She may have tasks suited to your talents. But before you go, I have one last gift for you to remember us by. Goodbye, and good luck.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 1000.00000047524, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0IulusSTruptor", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 84, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 36 10 05 00 01 00 72 02 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E E8 03 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 39 10 0A 00 02 00 72 05 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "moddisposition player 10\r\nmodpcfame 1\r\nstartquest fbmwicoraclequest\r\nplayer.removeitem gold001 1000\r\nplayer.additem fbmwzenitharwhispers 1\r\nsetstage fbmwicmossanon 50", 
+                "References": [
+                    20, 
+                    "fbmwICOracleQuest", 
+                    "Gold001", 
+                    "fbmwZenitharWhispers", 
+                    "fbmwICMossanon"
+                ]
+            }
+        }
+    ]
+}

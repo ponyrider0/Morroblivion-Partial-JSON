@@ -1,0 +1,73 @@
+{
+    "Topic": "1Ristaag", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BBFF"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMBearHunt1", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 AA 30", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The Ristaag has failed. This is a bad omen. Perhaps I was wrong to send an outsider to assist with such an important ceremony. Still, our fate will remain in the hands of the All-Maker.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 AA 30", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I believe it is possible you can redeem yourself. Let us speak of the ominous signs that have appeared on this island.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 104.9999997349, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBearHunt1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0korstSwindTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 42, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 22 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 22 10 00 00 36 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+        "SCTX - Result script source": "fbmwbmHuntREF1.disable\r\nfbmwbmHuntREF2.disable\r\nfbmwbmHuntREF3.disable\r\nstartquest fbmwbmFrostGiant1\r\naddtopic 1ominousssigns", 
+        "References": [
+            "fbmwbmHuntREF1", 
+            "fbmwbmHuntREF2", 
+            "fbmwbmHuntREF3", 
+            "fbmwBMFrostGiant1", 
+            "1ominousSsigns"
+        ]
+    }
+}

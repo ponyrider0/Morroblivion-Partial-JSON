@@ -1,0 +1,81 @@
+{
+    "Topic": "1InaniusSeggSmine", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01004B5A"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHHEggMine", 
+    "PNAM - Previous INFO": "01320E5E", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "A rival of mine in House Hlaalu gets his wealth from the Inanius Egg Mine.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": " It is just across the mountains east of Suran. Go there and kill the kwama queen and ruin my rival's business.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "There won't be any miners to deal with this time of year, and I doubt the mine will recover.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHHEggMine", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0nilenoSdorvayn", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 55 10 05 00 01 00 72 02 00 55 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "SetStage fbmwHHEggMine 10\r\nShowMap mwInaniusEggMineMapMarker\r\nShowMap mwSuranMapMarker", 
+        "References": [
+            "fbmwHHEggMine", 
+            "mwInaniusEggMineMapMarker", 
+            "mwSuranMapMarker"
+        ]
+    }
+}

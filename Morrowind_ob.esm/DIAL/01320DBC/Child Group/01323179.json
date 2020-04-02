@@ -1,0 +1,73 @@
+{
+    "Topic": "1MeetSsomeoneSnew10", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323179"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSMatchMaker", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1SunelSHlas", 
+        "1guar"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Sunel Hlas, you say?  Hmm... I think I've heard the name before, but can't remember where.  Whew.  Okay, I'm really trusting your judgment, outlander.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": " Tell him to meet me at the Winged Guar two days from now.  I hope he's nice...", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0MarenaSGilnith", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 28, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00 15 00 0A 00 72 01 00 73 03 00 02 00 20 33", 
+        "SCTX - Result script source": "setstage fbmwMSMatchMaker 70\r\nSet fbmwMSMatchMaker.MatchMakeSunel to 3", 
+        "References": [
+            "fbmwMSMatchMaker"
+        ]
+    }
+}

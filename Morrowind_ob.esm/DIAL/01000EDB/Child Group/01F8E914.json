@@ -1,0 +1,107 @@
+{
+    "Topic": "1entertainStheSpatrons1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E914"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMSEntertainers", 
+    "PNAM - Previous INFO": "01F8E913", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "[You told a few funny jokes. They listened. They liked you. But you didn't excite them.] Thanks. The Colovian helm is a nice touch.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Not enough to earn a living on. But not embarrassing.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 182, 
+            "Parameter #1": "0furUcolovianUhelm", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 14, 
+            "Parameter #1": 6, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 14, 
+            "Parameter #1": 32, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0dulneaSralaal", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 20, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 43, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0C 00 72 02 00 73 02 00 04 00 20 47 03 00 26 10 05 00 01 00 72 04 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 05 00 00 00", 
+        "SCTX - Result script source": "set fbmwMSEntertainers.currentday to GameDay\r\nplaysound 0entertainersUreact03\r\nPlayer.additem gold001 5", 
+        "References": [
+            20, 
+            "fbmwMSEntertainers", 
+            "GameDay", 
+            "0entertainersUreact03", 
+            "Gold001"
+        ]
+    }
+}

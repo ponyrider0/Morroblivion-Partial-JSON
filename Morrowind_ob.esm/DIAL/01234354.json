@@ -1,0 +1,58 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01234354"
+    }, 
+    "EDID - Editor ID": "fbmwbmRiteNo", 
+    "Quests": [
+        "fbmwBMWolfGiver"
+    ], 
+    "FULL - Name": "No, I'd like to keep my gift of lycanthropy.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwbmRiteNo", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010B3B96"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwBMWolfGiver", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "An interesting choice. Most who are offered the lycanthropy cure take the opportunity, without question. Very well. If you find the burden of the wolf too much to bear, return to me here at the Altar of Thrond and ask once more for my help.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwbmWolfGiver 20", 
+                "References": [
+                    "fbmwBMWolfGiver"
+                ]
+            }
+        }
+    ]
+}

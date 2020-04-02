@@ -1,0 +1,79 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "013229A3"
+    }, 
+    "EDID - Editor ID": "1muddled1", 
+    "Quests": [
+        "fbmwMVMonsterDisease"
+    ], 
+    "FULL - Name": "You'd better follow me to the healer", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1muddled1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013235E4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVMonsterDisease", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Gnisis", 
+                "1slaughterfish"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Go to Gnisis with you? A slaughterfish? Ha! Hmmm...maybe I should follow you. That way I can keep my eye on you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0din", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 37, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00 58 10 05 00 01 00 72 02 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
+                "SCTX - Result script source": "setstage fbmwmvmonsterdisease 40\r\naddtopic 1slaughterfishsbite\r\nset fbmwmvmonsterdisease.follownow to 1", 
+                "References": [
+                    "fbmwMVMonsterDisease", 
+                    "1slaughterfishSbite"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "013229A7"
+    }, 
+    "EDID - Editor ID": "1muddled3", 
+    "Quests": [
+        "fbmwMVMonsterDisease"
+    ], 
+    "FULL - Name": "There's nothing I can do to help you.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1muddled3", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013235E6"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVMonsterDisease", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1slaughterfish"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Fine! Can't trust you slaughterfish anyway! Are you threatening me? Go away!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0din", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 30 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmvmonsterdisease 48", 
+                "References": [
+                    "fbmwMVMonsterDisease"
+                ]
+            }
+        }
+    ]
+}

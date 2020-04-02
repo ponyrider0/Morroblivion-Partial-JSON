@@ -1,0 +1,85 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01320925"
+    }, 
+    "EDID - Editor ID": "1joinSHouseSTelvanni2", 
+    "Quests": [
+        "fbmwHTAdvancement"
+    ], 
+    "FULL - Name": "Join House Telvanni", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1joinSHouseSTelvanni2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323078"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1rules"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Are you certain? Remember that once you join, you cannot join any other Great House. Perhaps you would like to hear our rules?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "SadrithSMoraVSTelvanniSCouncilSHouse", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Telvanni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1joinSHouseSTelvanni1", 
+                "1joinSHouseSTelvanni3", 
+                "1joinSHouseSTelvanni4"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

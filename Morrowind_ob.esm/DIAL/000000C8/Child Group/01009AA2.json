@@ -1,0 +1,79 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01009AA2"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "mwGreetingsUnique", 
+    "PNAM - Previous INFO": "01009AA1", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Have you come to plunder the dungeon? Or have you got corprus disease? Or did you come to see Divayth Fyr? I'm Beyte Fyr.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I'm the wife of Divayth Fyr. One of them. Sort of.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 50, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 131, 
+            "Parameter #1": 0, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0beyteSfyr", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "addtopic 1plunderStheSdungeon\r\naddtopic 1corprusSdisease\r\naddtopic 1DivaythSFyr", 
+        "References": [
+            "1plunderStheSdungeon", 
+            "1corprusSdisease", 
+            "1DivaythSFyr"
+        ]
+    }
+}

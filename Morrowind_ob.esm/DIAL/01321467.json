@@ -1,0 +1,78 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321467"
+    }, 
+    "EDID - Editor ID": "1materialSgains2", 
+    "Quests": [
+        "fbmwVAVampCult"
+    ], 
+    "FULL - Name": "You are a buffoon. You must die.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1materialSgains2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323319"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwVAVampCult", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1killSme"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Me die? I think not, vampire. To me, my minions! Slay this false god! He seeks to kill me!!!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0Irarak", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 8, 
+                    "CompiledSize": 87, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 07 00 1C 00 01 00 16 10 05 00 01 00 72 08 00 1C 00 02 00 16 10 05 00 01 00 72 08 00 1C 00 03 00 16 10 05 00 01 00 72 08 00 1C 00 04 00 16 10 05 00 01 00 72 08 00 1C 00 05 00 16 10 05 00 01 00 72 08 00 1C 00 06 00 16 10 05 00 01 00 72 08 00", 
+                "SCTX - Result script source": "addtopic 1killsme\r\nfbmwIrarak.startcombat player\r\nAndenref.startcombat player\r\nSarvilref.startcombat player\r\nErvisRef.startcombat player\r\nVulyneRef.startcombat player\r\nTredereRef.startcombat player", 
+                "References": [
+                    "fbmwIrarak", 
+                    "AndenRef", 
+                    "SarvilRef", 
+                    "ErvisRef", 
+                    "VulyneRef", 
+                    "TredereRef", 
+                    "1killSme", 
+                    20
+                ]
+            }
+        }
+    ]
+}

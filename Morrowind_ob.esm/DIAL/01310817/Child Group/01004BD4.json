@@ -1,0 +1,85 @@
+{
+    "Topic": "1joinStheSCouncil", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01004BD4"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHTBaladasAlly", 
+    "PNAM - Previous INFO": "01004BD5", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Baladas will be joining the council, and, as we agreed, I will be your patron.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Please accept this Silver Staff of Peace, the traditional patron's gift to his protege.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "You are now my Mouth in House Telvanni with all the duties and privileges of that rank.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHTBaladasAlly", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0aryon", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 7, 
+            "CompiledSize": 77, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 39 10 0A 00 02 00 72 04 00 6E 29 00 00 00 39 10 0A 00 02 00 72 05 00 6E 01 00 00 00 58 10 05 00 01 00 72 06 00 1C 00 01 00 02 10 0A 00 02 00 72 07 00 6E 01 00 00 00 1C 00 02 00 22 10 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHTBaladasAlly 100\r\nSetStage fbmwHTAdvancement 41\r\nSetStage fbmwHTStronghold 1\r\nAddTopic 1Stronghold\r\nPlayer.AddItem 0SilverSStaffSofSPeace 1\r\nmwGalosMathendisREF.Disable", 
+        "References": [
+            20, 
+            "mwGalosMathendisREF", 
+            "fbmwHTBaladasAlly", 
+            "fbmwHTAdvancement", 
+            "fbmwHTStronghold", 
+            "1stronghold", 
+            "0silverSstaffSofSpeace"
+        ]
+    }
+}

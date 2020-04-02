@@ -1,0 +1,77 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310A06"
+    }, 
+    "EDID - Editor ID": "1whoScanShelp", 
+    "Quests": [
+        "fbmwMQ12"
+    ], 
+    "FULL - Name": "Who can help?", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1whoScanShelp", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01AA62AB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ12", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Ordinators and Buoyant Armigers stationed at Ghostgate have the most practical knowledge of the nightmare world inside the Ghostfence.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "8D C8 C0", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Seek them in my name for counsel and aid.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "fbmwVivec", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 18, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "addtopic 1insidesthesghostfence\r\naddtopic 1craterscitadels", 
+                "References": [
+                    "1insideStheSGhostfence", 
+                    "1craterScitadels"
+                ]
+            }
+        }
+    ]
+}

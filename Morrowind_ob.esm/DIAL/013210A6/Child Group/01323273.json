@@ -1,0 +1,68 @@
+{
+    "Topic": "1travelStogether2", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323273"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHHEscortMerchant", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Okay. I will stay here.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHHEscortMerchant", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 69.999999823267, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHHEscortMerchant", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tarvynSfaren", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 22, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00", 
+        "SCTX - Result script source": "SET fbmwHHEscortMerchant.follownow TO 0\r\nmwTarvynFarenREF.EvaluatePackage", 
+        "References": [
+            "mwTarvynFarenREF", 
+            "fbmwHHEscortMerchant"
+        ]
+    }
+}

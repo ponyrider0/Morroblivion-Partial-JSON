@@ -1,0 +1,61 @@
+{
+    "Topic": "1latestSrumors", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0101B6DE"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Random": true
+        }
+    }, 
+    "QSTI - Quest": "MorroDefaultQuest", 
+    "PNAM - Previous INFO": "0101B6DF", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I heard there has been some trouble up at Fort Frostmoth. Never heard of it? It's on an island called Solstheim north of Vvardenfell.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMRumors", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 71, 
+            "Parameter #1": "noLore", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "setstage FBMWBMRumors 10", 
+        "References": [
+            "fbmwBMRumors"
+        ]
+    }
+}

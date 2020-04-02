@@ -1,0 +1,78 @@
+{
+    "Topic": "1banditsSinSSuran", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320E51"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGSuranBandits", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1justice", 
+        "1bandits", 
+        "1HouseSHlaalu", 
+        "1bounty"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have brought justice to Daldur Sarys and his bandits. House Hlaalu thanks you. Here is the bounty money we agreed on.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0daldurSsarys", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGSuranBandits", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0avonSoran", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 97, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 03 00 72 04 00 6E 05 00 00 00 A9 10 0D 00 03 00 72 03 00 72 05 00 6E 05 00 00 00 A9 10 0D 00 03 00 72 05 00 72 04 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E E8 03 00 00", 
+        "SCTX - Result script source": "setstage fbmwFGSuranBandits 100\r\nmodfactionreaction fbmwfightersguild playerfaction 5\r\nmodfactionreaction fbmwfightersguild 0hlaalu 5\r\nmodfactionreaction 0hlaalu playerfaction 5\r\nmoddisposition player 20\r\nplayer.additem gold001 1000", 
+        "References": [
+            20, 
+            "fbmwFGSuranBandits", 
+            "fbmwFightersGuild", 
+            "PlayerFaction", 
+            "0Hlaalu", 
+            "Gold001"
+        ]
+    }
+}

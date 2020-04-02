@@ -1,0 +1,97 @@
+{
+    "Topic": "1flowers1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "013235F5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMGFlowers", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes, these are the flowers that Ajira needs. Ajira has made more potions for you. Ajira hopes that you will use them well.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ajira", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUgoldUkanetU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUstoneflowerUpetalsU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUwillowUantherU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUheatherU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 7, 
+            "CompiledSize": 118, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 06 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 07 00 6E 06 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwMGFlowers 100\r\nPlayer.removeItem 0ingredugoldukanetu01 1\r\nPlayer.RemoveItem 0ingredustoneflowerupetalsu01 1\r\nPlayer.RemoveItem 0ingreduwillowuantheru01 1\r\nPlayer.RemoveItem 0ingreduheatheru01 1\r\nPlayer.AddItem 0pUrestoreUmagickaUc 6\r\nModDisposition player 10", 
+        "References": [
+            20, 
+            "fbmwMGFlowers", 
+            "0ingredUgoldUkanetU01", 
+            "0ingredUstoneflowerUpetalsU01", 
+            "0ingredUwillowUantherU01", 
+            "0ingredUheatherU01", 
+            "0pUrestoreUmagickaUc"
+        ]
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310729"
+    }, 
+    "EDID - Editor ID": "1TelvanniScouncilors", 
+    "Quests": [
+        "fbmwMQTelvanniAryon", 
+        "fbmwMQTelvanniTherana"
+    ], 
+    "FULL - Name": "Telvanni Councilors", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1TelvanniScouncilors", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132085B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQTelvanniAryon", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1HouseSTelvanni", 
+                "1TelvanniScouncilors", 
+                "1TelSAruhn", 
+                "1TelSVos", 
+                "1TelSMora", 
+                "1TelSBranora", 
+                "1SadrithSMora"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Here's a recent edition of the Brown Book of Great House Telvanni. It lists the current Telvanni councilors and their residences.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Let me mark the locations of the councilor's towers on your map -- Tel Aruhn, Tel Vos, Tel Mora, Tel Branora.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And Tel Naga is right in the center of Sadrith Mora.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0aryon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 13, 
+                    "CompiledSize": 147, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 05 00 00 00 39 10 0A 00 02 00 72 04 00 6E 01 00 00 00 39 10 0A 00 02 00 72 05 00 6E 01 00 00 00 39 10 0A 00 02 00 72 06 00 6E 01 00 00 00 39 10 0A 00 02 00 72 07 00 6E 01 00 00 00 39 10 0A 00 02 00 72 08 00 6E 01 00 00 00 55 10 05 00 01 00 72 09 00 55 10 05 00 01 00 72 0A 00 55 10 05 00 01 00 72 0B 00 55 10 05 00 01 00 72 0C 00 55 10 05 00 01 00 72 0D 00", 
+                "SCTX - Result script source": "Player.AddItem 0bkUBrownBook426 1\r\nSetStage fbmwMQTelvanni 5\r\nSetStage fbmwMQTelvanniBaladas 1\r\nSetStage fbmwMQTelvanniDratha 1\r\nSetStage fbmwMQTelvanniGothren 1\r\nSetStage fbmwMQTelvanniNeloth 1\r\nSetStage fbmwMQTelvanniTherana 1\r\nShowMap mwTelMoraMapMarker\r\nShowMap mwTelNagaMapMarker\r\nShowMap mwTelBranoraMapMarker\r\nShowMap mwTelAruhnMapMarker\r\nShowMap GnisisMapMarker58", 
+                "References": [
+                    20, 
+                    "0bkUBrownBook426", 
+                    "fbmwMQTelvanni", 
+                    "fbmwMQTelvanniBaladas", 
+                    "fbmwMQTelvanniDratha", 
+                    "fbmwMQTelvanniGothren", 
+                    "fbmwMQTelvanniNeloth", 
+                    "fbmwMQTelvanniTherana", 
+                    "mwTelMoraMapMarker", 
+                    "mwTelNagaMapMarker", 
+                    "mwTelBranoraMapMarker", 
+                    "mwTelAruhnMapMarker", 
+                    "GnisisMapMarker58"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1TelvanniScouncilors", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132085C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQTelvanniAryon", 
+            "PNAM - Previous INFO": "0132085B", 
+            "Add topics": [
+                "1HouseSTelvanni", 
+                "1TelvanniScouncilors", 
+                "1TelSAruhn", 
+                "1TelSVos", 
+                "1TelSMora", 
+                "1TelSBranora", 
+                "1SadrithSMora"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Here's a recent edition of the Brown Book of Great House Telvanni. It lists the current Telvanni councilors and their residences.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Let me mark the locations of the councilor's towers on your map -- Tel Aruhn, Tel Vos, Tel Mora, Tel Branora.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And Tel Naga is right in the center of Sadrith Mora.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Telvanni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "Player.AddItem 0bkUBrownBook426 1\r\nSetStage fbmwMQTelvanni 5", 
+                "References": [
+                    20, 
+                    "0bkUBrownBook426", 
+                    "fbmwMQTelvanni"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1TelvanniScouncilors", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132085A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQTelvanniTherana", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "No, Telvanni make the worst councilors. I wouldn't listen to their advice if I were you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0therana", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

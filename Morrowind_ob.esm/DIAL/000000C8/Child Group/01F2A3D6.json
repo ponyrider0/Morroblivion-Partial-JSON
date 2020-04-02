@@ -1,0 +1,98 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F2A3D6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "CrimeMorrow", 
+    "PNAM - Previous INFO": "01F2A3D5", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 1, 
+                "Emotion Value": 100, 
+                "Unused": "61 6C 65", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Stop, you've violated the law. Since you don't have the gold to pay the court,", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 1, 
+                "Emotion Value": 100, 
+                "Unused": "61 6C 65", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "you must surrender your stolen goods and serve your sentence of punitive labor. Come with me.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 171, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 116, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 127, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 125, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "mwCrimeServeSentence", 
+        "mwCrimeResistArrest"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 75, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 11 00 72 01 00 73 01 00 09 00 20 72 02 00 58 74 10 00 00 59 10 24 00 01 00 14 00 43 75 72 72 65 6E 74 20 42 6F 75 6E 74 79 3A 20 25 2E 30 66 01 00 72 01 00 73 01 00 0A 00 00 00 15 00 0A 00 72 01 00 73 09 00 02 00 20 31", 
+        "SCTX - Result script source": "Set CrimeMorrow.PCBounty to Player.GetCrimeGold\r\nMessage \"Current Bounty: %.0f\" CrimeMorrow.PCBounty, 10\r\nset CrimeMorrow.RUN_legitKills to 1", 
+        "References": [
+            "CrimeMorrow", 
+            20
+        ]
+    }
+}

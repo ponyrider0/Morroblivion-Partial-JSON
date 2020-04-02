@@ -1,0 +1,76 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A7E6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGAdvancement", 
+    "PNAM - Previous INFO": "01F8A7E5", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 46 47", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I have a small task for you. The Empire charges the Fighters Guild with keeping the forts and mines supplied. Would you be willing to take a load of flin to the Elith-Pal Mine?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0persiusSmercius", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 73, 
+            "Parameter #1": "fbmwFightersGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 20, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGSuranBandits", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1elithtpalsmine\r\nstartquest fbmwfgelithpalsupply", 
+        "References": [
+            "1ElithTPalSMine", 
+            "fbmwFGElithPalSupply"
+        ]
+    }
+}

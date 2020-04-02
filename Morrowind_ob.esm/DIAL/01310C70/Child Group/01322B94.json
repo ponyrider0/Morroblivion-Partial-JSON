@@ -1,0 +1,59 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322B94"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGAdvancement", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1FightersSGuild", 
+        "1theSrules", 
+        "1makeSamends"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You've been expelled from the Fighters Guild for breaking the rules. You'll have to make amends before I give you any orders.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 193, 
+            "Parameter #1": "fbmwFightersGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 5.99999998485146, 
+            "Function": 73, 
+            "Parameter #1": "fbmwFightersGuild", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

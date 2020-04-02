@@ -1,0 +1,86 @@
+{
+    "Topic": "1Writ", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F2A492"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMTAdvancement", 
+    "PNAM - Previous INFO": "01F2A491", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "61 6C 65", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "There are two outstanding Writs. One on Guril Retheran and one on Galasa Uvayn.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritVendu", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritSadus", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "0MoragSTong", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritYasalmibaal", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritSaren", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 36, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 36 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "addtopic 1GurilSRetheran\r\nstartquest fbmwMTWritGuril\r\naddtopic 1GalasaSUvayn\r\nstartquest fbmwMTWritGalasa", 
+        "References": [
+            "1GurilSRetheran", 
+            "fbmwMTWritGuril", 
+            "1GalasaSUvayn", 
+            "fbmwMTWritGalasa"
+        ]
+    }
+}

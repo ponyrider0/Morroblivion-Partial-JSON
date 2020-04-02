@@ -1,0 +1,60 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B9D5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwCOAdvancement", 
+    "PNAM - Previous INFO": "01F8B9D4", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6E 69", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "What do you want? Is this about the East Empire Company? I'm a very important man, I'll have you know, and I have no time for anything other than business.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwCO13", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0CarniusSMagius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1joinstheseastsempirescompany\r\naddtopic 1assignment", 
+        "References": [
+            "1joinStheSEastSEmpireSCompany", 
+            "1assignment"
+        ]
+    }
+}

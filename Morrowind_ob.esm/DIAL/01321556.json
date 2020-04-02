@@ -1,0 +1,102 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321556"
+    }, 
+    "EDID - Editor ID": "1HerSprofession1", 
+    "Quests": [
+        "fbmwRomanceAhnassi", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Give Ahnassi the gift of friendship.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1HerSprofession1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323351"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwRomanceAhnassi", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1newSfriend", 
+                "1Hrordis"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 6, 
+                        "Emotion Value": 100, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Please forgive Ahnassi, if she purrs like a kitten. But Ahnassi is so pleased! You will come visit Ahnassi often then? And tell her things?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 100, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And ask her things too, for we are now friends, yes? Ahnassi such secrets knows, she almost bursts. Like... Ahnassi MUST tell her new friend!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "This Hrordis upstairs? Such a secret I know!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ahnassi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 135, 
+                    "Parameter #1": "00 00 00 00", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1HerSprofession3"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWRomanceAhnassi 30", 
+                "References": [
+                    "fbmwRomanceAhnassi"
+                ]
+            }
+        }
+    ]
+}

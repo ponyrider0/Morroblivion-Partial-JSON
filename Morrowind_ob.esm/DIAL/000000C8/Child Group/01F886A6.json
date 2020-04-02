@@ -1,0 +1,97 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F886A6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICOracleA", 
+    "PNAM - Previous INFO": "0102A4EE", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 73", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes! That is my ring! Please! It grants me Divine Intervention! Now I can escape! Give it to me NOW! I don't care about anything else...", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 6F 75", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "just let me out of here!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0claymoreUicebladeUunique", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "fbmwAdusamsRing", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICOracle", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICOracleA", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0adusamsiSassurnarairan", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 28 00 00 00", 
+        "SCTX - Result script source": "player.removeitem fbmwadusamsring 1\r\nsetstage fbmwicoraclea 40", 
+        "References": [
+            20, 
+            "fbmwAdusamsRing", 
+            "fbmwICOracleA"
+        ]
+    }
+}

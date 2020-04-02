@@ -1,0 +1,108 @@
+{
+    "Topic": "1compensation", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01321C71"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRBlade", 
+    "PNAM - Previous INFO": "01014C45", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You've already been quite a friend to the Museum. I'll give you the piece. I'm classifying it as a Dwemer Battle Shield.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "As I said, I'm not sure what to make of it.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "The spike attached to the front of the shield seems to be loose, but a competent smith can probably take care of that for you.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "Good luck to you, and if you're able to recreate the Blade of Nerevar, I'd love to see the finished product.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "fbmwTRBlade", 
+            "Parameter #2": 6
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 79, 
+            "Parameter #1": "fbmwMSMuseum", 
+            "Parameter #2": 35
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0TorasaSAram", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 41, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 2D 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "setstage fbmwTRBlade 45\r\nplayer.additem dwemerUshieldUbattleUunique 1\r\naddtopic 1dwemersbattlesshield", 
+        "References": [
+            20, 
+            "fbmwTRBlade", 
+            "0dwemerUshieldUbattleUunique", 
+            "1DwemerSBattleSShield"
+        ]
+    }
+}

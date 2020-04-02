@@ -1,0 +1,187 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01311344"
+    }, 
+    "EDID - Editor ID": "1thatSnightSatSsea", 
+    "Quests": [
+        "fbmwBMCursedCaptain"
+    ], 
+    "FULL - Name": "That night at sea", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1thatSnightSatSsea", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AC84"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMCursedCaptain", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 60, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "A few months ago I was ferrying some settlers from Skyrim to Solstheim.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 90, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I was tired...so tired.  I fell asleep at the rudder.  The ship drifted into a gale, and by the time I woke, it was too late.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 2, 
+                        "Emotion Value": 90, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I couldn't regain control, and the ship capsized.  There were only two survivors -- me, and an old man whose entire family was lost in the wreck.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 90, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "I told the man of my terrible failure, and he used his power as a seer and wizard to punish me.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 100, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 5
+                    }, 
+                    "NAM1 - Response Text": "You see, I have been cursed with eternal wakefulness.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0thormoorSgrayTwave", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCursedCaptain", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCursedCaptain", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage fbmwBMCursedCaptain 10\r\naddtopic 1eternalSwakefulness", 
+                "References": [
+                    "fbmwBMCursedCaptain", 
+                    "1eternalSwakefulness"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1thatSnightSatSsea", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AC85"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMCursedCaptain", 
+            "PNAM - Previous INFO": "01F8AC84", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 20, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Now that Geilir has lifted my curse, I feel like I can finally put the tragedy behind me.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 10, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I know what I did, and I'll have to live with it.  But life goes on, and I feel I may now be able to find some peace.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0thormoorSgrayTwave", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCursedCaptain", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

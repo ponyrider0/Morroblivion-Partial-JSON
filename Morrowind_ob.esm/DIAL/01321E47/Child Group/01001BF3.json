@@ -1,0 +1,54 @@
+{
+    "Topic": "1proposition2", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01001BF3"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMVCharming", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 1, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I fear you are making an unwise decision, my friend. But, so be it...though I hate to soil my clothes with your blood. No matter. Such is the life of Nels Llendo.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0nelsSllendo", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 37, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 5A 00 00 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 16 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "SetStage fbmwMVCharming 90\r\nmoddisposition player -100\r\nStartCombat player", 
+        "References": [
+            "fbmwMVCharming", 
+            20
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "Topic": "1stoleSallSmySgoods", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320A67"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true, 
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMVAngryTrader", 
+    "PNAM - Previous INFO": "01F8A2D2", 
+    "Add topics": [
+        "1glass", 
+        "1trader"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "My glass, and those fetchers left to rot...excellent! Teach criminals like that to meddle with an honest trader.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Now, let me tell you about a few tricks of the trade. I think they'll come in handy for you....", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tinosSdrothan", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUrawUglassUtinos", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0dondir", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0alvurShleran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 118, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 02 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 10 10 09 00 02 00 1D 00 6E 05 00 00 00 59 10 33 00 01 00 29 00 59 6F 75 72 20 4D 65 72 63 61 6E 74 69 6C 65 20 73 6B 69 6C 6C 20 68 61 73 20 69 6E 63 72 65 61 73 65 64 20 62 79 20 35 2E 00 00 00 00 00 00 39 10 0A 00 02 00 72 03 00 6E 6E 00 00 00", 
+        "SCTX - Result script source": "player.removeitem 0ingredurawuglassutinos 10\r\nadditem 0ingredurawuglassutinos 10\r\nplayer.modav mercantile 5\r\nmessage \"Your Mercantile skill has increased by 5.\"\r\nsetstage fbmwmvangrytrader 110", 
+        "References": [
+            20, 
+            "0ingredUrawUglassUtinos", 
+            "fbmwMVAngryTrader"
+        ]
+    }
+}

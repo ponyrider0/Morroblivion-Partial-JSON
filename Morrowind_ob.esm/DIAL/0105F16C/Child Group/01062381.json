@@ -1,0 +1,112 @@
+{
+    "Topic": "fbmwMasterIndex1work", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01062381"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSMasterIndex", 
+    "PNAM - Previous INFO": "01062380", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Finally I have all ten indices. Here's your 500 gold, and a master index. Here's how it will work.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "If you want to travel to a Dunmer stronghold, just speak with me here, and bring the master index with you.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I'll send you directly to whichever stronghold you wish.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "And for return trips, just make sure you have your master index with you when you activate the propylons in the propylon chambers...", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "...and you'll be transported here to me directly.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "mwIndexTelas", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 44.9999998863859, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSMasterIndex", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0folmsSmirel", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 91, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E F4 01 00 00 39 10 0A 00 02 00 72 04 00 6E 32 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 06 00", 
+        "SCTX - Result script source": "player.removeitem mwindextelas 1\r\nplayer.additem gold001 500\r\nsetstage fbmwMSMasterIndex 50\r\nplayer.additem 0indexumaster 1\r\nmodDisposition player 10\r\naddtopic fbmwMasterIndexTravel", 
+        "References": [
+            20, 
+            "mwIndexTelas", 
+            "Gold001", 
+            "fbmwMSMasterIndex", 
+            "0indexUmaster", 
+            "fbmwMasterIndexTravel"
+        ]
+    }
+}

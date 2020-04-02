@@ -1,0 +1,123 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8E975"
+    }, 
+    "EDID - Editor ID": "mwCGTalkGuardDock", 
+    "Quests": [
+        "fbmwChargen"
+    ], 
+    "FULL - Name": "mwCGTalkGuardDock", 
+    "DATA - Type": 1, 
+    "Child Group": [
+        {
+            "Topic": "mwCGTalkGuardDock", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8E976"
+            }, 
+            "DATA - ": {
+                "Type": 1, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwChargen", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "72 67 65", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You finally arrived, but our records don't show from where.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwChargen", 
+                    "Parameter #2": 11
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0chargenSdockSguard", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "mwCGTalkGuardDock", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8E977"
+            }, 
+            "DATA - ": {
+                "Type": 1, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwChargen", 
+            "PNAM - Previous INFO": "01F8E976", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "72 67 65", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Follow me up to the office and they'll finish your release.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 1.99999999495049, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwChargen", 
+                    "Parameter #2": 11
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0chargenSdockSguard", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

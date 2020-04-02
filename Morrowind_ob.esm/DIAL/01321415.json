@@ -1,0 +1,116 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321415"
+    }, 
+    "EDID - Editor ID": "1gameSofSshells1", 
+    "Quests": [
+        "fbmwMSBouncer", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "You're going to have to stop, Galms. I know you're hustling people.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1gameSofSshells1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013232FB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBouncer", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1gameSofSshells"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Damn! Who told you? C'mon, buddy, don't be too hard on me  I was just trying to make a few extra gold.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Look, if you let me stay,  I promise I'll give everyone fair odds. I'm good for it.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "If anyone complains of me cheating, they can tell Hession and I'll be out of here in an instant. Thanks, outlander. I owe you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "If you want to play a game of shells, just let me know.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBouncer", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0galmsSseles", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 42, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 03 00 02 00 20 32 15 00 0A 00 72 01 00 73 01 00 02 00 20 31 39 10 0A 00 02 00 72 01 00 6E 0F 00 00 00", 
+                "SCTX - Result script source": "set fbmwmsbouncer.galmsknown to 2\r\nset fbmwmsbouncer.galmshonest to 1\r\nsetstage fbmwmsbouncer 15", 
+                "References": [
+                    "fbmwMSBouncer"
+                ]
+            }
+        }
+    ]
+}

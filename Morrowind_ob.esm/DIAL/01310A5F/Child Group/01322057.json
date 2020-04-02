@@ -1,0 +1,77 @@
+{
+    "Topic": "1Advancement", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322057"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRAdvancement", 
+    "PNAM - Previous INFO": "01004A7C", 
+    "Add topics": [
+        "1MinerSArobar", 
+        "1stronghold"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "To become a Council Member, you must earn the support of Garisa Llethri and Miner Arobar.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "61 63 74", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You must also improve your Stronghold.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "0Redoran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 79, 
+            "Parameter #1": "fbmwHRAdvancement", 
+            "Parameter #2": 4
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athynSsarethi", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCTX - Result script source": "; 1 = Skills Qualify; Reputation Does Not\r\n; 2 = Reputation Qualifies, but Skills do Not"
+    }
+}

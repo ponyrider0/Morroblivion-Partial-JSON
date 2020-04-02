@@ -1,0 +1,93 @@
+{
+    "Topic": "1BalSMolagmer", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01024BAE"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTGAdvancement", 
+    "PNAM - Previous INFO": "01F8ACCE", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "There is a legend about \"Stone Fire Men\" who brought the light of justice to the land.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Though the Bal Molagmer were thieves, they stole only from the unjust and gave to those in need.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "They vanished early in the Third Era, and have not been seen since. I believe it is time for the Bal Molagmer to return. Here--", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "These gloves were used by the Bal Molagmer to carry their burning stones from the Red Mountain.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "When you are ready to rekindle the fires of the Bal Molagmer, wear the gloves and speak with me again.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0stacey", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwtgssgenerosity1 1\r\nplayer.additem fbmwglovesofthebalmolagmer 1", 
+        "References": [
+            20, 
+            "fbmwTGssGenerosity1", 
+            "fbmwGlovesOftheBalMolagmer"
+        ]
+    }
+}

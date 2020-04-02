@@ -1,0 +1,104 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "013106CF"
+    }, 
+    "EDID - Editor ID": "1RestoreSHealthSpotions", 
+    "Quests": [
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Restore Health Potions", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1RestoreSHealthSpotions", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013205BB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1health", 
+                "1potion", 
+                "1ingredients", 
+                "1MortarSandSPestle", 
+                "1marshmerrow", 
+                "1wickwheat", 
+                "1corkbulbSroot", 
+                "1saltrice", 
+                "1ingredients", 
+                "1potion", 
+                "1Training", 
+                "1apparatus", 
+                "1rat"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "To make a Restore Health potion, combine two ore more of the following cheap and common ingredients in the mortar and pestle: marshmerrow, wickwheat, corkbulb root, and saltrice.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "It isn't easy, of course. If you aren't very skilled, you will often ruin the ingredients and fail to make the potion.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "But with practice and training, you'll improve. And a complete set of alchemical apparatus can improve your success rate.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0SynnolianSTunifus", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

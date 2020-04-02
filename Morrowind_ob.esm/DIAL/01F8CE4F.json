@@ -1,0 +1,416 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8CE4F"
+    }, 
+    "EDID - Editor ID": "1SanguineSAll", 
+    "Quests": [
+        "fbmwMTSanguineItems"
+    ], 
+    "FULL - Name": "Sanguine Items", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1SanguineSAll", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8CE50"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMTSanguineItems", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Have you found more of the Threads of the Webspinner?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMTSanguineItems", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 132, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 193, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1SanguineSBalancedSArmor", 
+                "1SanguineSDeepSBiting", 
+                "1SanguineSDenial", 
+                "1SanguineSEnterprise", 
+                "1SanguineSFleetness", 
+                "1SanguineSFluidSEvasion", 
+                "1SanguineSGlibSSpeech", 
+                "1SanguineSGoldenSWisdom", 
+                "1SanguineSGreenSWisdom", 
+                "1SanguineSHewing", 
+                "1SanguineSHornySFist", 
+                "1SanguineSImpalingSThrust", 
+                "1SanguineSLeaping", 
+                "1SanguineSMartialSCraft", 
+                "1SanguineSNimbleSArmor", 
+                "1SanguineSRedSWisdom", 
+                "1SanguineSSafekeeping", 
+                "1SanguineSSilverSWisdom", 
+                "1SanguineSSmiting", 
+                "1SanguineSStalking", 
+                "1SanguineSStolidSArmor", 
+                "1SanguineSSublimeSWisdom", 
+                "1SanguineSSureflight", 
+                "1SanguineSSwiftblade", 
+                "1SanguineSTranscendence", 
+                "1SanguineSTransfiguring", 
+                "1SanguineSUnseenSWisdom"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCTX - Result script source": "; response after you have started the main Sanguine Items quest"
+            }
+        }, 
+        {
+            "Topic": "1SanguineSAll", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8CE51"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMTSanguineItems", 
+            "PNAM - Previous INFO": "01F8CE50", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "My amulet? This is the Amulet of Sanguine Enterprise, one of the twenty-seven threads of the Webspinner. I already have this thread.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Perhaps you will find other threads. When you do, bring them to me.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMTSanguineItems", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMTSanguineItems", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 132, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 193, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1SanguineSBalancedSArmor", 
+                "1SanguineSDeepSBiting", 
+                "1SanguineSDenial", 
+                "1SanguineSEnterprise", 
+                "1SanguineSFleetness", 
+                "1SanguineSFluidSEvasion", 
+                "1SanguineSGlibSSpeech", 
+                "1SanguineSGoldenSWisdom", 
+                "1SanguineSGreenSWisdom", 
+                "1SanguineSHewing", 
+                "1SanguineSHornySFist", 
+                "1SanguineSImpalingSThrust", 
+                "1SanguineSLeaping", 
+                "1SanguineSMartialSCraft", 
+                "1SanguineSNimbleSArmor", 
+                "1SanguineSRedSWisdom", 
+                "1SanguineSSafekeeping", 
+                "1SanguineSSilverSWisdom", 
+                "1SanguineSSmiting", 
+                "1SanguineSStalking", 
+                "1SanguineSStolidSArmor", 
+                "1SanguineSSublimeSWisdom", 
+                "1SanguineSSureflight", 
+                "1SanguineSSwiftblade", 
+                "1SanguineSTranscendence", 
+                "1SanguineSTransfiguring", 
+                "1SanguineSUnseenSWisdom"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "; response for the first time you ask about sanguine items\r\nSetStage fbmwMTSanguineItems 10", 
+                "References": [
+                    "fbmwMTSanguineItems"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1SanguineSAll", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8CE52"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMTSanguineItems", 
+            "PNAM - Previous INFO": "01F8CE51", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have been expelled from the Morag Tong... But perhaps you ask because have one of the Threads of the Webspinner. Do you?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1SanguineSBalancedSArmor", 
+                "1SanguineSDeepSBiting", 
+                "1SanguineSDenial", 
+                "1SanguineSEnterprise", 
+                "1SanguineSFleetness", 
+                "1SanguineSFluidSEvasion", 
+                "1SanguineSGlibSSpeech", 
+                "1SanguineSGoldenSWisdom", 
+                "1SanguineSGreenSWisdom", 
+                "1SanguineSHewing", 
+                "1SanguineSHornySFist", 
+                "1SanguineSImpalingSThrust", 
+                "1SanguineSLeaping", 
+                "1SanguineSMartialSCraft", 
+                "1SanguineSNimbleSArmor", 
+                "1SanguineSRedSWisdom", 
+                "1SanguineSSafekeeping", 
+                "1SanguineSSilverSWisdom", 
+                "1SanguineSSmiting", 
+                "1SanguineSStalking", 
+                "1SanguineSStolidSArmor", 
+                "1SanguineSSublimeSWisdom", 
+                "1SanguineSSureflight", 
+                "1SanguineSSwiftblade", 
+                "1SanguineSTranscendence", 
+                "1SanguineSTransfiguring", 
+                "1SanguineSUnseenSWisdom"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCTX - Result script source": "; response if the player has been expelled"
+            }
+        }, 
+        {
+            "Topic": "1SanguineSAll", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8CE53"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMTSanguineItems", 
+            "PNAM - Previous INFO": "01F8CE52", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have returned all of the Sanguine Items, and Mephala has shown you her favor. I am in awe, blessed one.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMTSanguineItems", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 132, 
+                    "Parameter #1": "0MoragSTong", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCTX - Result script source": "; response if quest has been completed."
+            }
+        }
+    ]
+}

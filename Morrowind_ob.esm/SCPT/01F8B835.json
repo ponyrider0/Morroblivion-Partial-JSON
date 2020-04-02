@@ -1,0 +1,28 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8B835"
+    }, 
+    "EDID - Editor ID": "fbmwbmWildHuntFinalGateScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 9, 
+        "CompiledSize": 227, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 02 00 D3 00 00 00 00 00 16 00 16 00 08 00 12 00 20 72 03 00 58 2F 10 05 00 01 00 72 05 00 20 30 20 3E 1C 00 01 00 21 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 83 18 0C 00 01 05 00 52 06 00 01 05 00 52 07 00 14 11 12 00 01 00 0E 00 62 6D 5F 65 6E 64 67 61 6D 65 2E 62 69 6B 39 10 0A 00 02 00 72 08 00 6E 64 00 00 00 16 00 14 00 01 00 10 00 20 58 54 10 05 00 01 00 72 09 00 20 30 20 3D 3D 1C 00 04 00 21 10 00 00 19 00 00 00 17 00 02 00 01 00 59 10 3B 00 01 00 31 00 4F 6E 6C 79 20 6F 6E 65 20 77 69 74 68 20 74 68 65 20 6B 65 79 20 6D 61 79 20 70 61 73 73 20 74 68 72 6F 75 67 68 20 74 68 69 73 20 67 61 74 65 2E 00 00 00 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwbmWildHuntFinalGateScript\nbegin onactivate\n\tif (Player.GetItemCount 0keyuhircine3 > 0)\n\t\tfbmwbmCollapsedIcebergREF.Enable\n\t\tfbmwbmWholeIcebergREF.Disable\n\t\tPlayer.Call fbmwMovetoFunct fbmwbmEndGameTeleportMArker\n\t\tplaybink \"bm_endgame.bik\"\n\t\tSetStage fbmwBMWildHunt 100\n\t\tif (GetDeadCount 0falxscarius2 == 0)\n\t\t\tfbmwFalx1REF.Enable\n\t\tendif\n\telse\n\t\tMessage \"Only one with the key may pass through this gate.\"\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 191 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "fbmwbmCollapsedIcebergREF", 
+        "fbmwbmWholeIcebergREF", 
+        20, 
+        "fbmwFalx1REF", 
+        "0keyUhircine3", 
+        "fbmwMoveToFunct", 
+        "fbmwbmEndGameTeleportMArker", 
+        "fbmwBMWildHunt", 
+        "0falxScarius2"
+    ]
+}

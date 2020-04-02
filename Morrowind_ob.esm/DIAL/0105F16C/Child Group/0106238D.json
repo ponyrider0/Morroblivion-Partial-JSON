@@ -1,0 +1,81 @@
+{
+    "Topic": "fbmwMasterIndex1work", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0106238D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSMasterIndex", 
+    "PNAM - Previous INFO": "0106238C", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Here's your 500 gold. Next I want the Indoranyon Propylon Index.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Its current owner, Divayth Fyr, the old and powerful Telvanni wizard of Tel Fyr, a collector of antiquities, may not want to part with it.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "mwIndexValen", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 14.9999999621286, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSMasterIndex", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0folmsSmirel", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 73, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "55 10 05 00 01 00 72 02 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E F4 01 00 00 39 10 0A 00 02 00 72 05 00 6E 14 00 00 00 53 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+        "SCTX - Result script source": "ShowMap mwTelFyrmapmarker\r\nplayer.removeitem mwindexvalen 1\r\nplayer.additem gold001 500\r\nsetstage fbmwMSMasterIndex 20\r\nmodDisposition player 5", 
+        "References": [
+            20, 
+            "mwTelFyrMapMarker", 
+            "mwIndexValen", 
+            "Gold001", 
+            "fbmwMSMasterIndex"
+        ]
+    }
+}

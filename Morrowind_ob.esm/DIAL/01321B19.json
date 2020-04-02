@@ -1,0 +1,139 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321B19"
+    }, 
+    "EDID - Editor ID": "1oweSmeSmoney2", 
+    "Quests": [
+        "fbmwMSBarbarianBookA"
+    ], 
+    "FULL - Name": "Hold on, I can pay his ransom.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1oweSmeSmoney2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132340B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBarbarianBookA", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Dilborn"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "All right, he can go. Alam, remove his bracers. Dilborn, never show your face to me again, or I'll slice it off with a rusty spoon, you hear me?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3000.00000042573, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0drathasSnerus", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E B8 0B 00 00 02 10 0A 00 02 00 72 03 00 6E B8 0B 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMSBarbarianBookA 110\r\nplayer.removeitem gold001 3000\r\nadditem gold001 3000", 
+                "References": [
+                    20, 
+                    "fbmwMSBarbarianBookA", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1oweSmeSmoney2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132340C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSBarbarianBookA", 
+            "PNAM - Previous INFO": "0132340B", 
+            "Add topics": [
+                "1Dilborn", 
+                "1Hands"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You don't have the cash, outlander. Bring it to me when you do. Dilborn doesn't move unless I have the money in my hands.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 130, 
+                    "Unused": 0, 
+                    "Comparison Value": 3000.00000042573, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0drathasSnerus", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

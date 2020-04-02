@@ -1,0 +1,81 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F82B2F"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICScrib", 
+    "PNAM - Previous INFO": "01F82B2D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Bring me five units of scrib jelly for cure poison and cure blight potions. The closest reliable source of scribs is the Shulk Egg mine, southwest of Balmora, on the west bank of the Ouadi Oadi, near a swinging bridge.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The kwama worker is not aggressive, but the kwama warrior and kwama forager are another matter. Be careful with them. I'll teach you the Detect Creature spell to help you hunt scribs.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICWillow", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICScrib", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0SynnolianSTunifus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 1C 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage fbmwicscrib 1\r\nplayer.addspell 0detectucreature", 
+        "References": [
+            20, 
+            "fbmwICScrib", 
+            "0detectUcreature"
+        ]
+    }
+}

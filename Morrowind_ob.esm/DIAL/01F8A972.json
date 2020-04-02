@@ -1,0 +1,74 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8A972"
+    }, 
+    "EDID - Editor ID": "fbmwfgcodeyes", 
+    "Quests": [
+        "fbmwFGSottilde"
+    ], 
+    "FULL - Name": "Give Code Book.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwfgcodeyes", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A973"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwFGSottilde", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "69 73 53", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Here's your 50 Septims. The guild needs more like you -- obedient and efficient. If you want more orders, just ask.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0eydisSfireTeye", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 7, 
+                    "CompiledSize": 98, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 39 10 0A 00 02 00 72 04 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 05 00 72 06 00 6E 05 00 00 00 A9 10 0D 00 03 00 72 07 00 72 06 00 6E F6 FF FF FF", 
+                "SCTX - Result script source": "player.removeitem 0bkusottildescodebook 1\r\nadditem 0bkusottildescodebook 1\r\nplayer.additem gold001 50\r\nsetstage fbmwfgsottilde 100\r\nmodfactionreaction fbmwfightersguild playerfaction 5\r\nmodfactionreaction 0thievessguild playerfaction -10", 
+                "References": [
+                    20, 
+                    "0bkUsottildescodebook", 
+                    "Gold001", 
+                    "fbmwFGSottilde", 
+                    "fbmwFightersGuild", 
+                    "PlayerFaction", 
+                    "0ThievesSGuild"
+                ]
+            }
+        }
+    ]
+}

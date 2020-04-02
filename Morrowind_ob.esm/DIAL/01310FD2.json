@@ -1,0 +1,484 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310FD2"
+    }, 
+    "EDID - Editor ID": "1protectSBarenziah", 
+    "Quests": [
+        "fbmwTRAssassins", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Protect Barenziah", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01001BF2"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "It is good you were able to do your job.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0KingSHlaaluSHelseth", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B79D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "01001BF2", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You were able to hold off the assassins. Interesting. Perhaps the threat was not as great as it seemed. We commend you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Take this as a show of our appreciation. We are impressed with your efforts so far.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "When you are ready, speak to me about further service to your king.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 89.9999997727718, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0KingSHlaaluSHelseth", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 41, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 58 10 05 00 01 00 72 04 00", 
+                "SCTX - Result script source": "Player.AddItem fbmwHelsethsCollar 1\r\nsetstage fbmwTRAssassins 100\r\naddtopic 1serviceStoSyourSking", 
+                "References": [
+                    20, 
+                    "fbmwHelsethsCollar", 
+                    "fbmwTRAssassins", 
+                    "1serviceStoSyourSking"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B79E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "0100B79D", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Wait in the antechamber outside Barenziah's room at nightfall and protect her from the assassins.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You are to hide behind the screens in the anteroom, and make sure to close the door to the room behind you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "We do not want to let the assassins know they are expected. In the meantime, find out whatever else you can about the attempt.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Report to us when you have completed your task.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0KingSHlaaluSHelseth", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B79F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "0100B79E", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "It would be unwise to station more guards outside her doors, as that would alert the killers to our knowledge. Better to catch them in the act.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "One of our royal guards could be involved in this attempt, so they will be kept occupied elsewhere.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "You will stay in the antechamber outside our mother's chambers tomorrow evening, and deal with these assassins when they arrive.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Close the door behind you and hide behind the screens, so as not to alert them to your presence. Meantime, find out whatever else you can.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0KingSHlaaluSHelseth", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 30, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 50 00 00 00 15 00 0C 00 72 01 00 73 03 00 04 00 20 47 02 00", 
+                "SCTX - Result script source": "setstage fbmwtrassassins 80\r\nset fbmwtrassassins.FightDay to gamedayspassed", 
+                "References": [
+                    "fbmwTRAssassins", 
+                    "GameDaysPassed"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B7A0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "0100B79F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Protect her? Ha! My sympathies lie with the assassins, friend. The Lady is far from helpless, as many have come to find out the hard way.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Still, it is odd that someone would even attempt it. Why kill her? Her son lives only down the hall, and he bears the burden of rule.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "There is no understanding the machinations of madmen or politicians.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0plitiniusSmero", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1protectSBarenziah", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B7A1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "0100B7A0", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "My son has sent you to protect me? Ha! Please, friend...I mean no disrespect.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I'm not laughing at you, or at the seemingly noble sentiments my son exhibits. It just seems odd to me that any would want to have me killed.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And my son knows as well as any that I can protect myself. Still, do as he has commanded you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6F 6E 20", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "He is the king, and it is best to concede to his wishes. Take care, my friend.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0barenziah", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

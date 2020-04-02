@@ -1,0 +1,68 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0102A460"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "0102A45D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "67 61 72", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ah, a visitor.  It's been quite a while since I've had any company, friend.  I'm afraid I don't have much to offer a guest...unless, of course, you've come to hear a barbarian's sad tale.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBrodirGrove", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBrodirGrove", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ulfgarStheSunending", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1barbarianasssadstale\r\nstartquest fbmwbmbrodirgrove", 
+        "References": [
+            "1barbarianAsSsadStale", 
+            "fbmwBMBrodirGrove"
+        ]
+    }
+}

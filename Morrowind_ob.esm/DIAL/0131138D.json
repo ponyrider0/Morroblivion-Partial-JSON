@@ -1,0 +1,293 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0131138D"
+    }, 
+    "EDID - Editor ID": "1NordSvillage", 
+    "Quests": [
+        "fbmwBMSmugglers"
+    ], 
+    "FULL - Name": "Nord village", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1NordSvillage", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8B043"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMSmugglers", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Go there and find out what you can about the Captain's disappearance. It is on the northeastern tip of the island.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0saenusSlusius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NordSvillage", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8B044"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMSmugglers", 
+            "PNAM - Previous INFO": "01F8B043", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "It is on the northeastern tip of Solstheim. These Skaal are nature-worshippers, and they seem to have a special commune with the creatures of this island. If anyone knows what attacked the fort, it will be these Nords.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I will mark their location on your map. I would like you to earn their trust and find out what you can. You may have to remain with them for many days, but I believe you are up to the task.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Here, take this--it was found in one of their tombs. Perhaps they will take it as a sign of good faith.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0saenusSlusius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 60, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 01 00 02 00 20 30 15 00 0A 00 72 02 00 73 02 00 02 00 20 30 39 10 0A 00 02 00 72 03 00 6E 19 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "set fbmwbmsmugglers.saenusfollow to 0\r\nset fbmwbmsmugglers.artoriafollow to 0\r\nsetstage fbmwbmcariusgone 25\r\nplayer.additem 0miscuskulluskaal 1", 
+                "References": [
+                    20, 
+                    "fbmwBMSmugglers", 
+                    "fbmwBMCariusGone", 
+                    "0miscUskullUSkaal"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1NordSvillage", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8B045"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMSmugglers", 
+            "PNAM - Previous INFO": "01F8B044", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Go find those savages and see what they've done with the Cap'n.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0gaeaSartoria", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NordSvillage", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8B046"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMSmugglers", 
+            "PNAM - Previous INFO": "01F8B045", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "They're a bunch of savages that live on the northeast tip of the island. The Skaal, they call themselves. I'll mark their village on your map. A bunch of animal spirit-worshipping freaks...wolves especially. What does that tell you?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I'm sure they know what happened to the Captain. Now you go find out. They're not likely to trust you, so take this. They'll like it. You should stay with them until you find out what's happened. Get in good with them, earn their trust.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMCariusGone", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0gaeaSartoria", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 60, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 01 00 02 00 20 30 15 00 0A 00 72 02 00 73 02 00 02 00 20 30 39 10 0A 00 02 00 72 03 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "set fbmwbmsmugglers.saenusfollow to 0\r\nset fbmwbmsmugglers.artoriafollow to 0\r\nsetstage fbmwbmcariusgone 20\r\nplayer.additem 0miscuskulluskaal 1", 
+                "References": [
+                    20, 
+                    "fbmwBMSmugglers", 
+                    "fbmwBMCariusGone", 
+                    "0miscUskullUSkaal"
+                ]
+            }
+        }
+    ]
+}

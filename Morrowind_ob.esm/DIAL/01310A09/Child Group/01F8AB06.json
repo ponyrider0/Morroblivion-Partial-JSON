@@ -1,0 +1,80 @@
+{
+    "Topic": "1SevenSGraces", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AB06"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTTSevenGraces", 
+    "TPIC - Topic": "1sevenScurses", 
+    "PNAM - Previous INFO": "01F8AB05", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Take this book, \"The Pilgrim's Path.\" It describes where the pilgrimage sites are. After you have completed these pilgrimages, speak with me again.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 54", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The pilgrimage to Ghostgate is the most difficult, but if you have already come this far, the rest should be no trouble for you. You should start by visiting the Ghostgate shrine just north of the gate while you're here.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 67, 
+            "Parameter #1": "Ghostgate", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 132, 
+            "Parameter #1": "0Temple", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 7.99999997980194, 
+            "Function": 73, 
+            "Parameter #1": "0Temple", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwttsevengraces 10\r\nplayer.additem 0bkupilgrimspath 1", 
+        "References": [
+            20, 
+            "fbmwTTSevenGraces", 
+            "0bkUPilgrimsPath"
+        ]
+    }
+}

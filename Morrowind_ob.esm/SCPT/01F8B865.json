@@ -1,0 +1,78 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8B865"
+    }, 
+    "EDID - Editor ID": "fbmwbmWerewolfStart", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 7, 
+        "CompiledSize": 471, 
+        "VariableCount": 7, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 C9 01 00 00 16 00 2D 00 0F 00 29 00 20 72 01 00 58 DF 10 05 00 01 00 72 02 00 20 31 20 3D 3D 20 72 01 00 58 DF 10 05 00 01 00 72 03 00 20 31 20 3D 3D 20 7C 7C 16 00 0D 00 02 00 09 00 20 73 03 00 20 30 20 3D 3D 15 00 09 00 73 01 00 04 00 20 47 04 00 15 00 07 00 73 03 00 02 00 20 31 19 00 00 00 16 00 23 00 04 00 1F 00 20 72 01 00 58 DF 10 05 00 01 00 72 03 00 20 31 20 3D 3D 20 73 05 00 20 30 20 3D 3D 20 26 26 15 00 45 00 73 06 00 40 00 20 58 75 19 3A 00 04 15 00 53 10 00 4F 6E 4D 61 67 69 63 45 66 66 65 63 74 48 69 74 05 00 52 05 00 0C 00 53 03 00 72 65 66 52 01 00 24 13 00 53 06 00 6F 62 6A 65 63 74 53 04 00 43 55 44 49 24 16 00 0D 00 01 00 09 00 20 73 06 00 20 31 20 3D 3D 15 00 07 00 73 05 00 02 00 20 31 19 00 00 00 19 00 00 00 15 00 09 00 73 04 00 04 00 20 30 2E 35 15 00 07 00 47 06 00 02 00 20 31 16 00 12 00 01 00 0E 00 20 47 04 00 20 73 01 00 20 2D 20 32 20 3E 36 10 05 00 01 00 72 07 00 19 00 00 00 19 00 00 00 16 00 2D 00 06 00 29 00 20 72 01 00 58 DF 10 05 00 01 00 72 02 00 20 30 20 3D 3D 20 72 01 00 58 DF 10 05 00 01 00 72 03 00 20 30 20 3D 3D 20 26 26 15 00 07 00 47 06 00 02 00 20 30 15 00 07 00 73 01 00 02 00 20 30 15 00 07 00 73 03 00 02 00 20 30 16 00 17 00 01 00 13 00 20 72 01 00 58 DF 10 05 00 01 00 72 03 00 20 30 20 3D 3D 76 19 1B 00 02 15 00 53 10 00 4F 6E 4D 61 67 69 63 45 66 66 65 63 74 48 69 74 05 00 52 05 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwbmWerewolfStart\nshort infectday\nshort doonce\nshort fQuestDelayTime\nshort DoOnceHandle\nshort success\nbegin gamemode\n\tif (Player.IsSpellTarget 0werewolfSblood == 1)||(Player.IsSpellTarget fbmwbmwerewolfbloodab == 1)\n\t\tif(doonce == 0)\n\t\t\tset infectday to GameDaysPassed\n\t\t\tset doonce to 1\n\t\tendif\n\t\tif(Player.IsSpellTarget fbmwbmwerewolfbloodab == 1)&&(DoOnceHandle == 0)\n\n\t\t\tset success to\tSetEventHandler \"OnMagicEffectHit\" fbmwbmremovesenieslupinusability \"ref\"::Player \"object\"::\"CUDI\"\n\t\t\tif (success == 1)\n\t\t\t\tset DoOnceHandle to 1\n\t\t\tendif\n\t\tendif\n\t\tset fQuestDelayTime to 0.5\n\t\tset fbmwbmplayerisinfectedwerewolf to 1\n\t\tif GameDaysPassed - infectday > 2\n\t\t\tStartQuest fbmwBMAAAImAWere\n\t\tendif\n\tendif\n\tif (Player.IsSpellTarget 0werewolfSblood == 0)&&(Player.IsSpellTarget fbmwbmwerewolfbloodab == 0)\n\t\tset fbmwbmplayerisinfectedwerewolf to 0\n\t\tset infectday to 0\n\t\tset doonce to 0\n\t\tif(Player.IsSpellTarget fbmwbmwerewolfbloodab == 0)\n\t\t\tRemoveEventHandler \"OnMagicEffectHit\" fbmwbmremovesenieslupinusability\n\t\tendif\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 107 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "infectday"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 F4 FE DE 10", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "fQuestDelayTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnceHandle"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "FE DE 10 08 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "success"
+        }
+    ], 
+    "References": [
+        20, 
+        "0werewolfSblood", 
+        "fbmwbmwerewolfbloodab", 
+        "GameDaysPassed", 
+        "fbmwbmremovesenieslupinusability", 
+        "fbmwbmplayerisinfectedwerewolf", 
+        "fbmwBMAAAImAWere"
+    ]
+}

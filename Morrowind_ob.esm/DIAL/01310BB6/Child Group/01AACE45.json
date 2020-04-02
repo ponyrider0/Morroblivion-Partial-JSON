@@ -1,0 +1,111 @@
+{
+    "Topic": "1Apologies", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AACE45"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSApologies", 
+    "PNAM - Previous INFO": "01AACE44", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I'm afraid I was rather drunk last night when I ran into Trebonius Artorius, that arrogant fool.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "It seems that the drink took over my tongue, and I called him a Flat-Head. Now I have a horrid rash.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 53", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "No matter what I do, now matter how many potions I use or spells I cast, it won't go away. I've tried everything!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 53", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "If you give him my most sincere apologies, maybe he'll make it go away. I'd do it myself but I'm feeling a little under the weather.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 53", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "I'll pay you 50 gold for your trouble.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0pUcureUcommonUunique", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSApologies", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tarerSbraryn", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1Apologies1", 
+        "1Apologies2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage FBMWMSApologies 1", 
+        "References": [
+            "fbmwMSApologies"
+        ]
+    }
+}

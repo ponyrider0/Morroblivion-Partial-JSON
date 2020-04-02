@@ -1,0 +1,71 @@
+{
+    "Topic": "1KingSLlethanAsSdeath", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BA30"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRDBHunt", 
+    "PNAM - Previous INFO": "01F8BA2F", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 69 75", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "So. According to a broadside sheet called 'The Common Tongue', King Helseth poisoned many people in the West, so maybe he poisoned Athyn Llethan. Very interesting. I'd like to see a copy of 'The Common Tongue', if you can bring me one. Thank you. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 69 75", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You've done well. But now... we lack sources of information in Almalexia's Temple. Could you help me find a Temple informant?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 24.9999999368811, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTR05People", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0TieniusSDelitian", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 36 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage fbmwtr05people 100\r\nstartquest fbmwtr06temple\r\naddtopic 1templesinformant", 
+        "References": [
+            "fbmwTR05People", 
+            "fbmwTR06Temple", 
+            "1TempleSinformant"
+        ]
+    }
+}

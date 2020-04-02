@@ -1,0 +1,92 @@
+{
+    "Topic": "1duties", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F0A281"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwChargen", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1Balmora", 
+        "1SouthSWall", 
+        "1CaiusSCosades"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 67 65", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "This package came with the news of your arrival. You are to take it to Caius Cosades in the town of Balmora.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Go to the South Wall Cornerclub, and ask for Caius Cosades -- they'll know where to find him. Serve him as you would serve the Emperor himself.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I also have a letter for you, and a disbursal to your name.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0chargenScaptain", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 7, 
+            "CompiledSize": 92, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 57 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 07 00 6E 01 00 00 00 1C 00 02 00 73 10 02 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwMQ01 1\r\nSetStage fbmwChargen 100\r\nplayer.additem gold001, 87\r\nplayer.additem 0bkUa1U1Ucaiuspackage, 1\r\nplayer.additem 0bkUa1U1Udirectionscaiuscosades, 1\r\nAAMWChargenDoor2REF.Unlock", 
+        "References": [
+            20, 
+            "AAMWChargenDoor2REF", 
+            "fbmwMQ01", 
+            "fbmwChargen", 
+            "Gold001", 
+            "0bkUa1U1Ucaiuspackage", 
+            "0bkUa1U1Udirectionscaiuscosades"
+        ]
+    }
+}

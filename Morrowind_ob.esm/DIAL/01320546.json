@@ -1,0 +1,80 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01320546"
+    }, 
+    "EDID - Editor ID": "1someSnotoriousSthieves2", 
+    "Quests": [
+        "fbmwMVBanditVictim"
+    ], 
+    "FULL - Name": "I don't have the time.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1someSnotoriousSthieves2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322F6B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMVBanditVictim", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1busy", 
+                "1need"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Well! I'm sorry you're too busy to help out someone in need. Goodbye to you, then!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0aetaSwaveTbreaker", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmvbanditvictim 40", 
+                "References": [
+                    "fbmwMVBanditVictim"
+                ]
+            }
+        }
+    ]
+}

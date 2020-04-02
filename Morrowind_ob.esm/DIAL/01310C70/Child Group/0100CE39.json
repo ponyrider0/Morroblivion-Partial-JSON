@@ -1,0 +1,91 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100CE39"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ08", 
+    "PNAM - Previous INFO": "0101DD3D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 6E 67", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Continue pursuing the Nerevarine prophecies, as the Emperor commands.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "First, go to the Hall of Wisdom and Justice, and get Mehra Milo to help you find the lost prophecies.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "She's being watched; if something has gone wrong, find her private quarters; she'll leave you a message there under the code word 'amaya.'", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "Then take the lost prophecies to Nibani Maesa. From that point, you'll have to follow her directions, and follow the prophecies. Good luck.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ08", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0caiusScosades", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 31, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 21 10 00 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "SetStage fbmwMQ09 1\r\nmwNoteToAmaya.Enable\r\nAddTopic 1promotedStoSOperative", 
+        "References": [
+            "mwNoteToAmaya", 
+            "fbmwMQ09", 
+            "1promotedStoSOperative"
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F819AF"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwICAdvancement", 
+    "PNAM - Previous INFO": "01F82B13", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Hello, outlander. My name is Kaye, and I'm in charge of the volunteer shrine sergeants for the cult.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Are you ready for a shrine sergeant assignment?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICMissingLimeware", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 132, 
+            "Parameter #1": "0ImperialSCult", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0Kaye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwickayeworkno", 
+        "fbmwickayeworkyes"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 9, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00", 
+        "SCTX - Result script source": "startquest fbmwicmissinglimeware", 
+        "References": [
+            "fbmwICMissingLimeware"
+        ]
+    }
+}

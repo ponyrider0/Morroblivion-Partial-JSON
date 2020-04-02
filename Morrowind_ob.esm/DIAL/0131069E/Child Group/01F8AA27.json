@@ -1,0 +1,87 @@
+{
+    "Topic": "1donateSCyrodilicSbrandy", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AA27"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwICDinner", 
+    "PNAM - Previous INFO": "01F8AA26", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6C 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Sorry. I've only two bottles, and you're welcome to one of them for the cult. But I happen to know that Banor Seran just took delivery of some Cyrodiilic brandy.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6C 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "He's probably got it stored in the closet in the hall  just right of the bar. Now of course it would be WRONG to steal that brandy. Even though EVERYONE knows the Council club is just a front for those Camonna Tong gangsters. But for such a good cause...", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 0, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICDinner", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICRich", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0bacolaScloscius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 1B 00 02 00 20 31", 
+        "SCTX - Result script source": "player.additem potioncyrodiilicbrandy 1\r\nset fbmwicalms.bacolagave to 1", 
+        "References": [
+            20, 
+            "PotionCyrodiilicBrandy", 
+            "fbmwICalms"
+        ]
+    }
+}

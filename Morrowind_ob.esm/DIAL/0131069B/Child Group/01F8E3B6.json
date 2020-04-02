@@ -1,0 +1,78 @@
+{
+    "Topic": "1mythopoeicSenchantments", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E3B6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQTheBackPath", 
+    "PNAM - Previous INFO": "01F8E3B5", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 51", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I'm not sure I can explain. In his search for the secrets of immortality, Kagrenac sought to control supernatural forces that you might call 'divine'.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 51", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "This artifact -- called 'Wraithguard -- was one of the tools that he created for this purpose. Some believed his tampering with such forces was profane, and terribly dangerous.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "54 65 6D", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "You know the Dwemer disappeared? His use of these tools may have been responsible.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0miscUwraithguardUnoUequip", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "FBMWTempDwemer", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "mwMQBackPath01Dangerous", 
+        "mwMQBackPath01Restore"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

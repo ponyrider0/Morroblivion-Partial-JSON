@@ -1,0 +1,82 @@
+{
+    "Topic": "1Talk", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AADD4F"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "MorroDefaultQuest", 
+    "PNAM - Previous INFO": "01AADD4E", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 41", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You want to speak to Sul-Matuul. You want to speak to Nibani Maesa. Have they sent for you?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 67, 
+            "Parameter #1": "UrshilakuSCamp", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 32, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0sulTmatuul", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 32, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0nibaniSmaesa", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0Ashlanders", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ06", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwMQ06NoNotSentfor", 
+        "fbmwMQ06Sentfor"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

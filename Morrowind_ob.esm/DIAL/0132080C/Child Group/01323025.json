@@ -1,0 +1,85 @@
+{
+    "Topic": "1DivineSIntervention1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323025"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICJonHawker", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1health"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Thank you, friend. And goodbye. But before I go, let me give you a gift. They took everything, but I managed to keep these gloves hidden.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I've always been fond of them, and their maker. Wear them in good health, and in remembrance of me.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0JonSHawker", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0scUdivineintervention", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 61, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 05 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwicjonhawkerfree 5\r\nplayer.removeitem 0scudivineintervention 1\r\nplayer.additem fbmwzenitharwhispers 1\r\nmodpcfame 1", 
+        "References": [
+            20, 
+            "fbmwICJonHawkerFree", 
+            "0scUdivineintervention", 
+            "fbmwZenitharWhispers"
+        ]
+    }
+}

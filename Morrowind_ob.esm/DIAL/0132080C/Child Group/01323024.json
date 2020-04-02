@@ -1,0 +1,103 @@
+{
+    "Topic": "1DivineSIntervention1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323024"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICAmaNin", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1fortune", 
+        "1luck", 
+        "1clothes", 
+        "1luck"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Bless you, and all your endeavors. Farewell, and good fortune. But before I go, please -- let me at least give you a gift.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "All I have is this lucky change of clothes I've carried with me on my travels. I never wear them -- I just keep them as a good luck charm.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Perhaps you can wear them in remembrance of me, and in token of your generosity to a stranger.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0AmaSNinUDisguiseMara", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0scUdivineintervention", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 9, 
+            "CompiledSize": 140, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 05 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 16 00 0D 00 01 00 09 00 20 47 06 00 20 35 30 20 3C 9E 10 05 00 01 00 72 07 00 18 00 0E 00 01 00 0A 00 20 47 06 00 20 31 30 30 20 3C 9E 10 05 00 01 00 72 08 00 17 00 02 00 01 00 9E 10 05 00 01 00 72 09 00 19 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwicamaninfree 5\r\nplayer.removeitem 0scudivineintervention 1\r\nplayer.additem 0marasuskirt 1\r\nplayer.additem 0marasublouse 1\r\nIF FreedSlavesCounter < 50\r\n   MoveTo mwFreedSlaveMarker\r\nELSEIF FreedSlavesCounter < 100\r\n   MoveTo mwFreedSlaveMarker2\r\nELSE\r\n   MoveTo mwFreedSlavemarker3\r\nENDIF", 
+        "References": [
+            20, 
+            "fbmwICAmaNinFree", 
+            "0scUdivineintervention", 
+            "0MarasUSkirt", 
+            "0MarasUBlouse", 
+            "FreedSlavesCounter", 
+            "mwFreedSlaveMarker", 
+            "mwFreedSlaveMarker2", 
+            "mwFreedSlaveMarker3"
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "Topic": "1mythopoeicSenchantments", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010020FF"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQTheBackPath", 
+    "PNAM - Previous INFO": "01002107", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "51 54 68", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I've studied Kagrenac's Planbook and Journals. I know what to do. The artifact simply must be harmonized with your personal magicka signature.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 51", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "However, the process is dangerous. You will certainly be injured. I am certain, however, that you will survive the process.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 51", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Are you ready for me to activate Wraithguard and harmonize it to your magicka signature?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 230.000000419306, 
+            "Function": 14, 
+            "Parameter #1": 8, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0miscUwraithguardUnoUequip", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 79, 
+            "Parameter #1": "fbmwMQTheBackPath", 
+            "Parameter #2": 1
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 24.9999999368811, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQTheBackPath", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "FBMWTempDwemer", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "mwMQBackPath03WraithguardYes", 
+        "mwMQBackPath03WraithguardNo"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

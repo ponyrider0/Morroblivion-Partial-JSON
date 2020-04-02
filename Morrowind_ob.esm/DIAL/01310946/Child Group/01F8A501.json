@@ -1,0 +1,82 @@
+{
+    "Topic": "1vampireShunter", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A501"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "MorroDefaultQuest", 
+    "PNAM - Previous INFO": "01F8A500", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes, he came nosing about our lair some weeks ago. Some of my spies have tracked him to the city of Ald'ruhn. It is not enough for you to kill him, though.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I want him killed in broad daylight, with plenty of folk there to see his death. Let it serve as an example for all who would dare intrude in Ashmelech.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVAVampChild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 119.999999697029, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVAVampHunter", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0dhaunayneSaundae", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwvavamphunterno", 
+        "fbmwvavamphunteryes"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwvavamphunter 10\r\naddtopic 1futuresrewards", 
+        "References": [
+            "fbmwVAVampHunter", 
+            "1futureSrewards"
+        ]
+    }
+}

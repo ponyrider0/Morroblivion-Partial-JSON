@@ -1,0 +1,111 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321773"
+    }, 
+    "EDID - Editor ID": "1myScollection5", 
+    "Quests": [
+        "fbmwMSClutterCollector"
+    ], 
+    "FULL - Name": "Yes, I'm interested.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1myScollection5", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323391"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSClutterCollector", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1glass", 
+                "1Imperial", 
+                "1silver", 
+                "1reward"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Wonderful! If you'll look on the shelf in the back corner, you'll notice the glaring absence of a particular redware pot.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The pot is tall, with vertical lines going down its side, and is shaped much like the adjacent blue glass pot.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I also require a complete set of Imperial silverware -- that's fork, knife, and spoon. Finally, I require a common metal plate.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "The plate is yellow in color and features a picture of the sun in the center. Find these for me, Champion, and I will reward you well.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0detritusScaria", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmscluttercollector 20\r\nmoddisposition player 10", 
+                "References": [
+                    "fbmwMSClutterCollector", 
+                    20
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "Topic": "1stronghold", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100FC90"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRStronghold", 
+    "PNAM - Previous INFO": "0100FC8F", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The foundations for your stronghold are complete. If you wish to build the next stage of your stronghold, you must hire guards to garrison it.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRStronghold", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 169.999999570791, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRStronghold", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0galsaSgindu", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 26, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 55 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "mwIndarysManorMapMarker.Enable\r\nShowMap mwIndarysManorMapMarker\r\nAddTopic 1hireSguards", 
+        "References": [
+            "mwIndarysManorMapMarker", 
+            "1hireSguards"
+        ]
+    }
+}

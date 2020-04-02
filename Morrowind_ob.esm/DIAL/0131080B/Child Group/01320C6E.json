@@ -1,0 +1,96 @@
+{
+    "Topic": "1littleSsuggestion", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320C6E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQHlaaluCurio", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1HlaaluScouncilors", 
+        "1DramSBero", 
+        "1Hortator", 
+        "1OrvasSDren", 
+        "1NevenaSUles", 
+        "1VelandaSOmani", 
+        "1DrenSPlantation", 
+        "1Talk", 
+        "1YnglingSHalfTTroll"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I am sure you can persuade Dram Bero to support you as Hortator... if you can find him. Orvas Dren has Nevena Ules and Velanda Omani in his pocket.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You might want to make a little trip to the Dren Plantation before talking to them. And then there's Yngling Half-Troll.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQHlaaluCurio", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0OrvasSDrenSDruglord", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0crassiusScurio", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1HlaaluScouncilors"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 84, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 01 00 00 00 39 10 0A 00 02 00 72 05 00 6E 01 00 00 00 39 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwMQHlaaluDram 1\r\nSetStage fbmwMQHlaaluDren 1\r\nSetStage fbmwMQHlaaluOmani 1\r\nSetStage fbmwMQHlaaluUles 1\r\nSetStage fbmwMQHlaaluYngling 1\r\nSetStage fbmwMQHlaalu 1", 
+        "References": [
+            "fbmwMQHlaaluDram", 
+            "fbmwMQHlaaluDren", 
+            "fbmwMQHlaaluOmani", 
+            "fbmwMQHlaaluUles", 
+            "fbmwMQHlaaluYngling", 
+            "fbmwMQHlaalu"
+        ]
+    }
+}

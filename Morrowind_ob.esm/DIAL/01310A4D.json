@@ -1,0 +1,151 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310A4D"
+    }, 
+    "EDID - Editor ID": "1lineSofSwork", 
+    "Quests": [
+        "fbmwEBActor"
+    ], 
+    "FULL - Name": "Line of Work", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1lineSofSwork", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AB0C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwEBActor", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "72 63 65", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Oh, to be an actor. To act, perchance to earn some money!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwEBActor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0marcelSmaurard", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1lineSofSwork", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AB0D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwEBActor", 
+            "PNAM - Previous INFO": "01F8AB0C", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6D 77 45", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am an actor! Or at least I hope to be. I am the poor player who struts and frets for a while on a stage and then has lunch. I am full of sound and furiousness!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "63 65 6C", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Oh, if there were but a good theater troupe in this town, I could give up selling these baubles. Oh! Woe is me!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwEBActor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwEBActor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0marcelSmaurard", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1lineSofSwork1", 
+                "1lineSofSwork2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage fbmwebactor 40\r\naddtopic 1theaterstroupe", 
+                "References": [
+                    "fbmwEBActor", 
+                    "1theaterStroupe"
+                ]
+            }
+        }
+    ]
+}

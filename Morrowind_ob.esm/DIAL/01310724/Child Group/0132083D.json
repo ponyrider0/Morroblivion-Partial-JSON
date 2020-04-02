@@ -1,0 +1,82 @@
+{
+    "Topic": "1CalderaSebonySmines", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0132083D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRCalderaDisrupt", 
+    "PNAM - Previous INFO": "01004AFB", 
+    "Add topics": [
+        "1ebony", 
+        "1need", 
+        "1HouseSRedoran"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Killing Odral Helvi and Stlennius Vibato will certainly shut down the ebony mines, but I wish you had chosen a more subtle route.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "There are political problems with... Well, with issues I am sure you do not need a lecture on. I will support you as a Councilman of House Redoran.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 84, 
+            "Parameter #1": "0odralShelvi", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 84, 
+            "Parameter #1": "0stlenniusSvibato", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0garisaSllethri", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHRCalderaDisrupt 100", 
+        "References": [
+            "fbmwHRCalderaDisrupt"
+        ]
+    }
+}

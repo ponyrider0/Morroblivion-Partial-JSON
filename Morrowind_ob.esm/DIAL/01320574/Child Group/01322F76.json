@@ -1,0 +1,95 @@
+{
+    "Topic": "1joinStheSThievesSGuild1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322F76"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTGAdvancement", 
+    "PNAM - Previous INFO": "01322F75", 
+    "Add topics": [
+        "1ThievesSGuild", 
+        "1Talk", 
+        "1jobs", 
+        "1Advancement", 
+        "1priceSonSyourShead", 
+        "1Talk"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You are now a member of the Thieves Guild. Welcome, brother.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Talk to me when you want some odd jobs to do and when you think you're ready for advancement.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "If you have a price on your head, there are those you can talk to as well.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 71, 
+            "Parameter #1": "0ThievesSGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 7.99999997980194, 
+            "Function": 73, 
+            "Parameter #1": "0ThievesSGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 131, 
+            "Parameter #1": 0, 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+        "SCTX - Result script source": ";Message \"Membership Accepted...\"\r\nSetStage fbmwTGAdvancement 1", 
+        "References": [
+            "fbmwTGAdvancement"
+        ]
+    }
+}

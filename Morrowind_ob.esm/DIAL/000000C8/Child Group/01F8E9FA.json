@@ -1,0 +1,90 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E9FA"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSThief", 
+    "PNAM - Previous INFO": "01F8E9F9", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 4, 
+                "Emotion Value": 65, 
+                "Unused": "77 4D 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I'm sorry you had to see that.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "She's been like this for months now, and no one can seem to get through to her. We have no idea what \"it\" is, or why she's become so paranoid about it.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 4, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Any attempts to discuss the matter with her have ended badly. Some even violently. That's why we bring a guard with us when we visit. As a friend of the family, I can't just leave her to her own devices.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 6, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "I've heard, however, that she was seen talking to Elbert Nermarc recently. Perhaps he might know more.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSThief", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0AlvanSLlarys", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "AddTopic 1ElbertSNermarc\r\nAddTopic 1GolenaSSadri", 
+        "References": [
+            "1ElbertSNermarc", 
+            "1GolenaSSadri"
+        ]
+    }
+}

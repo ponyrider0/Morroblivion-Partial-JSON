@@ -1,0 +1,117 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321CD9"
+    }, 
+    "EDID - Editor ID": "1shareSaSgift1", 
+    "Quests": [
+        "fbmwRomanceAhnassi"
+    ], 
+    "FULL - Name": "Thanks!", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1shareSaSgift1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323448"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwRomanceAhnassi", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Ahnassi", 
+                "1trueSandSgoodSfriend", 
+                "1Ahnassi", 
+                "1RedoranSCompound", 
+                "1Vivec", 
+                "1clothes", 
+                "1Ahnassi"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "And Ahnassi has a NEW secret to share with her true and good friend. Guess what Ahnassi hears? Beldrose Dralor. You know this name?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The biggest fatcat factor of Redoran? Guess who has a very special key to very special chests in the Redoran Treasury at the Redoran Compound in Vivec?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "YOU GUESSED! Beldrose Dralor. But you do not guess where he KEEPS this key! It is so silly! You won't believe! In HIS WIFE'S CLOTHES CHEST!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "In his manor on tier-top! What do you think? Is this not a fine gift Ahnassi shares?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ahnassi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 82, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWRomanceAhnassi 60\r\nplayer.additem 0extravagantUshirtU02 1\r\nplayer.additem 0bookskillUshortSblade5 1\r\nplayer.additem 0extravagantUpantsU02 1\r\nsetstage FBMWRomanceAhnassi 50", 
+                "References": [
+                    20, 
+                    "fbmwRomanceAhnassi", 
+                    "0extravagantUshirtU02", 
+                    "0BookSkillUShortSBlade5", 
+                    "0extravagantUpantsU02"
+                ]
+            }
+        }
+    ]
+}

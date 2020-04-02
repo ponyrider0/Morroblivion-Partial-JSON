@@ -1,0 +1,70 @@
+{
+    "Topic": "1assignment", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BB6E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwCOAdvancement", 
+    "PNAM - Previous INFO": "01F8BB6D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Confound it all. I had hoped Carnius wouldn't catch wind of our situation. I had things under control until recently... It's this crazy Nord. Hroldar the Strange, we've taken to calling him.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 43", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "He's been hanging around for a while, ranting about how we're ruining the land, and if we don't stop, we'll incur the wrath of Nature itself. He was simply a nuisance, but now it's apparent we have to get rid of him.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwCO2", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0FalcoSGalenus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1hroldarsthesstrange\r\naddtopic 1getsridsofshim", 
+        "References": [
+            "1HroldarStheSStrange", 
+            "1getSridSofShim"
+        ]
+    }
+}

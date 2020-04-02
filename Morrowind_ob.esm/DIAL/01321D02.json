@@ -1,0 +1,77 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321D02"
+    }, 
+    "EDID - Editor ID": "1necromancers2", 
+    "Quests": [
+        "fbmwMGSharnNecro"
+    ], 
+    "FULL - Name": "Teach me a Skeleton Summoning", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1necromancers2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323443"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGSharnNecro", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "As you wish. It's a simple matter, really. [Sharn takes you aside and teaches you how to summon a skeletal minion.] Now. Remember.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You said you'd keep quiet about this.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 13, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 1C 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "player.addspell 0summonsskeletalsminion", 
+                "References": [
+                    20, 
+                    "0summonSskeletalSminion"
+                ]
+            }
+        }
+    ]
+}

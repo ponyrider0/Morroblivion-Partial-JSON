@@ -1,0 +1,69 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0102A4BF"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "0100BFA7", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 72 65", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Pardon me. But there's a very strange man in my house, and he won't leave. Will you go get him out of there, please?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "fbmwdreamergindrala", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ07", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0gindralaShleran", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 26, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 58 10 05 00 01 00 72 02 00 36 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "fbmwdreamergindralaref.enable\r\naddtopic 1strangesman\r\nstartquest fbmwasleeperdreamer02", 
+        "References": [
+            "fbmwdreamergindralaref", 
+            "1strangeSman", 
+            "fbmwASleeperDreamer02"
+        ]
+    }
+}

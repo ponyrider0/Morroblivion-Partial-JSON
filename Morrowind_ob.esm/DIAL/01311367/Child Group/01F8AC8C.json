@@ -1,0 +1,110 @@
+{
+    "Topic": "1ElvenSancestry", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AC8C"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMFalmer", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 100, 
+                "Unused": "65 6C 6C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I have long believed that I, Athellor, have the blood of the Falmer flowing through my veins!  I'm on a journey of self-discovery.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "65 6C 6C", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I wish to know who I am, and where I came from.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "65 6C 6C", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I'm hoping that if I find some evidence of the Falmer's existence, I will better understand myself, and my past.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 4, 
+                "Emotion Value": 50, 
+                "Unused": "65 6C 6C", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "But alas, I'm a noble, not an adventurer.  That's why I've come to this establishment.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "65 6C 6C", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "I'm hoping to hire an explorer to do some of the more... physical work. Another drink?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athellor", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMFalmer", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMFalmer", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 55, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 39 10 0A 00 02 00 72 02 00 6E 1E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "moddisposition player 10\r\nsetstage fbmwBMFalmer 30\r\nplayer.additem potioncyrodiilicbrandy 1\r\naddtopic 1hireSanSexplorer", 
+        "References": [
+            20, 
+            "fbmwBMFalmer", 
+            "PotionCyrodiilicBrandy", 
+            "1hireSanSexplorer"
+        ]
+    }
+}

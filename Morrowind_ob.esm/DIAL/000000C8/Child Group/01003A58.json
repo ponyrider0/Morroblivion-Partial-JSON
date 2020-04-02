@@ -1,0 +1,72 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01003A58"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "01F8E9AC", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Hello, outlander.  No time to talk, I'm afraid.  There's much work to be done. Yes, much to do..  ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "No time for silly fancies, like drinking, dancing... oh, but what I wouldn't give to meet someone new.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 39.9999998990097, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSMatchMaker", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0MarenaSGilnith", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 36, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "startquest fbmwMSMatchMaker\r\naddtopic 1busy\r\naddtopic 1meetSsomeoneSnew\r\naddtopic 1MarenaSGilnith", 
+        "References": [
+            "fbmwMSMatchMaker", 
+            "1busy", 
+            "1MeetSsomeoneSnew", 
+            "1MarenaSGilnith"
+        ]
+    }
+}

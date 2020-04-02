@@ -1,0 +1,126 @@
+{
+    "Topic": "1SjoringSHardTHeart", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "013209B6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTGKillIenith", 
+    "PNAM - Previous INFO": "01F8A2C7", 
+    "Add topics": [
+        "1FightersSGuild", 
+        "1luck", 
+        "1ThievesSGuild", 
+        "1Vvardenfell", 
+        "1skeleton", 
+        "1Hammerfell", 
+        "1jobs"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You already killed Sjoring, too, outlander? What? You're the new Master of the Fighters Guild, too? Oh, what luck!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "With you in charge, I'm sure both guilds will prosper. Since you've saved the Thieves Guild here in Vvardenfell, I think you deserve this.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "It's the Skeleton Key--the most perfect tool ever created for lockpicking. I found it when I lived in Hammerfell. Use it wisely.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "Now, I have new jobs for you to do.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0stacey", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 8.99999997727718, 
+            "Function": 73, 
+            "Parameter #1": "fbmwFightersGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 133, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 84, 
+            "Parameter #1": "0sjoringShardTheart", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 63, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E E8 03 00 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 0F 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0F 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwtgkillhardheart 100\r\nplayer.additem lockpick 1000\r\nmodfactionreaction 0thievessguild playerfaction 15\r\nmoddisposition player 15", 
+        "References": [
+            20, 
+            "fbmwTGKillHardHeart", 
+            "Lockpick", 
+            "0ThievesSGuild", 
+            "PlayerFaction"
+        ]
+    }
+}

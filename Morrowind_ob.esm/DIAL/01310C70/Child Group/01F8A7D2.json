@@ -1,0 +1,60 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A7D2"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGAdvancement", 
+    "PNAM - Previous INFO": "01001B96", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "62 75 6D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "One of the magistrates has been giving the Fighters Guild trouble. I don't want the Fighters Guild to have any more trouble from Rufinus Alleius.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGSilenceTaxgirl", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0lorbumolSgroTaglakh", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1rufinussalleius\r\nstartquest fbmwfgsilencemagistrate", 
+        "References": [
+            "1RufinusSAlleius", 
+            "fbmwFGSilenceMagistrate"
+        ]
+    }
+}

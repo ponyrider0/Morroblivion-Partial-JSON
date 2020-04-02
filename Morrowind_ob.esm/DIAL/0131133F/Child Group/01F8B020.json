@@ -1,0 +1,83 @@
+{
+    "Topic": "1oldSmanAsSanguish", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B020"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMTymvaul", 
+    "PNAM - Previous INFO": "01F8B01F", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "My son, Tymvaul, was getting water, and fell into our well.  I am so lonely without him.  Ever since his mother passed, Tymvaul has been my only companion.  The pool beneath the well leads to a series of ice caves known as Rimhull.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "So my boy may still be alive.  But I am too frail to search the caves, and everyone else in the village is convinced Tymvaul is already dead.  I must know if he still lives!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Please, will you enter Rimhull and learn the fate of my son?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMTymvaul", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0lassnr", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1oldSmanAsSanguish1", 
+        "1oldSmanAsSanguish2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmtymvaul 10", 
+        "References": [
+            "fbmwBMTymvaul"
+        ]
+    }
+}

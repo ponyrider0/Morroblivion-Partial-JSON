@@ -1,0 +1,66 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8ACEE"
+    }, 
+    "EDID - Editor ID": "fbmwVAVampMastriusQuest", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 3, 
+        "CompiledSize": 379, 
+        "VariableCount": 5, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 6D 01 00 00 16 00 15 00 0F 00 11 00 20 58 3A 10 05 00 01 00 72 02 00 20 39 30 20 3D 3D 16 00 0D 00 03 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 12 00 66 02 00 0D 00 20 72 01 00 58 0E 10 04 00 01 00 08 00 15 00 12 00 66 04 00 0D 00 20 72 01 00 58 0E 10 04 00 01 00 0A 00 15 00 07 00 73 01 00 02 00 20 31 18 00 0D 00 03 00 09 00 20 73 01 00 20 31 20 3D 3D 15 00 0F 00 66 03 00 0A 00 20 66 02 00 20 30 2E 35 20 2A 15 00 0F 00 66 05 00 0A 00 20 66 04 00 20 30 2E 35 20 2A 15 00 07 00 73 01 00 02 00 20 32 18 00 0D 00 05 00 09 00 20 73 01 00 20 32 20 3D 3D 00 10 4B 00 01 00 37 00 59 6F 75 20 66 65 65 6C 20 74 68 65 20 6C 69 66 65 20 61 6E 64 20 73 74 72 65 6E 67 74 68 20 64 72 61 69 6E 69 6E 67 20 66 72 6F 6D 20 79 6F 75 72 20 62 6F 64 79 2E 00 00 01 00 01 00 08 00 43 6F 6E 74 69 6E 75 65 1C 00 01 00 FB 18 05 00 01 00 66 03 00 1C 00 01 00 68 14 07 00 02 00 0A 00 66 05 00 39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00 15 00 07 00 73 01 00 02 00 20 33 19 00 00 00 19 00 00 00 16 00 13 00 01 00 0F 00 20 58 54 10 05 00 01 00 72 03 00 20 30 20 3E 39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwVAVampMastriusQuest\r\n\r\nshort done\r\nfloat VAcurrenthealth\r\nfloat VAhalfhealth\r\nfloat VACurrentfatigue\r\nfloat VAhalffatigue\r\n\r\nbegin Gamemode\r\nif (GetStage fbmwVAVampCurse == 90)\r\n\tif (done == 0)\r\n\t\tset VAcurrenthealth to player.getav health\r\n\t\tset VACurrentfatigue to player.getav fatigue\r\n\t\tset done to 1\r\n\telseif (done == 1)\r\n\t\tset VAhalfhealth to (VAcurrenthealth * 0.5)\r\n\t\tset VAhalffatigue to (VACurrentfatigue * 0.5)\r\n\t\tset done to 2\r\n\telseif (done == 2)\r\n\t\tMessagebox \"You feel the life and strength draining from your body.\", \"Continue\"\r\n\t\tplayer.SetCurrentHealth VAhalfhealth\r\n\t\tplayer.modav2 fatigue VAhalffatigue\r\n\t\tsetstage fbmwVAVampCurse 90\r\n\t\tset done to 3\r\n\tendif\r\n\t\t\r\nendif\r\n\t\r\nif (GetDeadCount 0mastrius > 0)\r\n\tsetstage fbmwvavampcurse 100\r\nendif\r\nend\r\n", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "done"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "VAcurrenthealth"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "VAhalfhealth"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "VACurrentfatigue"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "VAhalffatigue"
+        }
+    ], 
+    "References": [
+        20, 
+        "fbmwVAVampCurse", 
+        "0mastrius"
+    ]
+}

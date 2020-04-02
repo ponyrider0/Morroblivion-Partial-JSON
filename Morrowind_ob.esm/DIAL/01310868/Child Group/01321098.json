@@ -1,0 +1,107 @@
+{
+    "Topic": "1BladesSTrainers", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01321098"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwBladesTrainers", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1profit", 
+        "1Blades", 
+        "1Training"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes. We aren't trying to make a profit off our fellow Blades, and as you rise in rank, your discount increases.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Still, we have to live, and training isn't cheap. Well... basic skill training -- if you don't know very much -- can be pretty cheap.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "But advanced skill training -- for example, in your major specialties, that can get expensive. Here. I don't use this cuirass and helm any more.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "Maybe you can get a few drakes for it, and put them in your personal training fund.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0rithleen", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 73, 
+            "Parameter #1": "0Blades", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 0B 00 00 00", 
+        "SCTX - Result script source": "player.additem 0steelUcuirass 1\r\nplayer.additem 0steelUhelm 1\r\nsetstage fbmwBladesTrainers 11", 
+        "References": [
+            20, 
+            "0steelUcuirass", 
+            "0steelUhelm", 
+            "fbmwBladesTrainers"
+        ]
+    }
+}

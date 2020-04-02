@@ -1,0 +1,94 @@
+{
+    "Topic": "1BladesSApprentice", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320C6D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMQ03", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1present", 
+        "1scroll", 
+        "1DivineSIntervention", 
+        "1Imperial", 
+        "1Temple", 
+        "1need", 
+        "1work"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I'm promoting you to Apprentice Rank, effective immediately. And here's a little present -- two spell scrolls.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The Divine Intervention will recall you to the nearest Imperial shrine, and the Almsivi Intervention will recall you the nearest Temple.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "They come in handy for a quick getaway. No, no. No thanks needed. You're doing great work. Now, get out of here and let me read.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ04", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0caiusScosades", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 82, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 37 00 00 00 39 10 0A 00 02 00 72 04 00 6E 37 00 00 00 1C 00 01 00 89 10 0A 00 02 00 72 05 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "player.additem 0scudivineintervention 1\r\nplayer.additem 0scualmsiviintervention 1\r\nSetStage fbmwMQ03 55\r\nsetstage fbmwmq03 55\r\nPlayer.SetFactionRank 0Blades, 1", 
+        "References": [
+            20, 
+            "0scUdivineintervention", 
+            "0scUalmsiviintervention", 
+            "fbmwMQ03", 
+            "0Blades"
+        ]
+    }
+}

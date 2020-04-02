@@ -1,0 +1,80 @@
+{
+    "Topic": "1investigateStheSdisturbance", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B9FD"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRBamz", 
+    "PNAM - Previous INFO": "01F8B9FC", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "These attacks are an affront to this city and to the Lady. We must learn more about them. I understand a passage has opened up in the Plaza that leads to some Dwemer ruins.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 54", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The Memorial Statue has been destroyed, and an entrance has been discovered in the rubble from which the creatures emerged. Perhaps these things are of Dwemer origin--I have been told that they look at least partially mechanical.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 54", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Investigate these ruins, and report your findings to me immediately.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRBamz", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0fedrisShler", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 22, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 21 10 00 00", 
+        "SCTX - Result script source": "setstage fbmwtrBamz 10\r\nfbmwTRMHattackLadderREF.enable", 
+        "References": [
+            "fbmwTRMHattackLadderREF", 
+            "fbmwTRBamz"
+        ]
+    }
+}

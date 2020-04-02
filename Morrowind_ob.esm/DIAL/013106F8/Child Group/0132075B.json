@@ -1,0 +1,95 @@
+{
+    "Topic": "1ThievesSGuildSbosses", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0132075B"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwFGKillBosses", 
+    "PNAM - Previous INFO": "01F8A27C", 
+    "Add topics": [
+        "1SadrithSMora", 
+        "1Balmora", 
+        "1ThievesSGuild", 
+        "1SouthSWall", 
+        "1Khajiit", 
+        "1rat", 
+        "1AldAruhn", 
+        "1ThievesSGuildSbosses", 
+        "1Talk", 
+        "1guard"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "In Sadrith Mora, kill Helende at Dirty Muriel's Cornerclub. Feel free to kill any other thieves there.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "In Balmora, the Thieves Guild there is the South Wall tavern. Kill Habasi the Khajiit. Then go to The Rat in the Pot in Ald'ruhn and kill Aengoth.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "When the Thieves Guild bosses are dead, talk to me again. Here's some gold to deal with the guards.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0sjoringShardTheart", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "fbmwFightersGuild", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 88 13 00 00 39 10 0A 00 02 00 72 03 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "Player.AddItem Gold001 5000\r\nSetStage fbmwFGKillBosses 10", 
+        "References": [
+            20, 
+            "Gold001", 
+            "fbmwFGKillBosses"
+        ]
+    }
+}

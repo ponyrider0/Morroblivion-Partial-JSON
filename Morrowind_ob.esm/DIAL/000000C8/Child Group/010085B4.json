@@ -1,0 +1,80 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010085B4"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSWarlords", 
+    "PNAM - Previous INFO": "010085BA", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "76 79 6E", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Dovor said to talk to me?  Oh..  Umm...  well, if he thinks I should get some new stuff, then maybe I should.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "76 79 6E", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I know that Elanande has some real nice equipment.  I like that robe of hers, and one time I saw the axe she has.  Looks really pretty.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "76 79 6E", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Hmm.  Dovor said she doesn't deserve them, and that they'd be better for me than her.  Dovor's always right, you know.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSWarlords", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0FelvanSIenith", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwMSwarlords 60\r\naddtopic 1Elanande", 
+        "References": [
+            "fbmwMSWarlords", 
+            "1Elanande"
+        ]
+    }
+}

@@ -1,0 +1,362 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01003A97"
+    }, 
+    "EDID - Editor ID": "fbmwMSArmorCrafterScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 1, 
+        "CompiledSize": 96, 
+        "VariableCount": 34, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 52 00 00 00 16 00 0D 00 01 00 09 00 20 73 1B 00 20 30 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 0F 00 02 00 0B 00 20 73 19 00 20 47 01 00 20 21 3D 15 00 09 00 73 19 00 04 00 20 47 01 00 15 00 0D 00 73 1A 00 08 00 20 73 1A 00 20 31 20 2B 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwMSArmorCrafterScript\n\nshort ebonyCuirass\nshort ebonyLeftPauldron\nshort ebonyRightPauldron\nshort ebonyLeftBracer\nshort ebonyRightBracer\nshort ebonyGreaves\nshort ebonyBoots\nshort ebonyHelm\nshort ebonyGauntlets\nshort ebonyShield\nshort glassHelm\nshort glassBoots\nshort glassGreaves\nshort glassRightBracer\nshort glassLeftBracer\nshort glassRightPauldron\nshort glassLeftPauldron\nshort glassCuirass\nshort glassGauntlets\nshort glassShield\nshort adamantiumHelm\nshort adamantiumBoots\nshort adamantiumGreaves\nshort adamantiumRightBracer\nshort adamantiumLeftBracer\nshort adamantiumRightPauldron\nshort adamantiumLeftPauldron\nshort adamantiumCuirass\nshort adamantiumShield\nshort currentDay\nshort localdaysPassed\nshort busy\nShort NoLore\nshort change\n\nbegin gamemode\n\tif busy == 0\n\t\treturn\n\tendif\n\t\nif ( currentDay != GameDay )\n\tset currentDay to GameDay\n\tset localdaysPassed to localdaysPassed + 1\nendif\n\nend\n;<CSEBlock>\n;<CSECaretPos> 160 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyCuirass"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyLeftPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyRightPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyLeftBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyRightBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyGreaves"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyBoots"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyHelm"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassHelm"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 10, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassBoots"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 11, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassGreaves"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 12, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassRightBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 13, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassLeftBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 14, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassRightPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 15, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassLeftPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 16, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassCuirass"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 17, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumHelm"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 18, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumBoots"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 19, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumGreaves"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 20, 
+                "Unused": "49 73 1D 14 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumRightBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 21, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumLeftBracer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 22, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumRightPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 23, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumLeftPauldron"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 24, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumCuirass"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 25, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "currentDay"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 26, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "localdaysPassed"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 27, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "busy"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 28, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "NoLore"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 29, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "change"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 30, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyGauntlets"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 31, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ebonyShield"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 32, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassGauntlets"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 33, 
+                "Unused": "42 73 1D 20 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "glassShield"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 34, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "adamantiumShield"
+        }
+    ], 
+    "References": [
+        "GameDay"
+    ]
+}

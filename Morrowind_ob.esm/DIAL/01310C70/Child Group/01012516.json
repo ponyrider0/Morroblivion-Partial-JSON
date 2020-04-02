@@ -1,0 +1,100 @@
+{
+    "Topic": "1Orders", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01012516"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ03", 
+    "PNAM - Previous INFO": "01012515", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "4C 65 76", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I've thought it over, and I want you to interview three informants in Vivec City concerning the Nerevarine and the Sixth House.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 6E 67", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": " First, I want you to speak with Addhiranirr, a Khajiit Thieves Guild operative.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 6E 67", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Second, I want you to speak with Huleeya, an Argonian in the Morag Tong. Finally, I want you to speak with Mehra Milo, a Temple priestess. Here.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 6E 67", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "I've written the details down, so you won't forget. And here are 200 drakes. For bribes and other expenses.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ03", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ04", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0caiusScosades", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E C8 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage FBMWMQ04 1\r\nplayer.additem gold001 200\r\nplayer.additem 0bkUa1UvUvivecinformants 1", 
+        "References": [
+            20, 
+            "fbmwMQ04", 
+            "Gold001", 
+            "0bkUa1UvUvivecinformants"
+        ]
+    }
+}

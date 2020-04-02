@@ -1,0 +1,104 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0102EE92"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMTrial", 
+    "PNAM - Previous INFO": "01F8B1CD", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6A 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "He... he came to the mead hall and killed... killed everyone he could! There was no warning! My clan fought bravely, but they were no match.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 61 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I rained arrows upon the beast, and finally drove him off. But he'll be back!  It all happened so quickly. We were just standing here, enjoying our mead and the warmth of the fire, when he struck. Never have I seen a creature so savage. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 61 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "If I didn't know better, I'd say the monster that did this was the Udyrfrykte, but how could that be?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "fbmwUderFrykte", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMeadHall", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMeadHall", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMTrial", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0svenjaUoutside", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "startquest fbmwbmMeadHall\r\naddtopic 1thesUdyrfrykte", 
+        "References": [
+            "fbmwBMMeadHall", 
+            "1theSUdyrfrykte"
+        ]
+    }
+}

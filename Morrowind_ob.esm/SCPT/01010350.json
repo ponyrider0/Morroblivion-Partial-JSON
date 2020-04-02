@@ -1,0 +1,42 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01010350"
+    }, 
+    "EDID - Editor ID": "fbmwbardoor1Script", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 1, 
+        "CompiledSize": 103, 
+        "VariableCount": 2, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 02 00 57 00 00 00 00 00 16 00 0D 00 02 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 07 00 73 01 00 02 00 20 31 15 00 0A 00 72 01 00 73 07 00 02 00 20 31 17 00 02 00 02 00 15 00 07 00 73 01 00 02 00 20 30 15 00 0A 00 72 01 00 73 07 00 02 00 20 30 19 00 00 00 0D 10 02 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwbardoor1Script\r\n\r\n\r\nshort door1open\r\nshort doOnce\r\n\r\n\r\nbegin OnActivate\r\n\tif door1open == 0\r\n\t\tset door1open to 1\r\n\t\tset fbmwtrassassins.doorcheck to 1\r\n\telse\r\n\t\tset door1open to 0\r\n\t\tset fbmwtrassassins.doorcheck to 0\r\n\tendif\t\r\n\tActivate\r\nend\n;<CSEBlock>\n;<CSECaretPos> 198 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "F2 4C 0F 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "door1open"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "55 30 32 55 62 61 72", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doOnce"
+        }
+    ], 
+    "References": [
+        "fbmwTRAssassins"
+    ]
+}

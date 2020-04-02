@@ -1,0 +1,62 @@
+{
+    "Topic": "1BrallionAsSRing", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A444"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTGssGreedySlaver", 
+    "PNAM - Previous INFO": "01F8A443", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "61 6C 6C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "So you delivered the ring. Good. I hope Ilmeni Dren puts it to good use.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTGssGreedySlaver", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0stacey", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 45, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwtgssgreedyslaver 100\r\nmodfactionreaction 0thievessguild playerfaction 5\r\nmoddisposition player 10", 
+        "References": [
+            "fbmwTGssGreedySlaver", 
+            "0ThievesSGuild", 
+            "PlayerFaction", 
+            20
+        ]
+    }
+}

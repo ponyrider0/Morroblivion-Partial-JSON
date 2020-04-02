@@ -1,0 +1,102 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F82B34"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICMarshmerrow", 
+    "PNAM - Previous INFO": "01F82B35", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I see you have brought me five units of marshmerrow. Here is a Restore Health potion for you, and a mortar and pestle so you can practice making your own Restore Health potions.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Speak to me again when you are ready for another lay healer mission. And goodness! I was so busy, I almost forgot. Have you checked your advancement in the Imperial cult?", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "As you serve Mara and the Nine, so shall you rise in rank.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 4.99999998737621, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUmarshmerrowU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICMarshmerrow", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICMarshmerrow", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0SynnolianSTunifus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 77, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 36 10 05 00 01 00 72 03 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 06 00 6E 05 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwicmarshmerrow 50\r\nstartquest fbmwicmuck\r\nPlayer.AddItem 0purestoreuhealthus 1\r\nPlayer.AddItem 0apparatusuaumortaru01 1\r\nPlayer.RemoveItem 0ingredumarshmerrowu01 5", 
+        "References": [
+            20, 
+            "fbmwICMarshmerrow", 
+            "fbmwICMuck", 
+            "0pUrestoreUhealthUs", 
+            "0apparatusUaUmortarU01", 
+            "0ingredUmarshmerrowU01"
+        ]
+    }
+}

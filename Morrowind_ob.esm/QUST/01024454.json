@@ -1,0 +1,137 @@
+{
+    "Record Header": {
+        "Signature": "QUST", 
+        "Record Flags": {}, 
+        "FormID": "01024454"
+    }, 
+    "EDID - Editor ID": "fbmwMercCalvusQuest", 
+    "SCRI - Script": "fbmwMercCalvusScript", 
+    "FULL - Name": "Calvus Horatius", 
+    "ICON - Icon filename": "quest\\icon_fighters_guild.dds", 
+    "DATA - General": {
+        "Flags": {
+            "Start game enabled": true, 
+            "Allow repeated stages": true
+        }, 
+        "Priority": 81
+    }, 
+    "Stages": [
+        {
+            "INDX - Stage index": 1, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "I've hired the mercenary Calvus Horatius as a bodyguard and companion for a thirty-day contract. He will follow me everywhere, and fight when I fight. I should keep him healthy and safe. He will follow or stay, at my command. If I want to change the plan, I should just talk to him about it.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 10, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "The mercenary Calvus Horatius has completed his first thirty-day contract with me, and has left my service.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 11, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "I've re-hired the mercenary Calvus Horatius as a bodyguard and companion for a thirty-day contract. The terms are the same. He will follow me everywhere, and fight when I fight. I should keep him healthy and safe. He will follow or stay, at my command. If I want to change the plan, I should just talk to him about it.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 20, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "The mercenary Calvus Horatius has completed another thirty-day contract with me, and has left my service.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 100, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "The mercenary Calvus Horatius has resigned because I took his stuff. He warned me he was working for profit, and would quit if I ever left him with a total of less than 750 gold worth of gear and cash. He was very angry, and said he would never work for me again.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "fbmwCalvusMercREF", 
+                "Flags": {}, 
+                "Unused": "00 54 46"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMercCalvusQuest", 
+                    "Parameter #2": 10
+                }
+            ]
+        }
+    ]
+}

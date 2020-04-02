@@ -1,0 +1,79 @@
+{
+    "Topic": "CrimeMorrowPresentWrits", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F2A3E5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "CrimeMorrow", 
+    "TPIC - Topic": "GREETING", 
+    "PNAM - Previous INFO": "01F2A3E4", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 69 6D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "All of your papers seem to be in order. You are free to go.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "CrimeMorrow", 
+            "Parameter #2": 6
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 160, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 79, 
+            "Parameter #1": "CrimeMorrow", 
+            "Parameter #2": 7
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 125, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 37, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 08 00 02 00 20 31 1C 00 01 00 75 10 07 00 01 00 6E 00 00 00 00 1C 00 01 00 7C 10 00 00", 
+        "SCTX - Result script source": "set CrimeMorrow.RUN_redeemWrits to 1\r\nplayer.setcrimegold 0\r\nplayer.payfinethief", 
+        "References": [
+            20, 
+            "CrimeMorrow"
+        ]
+    }
+}

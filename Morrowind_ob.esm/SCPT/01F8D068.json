@@ -1,0 +1,53 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8D068"
+    }, 
+    "EDID - Editor ID": "mwRotationFix", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 0, 
+        "CompiledSize": 134, 
+        "VariableCount": 5, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 78 00 00 00 16 00 0D 00 07 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 0E 00 66 02 00 09 00 20 58 0B 10 03 00 01 00 58 09 10 06 00 02 00 58 66 02 00 15 00 0E 00 66 03 00 09 00 20 58 0B 10 03 00 01 00 59 09 10 06 00 02 00 59 66 03 00 15 00 0E 00 66 04 00 09 00 20 58 0B 10 03 00 01 00 5A 09 10 06 00 02 00 5A 66 04 00 15 00 07 00 73 01 00 02 00 20 31 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwRotationFix\r\n\r\nshort done\r\nfloat ax\r\nfloat ay\r\nfloat az\r\n\r\nbegin gamemode\r\n\r\n\tif done == 0\r\n\t\tset ax to GetStartingAngle x\r\n\t\tSetAngle x, ax\r\n\t\tset ay to GetStartingAngle y\r\n\t\tSetAngle y, ay\r\n\t\tset az to GetStartingAngle Z\r\n\t\tSetAngle z, az\r\n\t\tset done to 1\r\n\tendif\r\nend\r\n;<CSEBlock>\r\n;<CSECaretPos> 14 </CSECaretPos>\r\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "69 66 69 65 72 3A 34", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "done"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "4D 6F 64 69 66 69 65", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "ax"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "69 66 69 65 72 3A 35", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "ay"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "4D B0 30 01 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "az"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "Topic": "1reclaimSyourSstation", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01001BE8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRBlade", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "For years, the Chimer and the Dwemer had been at war.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 20", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The Dwemer spurned the Daedra that the Chimer worshipped, instead placing their faith in their metal creations.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 20", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "It was only when the Nords invaded Resdayn that the two nations were able to join as one under the leadership of our Nerevar and the Dwarf-King Dumac", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 20", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "In time, the two generals became blood friends, and on the day that Nerevar and I were wed, Dumac presented us with twin blades.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 20", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "Hopesfire and Trueflame.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 160, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRBlade", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "fbmwAlmalexia", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1Trueflame\r\naddtopic 1TwinSBlades", 
+        "References": [
+            "1Trueflame", 
+            "1twinSblades"
+        ]
+    }
+}

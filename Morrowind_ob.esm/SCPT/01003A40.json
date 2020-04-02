@@ -1,0 +1,72 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01003A40"
+    }, 
+    "EDID - Editor ID": "fbmwMSSummonerGavisScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 13, 
+        "CompiledSize": 471, 
+        "VariableCount": 8, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 3D 00 00 00 00 00 39 10 0A 00 02 00 72 0B 00 6E 1E 00 00 00 26 10 05 00 01 00 72 0C 00 1C 00 01 00 22 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 22 10 00 00 1C 00 04 00 73 10 02 00 00 00 11 00 00 00 10 00 06 00 00 00 80 01 00 00 16 00 0F 00 06 00 0B 00 20 58 23 10 00 00 20 30 20 3D 3D 16 00 0D 00 04 00 09 00 20 73 01 00 20 30 20 3D 3D 16 00 15 00 02 00 11 00 20 58 01 10 05 00 01 00 72 0D 00 20 32 35 30 20 3C 15 00 07 00 73 01 00 02 00 20 31 56 10 05 00 01 00 72 0D 00 19 00 00 00 19 00 00 00 19 00 00 00 16 00 15 00 1A 00 11 00 20 58 3A 10 05 00 01 00 72 0B 00 20 32 30 20 3D 3D 15 00 11 00 66 02 00 0C 00 20 66 02 00 20 58 0C 10 00 00 20 2B 16 00 0D 00 09 00 09 00 20 66 02 00 20 35 20 3E 3D 16 00 0D 00 07 00 09 00 20 73 04 00 20 30 20 3D 3D 1C 00 05 00 22 10 00 00 1C 00 06 00 22 10 00 00 1C 00 07 00 22 10 00 00 1C 00 08 00 22 10 00 00 1C 00 09 00 22 10 00 00 1C 00 0A 00 22 10 00 00 15 00 07 00 73 04 00 02 00 20 31 19 00 00 00 18 00 0D 00 0D 00 09 00 20 66 02 00 20 33 20 3E 3D 16 00 0D 00 0B 00 09 00 20 73 05 00 20 30 20 3D 3D 1C 00 05 00 21 10 00 00 1C 00 06 00 21 10 00 00 1C 00 07 00 21 10 00 00 1C 00 08 00 21 10 00 00 1C 00 09 00 21 10 00 00 1C 00 0A 00 21 10 00 00 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00 1C 00 04 00 72 10 07 00 01 00 6E 64 00 00 00 15 00 07 00 73 05 00 02 00 20 31 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwMSSummonerGavisScript\r\n\r\nshort check\r\nfloat timer\r\nshort doonceA\r\nshort doonceB\r\n\r\nbegin OnDeath\r\n\tsetstage fbmwMSSummoner 30\r\n\tplaysound 0MysticismSCast\r\n\tfbmwMSSummonerSaint1.Disable\r\n\tfbmwMSSummonerSaint2.Disable\r\n\tfbmwMSSummonerOgrim.Disable\r\n\tfbmwMSSummonerVelasDoor.Unlock\r\nend\r\n\r\nbegin gamemode\r\n;check if enabled\r\n\r\nif ( getdisabled == 0 )\r\n\tif ( check == 0 )\r\n\t\tif ( GetDistance Player < 250 )\r\nset check to 1\r\n\t\t\tStartConversation Player\r\n\t\t\tendif\r\n\tendif\r\nendif\r\n\r\n\r\n\r\nif ( GetStage fbmwMSSummoner == 20 )\r\n\tset timer to ( timer + GetSecondsPassed )\r\n\tif ( timer >= 5 )\r\n\t\tif ( doonceA == 0 )\r\n\t\t\tfbmwMSSummonerVSmoke1.Disable\r\n\t\t\tfbmwMSSummonerVSmoke2.Disable\r\n\t\t\tfbmwMSSummonerVSmoke3.Disable\r\n\t\t\tfbmwMSSummonerVSmoke4.Disable\r\n\t\t\tfbmwMSSummonerVSmoke5.Disable\r\n\t\t\tfbmwMSSummonerVSmoke6.Disable\r\n\t\t\tset doonceA to 1\r\n\t\tendif\r\n\telseif ( timer >= 3 )\r\n\t\tif ( doonceB == 0 )\r\n\t\t\tfbmwMSSummonerVSmoke1.Enable\r\n\t\t\tfbmwMSSummonerVSmoke2.Enable\r\n\t\t\tfbmwMSSummonerVSmoke3.Enable\r\n\t\t\tfbmwMSSummonerVSmoke4.Enable\r\n\t\t\tfbmwMSSummonerVSmoke5.Enable\r\n\t\t\tfbmwMSSummonerVSmoke6.Enable\r\n\t\t\tfbmwMSSummonerSaint1.Enable\r\n\t\t\tfbmwMSSummonerSaint2.Enable\r\n\t\t\tfbmwMSSummonerOgrim.Enable\r\n\t\t\tfbmwMSSummonerVelasDoor.Lock 100\r\n\t\t\tset doonceB to 1\r\n\t\tendif\r\n\tendif\r\nendif\r\n\r\nEnd\n;<CSEBlock>\n;<CSECaretPos> 670 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "7E A2 00 30 F3 8B 3B", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "check"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "timer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "3D 29 38 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonceA"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonceB"
+        }
+    ], 
+    "References": [
+        "fbmwMSSummonerSaint1", 
+        "fbmwMSSummonerSaint2", 
+        "fbmwMSSummonerOgrim", 
+        "fbmwMSSummonerVelasDoor", 
+        "fbmwMSSummonerVSmoke1", 
+        "fbmwMSSummonerVSmoke2", 
+        "fbmwMSSummonerVSmoke3", 
+        "fbmwMSSummonerVSmoke4", 
+        "fbmwMSSummonerVSmoke5", 
+        "fbmwMSSummonerVSmoke6", 
+        "fbmwMSSummoner", 
+        "0mysticismScast", 
+        20
+    ]
+}

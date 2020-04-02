@@ -1,0 +1,151 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01009EC0"
+    }, 
+    "EDID - Editor ID": "fbmwMSBadPetsScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 2, 
+        "CompiledSize": 336, 
+        "VariableCount": 13, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 42 01 00 00 16 00 0D 00 07 00 09 00 20 73 08 00 20 31 20 3D 3D 16 00 0F 00 02 00 0B 00 20 73 09 00 20 47 02 00 20 21 3D 15 00 09 00 73 09 00 04 00 20 47 02 00 15 00 0D 00 73 09 00 08 00 20 73 09 00 20 31 20 2B 19 00 00 00 16 00 0D 00 01 00 09 00 20 73 09 00 20 33 20 3E 3D 15 00 07 00 73 08 00 02 00 20 32 19 00 00 00 19 00 00 00 16 00 0D 00 07 00 09 00 20 73 0A 00 20 31 20 3D 3D 16 00 0F 00 02 00 0B 00 20 73 0B 00 20 47 02 00 20 21 3D 15 00 09 00 73 0B 00 04 00 20 47 02 00 15 00 0D 00 73 0B 00 08 00 20 73 0B 00 20 31 20 2B 19 00 00 00 16 00 0D 00 01 00 09 00 20 73 0B 00 20 33 20 3E 3D 15 00 07 00 73 0A 00 02 00 20 32 19 00 00 00 19 00 00 00 16 00 0D 00 07 00 09 00 20 73 0C 00 20 31 20 3D 3D 16 00 0F 00 02 00 0B 00 20 73 0D 00 20 47 02 00 20 21 3D 15 00 09 00 73 0D 00 04 00 20 47 02 00 15 00 0D 00 73 0D 00 08 00 20 73 0D 00 20 31 20 2B 19 00 00 00 16 00 0D 00 01 00 09 00 20 73 0D 00 20 33 20 3E 3D 15 00 07 00 73 0C 00 02 00 20 32 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwMSBadPetsScript\n\nShort packrats\nShort rats\nShort scribs\nshort ratcompanion\nshort ratpackcompanion\nshort scribcompanion\nref PackRatMe\nshort RatTraining\nshort Ratdayspassed\nshort PackRatTraining\nshort PackRatdayspassed\nshort ScribTraining\nshort Scribdayspassed\n\nbegin gamemode\n\tif RatTraining == 1\n\t\tif Ratdayspassed != GameDay\n\t\t\tset Ratdayspassed to GameDay\n\t\t\tset Ratdayspassed to Ratdayspassed + 1\n\t\tendif\n\t\tif Ratdayspassed >= 3\n\t\t\tset RatTraining to 2\n\t\tendif\n\tendif\n\n\tif PackRatTraining == 1\n\t\tif PackRatdayspassed != GameDay\n\t\t\tset PackRatdayspassed to GameDay\n\t\t\tset PackRatdayspassed to PackRatdayspassed + 1\n\t\tendif\n\t\tif PackRatdayspassed >= 3\n\t\t\tset PackRatTraining to 2\n\t\tendif\n\tendif\n\n\tif ScribTraining == 1\n\t\tif Scribdayspassed != GameDay\n\t\t\tset Scribdayspassed to GameDay\n\t\t\tset Scribdayspassed to Scribdayspassed + 1\n\t\tendif\n\t\tif Scribdayspassed >= 3\n\t\t\tset ScribTraining to 2\n\t\tendif\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "packrats"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "7E A2 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rats"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "scribs"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "7E A2 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ratcompanion"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "7E A2 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "scribcompanion"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ratpackcompanion"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "A5 E1 38 28 5A 11 20", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "PackRatMe"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "RatTraining"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "75 4B 3B 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "Ratdayspassed"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 10, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "PackRatTraining"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 11, 
+                "Unused": "75 4B 3B 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "PackRatdayspassed"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 12, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ScribTraining"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 13, 
+                "Unused": "76 4B 3B 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "Scribdayspassed"
+        }
+    ], 
+    "References": [
+        7, 
+        "GameDay"
+    ]
+}

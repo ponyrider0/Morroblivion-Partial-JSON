@@ -1,0 +1,61 @@
+{
+    "Topic": "BedYes", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B720"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "BedRental", 
+    "PNAM - Previous INFO": "01F8B71F", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Your room is downstairs, the door will be unlocked. Enjoy your stay.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 47, 
+            "Parameter #1": "Gold001", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0rarilSgiral", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 31", 
+        "SCTX - Result script source": "player.removeitem gold001 10\r\nset Raril.rent to 1", 
+        "References": [
+            20, 
+            "Gold001", 
+            "Raril"
+        ]
+    }
+}

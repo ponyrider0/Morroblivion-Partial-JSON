@@ -1,0 +1,93 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F81106"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICUrjorad", 
+    "PNAM - Previous INFO": "01F81105", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "43 20 4E", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I am glad you were able to recover this scroll. It is an item of terrible power, and I am glad it has not fallen into evil hands.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 41 70", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Thank you for completing this task. As to the matter of Carecalmo and Meryaran, I leave that matter to your judgement. As opponents, they may be too great for you.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 41 70", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Speak to me again when you are ready to undertake another of the Oracle's Quests.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0scUFiercelyRoastThyEnemyUunique", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICUrjorad", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0LalatiaSVarian", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 74, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 05 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwicurjorad 50\r\nplayer.removeitem 0scufiercelyroastthyenemyuunique 1\r\nmodfactionreaction 0imperialscult playerfaction 5\r\nmodpcfame 1\r\nmoddisposition player 5", 
+        "References": [
+            20, 
+            "fbmwICUrjorad", 
+            "0scUFiercelyRoastThyEnemyUunique", 
+            "0ImperialSCult", 
+            "PlayerFaction"
+        ]
+    }
+}

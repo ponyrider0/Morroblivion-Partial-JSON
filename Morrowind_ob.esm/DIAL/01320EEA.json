@@ -1,0 +1,77 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01320EEA"
+    }, 
+    "EDID - Editor ID": "1slaveSrebellion2", 
+    "Quests": [
+        "fbmwHTSlaveRebellion"
+    ], 
+    "FULL - Name": "So be it. [Kill Them]", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1slaveSrebellion2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231DE"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwHTSlaveRebellion", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1rat", 
+                "1slave"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I would rather die free than be a slave again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0eleedalUlei", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 6, 
+                    "CompiledSize": 74, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "16 10 05 00 01 00 72 06 00 1C 00 01 00 16 10 05 00 01 00 72 06 00 1C 00 02 00 16 10 05 00 01 00 72 06 00 1C 00 03 00 16 10 05 00 01 00 72 06 00 1C 00 04 00 16 10 05 00 01 00 72 06 00 1C 00 05 00 16 10 05 00 01 00 72 06 00", 
+                "SCTX - Result script source": "StartCombat Player\r\nfbseenreirref.StartCombat Player\r\nfbdarruref.StartCombat Player\r\nfbahnarraref.StartCombat Player\r\nfbdrozahref.StartCombat Player\r\nfbjdatoref.StartCombat Player", 
+                "References": [
+                    "fbseenreirref", 
+                    "fbdarruref", 
+                    "fbahnarraref", 
+                    "fbdrozahref", 
+                    "fbjdatoref", 
+                    20
+                ]
+            }
+        }
+    ]
+}

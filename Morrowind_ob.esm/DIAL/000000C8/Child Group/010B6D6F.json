@@ -1,0 +1,92 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010B6D6F"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwBMWolfGiver", 
+    "PNAM - Previous INFO": "010B6D6E", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6D 6F", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "That's it!  Now, I will pour the Glenmoril brew over the innocent's heart.  The heart must get wet...soaked.  Yes, there we go. Now, to recite the proper incantation.... ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6D 6F", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": " [The Witch of Glenmoril Wyrd utters a long, shrieking series of arcane words.  The heart pulses in her hand, as if infused with new life.] There!  It is done! ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6D 6F", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "The heart has been properly bewitched.  Now, place it back in the corpse of the innocent.  Do this, and then speak with me again.  You are almost free of your curse.  Almost....", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUinnocentUheart", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 89.9999997727718, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMWolfGiver", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0glenmorilUwitchUaltar", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmWolfGiver 100\r\nplayer.removeitem 0ingredUinnocentUheart 1\r\nplayer.additem 0ingredUWolfUHeart 1", 
+        "References": [
+            20, 
+            "fbmwBMWolfGiver", 
+            "0ingredUinnocentUheart", 
+            "0ingredUwolfUheart"
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "Topic": "1muchStoSatoneSfor", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B027"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMStones", 
+    "PNAM - Previous INFO": "01F8B026", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 73 74", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The Imperials in their fort have brought nothing but harm to these lands. They cut the trees and dig the earth. They are wasteful, lazy, and careless. They have no comprehension of the Oneness of the land.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 42", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "It is this Oneness from which the Skaal derive our strength, and the Imperials have defiled these lands.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMStones", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tharstenSheartTfang", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwbmstones 20\r\naddtopic 1defiledstheseslands", 
+        "References": [
+            "fbmwBMStones", 
+            "1defiledStheseSlands"
+        ]
+    }
+}

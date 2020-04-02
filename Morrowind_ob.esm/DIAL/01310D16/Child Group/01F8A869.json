@@ -1,0 +1,71 @@
+{
+    "Topic": "1Vas", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A869"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGVas", 
+    "PNAM - Previous INFO": "01F8A868", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ulyne Henim was satisfied with your performance. Here is your pay of 250 septims based on guild rates.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 79.9999997980194, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGVas", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGVas", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0persiusSmercius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 63, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 03 00 72 04 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E FA 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwfgvas 100\r\nmodfactionreaction fbmwfightersguild playerfaction 5\r\nmoddisposition player 10\r\nplayer.additem gold001 250", 
+        "References": [
+            20, 
+            "fbmwFGVas", 
+            "fbmwFightersGuild", 
+            "PlayerFaction", 
+            "Gold001"
+        ]
+    }
+}

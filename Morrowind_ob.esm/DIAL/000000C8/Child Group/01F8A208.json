@@ -1,0 +1,102 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A208"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICNetch", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I see you have brought me a unit of netch leather. Here are several potions, and a little present -- an Amulet of Balyna's Soothing Balm.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Saint Balyna is one of Mara's patron saints, and her dedicated service to the Nine Divines and their followers is a model for us all. I have no more tasks for you.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Perhaps you should speak to Kaye about shrine sergeants, or to Iulus Truptor about almoners. Or speak to the Oracle, Lalatia Varian. Perhaps you can help her.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0ingredUnetchUleatherU01", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICNetch", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICNetch", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0SynnolianSTunifus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 91, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 36 10 05 00 01 00 72 03 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 05 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwicnetch 50\r\nmoddisposition player 10\r\nstartquest fbmwicoraclequest\r\nplayer.additem 0pumagickauresistanceuq 5\r\nplayer.additem fbmwAmuletofSoothingBalm 1\r\nplayer.removeitem 0ingredunetchuleatheru01 1", 
+        "References": [
+            20, 
+            "fbmwICNetch", 
+            "fbmwICOracleQuest", 
+            "0pUmagickaUresistanceUq", 
+            "fbmwAmuletofSoothingBalm", 
+            "0ingredUnetchUleatherU01"
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "Topic": "1makeSamends", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01321F71"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTGAdvancement", 
+    "PNAM - Previous INFO": "01321F70", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have broken the honor among thieves. You don't seem to learn your lesson. You must pay 5000 septims to make amends.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 79, 
+            "Parameter #1": "fbmwTGAdvancement", 
+            "Parameter #2": 5
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 193, 
+            "Parameter #1": "0ThievesSGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 7.99999997980194, 
+            "Function": 73, 
+            "Parameter #1": "0ThievesSGuild", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1makeSamends1", 
+        "1makeSamends2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 17, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0D 00 72 01 00 73 06 00 05 00 20 35 30 30 30", 
+        "SCTX - Result script source": "set fbmwTGAdvancement.Fine to 5000", 
+        "References": [
+            "fbmwTGAdvancement"
+        ]
+    }
+}

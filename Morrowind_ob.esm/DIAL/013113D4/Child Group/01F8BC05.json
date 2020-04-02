@@ -1,0 +1,72 @@
+{
+    "Topic": "1Ristaag", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BC05"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMBearHunt1", 
+    "PNAM - Previous INFO": "01F8BC04", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 AA 30", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have been of great service to the Skaal, and it seems right that you take part in the ceremony. Meet at nightfall with Rolf Long-Tooth, one of our Skaal hunters. You will find him by the western shores of Lake Fjalding. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "He will tell you more about the Ristaag and the part you will play in it.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMCeremony1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0korstSwindTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 38, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 04 00 6E 0F 00 00 00 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmbearhunt1 15\r\nfbmwbmHuntREF1.enable\r\nfbmwbmHuntREF2.enable\r\nfbmwbmHuntREF3.enable", 
+        "References": [
+            "fbmwbmHuntREF1", 
+            "fbmwbmHuntREF2", 
+            "fbmwbmHuntREF3", 
+            "fbmwBMBearHunt1"
+        ]
+    }
+}

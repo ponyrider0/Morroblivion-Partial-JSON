@@ -1,0 +1,108 @@
+{
+    "Topic": "1Writ", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F2A48D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMTAdvancement", 
+    "PNAM - Previous INFO": "01F2A48C", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "AA A0 55", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Due to the troubles in Vvardenfell recently, the Houses have negotiated several Writs.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "AA A0 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I have Writs for General Larrius Varro, Baladas Demnevanni, Dram Bero, and Mistress Therana if you want to take any of these yourself, Grandmaster.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritNavil", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritBermis", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMTWritBrilnosu", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "0MoragSTong", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 8.99999997727718, 
+            "Function": 73, 
+            "Parameter #1": "0MoragSTong", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ14", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 8, 
+            "CompiledSize": 72, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 36 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 36 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 36 10 05 00 01 00 72 08 00", 
+        "SCTX - Result script source": "; these are the grandmaster writs- must be GM and MQ must be done\r\naddtopic 1LarriusSVarro\r\nstartquest fbmwMTWritVarro\r\naddtopic 1Baladas\r\nstartquest fbmwMTWritBaladas\r\naddtopic 1DramSBero\r\nstartquest fbmwMTWritBero\r\naddtopic 1MistressSTherana\r\nstartquest fbmwMTWritTherana", 
+        "References": [
+            "1LarriusSVarro", 
+            "fbmwMTWritVarro", 
+            "1Baladas", 
+            "fbmwMTWritBaladas", 
+            "1DramSBero", 
+            "fbmwMTWritBero", 
+            "1MistressSTherana", 
+            "fbmwMTWritTherana"
+        ]
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01322E92"
+    }, 
+    "EDID - Editor ID": "1work5", 
+    "Quests": [
+        "fbmwTownVivec"
+    ], 
+    "FULL - Name": "I'll take the belt.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1work5", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323699"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownVivec", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Vivec"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Very good. Please accept the belt, with our thanks. And accept, on the behalf of Vivec City, our thanks for ridding us of this dangerous killer.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0elamSandas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 57, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "player.additem fbmwBeltArmorGod 1\r\nmodpcfame 1\r\nmoddisposition player 20\r\nsetstage fbmwtownvivec 50", 
+                "References": [
+                    20, 
+                    "fbmwBeltArmorGod", 
+                    "fbmwTownVivec"
+                ]
+            }
+        }
+    ]
+}

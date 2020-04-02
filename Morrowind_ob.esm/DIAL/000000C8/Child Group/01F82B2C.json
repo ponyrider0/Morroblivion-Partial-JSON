@@ -1,0 +1,81 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F82B2C"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICCorkbulb", 
+    "PNAM - Previous INFO": "01F82B2A", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Bring me five units of corkbulb for cure common disease and restore health potions. The best place to look for corkbulb is the Ascadian Isles, and Arvel Manor in particular.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "65 73 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The Imperial Cult has an agreement with the Ascadian Isles plantation owners that permits us to gather corkbulb. The direct route means swimming, so I'll teach you a little spell.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICScrib", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICCorkbulb", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0SynnolianSTunifus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 1C 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage fbmwiccorkbulb 1\r\nplayer.addspell 0swimmerasublessing", 
+        "References": [
+            20, 
+            "fbmwICCorkbulb", 
+            "0SwimmerAsUBlessing"
+        ]
+    }
+}

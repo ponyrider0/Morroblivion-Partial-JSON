@@ -1,0 +1,90 @@
+{
+    "Topic": "1ashSstatue", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01023CB3"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRSixthHouseBase", 
+    "PNAM - Previous INFO": "01023CB4", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 48 52", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You found a note on Galtis Guvron's body when you asked about the ash statues? Let me see... Perhaps this \"Hanarai\" is Hanarai Assutlanipal.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 48 52", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "She claims to be an outcast ashlander. Her house is the first one on the right down the stairs from the Temple.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 48 52", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "She may be as unwilling to talk as Galtis. Take these potions in case you need them.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0bkUgaltisguvronsnote", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRSixthHouseBase", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0llorosSsarano", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 04 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHRSixthHouseBase 60\r\nPlayer.AddItem 0purestoreuhealthuq 4\r\n; Player.AddItem 0pucureublightus 1\r\nPlayer.AddItem 0pucureucommonus 1", 
+        "References": [
+            20, 
+            "fbmwHRSixthHouseBase", 
+            "0pUrestoreUhealthUq", 
+            "0pUcureUcommonUs"
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "Topic": "1festeringSwitch", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AAB4"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMVAbusedHealer", 
+    "PNAM - Previous INFO": "01F8AAB3", 
+    "Add topics": [
+        "1Cloudcleaver"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6D 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "A witch she had to be. I was on my way to Caldera when I met her. She was a stranger here like myself, and our conversations lightened the burden of travel.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6D 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "She was quite friendly and, well, y'know, we set up camp together. But that night she revealed the witch inside. Cast a spell on me. I couldn't so much as blink!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6D 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Stole everything, even my worn out clothes, but most importantly, she took my prized axe Cloudcleaver. Join with me, stranger! And let's find her and extract her entrails together!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMVAbusedHealer", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0hlormarSwineTsot", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1festeringSwitch2", 
+        "1festeringSwitch3"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwmvabusedhealer 10", 
+        "References": [
+            "fbmwMVAbusedHealer"
+        ]
+    }
+}

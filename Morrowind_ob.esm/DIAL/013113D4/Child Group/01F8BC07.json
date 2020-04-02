@@ -1,0 +1,70 @@
+{
+    "Topic": "1Ristaag", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BC07"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMCeremony1", 
+    "PNAM - Previous INFO": "01F8BC06", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "A ceremony of blessing and cleansing that we Skaal perform only very rarely. These are frightening times, my friend. There have been ominous portents, and they concern me.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Heart-Fang is missing, and I fear that the All-Maker does not breathe freely on the Skaal this day. The ceremony must be completed, but first I will need you to retrieve the Totem of Claw and Fang.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMCeremony1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0korstSwindTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwbmceremony1 10\r\naddtopic 1TotemSofSClawSandSFang", 
+        "References": [
+            "fbmwBMCeremony1", 
+            "1TotemSofSClawSandSFang"
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0100948F"
+    }, 
+    "EDID - Editor ID": "FBMWShrineGnisisSecret", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 1, 
+        "CompiledSize": 242, 
+        "VariableCount": 4, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 1E 00 1F 00 00 00 07 10 0C 00 02 00 5A 7A 00 00 00 00 00 10 75 40 15 00 07 00 73 03 00 02 00 20 30 11 00 00 00 10 00 08 00 02 00 B9 00 00 00 00 00 16 00 0D 00 02 00 09 00 20 73 03 00 20 30 20 3D 3D B2 10 05 00 01 00 72 01 00 15 00 07 00 73 03 00 02 00 20 31 19 00 00 00 15 00 07 00 66 04 00 02 00 20 30 16 00 11 00 01 00 0D 00 20 58 24 10 02 00 00 00 20 31 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 0D 00 06 00 09 00 20 73 03 00 20 31 20 3D 3D 15 00 11 00 66 04 00 0C 00 20 66 04 00 20 58 0C 10 00 00 20 2B 16 00 0D 00 01 00 09 00 20 66 04 00 20 31 20 3C 3D 07 10 0C 00 02 00 5A 7A 00 00 00 00 00 00 44 C0 17 00 02 00 01 00 15 00 07 00 73 03 00 02 00 20 32 19 00 00 00 19 00 00 00 1E 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "SCN FBMWShrineGnisisSecret\r\n\r\n; Script to do with the hidden real mask. \r\n; Applied to the tribunal shrine associated with the quest.\r\n; There is a hidden panel that opens.\r\n; This script is minimally functional and still mostly in Morrowind Scripting Language.\r\n; It can be reworked when the Dunmer Temple quests are rebuilt.\r\n\r\nshort button\r\nshort questionState\r\nshort doOnce\r\nfloat timer\r\n\r\nBegin OnReset\r\n\t;if ( CellChanged == 1 )\r\n\t\tSetPos Z 337\r\n\t\tSet doOnce to 0\r\n\t;endif\r\nEnd\r\n\r\nBegin OnActivate\r\n\r\n;if ( GetJournalIndex TT_MaskVivec >= 100 )\r\n\r\n\t\tif ( doOnce == 0 )\r\n\t\t\tPlaySound3D 0DoorSStoneSClose\r\n\t\t\tset doOnce to 1\r\n\t\tendif\r\n\t\tset timer to 0\r\n\r\n\tif ( MenuMode == 1 )\r\n\t\tReturn\r\n\tendif\r\n\r\n\tif ( doOnce == 1 )\r\n\r\n\t\tset timer to ( timer + GetSecondsPassed )\r\n\r\n\t\tif ( timer <= 1 )\r\n\t\t\tSetPos Z -40\r\n\t\telse\r\n\t\t\tSet doOnce to 2\r\n\t\tendif\r\n\tendif\r\n\r\n\t;if journal is > 100, ALWAYS return here\r\n\tReturn\r\n\r\n;endif\r\n\r\nEnd\r\n;<CSEBlock>\r\n;<CSECaretPos> 6 </CSECaretPos>\r\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "button"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "1A 90 1D 20 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "questionState"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "timer"
+        }
+    ], 
+    "References": [
+        "0DoorSStoneSClose"
+    ]
+}

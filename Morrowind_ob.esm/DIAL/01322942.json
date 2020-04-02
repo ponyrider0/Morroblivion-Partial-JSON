@@ -1,0 +1,95 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01322942"
+    }, 
+    "EDID - Editor ID": "1Dilborn1", 
+    "Quests": [
+        "fbmwMSBarbarianBookA"
+    ], 
+    "FULL - Name": "Okay, I will help you.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1Dilborn1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013235DF"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBarbarianBookA", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Dilborn", 
+                "1Dilborn", 
+                "1Dilborn", 
+                "1Dilborn", 
+                "1Dilborn", 
+                "1Dilborn", 
+                "1Dilborn"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thrud happy, happy, outlander. Find Dilborn now, yes? Thrud see Dilborn go down in sewers near here.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Dilborn go to sewers lots to meet friends, Dilborn says. Most times, Dilborn back soon, and happy, happy. But Dilborn not back soon now.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "We go to sewers, find Dilborn!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0thrud", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
+                "SCTX - Result script source": "SetStage fbmwMSBarbarianBookA 20\r\nSET fbmwMSBarbarianBookA.FollowNow to 1", 
+                "References": [
+                    "fbmwMSBarbarianBookA"
+                ]
+            }
+        }
+    ]
+}

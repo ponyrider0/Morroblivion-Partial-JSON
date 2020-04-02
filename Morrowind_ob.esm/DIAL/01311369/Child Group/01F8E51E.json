@@ -1,0 +1,80 @@
+{
+    "Topic": "1SelerSFavelnim", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E51E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwCO7", 
+    "PNAM - Previous INFO": "01F8E51D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Thank you, Outlander. It would've been easy to kill him, and it would have been in your right to do so. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 43", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You've shown great compassion, and I wish to reward that.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwCO7", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 59, 
+            "Parameter #1": "fbmwCOChoice", 
+            "Parameter #2": 40
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0FalcoSGalenus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 47, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 50 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E DC 05 00 00 15 00 0B 00 72 04 00 73 05 00 03 00 20 31 31", 
+        "SCTX - Result script source": "setstage fbmwCO7 80\r\nplayer.additem 0000000f 1500\r\nset fbmwcoadvancement.colonystate to 11", 
+        "References": [
+            20, 
+            "fbmwCO7", 
+            "Gold001", 
+            "fbmwCOAdvancement"
+        ]
+    }
+}

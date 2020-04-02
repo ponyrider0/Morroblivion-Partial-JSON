@@ -1,0 +1,68 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AFB4"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMSmugglers", 
+    "PNAM - Previous INFO": "01F8AFB3", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "He's gone! Those creatures took him during the battle. Someone has got to find the Captain!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMSmugglers", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0gaeaSartoria", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 79, 
+            "Parameter #1": "fbmwBMSmugglers", 
+            "Parameter #2": 4
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 39, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0C 00 72 01 00 73 04 00 04 00 20 31 20 7E 58 10 05 00 01 00 72 02 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 30", 
+        "SCTX - Result script source": "set fbmwbmsmugglers.artoriachosen to -1\r\naddtopic 1findsthescaptain\r\nset fbmwbmsmugglers.saenusfollow to 0", 
+        "References": [
+            "fbmwBMSmugglers", 
+            "1findStheSCaptain"
+        ]
+    }
+}

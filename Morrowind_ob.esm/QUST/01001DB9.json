@@ -1,0 +1,229 @@
+{
+    "Record Header": {
+        "Signature": "QUST", 
+        "Record Flags": {}, 
+        "FormID": "01001DB9"
+    }, 
+    "EDID - Editor ID": "fbmwMQ04", 
+    "SCRI - Script": "fbmwMQ04DayTimer", 
+    "FULL - Name": "Vivec Informants", 
+    "ICON - Icon filename": "darthsouth\\Quests\\morrowindmainquest.dds", 
+    "DATA - General": {
+        "Flags": {}, 
+        "Priority": 90
+    }, 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 254, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 56, 
+            "Parameter #1": "MorroDefaultQuest", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Stages": [
+        {
+            "INDX - Stage index": 1, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "Caius sent me to Vivec with three tasks: speak with Addhiranirr, a Khajiit Thieves Guild operative in St. Olms; speak with Huleeya, an Argonian in the Foreign Quarter, at the Black Shalk Cornerclub; and speak with Mehra Milo, a Temple priestess at the Hall of Wisdom in the Temple Compound. When I have information about the Nerevarine cult and the Sixth House cult from these three, I report back to Caius. Caius gave me instructions in writing.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 5, 
+                            "CompiledSize": 45, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+                        "SCTX - Result script source": "addtopic 1addhiranirr\r\naddtopic 1watchedsbysordinators\r\naddtopic 1argonians\r\naddtopic 1persecutionsofsthesnerevarine\r\naddtopic 1ashlanders", 
+                        "References": [
+                            "1Addhiranirr", 
+                            "1watchedSbySOrdinators", 
+                            "1Argonians", 
+                            "1persecutionSofStheSNerevarine", 
+                            "1Ashlanders"
+                        ]
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 50, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {
+                        "Complete quest": true
+                    }, 
+                    "CNAM - Log Entry": "The Spymaster took my report, and the notes from Huleeya and the 'Progress of Truth'. He needs time to read and digest my report, but in the meantime, he gave me 200 gold to spend and told me to go out and get some guild or freelance jobs, or get some training. When I'm ready, he says to come back, and he'll have new orders for me.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 3, 
+                            "CompiledSize": 210, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 5A 00 01 00 56 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 56 69 76 65 63 20 49 6E 66 6F 72 6D 61 6E 74 73 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
+                        "SCTX - Result script source": "Player.RemoveItem 0bkUA1U7UHuleeyaInformant 1\r\nPlayer.RemoveItem 0bkUprogressoftruth 1\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
+                        "References": [
+                            20, 
+                            "0bkUA1U7UHuleeyaInformant", 
+                            "0bkUprogressoftruth"
+                        ]
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 55, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {
+                        "Complete quest": true
+                    }, 
+                    "CNAM - Log Entry": "The Spymaster promoted me to Journeyman Rank in the Blades. He seems pleased with me, because he also gave me a little present.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 174, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 5A 00 01 00 56 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 56 69 76 65 63 20 49 6E 66 6F 72 6D 61 6E 74 73 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                    }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "mwJobashaREF", 
+                "Flags": {}, 
+                "Unused": "00 0C 11"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 17.9999999545544, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04c", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "01848006", 
+                "Flags": {}, 
+                "Unused": "00 0C 11"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 59.9999998485146, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmehramiloref", 
+                "Flags": {}, 
+                "Unused": "00 0C 11"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04a", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "mwHuleeyaREF", 
+                "Flags": {}, 
+                "Unused": "00 0C 11"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04c", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 17.9999999545544, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04c", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }
+    ]
+}

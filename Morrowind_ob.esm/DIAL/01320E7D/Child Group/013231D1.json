@@ -1,0 +1,82 @@
+{
+    "Topic": "1RedoranSHortator3", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "013231D1"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQRedoranSarethi", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1Temple", 
+        "1Temple", 
+        "1NerevarineSprophecies", 
+        "1Imperial"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I also have a sealed package for you. I do not know what it contains, but I received it from a contact in the highest ranks of the Temple.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "My guess is that it has something to do with the Temple's position on your claim to fulfill the Nerevarine prophecies.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athynSsarethi", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1RedoranSHortator4"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 66, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 04 00 00 00 58 10 05 00 01 00 72 05 00", 
+        "SCTX - Result script source": "SetStage fbmwMQRedoran 60\r\nplayer.additem 0bkusaryoniunote 1\r\nSetStage fbmwMQ12 1\r\nmodpcfame 4\r\nAddTopic 1meetStheSarchcanon", 
+        "References": [
+            20, 
+            "fbmwMQRedoran", 
+            "0bkUsaryoniUnote", 
+            "fbmwMQ12", 
+            "1meetStheSarchcanon"
+        ]
+    }
+}

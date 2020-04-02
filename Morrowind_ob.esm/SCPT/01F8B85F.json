@@ -1,0 +1,76 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8B85F"
+    }, 
+    "EDID - Editor ID": "fbmwmsBarbarianBookScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 5, 
+        "CompiledSize": 242, 
+        "VariableCount": 5, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 E4 00 00 00 16 00 0D 00 07 00 09 00 20 73 04 00 20 33 20 3D 3D 16 00 13 00 05 00 0F 00 20 58 3A 10 05 00 01 00 72 03 00 20 31 20 3C 16 00 17 00 03 00 13 00 20 72 04 00 58 43 10 05 00 01 00 72 05 00 20 30 20 3D 3D 1C 00 01 00 22 10 00 00 37 10 05 00 01 00 72 03 00 15 00 07 00 73 04 00 02 00 20 34 19 00 00 00 19 00 00 00 19 00 00 00 16 00 0D 00 08 00 09 00 20 73 05 00 20 30 20 3D 3D 16 00 15 00 06 00 11 00 20 58 3A 10 05 00 01 00 72 03 00 20 31 31 30 20 3E 16 00 17 00 04 00 13 00 20 72 04 00 58 20 10 05 00 01 00 72 02 00 20 30 20 3D 3D 1C 00 02 00 22 10 00 00 1C 00 01 00 22 10 00 00 37 10 05 00 01 00 72 03 00 15 00 07 00 73 05 00 02 00 20 31 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwmsBarbarianBookScript\nshort follownow\nshort DilbornDead\nshort ThrudDead\nshort Control\nshort doOnceB\n\nbegin gamemode\n\tif ( Control == 3 )\n\t\tif ( GetStage fbmwMSBarbarianBookA < 1 )\n\t\t\tif ( Player.GetInCell OldSMournholdXSResidentialSSewers == 0 )\n\t\t\t\tfbmwDilbornREF.Disable\n\t\t\t\tStopQuest fbmwMSBarbarianBookA\n\t\t\t\tset Control to 4\n\t\t\tendif\n\t\tendif\n\tendif\n\n\tif  doOnceB == 0 \n\t\tif ( GetStage fbmwMSBarbarianBookA > 110 )\n\t\t\tif ( Player.GetInSameCell fbmwThrudREF == 0 )\n\t\t\t\tfbmwThrudREF.Disable\n\t\t\t\tfbmwDilbornREF.Disable\n\t\t\t\tStopQuest fbmwMSBarbarianBookA\n\t\t\t\tset doOnceB to 1\n\t\t\tendif\n\t\tendif\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 405 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "follownow"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "01 00 00 0E 02 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DilbornDead"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ThrudDead"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "01 00 00 D8 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "Control"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "75 6C 74 51 75 65 73", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doOnceB"
+        }
+    ], 
+    "References": [
+        "fbmwDilbornREF", 
+        "fbmwThrudREF", 
+        "fbmwMSBarbarianBookA", 
+        20, 
+        "OldSMournholdXSResidentialSSewers"
+    ]
+}

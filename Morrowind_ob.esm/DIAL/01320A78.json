@@ -1,0 +1,90 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01320A78"
+    }, 
+    "EDID - Editor ID": "1deliverSthisSslave1", 
+    "Quests": [
+        "fbmwMVSlaveMule"
+    ], 
+    "FULL - Name": "I'll deliver the slave to him for you.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1deliverSthisSslave1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013230B8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Balmora", 
+                "1RelamSArinith", 
+                "1slave", 
+                "1Rabinna"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Excellent. You'll find Helas in Balmora, in the east side of town. Just tell him Relam Arinith sent you. Take care with this slave, friend.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "She's worth more than you can imagine. Rabinna here might not look like much, but it's what's on the inside that counts. Know what I mean?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0RelamSArinith", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
+                "SCTX - Result script source": "setstage fbmwmvslavemule 30\r\nset fbmwmvslavemule.follownow to 1", 
+                "References": [
+                    "fbmwMVSlaveMule"
+                ]
+            }
+        }
+    ]
+}

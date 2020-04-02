@@ -1,0 +1,100 @@
+{
+    "Topic": "1shareSaSgift", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0101BE77"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwRomanceAhnassi", 
+    "PNAM - Previous INFO": "0101BE78", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 52 6F", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ahnassi sees how her VERY good friend is always doing, always learning new tricks. So Ahnassi must tell you a secret.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 52 6F", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Ahnassi has a friend, Senyndie, a nice Redguard female, who trains fighters at the Arena in Vivec.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 52 6F", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "And the secret Ahnassi tells is that Senyndie is a secret master of the guild discipline called 'acrobatics.' Do you know what that means?", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 52 6F", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "That means there is no one else on Vvardenfell who is so fine an acrobat as Senyndie. And no one else can train you so well.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 61 73", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "So go see Senyndie, and tell her Ahnassi sends you. Senyndie is Ahnassi's friend, and I know she will be happy to see you.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 79.9999997980194, 
+            "Function": 58, 
+            "Parameter #1": "fbmwRomanceAhnassi", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ahnassi", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 51 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage FBMWRomanceAhnassi 81\r\naddtopic 1ahnassi", 
+        "References": [
+            "fbmwRomanceAhnassi", 
+            "1Ahnassi"
+        ]
+    }
+}

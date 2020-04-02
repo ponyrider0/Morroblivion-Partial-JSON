@@ -1,0 +1,76 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AFA9"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMSmugglers", 
+    "PNAM - Previous INFO": "01F8AFA7", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Thank the gods you've returned! I see that Artoria has not returned with you. This day is filled with horrible news. There was a terrible battle. And Captain Carius...someone must find the Captain!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0gaeaSartoria", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 79, 
+            "Parameter #1": "fbmwBMSmugglers", 
+            "Parameter #2": 3
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMSmugglers", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0saenusSlusius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 25, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0C 00 72 01 00 73 03 00 04 00 20 31 20 7E 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "set fbmwbmsmugglers.saenuschosen to -1\r\naddtopic 1findsthescaptain", 
+        "References": [
+            "fbmwBMSmugglers", 
+            "1findStheSCaptain"
+        ]
+    }
+}

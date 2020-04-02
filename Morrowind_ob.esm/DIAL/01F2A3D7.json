@@ -1,0 +1,83 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F2A3D7"
+    }, 
+    "EDID - Editor ID": "mwCrimeServeSentence", 
+    "Quests": [
+        "CrimeMorrow"
+    ], 
+    "FULL - Name": "Go to Jail", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "mwCrimeServeSentence", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F2A3D8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "CrimeMorrow", 
+            "TPIC - Topic": "GREETING", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 2, 
+                        "Emotion Value": 50, 
+                        "Unused": "72 69 6D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Then you must serve a sentence of hard labor. Serve your time peaceably, and pay your debt to society.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 125, 
+                    "Parameter #1": "00 00 00 00", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 7, 
+                    "CompiledSize": 68, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 7E 10 00 00 1C 00 02 00 72 10 02 00 00 00 1C 00 03 00 72 10 02 00 00 00 1C 00 04 00 72 10 02 00 00 00 1C 00 05 00 72 10 02 00 00 00 1C 00 06 00 72 10 02 00 00 00 1C 00 07 00 72 10 02 00 00 00", 
+                "SCTX - Result script source": "Player.GotoJail\r\nmwBuckmothJailDoorRef.Lock\r\nmwFrostmothJailDoorRef.Lock\r\nmwHawkmothJailDoorRef.Lock\r\nmwMoonmothJailDoorRef.Lock\r\nmwMournholdJailDoorRef.Lock\r\nmwPelagiadJailDoorRef.Lock", 
+                "References": [
+                    20, 
+                    "mwBuckmothJailDoorRef", 
+                    "mwFrostmothJailDoorRef", 
+                    "mwHawkmothJailDoorRef", 
+                    "mwMoonmothJailDoorRef", 
+                    "mwMournholdJailDoorRef", 
+                    "mwPelagiadJailDoorRef"
+                ]
+            }
+        }
+    ]
+}

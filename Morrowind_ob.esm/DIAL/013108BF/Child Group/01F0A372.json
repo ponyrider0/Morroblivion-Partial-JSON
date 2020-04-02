@@ -1,0 +1,101 @@
+{
+    "Topic": "1noteSfromSNelos", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F0A372"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwVVictimRomance", 
+    "PNAM - Previous INFO": "01F0A371", 
+    "Add topics": [
+        "1MaurrieSAurmine"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 56", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "He gave you a letter to give to me? Wonderful! Thank you so! I knew that he cared. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 60, 
+                "Unused": "57 4D 56", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You know, you didn't have to do all of this for me, and I really appreciate it. You're clearly a wonderful person.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 40, 
+                "Unused": "57 4D 56", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "You should visit my friend Barnand Erelie in Tel Branora. He's a wonderful person, and I think the two of you would get along famously.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0bkUnotefromnelos", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 131, 
+            "Parameter #1": 1, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVVictimRomance", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0maurrieSaurmine", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 40, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 02 00 22 10 00 00", 
+        "SCTX - Result script source": "SetStage FBMwvVictimRomance 100\r\nPlayer.RemoveItem 0bkUnotefromnelos 1\r\nmwNelosOnmarREF.Disable", 
+        "References": [
+            20, 
+            "mwNelosOnmarREF", 
+            "fbmwVVictimRomance", 
+            "0bkUnotefromnelos"
+        ]
+    }
+}

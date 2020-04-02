@@ -1,0 +1,24 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0100B206"
+    }, 
+    "EDID - Editor ID": "fbmwBotrirScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 5, 
+        "CompiledSize": 399, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 12 00 00 00 00 00 39 10 0A 00 02 00 72 03 00 6E 5A 00 00 00 11 00 00 00 10 00 0B 00 10 00 8C 00 00 00 01 00 72 04 00 59 10 14 00 01 00 0A 00 44 69 65 20 57 69 74 63 68 21 00 00 00 00 00 00 39 10 0A 00 02 00 72 03 00 6E 1F 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 03 10 0A 00 02 00 72 05 00 6E 00 00 00 00 1C 00 01 00 5E 10 00 00 1C 00 02 00 53 10 0A 00 02 00 72 01 00 6E 9C FF FF FF 1C 00 01 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 1C 00 01 00 16 10 05 00 01 00 72 02 00 1C 00 02 00 16 10 05 00 01 00 72 01 00 11 00 00 00 10 00 06 00 00 00 C8 00 00 00 16 00 29 00 09 00 25 00 20 58 01 10 05 00 01 00 72 02 00 20 32 35 36 20 3C 3D 20 58 3A 10 05 00 01 00 72 03 00 20 33 31 20 3C 20 26 26 59 10 1F 00 01 00 15 00 54 68 69 73 20 69 73 20 63 6C 6F 73 65 20 65 6E 6F 75 67 68 21 00 00 00 00 00 00 39 10 0A 00 02 00 72 03 00 6E 1F 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 03 10 0A 00 02 00 72 05 00 6E 00 00 00 00 1C 00 01 00 5E 10 00 00 1C 00 02 00 53 10 0A 00 02 00 72 01 00 6E 9C FF FF FF 1C 00 01 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 1C 00 01 00 16 10 05 00 01 00 72 02 00 1C 00 02 00 16 10 05 00 01 00 72 01 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwBotrirScript\n\nBegin onDeath\n\tSetStage fbmwRecoverWidowmaker 90\nEND\n\nBegin OnPackageEnd fbmwrecoverwidowmakerfollow\n\tMessage \"Die Witch!\"\n\n\tSetStage fbmwRecoverWidowmaker 31\n\tSET fbmwRecoverWidowmaker.FollowNow TO 0\n\tSetEssential 0botrir 0\n\tmwBotrirREF.EvaluatePackage\n\n;mwIveriLlothriREF.SetAV Aggression 100\n\tmwIveriLlothriREF.ModDisposition mwBotrirREF -100\n\n;mwBotrirREF.SetAV Aggression 100\n\tmwBotrirREF.ModDisposition mwIveriLlothriREF -100\n\n\tmwBotrirREF.StartCombat mwIveriLlothriREF\n\tmwIveriLlothriREF.StartCombat mwBotrirREF\nEND\n\nBegin GameMode\n\tIF GetDistance mwIveriLlothriREF <= 256 && GetStage fbmwRecoverWidowmaker < 31\n\t\tMessage \"This is close enough!\"\n\n\t\tSetStage fbmwRecoverWidowmaker 31\n\t\tSET fbmwRecoverWidowmaker.FollowNow TO 0\n\t\tSetEssential 0botrir 0\n\t\tmwBotrirREF.EvaluatePackage\n\n;mwIveriLlothriREF.SetAV Aggression 100\n\t\tmwIveriLlothriREF.ModDisposition mwBotrirREF -100\n\n;mwBotrirREF.SetAV Aggression 100\n\t\tmwBotrirREF.ModDisposition mwIveriLlothriREF -100\n\n\t\tmwBotrirREF.StartCombat mwIveriLlothriREF\n\t\tmwIveriLlothriREF.StartCombat mwBotrirREF\n\tENDIF\n\n;\tIF fbmwRecoverWidowmaker.FollowNow == 0 && GetQuestRunning fbmwRecoverWidowmaker && GetStage fbmwRecoverWidowmaker < 31\n;\t\tmwBotrirREF.EvaluatePackage\n;\tENDIF\nEND\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "mwBotrirREF", 
+        "mwIveriLlothriREF", 
+        "fbmwRecoverWidowmaker", 
+        "fbmwrecoverwidowmakerfollow", 
+        "0botrir"
+    ]
+}

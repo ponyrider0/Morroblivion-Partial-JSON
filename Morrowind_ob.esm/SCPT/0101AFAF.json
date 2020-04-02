@@ -1,0 +1,98 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0101AFAF"
+    }, 
+    "EDID - Editor ID": "fbmwDagothUrScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 9, 
+        "CompiledSize": 618, 
+        "VariableCount": 12, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 15 00 04 00 00 00 11 00 00 00 10 00 06 00 00 00 4E 02 00 00 16 00 21 00 02 00 1D 00 20 58 01 10 05 00 01 00 72 03 00 20 34 30 30 20 3C 20 73 09 00 20 30 20 3D 3D 20 26 26 56 10 08 00 02 00 72 03 00 72 04 00 15 00 07 00 73 09 00 02 00 20 31 18 00 20 00 01 00 1C 00 20 58 0E 10 04 00 01 00 08 00 20 35 30 30 20 3C 20 73 0A 00 20 30 20 3D 3D 20 26 26 15 00 07 00 73 0A 00 02 00 20 31 18 00 27 00 02 00 23 00 20 58 0E 10 04 00 01 00 08 00 20 35 30 30 20 30 2E 37 35 20 2A 20 3C 20 73 0A 00 20 31 20 3D 3D 20 26 26 26 10 05 00 01 00 72 05 00 15 00 07 00 73 0A 00 02 00 20 32 18 00 26 00 02 00 22 00 20 58 0E 10 04 00 01 00 08 00 20 35 30 30 20 30 2E 35 20 2A 20 3C 20 73 0A 00 20 32 20 3D 3D 20 26 26 26 10 05 00 01 00 72 06 00 15 00 07 00 73 0A 00 02 00 20 33 18 00 27 00 02 00 23 00 20 58 0E 10 04 00 01 00 08 00 20 35 30 30 20 30 2E 32 35 20 2A 20 3C 20 73 0A 00 20 33 20 3D 3D 20 26 26 26 10 05 00 01 00 72 07 00 15 00 07 00 73 0A 00 02 00 20 34 18 00 2D 00 03 00 29 00 20 58 2E 10 00 00 20 31 20 3D 3D 20 58 0E 10 04 00 01 00 08 00 20 35 30 20 3C 20 7C 7C 20 73 0A 00 20 34 20 3D 3D 20 26 26 15 00 07 00 73 0A 00 02 00 20 35 15 00 07 00 73 08 00 02 00 20 31 29 11 0B 00 01 00 7A 00 00 00 00 00 00 E0 3F 19 00 00 00 16 00 0D 00 10 00 09 00 20 73 08 00 20 31 20 3D 3D 15 00 11 00 66 02 00 0C 00 20 66 02 00 20 58 0C 10 00 00 20 2B 16 00 0F 00 03 00 0B 00 20 58 23 10 00 00 20 30 20 3D 3D 16 00 0E 00 01 00 0A 00 20 66 02 00 20 30 2E 35 20 3E 22 10 00 00 19 00 00 00 19 00 00 00 16 00 0F 00 03 00 0B 00 20 66 02 00 20 34 2E 35 20 3C 3D 1C 00 01 00 04 10 08 00 02 00 5A 6E F6 FF FF FF 1C 00 02 00 04 10 08 00 02 00 5A 6E 0A 00 00 00 26 10 05 00 01 00 72 08 00 17 00 02 00 04 00 15 00 07 00 66 02 00 02 00 20 30 15 00 07 00 73 08 00 02 00 20 30 22 10 00 00 39 10 0A 00 02 00 72 09 00 6E 0A 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwDagothUrScript\r\n\r\nshort state\t\r\nshort HaveStuff\r\nfloat timer\r\nshort OpenDoors\r\nSHORT GreetOnce\r\nSHORT DoOnce\r\nSHORT SayOnce\r\n\r\n\r\nBegin OnLoad\r\n\t ;StartQuest XhashXquestXTaunts\r\nEND\r\n\r\n\r\nBegin GameMode\r\n\tIf GetDistance Player < 400 && GreetOnce == 0\r\n\t\tStartConversation Player GREETING\r\n\t\tSet GreetOnce to 1\r\n\r\n\telseif GetAV Health < (500) && DoOnce == 0\r\n\t\tSet DoOnce to 1\r\n\r\n\telseif GetAV Health < (500*0.75) && DoOnce == 1\r\n\t\tPlaySound xhahsxbattleTaunt1\r\n\t\tSet DoOnce to 2\r\n\r\n\telseif GetAV Health < (500*0.5) && DoOnce == 2\r\n\t\tPlaySound xhashxbattletaunt2\r\n\t\tSet DoOnce to 3\r\n\r\n\telseif GetAV Health < (500*0.25) && DoOnce == 3\r\n\t\tPlaySound xhashxbattletaunt3\r\n\t\tSet DoOnce to 4\r\n\r\n\telseif GetDead == 1 || GetAV Health < 50 && DoOnce == 4\r\n\t\tSet DoOnce to 5\r\n\t\tSet OpenDoors to 1\r\n\t\tSAA 0.5\r\n\tendif\r\n\r\n\t;check for death and play effect by doors and swivel them open\r\n\r\n\t;doors rotate 45 degrees\r\n\tif OpenDoors == 1\r\n\t\tset timer to timer + GetSecondsPassed\r\n\r\n\t\tif GetDisabled == 0\r\n\t\t\tif timer > 0.5\r\n\t\t\t\tDisable\r\n\t\t\tendif\r\n\t\tendif\r\n\r\n\t\tif timer <= 4.5\r\n\t\t\t\"2akulaSdoorSb\".Rotate Z -10\r\n\t\t\t\"2akulaSdoorSa\".Rotate Z 10\r\n\t\t\tPlaySound 0DoorSStoneSOpen\r\n\t\telse\r\n\t\t\tset timer to 0\r\n\t\t\tset opendoors to 0\r\n\t\t\tdisable\t\t;so dagoth body goes away\r\n\t\t\tSetStage fbmwMQ14 10\r\n\t\tendif\r\n\tendif\r\n\r\nend ; GameMode", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 B0 F2 3E 1D", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "timer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "00 00 00 AC F1 3E 1D", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "state"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "00 00 00 64 F2 3E 1D", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "HaveStuff"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "F2 3E 1D 18 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "OpenDoors"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "GreetOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 10, 
+                "Unused": "00 00 00 CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 11, 
+                "Unused": "F1 3E 1D 14 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "SayOnce"
+        }
+    ], 
+    "References": [
+        "2akulaSdoorSb", 
+        "2akulaSdoorSa", 
+        20, 
+        "GREETING", 
+        "xhahsxbattleTaunt1", 
+        "xhashxbattletaunt2", 
+        "xhashxbattletaunt3", 
+        "0DoorSStoneSOpen", 
+        "fbmwMQ14"
+    ]
+}

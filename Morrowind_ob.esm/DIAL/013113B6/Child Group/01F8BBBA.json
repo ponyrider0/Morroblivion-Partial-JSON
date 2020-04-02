@@ -1,0 +1,78 @@
+{
+    "Topic": "1pickSaxes", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BBBA"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwCO3a", 
+    "PNAM - Previous INFO": "01F8BBB9", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Four more picks should fill out what we need. I appreciate you taking the time to find them for us. Here's the money.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 3.99999998990097, 
+            "Function": 47, 
+            "Parameter #1": "0minerAsSpick", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 47, 
+            "Parameter #1": "0minerAsSpick", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwCO3a", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0FalcoSGalenus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 04 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E D0 07 00 00 39 10 0A 00 02 00 72 04 00 6E 14 00 00 00", 
+        "SCTX - Result script source": "player.removeitem 0minerasspick 4\r\nplayer.additem gold001 2000\r\nsetstage fbmwco3a 20", 
+        "References": [
+            20, 
+            "0minerAsSpick", 
+            "Gold001", 
+            "fbmwCO3a"
+        ]
+    }
+}

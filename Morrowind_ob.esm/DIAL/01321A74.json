@@ -1,0 +1,117 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321A74"
+    }, 
+    "EDID - Editor ID": "1MantleSofSWoe2", 
+    "Quests": [
+        "fbmwBMTymvaul"
+    ], 
+    "FULL - Name": "End this. Your father loves you.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1MantleSofSWoe2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013233F3"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwBMTymvaul", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1law", 
+                "1Skaal", 
+                "1necromancy", 
+                "1MantleSofSWoe", 
+                "1Solstheim", 
+                "1magicka", 
+                "1magicka"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Father? My...father? Could it be that he still holds me dear to his heart? I...I only wanted to study magic, free from the laws of the Skaal.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Necromancy was quick, and easy. The power it offers is so overwhelming. Here...take the Mantle of Woe! Destroy it! I have brought shame to my father.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I will leave Solstheim, I will find a place to study magicka, true magicka. Tell my father his love has saved me.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "I will return to him some day, when I can truly make him proud.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMTymvaul", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tymvaul", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "removeitem 0mantlesofswoe 1\r\nplayer.additem 0mantlesofswoe 1\r\nsetstage fbmwbmtymvaul 50", 
+                "References": [
+                    20, 
+                    "0mantleSofSwoe", 
+                    "fbmwBMTymvaul"
+                ]
+            }
+        }
+    ]
+}

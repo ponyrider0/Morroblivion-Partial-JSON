@@ -1,0 +1,60 @@
+{
+    "Topic": "mwCGTalkJiub", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8E969"
+    }, 
+    "DATA - ": {
+        "Type": 1, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwChargen", 
+    "PNAM - Previous INFO": "01F8E968", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 5, 
+                "Emotion Value": 80, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Well, not even last night's storm could wake you. I heard them say we've reached Morrowind. I'm sure they'll let us go.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 79, 
+            "Parameter #1": "fbmwChargen", 
+            "Parameter #2": 5
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0chargenSname", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 22, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 08 00 02 00 20 31 1C 00 01 00 5E 10 00 00", 
+        "SCTX - Result script source": "set fbmwChargen.Guard01Stage to 1\r\nmwCGGuard1REF.evp", 
+        "References": [
+            "mwCGGuard1REF", 
+            "fbmwChargen"
+        ]
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "Topic": "1Arkngthand", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322284"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ02", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1DwemerSruins", 
+        "1siltSstrider", 
+        "1Odai", 
+        "1Caldera", 
+        "1MolagSMar", 
+        "1Dwemer", 
+        "1FoyadaSMamaea", 
+        "1Arkngthand", 
+        "1foyada"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The old Dwemer ruins at Arkngthand are extensive on the surface and underground.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Head south out of town past the silt strider port, then cross bridges east over the Odai River. At the signpost, head north towards Caldera.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Immediately on the right see a signpost for Molag Mar. Turn right and head uphill on an old road to cross an ancient Dwemer bridge over Foyada Mamaea.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "The entrance to Arkngthand is on the east side of the foyada, south of the bridge. Turn a crank on a pipe nearby to open the doors.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0hasphatSantabolis", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 55 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1disappearanceSofStheSdwarves\r\nShowMap mwArkngthandMapMarker", 
+        "References": [
+            "1DisappearanceSofStheSDwarves", 
+            "mwArkngthandMapMarker"
+        ]
+    }
+}

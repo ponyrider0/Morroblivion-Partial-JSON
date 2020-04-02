@@ -1,0 +1,87 @@
+{
+    "Topic": "1moraleShasSbeenSlow", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B017"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMMorale", 
+    "PNAM - Previous INFO": "01F8B016", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 69", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Hmmm...I imagined that the lack of alcohol might have some effects on the morale, but I didn't ever actually ban it. Personally, I didn't even care about the alcohol;", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 42", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "It was the priest, Antonius Nuncius, who was worried about the effect it was having on the men. I disagreed, but the question became moot: our shipments stopped coming in months ago.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 42", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Speak with the soldiers a bit more, and see if you can find out who the source of this discontent is.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 39.9999998990097, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMorale", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMorale", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0falxScarius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmmorale 50", 
+        "References": [
+            "fbmwBMMorale"
+        ]
+    }
+}

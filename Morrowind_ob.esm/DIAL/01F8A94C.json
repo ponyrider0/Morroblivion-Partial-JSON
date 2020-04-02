@@ -1,0 +1,93 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8A94C"
+    }, 
+    "EDID - Editor ID": "fbmwicrestlessyes", 
+    "Quests": [
+        "fbmwICRestlessSpirit"
+    ], 
+    "FULL - Name": "I took care of everything.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwicrestlessyes", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A94D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwICRestlessSpirit", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "C6 CD FF", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So Okur needed you to kill the smugglers who murdered Julielle Aumine and to recover the dead woman's lost amulet. Well, if Okur is sure she can lay the ghost to rest now, that's good enough for me.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "C6 CD FF", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And, as it happens, I just received a donation of magic scrolls. Let me give you these three. Thank you. That's all I have for you. But there might be work for lay healers or almoners, or you might talk to Lalatia Varian about Oracle's Quests.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwICRestlessSpirit", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0Kaye", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 8, 
+                    "CompiledSize": 108, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 36 10 05 00 01 00 72 03 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 07 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 08 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwicrestlessspirit 50\r\nstartquest fbmwicoraclequest\r\nmodfactionreaction 0imperialscult playerfaction 5\r\nmoddisposition player 10\r\nplayer.additem 0scuhellfire 1\r\nplayer.additem 0scusummonflameatronach 1\r\nplayer.additem 0scufifthbarrier 1", 
+                "References": [
+                    20, 
+                    "fbmwICRestlessSpirit", 
+                    "fbmwICOracleQuest", 
+                    "0ImperialSCult", 
+                    "PlayerFaction", 
+                    "0scUhellfire", 
+                    "0scUsummonflameatronach", 
+                    "0scUfifthbarrier"
+                ]
+            }
+        }
+    ]
+}

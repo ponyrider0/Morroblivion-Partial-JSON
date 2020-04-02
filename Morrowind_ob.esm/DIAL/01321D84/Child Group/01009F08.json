@@ -1,0 +1,94 @@
+{
+    "Topic": "1sellingSoff1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01009F08"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMSBadPets", 
+    "PNAM - Previous INFO": "01009F07", 
+    "Add topics": [
+        "1scrib", 
+        "1need"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Thanks, outlander. Here is your very own scrib. He'll follow you around, right behind you, wherever you go.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 79, 
+            "Parameter #1": "fbmwMSBadPets", 
+            "Parameter #2": 3
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0rerlasSmon", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 19.9999999495049, 
+            "Function": 47, 
+            "Parameter #1": "Gold001", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 76, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 03 00 02 00 20 31 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 14 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 05 00 02 00 20 31", 
+        "SCTX - Result script source": "fbmwPetScrib1REF.enable\r\nfbmwPetScrib1REF.evp\r\nset fbmwMSBadPets.scribs to 1\r\nplayer.RemoveItem Gold001 20\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.ScribCompanion to 1", 
+        "References": [
+            "fbmwPetScrib1REF", 
+            20, 
+            "fbmwMSBadPets", 
+            "Gold001"
+        ]
+    }
+}

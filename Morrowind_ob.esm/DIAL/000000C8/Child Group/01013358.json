@@ -1,0 +1,69 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01013358"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSBarbarianBookA", 
+    "PNAM - Previous INFO": "01F8B983", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 4D 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Dilborn back! Dilborn back! Dilborn, Thrud says Dilborn never go to sewers again! Here. Take Thrud's favorite book. It is very good... many words... on BOTH sides of pages.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0Dilborn", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 109.999999722277, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMSBarbarianBookA", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0thrud", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 60, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 02 00 73 01 00 02 00 20 30 39 10 0A 00 02 00 72 02 00 6E C8 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "SET fbmwMSBarbarianBookA.FollowNow TO 0\r\nSetStage fbmwMSBarbarianBookA 200\r\nmoddisposition player 40\r\nplayer.additem 0bookskillusneak4 1", 
+        "References": [
+            20, 
+            "fbmwMSBarbarianBookA", 
+            "0bookskillUsneak4"
+        ]
+    }
+}

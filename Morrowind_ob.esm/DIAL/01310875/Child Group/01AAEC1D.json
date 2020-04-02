@@ -1,0 +1,99 @@
+{
+    "Topic": "1lostSprophecies", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AAEC1D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ09", 
+    "PNAM - Previous INFO": "01AA17D0", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have these lost prophecies? You will tell me these things, over and over, until I have them by heart.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "And then you will tell me what these priests say, what they see in these words. And then, you must leave me. Hunt. Sleep. Train. Feed.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Learn the land. I must bring these things into me, and place them before my ancestors, and listen to them, and to the skies and stars of my dreams.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 4D 51", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "And then, when the moons have come and gone, return, and I will give you my judgement.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ09", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ10", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0nibaniSmaesa", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 69, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31 15 00 0C 00 72 01 00 66 02 00 04 00 20 47 03 00", 
+        "SCTX - Result script source": "setstage fbmwMQ10 1\r\nmodpcfame 1\r\nmoddisposition player 10\r\n\r\nSET fbmwMQ10.mq10initialize TO 1\r\nSET fbmwMQ10.mq10timer TO GameDaysPassed", 
+        "References": [
+            "fbmwMQ10", 
+            20, 
+            "GameDaysPassed"
+        ]
+    }
+}

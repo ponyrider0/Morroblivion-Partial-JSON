@@ -1,0 +1,143 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310A3C"
+    }, 
+    "EDID - Editor ID": "1FarvynSOreyn", 
+    "Quests": [
+        "fbmwDAMalacath"
+    ], 
+    "FULL - Name": "Farvyn Oreyn", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1FarvynSOreyn", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AB09"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwDAMalacath", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 73 6B", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Oh, wondrous is Farvyn Oreyen, the powerful battlemage! He single-handedly slew a Daedroth Lord who wished to enslave us all. Even now, he has traveled with his servants to Gnaar Mok, to rid that poor town of some evil presence.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwDAMalacath", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "Vivec", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwdamalacath 30", 
+                "References": [
+                    "fbmwDAMalacath"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1FarvynSOreyn", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AB0A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwDAMalacath", 
+            "PNAM - Previous INFO": "01F8AB09", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 44 41", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank the gods for Farvyn Oreyn. Long will we tell of his heroic conquests. He arrived here only a day ago with his servants to help rid of us some marauding netches.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 44 41", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Even now, he has gone to the south of town, making the area safe once again for our fishermen.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwDAMalacath", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "GnaarSMok", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwdamalacath 40", 
+                "References": [
+                    "fbmwDAMalacath"
+                ]
+            }
+        }
+    ]
+}

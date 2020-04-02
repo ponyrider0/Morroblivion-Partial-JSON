@@ -1,0 +1,74 @@
+{
+    "Topic": "1duties", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322BC3"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMGAdvancement", 
+    "PNAM - Previous INFO": "01F8A808", 
+    "Add topics": [
+        "1joinSus", 
+        "1GuildSDues"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I need someone to convince an ex-Telvanni to join us. While you're there, you can collect Manwe's guild dues.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 73, 
+            "Parameter #1": "fbmwMagesGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 20, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ranisSathrys", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 46, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "\r\nSetStage fbmwMGJoinUs 1\r\nSetStage fbmwMGPayDues 1\r\naddtopic 1guildsdues\r\naddtopic 1joinsus", 
+        "References": [
+            "fbmwMGJoinUS", 
+            "fbmwMGPayDues", 
+            "1GuildSDues", 
+            "1joinSus"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "Topic": "1mySstory", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AA2DC5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMQ10", 
+    "PNAM - Previous INFO": "01AA2DC4", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I saw Morrowind fall to the Empire. I lived through the humiliation of the surrender, swore hatred and vengeance against Imperial and Tribunal alike for their betrayals.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "In later years, I despaired, and turned to Red Mountain, where I grew old and died fighting the blight and Red Mountain monsters.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Take my weapons and armor. I have no further use for them.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ghostUnpcUerurTdan", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 4A 00 00 00", 
+        "SCTX - Result script source": "player.additem 0erurudanuspearuunique 1\r\nplayer.additem 0erurudanucuirassuunique 1\r\nSetStage fbmwMQ10 74", 
+        "References": [
+            20, 
+            "0erurUdanUspearUunique", 
+            "0erurUdanUcuirassUunique", 
+            "fbmwMQ10"
+        ]
+    }
+}

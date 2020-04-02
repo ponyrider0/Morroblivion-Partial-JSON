@@ -1,0 +1,53 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AF0D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "01F8AF0C", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "68 72 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes. As Prefect of Hospitality here at the Gateway Inn, I'd be happy to tell you about my trade, or provide you with Hospitality Papers. I also may have work, if you are interested.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0angaredhel", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 36 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "addtopic 1hospitalityspapers\r\naddtopic 1work\r\nstartquest fbmwtownsadrith", 
+        "References": [
+            "1HospitalitySPapers", 
+            "1work", 
+            "fbmwTownSadrith"
+        ]
+    }
+}

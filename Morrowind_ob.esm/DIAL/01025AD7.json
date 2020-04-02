@@ -1,0 +1,86 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01025AD7"
+    }, 
+    "EDID - Editor ID": "fbmwMQyngling2000drakes", 
+    "Quests": [
+        "fbmwMQHlaaluYngling"
+    ], 
+    "FULL - Name": "Here's 2000 drakes.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwMQyngling2000drakes", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231F6"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQHlaaluYngling", 
+            "TPIC - Topic": "1HlaaluSHortator1", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1business", 
+                "1Hortator", 
+                "1HouseSHlaalu", 
+                "1Talk", 
+                "1CrassiusSCurio"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "A pleasure doing business with you. And I'm a man of my word. You got my vote for the office of Hortator of House Hlaalu.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Once you get everyone's vote, talk to Crassius Curio.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ynglingShalfTtroll", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E D0 07 00 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "player.removeitem gold001 2000\r\nSetStage fbmwMQHlaaluYngling 50", 
+                "References": [
+                    20, 
+                    "Gold001", 
+                    "fbmwMQHlaaluYngling"
+                ]
+            }
+        }
+    ]
+}

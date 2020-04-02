@@ -1,0 +1,260 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0131099D"
+    }, 
+    "EDID - Editor ID": "1RelamSArinith", 
+    "Quests": [
+        "fbmwMVSlaveMule"
+    ], 
+    "FULL - Name": "Relam Arinith", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1RelamSArinith", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AF41"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 56", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Tell him I'd be willing to business with him again some time.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 107.999999727326, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVSlaveMule", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 114.999999709653, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVSlaveMule", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0vorarShelas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RelamSArinith", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AF42"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": "01F8AF41", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 56", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, this slave was his final payment to me...or rather what she was carrying. All that moon sugar he had her swallow will fetch me a good price. Thank you for your help in delivering the shipment. Here, take this.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 101.999999742475, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVSlaveMule", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0vorarShelas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 6, 
+                    "CompiledSize": 124, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 67 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 52 10 0A 00 02 00 72 05 00 6E 90 01 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 90 01 00 00 39 10 0A 00 02 00 72 03 00 6E 6C 00 00 00 02 10 0A 00 02 00 72 06 00 6E 14 00 00 00 1C 00 02 00 52 10 0A 00 02 00 72 06 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmvslavemule 103\r\nplayer.additem fbmwringofmedusasgaze 1\r\nremoveitem fbmwringofmedusasgaze 1\r\nremoveitem gold001 400\r\nplayer.additem gold001 400\r\nsetstage fbmwmvslavemule 108\r\nadditem 0ingredumoonusugaru01 20\r\nmwRabinnaREF.RemoveItem 0ingredumoonusugaru01 20", 
+                "References": [
+                    20, 
+                    "mwRabinnaREF", 
+                    "fbmwMVSlaveMule", 
+                    "fbmwRingofMedusasGaze", 
+                    "Gold001", 
+                    "0ingredUmoonUsugarU01"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RelamSArinith", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AF43"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": "01F8AF42", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 56", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The slave died on the way? Damn. Did you get the shipment from her? The moon sugar she was carrying in her was worth a fortune. I can't abide someone else taking Vorar's moon sugar.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 100.999999745, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVSlaveMule", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0vorarShelas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 39 10 0A 00 02 00 72 02 00 6E 67 00 00 00", 
+                "SCTX - Result script source": "addtopic 1vorarassmoonssugar\r\nsetstage fbmwmvslavemule 103", 
+                "References": [
+                    "1VorarAsSmoonSsugar", 
+                    "fbmwMVSlaveMule"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RelamSArinith", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0103EC38"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": "01F8AF43", 
+            "Add topics": [
+                "1deliverStheSpayment"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 4, 
+                        "Emotion Value": 100, 
+                        "Unused": "77 4D 56", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes...he was my master. But now I must deliver the payment.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0Rabinna", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 64.9999998358908, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVSlaveMule", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

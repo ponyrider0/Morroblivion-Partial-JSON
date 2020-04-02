@@ -1,0 +1,95 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AC74"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMFalmer", 
+    "PNAM - Previous INFO": "01F8AC73", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 6, 
+                "Emotion Value": 50, 
+                "Unused": "68 65 6C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You've returned.  Have you found any evidence of the Falmer here on Solstheim?", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 6, 
+                "Emotion Value": 80, 
+                "Unused": "68 65 6C", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Hmmm.... Let me see....  No...no...wait...yes!  Oh...hmmm....no....", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "68 65 6C", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I'm afraid this isn't what I'm looking for. Please continue your explorations, and do be more certain next time.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athellor", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMFalmer", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMFalmer", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 130, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0bkUsnowprince", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E FD FF FF FF", 
+        "SCTX - Result script source": "moddisposition player -3", 
+        "References": [
+            20
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0102FE1A"
+    }, 
+    "EDID - Editor ID": "fbmwPublicanBoderifaranoScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 5, 
+        "CompiledSize": 275, 
+        "VariableCount": 4, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 05 01 00 00 16 00 0D 00 15 00 09 00 20 73 01 00 20 31 20 3D 3D 16 00 0D 00 03 00 09 00 20 73 04 00 20 30 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 02 00 15 00 07 00 73 04 00 02 00 20 31 1C 00 01 00 17 11 02 00 00 00 17 00 02 00 03 00 16 00 0F 00 01 00 0B 00 20 47 02 00 20 73 02 00 20 21 3D 15 00 07 00 73 03 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 17 00 03 00 13 00 20 72 03 00 58 43 10 05 00 01 00 72 04 00 20 30 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 03 00 20 31 20 3D 3D 15 00 07 00 73 03 00 02 00 20 32 19 00 00 00 19 00 00 00 16 00 0D 00 05 00 09 00 20 73 03 00 20 32 20 3D 3D 15 00 07 00 73 01 00 02 00 20 30 15 00 07 00 73 04 00 02 00 20 30 15 00 07 00 73 02 00 02 00 20 30 15 00 07 00 73 03 00 02 00 20 30 1C 00 01 00 17 11 05 00 01 00 72 05 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwPublicanBoderifaranoScript\n\n; Applied to Boderifarano\n\nshort rent\nshort rentday\nshort cleanup\nshort setup\n\nbegin gamemode\n\tif ( rent == 1 )       \n\t\tif ( setup == 0 )\n\t\t\tset rentday to GameDaysPassed \n\t\t\tset setup to 1\n\t\t\tfbmwaldskarbedref.SetOwnership\n\t\telse\n\t\t\tif ( GameDaysPassed != rentday )\n\t\t\t\tset cleanup to 1\n\t\t\tendif\n\t\tendif\n\n\t\tif Player.GetinCell AldTruhnvsaldsskarsinn == 0\n\t\t\tif ( Cleanup == 1 )\n\t\t\t\tset Cleanup to 2              \n\t\t\tendif\n\t\tendif\n\n\t\tif ( Cleanup == 2 )\n\t\t\tset rent to 0                         \n\t\t\tset setup to 0                        \n\t\t\tset rentday to 0\n\t\t\tset cleanup to 0\n\t\t\tfbmwaldskarbedref.SetOwnership 0boderisfarano\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 28 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rent"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rentday"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "cleanup"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "setup"
+        }
+    ], 
+    "References": [
+        "fbmwaldskarbedref", 
+        "GameDaysPassed", 
+        20, 
+        "AldTruhnVSAldSSkarSInn", 
+        "0boderiSfarano"
+    ]
+}

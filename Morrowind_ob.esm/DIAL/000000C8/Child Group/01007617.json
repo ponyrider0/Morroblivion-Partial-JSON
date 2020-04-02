@@ -1,0 +1,71 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01007617"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwFGKillCronies", 
+    "PNAM - Previous INFO": "01007616", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 1, 
+                "Emotion Value": 50, 
+                "Unused": "69 73 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I see you've risen in rank, outlander. I also heard you've been sent to kill me. I'm the only one who'll be taking over as Guildmaster.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 1, 
+                "Emotion Value": 80, 
+                "Unused": "69 73 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I won't let you take my rank in the Guild!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGKillCronies", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0lorbumolSgroTaglakh", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 36, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 01 00 6E 9C FF FF FF 16 10 05 00 01 00 72 01 00", 
+        "SCTX - Result script source": "SetAV Aggression 100\r\nModDisposition Player -100\r\nStartCombat Player", 
+        "References": [
+            20
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01320C35"
+    }, 
+    "EDID - Editor ID": "1oneSthingSfurther1", 
+    "Quests": [
+        "fbmwVAVampCurse"
+    ], 
+    "FULL - Name": "Yes. Drain my power so you may complete your escape.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1oneSthingSfurther1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323123"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwVAVampCurse", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Then I will begin. Soon, the mortals will once again tremble at the mention of my name.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0mastrius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwVAVampCurse 70", 
+                "References": [
+                    "fbmwVAVampCurse"
+                ]
+            }
+        }
+    ]
+}

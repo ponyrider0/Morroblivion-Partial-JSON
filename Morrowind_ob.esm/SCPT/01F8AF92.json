@@ -1,0 +1,101 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8AF92"
+    }, 
+    "EDID - Editor ID": "fbmwbmBeastBearScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 6, 
+        "CompiledSize": 730, 
+        "VariableCount": 8, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 41 00 00 00 00 00 16 00 27 00 01 00 23 00 20 58 3A 10 05 00 01 00 72 03 00 20 30 20 3E 20 58 3A 10 05 00 01 00 72 03 00 20 31 30 30 20 3C 20 26 26 39 10 0A 00 02 00 72 03 00 6E 69 00 00 00 19 00 00 00 11 00 00 00 10 00 08 00 02 00 42 00 00 00 00 00 16 00 15 00 03 00 11 00 20 58 3A 10 05 00 01 00 72 03 00 20 33 30 20 3D 3D AD 10 05 00 01 00 72 01 00 1C 00 01 00 0D 10 05 00 01 00 72 04 00 15 00 07 00 73 01 00 02 00 20 31 19 00 00 00 11 00 00 00 10 00 06 00 00 00 31 02 00 00 16 00 13 00 24 00 0F 00 20 58 3A 10 05 00 01 00 72 03 00 20 30 20 3E 16 00 23 00 04 00 1F 00 20 58 01 10 05 00 01 00 72 04 00 20 31 30 32 34 20 3C 3D 20 73 03 00 20 30 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 03 00 6E 14 00 00 00 21 10 00 00 51 11 07 00 01 00 6E 01 00 00 00 15 00 07 00 73 03 00 02 00 20 31 19 00 00 00 16 00 20 00 02 00 1C 00 20 58 2F 10 05 00 01 00 72 05 00 20 30 20 3D 3D 20 73 01 00 20 32 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 03 00 6E 28 00 00 00 6A 16 05 00 01 00 72 06 00 19 00 00 00 16 00 0D 00 03 00 09 00 20 73 01 00 20 31 20 3D 3D 15 00 0B 00 66 02 00 06 00 20 58 CE 10 00 00 1C 00 01 00 AD 10 05 00 01 00 72 02 00 15 00 07 00 73 01 00 02 00 20 32 19 00 00 00 16 00 15 00 05 00 11 00 20 58 3A 10 05 00 01 00 72 03 00 20 34 30 20 3D 3D 15 00 0F 00 66 04 00 0A 00 20 58 0E 10 04 00 01 00 08 00 16 00 0D 00 02 00 09 00 20 73 06 00 20 30 20 3D 3D 15 00 0F 00 66 05 00 0A 00 20 58 15 11 04 00 01 00 08 00 15 00 07 00 73 06 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 23 00 01 00 1F 00 20 66 04 00 20 66 05 00 20 3E 3D 20 58 3A 10 05 00 01 00 72 03 00 20 34 30 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00 19 00 00 00 16 00 21 00 02 00 1D 00 20 58 3A 10 05 00 01 00 72 03 00 20 35 30 20 3D 3D 20 73 07 00 20 30 20 3D 3D 20 26 26 5E 10 00 00 15 00 07 00 73 07 00 02 00 20 31 19 00 00 00 16 00 22 00 02 00 1E 00 20 58 3A 10 05 00 01 00 72 03 00 20 31 30 30 20 3E 3D 20 73 08 00 20 30 20 3D 3D 20 26 26 5E 10 00 00 15 00 07 00 73 08 00 02 00 20 31 19 00 00 00 16 00 2B 00 01 00 27 00 20 58 3A 10 05 00 01 00 72 03 00 20 31 30 30 20 3E 3D 20 58 01 10 05 00 01 00 72 04 00 20 31 30 32 34 20 3E 20 26 26 22 10 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwbmBeastBearScript\nshort InvOpen\nref Selfref\nshort DoOnce\nfloat currenthealth\nfloat maximumhealth\nshort DoOnceh\nshort DoOnce2\nshort DoOnce3\nbegin ondeath\n\tif(GetStage fbmwBMBeasts > 0)&&(GetStage fbmwBMBeasts < 100)\n\t\tSetStage fbmwBMBeasts 105\n\tendif\nend\nbegin onactivate\n\tif (GetStage fbmwBMBeasts == 30)\n\t\tRemoveAllItems fbmwbeastcotnref\n\t\tfbmwbeastcotnref.Activate Player\n\t\tset InvOpen to 1\n;\t\tMessage \"With the items in your pack, you construct an improvised sling for the bears wounded arm.\"\n\tendif\nend\nBegin GameMode\n\tif(GetStage fbmwBMBeasts > 0)\n\t\tif (GetDistance Player <= 1024) && (DoOnce == 0)\n\t\t\tSetStage fbmwBMBeasts 20\n\t\t\tEnable\n\t\t\tSetIgnoreFriendlyHits 1\n\t\t\tset DoOnce to 1\n\t\tendif\n\t\tif (GetItemCount fbmwchitinarrow == 0)&&(InvOpen==2)\n\t\t\tSetStage fbmwBMBeasts 40\n\t\t\tAddSpellNS fbmwBMbeastregen\n\t\tendif\n\t\tif(InvOpen == 1)\n\t\t\tset Selfref to GetSelf\n\t\t\tfbmwbeastcotnref.RemoveAllItems Selfref\n\t\t\tset InvOpen to 2\n\t\tendif\n\n\t\tif(GetStage fbmwBMBeasts == 40)\n\t\t\tset currenthealth to GetActorValue Health\n\t\t\tif (DoOnceh == 0)\n\t\t\t\tset maximumhealth to GetBaseActorValue  Health\n\t\t\t\tset DoOnceh to 1\n\t\t\tendif\n\t\tendif\n\t\tif (currenthealth >= maximumhealth)&&(GetStage fbmwBMBeasts == 40)\n\t\t\tSetStage fbmwBMBeasts 50\n\t\tendif\n\t\tif(GetStage fbmwBMBeasts == 50) && (DoOnce2 == 0)\n\t\t\tEvaluatePackage\n\t\t\tset DoOnce2 to 1\n\t\tendif\n\t\tif(GetStage fbmwBMBeasts >= 100) && (DoOnce3 == 0)\n\t\t\tEvaluatePackage\n\t\t\tset DoOnce3 to 1\n\t\tendif\n\t\tif(GetStage fbmwBMBeasts >= 100)&&(GetDistance Player > 1024)\n\t\t\tDisable\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "InvOpen"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "Selfref"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "F2 40 46 B1 90 40 32", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "currenthealth"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "93 40 EC 0F 75 3F A3", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "maximumhealth"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "DC 3F 38 4A 97 40 F5", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnceh"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "86 40 E4 C4 9D 40 86", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce2"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "B0 40 C8 D3 05 40 98", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce3"
+        }
+    ], 
+    "References": [
+        "fbmwbeastcotnref", 
+        2, 
+        "fbmwBMBeasts", 
+        20, 
+        "fbmwchitinarrow", 
+        "fbmwBMbeastregen"
+    ]
+}

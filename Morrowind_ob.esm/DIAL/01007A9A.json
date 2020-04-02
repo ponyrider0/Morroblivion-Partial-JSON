@@ -1,0 +1,76 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01007A9A"
+    }, 
+    "EDID - Editor ID": "1strongSsouls1", 
+    "Quests": [
+        "fbmwHTStronghold"
+    ], 
+    "FULL - Name": "Agreed, here's 3000 Drakes.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1strongSsouls1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01007A9D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTStronghold", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "OK, outlander, these will be suitable for the foundation of your stronghold.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3000.00000042573, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0llunelaShleran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 36, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E B8 0B 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00", 
+                "SCTX - Result script source": "Player.RemoveItem Gold001 3000\r\nPlayer.AddItem SoulGem5Grand5GrandSoul 2", 
+                "References": [
+                    20, 
+                    "Gold001", 
+                    "SoulGem5Grand5GrandSoul"
+                ]
+            }
+        }
+    ]
+}

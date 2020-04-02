@@ -1,0 +1,70 @@
+{
+    "Topic": "1newSrecruits", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BA70"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRKillGoblins", 
+    "PNAM - Previous INFO": "01F8BA6E", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "A standing army is nothing new in the city, though it is largely unnecessary. Mournhold is protected by her walls from the outside, and by our Lady Almalexia from within. None would dare mount an attack here.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Still, tradition dictates that the king maintain an army. We believe that Helseth is raising quite a different sort of army...a goblin army.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 59, 
+            "Parameter #1": "fbmwTRKillGoblins", 
+            "Parameter #2": 10
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0fedrisShler", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "addtopic 1goblinsarmy\r\nsetstage fbmwtrKillGoblins 10", 
+        "References": [
+            "1goblinSarmy", 
+            "fbmwTRKillGoblins"
+        ]
+    }
+}

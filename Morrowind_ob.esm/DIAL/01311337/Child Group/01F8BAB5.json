@@ -1,0 +1,101 @@
+{
+    "Topic": "1crewShasSfailedSme", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BAB5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMAirship", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 73 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Did they fly off course?  Or maybe...maybe they found the amulet, and...and flew away!  To meet women!  No fair maiden could resist a man with the...", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 73 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "the Amulet of Infectious Charm...in an airship, no less!  Say... I...I don't suppose you're...well...for hire?  I would...pay you...greatly...", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 73 53", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "to find my airship.  I'd need proof of what happened to it, of course!  Evidence, as it were...just...just to be sure.  And...of course...to bring me the...the amulet!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "69 73 53", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "I NEED that amulet.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMAirship", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 160, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMAirship", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0louisSbeauchamp", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwBMCrewFailHelp", 
+        "fbmwBMCrewFailNoHelp"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmAirship 20", 
+        "References": [
+            "fbmwBMAirship"
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "Topic": "1mySstory", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AA2DC4"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwMQ10", 
+    "PNAM - Previous INFO": "01AA2DC3", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I lived in the late years of the Tribunate, and behind the scenes, I helped us demoralize, then repel the Akaviri invaders.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I knew nothing of the Nerevarine or Dagoth Ur until I took refuge with the Ashlanders. I died a fool, trying to loot ruined Kogoruhn. Here.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 55", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Take these. Maybe there's something in the world left worth stealing.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ghostUnpcUidrenieSnerot", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 4C 00 00 00", 
+        "SCTX - Result script source": "player.additem lockpick 25\r\nSetStage fbmwMQ10 76", 
+        "References": [
+            20, 
+            "Lockpick", 
+            "fbmwMQ10"
+        ]
+    }
+}

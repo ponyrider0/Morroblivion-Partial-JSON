@@ -1,0 +1,69 @@
+{
+    "Topic": "1SABakha1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323601"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "mwBuySlavesQuest", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1SABakha", 
+        "1Orders", 
+        "1slave"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Very well. S'Bakha is now yours. Find him in his cage outside.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0savileSimayn", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 1000.00000047524, 
+            "Function": 47, 
+            "Parameter #1": "Gold001", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 74, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E E8 03 00 00 02 10 0A 00 02 00 72 04 00 6E E8 03 00 00 15 00 0A 00 72 05 00 73 04 00 02 00 20 31 1C 00 02 00 73 10 02 00 00 00 1C 00 03 00 89 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "player.removeitem Gold001 1000\r\nadditem Gold001 1000\r\nset mwBuySlavesQuest.SBakhaBought to 1\r\nmwSBakhaCageDoorRef.unlock\r\nmwSBakhaRef.SetFactionRank mwPlayerSlavesFaction, 1", 
+        "References": [
+            20, 
+            "mwSBakhaCageDoorRef", 
+            "mwSBakhaRef", 
+            "Gold001", 
+            "mwBuySlavesQuest", 
+            "mwPlayerSlavesFaction"
+        ]
+    }
+}

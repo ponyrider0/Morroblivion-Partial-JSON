@@ -1,0 +1,81 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0115D58F"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMBearHunt2", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "00 00 00", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "These have been difficult times for the Skaal, and it appears for you as well. I sense that you no longer live with the curse of the beast. This is good, as there have been ominous signs reported on the island.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMFrostGiant1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 160, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 56, 
+            "Parameter #1": "fbmwBMAAAImAWere", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBearHunt2", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0korstSwindTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 7, 
+            "CompiledSize": 60, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 04 00 1C 00 01 00 22 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 22 10 00 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00", 
+        "SCTX - Result script source": "startquest fbmwbmFrostGiant1\r\nfbmwbmHuntREF1.disable\r\nfbmwbmHuntREF2.disable\r\nfbmwbmHuntREF3.disable\r\naddtopic 1ominousssigns\r\naddtopic 1Ristaag\r\naddtopic 1BloodMoonSProphecy", 
+        "References": [
+            "fbmwbmHuntREF1", 
+            "fbmwbmHuntREF2", 
+            "fbmwbmHuntREF3", 
+            "fbmwBMFrostGiant1", 
+            "1ominousSsigns", 
+            "1Ristaag", 
+            "1BloodmoonSProphecy"
+        ]
+    }
+}

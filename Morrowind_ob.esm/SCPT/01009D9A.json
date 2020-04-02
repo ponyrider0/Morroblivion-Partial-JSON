@@ -1,0 +1,35 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01009D9A"
+    }, 
+    "EDID - Editor ID": "fbmwCO7DrtalkScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 4, 
+        "CompiledSize": 202, 
+        "VariableCount": 1, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 BC 00 00 00 16 00 1F 00 01 00 1B 00 20 72 01 00 73 05 00 20 31 30 20 3E 3D 20 58 23 10 00 00 20 31 20 3D 3D 20 26 26 21 10 00 00 18 00 1E 00 01 00 1A 00 20 72 01 00 73 05 00 20 31 30 20 3C 20 58 23 10 00 00 20 30 20 3D 3D 20 26 26 22 10 00 00 19 00 00 00 16 00 4B 00 02 00 47 00 20 58 3A 10 05 00 01 00 72 02 00 20 31 30 20 3E 3D 20 58 3A 10 05 00 01 00 72 02 00 20 33 30 20 3C 20 26 26 20 72 03 00 58 01 10 05 00 01 00 72 04 00 20 33 30 30 20 3C 3D 20 26 26 20 73 01 00 20 31 20 3C 20 26 26 56 10 05 00 01 00 72 03 00 15 00 07 00 73 01 00 02 00 20 31 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwCO7DrtalkScript\n\nshort doonce\n\nbegin gamemode\n\tif fbmwCOAdvancement.colonystate>=10 && GetDisabled == 1\n\t\tEnable\n\telseif fbmwCOAdvancement.colonystate<10 && GetDisabled == 0\n\t\tDisable\n\tendif\n\n\tif GetStage fbmwCO7 >= 10 && GetStage fbmwCO7 < 30 && Player.GetDistance 0DraloraSFavelnimREF <= 300 && doonce < 1\n\t\tStartConversation Player\n\t\tset doonce to 1\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 67 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonce"
+        }
+    ], 
+    "References": [
+        "fbmwCOAdvancement", 
+        "fbmwCO7", 
+        20, 
+        "0DraloraSFavelnimREF"
+    ]
+}

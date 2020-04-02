@@ -1,0 +1,23 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F2A501"
+    }, 
+    "EDID - Editor ID": "mwItermerelScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 4, 
+        "CompiledSize": 181, 
+        "VariableCount": 1, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 10 00 28 00 00 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 46 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 11 00 00 00 10 00 06 00 00 00 70 00 00 00 16 00 15 00 01 00 11 00 20 58 01 10 05 00 01 00 72 04 00 20 32 30 30 20 3C 39 10 0A 00 02 00 72 03 00 6E 46 00 00 00 19 00 00 00 16 00 31 00 01 00 2D 00 20 72 03 00 73 01 00 20 30 20 3D 3D 20 58 38 10 05 00 01 00 72 03 00 20 26 26 20 58 3A 10 05 00 01 00 72 03 00 20 37 30 20 3C 20 26 26 1C 00 01 00 5E 10 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName mwItermerelScript\r\n\r\n\r\nBegin OnPackageEnd fbmwMGEscortScholar2FollowNow\r\n\tSetStage fbmwMGEscortScholar2 70\r\n\tSET fbmwMGEscortScholar2.FollowNow TO 0\r\n\tfbItermerelREF.EvaluatePackage\r\nEND\r\n\r\nBegin GameMode\r\n\tIF GetDistance fbmwMGEscortHalfwayMarker < 200\r\n\t\tSetStage fbmwMGEscortScholar2 70\r\n\tENDIF\r\n\r\n\tIF fbmwMGEscortScholar2.FollowNow == 0 && GetQuestRunning fbmwMGEscortScholar2 && GetStage fbmwMGEscortScholar2 < 70\r\n\t\tfbItermerelREF.EvaluatePackage\r\n\tENDIF\r\nEND", 
+    "References": [
+        "fbitermerelref", 
+        "fbmwmgescortscholar2follownow", 
+        "fbmwMGEscortScholar2", 
+        "fbmwmgescorthalfwaymarker"
+    ]
+}

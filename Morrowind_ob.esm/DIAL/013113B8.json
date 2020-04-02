@@ -1,0 +1,95 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "013113B8"
+    }, 
+    "EDID - Editor ID": "1Sovngarde", 
+    "Quests": [
+        "fbmwBMBrodirGrove", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Sovngarde", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1Sovngarde", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BBCD"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMBrodirGrove", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "67 61 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Sovngarde is the name of the fortress erected by the god Shor as a gift to the valiant. It is said that if a Nord can locate the hidden entrance to Sovngarde, they can dwell in its mead-filled halls forever!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "67 61 72", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "That's the quest we were on, you see. It's why Grimkell betrayed us, why he tried to turn us all into stone. He was attempting to create his own magical portal to Sovngarde.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "67 61 72", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Now Grimkell is dead, as are my friends. And I...I have failed in our quest!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMBrodirGrove", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ulfgarStheSunending", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1failedsinsoursquest", 
+                "References": [
+                    "1failedSinSourSquest"
+                ]
+            }
+        }
+    ]
+}

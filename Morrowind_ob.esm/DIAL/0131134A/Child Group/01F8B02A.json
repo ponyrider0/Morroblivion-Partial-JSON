@@ -1,0 +1,85 @@
+{
+    "Topic": "1AntoniusSNuncius", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B02A"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMMorale", 
+    "PNAM - Previous INFO": "01F8B029", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6C 78 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The priest? He's not bad, I guess, for a priest. You'll find him at the Imperial Cult Shrine here at the fort, though he keeps an office upstairs here. Could be in either place. Seems to understand us soldiers pretty well.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 42", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "He was telling me just the other day how it seemed unfair that the Captain had cut us off from the drink. He figures that's one of our few pleasures on this dungheap of an island.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 76, 
+            "Parameter #1": 0, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMorale", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 67, 
+            "Parameter #1": "FortSFrostmothVSArmory", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 68, 
+            "Parameter #1": "Guard", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwbmmorale 60", 
+        "References": [
+            "fbmwBMMorale"
+        ]
+    }
+}

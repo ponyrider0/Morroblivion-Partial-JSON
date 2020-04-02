@@ -1,0 +1,205 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01322290"
+    }, 
+    "EDID - Editor ID": "1GuildSDues1", 
+    "Quests": [
+        "fbmwMGPayDues"
+    ], 
+    "FULL - Name": "Yes.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1GuildSDues1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323527"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGPayDues", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1work"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Here. Take the gold and leave me to my work. I would advise that you leave here now.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "We are engaged in very serious research here and if you disturb my colleagues, they may not be very understanding.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0manwe", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E D0 07 00 00 52 10 0A 00 02 00 72 03 00 6E D0 07 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgpaydues 50\r\nplayer.additem gold001 2000\r\nremoveitem gold001 2000", 
+                "References": [
+                    20, 
+                    "fbmwMGPayDues", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1GuildSDues1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323528"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGPayDues", 
+            "PNAM - Previous INFO": "01323527", 
+            "Add topics": [
+                "1work", 
+                "1joinSus"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Good work, outlander. You are the first member to get Manwe to pay her dues. I knew I could rely on you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E E8 03 00 00 53 10 0A 00 02 00 72 01 00 6E 0F 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgpaydues 100\r\nplayer.removeitem gold001 1000\r\nmoddisposition player 15", 
+                "References": [
+                    20, 
+                    "fbmwMGPayDues", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1GuildSDues1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A917"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGPayDues", 
+            "PNAM - Previous INFO": "01323528", 
+            "Add topics": [
+                "1work", 
+                "1joinSus"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Good work, outlander. You are the first member to get Manwe to pay her dues. I knew I could rely on you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Did you also convince Llarar Bereloth to join us?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E E8 03 00 00 53 10 0A 00 02 00 72 01 00 6E 0F 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgpaydues 100\r\nplayer.removeitem gold001 1000\r\nmoddisposition player 15", 
+                "References": [
+                    20, 
+                    "fbmwMGPayDues", 
+                    "Gold001"
+                ]
+            }
+        }
+    ]
+}

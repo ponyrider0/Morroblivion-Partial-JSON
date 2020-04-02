@@ -1,0 +1,94 @@
+{
+    "Topic": "1Soscean3", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "013235DB"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSWarlords", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1Mournhold", 
+        "1ring", 
+        "1assist"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ah, wonderful.  Now, these tools can be put to freeing Mournhold from the yoke of the oppressor... that has a nice ring to it, wouldn't you say?", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": " Here is your payment, outlander -- know that you have my gratitude.  If you still wish to assist us, of course, there's more that can be done...", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0DovorSOren", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0ebonySshortswordUsoscean", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0ebonyUcuirassUsoscean", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 96, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 88 13 00 00 39 10 0A 00 02 00 72 05 00 6E 28 00 00 00", 
+        "SCTX - Result script source": "player.removeitem 0ebonysshortswordusoscean 1\r\nplayer.removeitem 0ebonyucuirassusoscean 1\r\nadditem 0ebonysshortswordusoscean 1\r\nadditem 0ebonyucuirassusoscean 1\r\nplayer.additem gold001 5000\r\nsetstage fbmwMSWarlords 40", 
+        "References": [
+            20, 
+            "0ebonySshortswordUsoscean", 
+            "0ebonyUcuirassUsoscean", 
+            "Gold001", 
+            "fbmwMSWarlords"
+        ]
+    }
+}

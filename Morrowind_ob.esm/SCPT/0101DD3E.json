@@ -1,0 +1,49 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0101DD3E"
+    }, 
+    "EDID - Editor ID": "mwSpellMQCorprusEffectScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 0, 
+        "CompiledSize": 18, 
+        "VariableCount": 4, 
+        "Type": 256
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 13 00 04 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwSpellMQCorprusEffectScript\n\nshort count\nshort started\nshort doonce\n\nbegin ScriptEffectUpdate\n\n;\tif doonce != 1\n;\t\tset started to GameDaysPassed\n;\t\tset doonce to 1\n;\tendif\n;\t\n;\tset count to started - GameDaysPassed\n;\t\n;\tif count > 20\n;\t\tMessageBox \"Driven mad by dreams of Dagoth, I crawl towards Red Mountain.\"\n;\t\tPlayerRef.MoveTo fbcorprusdeath\n;\t\tMessageBox \"At Voryn Dagoth's feet I rest. Akulakhan's heartbeat drowns over laughter.\"\n;\t\tMessageBox \"I succumb to my disease.\"\n;\t\tPlayer.kill\n;\tendif\n\nend\n;<CSEBlock>\n;<CSECaretPos> 500 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "count"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "started"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonce"
+        }
+    ]
+}

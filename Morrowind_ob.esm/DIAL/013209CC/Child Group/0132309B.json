@@ -1,0 +1,71 @@
+{
+    "Topic": "1MudanTMulSEggSMine1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0132309B"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHTMineCure", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1rat", 
+        "1CureSBlight", 
+        "1scroll", 
+        "1CureSBlight", 
+        "1HetmanSAbelmawia", 
+        "1Gnisis"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "It is a rather complicated spell. [Aryon teaches you a targeted cure blight spell.] You should understand the principle now.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You will find this spell is much more efficient than most. If you want, you can also buy scrolls of cure blight from Hetman Abelmawia in Gnisis.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0aryon", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 1C 00 01 00 1C 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "SetStage fbmwHTMineCure 20\r\nPlayer.AddSpell 0cureUblightUtarget", 
+        "References": [
+            20, 
+            "fbmwHTMineCure", 
+            "0cureUblightUtarget"
+        ]
+    }
+}

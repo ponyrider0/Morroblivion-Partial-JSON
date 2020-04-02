@@ -1,0 +1,88 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0101E4CF"
+    }, 
+    "EDID - Editor ID": "fbmwBMWildHuntScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 9, 
+        "CompiledSize": 440, 
+        "VariableCount": 8, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 01 00 3F 00 00 00 00 00 16 00 22 00 02 00 1E 00 20 58 AF 10 00 00 20 30 20 21 3D 20 58 3A 10 05 00 01 00 72 05 00 20 33 30 20 3C 20 26 26 15 00 07 00 73 08 00 02 00 20 31 AE 10 02 00 00 00 19 00 00 00 11 00 00 00 10 00 06 00 00 00 5F 01 00 00 16 00 33 00 01 00 2F 00 20 58 3A 10 05 00 01 00 72 05 00 20 33 30 20 3C 20 73 08 00 20 30 20 3D 3D 20 26 26 20 58 38 10 05 00 01 00 72 06 00 20 30 20 3D 3D 20 26 26 15 00 07 00 66 07 00 02 00 20 31 17 00 02 00 01 00 15 00 07 00 66 07 00 02 00 20 30 19 00 00 00 16 00 0D 00 04 00 09 00 20 73 08 00 20 31 20 3D 3D 1C 00 01 00 9E 10 20 00 04 00 72 04 00 7A 00 00 00 00 00 00 80 40 7A 00 00 00 00 00 00 00 00 7A 00 00 00 00 00 00 00 00 1C 00 02 00 9E 10 20 00 04 00 72 04 00 7A 00 00 00 00 00 00 00 00 7A 00 00 00 00 00 00 80 40 7A 00 00 00 00 00 00 00 00 1C 00 03 00 9E 10 05 00 01 00 72 04 00 15 00 07 00 73 08 00 02 00 20 32 18 00 0D 00 03 00 09 00 20 73 08 00 20 32 20 3D 3D 1C 00 01 00 1E 10 08 00 02 00 72 07 00 72 04 00 1C 00 02 00 1E 10 08 00 02 00 72 07 00 72 04 00 1C 00 03 00 1E 10 08 00 02 00 72 07 00 72 04 00 18 00 0D 00 03 00 09 00 20 73 08 00 20 33 20 3D 3D 1C 00 04 00 83 18 0C 00 01 05 00 52 08 00 01 05 00 52 09 00 14 11 12 00 01 00 0E 00 62 6D 5F 77 65 72 65 65 6E 64 2E 62 69 6B 15 00 07 00 73 08 00 02 00 20 34 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwBMWildHuntScript\nshort CariusFollow\nshort HeartFangFollow\nshort fangtalk\nshort capntalk\nshort begin\nfloat fQuestDelayTime\nbegin MenuMode \n\tif(IsPCSleeping != 0)&&(GetStage fbmwBMWildHunt < 30)\n\t\tset begin to 1\n\t\tWakeUpPC\n\tendif\nend\nbegin gamemode\n\tif(GetStage fbmwBMWildHunt < 30)&&(begin == 0)&&(GetQuestRunning fbmwBMAAAImAWere == 0)\n\t\tset fQuestDelayTime to 1\n\telse\n\t\tset fQuestDelayTime to 0\n\tendif\n\tif(begin == 1)\n\t\tfbmwbmWildHuntWere1REF.moveto Player 512 0 0\n\t\tfbmwbmWildHuntWere2REF.moveto Player 0 512 0\n\t\tfbmwbmWildHuntWere3REF.moveto Player (-512) 0 0\n\t\tset begin  to 2\n\telseif(begin == 2)\n\t\tfbmwbmWildHuntWere1REF.Cast fbmwbmweretransport Player\n\t\tfbmwbmWildHuntWere2REF.Cast fbmwbmweretransport Player\n\t\tfbmwbmWildHuntWere3REF.Cast fbmwbmweretransport Player\n\telseif(begin == 3)\n\t\tPlayer.Call fbmwmovetofunct fbmwbmWildHuntTeleMarker\n\t\tPlayBink \"bm_wereend.bik\"\n\t\tset begin to 4\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 343 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "73 6B 65 6C 65 74 6F", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "CariusFollow"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "20 53 70 69 72 69 74", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "HeartFangFollow"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "45 46 2E 65 6E 61 62", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "fangtalk"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 03 00 73 10 02 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "capntalk"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "00 03 00 21 10 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "fQuestDelayTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "45 46 2E 65 6E 61 62", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "begin"
+        }
+    ], 
+    "References": [
+        "fbmwbmWildHuntWere1REF", 
+        "fbmwbmWildHuntWere2REF", 
+        "fbmwbmWildHuntWere3REF", 
+        20, 
+        "fbmwBMWildHunt", 
+        "fbmwBMAAAImAWere", 
+        "fbmwbmweretransport", 
+        "fbmwMoveToFunct", 
+        "fbmwbmWildHuntTeleMarker"
+    ]
+}

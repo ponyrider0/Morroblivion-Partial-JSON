@@ -1,0 +1,86 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01322CFA"
+    }, 
+    "EDID - Editor ID": "1estate3", 
+    "Quests": [
+        "fbmwCOEstate", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Yes", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1estate3", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132364C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwCOEstate", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "What the Factor wants, the Factor gets. I'll see to it that work gets started real soon on this, but it'll probably take a few days to be completed.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Just so you know. I'd say at least five, provided we're left alone to work. If you keep coming back, it may slow us down some.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0AldamSBerendus", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 06 00 02 00 20 31 15 00 0A 00 72 02 00 73 04 00 02 00 20 30", 
+                "SCTX - Result script source": "set fbmwcoUpdate.estate1 to 1\r\nset fbmwCOestate.aldamfollow to 0", 
+                "References": [
+                    "fbmwCOUpdate", 
+                    "fbmwCOEstate"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8ACB1"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "01F8ACB0", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "50 43 20", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "My name is Hannat Zainsubani. I entered this cavern seeking shelter from the weather, and these madmen stripped me and imprisoned me here. While I've been trapped here, I've had the most terrible dreams.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "50 43 20", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I... don't know if I can trust my own eyes and ears. Please. I need an armed escort to the cavern entrance. They have left me nothing. I cannot offer you reward. But my father, Hassour Zainsubani, in Ald'ruhn, will gift you generously if you can rescue me.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0hannatSzainsubani", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1armedsescort\r\nstartquest fbmwmshannat", 
+        "References": [
+            "1armedSescort", 
+            "fbmwMSHannat"
+        ]
+    }
+}

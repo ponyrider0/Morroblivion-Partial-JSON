@@ -1,0 +1,80 @@
+{
+    "Topic": "1barbarianAsSsadStale", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01AAD8D7"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMBrodirGrove", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I came to Solstheim with four of my brothers-in-arms.  We were on a quest, you see.  We were getting close...we could feel it.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "But then, one of our fellowship -- a powerful sorceror named Grimkell -- betrayed the rest of us.  He laid an ambush, and assailed us with powerful magicka.  I managed to slay Grimkell, but not before my three other companions were turned to stone.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "You may have seen them, for they are the three standing stones of Brodir Grove, not far from here.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBrodirGrove", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ulfgarStheSunending", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwbmbrodirgrove 10\r\naddtopic 1brodirsgrove", 
+        "References": [
+            "fbmwBMBrodirGrove", 
+            "1BrodirSGrove"
+        ]
+    }
+}

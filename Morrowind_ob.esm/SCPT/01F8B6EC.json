@@ -1,0 +1,54 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8B6EC"
+    }, 
+    "EDID - Editor ID": "mwInterventionQuestScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 5, 
+        "CompiledSize": 140, 
+        "VariableCount": 3, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 7E 00 00 00 16 00 0D 00 04 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 07 00 66 02 00 02 00 20 31 15 00 07 00 73 01 00 02 00 20 31 1C 00 01 00 9E 10 05 00 01 00 72 03 00 1C 00 02 00 9E 10 05 00 01 00 72 04 00 19 00 00 00 16 00 20 00 01 00 1C 00 20 72 05 00 58 2C 11 00 00 20 31 20 21 3D 20 58 6D 11 00 00 20 31 20 21 3D 20 26 26 1C 00 02 00 9E 10 05 00 01 00 72 05 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwInterventionQuestScript\n\nshort SetDelay\nfloat fQuestDelayTime\nshort World\t\t\t\t; 0 = Cyrodiil. 1 = Morrowind. 2 = Shivering Isles\n\nbegin GameMode\n\n\tif SetDelay == 0\n\t\tset fQuestDelayTime to 1\n\t\tset SetDelay to 1\n\t\tmwMarkerRat.moveto mwHoldingCellMarker\n\t\tfbmwInterventionMarker.moveto fbmwAlmsiviBalmora\n;message \"Mundus has shifted. Please reset your Mark spell.\"\n\tendif\n\n\tif Player.IsInInterior != 1 && GetPlayerInSEWorld != 1\n\t\tfbmwInterventionMarker.moveto Player\n\tendif\n\nend\n;<CSEBlock>\n;<CSECaretPos> 13 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "49 64 6C 65 41 6E 69", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "SetDelay"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "07 D5 03 0E 01 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "fQuestDelayTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "05 D2 04 2A 0C 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "World"
+        }
+    ], 
+    "References": [
+        "mwMarkerRat", 
+        "fbmwInterventionMarker", 
+        "mwHoldingCellMarker", 
+        "fbmwAlmsiviBalmora", 
+        20
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F819AC"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwICWitch", 
+    "PNAM - Previous INFO": "01F82284", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 41 70", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Not long ago we drove a coven of witches from the old Daedric ruins of Ashalmawia. However, one witch escaped -- a Dark Elf named Thelsa Dral.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "75 64 69", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "But just recently egg miners from nearby Asha-Ahhe Egg Mine have complained that the mine is cursed. Perhaps Thelsa Dral has taken refuge there.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "75 64 69", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Go to Asha-Ahhe Egg Mine, near the village of khuul, and if you find the witch Thelsa Dral, kill her. When you are sure the wicked creature is dead, return and report to me. Here is some gold for expenses.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICHaunting", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICWitch", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0Kaye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 2C 01 00 00", 
+        "SCTX - Result script source": "setstage fbmwicwitch 1\r\nplayer.additem gold001 300", 
+        "References": [
+            20, 
+            "fbmwICWitch", 
+            "Gold001"
+        ]
+    }
+}

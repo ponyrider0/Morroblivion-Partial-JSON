@@ -1,0 +1,22 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0102C23E"
+    }, 
+    "EDID - Editor ID": "fbmwFalcoscript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 3, 
+        "CompiledSize": 144, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 82 00 00 00 16 00 29 00 03 00 25 00 20 58 3A 10 05 00 01 00 72 01 00 20 31 30 20 3E 3D 20 58 3A 10 05 00 01 00 72 01 00 20 32 30 20 3C 3D 20 26 26 16 00 16 00 01 00 12 00 20 58 01 10 05 00 01 00 72 02 00 20 33 30 30 20 3E 3D 56 10 05 00 01 00 72 02 00 19 00 00 00 19 00 00 00 16 00 15 00 01 00 11 00 20 58 3A 10 05 00 01 00 72 03 00 20 32 30 20 3D 3D 56 10 05 00 01 00 72 02 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwFalcoscript\n\nbegin gamemode\n\tif GetStage fbmwCO12 >= 10 && GetStage fbmwCO12 <= 20\n\t\tif GetDistance Player >= 300 \n\t\t\tStartConversation Player\n\t\tendif\n\tendif\n\n\tif getstage fbmwCO13 == 20\n\t\tstartconversation Player\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 232 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "fbmwCO12", 
+        20, 
+        "fbmwCO13"
+    ]
+}

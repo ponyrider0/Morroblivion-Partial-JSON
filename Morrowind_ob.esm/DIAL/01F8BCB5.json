@@ -1,0 +1,160 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8BCB5"
+    }, 
+    "EDID - Editor ID": "fbmwtr09Widows", 
+    "Quests": [
+        "fbmwTR09"
+    ], 
+    "FULL - Name": "I'll give the Widows Fund 3000 gold.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwtr09Widows", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BCB6"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwTR09", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "95 69 82", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Hmm. You are a shrewd judge of character. I am a man of principle, and will not hold my common tongue for a payment of gold. But I know what benefits gold can do if it is used in a good cause.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "95 69 82", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Very well. I will not discuss King Helseth in 'The Common Tongue'. You have my word. And I'll take your 3000 gold, and will contribute it to the Widows and Orphans Fund.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "95 69 82", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And now, if you'll excuse me, we'll have to relocate immediately, now that the secret of our office is spoiled.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3000.00000042573, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0TrelsSVaris", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E B8 0B 00 00 02 10 0A 00 02 00 72 02 00 6E B8 0B 00 00 39 10 0A 00 02 00 72 03 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "player.removeitem gold001 3000\r\nadditem gold001 3000\r\nsetstage fbmwtr09 60", 
+                "References": [
+                    20, 
+                    "Gold001", 
+                    "fbmwTR09"
+                ]
+            }
+        }, 
+        {
+            "Topic": "fbmwtr09Widows", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BCB7"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTR09", 
+            "PNAM - Previous INFO": "01F8BCB6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "95 69 82", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "And you don't HAVE 3000 gold right now? I suppose you plan to get it to me 'right away'? Why don't I trust you? Well, thank you for your generous offer, but I'm afraid not. The only way to be sure of preserving our secret is to seal your lips -- permanently. ", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "95 69 82", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I regret the loss of life -- but it is the risk you run when you break into someone's secret office.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0TrelsSVaris", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 50, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00 16 10 05 00 01 00 72 02 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 10 10 09 00 02 00 21 00 6E 64 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtr09 40\r\nstartcombat player\r\nmoddisposition player -100\r\nmodav aggression 100", 
+                "References": [
+                    "fbmwTR09", 
+                    20
+                ]
+            }
+        }
+    ]
+}

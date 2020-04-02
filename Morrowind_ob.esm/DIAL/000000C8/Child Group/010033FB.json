@@ -1,0 +1,71 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010033FB"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwVTraderAbondoned", 
+    "PNAM - Previous INFO": "01F88760", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6D 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Well, this is close enough. Thanks for your help. I suppose it's only fair that I give you your reward. Here, take them.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 6D 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Though it pains me to give them, you are now the owner of the Boots of Blinding Speed.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 89.9999997727718, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVTraderAbondoned", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0pemenie", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 46, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00", 
+        "SCTX - Result script source": "removeitem 0bootsSofSblindingSspeedXuniqueX, 1\r\nplayer.additem 0bootsSofSblindingSspeedXuniqueX,1\r\nsetstage FBMWMVTraderAbondoned 100", 
+        "References": [
+            20, 
+            "0bootsSofSblindingSspeedXuniqueX", 
+            "fbmwVTraderAbondoned"
+        ]
+    }
+}

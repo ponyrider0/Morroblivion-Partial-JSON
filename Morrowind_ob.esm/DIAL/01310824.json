@@ -1,0 +1,131 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01310824"
+    }, 
+    "EDID - Editor ID": "1noteSfromSBashuk", 
+    "Quests": [
+        "fbmwMVBugrol"
+    ], 
+    "FULL - Name": "Note from Bashuk", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1noteSfromSBashuk", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AF2C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVBugrol", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6D 77 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Whew! Good thing you got my note to her. She'll help. I suppose you want your present?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 34.9999999116335, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVBugrol", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bugrolSgroTbagul", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 55, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 58 10 05 00 01 00 72 03 00 39 10 0A 00 02 00 72 04 00 6E 28 00 00 00", 
+                "SCTX - Result script source": "additem 0bkunotefrombashuk 1\r\nplayer.removeitem 0bkunotefrombashuk 1\r\naddtopic 1present\r\nsetstage fbmwmvbugrol 40", 
+                "References": [
+                    20, 
+                    "0bkUnotefrombashuk", 
+                    "1present", 
+                    "fbmwMVBugrol"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1noteSfromSBashuk", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8AF2D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVBugrol", 
+            "PNAM - Previous INFO": "01F8AF2C", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6D 77 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, yes! I got note, you got present! Go away! You ruin my hiding!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVBugrol", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bugrolSgroTbagul", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

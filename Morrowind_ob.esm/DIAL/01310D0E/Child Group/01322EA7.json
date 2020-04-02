@@ -1,0 +1,92 @@
+{
+    "Topic": "1work", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322EA7"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTownVivec", 
+    "PNAM - Previous INFO": "01030598", 
+    "Add topics": [
+        "1Vivec", 
+        "1outlander", 
+        "1Ordinators", 
+        "1Ordinators", 
+        "1duty"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "We've had seven killings in Vivec recently. All the victims had their throats slit. Most did not appear to have struggled.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Five victims were outlanders. Two were Ordinators. The two Ordinators were armed and on duty. Their weapons were still in their belts.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Nothing was removed from the victim's bodies.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTownVivec", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0elamSandas", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1work3"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 40, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 1C 00 01 00 21 10 00 00", 
+        "SCTX - Result script source": "setstage fbmwtownvivec 10\r\naddtopic 1sevensvictims\r\naddtopic 1witnesses\r\nfbdreamerprophetref.enable", 
+        "References": [
+            "fbdreamerprophetref", 
+            "fbmwTownVivec", 
+            "1sevenSvictims", 
+            "1witnesses"
+        ]
+    }
+}

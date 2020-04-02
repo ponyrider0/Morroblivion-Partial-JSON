@@ -1,0 +1,89 @@
+{
+    "Topic": "CrimeMorrowPresentWrits", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F2A3E1"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "CrimeMorrow", 
+    "TPIC - Topic": "GREETING", 
+    "PNAM - Previous INFO": "01F2A3DF", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 79 6F", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Your papers seem to be in order, but you still have outstanding crimes that warrant the death penalty.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "61 79 43", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "As you are a member of the Morag Tong, you shall receive an honorable death.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "CrimeMorrow", 
+            "Parameter #2": 6
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 5000.00000037621, 
+            "Function": 79, 
+            "Parameter #1": "CrimeMorrow", 
+            "Parameter #2": 7
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 125, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 63, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "59 10 24 00 01 00 14 00 43 75 72 72 65 6E 74 20 42 6F 75 6E 74 79 3A 20 25 2E 30 66 01 00 72 01 00 73 07 00 0A 00 00 00 15 00 0A 00 72 01 00 73 08 00 02 00 20 31 16 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "Message \"Current Bounty: %.0f\" CrimeMorrow.MT_NewCrimeLevel, 10\r\nset CrimeMorrow.RUN_redeemWrits to 1\r\nstartcombat player", 
+        "References": [
+            "CrimeMorrow", 
+            20
+        ]
+    }
+}

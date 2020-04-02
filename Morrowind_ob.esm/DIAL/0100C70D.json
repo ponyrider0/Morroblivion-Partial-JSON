@@ -1,0 +1,79 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0100C70D"
+    }, 
+    "EDID - Editor ID": "AAADarasAryonKhuul", 
+    "Quests": [
+        "aaaStriderTransport"
+    ], 
+    "FULL - Name": "Khuul. [3 hours trip, 15 gold]", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "AAADarasAryonKhuul", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100C70E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "aaaStriderTransport", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "This Strider has other cargo bound for Solstheim.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0darasSaryon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 47, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 0F 00 00 00 15 00 08 00 47 03 00 03 00 20 31 33 15 00 0D 00 47 04 00 08 00 20 47 04 00 20 33 20 2B", 
+                "SCTX - Result script source": "Player.RemoveItem Gold001 15\r\nSet MWDestinationCode to 13\r\nSet GameHour to GameHour + 3", 
+                "References": [
+                    20, 
+                    "Gold001", 
+                    "MWDestinationCode", 
+                    "GameHour"
+                ]
+            }
+        }
+    ]
+}

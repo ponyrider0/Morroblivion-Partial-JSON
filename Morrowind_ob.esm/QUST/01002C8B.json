@@ -1,0 +1,160 @@
+{
+    "Record Header": {
+        "Signature": "QUST", 
+        "Record Flags": {}, 
+        "FormID": "01002C8B"
+    }, 
+    "EDID - Editor ID": "fbmwDAMolagBal", 
+    "FULL - Name": "Molag Bal's Quest", 
+    "ICON - Icon filename": "darthsouth\\Quests\\miscquest-daedric.dds", 
+    "DATA - General": {
+        "Flags": {
+            "Start game enabled": true
+        }, 
+        "Priority": 70
+    }, 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 254, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 56, 
+            "Parameter #1": "MorroDefaultQuest", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Stages": [
+        {
+            "INDX - Stage index": 10, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "While in a Shrine to Molag Bal, the Daedric Prince spoke to me at the altar. He was angered, and I was afraid. His anger, however, was not directed at me, but rather toward one of his minions. Menta Na, a Daedroth Monarch, has grown lazy, and no longer does Molag Bal's bidding. If I kill Menta Na in his dungeon Kora-Dur, returning his soul to the Outer Realms where Molag Bal can punish him, then Molag Bal will reward me well. Kora-Dur is located east of Kogoruhn.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 2, 
+                            "CompiledSize": 17, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "55 10 05 00 01 00 72 02 00 1C 00 01 00 21 10 00 00", 
+                        "SCTX - Result script source": "ShowMap mwKoraDurMapMarker\r\nfbDaedrothMentaRef.enable", 
+                        "References": [
+                            "fbdaedrothmentaref", 
+                            "mwKoraDurMapMarker"
+                        ]
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 20, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "I've killed the Daedroth Menta Na.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 30, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {
+                        "Complete quest": true
+                    }, 
+                    "CNAM - Log Entry": "I've returned to the Shrine of Molag Bal, having killed the Daedroth Monarch. Molag Bal was true to his word, and has rewarded me with his mace, the Mace of Molag Bal.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 169, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 55 00 01 00 51 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4D 6F 6C 61 67 20 42 61 6C 27 73 20 51 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 32 30 30 19 00 00 00", 
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Molag Bal's Quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 200\"\r\nendif"
+                    }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "mwShrineOfMolagBalREF", 
+                "Flags": {}, 
+                "Unused": "00 46 21"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwDAMolagBal", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbdaedrothmentaref", 
+                "Flags": {}, 
+                "Unused": "00 46 21"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "fbmwDaedrothMenta", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwDAMolagBal", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }
+    ]
+}

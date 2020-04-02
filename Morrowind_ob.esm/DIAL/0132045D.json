@@ -1,0 +1,102 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0132045D"
+    }, 
+    "EDID - Editor ID": "1joinStheSImperialSLegion1", 
+    "Quests": [
+        "fbmwILAdvancement"
+    ], 
+    "FULL - Name": "Sign me up, Sir!", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1joinStheSImperialSLegion1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322F2D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwILAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1ImperialSLegion", 
+                "1Orders", 
+                "1Advancement", 
+                "1Requirements"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You are now a member of the Imperial Legion. Welcome, outlander. You'll have to stay in uniform, so take this chain cuirass.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You better be wearing a Legion cuirass of some kind in the presence of a higher ranking member.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Take your orders from me and other knights, and your advancement through the ranks will be swift if you meet the requirements.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "0ImperialSLegion", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0generalSdarius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 68, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "59 10 20 00 01 00 16 00 4D 65 6D 62 65 72 73 68 69 70 20 41 63 63 65 70 74 65 64 2E 2E 2E 00 00 00 00 00 00 39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "Message \"Membership Accepted...\"\r\nSetStage fbmwILAdvancement 1\r\nPlayer.AddItem 0imperialUchainUcuirass 1", 
+                "References": [
+                    20, 
+                    "fbmwILAdvancement", 
+                    "0imperialUchainUcuirass"
+                ]
+            }
+        }
+    ]
+}

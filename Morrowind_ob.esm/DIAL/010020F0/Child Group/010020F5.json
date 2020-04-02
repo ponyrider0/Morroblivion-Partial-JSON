@@ -1,0 +1,67 @@
+{
+    "Topic": "mwSlaveOrderWait", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010020F5"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "mwSlavesDialogue", 
+    "PNAM - Previous INFO": "010020F3", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "15 25 3C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "As you wish, master.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0davina", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "mwBuySlavesQuest", 
+            "Parameter #2": 7
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "mwBuySlavesQuest", 
+            "Parameter #2": 8
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 08 00 02 00 20 30 5E 10 00 00", 
+        "SCTX - Result script source": "set mwBuySlavesQuest.DavinaFollow to 0\r\nevp", 
+        "References": [
+            "mwBuySlavesQuest"
+        ]
+    }
+}

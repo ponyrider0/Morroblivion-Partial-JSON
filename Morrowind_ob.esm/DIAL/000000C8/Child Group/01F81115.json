@@ -1,0 +1,71 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F81115"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICOracleQuest", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "43 20 4E", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have proved yourself faithful and resourceful. I am an Oracle of the Imperial cult. Sometimes I am granted visions. I have the gift of Seeing, but not the gift of Doing.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 41 70", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "If you are bold, a doer of deeds, I beg you -- dedicate yourself to the Oracle's Quests, and I promise your rewards shall be great in the sight of the Nine.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 3.99999998990097, 
+            "Function": 73, 
+            "Parameter #1": "0ImperialSCult", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0LalatiaSVarian", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 9, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+        "SCTX - Result script source": "ADDTopic 1oracleassquests\r\n", 
+        "References": [
+            "1OracleAsSQuests"
+        ]
+    }
+}

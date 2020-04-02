@@ -1,0 +1,26 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F2A51A"
+    }, 
+    "EDID - Editor ID": "fbmwterisscript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 7, 
+        "CompiledSize": 312, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 12 00 00 00 00 00 39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 11 00 00 00 10 00 0B 00 10 00 28 00 00 00 01 00 72 03 00 39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00 15 00 0A 00 72 02 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 11 00 00 00 10 00 06 00 00 00 D5 00 00 00 16 00 14 00 01 00 10 00 20 58 38 10 05 00 01 00 72 02 00 20 30 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 27 00 02 00 23 00 20 58 43 10 05 00 01 00 72 04 00 20 31 20 3D 3D 20 58 3A 10 05 00 01 00 72 02 00 20 38 30 20 3C 20 26 26 39 10 0A 00 02 00 72 02 00 6E 50 00 00 00 1C 00 01 00 56 10 08 00 02 00 72 05 00 72 06 00 19 00 00 00 16 00 28 00 04 00 24 00 20 58 01 10 05 00 01 00 72 07 00 20 32 35 36 20 3C 20 58 3A 10 05 00 01 00 72 02 00 20 39 30 20 3C 20 26 26 15 00 0A 00 72 02 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00 1C 00 01 00 56 10 08 00 02 00 72 05 00 72 06 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwterisscript\n\nBegin onDeath\n\tSetStage fbmwVRichTrader 110\nEND\n\nBegin OnPackageEnd fbmwterisfollow\n\tSetStage fbmwVRichTrader 90\n\tSET fbmwVRichTrader.FollowNow TO 0\n\tmwTerisRaledranREF.EvaluatePackage\nEND\n\nBegin GameMode\n\tif GetQuestRunning fbmwVRichTrader == 0\n\t\treturn\n\tendif\n\n\tIF GetInCell Vivec == 1 && GetStage fbmwVRichTrader < 80\n\t\tSetStage fbmwVRichTrader 80\n\t\tmwTerisRaledranREF.StartConversation Player GREETING\n\tENDIF\n\n\tIF GetDistance mwAgrippinaHerenniaREF < 256 && GetStage fbmwVRichTrader < 90\n\t\tSET fbmwVRichTrader.FollowNow TO 0\n\t\tmwTerisRaledranREF.EvaluatePackage\n\t\tSetStage fbmwVRichTrader 90\n\t\tmwTerisRaledranREF.StartConversation Player GREETING\n\tENDIF\nEND\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "mwTerisRaledranREF", 
+        "fbmwVRichTrader", 
+        "fbmwterisfollow", 
+        "Vivec", 
+        20, 
+        "GREETING", 
+        "mwAgrippinaHerenniaREF"
+    ]
+}

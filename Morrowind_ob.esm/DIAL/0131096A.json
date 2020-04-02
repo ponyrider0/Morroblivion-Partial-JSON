@@ -1,0 +1,289 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0131096A"
+    }, 
+    "EDID - Editor ID": "1NererSBeneran", 
+    "Quests": [
+        "fbmwFGBeneranBounty"
+    ], 
+    "FULL - Name": "Nerer Beneran", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1NererSBeneran", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321816"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGBeneranBounty", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1theSrules", 
+                "1FightersSGuild", 
+                "1makeSamends"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Regretably, you broke the rules of the Fighters Guild and you have been expelled. First make amends, and then I can speak with you about this again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0persiusSmercius", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwFightersGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NererSBeneran", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A521"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwFGBeneranBounty", 
+            "PNAM - Previous INFO": "01321816", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Well, if you've already brought Nerer Beneran to justice, you have my gratitude and the gratitude of House Redoran. Here's your share of the bounty.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGBeneranBounty", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0nererSbeneran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0persiusSmercius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 6, 
+                    "CompiledSize": 80, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 A9 10 0D 00 03 00 72 04 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E F4 01 00 00 39 10 0A 00 02 00 72 06 00 6E 64 00 00 00", 
+                "SCTX - Result script source": "modfactionreaction fbmwfightersguild playerfaction 5\r\nmodfactionreaction 0redoran playerfaction 5\r\nmoddisposition player 10\r\nplayer.additem gold001 500\r\nsetstage fbmwfgbeneranbounty 100", 
+                "References": [
+                    20, 
+                    "fbmwFightersGuild", 
+                    "PlayerFaction", 
+                    "0Redoran", 
+                    "Gold001", 
+                    "fbmwFGBeneranBounty"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1NererSBeneran", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321817"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwFGBeneranBounty", 
+            "PNAM - Previous INFO": "01F8A521", 
+            "Add topics": [
+                "1work", 
+                "1NererSBeneran", 
+                "1justice", 
+                "1bounty"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Good work. Nerer Beneran has been brought to justice. Here's your share of the bounty, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0nererSbeneran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0persiusSmercius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 6, 
+                    "CompiledSize": 80, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 A9 10 0D 00 03 00 72 04 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E F4 01 00 00 39 10 0A 00 02 00 72 06 00 6E 64 00 00 00", 
+                "SCTX - Result script source": "modfactionreaction fbmwfightersguild playerfaction 5\r\nmodfactionreaction 0redoran playerfaction 5\r\nmoddisposition player 10\r\nplayer.additem gold001 500\r\nsetstage fbmwfgbeneranbounty 100", 
+                "References": [
+                    20, 
+                    "fbmwFightersGuild", 
+                    "PlayerFaction", 
+                    "0Redoran", 
+                    "Gold001", 
+                    "fbmwFGBeneranBounty"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1NererSBeneran", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A523"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwFGBeneranBounty", 
+            "PNAM - Previous INFO": "01321817", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 46 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Nerer Beneran was a member of House Redoran. He is now the leader of an outlaw band in Sargon which is north of Maar Gan. Find Nerer Beneran and bring him to justice.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGVas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0persiusSmercius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwFGBeneranBounty 10", 
+                "References": [
+                    "fbmwFGBeneranBounty"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0100FCB6"
+    }, 
+    "EDID - Editor ID": "fbmwHRStrongholdQuestScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 21, 
+        "CompiledSize": 736, 
+        "VariableCount": 4, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 D2 02 00 00 16 00 15 00 0A 00 11 00 20 58 3A 10 05 00 01 00 72 12 00 20 35 30 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 13 00 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00 15 00 07 00 73 01 00 02 00 20 31 19 00 00 00 16 00 12 00 01 00 0E 00 20 47 13 00 20 73 02 00 20 2D 20 35 20 3E 39 10 0A 00 02 00 72 12 00 6E 37 00 00 00 19 00 00 00 18 00 15 00 0D 00 11 00 20 58 3A 10 05 00 01 00 72 12 00 20 39 30 20 3D 3D 16 00 0D 00 02 00 09 00 20 73 01 00 20 31 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 13 00 15 00 07 00 73 01 00 02 00 20 32 19 00 00 00 16 00 12 00 07 00 0E 00 20 47 13 00 20 73 02 00 20 2D 20 35 20 3E 1C 00 01 00 22 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 22 10 00 00 1C 00 04 00 21 10 00 00 1C 00 05 00 21 10 00 00 1C 00 06 00 21 10 00 00 39 10 0A 00 02 00 72 12 00 6E 64 00 00 00 19 00 00 00 18 00 2E 00 01 00 2A 00 20 58 3A 10 05 00 01 00 72 12 00 20 31 34 31 20 3D 3D 20 72 14 00 58 01 10 05 00 01 00 72 15 00 20 32 35 36 20 3C 3D 20 26 26 39 10 0A 00 02 00 72 12 00 6E 8E 00 00 00 18 00 16 00 13 00 12 00 20 58 3A 10 05 00 01 00 72 12 00 20 31 37 30 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 01 00 20 32 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 13 00 1C 00 07 00 21 10 00 00 1C 00 08 00 21 10 00 00 1C 00 09 00 21 10 00 00 15 00 07 00 73 01 00 02 00 20 33 19 00 00 00 16 00 12 00 0A 00 0E 00 20 47 13 00 20 73 02 00 20 2D 20 35 20 3E 1C 00 07 00 22 10 00 00 1C 00 08 00 22 10 00 00 1C 00 09 00 22 10 00 00 1C 00 0A 00 21 10 00 00 1C 00 0B 00 21 10 00 00 1C 00 0C 00 21 10 00 00 1C 00 0D 00 21 10 00 00 1C 00 0E 00 21 10 00 00 1C 00 0F 00 21 10 00 00 39 10 0A 00 02 00 72 12 00 6E C8 00 00 00 19 00 00 00 18 00 16 00 0C 00 12 00 20 58 3A 10 05 00 01 00 72 12 00 20 32 35 32 20 3D 3D 16 00 0D 00 03 00 09 00 20 73 01 00 20 33 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 13 00 1C 00 10 00 21 10 00 00 15 00 07 00 73 01 00 02 00 20 34 19 00 00 00 16 00 12 00 05 00 0E 00 20 47 13 00 20 73 02 00 20 2D 20 35 20 3E 1C 00 10 00 22 10 00 00 1C 00 11 00 21 10 00 00 1C 00 0D 00 21 10 00 00 1C 00 0E 00 21 10 00 00 39 10 0A 00 02 00 72 12 00 6E FF 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwHRStrongholdQuestScript\n\nSHORT BuildProgress\nSHORT BuildTime\n\nSHORT FollowNow\n\n\nBEGIN GameMode\n\tIF GetStage fbmwHRStronghold == 50\n\t\tIF BuildProgress == 0\n\t\t\tSET BuildTime TO GameDaysPassed\n\t\t\tfbmwHRStrongholdConstruction1.Enable\t;player stronghold\n\n\t\t\tfbmwHHStrongholdConstruction1.Enable\t;non-player stronghold\n\t\t\tfbmwHTStrongholdConstruction1.Enable\t;\n\n\t\t\tSET BuildProgress TO 1\n\t\tENDIF\n\n\t\tIF GameDaysPassed - BuildTime > 5\n\t\t\tSetStage fbmwHRStronghold 55\n\t\tENDIF\n\n\tELSEIF GetStage fbmwHRStronghold == 90\n\t\tIF BuildProgress == 1\n\t\t\tSET BuildTime TO GameDaysPassed\n\t\t\tSET BuildProgress TO 2\n\t\tENDIF\n\n\t\tIF GameDaysPassed - BuildTime > 5\n\t\t\tfbmwHRStrongholdConstruction1.Disable\n\n\t\t\tfbmwHHStrongholdConstruction1.Disable\n\t\t\tfbmwHTStrongholdConstruction1.Disable\n\n\t\t\tfbmwHRStrongholdStage1.Enable\n\n\t\t\tfbmwHHStrongholdStage1.Enable\n\t\t\tfbmwHTStrongholdStage1.Enable\n\n\t\t\tSetStage fbmwHRStronghold 100\n\t\tENDIF\n\n\tELSEIF GetStage fbmwHRStronghold == 141 && mwFreleneAcquesREF.GetDistance mwGuardFreleneOrdinatorREF <= 256\n\t\tSetStage fbmwHRStronghold 142\n\n\n\tELSEIF GetStage fbmwHRStronghold == 170\n\t\tIF BuildProgress == 2\n\t\t\tSET BuildTime TO GameDaysPassed\n\t\t\tfbmwHRStrongholdConstruction2.Enable\n\n\t\t\tfbmwHHStrongholdConstruction2.Enable\n\t\t\tfbmwHTStrongholdConstruction2.Enable\n\n\t\t\tSET BuildProgress TO 3\n\t\tENDIF\n\n\t\tIF GameDaysPassed - BuildTime > 5\n\t\t\tfbmwHRStrongholdConstruction2.Disable\n\n\t\t\tfbmwHHStrongholdConstruction2.Disable\n\t\t\tfbmwHTStrongholdConstruction2.Disable\n\t\t\t\n\t\t\tfbmwHRStrongholdStage2.Enable\n\n\t\t\tfbmwHHStrongholdStage2.Enable\n\t\t\tfbmwHTStrongholdStage2.Enable\n\n\t\t\tmwBroderGarilREF.Enable\n\t\t\tmwHetmanGulsREF.Enable\n\t\t\tmwGadenFolvynREF.Enable\n\n\t\t\tSetStage fbmwHRStronghold 200\n\t\tENDIF\n\n\tELSEIF GetStage fbmwHRStronghold == 252\n\t\tIF BuildProgress == 3\n\t\t\tSET BuildTime TO GameDaysPassed\n\t\t\tfbmwHRStrongholdConstruction3.Enable\n\t\t\tSET BuildProgress TO 4\n\t\tENDIF\n\n\t\tIF GameDaysPassed - BuildTime > 5\n\t\t\tfbmwHRStrongholdConstruction3.Disable\n\t\t\tfbmwHRStrongholdStage3.Enable\n\n\t\t\tmwBroderGarilREF.Enable\n\t\t\tmwHetmanGulsREF.Enable\n\n\t\t\tSetStage fbmwHRStronghold 255\n\t\tENDIF\n\n\tENDIF\nEND\n;<CSEBlock>\n;<CSECaretPos> 1561 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "6F 6E 73 74 72 75 63", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "BuildProgress"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "69 6E 61 74 6F 72 52", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "BuildTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "12 AF 3B 3C B5 32 BD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "FollowNow"
+        }
+    ], 
+    "References": [
+        "fbmwHRStrongholdConstruction1", 
+        "fbmwHHStrongholdConstruction1", 
+        "fbmwHTStrongholdConstruction1", 
+        "fbmwHRStrongholdStage1", 
+        "fbmwHHStrongholdStage1", 
+        "fbmwHTStrongholdStage1", 
+        "fbmwHRStrongholdConstruction2", 
+        "fbmwHHStrongholdConstruction2", 
+        "fbmwHTStrongholdConstruction2", 
+        "fbmwHRStrongholdStage2", 
+        "fbmwHHStrongholdStage2", 
+        "fbmwHTStrongholdStage2", 
+        "mwBroderGarilREF", 
+        "mwHetmanGulsREF", 
+        "mwGadenFolvynREF", 
+        "fbmwHRStrongholdConstruction3", 
+        "fbmwHRStrongholdStage3", 
+        "fbmwHRStronghold", 
+        "GameDaysPassed", 
+        "mwFreleneAcquesREF", 
+        "mwGuardFreleneOrdinatorREF"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B9A6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "01F8B9A5", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 4D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Are you speaking to me? I suppose you want some armor or steel something-or-another, right? Well, why don't you take your sniveling looks and your ungrateful tone and talk directly to the smith? I'm \"just an apprentice.\" ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 4D", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I've got nothing to offer the likes of you. I don't belong here.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ilnoriUfaustus", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "startquest fbmwmsjobhunt\r\naddtopic 1donatsbelongshere\r\naddtopic 1ilnorisfaustus", 
+        "References": [
+            "fbmwMSJobHunt", 
+            "1donAtSbelongShere", 
+            "1IlnoriSFaustus"
+        ]
+    }
+}

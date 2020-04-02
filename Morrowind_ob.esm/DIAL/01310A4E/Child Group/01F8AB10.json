@@ -1,0 +1,73 @@
+{
+    "Topic": "1goneSmissing", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AB10"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwDeadMen", 
+    "PNAM - Previous INFO": "01F8AB0F", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 44", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes...my husband, Danar Uvelas, is missing again. It happens with him. See, he has a problem with skooma, although he swears he's been trying to stop.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 44", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Last time he disappeared it was for days, and when he came back, he didn't look so good. I'm worried that he might have been infected with corprus, or something equally horrible. Do you think you might be able to find him for me?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwDeadMen", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0moroniSuvelas", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1goneSmissing1", 
+        "1goneSmissing2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwdeadmen 20", 
+        "References": [
+            "fbmwDeadMen"
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "Topic": "1TongueTToad", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A627"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGTongueToad", 
+    "PNAM - Previous INFO": "01321D57", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Good work. Just as long as Tongue-Toad keeps his mouth shut. Here's your gold.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 69.999999823267, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGTongueToad", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGTongueToad", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0lorbumolSgroTaglakh", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 63, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 03 00 72 04 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 05 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E F4 01 00 00", 
+        "SCTX - Result script source": "setstage fbmwfgtonguetoad 100\r\nmodfactionreaction fbmwfightersguild playerfaction 5\r\nmoddisposition player 5\r\nplayer.additem gold001 500", 
+        "References": [
+            20, 
+            "fbmwFGTongueToad", 
+            "fbmwFightersGuild", 
+            "PlayerFaction", 
+            "Gold001"
+        ]
+    }
+}

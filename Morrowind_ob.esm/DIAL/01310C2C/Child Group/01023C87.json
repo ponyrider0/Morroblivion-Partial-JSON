@@ -1,0 +1,74 @@
+{
+    "Topic": "1Counsel", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01023C87"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ11e", 
+    "PNAM - Previous INFO": "01023C88", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "If you hope to persuade Han-Ammu to become ashkhan, you must find some way to give him strength, willpower, and intelligence.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Han-Ammu is unpopular with the tribe, and he knows it. But if he bore tokens recognized by all the tribe as conferring strength, willpower, and intelligence, it would give him the confidence to accept the responsibilities of tribe leadership.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ11e", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0manirai", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1tokens"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "AddTopic 1wantStoSbeSashkhan\r\nAddTopic 1whatSManiraiSsays\r\nAddTopic 1Tokens", 
+        "References": [
+            "1wantStoSbeSashkhan", 
+            "1whatSManiraiSsays", 
+            "1tokens"
+        ]
+    }
+}

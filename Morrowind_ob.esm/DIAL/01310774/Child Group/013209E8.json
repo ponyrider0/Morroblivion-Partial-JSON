@@ -1,0 +1,98 @@
+{
+    "Topic": "1ShoesSofSStPSRilms", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "013209E8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTTRilmsShoes", 
+    "PNAM - Previous INFO": "01F8A2D0", 
+    "Add topics": [
+        "1ShoesSofSStPSRilms", 
+        "1AldSSotha", 
+        "1Vivec", 
+        "1AldSSotha", 
+        "1sacred", 
+        "1Temple", 
+        "1potions"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "In a dream, a priest had a vision of the Shoes of St. Rilms lying neglected in the depths of Ald Sotha, just northeast of Vivec.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Go to Ald Sotha and, if this is a true vision, return this sacred relic to the Temple. I offer you these potions to aid you in your quest.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 14.9999999621286, 
+            "Function": 80, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0endrynSllethan", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 4.99999998737621, 
+            "Function": 73, 
+            "Parameter #1": "0Temple", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 68, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 04 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 02 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwttrilmsshoes 10\r\nplayer.additem 0puheroismus 1\r\nplayer.additem 0purestoreuhealthue 4\r\nplayer.additem 0puinvisibilityuq 2", 
+        "References": [
+            20, 
+            "fbmwTTRilmsShoes", 
+            "0pUheroismUs", 
+            "0pUrestoreUhealthUe", 
+            "0pUinvisibilityUq"
+        ]
+    }
+}

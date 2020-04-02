@@ -1,0 +1,264 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0100A17C"
+    }, 
+    "EDID - Editor ID": "fbmwBMMeadHallHunter", 
+    "Quests": [
+        "fbmwBMMeadHall"
+    ], 
+    "FULL - Name": "Send out hunters to kill snow bears and snow wolv", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwBMMeadHallHunter", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100A17D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMMeadHall", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, my chieftain. I will send out the hunters. They will kill as many snow bears and snow wolves as they are able, and bring back their pelts. Brynjolfr the smith can use these pelts to craft some custom armor. ", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "These are elusive creatures, however, and it may be some time before the hunters return. Check back in a few days.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0svenjaSsnowTsong", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 15 00 0A 00 72 02 00 73 0C 00 02 00 20 31", 
+                "SCTX - Result script source": "setstage fbmwbmMeadHallc 10\r\nset fbmwBMMeadHall.orderhunter to 1", 
+                "References": [
+                    "fbmwBMMeadHallc", 
+                    "fbmwBMMeadHall"
+                ]
+            }
+        }, 
+        {
+            "Topic": "fbmwBMMeadHallHunter", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100A17E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMMeadHall", 
+            "PNAM - Previous INFO": "0100A17D", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6A 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The hunters have returned,&sUActnQuick1;. Here are the snow bear and snow wolf pelts they were able to secure. The heads of these creatures have been mounted and placed on the walls upstairs, oh great chieftain.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 4.99999998737621, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMMeadHall", 
+                    "Parameter #2": 7
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMMeadHallc", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0svenjaSsnowTsong", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 05 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 05 00 00 00 15 00 0A 00 72 05 00 73 0C 00 02 00 20 32", 
+                "SCTX - Result script source": "setstage fbmwbmMeadHallc 20\r\nplayer.additem 0ingredUSnowbearUPeltUunique 5\r\nplayer.additem 0ingredUSnowwolfUPeltUunique 5\r\nset fbmwBMMeadHall.orderhunter to 2", 
+                "References": [
+                    20, 
+                    "fbmwBMMeadHallc", 
+                    "0ingredUsnowbearUpeltUunique", 
+                    "0ingredUsnowwolfUpeltUunique", 
+                    "fbmwBMMeadHall"
+                ]
+            }
+        }, 
+        {
+            "Topic": "fbmwBMMeadHallHunter", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100A17F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMMeadHall", 
+            "PNAM - Previous INFO": "0100A17E", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6A 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The hunters are still out in the wild,&sUActnQuick1;. Remember, snow bears and snow wolves are elusive creatures, and they may take some time to find and kill. Check back in a few days.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 4.99999998737621, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMMeadHall", 
+                    "Parameter #2": 7
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMMeadHallc", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0svenjaSsnowTsong", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "fbmwBMMeadHallHunter", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100A180"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMMeadHall", 
+            "PNAM - Previous INFO": "0100A17F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6A 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The hunters have already returned, great chieftain, and you have been given the snow bear and snow wolf pelts. They killed as many of the elusive creatures as they could find, and assured me it would be no use going out again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMMeadHallc", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0svenjaSsnowTsong", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "Topic": "1eggSpoachers", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01013AEB"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwFGEggPoachers", 
+    "PNAM - Previous INFO": "01321AA4", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 69 73", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You got both of them? Good. Here's your payment. 100 septims. And we've got some extra potions from a recent raid. Take these. They'll come in handy.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 69 73", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Just tell me when you're ready for more orders.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0SeviloSOthan", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0DaynilaSValas", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0eydisSfireTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 04 00 00 00", 
+        "SCTX - Result script source": "setstage FBMWFGEggPoachers 100\r\nplayer.additem gold001 100\r\nplayer.additem 0pUrestoreUfatigueUq 4", 
+        "References": [
+            20, 
+            "fbmwFGEggPoachers", 
+            "Gold001", 
+            "0pUrestoreUfatigueUq"
+        ]
+    }
+}

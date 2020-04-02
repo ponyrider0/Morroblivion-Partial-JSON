@@ -1,0 +1,78 @@
+{
+    "Topic": "1CassiusSOlcinius", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A401"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwEBInvisible", 
+    "PNAM - Previous INFO": "01F8A400", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 74", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "That little twit! Of course I made him invisible. Did he tell you why? He asked me to! Came in muttering something about just wanting everyone to leave him alone, and promised to pay me 400 septims to make invisible to everyone.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 74", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Did I get my money, though? No! He still has a debt to pay. So, when he came in a few weeks later begging me to remove it, I laughed in his face...or where I assumed it was.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwEBInvisible", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwEBInvisible", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0fevynSralen", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwebinvisible 60\r\naddtopic 1debtstospay", 
+        "References": [
+            "fbmwEBInvisible", 
+            "1debtStoSpay"
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "Topic": "1travelStogether", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0103057C"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMGEscortScholar1", 
+    "PNAM - Previous INFO": "0103057D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Thank you for taking me to the Elf-Skerring. I was keeping these scrolls just in case something unfortunate happened.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 61 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Since I have arrived safely, I feel you deserve them.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 69.999999823267, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMGEscortScholar1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tenyeminwe", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 78, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 50 00 00 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwmgescortscholar1 80\r\nremoveitem 0scusummonflameatronach 1\r\nremoveitem 0scusummonfrostatronach 1\r\nplayer.additem 0scusummonflameatronach 1\r\nplayer.additem 0scusummonfrostatronach 1", 
+        "References": [
+            20, 
+            "fbmwMGEscortScholar1", 
+            "0scUsummonflameatronach", 
+            "0scUsummonfrostatronach"
+        ]
+    }
+}

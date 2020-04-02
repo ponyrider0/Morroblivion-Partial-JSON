@@ -1,0 +1,61 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01006791"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "0106237E", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 3, 
+                "Emotion Value": 50, 
+                "Unused": "57 49 4C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Is the Scamp really gone? Thank you, whoever you are. This is all my fault.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 84, 
+            "Parameter #1": "fbmwMGApprenticeScamp", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0listienSbierles", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 27, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "startquest fbmwMGApprentice\r\naddtopic 1allSmySfault\r\naddtopic 1Scamp", 
+        "References": [
+            "fbmwMGApprentice", 
+            "1allSmySfault", 
+            "1Scamp"
+        ]
+    }
+}

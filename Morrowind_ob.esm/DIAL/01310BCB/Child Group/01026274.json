@@ -1,0 +1,107 @@
+{
+    "Topic": "1business", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01026274"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQ12", 
+    "PNAM - Previous INFO": "01026276", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Let's try again, shall we? I propose to give you an artifact called 'Wraithguard.\"", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You may accept the gift, then do with it as you will.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I propose that you accept the responsibility of defeating Dagoth Ur, and swearing an oath to that effect.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 4D", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "You may give your oath, then keep it or break it as you like.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 4D", 
+                "Response number": 5
+            }, 
+            "NAM1 - Response Text": "First, will you accept Wraithguard as a gift?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "fbmwVivec", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 35.9999999091087, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ12", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 33.9999999141583, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQ12", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwMQ12maybewraithguard", 
+        "fbmwMQ12noaccept", 
+        "fbmwMQ12acceptwraithguard"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

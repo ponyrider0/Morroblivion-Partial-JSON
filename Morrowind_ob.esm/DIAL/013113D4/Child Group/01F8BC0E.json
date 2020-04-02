@@ -1,0 +1,71 @@
+{
+    "Topic": "1Ristaag", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BC0E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMBearHunt1", 
+    "PNAM - Previous INFO": "01F8BC0D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "66 53 6C", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "In the Ristaag, we hunt the Spirit Bear that is conjured by the Totem of Claw and Fang. When it is slain, we will return its heart back to Wind-Eye, who will ask for the blessings of the All-Maker.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "66 53 6C", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "If the Ristaag fails, or does not succeed by daybreak, the All-Maker will be displeased. You will help ensure our success, friend.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 14.9999999621286, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMBearHunt1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0rolfSlongTtooth", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage fbmwbmBearHunt1 20\r\naddtopic 1ensuresourssuccess\r\naddtopic 1pleaseStheSAllTMaker", 
+        "References": [
+            "fbmwBMBearHunt1", 
+            "1ensureSourSsuccess", 
+            "1pleaseStheSAllTMaker"
+        ]
+    }
+}

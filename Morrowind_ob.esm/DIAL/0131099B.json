@@ -1,0 +1,87 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0131099B"
+    }, 
+    "EDID - Editor ID": "1banditSnearby", 
+    "Quests": [
+        "fbmwVVictimRomance"
+    ], 
+    "FULL - Name": "Bandit Nearby", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1banditSnearby", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A548"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwVVictimRomance", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1jewels"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 69 75", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, I was just walking along here, minding my own business. Suddenly, a bandit jumped at me from behind. He was a dark elf--a strong, dashing dark elf.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 69 75", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "He didn't harm me in any way, although he did take my jewels. He was quite gentle, and he talked to me for what seemed like forever.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwVVictimRomance", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0maurrieSaurmine", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwvvictimromance 20", 
+                "References": [
+                    "fbmwVVictimRomance"
+                ]
+            }
+        }
+    ]
+}

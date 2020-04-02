@@ -1,0 +1,97 @@
+{
+    "Topic": "1TelvanniSagents", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01014229"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwFGTelvanniAgents", 
+    "PNAM - Previous INFO": "0101422B", 
+    "Add topics": [
+        "1theftsSandSdisappearances", 
+        "1SathasaSNerothren", 
+        "1FothynaSHerothran", 
+        "1AlynuSAralen", 
+        "1Alveleg"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Four Telvanni agents are responsible for thefts and disappearances at the Caldera ebony mines.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Their names are Alynu Aralen, Sathasa Nerothren, Fothyna Herothran, and Alveleg. They're hiding in a cave in the hills north of Caldera Mine.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "When the four agents are dead, report back to me. Take care, it's very likely that one of them is on lookout posted outside the mines.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 66 61", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "The quickest way to Caldera is probably to have the guild guide at the Mages Guild transport you, but it is your choice.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwFGTelvanniAgents", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0eydisSfireTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 55 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage FBMWFGTelvanniAgents 10\r\nShowMap mwCalderaEbonyMineMapMarker", 
+        "References": [
+            "fbmwFGTelvanniAgents", 
+            "mwCalderaEbonyMineMapMarker"
+        ]
+    }
+}

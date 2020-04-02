@@ -1,0 +1,95 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0101BE6C"
+    }, 
+    "EDID - Editor ID": "fbmwAhnassiSkoomaYes", 
+    "Quests": [
+        "fbmwRomanceAhnassi"
+    ], 
+    "FULL - Name": "I don't know, but I will try.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwAhnassiSkoomaYes", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101BE6D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwRomanceAhnassi", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 52 6F", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Ahnassi understands all too well. Ahnassi has tried, and failed. Cure skooma addict? It can't be done.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 52 6F", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "But Ahnassi sees something in her true and good friend, something that says the things that can't be done might be done. And it gives Ahnassi hope.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 52 6F", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Ahnassi's mate is called J'Dhannar, and he lives where he can in St. Olms Canton. Please find him, and persuade him to give up the sugar.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwRomanceAhnassi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ahnassi", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 41 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage FBMWRomanceAhnassi 65\r\naddtopic 1cureSskoomaSaddict", 
+                "References": [
+                    "fbmwRomanceAhnassi", 
+                    "1cureSskoomaSaddict"
+                ]
+            }
+        }
+    ]
+}

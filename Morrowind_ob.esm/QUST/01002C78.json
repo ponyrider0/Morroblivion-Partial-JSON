@@ -1,0 +1,156 @@
+{
+    "Record Header": {
+        "Signature": "QUST", 
+        "Record Flags": {}, 
+        "FormID": "01002C78"
+    }, 
+    "EDID - Editor ID": "fbmwTTGalomDeus", 
+    "FULL - Name": "Temple: Slay Raxle Berne", 
+    "ICON - Icon filename": "darthsouth\\Quests\\tribunaltemple.dds", 
+    "DATA - General": {
+        "Flags": {}, 
+        "Priority": 85
+    }, 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 254, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 56, 
+            "Parameter #1": "MorroDefaultQuest", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Stages": [
+        {
+            "INDX - Stage index": 1
+        }, 
+        {
+            "INDX - Stage index": 10, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "Tharer Rotheloth gave me the equipment of a vampire hunter. I must find the vampire Raxle Berne and slay him in the name of the Tribunal. Galom Daeus is southwest of Uvirith's Grave, which is west of Tel Fyr. I should go south from Uvirith's grave until I reach a river of lava, then follow that river to the west until I reach Galom Daeus.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 2, 
+                            "CompiledSize": 17, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "55 10 05 00 01 00 72 02 00 1C 00 01 00 21 10 00 00", 
+                        "SCTX - Result script source": "ShowMap mwGalonDaeusMapMarker\r\nfbmwRaxleSBerne.Enable", 
+                        "References": [
+                            "fbmwRaxleSBerne", 
+                            "mwGalonDaeusMapMarker"
+                        ]
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 100, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {
+                        "Complete quest": true
+                    }, 
+                    "CNAM - Log Entry": "Tharer Rotheloth thanked me for slaying the vampire Raxle Berne in the name of the Tribunal.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 3, 
+                            "CompiledSize": 234, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "15 00 14 00 72 01 00 73 02 00 0C 00 20 72 01 00 73 02 00 20 31 30 20 2B A9 10 0D 00 03 00 72 02 00 72 03 00 6E 14 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 62 00 01 00 5E 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 65 6D 70 6C 65 3A 20 53 6C 61 79 20 52 61 78 6C 65 20 42 65 72 6E 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
+                        "SCTX - Result script source": "Set fbmwTTAdvancement.TempleReputation TO fbmwTTAdvancement.TempleReputation + 10\r\nModFactionReaction 0Temple, PlayerFaction 20\r\nModPCFame 1\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Temple: Slay Raxle Berne quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
+                        "References": [
+                            "fbmwTTAdvancement", 
+                            "0Temple", 
+                            "PlayerFaction"
+                        ]
+                    }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "mwTharerRothelothREF", 
+                "Flags": {}, 
+                "Unused": "00 46 21"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0raxleSberne", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTTGalomDeus", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwRaxleSBerne", 
+                "Flags": {}, 
+                "Unused": "00 46 21"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0raxleSberne", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTTGalomDeus", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }
+    ]
+}

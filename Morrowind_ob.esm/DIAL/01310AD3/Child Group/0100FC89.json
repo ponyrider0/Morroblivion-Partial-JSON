@@ -1,0 +1,68 @@
+{
+    "Topic": "1hireSguards", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100FC89"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRStronghold", 
+    "PNAM - Previous INFO": "0100FC88", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 69 75", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Oh? You were able to get Frelene Acques out? I will take you word for it. I'll have a few of our better fighters sent over to your stronghold.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 143.999999636435, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRStronghold", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 149.999999621286, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRStronghold", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0persiusSmercius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 22, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 96 00 00 00 1C 00 01 00 22 10 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHRStronghold 150\r\nmwFreleneAcquesREF.Disable", 
+        "References": [
+            "mwFreleneAcquesREF", 
+            "fbmwHRStronghold"
+        ]
+    }
+}

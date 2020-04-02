@@ -1,0 +1,111 @@
+{
+    "Topic": "1Ihinipalit", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0132220D"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTTStAralor", 
+    "PNAM - Previous INFO": "0132220C", 
+    "Add topics": [
+        "1Ihinipalit", 
+        "1StPSDelynSCanton", 
+        "1Temple", 
+        "1justice", 
+        "1accompanySyou", 
+        "1scroll", 
+        "1AldSSotha", 
+        "1Ihinipalit"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "The cult meets there. I know only that Ihinipalit is somewhere beneath the St. Delyn Canton. Go there with fire in your eyes and in your heart.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Bring the Temple's justice to the leader of this cult, Bjadmund. I wish I could accompany you, outlander, but I cannot.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "However, I can offer you these scrolls. This place holds as much danger as Ald Sotha. I did not believe you were ready, but you have proven me wrong.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "I hope that you will surprise me and return unharmed from Ihinipalit as well.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0endrynSllethan", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 4.99999998737621, 
+            "Function": 73, 
+            "Parameter #1": "0Temple", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 68, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 02 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwttstaralor 10\r\nplayer.additem 0scuhellfire 2\r\nplayer.additem 0scuelementalburstfire 2\r\nplayer.additem 0scufifthbarrier 2", 
+        "References": [
+            20, 
+            "fbmwTTStAralor", 
+            "0scUhellfire", 
+            "0scUelementalburstfire", 
+            "0scUfifthbarrier"
+        ]
+    }
+}

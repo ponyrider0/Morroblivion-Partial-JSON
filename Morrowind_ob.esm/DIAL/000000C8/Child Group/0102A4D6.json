@@ -1,0 +1,63 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0102A4D6"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSGreetings", 
+    "PNAM - Previous INFO": "0100CE6D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "57 46 47", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Please. Have mercy. I was the sorcerer on this job, but the ogrim got out of control. And the scamps slaughtered my companions and served them to me in a broth. And stripped me. And made me wear this outfit. Help me out of here. Please.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 69 75", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Get me a potion of levitation -- there're several in here -- and I'll give you... this very attractive skirt. And this remarkable hat. They're all I have.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0Ingwold", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage fbmwmshatandskirt 1\r\naddtopic 1attractivesskirt\r\naddtopic 1remarkableshat", 
+        "References": [
+            "fbmwMSHatandSkirt", 
+            "1attractiveSskirt", 
+            "1remarkableShat"
+        ]
+    }
+}

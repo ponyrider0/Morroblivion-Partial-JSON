@@ -1,0 +1,89 @@
+{
+    "Topic": "1KingSLlethanAsSdeath", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01003A35"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTR05People", 
+    "PNAM - Previous INFO": "01003A34", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "So. According to a broadside sheet called 'The Common Tongue', King Helseth poisoned many people in the West, so maybe he poisoned Athyn Llethan.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Very interesting. I'd like to see a copy of 'The Common Tongue', if you can bring me one. Thank you. You've done well.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "But now... we lack sources of information in Almalexia's Temple. Could you help me find a Temple informant?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTR05People", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0TieniusSDelitian", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 36 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "addtopic 1templeSinformant\r\nsetstage fbmwTR05people 100\r\nstartquest fbmwTR06Temple", 
+        "References": [
+            "1TempleSinformant", 
+            "fbmwTR05People", 
+            "fbmwTR06Temple"
+        ]
+    }
+}

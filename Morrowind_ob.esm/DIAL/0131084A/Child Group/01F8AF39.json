@@ -1,0 +1,80 @@
+{
+    "Topic": "1GatewayShaunting", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AF39"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTownSadrith", 
+    "PNAM - Previous INFO": "01F8AF38", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 6F", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I inspected the manifestations in the South Turret bed chamber of the Gateway Inn. I examined the site thoroughly, but I found no evidence of a restless spirit or ancestral influences.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 6F", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The ghost itself is trivial, and easily banished, but I don't know why it reappears, or how to stop the reappearances. I can't be sure, but my experience and intution tells me that a Conjuration expert is involved.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 6F", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "By that, I mean a mage skilled at summoning ghosts. That's all I can tell you.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTownSadrith", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0araraSuvulas", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "setstage fbmwtownsadrith 10\r\naddtopic 1conjurationsexpert", 
+        "References": [
+            "fbmwTownSadrith", 
+            "1ConjurationSexpert"
+        ]
+    }
+}

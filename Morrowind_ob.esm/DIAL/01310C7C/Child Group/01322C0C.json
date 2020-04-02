@@ -1,0 +1,81 @@
+{
+    "Topic": "1Shishi", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322C0C"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHTShishi", 
+    "PNAM - Previous INFO": "010068E4", 
+    "Add topics": [
+        "1HouseSRedoran", 
+        "1decision", 
+        "1Vvardenfell", 
+        "1GreatSHouses", 
+        "1silver", 
+        "1staff", 
+        "1HouseSTelvanni"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I am glad to hear that Faves Andas is safe.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I have prepared for you a Silver Staff of War, another tradition gift of House Telvanni.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHTShishi", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0aryon", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 40, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 02 00 22 10 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHTShishi 100\r\nPlayer.AddItem 0SilverSStaffSofSWar 1\r\nmwFavesAndasREF.Disable", 
+        "References": [
+            20, 
+            "mwFavesAndasREF", 
+            "fbmwHTShishi", 
+            "0silverSstaffSofSwar"
+        ]
+    }
+}

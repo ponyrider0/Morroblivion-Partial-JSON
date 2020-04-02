@@ -1,0 +1,90 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "0131069A"
+    }, 
+    "EDID - Editor ID": "1attackedSwhileSsleeping", 
+    "Quests": [
+        "fbmwA1Dreams"
+    ], 
+    "FULL - Name": "Attacked while sleeping", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1attackedSwhileSsleeping", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132051F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwA1Dreams", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1SixthSHouse", 
+                "1outlander"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "That's worrying. The Sixth House does exist. And, for some reason, they want you dead. Perhaps it is not safe to sleep in town.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Makes it too easy for them to find you. Word of new outlanders gets around fast here. Maybe camping out in the backcountry is safer.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Or maybe you should take the fight to them. They might have a base nearby.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0caiusScosades", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwA1SleepersAwake 5", 
+                "References": [
+                    "fbmwA1SleepersAwake"
+                ]
+            }
+        }
+    ]
+}

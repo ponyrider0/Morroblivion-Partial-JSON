@@ -1,0 +1,87 @@
+{
+    "Topic": "1embezzledSfunds", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AAB8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwICMossanon", 
+    "PNAM - Previous INFO": "01F8AAB7", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Yes. I took the 3000 gold. It was foolish. And wrong. But I was in love, and thought that Volmyni could only love a rich man. I was wrong. And foolish.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Now I know she loves me -- not my gold. Now I only have 2500 gold left. I spent the rest. I'll give you the 2500 gold, and promise to pay back the rest as soon as I can, if you will promise to keep my whereabouts secret from Canctunian Ponius.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 49 43", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "If arrested, I'll be sent back to Cyrodiil for trial, and be separated from my precious Volmyni.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 14.9999999621286, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICMossanon", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICMossanon", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0Mossanon", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "fbmwicpromisesecret", 
+        "fbmwicdemandgold", 
+        "fbmwictakenoaction"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

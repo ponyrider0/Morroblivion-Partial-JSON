@@ -1,0 +1,63 @@
+{
+    "Topic": "1StaffSofSMagnus1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0132324E"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMSMuseum", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Quite an addition for our collection.  It is one of the oldest artifacts in all of Tamriel, to my knowledge.  Thank you, outlander.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0TorasaSAram", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0staffUmagnusUunique", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 58, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 15 00 0A 00 72 04 00 73 1A 00 02 00 20 31 1C 00 02 00 21 10 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 30 75 00 00", 
+        "SCTX - Result script source": "player.removeitem 0staffUmagnusUunique 1\r\nset fbmwMSMuseum.staffmagnus to 1\r\nmwMagnusMuseumREF.enable\r\nplayer.additem Gold001 30000", 
+        "References": [
+            20, 
+            "mwMagnusMuseumREF", 
+            "0staffUmagnusUunique", 
+            "fbmwMSMuseum", 
+            "Gold001"
+        ]
+    }
+}

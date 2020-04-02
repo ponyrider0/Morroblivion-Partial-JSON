@@ -1,0 +1,73 @@
+{
+    "Topic": "1Advancement", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322089"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMGAdvancement", 
+    "PNAM - Previous INFO": "01322088", 
+    "Add topics": [
+        "1GuildSDues"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "In order to advance to the next rank, you must pay your Guild Dues of 200 septims.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 2, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 73, 
+            "Parameter #1": "fbmwMagesGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 130, 
+            "Unused": 0, 
+            "Comparison Value": 200.000000495049, 
+            "Function": 47, 
+            "Parameter #1": "Gold001", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 6.9999999823267, 
+            "Function": 73, 
+            "Parameter #1": "fbmwMagesGuild", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 79, 
+            "Parameter #1": "fbmwMGAdvancement", 
+            "Parameter #2": 1
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 0, 
+            "CompiledSize": 0, 
+            "VariableCount": 0, 
+            "Type": 0
+        }
+    }
+}

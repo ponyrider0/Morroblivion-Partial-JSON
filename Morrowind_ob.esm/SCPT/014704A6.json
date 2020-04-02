@@ -1,0 +1,47 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "014704A6"
+    }, 
+    "EDID - Editor ID": "mwBMWerestatue1Script", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 8, 
+        "CompiledSize": 522, 
+        "VariableCount": 7, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 FC 01 00 00 15 00 0B 00 66 07 00 06 00 20 58 CE 10 00 00 16 00 28 00 17 00 24 00 20 72 06 00 58 2F 10 05 00 01 00 72 07 00 20 30 20 3E 20 58 38 10 05 00 01 00 72 08 00 20 30 20 3E 20 7C 7C 16 00 25 00 15 00 21 00 20 72 06 00 58 01 10 05 00 01 00 72 02 00 20 38 30 30 20 3C 3D 20 73 06 00 20 30 20 3D 3D 20 26 26 16 00 12 00 04 00 0E 00 20 72 01 00 58 2E 10 00 00 20 30 20 3D 3D 1C 00 01 00 9E 10 20 00 04 00 72 02 00 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 00 00 1C 00 02 00 22 10 00 00 1C 00 01 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 15 00 07 00 73 06 00 02 00 20 31 18 00 12 00 04 00 0E 00 20 72 03 00 58 2E 10 00 00 20 30 20 3D 3D 1C 00 03 00 9E 10 20 00 04 00 72 02 00 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 00 00 1C 00 03 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 1C 00 02 00 22 10 00 00 15 00 07 00 73 06 00 02 00 20 31 18 00 12 00 04 00 0E 00 20 72 04 00 58 2E 10 00 00 20 30 20 3D 3D 1C 00 04 00 9E 10 20 00 04 00 72 02 00 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 00 00 1C 00 04 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 1C 00 02 00 22 10 00 00 15 00 07 00 73 06 00 02 00 20 31 18 00 12 00 04 00 0E 00 20 72 05 00 58 2E 10 00 00 20 30 20 3D 3D 1C 00 05 00 9E 10 20 00 04 00 72 02 00 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 F0 3F 7A 00 00 00 00 00 00 00 00 1C 00 05 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 1C 00 02 00 22 10 00 00 15 00 07 00 73 06 00 02 00 20 31 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scriptName mwBMWerestatue1Script\n\nshort doOnce\nref myself \nBegin GameMode\n\tset myself to GetSelf\n\tif(Player.GetItemCount 0keyUhircine1 > 0)||(GetQuestRunning fbmwBMAAAImAWere > 0)\n\t\tif(Player.GetDistance myself <= 800)&&(doOnce == 0)\n\t\t\tif(fbmwbmWildHuntWere1REF.GetDead == 0)\n\t\t\t\tfbmwbmWildHuntWere1REF.moveto myself 1 1 0\n\t\t\t\tmyself.Disable\n\t\t\t\tfbmwbmWildHuntWere1REF.setav aggression 100\n\t\t\t\tset doOnce to 1\n\t\t\telseif(fbmwbmWildHuntWere2REF.GetDead == 0)\n\t\t\t\tfbmwbmWildHuntWere2REF.moveto myself 1 1 0\n\t\t\t\tfbmwbmWildHuntWere2REF.setav aggression 100\n\t\t\t\tmyself.Disable\n\t\t\t\tset doOnce to 1\n\t\t\telseif(fbmwbmWildHuntWere3REF.GetDead == 0)\n\t\t\t\tfbmwbmWildHuntWere3REF.moveto myself 1 1 0\n\t\t\t\tfbmwbmWildHuntWere3REF.setav aggression 100\n\t\t\t\tmyself.Disable\n\t\t\t\tset doOnce to 1\n\t\t\telseif(fbmwbmWildHuntWere4REF.GetDead == 0)\n\t\t\t\tfbmwbmWildHuntWere4REF.moveto myself 1 1 0\n\t\t\t\tfbmwbmWildHuntWere4REF.setav aggression 100\n\t\t\t\tmyself.Disable\n\t\t\t\tset doOnce to 1\n\t\t\tendif\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "78 2C 20 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "myself"
+        }
+    ], 
+    "References": [
+        "fbmwbmWildHuntWere1REF", 
+        7, 
+        "fbmwbmWildHuntWere2REF", 
+        "fbmwbmWildHuntWere3REF", 
+        "fbmwbmWildHuntWere4REF", 
+        20, 
+        "0keyUhircine1", 
+        "fbmwBMAAAImAWere"
+    ]
+}

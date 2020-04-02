@@ -1,0 +1,71 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010B6D66"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwBMWolfGiver", 
+    "PNAM - Previous INFO": "010B3B95", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6D 6F", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Your cure begins here&sUActnQuick1;.  The Rite of the Wolf Giver is a complex ritual of dark magicka, requring the sacrifice of both flesh and innocence.  My sisters and I will begin the preparations, but there are certain items that must be gathered. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6E 6D 6F", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "My sisters Isobel and Fallaise will tell you what is needed.  When you have completed your errands for them, come speak to me again.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMWolfGiver", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0glenmorilUwitchUaltar", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 28, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00 15 00 0A 00 72 01 00 73 05 00 02 00 20 31", 
+        "SCTX - Result script source": "setstage fbmwbmWolfGiver  40\r\nset fbmwbmWolfGiver.SpokenwithEttiene to 1", 
+        "References": [
+            "fbmwBMWolfGiver"
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F2A512"
+    }, 
+    "EDID - Editor ID": "fbmwdrerelindarenscript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 7, 
+        "CompiledSize": 299, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 1B 00 00 00 00 00 58 10 05 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 46 00 00 00 11 00 00 00 10 00 0B 00 10 00 28 00 00 00 01 00 72 04 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 11 00 00 00 10 00 06 00 00 00 BF 00 00 00 16 00 28 00 01 00 24 00 20 58 3A 10 05 00 01 00 72 03 00 20 33 30 20 3C 20 58 3A 10 05 00 01 00 72 03 00 20 36 30 20 3E 3D 20 7C 7C 1E 00 00 00 19 00 00 00 16 00 15 00 08 00 11 00 20 58 3A 10 05 00 01 00 72 03 00 20 33 30 20 3E 3D 16 00 14 00 06 00 10 00 20 58 3A 10 05 00 01 00 72 03 00 20 35 30 20 3C 16 00 16 00 04 00 12 00 20 58 01 10 05 00 01 00 72 05 00 20 32 35 36 20 3C 3D 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 56 10 08 00 02 00 72 06 00 72 07 00 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwdrerelindarenscript\n\n\nBegin onDeath\n\tAddTopic 1DrerelSwasSkilled\n\tSetStage fbmwMVMissingCompanion 70\nEND\n\nBegin OnPackageEnd fbmwdrerelfollow\n\tSetStage fbmwMVMissingCompanion 50\n\tSET fbmwMVMissingCompanion.FollowNow TO 0\n\tmwDrerelIndarenREF.EvaluatePackage\nEND\n\nBegin GameMode\n\n\tif GetStage fbmwMVMissingCompanion < 30 || GetStage fbmwMVMissingCompanion >= 60\n\t\treturn\n\tendif\n\n\tif GetStage fbmwMVMissingCompanion >= 30\n\t\tif GetStage fbmwMVMissingCompanion < 50\n\t\t\tif GetDistance fbmwfalanuref <= 256\n\t\t\t\tSetStage fbmwMVMissingCompanion 50\n\t\t\t\tset fbmwMVMissingCompanion.FollowNow TO 0\n\t\t\t\tmwDrerelIndarenREF.EvaluatePackage\n\t\t\t\tStartConversation Player, GREETING\n\t\t\tendif\n\t\tendif\n\tendif\nEND\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "mwDrerelIndarenREF", 
+        "1DrerelSwasSkilled", 
+        "fbmwMVMissingCompanion", 
+        "fbmwdrerelfollow", 
+        "fbmwfalanuref", 
+        20, 
+        "GREETING"
+    ]
+}

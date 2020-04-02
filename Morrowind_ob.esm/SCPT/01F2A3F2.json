@@ -1,0 +1,79 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F2A3F2"
+    }, 
+    "EDID - Editor ID": "R0BILLMTWritBelvayn", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 2, 
+        "CompiledSize": 386, 
+        "VariableCount": 6, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 74 01 00 00 15 00 0B 00 66 03 00 06 00 20 30 2E 30 30 31 16 00 14 00 04 00 10 00 20 58 20 10 05 00 01 00 72 01 00 20 31 20 3D 3D 16 00 0D 00 02 00 09 00 20 73 01 00 20 30 20 3D 3D 15 00 0E 00 73 05 00 09 00 20 72 01 00 58 74 10 00 00 15 00 07 00 73 01 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 0F 00 15 00 0B 00 20 58 2E 10 00 00 20 31 20 3D 3D 16 00 13 00 13 00 0F 00 20 58 3A 10 05 00 01 00 72 02 00 20 30 20 3E 16 00 15 00 01 00 11 00 20 58 3A 10 05 00 01 00 72 02 00 20 38 30 20 3E 3D 1E 00 00 00 19 00 00 00 16 00 0D 00 01 00 09 00 20 73 02 00 20 31 20 3D 3D 1E 00 00 00 18 00 0C 00 01 00 08 00 20 66 04 00 20 35 20 3E 15 00 07 00 73 02 00 02 00 20 31 17 00 02 00 01 00 15 00 11 00 66 04 00 0C 00 20 66 04 00 20 58 0C 10 00 00 20 2B 19 00 00 00 16 00 0D 00 07 00 09 00 20 73 02 00 20 31 20 3D 3D 15 00 0E 00 73 06 00 09 00 20 72 01 00 58 74 10 00 00 15 00 0E 00 73 06 00 09 00 20 73 06 00 20 34 30 20 2D 16 00 0E 00 01 00 0A 00 20 73 06 00 20 73 05 00 20 3E 39 10 0A 00 02 00 72 02 00 6E 50 00 00 00 17 00 02 00 01 00 39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn R0BILLMTWritBelvayn\r\n; log a journal entry for each successful 'hit' the player performs for the Morag Tong\r\n\r\n; script location: should be placed on each and every target of the Morag Tong, with \r\n;  changes to reflect the person it is running on.\r\n\r\nShort DoOnce\r\nShort TimerOnce\r\nfloat fQuestDelayTime\r\nfloat timer\r\nshort CL1\r\nshort CL2\r\n\r\nbegin gamemode\r\n\r\nset fQuestDelayTime to 0.001\r\n\r\nif ( getinsamecell player == 1 )\r\n\tif ( DoOnce == 0 )\r\n\t\tset CL1 to player.getcrimegold\r\n\t\tset DoOnce to 1\t\r\n\tendif\r\nendif\r\n\r\nif ( getdead == 1 )\r\n\t; when we are killed...\r\n\tif ( GetStage fbmwMTWritBelvayn > 0 )\r\n\t\t; ... and if the player has a writ for us...\r\n\t\tif (GetStage fbmwMTWritBelvayn >= 80)\r\n\t\t\treturn\r\n\t\tendif\r\n\t\t\r\n;now we take into acount the time it takes bounty to update for a murder...\r\n\t\tIf TimerOnce ==1\r\n\t\t\treturn\r\n\t\telseif (timer > 5)\r\n\t\t\tset TimerOnce to 1\r\n\t\telse\r\n\t\t\tset timer to timer + GetSecondsPassed\r\n\t\tendif\r\n;and after this time has passed....\r\n\r\n\tif timeronce ==1\r\n\t\tset CL2 to player.getcrimegold\r\n\t\tset CL2 to (CL2 - 40)\r\n\t\tif ( CL2 > CL1 )\r\n\t\t\t; ... append a journal entry if the execution is seen ...\r\n\t\t\tsetstage fbmwMTWritBelvayn 80\r\n\t\telse\r\n\t\t\t; ... append a journal entry if the execution is NOT seen ...\r\n\t\t\tsetstage fbmwMTWritBelvayn 90\r\n\t\tendif\r\n\tendif\r\n\tendif\r\nendif\r\n\r\nEnd\r\n;<CSEBlock>\r\n;<CSECaretPos> 1257 </CSECaretPos>\r\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "F7 96 1D 20 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "TimerOnce"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "fQuestDelayTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "timer"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "CL1"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "CL2"
+        }
+    ], 
+    "References": [
+        20, 
+        "fbmwMTWritBelvayn"
+    ]
+}

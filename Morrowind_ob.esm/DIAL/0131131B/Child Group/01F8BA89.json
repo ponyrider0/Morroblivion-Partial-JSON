@@ -1,0 +1,81 @@
+{
+    "Topic": "1TotemSofSClawSandSFang", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8BA89"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMCeremony1", 
+    "PNAM - Previous INFO": "01F8BA88", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 53", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You have found the Totem! This is good news. Please, take this as a token of my thanks. I hope that your efforts have not left you too drained, as there is still much to be done. For your efforts, I will share with you some knowledge.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "73 74 53", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "The Skaal have the ability to summon wolves to fight by our sides. You, too, now possess this ability. The Ristaag must now be performed.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 66, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 47, 
+            "Parameter #1": "0MiscUBMUClawFangUUNIQUE", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMCeremony1", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0korstSwindTeye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 54, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 1C 10 05 00 01 00 72 03 00 36 10 05 00 01 00 72 04 00 39 10 0A 00 02 00 72 05 00 6E 64 00 00 00", 
+        "SCTX - Result script source": "player.removeitem 0miscubmuclawfanguunique 1\r\nplayer.addspell 0bmusummonwolf\r\nstartquest fbmwbmbearhunt1\r\nsetstage fbmwbmceremony1 100", 
+        "References": [
+            20, 
+            "0MiscUBMUClawFangUUNIQUE", 
+            "0BMUsummonwolf", 
+            "fbmwBMBearHunt1", 
+            "fbmwBMCeremony1"
+        ]
+    }
+}

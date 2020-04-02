@@ -1,0 +1,27 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F2A514"
+    }, 
+    "EDID - Editor ID": "fbmwhannatscript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 8, 
+        "CompiledSize": 299, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 08 00 0A 00 12 00 00 00 00 00 39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 11 00 00 00 10 00 0B 00 10 00 31 00 00 00 01 00 72 03 00 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 58 10 05 00 01 00 72 04 00 15 00 0A 00 72 02 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 11 00 00 00 10 00 06 00 00 00 BF 00 00 00 16 00 14 00 01 00 10 00 20 58 38 10 05 00 01 00 72 02 00 20 30 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 14 00 07 00 10 00 20 58 3A 10 05 00 01 00 72 02 00 20 35 30 20 3C 16 00 3A 00 05 00 36 00 20 58 43 10 05 00 01 00 72 05 00 20 30 20 3D 3D 20 58 43 10 05 00 01 00 72 06 00 20 30 20 3D 3D 20 26 26 20 58 43 10 05 00 01 00 72 06 00 20 30 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 58 10 05 00 01 00 72 04 00 15 00 0A 00 72 02 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 1C 00 01 00 56 10 08 00 02 00 72 07 00 72 08 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwhannatscript\n\nBegin OnDeath\n\tSetStage fbmwMSHannat 110\nEND\n\nBegin OnPackageEnd fbmwhannatfollow\n\tSetStage fbmwMSHannat 50\n\tAddTopic 1HannatSZainsubani\n\tSET fbmwMSHannat.FollowNow TO 0\n\tfbhannatref.EvaluatePackage\nEND\n\nBegin GameMode\n\tif GetQuestRunning fbmwMSHannat == 0\n\t\treturn\n\tendif\n\t\n\tif GetStage fbmwMSHannat < 50\n\t\tif GetInCell MamaeaVSSanctumSofSAwakening == 0 && GetInCell MamaeaVSSanctumSofSBlackSHope == 0 && GetInCell mamaeavssanctumsofsblackshope==0\n\t\t\tSetStage fbmwMSHannat 50\n\t\t\tAddTopic 1HannatSZainsubani\n\t\t\tSET fbmwMSHannat.FollowNow TO 0\n\t\t\tfbhannatref.EvaluatePackage\n\t\t\tfbhannatref.StartConversation Player GREETING\n\t\tendif\n\tendif\nEND\n;<CSEBlock>\n;<CSECaretPos> 303 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "fbhannatref", 
+        "fbmwMSHannat", 
+        "fbmwhannatfollow", 
+        "1HannatSZainsubani", 
+        "MamaeaVSSanctumSofSAwakening", 
+        "MamaeaVSSanctumSofSBlackSHope", 
+        20, 
+        "GREETING"
+    ]
+}

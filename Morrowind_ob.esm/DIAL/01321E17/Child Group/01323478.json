@@ -1,0 +1,57 @@
+{
+    "Topic": "1newSclothes1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323478"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwHTTheranaClothes", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Give This one the skirt. Yes, This one wears the skirt.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0raAzahr", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 76, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 04 00 6E 48 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 02 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 02 00 EE 10 05 00 01 00 72 05 00 1C 00 03 00 16 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "SetStage fbmwHTTheranaClothes 72\r\nPlayer.RemoveItem 0TheranaAsSskirt 1\r\nmwRaZahrREF.AddItem 0TheranaAsSskirt 1\r\nmwRaZahrREF.EquipItem 0TheranaAsSskirt\r\nmwTheranaRef.StartCombat mwRaZahrREF", 
+        "References": [
+            20, 
+            "mwRaZahrREF", 
+            "mwTheranaREF", 
+            "fbmwHTTheranaClothes", 
+            "0theranaAsSskirt"
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "Topic": "1Advancement", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322059"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRAdvancement", 
+    "PNAM - Previous INFO": "01322058", 
+    "Add topics": [
+        "1HouseSRedoran"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Congratulations, outlander, you have earned a promotion in House Redoran.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 3.99999998990097, 
+            "Function": 73, 
+            "Parameter #1": "0Redoran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 79, 
+            "Parameter #1": "fbmwHRAdvancement", 
+            "Parameter #2": 4
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athynSsarethi", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 49, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "59 10 1F 00 01 00 15 00 50 72 6F 6D 6F 74 69 6F 6E 20 41 63 63 65 70 74 65 64 2E 2E 2E 00 00 00 00 00 00 15 00 0A 00 72 01 00 73 04 00 02 00 20 34", 
+        "SCTX - Result script source": "Message \"Promotion Accepted...\"\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 4", 
+        "References": [
+            "fbmwHRAdvancement"
+        ]
+    }
+}

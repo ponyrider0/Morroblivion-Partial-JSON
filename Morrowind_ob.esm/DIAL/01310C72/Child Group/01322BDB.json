@@ -1,0 +1,102 @@
+{
+    "Topic": "1Dwemer", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322BDB"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "MorroDefaultQuest", 
+    "PNAM - Previous INFO": "01322BDA", 
+    "Add topics": [
+        "1Dwemer", 
+        "1Counsel", 
+        "1Dwarven", 
+        "1Dwemer", 
+        "1Counsel", 
+        "1Imperial", 
+        "1Dwarven", 
+        "1races", 
+        "1Dwemer"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Dwemer -- literally, 'the Deep, or Deep-Counseled or Secretive People' -- are the fabled lost Dwarven race whose ruins and splendid artifacts are scattered across Tamriel.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Elves use the term 'Dwemer,' connoting variously 'deep-delving,' 'profound,' and 'close-counseled';", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Imperial usage is 'Dwarven,' derived in fable from the affectionate regard of the Giant races for their 'little' Dwemer friends.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0alesSjulalanie", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 20, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 45, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+        "SCTX - Result script source": "addtopic 1counsel\r\naddtopic 1dwarven\r\naddtopic 1dwemer\r\naddtopic 1imperial\r\naddtopic 1races", 
+        "References": [
+            "1Counsel", 
+            "1Dwarven", 
+            "1Dwemer", 
+            "1Imperial", 
+            "1races"
+        ]
+    }
+}

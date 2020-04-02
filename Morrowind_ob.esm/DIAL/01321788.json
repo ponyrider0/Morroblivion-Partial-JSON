@@ -1,0 +1,124 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01321788"
+    }, 
+    "EDID - Editor ID": "1BiPolarSBladeDonate", 
+    "Quests": [
+        "fbmwMSMuseum", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "[Donate the item]", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1BiPolarSBladeDonate", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132339B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSMuseum", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Very well. It will take up a place in our collection. Likely a place towards the back. Thank you, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0TorasaSAram", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "0BipolarSBlade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 63, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 15 00 0A 00 72 04 00 73 1E 00 02 00 20 31 1C 00 02 00 21 10 00 00 15 00 13 00 72 04 00 73 23 00 0B 00 20 72 04 00 73 23 00 20 31 20 2B", 
+                "SCTX - Result script source": "player.removeitem 0BipolarSBlade 1\r\nset fbmwMSMuseum.bipolarblade to 1\r\nmwBipolarBladeMuseumREF.enable\r\nset fbmwMSMuseum.ItemsDonated to (fbmwMSMuseum.ItemsDonated + 1)", 
+                "References": [
+                    20, 
+                    "mwBipolarBladeMuseumREF", 
+                    "0BipolarSBlade", 
+                    "fbmwMSMuseum"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1BiPolarSBladeDonate", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132339C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSMuseum", 
+            "PNAM - Previous INFO": "0132339B", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You do not have the blade with you? Return with it, and we can settle the matter.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0TorasaSAram", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

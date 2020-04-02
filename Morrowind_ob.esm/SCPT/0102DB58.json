@@ -1,0 +1,69 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0102DB58"
+    }, 
+    "EDID - Editor ID": "fbmwCoestateScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 8, 
+        "CompiledSize": 369, 
+        "VariableCount": 4, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 63 01 00 00 16 00 28 00 03 00 24 00 20 58 3A 10 05 00 01 00 72 04 00 20 32 30 20 3E 3D 20 58 3A 10 05 00 01 00 72 04 00 20 34 30 20 3C 20 26 26 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00 17 00 02 00 03 00 1C 00 01 00 22 10 00 00 1C 00 02 00 22 10 00 00 1C 00 03 00 22 10 00 00 19 00 00 00 16 00 19 00 03 00 15 00 20 72 05 00 58 01 10 05 00 01 00 72 06 00 20 31 30 30 20 3C 3D 15 00 07 00 73 01 00 02 00 20 31 15 00 07 00 73 02 00 02 00 20 30 15 00 07 00 73 03 00 02 00 20 30 17 00 02 00 01 00 15 00 07 00 73 01 00 02 00 20 30 19 00 00 00 16 00 19 00 03 00 15 00 20 72 05 00 58 01 10 05 00 01 00 72 07 00 20 31 30 30 20 3C 3D 15 00 07 00 73 01 00 02 00 20 30 15 00 07 00 73 02 00 02 00 20 31 15 00 07 00 73 03 00 02 00 20 30 17 00 02 00 01 00 15 00 07 00 73 02 00 02 00 20 30 19 00 00 00 16 00 19 00 03 00 15 00 20 72 05 00 58 01 10 05 00 01 00 72 08 00 20 31 30 30 20 3C 3D 15 00 07 00 73 01 00 02 00 20 30 15 00 07 00 73 02 00 02 00 20 30 15 00 07 00 73 03 00 02 00 20 31 17 00 02 00 01 00 15 00 07 00 73 03 00 02 00 20 30 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwCoestateScript\nshort torch1\nshort torch2\nshort torch3\nshort aldamfollow\n\nbegin gamemode\n\tif GetStage fbmwCOEstate >= 20 && GetStage fbmwCOEstate < 40\n\t\tfbmwcoestatetorch1.Enable\n\t\tfbmwcoestatetorch2.Enable\n\t\tfbmwcoestatetorch3.Enable\n\telse\n\t\tfbmwcoestatetorch1.Disable\n\t\tfbmwcoestatetorch2.Disable\n\t\tfbmwcoestatetorch3.Disable\n\tendif\n\n\tif Player.GetDistance fbmwcotorch1marker <= 100\n\t\tset torch1 to 1\n\t\tset torch2 to 0\n\t\tset torch3 to 0\n\telse\n\t\tset torch1 to 0\n\tendif\n\n\tif Player.GetDistance fbmwcotorch2marker <= 100\n\t\tset torch1 to 0\n\t\tset torch2 to 1\n\t\tset torch3 to 0\n\telse\n\t\tset torch2 to 0\n\tendif\n\n\tif Player.GetDistance fbmwcotorch3marker <= 100\n\t\tset torch1 to 0\n\t\tset torch2 to 0\n\t\tset torch3 to 1\n\telse\n\t\tset torch3 to 0\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 750 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "63 74 4D 6F 72 72 6F", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "torch1"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "63 74 4D 6F 72 72 6F", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "torch2"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "63 74 4D 6F 72 72 6F", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "torch3"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "aldamfollow"
+        }
+    ], 
+    "References": [
+        "fbmwcoestatetorch1", 
+        "fbmwcoestatetorch2", 
+        "fbmwcoestatetorch3", 
+        "fbmwCOEstate", 
+        20, 
+        "fbmwcotorch1marker", 
+        "fbmwcotorch2marker", 
+        "fbmwcotorch3marker"
+    ]
+}

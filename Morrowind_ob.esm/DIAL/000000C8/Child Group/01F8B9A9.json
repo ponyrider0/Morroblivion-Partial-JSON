@@ -1,0 +1,70 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B9A9"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRDBAttack", 
+    "PNAM - Previous INFO": "01F8AF84", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6C 6C 65", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ahh...you're the one who has recently arrived in Mournhold from Vvardenfell. I was told of your arrival. I understand you had some problems with the Dark Brotherhood.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6C 6C 65", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "An interesting group...and usually rather effective. I'm surprised you're still alive. Perhaps you have potential, or they sent incompetents. I believe you might be of service to our Lady.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRKillGoblins", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0fedrisShler", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 18, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "addtopic 1servicestosourslady\r\nstartquest fbmwTRKillGoblins", 
+        "References": [
+            "1serviceStoSourSLady", 
+            "fbmwTRKillGoblins"
+        ]
+    }
+}

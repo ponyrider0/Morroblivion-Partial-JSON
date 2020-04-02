@@ -1,0 +1,92 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F81105"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICUrjorad", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "43 20 4E", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "By killing Carecalmo and Meryaran you have avenged the deaths of the healer Urjorad and his master Dro'farahn Stiff-Neck, and rid the world of a great evil.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 41 70", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "You have served the Imperial cult well. Please take these Gauntlets of Glory, and put them to good use. Speak to me again when you are ready to undertake another of the Oracle's Quests.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0carecalmo", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0meryaran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 58, 
+            "Parameter #1": "fbmwICUrjorad", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0LalatiaSVarian", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 72, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 37 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 0A 00 00 00 36 10 05 00 01 00 72 06 00", 
+        "SCTX - Result script source": "setstage fbmwicurjorad 55\r\nmoddisposition player 10\r\nplayer.additem 0gauntletUofUgloryUright 1\r\nmodfactionreaction 0imperialscult playerfaction 10\r\nstartquest fbmwiccrusher", 
+        "References": [
+            20, 
+            "fbmwICUrjorad", 
+            "0gauntletUofUgloryUright", 
+            "0ImperialSCult", 
+            "PlayerFaction", 
+            "fbmwICCrusher"
+        ]
+    }
+}

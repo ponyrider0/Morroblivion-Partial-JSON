@@ -1,0 +1,73 @@
+{
+    "Topic": "1wayStoSescape", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A5C2"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwVAVampCurse", 
+    "PNAM - Previous INFO": "01F8A5C1", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "2D 4A FF", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Though I have been trapped here for centuries and my body is weak, my mind is not dead. I feel that I have devised a way to break this barrier that keeps me locked in here.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "2D 4A FF", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Perhaps you will help me, my friend. The two of us could rule the outside world together. None could stand before our combined might!", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVAVampCurse", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0mastrius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1wayStoSescape1", 
+        "1wayStoSescape2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwvavampcurse 30", 
+        "References": [
+            "fbmwVAVampCurse"
+        ]
+    }
+}

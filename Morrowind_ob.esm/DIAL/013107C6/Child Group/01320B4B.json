@@ -1,0 +1,87 @@
+{
+    "Topic": "1TelvanniSHortator", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320B4B"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQTelvanniDratha", 
+    "PNAM - Previous INFO": "01025AF3", 
+    "Add topics": [
+        "1Nerevarine", 
+        "1Nerevar", 
+        "1Hortator", 
+        "1scroll"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Hmm. So there's something to those old prophecies after all. Pig-headed Battlemages don't pay attention to Lady Azura's portents as they should.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "And you are the foretold Nerevarine? Quite a shock to those mallet-headed House Fathers, eh? Nerevar comes back... as a woman? Haw! Certainly.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I'm quite happy to name you Hortator. Here. Take these scrolls with you. Never know when they'll come in handy.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0dratha", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 135, 
+            "Parameter #1": "00 00 00 00", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 04 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwMQTelvanniDratha 50\r\nplayer.additem 0scusummongoldensaint 4", 
+        "References": [
+            20, 
+            "fbmwMQTelvanniDratha", 
+            "0scUsummongoldensaint"
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B1C8"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwBMDraugr", 
+    "PNAM - Previous INFO": "01F8B1C7", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "It is done. My time is over. You have done a service here today. Both to me, and to the people of this island. Now I may rest. Before I go, take this.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "May you have the strength of will to continue your own journey.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 79.9999997980194, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMDraugr", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "fbmwbmDraugrAesliip", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 56, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 8B 10 02 00 00 00 39 10 0A 00 02 00 72 03 00 6E 55 00 00 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 02 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "fbmwbmDraugrAesliipRef.kill\r\nsetstage fbmwbmdraugr 85\r\nremoveitem fbmwbmringaesliip 1\r\nplayer.additem fbmwbmringaesliip 1", 
+        "References": [
+            "fbmwbmDraugrAesliipRef", 
+            20, 
+            "fbmwBMDraugr", 
+            "fbmwBMringaesliip"
+        ]
+    }
+}

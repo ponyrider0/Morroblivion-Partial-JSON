@@ -1,0 +1,84 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01311386"
+    }, 
+    "EDID - Editor ID": "1fightSthrough", 
+    "Quests": [
+        "fbmwBMWildHunt", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Fight through", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1fightSthrough", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BB12"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMWildHunt", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Perhaps together we can find our way to the end. With you by my side, the Hunter will have met his match. Heart-Fang will bring glory to his people!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 42 4D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "What say you?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMWildHunt", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tharstenSheartTfang2", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "fbmwbmWildHuntFangNo", 
+                "fbmwbmWildHuntFangYes"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

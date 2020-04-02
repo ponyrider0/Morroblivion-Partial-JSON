@@ -1,0 +1,80 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8A956"
+    }, 
+    "EDID - Editor ID": "fbmwicsynready", 
+    "Quests": [
+        "fbmwICAdvancement"
+    ], 
+    "FULL - Name": "I'm ready for a lay healer task.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "fbmwicsynready", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A957"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwICAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 61 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Mara be praised! So much to do, and so little time. Please, bring me five units of marshmerrow for restore health potions. Balur Salvu, a farmer in the western Ascadian Isles, near Pelagiad, grows marshmerrow.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 61 72", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Bring him this potion as a gift, and he'll tell you where to pick the marshmerrow.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0SynnolianSTunifus", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwicmarshmerrow 1\r\nplayer.additem 0pufortifyustrengthuq 1", 
+                "References": [
+                    20, 
+                    "fbmwICMarshmerrow", 
+                    "0pUfortifyUstrengthUq"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "Topic": "1MountSKand", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A6BF"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTTMountKand", 
+    "PNAM - Previous INFO": "01F8A6BE", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 72", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I want you to make the Pilgrimage to Mount Kand, which is northwest of Molag Mar. It's on the left side of the trail. I will mark it on your map.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 72", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "On Mount Kand, Vivec won a contest of wits with three Daedra. There are few lights in the caverns. You may need these potions.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "72 65 72", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": " If you are not good with riddles, you may want to find a copy of \"The Yellow Book of Riddles.\" Several booksellers have this book.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTTCuringTouch", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tharerSrotheloth", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 04 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwttmountkand 10\r\nplayer.additem 0punightteyeuq 4", 
+        "References": [
+            20, 
+            "fbmwTTMountKand", 
+            "0pUnightTeyeUq"
+        ]
+    }
+}

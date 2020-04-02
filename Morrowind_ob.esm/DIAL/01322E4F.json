@@ -1,0 +1,113 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01322E4F"
+    }, 
+    "EDID - Editor ID": "1kiss1", 
+    "Quests": [
+        "fbmwMVCharming"
+    ], 
+    "FULL - Name": "What harm could a kiss do?", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1kiss1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132368C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMVCharming", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1NelsSLlendo", 
+                "1kiss", 
+                "1Pelagiad", 
+                "1NelsSLlendo"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Ahhhh...yes. Though it is Nels Llendo they call thief, it is you, outlander, who has stolen my heart.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Your kiss is worth more gold than I might find in a Duke's treasury.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I must take my leave of you now, dear lady, but I take my lodging at the Halfway Tavern in Pelagiad.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Perhaps you will visit Nels Llendo there some time. I'm certain I will be able to be of some service to you then. Until that time, good bye.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0nelsSllendo", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 78 00 00 00 53 10 0A 00 02 00 72 02 00 6E 1E 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmvcharming 120\r\nmoddisposition player 30", 
+                "References": [
+                    "fbmwMVCharming", 
+                    20
+                ]
+            }
+        }
+    ]
+}

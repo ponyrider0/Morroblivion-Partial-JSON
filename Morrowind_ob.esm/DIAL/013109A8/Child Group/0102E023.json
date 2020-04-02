@@ -1,0 +1,51 @@
+{
+    "Topic": "1latestSrumors", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0102E023"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "MorroDefaultQuest", 
+    "PNAM - Previous INFO": "0102E020", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "74 68 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Whatever you do, don't play cards with Galms Seles. He's a hustler just moved here from Vvardenfell. He thinks he can out-distance his reputation, but a friend in Sadrith Mora tipped me off. I wish he would leave. He's put a damper on the action.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0raAtesh", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 03 00 02 00 20 31", 
+        "SCTX - Result script source": "set fbmwmsBouncer.galmsknown to 1", 
+        "References": [
+            "fbmwMSBouncer"
+        ]
+    }
+}

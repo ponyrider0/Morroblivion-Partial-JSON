@@ -1,0 +1,21 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8E95C"
+    }, 
+    "EDID - Editor ID": "mwCGDockTrigZoneScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 2, 
+        "CompiledSize": 99, 
+        "VariableCount": 0, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 18 00 50 00 00 00 01 00 72 01 00 16 00 16 00 01 00 12 00 20 58 3A 10 05 00 01 00 72 02 00 20 31 30 30 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 10 00 02 00 0C 00 20 72 02 00 73 0B 00 20 30 20 3D 3D 61 10 00 00 15 00 0A 00 72 02 00 73 0B 00 02 00 20 31 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwCGDockTrigZoneScript\n\nbegin OnTrigger Player\n\n\tif GetStage fbmwChargen == 100\n\t\treturn\n\tendif\n\n\tif fbmwChargen.GuardDockStage == 0\n\t\tDisablePlayerControls\n\t\tset fbmwChargen.GuardDockStage to 1\n\tendif\n\nend\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        20, 
+        "fbmwChargen"
+    ]
+}

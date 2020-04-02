@@ -1,0 +1,86 @@
+{
+    "Topic": "fbmwicwitchyes", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8A944"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwICWitch", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 56 41", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I'm glad to see you back in one piece. Since I didn't know how tough she was.... Anyway, you're back, and Thelsa Dral is out of the way.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 56 41", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I've been thinking. These shrine missions are getting tougher, and I thought you might like to have this old ring. I don't use it anymore, but it came in handy when I was younger.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "4A 5A FF", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Take it, with my thanks, and when you're ready for another mission, speak to me again.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0ThelsaSDral", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0Kaye", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 6, 
+            "CompiledSize": 72, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 A9 10 0D 00 03 00 72 03 00 72 04 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 36 10 05 00 01 00 72 06 00", 
+        "SCTX - Result script source": "setstage fbmwicwitch 50\r\nmodfactionreaction 0imperialscult playerfaction 5\r\nmoddisposition player 10\r\nplayer.additem fbmwfirestone 1\r\nstartquest fbmwicsilverstaff", 
+        "References": [
+            20, 
+            "fbmwICWitch", 
+            "0ImperialSCult", 
+            "PlayerFaction", 
+            "fbmwFirestone", 
+            "fbmwICSilverStaff"
+        ]
+    }
+}

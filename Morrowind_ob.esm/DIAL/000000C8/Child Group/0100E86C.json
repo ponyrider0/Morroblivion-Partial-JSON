@@ -1,0 +1,92 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100E86C"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwTRMissingHand02", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 54 52", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "So. She has sent you for me. Now YOU are Her favorite. How convenient. Whichever of us dies... she will be well pleased.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "7F 7F 7F", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "And if both of us die, so much the better. Well, I am content. Perhaps this is how it was meant to end. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "7F 7F 7F", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "I ask the forgiveness of all the gods and spirits -- whoever they may be.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "7F 7F 7F", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "And you, too, might make your peace with your gods, because at least one of us will not live to see another sunset.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0SalasSValor", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRMissingHand02", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 36, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "16 10 05 00 01 00 72 01 00 10 10 09 00 02 00 21 00 6E 64 00 00 00 39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+        "SCTX - Result script source": "startcombat player\r\nmodav aggression 100\r\nsetstage fbmwTRMissingHand02 10", 
+        "References": [
+            20, 
+            "fbmwTRMissingHand02"
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "Topic": "1TelvanniSHortator", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320B4A"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwMQTelvanniDratha", 
+    "PNAM - Previous INFO": "01320B49", 
+    "Add topics": [
+        "1TelvanniScouncilors", 
+        "1news", 
+        "1Hortator", 
+        "1HouseSTelvanni", 
+        "1Hortator", 
+        "1MasterSAryon", 
+        "1Hortator", 
+        "1goSwithSyou"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "So? You've got the votes of all the surviving Telvanni councilors? That's very good news. Now you are officially the Hortator of House Telvanni.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Go with Azura's blessing. And do you know about the Robe of the Hortator? If not, you should speak with Master Aryon.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "It's a clan heirloom created for the Hortator, and you should have it to go with your office.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0dratha", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 97, 
+            "Unused": 0, 
+            "Comparison Value": 49.9999998737621, 
+            "Function": 58, 
+            "Parameter #1": "fbmwMQTelvanni", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 4.99999998737621, 
+            "Function": 79, 
+            "Parameter #1": "fbmwMQTelvanni", 
+            "Parameter #2": 1
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 14, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwMQTelvanni 50", 
+        "References": [
+            "fbmwMQTelvanni"
+        ]
+    }
+}

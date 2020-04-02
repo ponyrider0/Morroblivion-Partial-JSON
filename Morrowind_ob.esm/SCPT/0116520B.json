@@ -1,0 +1,32 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "0116520B"
+    }, 
+    "EDID - Editor ID": "fbmwbmArtoriaFollowerScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 1, 
+        "CompiledSize": 143, 
+        "VariableCount": 1, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 81 00 00 00 16 00 13 00 07 00 0F 00 20 58 3A 10 05 00 01 00 72 01 00 20 30 20 3E 16 00 1C 00 02 00 18 00 20 72 01 00 73 02 00 20 31 20 3D 3D 20 73 01 00 20 30 20 3D 3D 20 26 26 5E 10 00 00 15 00 07 00 73 01 00 02 00 20 31 18 00 1C 00 02 00 18 00 20 72 01 00 73 02 00 20 30 20 3D 3D 20 73 01 00 20 31 20 3D 3D 20 26 26 5E 10 00 00 15 00 07 00 73 01 00 02 00 20 32 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn fbmwbmArtoriaFollowerScript\n\nshort DoOnce\n\nBegin GameMode\n\tif(GetStage fbmwBMSmugglers > 0)\n\t\tif(fbmwBMSmugglers.artoriafollow == 1)&&(DoOnce == 0)\n\t\t\tevp\n\t\t\tset DoOnce to 1\n\t\telseif(fbmwBMSmugglers.artoriafollow == 0)&&(DoOnce == 1)\n\t\t\tevp\n\t\t\tset DoOnce to 2\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "DoOnce"
+        }
+    ], 
+    "References": [
+        "fbmwBMSmugglers"
+    ]
+}

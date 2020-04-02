@@ -1,0 +1,88 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0100B790"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwTRBamz", 
+    "PNAM - Previous INFO": "0100B79C", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 54", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Ah...so you're the one Tienius has been telling us about.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 54", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "I had wished to speak with you, but I have learned that my mother, the Queen Barenziah, has been found dead.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6D 77 54", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "And you were seen near her chambers near the time of her death. I cannot let you leave here alive.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 99.9999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwTRBamz", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 64, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0barenziah", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0KingSHlaaluSHelseth", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 23, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "16 10 05 00 01 00 72 01 00 15 00 0A 00 72 02 00 73 0B 00 02 00 20 31", 
+        "SCTX - Result script source": "startcombat player\r\nset fbmwTRchampion.KingHit to 1", 
+        "References": [
+            20, 
+            "fbmwTRChampion"
+        ]
+    }
+}

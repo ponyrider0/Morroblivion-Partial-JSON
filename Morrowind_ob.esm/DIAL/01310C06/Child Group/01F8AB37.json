@@ -1,0 +1,80 @@
+{
+    "Topic": "1sculptor", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8AB37"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwDABoethiah", 
+    "PNAM - Previous INFO": "01F8AB36", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 44 41", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You got the stuff? Good, give it here. Okay, I found a place. Nice and away from stuff. Take me a few weeks, though. Gotta get some assistant sculpturists to help me out.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 44 41", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Not easy to find, you know? Anyhow, it be done in not too long. I gonna build it at Khartag Point up on coast from here. Up north. You can't miss. It real big.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 39.9999998990097, 
+            "Function": 58, 
+            "Parameter #1": "fbmwDABoethiah", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 128, 
+            "Unused": 0, 
+            "Comparison Value": 59.9999998485146, 
+            "Function": 58, 
+            "Parameter #1": "fbmwDABoethiah", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0dumaSgroTlag", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 4, 
+            "CompiledSize": 78, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E D0 07 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E D0 07 00 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwdaboethiah 60\r\nplayer.removeitem gold001 2000\r\nplayer.removeitem 0bkuboethiahassgloryuunique 1\r\nadditem gold001 2000\r\nadditem 0bkuboethiahassgloryuunique 1", 
+        "References": [
+            20, 
+            "fbmwDABoethiah", 
+            "Gold001", 
+            "0bkUBoethiahAsSGloryUunique"
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "014702B6"
+    }, 
+    "EDID - Editor ID": "mwTRFabCentFightWatchScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 19, 
+        "CompiledSize": 264, 
+        "VariableCount": 1, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 FA 00 00 00 16 00 2A 00 0F 00 26 00 20 58 3A 10 05 00 01 00 72 0E 00 20 31 30 30 20 3E 3D 20 58 01 10 05 00 01 00 72 0F 00 20 32 30 30 20 3C 20 26 26 1C 00 01 00 16 10 05 00 01 00 72 03 00 1C 00 02 00 16 10 05 00 01 00 72 03 00 1C 00 03 00 16 10 05 00 01 00 72 02 00 1C 00 04 00 16 10 05 00 01 00 72 05 00 1C 00 05 00 16 10 05 00 01 00 72 04 00 1C 00 06 00 16 10 05 00 01 00 72 03 00 1C 00 07 00 16 10 05 00 01 00 72 10 00 1C 00 08 00 16 10 05 00 01 00 72 10 00 1C 00 03 00 16 10 05 00 01 00 72 06 00 1C 00 09 00 16 10 05 00 01 00 72 11 00 1C 00 0A 00 16 10 05 00 01 00 72 12 00 1C 00 0B 00 16 10 05 00 01 00 72 11 00 1C 00 0C 00 16 10 05 00 01 00 72 12 00 1C 00 0D 00 16 10 05 00 01 00 72 0A 00 39 10 0A 00 02 00 72 13 00 6E 32 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scriptName mwTRFabCentFightWatchScript\n\nbegin gamemode\n\tif GetStage fbmwTRMHAttack >= 100 && GetDistance Player < 200\n\t\tfbmwFab9REF.StartCombat fbmwCent6REF\n\t\tfbmwFab10REF.StartCombat fbmwCent6REF\n\t\tfbmwCent6REF.StartCombat fbmwFab10REF\n\t\tfbmwFab4REF.StartCombat fbmwCent2REF\n\t\tfbmwCent2REF.StartCombat fbmwFab4REF\n\t\tfbmwFab3REF.StartCombat fbmwCent6REF\n\t\tfbmwFab7REF.StartCombat fbmwCent5REF\n\t\tfbmwFab8REF.StartCombat fbmwCent5REF\n\t\tfbmwCent6REF.StartCombat fbmwFab3REF\n\t\tfbmwFab1REF.StartCombat fbmwCent3REF\n\t\tfbmwFab2REF.StartCombat fbmwCent4REF\n\t\tfbmwFab5REF.StartCombat fbmwCent3REF\n\t\tfbmwFab6REF.StartCombat fbmwCent4REF\n\t\tfbmwCent1REF.StartCombat fbmwFab2REF\n\t\tSetStage fbmwTRBamz 50\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "References": [
+        "fbmwFab9REF", 
+        "fbmwFab10REF", 
+        "fbmwCent6REF", 
+        "fbmwFab4REF", 
+        "fbmwCent2REF", 
+        "fbmwFab3REF", 
+        "fbmwFab7REF", 
+        "fbmwFab8REF", 
+        "fbmwFab1REF", 
+        "fbmwFab2REF", 
+        "fbmwFab5REF", 
+        "fbmwFab6REF", 
+        "fbmwCent1REF", 
+        "fbmwTRMHAttack", 
+        20, 
+        "fbmwCent5REF", 
+        "fbmwCent3REF", 
+        "fbmwCent4REF", 
+        "fbmwTRBamz"
+    ]
+}

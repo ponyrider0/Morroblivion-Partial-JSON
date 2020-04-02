@@ -1,0 +1,73 @@
+{
+    "Topic": "1moraleShasSbeenSlow", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8B013"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwBMMorale", 
+    "PNAM - Previous INFO": "01F8B012", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "6F 6E 69", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You say that the shipment had merely been misplaced and this was all a big miscommunication? That's ridiculous. I expected better of my men, and myself. Especially of myself. Thank you for your help.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "77 42 4D", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Take these--there are diseases on this island we have never encountered. I would hate to see you take ill. Now, though, there is more fort business to discuss.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 92.9999997651976, 
+            "Function": 58, 
+            "Parameter #1": "fbmwBMMorale", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0falxScarius", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 50, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 03 00 00 00 36 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+        "SCTX - Result script source": "setstage fbmwbmmorale 110\r\nplayer.additem 0pucureucommonus 3\r\nstartquest fbmwbmsmugglers\r\naddtopic 1fortsbusiness", 
+        "References": [
+            20, 
+            "fbmwBMMorale", 
+            "0pUcureUcommonUs", 
+            "fbmwBMSmugglers", 
+            "1FortSbusiness"
+        ]
+    }
+}

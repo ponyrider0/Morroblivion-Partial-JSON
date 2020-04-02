@@ -1,0 +1,90 @@
+{
+    "Topic": "1hostileSmudcrabs", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01320E3A"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwHRMudcrabNest", 
+    "PNAM - Previous INFO": "01320E35", 
+    "Add topics": [
+        "1Mudcrab", 
+        "1guar", 
+        "1Tribunal", 
+        "1Tear"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "You killed the mudcrabs that were bothering my guar? Thank the Tribunal! I might not have to move back to Tear after all... You look tired, outlander.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Can I offer you some Hackle-Lo?", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 58, 
+            "Parameter #1": "fbmwHRMudcrabNest", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
+            "Comparison Value": 1.99999999495049, 
+            "Function": 84, 
+            "Parameter #1": "0MudCrabHRMudcrabNest", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0druleneSfalen", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Choices": [
+        "1hostileSmudcrabs1", 
+        "1hostileSmudcrabs2"
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 2, 
+            "CompiledSize": 28, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 28 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0F 00 00 00", 
+        "SCTX - Result script source": "SetStage fbmwHRMudcrabNest 40\r\nModDisposition Player 15", 
+        "References": [
+            "fbmwHRMudcrabNest", 
+            20
+        ]
+    }
+}

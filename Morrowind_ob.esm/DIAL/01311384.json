@@ -1,0 +1,147 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01311384"
+    }, 
+    "EDID - Editor ID": "1HunterAsSGame", 
+    "Quests": [
+        "fbmwBMWildHunt", 
+        "MorroDefaultQuest"
+    ], 
+    "FULL - Name": "Hunter's Game", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1HunterAsSGame", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BB0E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMWildHunt", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 74 53", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "It remains to be seen what the Game shall be. As always, it follows the Hunter's plan, but there is no way for us to know what this will bring. Gather your strength, Blodskal. It may be needed in the coming days.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMWildHunt", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMWildHunt", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0korstSwindTeye", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1HunterAsSGame", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BB0F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMWildHunt", 
+            "PNAM - Previous INFO": "01F8BB0E", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 74 53", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "According to legend, it varies from era to era. Our Grandfathers' Grandfathers tell of a time when the Hunter and his Hounds preyed upon entire tribes of men. Taken to the Hunting Grounds, the men were hunted by the Hounds. The ones that died were the lucky--", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 74 53", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "the survivors faced the Hunter himself. In another era, the Hunter took only a single man as his Prey. It is said if the Prey can last through the Bloodmoon, the Hunter returns to his demon realm for another era. We have only to await the Hunter's plan.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMWildHunt", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0korstSwindTeye", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1hunterassplan", 
+                "References": [
+                    "1HunterAsSplan"
+                ]
+            }
+        }
+    ]
+}

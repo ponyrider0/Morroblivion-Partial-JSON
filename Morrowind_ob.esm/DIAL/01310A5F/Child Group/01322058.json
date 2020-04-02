@@ -1,0 +1,74 @@
+{
+    "Topic": "1Advancement", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01322058"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwHRAdvancement", 
+    "PNAM - Previous INFO": "01004A7D", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "To become a House Father, you must earn the support of more Councilors.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 98, 
+            "Unused": 0, 
+            "Comparison Value": 5.99999998485146, 
+            "Function": 73, 
+            "Parameter #1": "0Redoran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 2.99999999242573, 
+            "Function": 79, 
+            "Parameter #1": "fbmwHRAdvancement", 
+            "Parameter #2": 4
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0athynSsarethi", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 8, 
+            "CompiledSize": 92, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 58 10 05 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00 39 10 0A 00 02 00 72 05 00 6E 01 00 00 00 58 10 05 00 01 00 72 06 00 39 10 0A 00 02 00 72 07 00 6E 01 00 00 00 58 10 05 00 01 00 72 08 00", 
+        "SCTX - Result script source": "SetStage fbmwHRMorvaynManor 1\r\nAddTopic 1MorvaynSManor\r\n\r\nSetStage fbmwHRTaxCollector 1\r\nAddTopic 1taxesSfromSGnisis\r\n\r\nSetStage fbmwHRCalderaCorrupt 1\r\nAddTopic 1CalderaSebonySmines\r\n\r\nSetStage fbmwHRArobarKidnap 1\r\nAddTopic 1MinerSArobar", 
+        "References": [
+            "fbmwHRMorvaynManor", 
+            "1MorvaynSManor", 
+            "fbmwHRTaxCollector", 
+            "1taxesSfromSGnisis", 
+            "fbmwHRCalderaCorrupt", 
+            "1CalderaSebonySmines", 
+            "fbmwHRArobarKidnap", 
+            "1MinerSArobar"
+        ]
+    }
+}

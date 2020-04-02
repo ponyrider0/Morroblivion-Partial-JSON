@@ -1,0 +1,78 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8B6F5"
+    }, 
+    "EDID - Editor ID": "fbmwPublicanSixFishesAgning", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 7, 
+        "CompiledSize": 369, 
+        "VariableCount": 5, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 63 01 00 00 16 00 0D 00 1C 00 09 00 20 73 01 00 20 31 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 05 00 20 30 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 03 00 15 00 09 00 73 03 00 04 00 20 47 04 00 15 00 07 00 73 05 00 02 00 20 31 1C 00 01 00 73 10 02 00 00 00 1C 00 02 00 17 11 02 00 00 00 17 00 02 00 05 00 16 00 0F 00 01 00 0B 00 20 47 03 00 20 73 02 00 20 21 3D 15 00 07 00 73 04 00 02 00 20 31 18 00 0F 00 01 00 0B 00 20 47 04 00 20 73 03 00 20 21 3D 15 00 07 00 73 04 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 17 00 03 00 13 00 20 72 05 00 58 43 10 05 00 01 00 72 06 00 20 30 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 04 00 20 31 20 3D 3D 15 00 07 00 73 04 00 02 00 20 32 19 00 00 00 19 00 00 00 16 00 0D 00 08 00 09 00 20 73 04 00 20 32 20 3D 3D 15 00 07 00 73 01 00 02 00 20 30 15 00 07 00 73 05 00 02 00 20 30 15 00 07 00 73 02 00 02 00 20 30 15 00 07 00 73 03 00 02 00 20 30 15 00 07 00 73 04 00 02 00 20 30 1C 00 01 00 DD 10 07 00 01 00 6E 00 00 00 00 1C 00 01 00 72 10 07 00 01 00 6E 1E 00 00 00 1C 00 02 00 17 11 05 00 01 00 72 07 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scriptname fbmwPublicanSixFishesAgning\r\n\r\n\r\nshort rent\r\nshort rentday\r\nshort rentmonth\r\nshort cleanup\r\nshort setup\r\n\r\n\r\n\r\nbegin gamemode\r\n\r\n\r\n\tif ( rent == 1 )\r\n\r\n\t\tif ( setup == 0 )\r\n\t\t\tset rentday to GameDay\r\n\t\t\tset rentmonth to GameMonth\r\n\t\t\tset setup to 1\r\n\t\t\tSixFishesRentdoor.UnLock\t\r\n\t\t\tSixFishesRentbed.SetOwnership\r\n\r\n\t\telse\r\n\r\n\t\t\tif ( GameDay != rentday )\r\n\t\t\t\tset cleanup to 1\r\n\t\t\telseif ( GameMonth != rentmonth )\r\n\t\t\t\tset cleanup to 1\r\n\t\t\tendif\r\n\t\tendif\r\n\r\n\t\tIf ( Player.GetInCell EbonheartVSSixSFishes == 0 )\r\n\t\t\tif ( Cleanup == 1 )\r\n\t\t\t\tSet Cleanup to 2\r\n\t\t\tendif\r\n\t\tendif\r\n\r\n\t\tif ( Cleanup == 2 )\r\n\r\n\t\t\tset rent to 0 \r\n\t\t\tset setup to 0\r\n\t\t\tset rentday to 0\r\n\t\t\tset rentmonth to 0\r\n\t\t\tset cleanup to 0\r\n\t\t\tSixFishesRentdoor.SetOpenState 0\r\n\t\t\tSixFishesRentdoor.Lock 30\r\n\t\t\tSixFishesRentbed.SetOwnership 0Agning\r\n\t\tendif\r\n\tendif\r\nEnd\r\n;<CSEBlock>\r\n;<CSECaretPos> 0 </CSECaretPos>\r\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "C8 92 1D 08 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rent"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "C8 92 1D 18 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rentday"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "C8 92 1D 08 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "rentmonth"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "C8 92 1D 18 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "cleanup"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "C8 92 1D 18 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "setup"
+        }
+    ], 
+    "References": [
+        "SixFishesRentDoor", 
+        "SixFishesRentBed", 
+        "GameDay", 
+        "GameMonth", 
+        20, 
+        "EbonheartVSSixSFishes", 
+        "0Agning"
+    ]
+}

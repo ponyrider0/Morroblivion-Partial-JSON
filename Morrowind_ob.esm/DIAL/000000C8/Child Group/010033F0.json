@@ -1,0 +1,65 @@
+{
+    "Topic": "GREETING", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "010033F0"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Say Once": true
+        }
+    }, 
+    "QSTI - Quest": "mwGreetingsUnique", 
+    "PNAM - Previous INFO": "0102A4E3", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 2, 
+                "Emotion Value": 50, 
+                "Unused": "64 61 61", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "I am Vistha-Kai, Warden of the Corprusarium. I am here to warn you: do not harm the inmates. ", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "64 61 61", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "If you come to plunder the dungeon, you must endure their attacks, and take your chances with me, their Warden and Protector.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0visthaUkai", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 32, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
+        "SCTX - Result script source": "setstage FBMWVisthaWarn 1\r\naddtopic 1plunderStheSdungeon\r\naddtopic 1corprusSvictims", 
+        "References": [
+            "fbmwVisthaWarn", 
+            "1plunderStheSdungeon", 
+            "1corprusSvictims"
+        ]
+    }
+}

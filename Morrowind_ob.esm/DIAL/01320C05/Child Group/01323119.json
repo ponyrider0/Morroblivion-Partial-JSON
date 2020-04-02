@@ -1,0 +1,96 @@
+{
+    "Topic": "1sensitiveSmatters1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01323119"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "fbmwDAMephala", 
+    "PNAM - Previous INFO": 0, 
+    "Add topics": [
+        "1Balmora", 
+        "1rat", 
+        "1Food"
+    ], 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Excellent. There is a member of our brotherhood living in Balmora, Balyn Omavel. He has been...freelancing, if you will.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "This is unacceptable, and he must be removed.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 3
+            }, 
+            "NAM1 - Response Text": "Unfortunately, his brother is a rather important member of our brotherhood, so it would be difficult to bring it to the attention of the others.", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 4
+            }, 
+            "NAM1 - Response Text": "Use this poison in his food. It acts swiftly, as should you.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0tarosSdral", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 3, 
+            "CompiledSize": 46, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "52 10 0A 00 02 00 72 02 00 6E 05 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 05 00 00 00 39 10 0A 00 02 00 72 03 00 6E 28 00 00 00", 
+        "SCTX - Result script source": "removeitem 0ingredutreatedubittergreenuuniq 5\r\nplayer.additem 0ingredutreatedubittergreenuuniq 5\r\nsetstage fbmwdamephala 40", 
+        "References": [
+            20, 
+            "0ingredUtreatedUbittergreenUuniq", 
+            "fbmwDAMephala"
+        ]
+    }
+}

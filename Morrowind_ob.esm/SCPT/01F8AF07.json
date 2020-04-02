@@ -1,0 +1,63 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01F8AF07"
+    }, 
+    "EDID - Editor ID": "fbmwSABoethiahBuildScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 22, 
+        "CompiledSize": 514, 
+        "VariableCount": 3, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 F4 01 00 00 16 00 0D 00 13 00 09 00 20 73 01 00 20 31 20 3D 3D 15 00 09 00 73 02 00 04 00 20 47 15 00 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00 1C 00 04 00 21 10 00 00 1C 00 05 00 21 10 00 00 1C 00 06 00 21 10 00 00 1C 00 07 00 21 10 00 00 1C 00 08 00 21 10 00 00 1C 00 09 00 21 10 00 00 1C 00 0A 00 21 10 00 00 1C 00 0B 00 21 10 00 00 1C 00 0C 00 21 10 00 00 1C 00 0D 00 21 10 00 00 1C 00 0E 00 21 10 00 00 1C 00 0F 00 21 10 00 00 1C 00 10 00 21 10 00 00 1C 00 11 00 21 10 00 00 15 00 07 00 73 01 00 02 00 20 32 18 00 1F 00 01 00 1B 00 20 73 01 00 20 32 20 3D 3D 20 47 15 00 20 73 02 00 20 2D 20 31 20 3E 3D 20 26 26 15 00 07 00 73 01 00 02 00 20 33 18 00 0D 00 03 00 09 00 20 73 01 00 20 33 20 3D 3D 1C 00 12 00 21 10 00 00 1C 00 13 00 22 10 00 00 15 00 07 00 73 01 00 02 00 20 34 18 00 20 00 02 00 1C 00 20 73 01 00 20 34 20 3D 3D 20 47 15 00 20 73 02 00 20 2D 20 31 34 20 3E 3D 20 26 26 15 00 07 00 73 01 00 02 00 20 35 39 10 0A 00 02 00 72 16 00 6E 3D 00 00 00 18 00 0D 00 12 00 09 00 20 73 01 00 20 35 20 3D 3D 1C 00 01 00 22 10 00 00 1C 00 03 00 22 10 00 00 1C 00 04 00 22 10 00 00 1C 00 05 00 22 10 00 00 1C 00 06 00 22 10 00 00 1C 00 07 00 22 10 00 00 1C 00 08 00 22 10 00 00 1C 00 09 00 22 10 00 00 1C 00 0A 00 22 10 00 00 1C 00 0B 00 22 10 00 00 1C 00 0C 00 22 10 00 00 1C 00 0D 00 22 10 00 00 1C 00 0E 00 22 10 00 00 1C 00 0F 00 22 10 00 00 1C 00 10 00 22 10 00 00 1C 00 11 00 22 10 00 00 1C 00 14 00 21 10 00 00 15 00 07 00 73 01 00 02 00 20 30 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "ScriptName fbmwSABoethiahBuildScript\r\n\r\nshort buildstate\r\nshort timer\r\n\r\n;0-Nothing going\r\n;1-Send in the Orcs and scaffolds\r\n;2-wait a day\r\n;3-Move Duma to the shrine\r\n;4-Orcs are working, check for progress\r\n;5-Finished, kick everyone out\r\n\r\nbegin gamemode\r\n\tif buildstate == 1\r\n\t\tSET Timer TO GameDaysPassed\r\n\t\t\r\n\t\tfbdumburzref.enable\r\n\t\tfbexdaeplatformboeref.enable\r\n\t\tfbexdescaffold02boeref.enable\r\n\t\tfbexdescaffold03boeref.enable\r\n\t\tfbexdescaffold2boeref.enable\r\n\t\tfbexdescaffold3boeref.enable\r\n\t\tfbexdescaffoldaboeref.enable\r\n\t\tfbexdescaffoldu01boeref.enable\r\n\t\tfbexdescaffoldu02boeref.enable\r\n\t\tfbexdescaffoldu2boeref.enable\r\n\t\tfblazgarref.enable\r\n\t\tfblugdumphref.enable\r\n\t\tfbmisccombucketboeuni.enable\r\n\t\tfbmisccombucketboeuniaref.enable\r\n\t\tfbmisccombucketboeunib.enable\r\n\t\tfbmwdaboerockref.enable\r\n\t\tfbshulonkref.enable\r\n\t\t\r\n\t\tset buildstate to 2\r\n\t\t\r\n\telseif buildstate == 2 && GameDaysPassed - timer >= 1\r\n\t\tset buildstate to 3\r\n\t\t\r\n\telseif buildstate == 3\r\n\t\tfbduma2ref.enable\r\n\t\tfbmwduma1REF.disable\r\n\t\tset buildstate to 4\r\n\t\t\r\n\telseif buildstate == 4 && GameDaysPassed - timer >= 14\r\n\t\tset buildstate to 5\r\n\t\tsetstage fbmwdaboethiah 61\r\n\t\t\r\n\telseif buildstate == 5\r\n\t\tfbdumburzref.disable\r\n\t\tfbexdescaffold02boeref.disable\r\n\t\tfbexdescaffold03boeref.disable\r\n\t\tfbexdescaffold2boeref.disable\r\n\t\tfbexdescaffold3boeref.disable\r\n\t\tfbexdescaffoldaboeref.disable\r\n\t\tfbexdescaffoldu01boeref.disable\r\n\t\tfbexdescaffoldu02boeref.disable\r\n\t\tfbexdescaffoldu2boeref.disable\r\n\t\tfblazgarref.disable\r\n\t\tfblugdumphref.disable\r\n\t\tfbmisccombucketboeuni.disable\r\n\t\tfbmisccombucketboeuniaref.disable\r\n\t\tfbmisccombucketboeunib.disable\r\n\t\tfbmwdaboerockref.disable\r\n\t\tfbshulonkref.disable\r\n\t\tfbexdaeboathiahref.enable\r\n\t\tset buildstate to 0\r\n\tendif\r\nend", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 01 00 01 00 01 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "buildstate"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "timer"
+        }
+    ], 
+    "References": [
+        "fbdumburzref", 
+        "fbexdaeplatformboeref", 
+        "fbexdescaffold02boeref", 
+        "fbexdescaffold03boeref", 
+        "fbexdescaffold2boeref", 
+        "fbexdescaffold3boeref", 
+        "fbexdescaffoldaboeref", 
+        "fbexdescaffoldu01boeref", 
+        "fbexdescaffoldu02boeref", 
+        "fbexdescaffoldu2boeref", 
+        "fblazgarref", 
+        "fblugdumphref", 
+        "fbmisccombucketboeuni", 
+        "fbmisccombucketboeuniaref", 
+        "fbmisccombucketboeunib", 
+        "fbmwdaboeRockREF", 
+        "fbshulonkref", 
+        "fbduma2ref", 
+        "fbmwduma1REF", 
+        "fbexdaeboathiahref", 
+        "GameDaysPassed", 
+        "fbmwDABoethiah"
+    ]
+}
