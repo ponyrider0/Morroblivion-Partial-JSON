@@ -16,6 +16,98 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01320630"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRAssassins", 
+            "PNAM - Previous INFO": "01F8A87B", 
+            "Add topics": [
+                "1plot", 
+                "1QueenSMother", 
+                "1Mournhold"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "My sources tell me that there's a plot, but not against the king.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "From what I've been able to gather, there will be an attempt made on the Queen Mother's life.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I'm not sure who would want to target her--from what I know, she has no enemies in Mournhold--but that's what my sources are telling me.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwTRAssassins", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bakhSgroTsham", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 32", 
+                "SCTX - Result script source": "setstage fbmwtrassassins 50\r\nset fbmwtrassassins.helass to 2", 
+                "References": [
+                    "fbmwTRAssassins"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1disturbingSinformation", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8A87A"
             }, 
             "DATA - ": {
@@ -117,98 +209,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1disturbingSinformation", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01320630"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTRAssassins", 
-            "PNAM - Previous INFO": "01F8A87B", 
-            "Add topics": [
-                "1plot", 
-                "1QueenSMother", 
-                "1Mournhold"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "My sources tell me that there's a plot, but not against the king.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "From what I've been able to gather, there will be an attempt made on the Queen Mother's life.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I'm not sure who would want to target her--from what I know, she has no enemies in Mournhold--but that's what my sources are telling me.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwTRAssassins", 
-                    "Parameter #2": 1
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bakhSgroTsham", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 28, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 32", 
-                "SCTX - Result script source": "setstage fbmwtrassassins 50\r\nset fbmwtrassassins.helass to 2", 
-                "References": [
-                    "fbmwTRAssassins"
-                ]
             }
         }
     ]

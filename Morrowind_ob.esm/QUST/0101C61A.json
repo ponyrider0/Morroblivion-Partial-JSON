@@ -155,11 +155,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 1, 
+                            "CompiledSize": 8, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00", 
+                        "SCTX - Result script source": "fbmwMSBlackDartTorch1REF.enable", 
+                        "References": [
+                            "fbmwMSBlackDartTorch1REF"
+                        ]
                     }
                 }
             ]
@@ -262,6 +267,92 @@
                             "Type": 1
                         }
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "01F05B31", 
+                "Flags": {}, 
+                "Unused": "00 B4 22"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "01F05B31", 
+                "Flags": {}, 
+                "Unused": "00 B4 22"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwMSBlackDartTorch1REF", 
+                "Flags": {}, 
+                "Unused": "00 B4 22"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": 25
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwVarinerGhostREF", 
+                "Flags": {}, 
+                "Unused": "00 B4 22"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSBlackDart", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ]
         }

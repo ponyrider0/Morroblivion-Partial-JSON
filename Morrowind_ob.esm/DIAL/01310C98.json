@@ -163,6 +163,56 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01322C78"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGssEnamor", 
+            "PNAM - Previous INFO": "01F8A840", 
+            "Add topics": [
+                "1Vivec", 
+                "1report"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, it was stolen. I did not know anyone else knew. It was a priceless blade, a gift from Vivec himself. I was ashamed to report it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0salynSsarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1Enamor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8A83B"
             }, 
             "DATA - ": {
@@ -275,17 +325,15 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 45, 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtgssenamor 100\r\nmodfactionreaction 0thievessguild playerfaction 5\r\nmoddisposition player 10", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtgssenamor 100\r\nmoddisposition player 10", 
                 "References": [
                     "fbmwTGssEnamor", 
-                    "0ThievesSGuild", 
-                    "PlayerFaction", 
                     20
                 ]
             }
@@ -549,56 +597,6 @@
                     "Parameter #1": "fbmwTGssEnamor", 
                     "Parameter #2": "00 00 00 00"
                 }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0salynSsarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1Enamor", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322C78"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGssEnamor", 
-            "PNAM - Previous INFO": "01F8A840", 
-            "Add topics": [
-                "1Vivec", 
-                "1report"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, it was stolen. I did not know anyone else knew. It was a priceless blade, a gift from Vivec himself. I was ashamed to report it.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
                 {
                     "Type": 0, 
                     "Unused": 0, 

@@ -120,11 +120,29 @@
             ]
         }, 
         {
+            "INDX - Stage index": 35, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "I found Anes Vendu's body.  He still had the excavation report on him.  There is a dwemer book next to the body.  It looks important.  I should take it and see if anyone knows anything about it.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }
+                    }
+                }
+            ]
+        }, 
+        {
             "INDX - Stage index": 40, 
             "Log Entries": [
                 {
                     "QSDT - Stage Flags": {}, 
-                    "CNAM - Log Entry": "I found Anes Vendu's body.", 
+                    "CNAM - Log Entry": "I should inform Senilias Cadiusus about Anes Vendu's fate.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
@@ -209,9 +227,34 @@
     "Targets": [
         {
             "QSTA - Target": {
+                "Target": "mwMGHangingGardensBookREF", 
+                "Flags": {}, 
+                "Unused": "00 DD 10"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 34.9999999116335, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGExcavation", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
                 "Target": "fbmwedwinnaref", 
                 "Flags": {}, 
-                "Unused": "00 54 21"
+                "Unused": "00 DD 10"
             }, 
             "Conditions": [
                 {
@@ -236,7 +279,7 @@
             "QSTA - Target": {
                 "Target": "mwSeniliasCadiususREF", 
                 "Flags": {}, 
-                "Unused": "00 54 21"
+                "Unused": "00 DD 10"
             }, 
             "Conditions": [
                 {
@@ -269,7 +312,7 @@
             "QSTA - Target": {
                 "Target": "mwAnesVenduREF", 
                 "Flags": {}, 
-                "Unused": "00 54 21"
+                "Unused": "00 DD 10"
             }, 
             "Conditions": [
                 {
@@ -294,7 +337,7 @@
             "QSTA - Target": {
                 "Target": "mwSeniliasCadiususREF", 
                 "Flags": {}, 
-                "Unused": "00 54 21"
+                "Unused": "00 DD 10"
             }, 
             "Conditions": [
                 {
@@ -317,6 +360,22 @@
                     "Type": 1, 
                     "Unused": 0, 
                     "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGExcavation", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGExcavation", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMGExcavation", 
                     "Parameter #2": "00 00 00 00"

@@ -17,6 +17,75 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "013217AD"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Bthuand", 
+                "1Dwemer", 
+                "1enchantments"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "It is a shield of immense power, known for its resistance to even the most arcane magic. I have heard it lies in Bthuand, a Dwemer ruin north of here.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The former owner now lies there as well, unable to control it's enchantments.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0mastrius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 41, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 39 10 0A 00 02 00 72 04 00 6E 37 00 00 00", 
+                "SCTX - Result script source": "addtopic 1Bthuand\r\naddtopic 1Dwemer\r\naddtopic 1enchantment\r\nsetstage fbmwVAVampCurse 55", 
+                "References": [
+                    "1Bthuand", 
+                    "1Dwemer", 
+                    "1enchantment", 
+                    "fbmwVAVampCurse"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1SpellSBreaker", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "013217AE"
             }, 
             "DATA - ": {
@@ -203,75 +272,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1SpellSBreaker", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217AD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Bthuand", 
-                "1Dwemer", 
-                "1enchantments"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It is a shield of immense power, known for its resistance to even the most arcane magic. I have heard it lies in Bthuand, a Dwemer ruin north of here.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "The former owner now lies there as well, unable to control it's enchantments.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mastrius", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 41, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 39 10 0A 00 02 00 72 04 00 6E 37 00 00 00", 
-                "SCTX - Result script source": "addtopic 1Bthuand\r\naddtopic 1Dwemer\r\naddtopic 1enchantment\r\nsetstage fbmwVAVampCurse 55", 
-                "References": [
-                    "1Bthuand", 
-                    "1Dwemer", 
-                    "1enchantment", 
-                    "fbmwVAVampCurse"
-                ]
             }
         }
     ]

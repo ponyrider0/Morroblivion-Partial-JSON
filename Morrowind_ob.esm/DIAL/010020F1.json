@@ -85,6 +85,75 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "010020F4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "mwSlavesDialogue", 
+            "PNAM - Previous INFO": "010039E6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, master.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sAbakha", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "mwBuySlavesQuest", 
+                    "Parameter #2": 4
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "mwBuySlavesQuest", 
+                    "Parameter #2": 9
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 18, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 09 00 02 00 20 31 5E 10 00 00", 
+                "SCTX - Result script source": "set mwBuySlavesQuest.SBakhaFollow to 1\r\nevp", 
+                "References": [
+                    "mwBuySlavesQuest"
+                ]
+            }
+        }, 
+        {
+            "Topic": "mwSlaveOrderFollow", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "010039E3"
             }, 
             "DATA - ": {
@@ -351,75 +420,6 @@
                 }, 
                 "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 0F 00 02 00 20 31 5E 10 00 00", 
                 "SCTX - Result script source": "set mwBuySlavesQuest.MenelrasFollow to 1\r\nevp", 
-                "References": [
-                    "mwBuySlavesQuest"
-                ]
-            }
-        }, 
-        {
-            "Topic": "mwSlaveOrderFollow", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010020F4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "mwSlavesDialogue", 
-            "PNAM - Previous INFO": "010039E6", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, master.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sAbakha", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "mwBuySlavesQuest", 
-                    "Parameter #2": 4
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 79, 
-                    "Parameter #1": "mwBuySlavesQuest", 
-                    "Parameter #2": 9
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 18, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 09 00 02 00 20 31 5E 10 00 00", 
-                "SCTX - Result script source": "set mwBuySlavesQuest.SBakhaFollow to 1\r\nevp", 
                 "References": [
                     "mwBuySlavesQuest"
                 ]

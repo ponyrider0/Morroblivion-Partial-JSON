@@ -16,27 +16,56 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01321AA0"
+                "FormID": "01013AE9"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Say Once": true
+                }
             }, 
             "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "01013AEB", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You've been expelled, outlander. You'll have to make amends.", 
+                    "NAM1 - Response Text": "Yes. Egg poachers. May sound silly, but those kwama eggs are among the few things worth exporting from this nasty little province.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": " Dram Bero, the owner of Shulk Egg Mine, wants to make an example of these thieves to keep other miners from getting funny ideas.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "The egg poachers, Sevilo Othan and Daynila Valas, are former egg miners, and long-time local troublemakers. You can handle that, can't you?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Report back when the poachers are dead.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -50,75 +79,11 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "fbmwFightersGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01013AF4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Say Once": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01321AA0", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "75 6C 6B", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You handled the Fighters Guild contract on that? Thank you. I should have handled it myself. But there's so much to do.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
                     "Type": 96, 
                     "Unused": 0, 
                     "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwFGEggPoachers", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0dramSbero", 
+                    "Parameter #1": "fbmwFGRatHunt", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -130,318 +95,11 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "moddisposition player 5", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWFGEggPoachers 1", 
                 "References": [
-                    20
+                    "fbmwFGEggPoachers"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01013AF2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AF4", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 46 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Sevilo Othan and Daynila Valas used to work here. Not good people. Could be hiding anywhere in the mine.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGEggPoachers", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "ShulkSEggSMine", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 70, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01013AF1"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AF2", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 44", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "We don't know anything about that. We're just doing our jobs.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGEggPoachers", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "ShulkSEggSMine", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 70, 
-                    "Parameter #1": 1, 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01013AEF"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AF1", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 44", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Sevilo Othan and Daynila Valas used to work here. Not good people. Could be hiding anywhere in the mine.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGEggPoachers", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0dinok", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01013AED"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AEF", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "We haven't seen Sevilo Othan or Daynila Valas. But eggs keep disappearing. And they know the place.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Easy for them to get in and out, stay out of sight.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGEggPoachers", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0findulain", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1eggSpoachers", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321AA4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AED", 
-            "Add topics": [
-                "1makeSamends"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You've been expelled. You'll have to make amends.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0eydisSfireTeye", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "fbmwFightersGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }, 
         {
@@ -531,17 +189,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01013AE9"
+                "FormID": "01013AED"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {
-                    "Say Once": true
-                }
+                "Flags": {}
             }, 
             "QSTI - Quest": "fbmwFGEggPoachers", 
-            "PNAM - Previous INFO": "01013AEB", 
+            "PNAM - Previous INFO": "01013AEF", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -550,7 +206,7 @@
                         "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Yes. Egg poachers. May sound silly, but those kwama eggs are among the few things worth exporting from this nasty little province.", 
+                    "NAM1 - Response Text": "We haven't seen Sevilo Othan or Daynila Valas. But eggs keep disappearing. And they know the place.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -560,27 +216,303 @@
                         "Unused": "20 66 61", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": " Dram Bero, the owner of Shulk Egg Mine, wants to make an example of these thieves to keep other miners from getting funny ideas.", 
+                    "NAM1 - Response Text": "Easy for them to get in and out, stay out of sight.", 
                     "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGEggPoachers", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0findulain", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01013AEF"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": "01013AF1", 
+            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
+                        "Unused": "20 30 44", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "The egg poachers, Sevilo Othan and Daynila Valas, are former egg miners, and long-time local troublemakers. You can handle that, can't you?", 
+                    "NAM1 - Response Text": "Sevilo Othan and Daynila Valas used to work here. Not good people. Could be hiding anywhere in the mine.", 
                     "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGEggPoachers", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0dinok", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01013AF1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": "01013AF2", 
+            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 4
+                        "Unused": "20 30 44", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Report back when the poachers are dead.", 
+                    "NAM1 - Response Text": "We don't know anything about that. We're just doing our jobs.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGEggPoachers", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "ShulkSEggSMine", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 70, 
+                    "Parameter #1": 1, 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01013AF2"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": "01013AF4", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 46 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Sevilo Othan and Daynila Valas used to work here. Not good people. Could be hiding anywhere in the mine.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGEggPoachers", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "ShulkSEggSMine", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 70, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01013AF4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": "01321AA0", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "75 6C 6B", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You handled the Fighters Guild contract on that? Thank you. I should have handled it myself. But there's so much to do.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGEggPoachers", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0dramSbero", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "moddisposition player 5", 
+                "References": [
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321AA0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1makeSamends"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've been expelled, outlander. You'll have to make amends.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -594,27 +526,95 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGRatHunt", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwFightersGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1eggSpoachers", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321AA4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwFGEggPoachers", 
+            "PNAM - Previous INFO": "01013AED", 
+            "Add topics": [
+                "1makeSamends"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've been expelled. You'll have to make amends.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0eydisSfireTeye", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWFGEggPoachers 1", 
-                "References": [
-                    "fbmwFGEggPoachers"
-                ]
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwFightersGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
             }
         }
     ]

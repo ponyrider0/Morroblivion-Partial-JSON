@@ -17,6 +17,194 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01009F02"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "01323460", 
+            "Add topics": [
+                "1rat", 
+                "1need"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 76, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 32 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
+                "SCTX - Result script source": "fbmwPetRat2REF.enable\r\nfbmwPetRat2REF.evp\r\nset fbmwMSBadPets.rats to 2\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
+                "References": [
+                    "fbmwPetRat2REF", 
+                    20, 
+                    "fbmwMSBadPets", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01009F03"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "01009F02", 
+            "Add topics": [
+                "1rat", 
+                "1need"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 76, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 31 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
+                "SCTX - Result script source": "fbmwPetRat1REF.enable\r\nfbmwPetRat1REF.evp\r\nset fbmwMSBadPets.rats to 1\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
+                "References": [
+                    "fbmwPetRat1REF", 
+                    20, 
+                    "fbmwMSBadPets", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01009F04"
             }, 
             "DATA - ": {
@@ -94,7 +282,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0132345F"
+                "FormID": "0100B801"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -102,7 +290,10 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "01009F04", 
+            "PNAM - Previous INFO": "0132345D", 
+            "Add topics": [
+                "1rat"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -111,25 +302,109 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Sorry, outlander. I don't have any more in my stable, and it takes a while to train them. Tell you what.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Check by with me later, and I'll see what can be done.", 
+                    "NAM1 - Response Text": "Sorry, outlander. I don't have any pet rats in my stable, and I don't think I'll have any more in the foreseeable future.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 8
+                }, 
+                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 5.99999998485146, 
+                    "Comparison Value": 2.99999999242573, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 08 00 02 00 20 31", 
+                "SCTX - Result script source": "set fbmwMSBadPets.RatTraining to 1", 
+                "References": [
+                    "fbmwMSBadPets"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132345D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "01F8E8BF", 
+            "Add topics": [
+                "1rat"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Sorry, outlander. I don't have any pet rats in my stable, and I don't think I'll have any more in the foreseeable future.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 8
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 2.99999999242573, 
                     "Function": 79, 
                     "Parameter #1": "fbmwMSBadPets", 
                     "Parameter #2": 2
@@ -280,6 +555,247 @@
                     "fbmwMSBadPets", 
                     "Gold001"
                 ]
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132345F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "01009F04", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Sorry, outlander. I don't have any more in my stable, and it takes a while to train them. Tell you what.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Check by with me later, and I'll see what can be done.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 5.99999998485146, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323460"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "0100B801", 
+            "Add topics": [
+                "1rat", 
+                "1need"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 1.99999999495049, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwMSBadPets", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 47, 
+                    "Parameter #1": "Gold001", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 76, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 33 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
+                "SCTX - Result script source": "fbmwPetRat3REF.enable\r\nfbmwPetRat3REF.evp\r\nset fbmwMSBadPets.rats to 3\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
+                "References": [
+                    "fbmwPetRat3REF", 
+                    20, 
+                    "fbmwMSBadPets", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1sellingSoff2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01323461"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSBadPets", 
+            "PNAM - Previous INFO": "01009F03", 
+            "Add topics": [
+                "1readyStoSgo"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'd love to sell you one, outlander, but it doesn't look like you can afford it.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Come back when you have the money and I'll have the creature packaged up and ready to go.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0rerlasSmon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
             }
         }, 
         {
@@ -506,522 +1022,6 @@
                     "fbmwMSBadPets", 
                     "Gold001"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132345D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "01F8E8BF", 
-            "Add topics": [
-                "1rat"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Sorry, outlander. I don't have any pet rats in my stable, and I don't think I'll have any more in the foreseeable future.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 8
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 2
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0100B801"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "0132345D", 
-            "Add topics": [
-                "1rat"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Sorry, outlander. I don't have any pet rats in my stable, and I don't think I'll have any more in the foreseeable future.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 8
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 2
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 08 00 02 00 20 31", 
-                "SCTX - Result script source": "set fbmwMSBadPets.RatTraining to 1", 
-                "References": [
-                    "fbmwMSBadPets"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323460"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "0100B801", 
-            "Add topics": [
-                "1rat", 
-                "1need"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 1.99999999495049, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 2
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 76, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 33 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
-                "SCTX - Result script source": "fbmwPetRat3REF.enable\r\nfbmwPetRat3REF.evp\r\nset fbmwMSBadPets.rats to 3\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
-                "References": [
-                    "fbmwPetRat3REF", 
-                    20, 
-                    "fbmwMSBadPets", 
-                    "Gold001"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01009F02"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "01323460", 
-            "Add topics": [
-                "1rat", 
-                "1need"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 2
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 76, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 32 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
-                "SCTX - Result script source": "fbmwPetRat2REF.enable\r\nfbmwPetRat2REF.evp\r\nset fbmwMSBadPets.rats to 2\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
-                "References": [
-                    "fbmwPetRat2REF", 
-                    20, 
-                    "fbmwMSBadPets", 
-                    "Gold001"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01009F03"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "01009F02", 
-            "Add topics": [
-                "1rat", 
-                "1need"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thanks, outlander. Here is your very own rat. He'll follow you around, right behind you, wherever you go.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Come back anytime if you need another or want a replacement!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMSBadPets", 
-                    "Parameter #2": 2
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 76, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 01 00 5E 10 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 31 1C 00 02 00 52 10 0A 00 02 00 72 04 00 6E 19 00 00 00 39 10 0A 00 02 00 72 03 00 6E 64 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 31", 
-                "SCTX - Result script source": "fbmwPetRat1REF.enable\r\nfbmwPetRat1REF.evp\r\nset fbmwMSBadPets.rats to 1\r\nplayer.RemoveItem Gold001 25\r\nSetstage fbmwMSBadPets 100\r\nset fbmwMSBadPets.RatCompanion to 1", 
-                "References": [
-                    "fbmwPetRat1REF", 
-                    20, 
-                    "fbmwMSBadPets", 
-                    "Gold001"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1sellingSoff2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323461"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSBadPets", 
-            "PNAM - Previous INFO": "01009F03", 
-            "Add topics": [
-                "1readyStoSgo"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'd love to sell you one, outlander, but it doesn't look like you can afford it.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Come back when you have the money and I'll have the creature packaged up and ready to go.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0rerlasSmon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }
     ]

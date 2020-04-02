@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010071DE"
+                "FormID": "010071DC"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,7 +24,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHTFleshAmulet", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "010071DD", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -33,23 +33,15 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Are you still here? You have my permission to leave.", 
+                    "NAM1 - Response Text": "Oh? Have you found the amulet?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 2, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 70, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
+                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHTFleshAmulet", 
                     "Parameter #2": "00 00 00 00"
@@ -62,6 +54,10 @@
                     "Parameter #1": "0dratha", 
                     "Parameter #2": "00 00 00 00"
                 }
+            ], 
+            "Choices": [
+                "1FleshSMadeSWhole1", 
+                "1FleshSMadeSWhole2"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -140,7 +136,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010071DC"
+                "FormID": "010071DE"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -148,7 +144,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHTFleshAmulet", 
-            "PNAM - Previous INFO": "010071DD", 
+            "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -157,15 +153,23 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Oh? Have you found the amulet?", 
+                    "NAM1 - Response Text": "Are you still here? You have my permission to leave.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 2, 
                     "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 70, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHTFleshAmulet", 
                     "Parameter #2": "00 00 00 00"
@@ -178,10 +182,6 @@
                     "Parameter #1": "0dratha", 
                     "Parameter #2": "00 00 00 00"
                 }
-            ], 
-            "Choices": [
-                "1FleshSMadeSWhole1", 
-                "1FleshSMadeSWhole2"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {

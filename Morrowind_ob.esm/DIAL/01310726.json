@@ -33,7 +33,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I like you, outlander, but I would never reveal my secrets.", 
+                    "NAM1 - Response Text": "I like you,&sUActnQuick1;, but I would never reveal my secrets.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -140,7 +140,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0132084A"
+                "FormID": "0101C67E"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -148,20 +148,82 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHIndEsp1", 
-            "PNAM - Previous INFO": "0100418C", 
-            "Add topics": [
-                "1HouseSHlaalu", 
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "0132084B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You've been expelled from House Hlaalu. You must make amends.", 
+                    "NAM1 - Response Text": "Do you have the formulas from Aurane Frernis?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHIndEsp1", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHIndEsp1", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0nilenoSdorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1alchemicalSformulas1", 
+                "1alchemicalSformulas2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1alchemicalSformulas", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101C67F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHHIndEsp1", 
+            "PNAM - Previous INFO": "0101C680", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have already shown me the formulas.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -169,9 +231,17 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0Hlaalu", 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHIndEsp1", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHEggMine", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -252,7 +322,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101C67F"
+                "FormID": "0132084A"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -260,16 +330,20 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHIndEsp1", 
-            "PNAM - Previous INFO": "0101C680", 
+            "PNAM - Previous INFO": "0100418C", 
+            "Add topics": [
+                "1HouseSHlaalu", 
+                "1makeSamends"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You have already shown me the formulas.", 
+                    "NAM1 - Response Text": "You've been expelled from House Hlaalu. You must make amends.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -277,17 +351,9 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHIndEsp1", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHEggMine", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0Hlaalu", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -384,72 +450,6 @@
                     20, 
                     "fbmwHHIndEsp1"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1alchemicalSformulas", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101C67E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHIndEsp1", 
-            "PNAM - Previous INFO": "0132084B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Do you have the formulas from Aurane Frernis?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHIndEsp1", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHIndEsp1", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0nilenoSdorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1alchemicalSformulas1", 
-                "1alchemicalSformulas2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }, 
         {

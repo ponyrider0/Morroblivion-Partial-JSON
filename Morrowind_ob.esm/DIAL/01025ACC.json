@@ -16,6 +16,92 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01025ACD"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQHlaaluCurio", 
+            "PNAM - Previous INFO": "0132320C", 
+            "Add topics": [
+                "1HouseSHlaalu", 
+                "1Hortator", 
+                "1littleSsuggestion"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've broken my heart. But in time it will mend. And in the meantime, I'll console myself with your gold. And now, pumpkin, it's time for YOUR gift...", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And I have just what you want. In my formal capacity as Councilor of House Hlaalu, I give you my vote for the title of Hortator.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Perhaps I can also give you a little suggestion?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0crassiusScurio", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E F4 01 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "player.removeitem gold001 500\r\nmoddisposition player 10\r\nSetStage fbmwMQHlaaluCurio 50", 
+                "References": [
+                    20, 
+                    "Gold001", 
+                    "fbmwMQHlaaluCurio"
+                ]
+            }
+        }, 
+        {
+            "Topic": "fbmwMQhlaalucrassiusbribe", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "0132320C"
             }, 
             "DATA - ": {
@@ -121,92 +207,6 @@
                     "fbmwMQHlaaluCurio", 
                     "fbmwMQHlaalu", 
                     "0hortatorbelt"
-                ]
-            }
-        }, 
-        {
-            "Topic": "fbmwMQhlaalucrassiusbribe", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01025ACD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQHlaaluCurio", 
-            "PNAM - Previous INFO": "0132320C", 
-            "Add topics": [
-                "1HouseSHlaalu", 
-                "1Hortator", 
-                "1littleSsuggestion"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You've broken my heart. But in time it will mend. And in the meantime, I'll console myself with your gold. And now, pumpkin, it's time for YOUR gift...", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And I have just what you want. In my formal capacity as Councilor of House Hlaalu, I give you my vote for the title of Hortator.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Perhaps I can also give you a little suggestion?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0crassiusScurio", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E F4 01 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 39 10 0A 00 02 00 72 03 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "player.removeitem gold001 500\r\nmoddisposition player 10\r\nSetStage fbmwMQHlaaluCurio 50", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmwMQHlaaluCurio"
                 ]
             }
         }

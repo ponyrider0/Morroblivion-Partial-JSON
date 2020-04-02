@@ -20,7 +20,7 @@
                 "Unused": "6E 6A 61", 
                 "Response number": 1
             }, 
-            "NAM1 - Response Text": "We have plenty of mead in stock, &sUActnQuick1;, and you can collect the profits every week. Here is the gold we earned this week.", 
+            "NAM1 - Response Text": "We have plenty of mead in stock,&sUActnQuick1;, and you can collect the profits every week. Here is the gold we earned this week.", 
             "NAM2 - Actor notes": ""
         }
     ], 
@@ -28,17 +28,17 @@
         {
             "Type": 96, 
             "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
+            "Comparison Value": 6.9999999823267, 
             "Function": 79, 
             "Parameter #1": "fbmwBMMeadHall", 
-            "Parameter #2": 4
+            "Parameter #2": 8
         }, 
         {
             "Type": 96, 
             "Unused": 0, 
             "Comparison Value": 19.9999999495049, 
             "Function": 58, 
-            "Parameter #1": "fbmwBMMeadHallc", 
+            "Parameter #1": "fbmwBMMeadHallb", 
             "Parameter #2": "00 00 00 00"
         }, 
         {
@@ -54,12 +54,12 @@
         "SCHR - Basic Script Data": {
             "Unused": "00 00 00 00", 
             "RefCount": 3, 
-            "CompiledSize": 32, 
+            "CompiledSize": 46, 
             "VariableCount": 0, 
             "Type": 0
         }, 
-        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
-        "SCTX - Result script source": "player.additem Gold001 50\r\nset fbmwBMMeadHall.canprofit to 0", 
+        "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 15 00 0A 00 72 03 00 73 0B 00 02 00 20 30 15 00 0A 00 72 03 00 73 08 00 02 00 20 30", 
+        "SCTX - Result script source": "player.additem Gold001 50\r\nset fbmwBMMeadHall.daystartprofit to 0\r\nset fbmwBMMeadHall.localdaypassedprofit to 0", 
         "References": [
             20, 
             "Gold001", 

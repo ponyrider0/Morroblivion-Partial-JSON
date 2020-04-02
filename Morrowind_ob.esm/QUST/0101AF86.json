@@ -36,7 +36,7 @@
             "Log Entries": [
                 {
                     "QSDT - Stage Flags": {}, 
-                    "CNAM - Log Entry": "As I approached the Beast Stone, magical writing appeared on its surface. It said: \"Travel south. Find the Good Beast and ease its suffering.\"", 
+                    "CNAM - Log Entry": "As I approached the Beast Stone, magical writing appeared on its surface. It said: \"Travel east. Find the Good Beast and ease its suffering.\"", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
@@ -160,6 +160,42 @@
                             "Type": 1
                         }
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "fbmwGoodBeastRef", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMBeasts", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmBeastShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMBeasts", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ]
         }

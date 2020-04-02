@@ -86,6 +86,25 @@
             ]
         }, 
         {
+            "INDX - Stage index": 30, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "CNAM - Log Entry": "I have decided not to try and help Tul find the abolitionist for now. I have no desire to become involved in this.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCTX - Result script source": "; This is not a dead end any more.\r\n; You can talk to him again and go on."
+                    }
+                }
+            ]
+        }, 
+        {
             "INDX - Stage index": 40, 
             "Log Entries": [
                 {
@@ -122,24 +141,6 @@
             ]
         }, 
         {
-            "INDX - Stage index": 50, 
-            "Log Entries": [
-                {
-                    "QSDT - Stage Flags": {}, 
-                    "CNAM - Log Entry": "I have decided not to try and help Tul find the abolitionist. I have no desire to become involved in this.", 
-                    "Result Script": {
-                        "SCHR - Basic Script Data": {
-                            "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
-                            "VariableCount": 0, 
-                            "Type": 1
-                        }
-                    }
-                }
-            ]
-        }, 
-        {
             "INDX - Stage index": 55, 
             "Log Entries": [
                 {
@@ -153,6 +154,24 @@
                             "VariableCount": 0, 
                             "Type": 1
                         }
+                    }
+                }
+            ]
+        }, 
+        {
+            "INDX - Stage index": 59, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {}, 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 0, 
+                            "CompiledSize": 0, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCTX - Result script source": "; dummy stage to start Tul's final dialog"
                     }
                 }
             ]
@@ -186,11 +205,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 1, 
+                            "CompiledSize": 9, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "37 10 05 00 01 00 72 01 00", 
+                        "SCTX - Result script source": " stopquest fbmwMVFakeSlave", 
+                        "References": [
+                            "fbmwMVFakeSlave"
+                        ]
                     }
                 }
             ]
@@ -199,9 +223,7 @@
             "INDX - Stage index": 80, 
             "Log Entries": [
                 {
-                    "QSDT - Stage Flags": {
-                        "Complete quest": true
-                    }, 
+                    "QSDT - Stage Flags": {}, 
                     "CNAM - Log Entry": "Tul is dead. The bounty hunter took me for a fool, and he has paid the price.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
@@ -217,6 +239,31 @@
             ]
         }, 
         {
+            "INDX - Stage index": 85, 
+            "Log Entries": [
+                {
+                    "QSDT - Stage Flags": {
+                        "Complete quest": true
+                    }, 
+                    "CNAM - Log Entry": "Both Sterdecan and Tul are dead. Maybe I should not have gotten involved at all.", 
+                    "Result Script": {
+                        "SCHR - Basic Script Data": {
+                            "Unused": "00 00 00 00", 
+                            "RefCount": 1, 
+                            "CompiledSize": 9, 
+                            "VariableCount": 0, 
+                            "Type": 1
+                        }, 
+                        "SCDA - Compiled result script": "37 10 05 00 01 00 72 01 00", 
+                        "SCTX - Result script source": "stopquest fbmwMVFakeSlave", 
+                        "References": [
+                            "fbmwMVFakeSlave"
+                        ]
+                    }
+                }
+            ]
+        }, 
+        {
             "INDX - Stage index": 90, 
             "Log Entries": [
                 {
@@ -227,12 +274,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 1, 
+                            "CompiledSize": 9, 
                             "VariableCount": 0, 
                             "Type": 1
                         }, 
-                        "SCTX - Result script source": " "
+                        "SCDA - Compiled result script": "37 10 05 00 01 00 72 01 00", 
+                        "SCTX - Result script source": "stopquest fbmwMVFakeSlave", 
+                        "References": [
+                            "fbmwMVFakeSlave"
+                        ]
                     }
                 }
             ]
@@ -248,13 +299,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 170, 
+                            "RefCount": 1, 
+                            "CompiledSize": 179, 
                             "VariableCount": 0, 
                             "Type": 1
                         }, 
-                        "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 56 00 01 00 52 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 75 6C 27 73 20 45 73 63 61 70 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 32 35 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Tul's Escape quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif"
+                        "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 56 00 01 00 52 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 75 6C 27 73 20 45 73 63 61 70 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 32 35 19 00 00 00 37 10 05 00 01 00 72 01 00", 
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Tul's Escape quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif\r\n\r\nstopquest fbmwMVFakeSlave", 
+                        "References": [
+                            "fbmwMVFakeSlave"
+                        ]
                     }
                 }
             ]
@@ -270,11 +324,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 1, 
+                            "CompiledSize": 9, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "37 10 05 00 01 00 72 01 00", 
+                        "SCTX - Result script source": "stopquest fbmwMVFakeSlave", 
+                        "References": [
+                            "fbmwMVFakeSlave"
+                        ]
                     }
                 }
             ]
@@ -283,9 +342,9 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "fbmwsterdecanref", 
+                "Target": "0182F3F5", 
                 "Flags": {}, 
-                "Unused": "00 47 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {
@@ -297,17 +356,9 @@
                     "Parameter #2": 1
                 }, 
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 79.9999997980194, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVFakeSlave", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 160, 
-                    "Unused": 0, 
-                    "Comparison Value": 89.9999997727718, 
+                    "Comparison Value": 44.9999998863859, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMVFakeSlave", 
                     "Parameter #2": "00 00 00 00"
@@ -316,9 +367,9 @@
         }, 
         {
             "QSTA - Target": {
-                "Target": "fbmwsterdecanref", 
+                "Target": "0182F3F6", 
                 "Flags": {}, 
-                "Unused": "00 47 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {
@@ -330,25 +381,234 @@
                     "Parameter #2": 1
                 }, 
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
+                    "Comparison Value": 44.9999998863859, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMVFakeSlave", 
                     "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F7", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
                 }, 
                 {
-                    "Type": 128, 
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F2", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F3", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F4", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F1", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "0182F3F8", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "mwSterdecanREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMVFakeSlave", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "mwSterdecanREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 54.9999998611383, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMVFakeSlave", 
                     "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "mwSterdecanREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
                 }, 
                 {
-                    "Type": 32, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
+                    "Comparison Value": 39.9999998990097, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMVFakeSlave", 
                     "Parameter #2": "00 00 00 00"

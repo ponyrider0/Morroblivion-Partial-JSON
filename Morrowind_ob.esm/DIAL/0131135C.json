@@ -22,10 +22,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321181", 
             "Add topics": [
                 "1snow", 
                 "1need"
@@ -38,7 +40,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom piece of armor is ready!  Here you go, outlander, one expertly crafted Snow Bear Helm.  It came out even better than I expected.", 
+                    "NAM1 - Response Text": "Your custom piece of armor is ready!  Here you go,&sUActnQuick1;, one expertly crafted Snow Bear Helm.  It came out even better than I expected.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -53,6 +55,22 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 4
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -73,11 +91,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30 15 00 0A 00 72 03 00 73 06 00 02 00 20 30", 
+                "SCTX - Result script source": "Player.AddItem 0BMUbearUHelmetUsnow 1\r\nSet fbmwBMFurArmor.BearHelmet to 0\r\nSet fbmwBMFurArmor.StartDay to 0", 
+                "References": [
+                    20, 
+                    "0BMUbearUhelmetUsnow", 
+                    "fbmwBMFurArmor"
+                ]
             }
         }, 
         {
@@ -90,10 +115,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321172", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01F8EF0C", 
             "Add topics": [
                 "1snow"
             ], 
@@ -105,11 +132,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom Snow Bear Helm isn't ready yet, outlander.  Come back later.", 
+                    "NAM1 - Response Text": "Your custom Snow Bear Helm isn't ready yet,&sUActnQuick1;.  Come back later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 4
+                }, 
+                {
+                    "Type": 4, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -147,10 +190,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321173", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321180", 
             "Add topics": [
                 "1customSarmor", 
                 "1snow", 
@@ -164,7 +209,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom armor is ready!  Here you go, outlander, one expertly crafted pair of Snow Bear Boots.  They came out even better than I expected.", 
+                    "NAM1 - Response Text": "Your custom armor is ready!  Here you go,&sUActnQuick1;, one expertly crafted pair of Snow Bear Boots.  They came out even better than I expected.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -179,6 +224,22 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 5
+                }, 
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -199,11 +260,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 05 00 02 00 20 30 15 00 0A 00 72 03 00 73 06 00 02 00 20 30", 
+                "SCTX - Result script source": "Player.AddItem 0BMUbearUbootsUsnow 1\r\nSet fbmwBMFurArmor.BearBoots to 0\r\nSet fbmwBMFurArmor.StartDay to 0", 
+                "References": [
+                    20, 
+                    "0BMUbearUbootsUsnow", 
+                    "fbmwBMFurArmor"
+                ]
             }
         }, 
         {
@@ -216,10 +284,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321174", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321173", 
             "Add topics": [
                 "1snow"
             ], 
@@ -231,11 +301,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom Snow Bear Boots aren't ready yet, outlander.  Come back later.", 
+                    "NAM1 - Response Text": "Your custom Snow Bear Boots aren't ready yet,&sUActnQuick1;.  Come back later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 5
+                }, 
+                {
+                    "Type": 4, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -273,10 +359,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321175", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321172", 
             "Add topics": [
                 "1customSarmor", 
                 "1snow", 
@@ -290,7 +378,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom armor is ready!  Here you go, outlander, one expertly crafted set of Snow Bear Greaves.  They came out even better than I expected.", 
+                    "NAM1 - Response Text": "Your custom armor is ready!  Here you go,&sUActnQuick1;, one expertly crafted set of Snow Bear Greaves.  They came out even better than I expected.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -305,6 +393,22 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -325,11 +429,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 02 00 02 00 20 30 15 00 0A 00 72 03 00 73 06 00 02 00 20 30", 
+                "SCTX - Result script source": "Player.AddItem 0BMUbearUgreavesUsnow 1\r\nSet fbmwBMFurArmor.Beargreaves to 0\r\nSet fbmwBMFurArmor.StartDay to 0", 
+                "References": [
+                    20, 
+                    "0BMUbearUgreavesUsnow", 
+                    "fbmwBMFurArmor"
+                ]
             }
         }, 
         {
@@ -342,10 +453,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321176", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321175", 
             "Add topics": [
                 "1snow"
             ], 
@@ -357,11 +470,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom Snow Bear Greaves aren't ready yet, outlander.  Come back later.", 
+                    "NAM1 - Response Text": "Your custom Snow Bear Greaves aren't ready yet,&sUActnQuick1;.  Come back later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 2
+                }, 
+                {
+                    "Type": 4, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -401,8 +530,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321177", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321174", 
             "Add topics": [
                 "1snow", 
                 "1need"
@@ -430,6 +559,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -467,10 +604,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321178", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321177", 
             "Add topics": [
                 "1snow"
             ], 
@@ -482,11 +621,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom Snow Bear Left Gauntlet isn't ready yet, outlander.  Come back later.", 
+                    "NAM1 - Response Text": "Your custom Snow Bear Gauntlets aren't ready yet,&sUActnQuick1;.  Come back later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 3
+                }, 
+                {
+                    "Type": 4, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -524,10 +679,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321179", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321176", 
             "Add topics": [
                 "1snow", 
                 "1need"
@@ -540,7 +697,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom piece of armor is ready!  Here you go, outlander, one expertly crafted Snow Bear Right Gauntlet.  It came out even better than I expected.", 
+                    "NAM1 - Response Text": "Your custom armor is ready! Here you go,&sUActnQuick1;, two expertly crafted Snow Bear Gauntlets. They came out even better than I expected.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -555,6 +712,22 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 3
+                }, 
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -575,11 +748,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 03 00 02 00 20 30 15 00 0A 00 72 03 00 73 06 00 02 00 20 30", 
+                "SCTX - Result script source": "Player.AddItem 0BMUbearUrightUgauntletUsnow 1\r\nSet fbmwBMFurArmor.BearGauntlets to 0\r\nSet fbmwBMFurArmor.StartDay to 0", 
+                "References": [
+                    20, 
+                    "0BMUbearUrightUgauntletUsnow", 
+                    "fbmwBMFurArmor"
+                ]
             }
         }, 
         {
@@ -594,8 +774,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "0132117A", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321178", 
             "Add topics": [
                 "1snow"
             ], 
@@ -612,6 +792,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -651,7 +839,7 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
             "PNAM - Previous INFO": "0132117B", 
             "Add topics": [
                 "1snow", 
@@ -680,6 +868,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -719,7 +915,7 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
             "PNAM - Previous INFO": "0132117C", 
             "Add topics": [
                 "1snow"
@@ -737,6 +933,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -776,7 +980,7 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
             "PNAM - Previous INFO": "0132117D", 
             "Add topics": [
                 "1snow", 
@@ -805,6 +1009,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -844,7 +1056,7 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
             "PNAM - Previous INFO": "0132117E", 
             "Add topics": [
                 "1snow"
@@ -862,6 +1074,14 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDay", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -899,10 +1119,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "0132117F", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "0132117A", 
             "Add topics": [
                 "1snow", 
                 "1need"
@@ -915,7 +1137,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom piece of armor is ready!  Here you go, outlander, one expertly crafted Snow Bear Cuirass.  It came out even better than I expected.", 
+                    "NAM1 - Response Text": "Your custom piece of armor is ready!  Here you go,&sUActnQuick1;, one expertly crafted Snow Bear Cuirass.  It came out even better than I expected.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -930,6 +1152,22 @@
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 132, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -950,11 +1188,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 15 00 0A 00 72 03 00 73 06 00 02 00 20 30", 
+                "SCTX - Result script source": "Player.AddItem 0BMUbearUcuirassUsnow 1\r\nSet fbmwBMFurArmor.BearCuirass to 0\r\nSet fbmwBMFurArmor.StartDay to 0", 
+                "References": [
+                    20, 
+                    "0BMUbearUcuirassUsnow", 
+                    "fbmwBMFurArmor"
+                ]
             }
         }, 
         {
@@ -967,10 +1212,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321180", 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321179", 
             "Add topics": [
                 "1snow"
             ], 
@@ -982,11 +1229,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your custom Snow Bear Cuirass isn't ready yet, outlander.  Come back later.", 
+                    "NAM1 - Response Text": "Your custom Snow Bear Cuirass isn't ready yet,&sUActnQuick1;.  Come back later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 4, 
+                    "Unused": 0, 
+                    "Comparison Value": "GameDaysPassed", 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -1024,17 +1287,12 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321181", 
-            "Add topics": [
-                "1snow", 
-                "1snowSbearSarmor", 
-                "1scroll", 
-                "1Requirements", 
-                "1Talk"
-            ], 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01F8EECB", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1079,6 +1337,14 @@
             ], 
             "Conditions": [
                 {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
@@ -1094,6 +1360,367 @@
                     "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "player.additem 0scufuruarmor 1\r\nSetstage fbmwBMFurArmor 10", 
+                "References": [
+                    20, 
+                    "0scUfurUarmor", 
+                    "fbmwBMFurArmor"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1snowSbearSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EB83"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "TPIC - Topic": "1snowSwolfSarmor", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm already crafting you a piece of custom armor. Just be patient. You can't rush quality.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0brynjolfr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 12
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 8
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 10
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 9
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 11
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1snowSbearSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EB84"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321184", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You bring me the snow bear pelts and gold, and I'll make a piece of custom snow bear armor.  I'll have it ready in twenty-four hours.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You've got my list of prices and pelt requirements.  Which piece of armor were you interested in?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0brynjolfr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1snowSbearSarmor1", 
+                "1snowSbearSarmor2", 
+                "1snowSbearSarmor3", 
+                "1snowSbearSarmor4", 
+                "1snowSbearSarmor5", 
+                "1snowSbearSarmor9"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1snowSbearSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EECB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "TPIC - Topic": "1snowSwolfSarmor", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm already crafting you a piece of custom armor. Just be patient. You can't rush quality.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0brynjolfr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 12
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 8
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 10
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 9
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 11
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1snowSbearSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EF0C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwBMFurArmor", 
+            "PNAM - Previous INFO": "01321184", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You bring me the snow bear pelts and gold, and I'll make a piece of custom snow bear armor.  I'll have it ready in twenty-four hours.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "79 6E 6A", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You've got my list of prices and pelt requirements.  Which piece of armor were you interested in?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": 6
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMFurArmor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0brynjolfr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1snowSbearSarmor1", 
+                "1snowSbearSarmor2", 
+                "1snowSbearSarmor3", 
+                "1snowSbearSarmor4", 
+                "1snowSbearSarmor5", 
+                "1snowSbearSarmor9"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {

@@ -16,6 +16,96 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01006071"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHHIndEsp3", 
+            "PNAM - Previous INFO": "01323625", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, as I expected. Tell Nileno Dorvayn that I received the scroll and understood the message.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Why not take this outfit? A present for my efficient courier.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 70, 
+                    "Parameter #1": 1, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUordersforbivaleteneran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHIndEsp3", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bivaleSteneran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 6, 
+                    "CompiledSize": 86, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHHIndEsp3 50\r\nPlayer.RemoveItem 0bkUOrdersForBivaleTeneran 1\r\nPlayer.AddItem 0exquisiteUshirtU01 1\r\nPlayer.AddItem 0exquisiteUskirtU01 1\r\nPlayer.AddItem 0exquisiteUshoesU01 1", 
+                "References": [
+                    20, 
+                    "fbmwHHIndEsp3", 
+                    "0bkUordersforbivaleteneran", 
+                    "0exquisiteUshirtU01", 
+                    "0exquisiteUskirtU01", 
+                    "0exquisiteUshoesU01"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1scroll1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01323625"
             }, 
             "DATA - ": {
@@ -102,96 +192,6 @@
                     "0bkUordersforbivaleteneran", 
                     "0exquisiteUshirtU01", 
                     "0exquisiteUpantsU01", 
-                    "0exquisiteUshoesU01"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1scroll1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01006071"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHIndEsp3", 
-            "PNAM - Previous INFO": "01323625", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, as I expected. Tell Nileno Dorvayn that I received the scroll and understood the message.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Why not take this outfit? A present for my efficient courier.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 70, 
-                    "Parameter #1": 1, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUordersforbivaleteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHIndEsp3", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 6, 
-                    "CompiledSize": 86, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHHIndEsp3 50\r\nPlayer.RemoveItem 0bkUOrdersForBivaleTeneran 1\r\nPlayer.AddItem 0exquisiteUshirtU01 1\r\nPlayer.AddItem 0exquisiteUskirtU01 1\r\nPlayer.AddItem 0exquisiteUshoesU01 1", 
-                "References": [
-                    20, 
-                    "fbmwHHIndEsp3", 
-                    "0bkUordersforbivaleteneran", 
-                    "0exquisiteUshirtU01", 
-                    "0exquisiteUskirtU01", 
                     "0exquisiteUshoesU01"
                 ]
             }

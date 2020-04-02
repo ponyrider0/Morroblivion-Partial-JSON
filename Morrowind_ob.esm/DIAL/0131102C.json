@@ -16,6 +16,256 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0100212F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSCrimsonPlague", 
+            "PNAM - Previous INFO": "01F8E8B2", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Gedna Relvel is dead this time, yes? And there is no more treasure to be found? Then Shunari has no reason to stay.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Outland should go tell Nerile Andaren that lich is gone.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Shunari will not forget what outlander has done, though her path may not cross outlander's again. Farewell.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 149.999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSCrimsonPlague", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ShunariSEyeTFly", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E A0 00 00 00", 
+                "SCTX - Result script source": "setstage FbmwMSCrimsonPlague 160", 
+                "References": [
+                    "fbmwMSCrimsonPlague"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1GednaSRelvel", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01002130"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSCrimsonPlague", 
+            "PNAM - Previous INFO": "0100212F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Shunari has not seen anyone leave the tomb since outlander arrived last.  Shunari thinks Gedna Relvel must still be in there.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Shunari also thinks outlander should be looking for her, rather than out here talking.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 129.999999671782, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSCrimsonPlague", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ShunariSEyeTFly", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1GednaSRelvel", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321B01"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSCrimsonPlague", 
+            "PNAM - Previous INFO": "01F8E8B3", 
+            "Add topics": [
+                "1GednaSRelvel", 
+                "1CrimsonSPlague", 
+                "1Mournhold"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Shunari has said that she watched outlander open tomb. Shunari has often wondered what treasure lays in tomb, but door is too heavy.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Shunari cannot open it. So when outlander leaves, Shunari goes in for a look. She finds corpse in coffin, but corpse gets up and attacks!", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Poor Shunari can do nothing to fight it. It says it is Gedna Relvel, and has come to spread Crimson Plague to all of Mournhold.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Even though Shunari feels ill, she comes to find outlander for help!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ShunariSEyeTFly", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1GednaSRelvel", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8E8B0"
             }, 
             "DATA - ": {
@@ -249,167 +499,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100212F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSCrimsonPlague", 
-            "PNAM - Previous INFO": "01F8E8B2", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Gedna Relvel is dead this time, yes? And there is no more treasure to be found? Then Shunari has no reason to stay.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Outland should go tell Nerile Andaren that lich is gone.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Shunari will not forget what outlander has done, though her path may not cross outlander's again. Farewell.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 149.999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMSCrimsonPlague", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ShunariSEyeTFly", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E A0 00 00 00", 
-                "SCTX - Result script source": "setstage FbmwMSCrimsonPlague 160", 
-                "References": [
-                    "fbmwMSCrimsonPlague"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1GednaSRelvel", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01002130"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSCrimsonPlague", 
-            "PNAM - Previous INFO": "0100212F", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Shunari has not seen anyone leave the tomb since outlander arrived last.  Shunari thinks Gedna Relvel must still be in there.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Shunari also thinks outlander should be looking for her, rather than out here talking.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 129.999999671782, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMSCrimsonPlague", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ShunariSEyeTFly", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1GednaSRelvel", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01F8E8B3"
             }, 
             "DATA - ": {
@@ -480,95 +569,6 @@
                 "References": [
                     "1secretSpassage"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1GednaSRelvel", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321B01"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSCrimsonPlague", 
-            "PNAM - Previous INFO": "01F8E8B3", 
-            "Add topics": [
-                "1GednaSRelvel", 
-                "1CrimsonSPlague", 
-                "1Mournhold"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Shunari has said that she watched outlander open tomb. Shunari has often wondered what treasure lays in tomb, but door is too heavy.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Shunari cannot open it. So when outlander leaves, Shunari goes in for a look. She finds corpse in coffin, but corpse gets up and attacks!", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Poor Shunari can do nothing to fight it. It says it is Gedna Relvel, and has come to spread Crimson Plague to all of Mournhold.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Even though Shunari feels ill, she comes to find outlander for help!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ShunariSEyeTFly", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }
     ]

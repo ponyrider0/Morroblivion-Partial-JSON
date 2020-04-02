@@ -16,60 +16,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A5E9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTTDagonFel", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You have killed one of the Ashlander tribal leaders. You are not the type of person we want in the Temple.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQAshKill", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tholerSsaryoni", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1FourSCorners", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01321C0E"
             }, 
             "DATA - ": {
@@ -184,6 +130,161 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1FourSCorners", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321C10"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTTDagonFel", 
+            "PNAM - Previous INFO": "01F8A5EF", 
+            "Add topics": [
+                "1Daedric", 
+                "1patron", 
+                "1Orc", 
+                "1Dunmer", 
+                "1Sheogorad", 
+                "1DagonSFel", 
+                "1theSDwemer", 
+                "1Daedra", 
+                "1Vivec", 
+                "1FourSCorners"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The First Corner of the House of Troubles is Malacath, the Daedric patron of the Orcs who tests the Dunmer for weakness.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "There is a shrine to Malacath on Sheogorad, southwest of Dagon Fel. Head south past the Dwemer ruins and take the second road to the west.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Look for the shrine to the north. Take four Daedra hearts to the shrine.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "When you donate the hearts at the shrine, recite Vivec's \"Four Corners of the House of Troubles.\"", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tholerSsaryoni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwttdagonfel 10", 
+                "References": [
+                    "fbmwTTDagonFel"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1FourSCorners", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A5E9"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTTDagonFel", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have killed one of the Ashlander tribal leaders. You are not the type of person we want in the Temple.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQAshKill", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tholerSsaryoni", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -664,107 +765,6 @@
                 "SCTX - Result script source": "setstage fbmwttaldsotha 10", 
                 "References": [
                     "fbmwTTAldSotha"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1FourSCorners", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321C10"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTTDagonFel", 
-            "PNAM - Previous INFO": "01F8A5EF", 
-            "Add topics": [
-                "1Daedric", 
-                "1patron", 
-                "1Orc", 
-                "1Dunmer", 
-                "1Sheogorad", 
-                "1DagonSFel", 
-                "1theSDwemer", 
-                "1Daedra", 
-                "1Vivec", 
-                "1FourSCorners"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The First Corner of the House of Troubles is Malacath, the Daedric patron of the Orcs who tests the Dunmer for weakness.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "There is a shrine to Malacath on Sheogorad, southwest of Dagon Fel. Head south past the Dwemer ruins and take the second road to the west.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Look for the shrine to the north. Take four Daedra hearts to the shrine.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "When you donate the hearts at the shrine, recite Vivec's \"Four Corners of the House of Troubles.\"", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tholerSsaryoni", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwttdagonfel 10", 
-                "References": [
-                    "fbmwTTDagonFel"
                 ]
             }
         }

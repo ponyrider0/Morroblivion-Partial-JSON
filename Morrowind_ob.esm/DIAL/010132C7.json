@@ -1,0 +1,92 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "010132C7"
+    }, 
+    "EDID - Editor ID": "mwRightfulBelong0", 
+    "Quests": [
+        "mwNerevarineOblivion"
+    ], 
+    "FULL - Name": "My rightful belongings...", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "mwRightfulBelong0", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010132C8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "mwNerevarineOblivion", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 6, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So you say you were wrongfully imprisoned and all of your belongings were placed in the Evidence chest?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 6, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And you've somehow escaped the Imperial Prison and have now come back for your rightful belongings?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 79, 
+                    "Parameter #1": "mwNerevarineOblivion", 
+                    "Parameter #2": 9
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 73, 
+                    "Parameter #1": "ImperialWatch", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "ICImperialLegionHQTheBastion", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "mwBelongings1Morrowind", 
+                "mwBelongings1Nerevarine", 
+                "mwBelongings1Unbelievable"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }
+    ]
+}

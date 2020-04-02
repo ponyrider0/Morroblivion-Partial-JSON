@@ -7,23 +7,30 @@
     "EDID - Editor ID": "fbmwMSBlackDartScript", 
     "SCHR - Basic Script Data": {
         "Unused": "00 00 00 00", 
-        "RefCount": 0, 
-        "CompiledSize": 4, 
+        "RefCount": 5, 
+        "CompiledSize": 146, 
         "VariableCount": 1, 
         "Type": 1
     }, 
-    "SCDA - Compiled Script": "1D 00 00 00", 
-    "SCTX - Script Source": "Scn fbmwMSBlackDartScript\r\n\r\nshort Flooded\n;<CSEBlock>\n;<CSECaretPos> 27 </CSECaretPos>\n;</CSEBlock>", 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 84 00 00 00 16 00 15 00 01 00 11 00 20 58 3A 10 05 00 01 00 72 01 00 20 35 30 20 3E 3D 1E 00 00 00 19 00 00 00 16 00 49 00 01 00 45 00 20 58 54 10 05 00 01 00 72 02 00 20 30 20 3E 20 58 54 10 05 00 01 00 72 03 00 20 30 20 3E 20 26 26 20 58 54 10 05 00 01 00 72 04 00 20 30 20 3E 20 26 26 20 58 54 10 05 00 01 00 72 05 00 20 30 20 3E 20 26 26 39 10 0A 00 02 00 72 01 00 6E 32 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwMSBlackDartScript\n\nshort Flooded\n\nBegin GameMode\n\n\tif (GetStage fbmwMSBlackDart >= 50)\n\t\treturn\n\tendif\n\t\n\tif (GetDeadCount 0BlackSDartSAdren > 0) && (GetDeadCount 0BlackSDartSMalar > 0) && (GetDeadCount 0BlackSDartSUrvyn > 0) && (GetDeadCount 0BlackSDartSGilur > 0)\n\t\tSetStage fbmwMSBlackDart 50\n\tendif\t\n\nEnd\n\n;<CSEBlock>\n;<CSECaretPos> 311 </CSECaretPos>\n;</CSEBlock>", 
     "Local Variables": [
         {
             "SLSD - Local Variable Data": {
                 "Index": 1, 
-                "Unused": "07 B9 01 27 0C 00 00", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
             }, 
             "SCVR - Name": "Flooded"
         }
+    ], 
+    "References": [
+        "fbmwMSBlackDart", 
+        "0BlackSDartSAdren", 
+        "0BlackSDartSMalar", 
+        "0BlackSDartSUrvyn", 
+        "0BlackSDartSGilur"
     ]
 }

@@ -16,6 +16,90 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0101FAA5"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ06", 
+            "PNAM - Previous INFO": "01320964", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Before you go to Urshilaku camp, see Somutis Vunnis and Crulius Pontanian at Fort Moonmoth.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I've asked them to put aside some potions and scrolls for you. Courtesy of the Emperor. In particular, you'll want the cure potions;", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I hear the blight is very bad up north. And use the Divine Intervention scroll if you find you're over your head.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "It will get you safe to an Imperial cult shrine, where you can heal, refit, and try again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 54.9999998611383, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ06", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0caiusScosades", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1essentialSsupplies", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01320963"
             }, 
             "DATA - ": {
@@ -83,14 +167,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0cruliusSpontanian", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -167,98 +243,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0somutisSvunnis", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1essentialSsupplies", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101FAA5"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ06", 
-            "PNAM - Previous INFO": "01320964", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Before you go to Urshilaku camp, see Somutis Vunnis and Crulius Pontanian at Fort Moonmoth.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I've asked them to put aside some potions and scrolls for you. Courtesy of the Emperor. In particular, you'll want the cure potions;", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I hear the blight is very bad up north. And use the Divine Intervention scroll if you find you're over your head.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "It will get you safe to an Imperial cult shrine, where you can heal, refit, and try again.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 54.9999998611383, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0caiusScosades", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

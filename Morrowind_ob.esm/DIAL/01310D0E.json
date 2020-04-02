@@ -24,370 +24,142 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A383"
+                "FormID": "01004CD8"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You've been paid.", 
-                    "NAM2 - Actor notes": ""
-                }
+            "QSTI - Quest": "fbmwTownVivec", 
+            "PNAM - Previous INFO": "01322EA4", 
+            "Add topics": [
+                "1reward", 
+                "1report"
             ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A384"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": "01F0A383", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 40, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I don't suppose YOU had anything to do with that? Here's the 25 drakes I promised you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 60, 
-                        "Unused": "20 30 66", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "And I'll take the goods. But don't expect me to thank you for them. No debt is worth a man's life. Of course, there were no witnesses.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 70, 
-                        "Unused": "20 30 66", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "But everyone knows you killed that poor fool. Don't think anyone here will forgive you for that.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandusUamulet", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 84, 
-                    "Parameter #1": "0ienasSsarandas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player -20\r\nSetStage fbmwTownAldBevene 10", 
-                "References": [
-                    20, 
-                    "fbmw0sarandusUamulet", 
-                    "Gold001", 
-                    "fbmwTownAldBevene"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A385"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": "01F0A384", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thank you again. You handled the affair very well.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A386"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": "01F0A385", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. Here are the 25 drakes for your services. ", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 30, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And thank you very much for handling this situation so well. I really appreciate it.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandusUamulet", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldRuhn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 04 00 6E 03 00 00 00", 
-                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player  40\r\nSetStage fbmwTownAldBevene 3", 
-                "References": [
-                    20, 
-                    "fbmw0sarandusUamulet", 
-                    "Gold001", 
-                    "fbmwTownAldBevene"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A387"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": "01F0A386", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
+                        "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Thank you again.", 
+                    "NAM1 - Response Text": "According to your report, the Dunmer woman you killed matches the description given us.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "We'll dispatch Ordinators to follow up, but I believe you have identified and executed the killer.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "On behalf of the city, and of the Office of the Watch, thank you. And now, for the reward I promised. I'll give you a choice.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "You may either have an Indoril helm and cuirass, or a Belt of the Armor of God.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownVivec", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0dreamerSprophet", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #1": "0elamSandas", 
                     "Parameter #2": "00 00 00 00"
-                }, 
+                }
+            ], 
+            "Choices": [
+                "1work4", 
+                "1work5"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EFA8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownBalmora", 
+            "PNAM - Previous INFO": "01322EA9", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "When you have finished doing some things, stop back and see me, and we'll see if I've found that nice present from the Emperor for you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 4.99999998737621, 
+                    "Comparison Value": 24.9999999368811, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #1": "fbmwTownBalmora", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0larriusSvarro", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -406,24 +178,259 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A388"
+                "FormID": "0102EFA9"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldBevene", 
-            "PNAM - Previous INFO": "01F0A387", 
+            "QSTI - Quest": "fbmwTownBalmora", 
+            "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 30, 
-                        "Unused": "20 30 66", 
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. Here are the 25 drakes for your services. Thank you very much.", 
+                    "NAM1 - Response Text": "Never mind about that work. As I said, it's all been taken care of. And I hope you like your present.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownBalmora", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0larriusSvarro", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01030598"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownVivec", 
+            "PNAM - Previous INFO": "01004CD8", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 6D 53", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "As I said, I cannot officially hire you for this task. But if you find and execute this killer, when you return to report your success to me, I promise you a handsome reward.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownVivec", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0elamSandas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322E9A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownSadrith", 
+            "PNAM - Previous INFO": "01F8A864", 
+            "Add topics": [
+                "1Talk", 
+                "1MasterSNeloth", 
+                "1Mouth"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You say you killed the haunting? Weren't you listening? No matter how often it is killed, it reappears. Go. Look. Kill it again. And again.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And it reappears. Go talk to Mage-Mistress Arara Uvulas, Master Neloth's Mouth.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "She said she couldn't see how to stop the hauntings, but maybe she can tell you where to start.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0GatewayHaunt", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0angaredhel", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0uleniSheleran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 08 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtownsadrith 8", 
+                "References": [
+                    "fbmwTownSadrith"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322E9B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownSadrith", 
+            "PNAM - Previous INFO": "01322E9A", 
+            "Add topics": [
+                "1MasterSNeloth", 
+                "1Mouth", 
+                "1GatewayShaunting"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "A ghost is haunting our South Turret bed chamber. As soon as we get rid of it, it reappears.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "We can't rent the room, and all our guests are in an uproar.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "The Mage-Mistress Arara Uvulas, Master Neloth's Mouth, came to take a look, but said she couldn't see how to stop the hauntings.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "If you can get rid of the Gateway haunting permanently, I will offer you a choice from a number of valuable items from a local enchanter.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -433,7 +440,99 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #1": "0angaredhel", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0uleniSheleran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtownsadrith 5", 
+                "References": [
+                    "fbmwTownSadrith"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322E9C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwTownAldDaynes", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1IenasSSarandas", 
+                "1ring", 
+                "1rawSebony", 
+                "1rawSglass", 
+                "1ebony", 
+                "1ring", 
+                "1glass", 
+                "1ring", 
+                "1overdueSpayment"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am looking for a fellow named Ienas Sarandas.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I sold him two fine matched rings, one with an raw ebony stone, the other with a raw glass stone, but he has failed to pay the remaining 150 drakes owed.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "If you will find Sarandas, and either get the ebony ring and the glass ring and return them to me, or get the overdue payment of 150 drakes he owes me, I will pay you 50 gold.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0daynesSredothril", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -443,39 +542,93 @@
                     "Function": 76, 
                     "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwTownAldDaynes 1", 
+                "References": [
+                    "fbmwTownAldDaynes"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322E9D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldTiras", 
+            "PNAM - Previous INFO": "01F0A394", 
+            "Add topics": [
+                "1IenasSSarandas", 
+                "1overdueSpayment"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I sold an Ashlander hand-crafted racer suede belt to a customer, but he has failed to make his final payment on time.", 
+                    "NAM2 - Actor notes": ""
                 }, 
                 {
-                    "Type": 98, 
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "If you would find Ienas Sarandas and get back my belt, or get the overdue payment of 50 septims he owes me, I will pay you 25 gold.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandusUamulet", 
+                    "Function": 72, 
+                    "Parameter #1": "0tirasSsadus", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 04 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player 20\r\nSetStage fbmwTownAldBevene 5", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwTownAldTiras 1", 
                 "References": [
-                    20, 
-                    "fbmw0sarandusUamulet", 
-                    "Gold001", 
-                    "fbmwTownAldBevene"
+                    "fbmwTownAldTiras"
                 ]
             }
         }, 
@@ -570,362 +723,58 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A389"
+                "FormID": "01322E9F"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A37C", 
+            "Add topics": [
+                "1enchantment", 
+                "1overdueSpayment"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You've been paid.", 
+                    "NAM1 - Response Text": "I sold a pair of splendid designer shoes bearing the Light enchantment.", 
                     "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A38A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": "01F0A389", 
-            "Responses": [
-                {
                     "TRDT - Response Data": {
-                        "Emotion Type": 1, 
+                        "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 40, 
-                        "Unused": "20 30 66", 
+                        "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "I don't suppose YOU had anything to do with that? Here's the 50 drakes I promised you. And I'll take the goods. ", 
+                    "NAM1 - Response Text": "The radiant glow is practical as well as ornamental -- quite useful for late evening gatherings.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 1, 
+                        "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
+                        "Unused": "CD CD CD", 
                         "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "But don't expect me to thank you for them. No debt is worth a man's life. Of course, there were no witnesses.", 
+                    "NAM1 - Response Text": "The purchaser, one Ienas Sarandas, paid me 120 drakes on account when he received the shoes, but he has failed to pay the balance of 120 septims in a timely fashion.", 
                     "NAM2 - Actor notes": ""
                 }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 70, 
-                        "Unused": "20 30 66", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "But everyone knows you killed that poor fool. Don't think anyone here will forgive you for that.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUpantsU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshirtU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 84, 
-                    "Parameter #1": "0ienasSsarandas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 82, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 05 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player -20\r\nSetStage fbmwTownAldBivale 10", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmw0sarandasUshirtU2", 
-                    "fbmw0sarandasUpantsU2", 
-                    "fbmwTownAldBivale"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A38B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": "01F0A38A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thank you again. You handled the affair very well.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A38C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": "01F0A38B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. Here are the 50 drakes for your services. ", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 40, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And thank you very much for handling this situation so well. I really appreciate it.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUpantsU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshirtU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldRuhn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 82, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 05 00 6E 03 00 00 00", 
-                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player 40\r\nSetStage fbmwTownAldBivale 3", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmw0sarandasUshirtU2", 
-                    "fbmw0sarandasUpantsU2", 
-                    "fbmwTownAldBivale"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A38D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": "01F0A38C", 
-            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
                     }, 
-                    "NAM1 - Response Text": "Thank you again.", 
+                    "NAM1 - Response Text": "If you would find this Ienas Sarandas, and return the shoes or the overdue payment of 120 gold he owes me, I will pay you 50 gold for your time and effort.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -935,7 +784,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
+                    "Parameter #1": "0lletherSvari", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -945,110 +794,20 @@
                     "Function": 76, 
                     "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 4.99999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F0A38E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldBivale", 
-            "PNAM - Previous INFO": "01F0A38D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. Here are the 50 drakes for your services. Thank you very much.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bivaleSteneran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUpantsU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshirtU2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownAldBivale", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 82, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 05 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player 20\r\nSetStage fbmwTownAldBivale 5", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwTownAldLlethri 1", 
                 "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmw0sarandasUshirtU2", 
-                    "fbmw0sarandasUpantsU2", 
-                    "fbmwTownAldBivale"
+                    "fbmwTownAldLlethri"
                 ]
             }
         }, 
@@ -1143,27 +902,20 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01322E9C"
+                "FormID": "01322EA4"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {
-                    "Say Once": true
-                }
+                "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldDaynes", 
+            "QSTI - Quest": "fbmwTownVivec", 
             "PNAM - Previous INFO": 0, 
             "Add topics": [
-                "1IenasSSarandas", 
-                "1ring", 
-                "1rawSebony", 
-                "1rawSglass", 
-                "1ebony", 
-                "1ring", 
-                "1glass", 
-                "1ring", 
-                "1overdueSpayment"
+                "1report", 
+                "1Dunmer", 
+                "1Ordinators", 
+                "1reward"
             ], 
             "Responses": [
                 {
@@ -1173,7 +925,68 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I am looking for a fellow named Ienas Sarandas.", 
+                    "NAM1 - Response Text": "I am grateful for the work you did for us. But I'm afraid I have no more work for you. Thank you anyway.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownVivec", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0elamSandas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322EA7"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownVivec", 
+            "PNAM - Previous INFO": "01030598", 
+            "Add topics": [
+                "1Vivec", 
+                "1outlander", 
+                "1Ordinators", 
+                "1Ordinators", 
+                "1duty"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "We've had seven killings in Vivec recently. All the victims had their throats slit. Most did not appear to have struggled.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -1183,7 +996,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "I sold him two fine matched rings, one with an raw ebony stone, the other with a raw glass stone, but he has failed to pay the remaining 150 drakes owed.", 
+                    "NAM1 - Response Text": "Five victims were outlanders. Two were Ordinators. The two Ordinators were armed and on duty. Their weapons were still in their belts.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -1193,7 +1006,391 @@
                         "Unused": "CD CD CD", 
                         "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "If you will find Sarandas, and either get the ebony ring and the glass ring and return them to me, or get the overdue payment of 150 drakes he owes me, I will pay you 50 gold.", 
+                    "NAM1 - Response Text": "Nothing was removed from the victim's bodies.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownVivec", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0elamSandas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1work3"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 40, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 1C 00 01 00 21 10 00 00", 
+                "SCTX - Result script source": "setstage fbmwtownvivec 10\r\naddtopic 1sevensvictims\r\naddtopic 1witnesses\r\nfbdreamerprophetref.enable", 
+                "References": [
+                    "fbdreamerprophetref", 
+                    "fbmwTownVivec", 
+                    "1sevenSvictims", 
+                    "1witnesses"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322EA8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownBalmora", 
+            "PNAM - Previous INFO": "0102EFA9", 
+            "Add topics": [
+                "1niceSpresent", 
+                "1ring", 
+                "1ring", 
+                "1knowSyou"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see everything's been taken care of. And, remarkably enough, without creating any problems of a legal nature.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You are far more discrete than I had hoped. I'm so glad I found that nice present from the Emperor. Here. It seems to be a ring. A very nice ring.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "There was no note with it, I'm afraid. But I'll let the Emperor know you've received it. I'm sure he'll be pleased.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "And, also, from me, because of your exceptional discretion, take this special volume from my own library, with my compliments.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownBalmora", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 130, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 116, 
+                    "Parameter #1": "00 00 00 00", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0vadusaSsathryon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0marasaSaren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0madraleSthirith", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0sovorStrandel", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0thanelenSvelas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0larriusSvarro", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 75, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 23 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtownbalmora 35\r\nplayer.additem 0bookskilluspeechcraft1 1\r\nplayer.additem fbmwringofsurroundings 1\r\nmodpcfame 1\r\nmoddisposition player 20", 
+                "References": [
+                    20, 
+                    "fbmwTownBalmora", 
+                    "0BookSkillUSpeechcraft1", 
+                    "fbmwRingofSurroundings"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322EA9"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownBalmora", 
+            "PNAM - Previous INFO": "01322EA8", 
+            "Add topics": [
+                "1mySfriend", 
+                "1niceSpresent", 
+                "1ring", 
+                "1ring", 
+                "1knowSyou"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see everything's been taken care of.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And, just in case you had any problems of a legal nature, I spoke to some of my friends, and I've taken care of some things as well.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And I DID find that nice present from the Emperor. Here. It seems to be a ring. A very nice ring. There was no note with it, I'm afraid.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But I'll let the Emperor know you've received it. I'm sure he'll be pleased.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownBalmora", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0vadusaSsathryon", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0marasaSaren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0madraleSthirith", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0sovorStrandel", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0thanelenSvelas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0larriusSvarro", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 72, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 1E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 1C 00 01 00 75 10 07 00 01 00 6E 00 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtownbalmora 30\r\nplayer.additem fbmwringofsurroundings 1\r\nmodpcfame 1\r\nmoddisposition player 20\r\nplayer.setcrimegold 0", 
+                "References": [
+                    20, 
+                    "fbmwTownBalmora", 
+                    "fbmwRingofSurroundings"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322EAB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownBalmora", 
+            "PNAM - Previous INFO": "0102EFA8", 
+            "Add topics": [
+                "1littleSstory", 
+                "1questions", 
+                "1niceSpresent"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Through various channels, I've learned a bit about your situation. I'd like to tell you a little story.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And when I'm done, you can ask me some questions. And then, maybe, you might decide to go out and do some things. You might, and you might not.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "That's your affair. And I also want to tell you about a nice present I think the Emperor wants you to have. I'm not sure where it is.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But maybe you'll want to check back and see if I've found it. Later. After you have done some things.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1203,7 +1400,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0daynesSredothril", 
+                    "Parameter #1": "0larriusSvarro", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1213,20 +1410,480 @@
                     "Function": 76, 
                     "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
                     "RefCount": 1, 
-                    "CompiledSize": 14, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwTownAldDaynes 1", 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1littlesstory", 
                 "References": [
-                    "fbmwTownAldDaynes"
+                    "1littleSstory"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A377"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've been paid.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A378"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A377", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 40, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": " I don't suppose YOU had anything to do with that? Here's the 50 drakes I promised you. And I'll take the goods.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 40, 
+                        "Unused": "20 30 66", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "But don't expect me to thank you for them. No debt is worth a man's life. Of course, there were no witnesses.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 40, 
+                        "Unused": "20 30 66", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But everyone knows you killed that poor fool. Don't think anyone here will forgive you for that.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 84, 
+                    "Parameter #1": "0ienasSsarandas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player -20\r\nSetStage fbmwTownAldLlethri 10", 
+                "References": [
+                    20, 
+                    "fbmw0sarandasUshoesU2", 
+                    "Gold001", 
+                    "fbmwTownAldLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A379"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A378", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you again. You handled the affair very well.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 2.99999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A37A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A379", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. Here are the 50 drakes for your services.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 40, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And thank you very much for handling this situation so well. I really appreciate it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 04 00 6E 03 00 00 00", 
+                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player 40\r\nSetStage fbmwTownAldLlethri 3", 
+                "References": [
+                    20, 
+                    "fbmw0sarandasUshoesU2", 
+                    "Gold001", 
+                    "fbmwTownAldLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A37B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A37A", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 4.99999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A37C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "PNAM - Previous INFO": "01F0A37B", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. Here are the 50 drakes for your services. Thank you very much.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 04 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player 20\r\nSetStage fbmwTownAldLlethri 5", 
+                "References": [
+                    20, 
+                    "fbmw0sarandasUshoesU2", 
+                    "Gold001", 
+                    "fbmwTownAldLlethri"
                 ]
             }
         }, 
@@ -1730,14 +2387,474 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A377"
+                "FormID": "01F0A383"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've been paid.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A384"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": "01F0A383", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 40, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I don't suppose YOU had anything to do with that? Here's the 25 drakes I promised you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 60, 
+                        "Unused": "20 30 66", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And I'll take the goods. But don't expect me to thank you for them. No debt is worth a man's life. Of course, there were no witnesses.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 1, 
+                        "Emotion Value": 70, 
+                        "Unused": "20 30 66", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But everyone knows you killed that poor fool. Don't think anyone here will forgive you for that.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandusUamulet", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 84, 
+                    "Parameter #1": "0ienasSsarandas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player -20\r\nSetStage fbmwTownAldBevene 10", 
+                "References": [
+                    20, 
+                    "fbmw0sarandusUamulet", 
+                    "Gold001", 
+                    "fbmwTownAldBevene"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A385"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": "01F0A384", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you again. You handled the affair very well.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 2.99999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A386"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": "01F0A385", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. Here are the 25 drakes for your services. ", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 30, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And thank you very much for handling this situation so well. I really appreciate it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandusUamulet", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldRuhn", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 04 00 6E 03 00 00 00", 
+                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player  40\r\nSetStage fbmwTownAldBevene 3", 
+                "References": [
+                    20, 
+                    "fbmw0sarandusUamulet", 
+                    "Gold001", 
+                    "fbmwTownAldBevene"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A387"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": "01F0A386", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you again.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 4.99999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A388"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBevene", 
+            "PNAM - Previous INFO": "01F0A387", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 5, 
+                        "Emotion Value": 30, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I see you have the firejade amulet from Ienas Sarandas. Here are the 25 drakes for your services. Thank you very much.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0beveneSreleth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandusUamulet", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldBevene", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 19 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 04 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "player.removeitem fbmw0SarandusUamulet 1\r\nplayer.additem gold001 25\r\nModDisposition Player 20\r\nSetStage fbmwTownAldBevene 5", 
+                "References": [
+                    20, 
+                    "fbmw0sarandusUamulet", 
+                    "Gold001", 
+                    "fbmwTownAldBevene"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1work", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F0A389"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTownAldBivale", 
             "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
@@ -1757,7 +2874,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1765,7 +2882,7 @@
                     "Unused": 0, 
                     "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1784,15 +2901,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A378"
+                "FormID": "01F0A38A"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A377", 
+            "QSTI - Quest": "fbmwTownAldBivale", 
+            "PNAM - Previous INFO": "01F0A389", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1801,7 +2918,7 @@
                         "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
+                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. And I hear Ienas Sarandas was found dead in his home.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -1811,13 +2928,13 @@
                         "Unused": "20 30 66", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": " I don't suppose YOU had anything to do with that? Here's the 50 drakes I promised you. And I'll take the goods.", 
+                    "NAM1 - Response Text": "I don't suppose YOU had anything to do with that? Here's the 50 drakes I promised you. And I'll take the goods. ", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 1, 
-                        "Emotion Value": 40, 
+                        "Emotion Value": 50, 
                         "Unused": "20 30 66", 
                         "Response number": 3
                     }, 
@@ -1827,7 +2944,7 @@
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 1, 
-                        "Emotion Value": 40, 
+                        "Emotion Value": 70, 
                         "Unused": "20 30 66", 
                         "Response number": 4
                     }, 
@@ -1841,7 +2958,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1849,7 +2966,15 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #1": "fbmw0sarandasUpantsU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshirtU2", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1865,25 +2990,26 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
+                    "RefCount": 5, 
+                    "CompiledSize": 82, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player -20\r\nSetStage fbmwTownAldLlethri 10", 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 05 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player -20\r\nSetStage fbmwTownAldBivale 10", 
                 "References": [
                     20, 
-                    "fbmw0sarandasUshoesU2", 
                     "Gold001", 
-                    "fbmwTownAldLlethri"
+                    "fbmw0sarandasUshirtU2", 
+                    "fbmw0sarandasUpantsU2", 
+                    "fbmwTownAldBivale"
                 ]
             }
         }, 
@@ -1892,15 +3018,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A379"
+                "FormID": "01F0A38B"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A378", 
+            "QSTI - Quest": "fbmwTownAldBivale", 
+            "PNAM - Previous INFO": "01F0A38A", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1919,7 +3045,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1935,7 +3061,7 @@
                     "Unused": 0, 
                     "Comparison Value": 2.99999999242573, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1954,15 +3080,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A37A"
+                "FormID": "01F0A38C"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A379", 
+            "QSTI - Quest": "fbmwTownAldBivale", 
+            "PNAM - Previous INFO": "01F0A38B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1971,7 +3097,7 @@
                         "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. Here are the 50 drakes for your services.", 
+                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. Here are the 50 drakes for your services. ", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -1991,7 +3117,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -2007,7 +3133,23 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #1": "fbmw0sarandasUpantsU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshirtU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTownAldRuhn", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -2015,25 +3157,26 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
+                    "RefCount": 5, 
+                    "CompiledSize": 82, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 04 00 6E 03 00 00 00", 
-                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player 40\r\nSetStage fbmwTownAldLlethri 3", 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 28 00 00 00 39 10 0A 00 02 00 72 05 00 6E 03 00 00 00", 
+                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player 40\r\nSetStage fbmwTownAldBivale 3", 
                 "References": [
                     20, 
-                    "fbmw0sarandasUshoesU2", 
                     "Gold001", 
-                    "fbmwTownAldLlethri"
+                    "fbmw0sarandasUshirtU2", 
+                    "fbmw0sarandasUpantsU2", 
+                    "fbmwTownAldBivale"
                 ]
             }
         }, 
@@ -2042,15 +3185,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A37B"
+                "FormID": "01F0A38D"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A37A", 
+            "QSTI - Quest": "fbmwTownAldBivale", 
+            "PNAM - Previous INFO": "01F0A38C", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -2069,7 +3212,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -2085,7 +3228,7 @@
                     "Unused": 0, 
                     "Comparison Value": 4.99999998737621, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -2104,15 +3247,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F0A37C"
+                "FormID": "01F0A38E"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A37B", 
+            "QSTI - Quest": "fbmwTownAldBivale", 
+            "PNAM - Previous INFO": "01F0A38D", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -2121,7 +3264,7 @@
                         "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I see you have the designer shoes from Ienas Sarandas. Here are the 50 drakes for your services. Thank you very much.", 
+                    "NAM1 - Response Text": "I see you have the brocade shirt and silk pants from Ienas Sarandas. Here are the 50 drakes for your services. Thank you very much.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -2131,7 +3274,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
+                    "Parameter #1": "0bivaleSteneran", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -2147,7 +3290,15 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 47, 
-                    "Parameter #1": "fbmw0sarandasUshoesU2", 
+                    "Parameter #1": "fbmw0sarandasUpantsU2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 47, 
+                    "Parameter #1": "fbmw0sarandasUshirtU2", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -2155,118 +3306,26 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwTownAldLlethri", 
+                    "Parameter #1": "fbmwTownAldBivale", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
+                    "RefCount": 5, 
+                    "CompiledSize": 82, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 32 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 04 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "Player.removeitem fbmw0SarandasUshoesU2 1\r\nplayer.additem gold001 50\r\nModDisposition Player 20\r\nSetStage fbmwTownAldLlethri 5", 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 32 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 39 10 0A 00 02 00 72 05 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "Player.additem gold001 50\r\nplayer.removeitem fbmw0SarandasUshirtU2 1\r\nplayer.removeitem fbmw0SarandasUpantsU2 1\r\nModDisposition Player 20\r\nSetStage fbmwTownAldBivale 5", 
                 "References": [
                     20, 
-                    "fbmw0sarandasUshoesU2", 
                     "Gold001", 
-                    "fbmwTownAldLlethri"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322E9F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldLlethri", 
-            "PNAM - Previous INFO": "01F0A37C", 
-            "Add topics": [
-                "1enchantment", 
-                "1overdueSpayment"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I sold a pair of splendid designer shoes bearing the Light enchantment.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "The radiant glow is practical as well as ornamental -- quite useful for late evening gatherings.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "The purchaser, one Ienas Sarandas, paid me 120 drakes on account when he received the shoes, but he has failed to pay the balance of 120 septims in a timely fashion.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "If you would find this Ienas Sarandas, and return the shoes or the overdue payment of 120 gold he owes me, I will pay you 50 gold for your time and effort.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0lletherSvari", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwTownAldLlethri 1", 
-                "References": [
-                    "fbmwTownAldLlethri"
+                    "fbmw0sarandasUshirtU2", 
+                    "fbmw0sarandasUpantsU2", 
+                    "fbmwTownAldBivale"
                 ]
             }
         }, 
@@ -2727,573 +3786,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01322E9D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownAldTiras", 
-            "PNAM - Previous INFO": "01F0A394", 
-            "Add topics": [
-                "1IenasSSarandas", 
-                "1overdueSpayment"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I sold an Ashlander hand-crafted racer suede belt to a customer, but he has failed to make his final payment on time.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "If you would find Ienas Sarandas and get back my belt, or get the overdue payment of 50 septims he owes me, I will pay you 25 gold.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tirasSsadus", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwTownAldTiras 1", 
-                "References": [
-                    "fbmwTownAldTiras"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EFA9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownBalmora", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Never mind about that work. As I said, it's all been taken care of. And I hope you like your present.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownBalmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0larriusSvarro", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322EA8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownBalmora", 
-            "PNAM - Previous INFO": "0102EFA9", 
-            "Add topics": [
-                "1niceSpresent", 
-                "1ring", 
-                "1ring", 
-                "1knowSyou"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see everything's been taken care of. And, remarkably enough, without creating any problems of a legal nature.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "You are far more discrete than I had hoped. I'm so glad I found that nice present from the Emperor. Here. It seems to be a ring. A very nice ring.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "There was no note with it, I'm afraid. But I'll let the Emperor know you've received it. I'm sure he'll be pleased.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "And, also, from me, because of your exceptional discretion, take this special volume from my own library, with my compliments.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 14.9999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownBalmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 130, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 116, 
-                    "Parameter #1": "00 00 00 00", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0vadusaSsathryon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0marasaSaren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0madraleSthirith", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0sovorStrandel", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0thanelenSvelas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0larriusSvarro", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 75, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 23 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtownbalmora 35\r\nplayer.additem 0bookskilluspeechcraft1 1\r\nplayer.additem fbmwringofsurroundings 1\r\nmodpcfame 1\r\nmoddisposition player 20", 
-                "References": [
-                    20, 
-                    "fbmwTownBalmora", 
-                    "0BookSkillUSpeechcraft1", 
-                    "fbmwRingofSurroundings"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322EA9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownBalmora", 
-            "PNAM - Previous INFO": "01322EA8", 
-            "Add topics": [
-                "1mySfriend", 
-                "1niceSpresent", 
-                "1ring", 
-                "1ring", 
-                "1knowSyou"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I see everything's been taken care of.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And, just in case you had any problems of a legal nature, I spoke to some of my friends, and I've taken care of some things as well.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "And I DID find that nice present from the Emperor. Here. It seems to be a ring. A very nice ring. There was no note with it, I'm afraid.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "But I'll let the Emperor know you've received it. I'm sure he'll be pleased.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 14.9999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownBalmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0vadusaSsathryon", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0marasaSaren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0madraleSthirith", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0sovorStrandel", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0thanelenSvelas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0larriusSvarro", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 72, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 1E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00 1C 00 01 00 75 10 07 00 01 00 6E 00 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtownbalmora 30\r\nplayer.additem fbmwringofsurroundings 1\r\nmodpcfame 1\r\nmoddisposition player 20\r\nplayer.setcrimegold 0", 
-                "References": [
-                    20, 
-                    "fbmwTownBalmora", 
-                    "fbmwRingofSurroundings"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EFA8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownBalmora", 
-            "PNAM - Previous INFO": "01322EA9", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "When you have finished doing some things, stop back and see me, and we'll see if I've found that nice present from the Emperor for you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownBalmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0larriusSvarro", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322EAB"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownBalmora", 
-            "PNAM - Previous INFO": "0102EFA8", 
-            "Add topics": [
-                "1littleSstory", 
-                "1questions", 
-                "1niceSpresent"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Through various channels, I've learned a bit about your situation. I'd like to tell you a little story.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And when I'm done, you can ask me some questions. And then, maybe, you might decide to go out and do some things. You might, and you might not.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "That's your affair. And I also want to tell you about a nice present I think the Emperor wants you to have. I'm not sure where it is.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "But maybe you'll want to check back and see if I've found it. Later. After you have done some things.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0larriusSvarro", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 9, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "addtopic 1littlesstory", 
-                "References": [
-                    "1littleSstory"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01F8A861"
             }, 
             "DATA - ": {
@@ -3543,192 +4035,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322E9A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownSadrith", 
-            "PNAM - Previous INFO": "01F8A864", 
-            "Add topics": [
-                "1Talk", 
-                "1MasterSNeloth", 
-                "1Mouth"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You say you killed the haunting? Weren't you listening? No matter how often it is killed, it reappears. Go. Look. Kill it again. And again.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And it reappears. Go talk to Mage-Mistress Arara Uvulas, Master Neloth's Mouth.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "She said she couldn't see how to stop the hauntings, but maybe she can tell you where to start.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0GatewayHaunt", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0angaredhel", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0uleniSheleran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 08 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtownsadrith 8", 
-                "References": [
-                    "fbmwTownSadrith"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322E9B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownSadrith", 
-            "PNAM - Previous INFO": "01322E9A", 
-            "Add topics": [
-                "1MasterSNeloth", 
-                "1Mouth", 
-                "1GatewayShaunting"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "A ghost is haunting our South Turret bed chamber. As soon as we get rid of it, it reappears.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "We can't rent the room, and all our guests are in an uproar.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "The Mage-Mistress Arara Uvulas, Master Neloth's Mouth, came to take a look, but said she couldn't see how to stop the hauntings.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "If you can get rid of the Gateway haunting permanently, I will offer you a choice from a number of valuable items from a local enchanter.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0angaredhel", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0uleniSheleran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtownsadrith 5", 
-                "References": [
-                    "fbmwTownSadrith"
-                ]
             }
         }, 
         {
@@ -4085,312 +4391,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322EA4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownVivec", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1report", 
-                "1Dunmer", 
-                "1Ordinators", 
-                "1reward"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I am grateful for the work you did for us. But I'm afraid I have no more work for you. Thank you anyway.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownVivec", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0elamSandas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01004CD8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownVivec", 
-            "PNAM - Previous INFO": "01322EA4", 
-            "Add topics": [
-                "1reward", 
-                "1report"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "According to your report, the Dunmer woman you killed matches the description given us.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "We'll dispatch Ordinators to follow up, but I believe you have identified and executed the killer.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "On behalf of the city, and of the Office of the Watch, thank you. And now, for the reward I promised. I'll give you a choice.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "You may either have an Indoril helm and cuirass, or a Belt of the Armor of God.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownVivec", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0dreamerSprophet", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0elamSandas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1work4", 
-                "1work5"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01030598"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownVivec", 
-            "PNAM - Previous INFO": "01004CD8", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 6D 53", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "As I said, I cannot officially hire you for this task. But if you find and execute this killer, when you return to report your success to me, I promise you a handsome reward.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownVivec", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0elamSandas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1work", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322EA7"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTownVivec", 
-            "PNAM - Previous INFO": "01030598", 
-            "Add topics": [
-                "1Vivec", 
-                "1outlander", 
-                "1Ordinators", 
-                "1Ordinators", 
-                "1duty"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "We've had seven killings in Vivec recently. All the victims had their throats slit. Most did not appear to have struggled.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Five victims were outlanders. Two were Ordinators. The two Ordinators were armed and on duty. Their weapons were still in their belts.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Nothing was removed from the victim's bodies.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTownVivec", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0elamSandas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1work3"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 40, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 0A 00 00 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 1C 00 01 00 21 10 00 00", 
-                "SCTX - Result script source": "setstage fbmwtownvivec 10\r\naddtopic 1sevensvictims\r\naddtopic 1witnesses\r\nfbdreamerprophetref.enable", 
-                "References": [
-                    "fbdreamerprophetref", 
-                    "fbmwTownVivec", 
-                    "1sevenSvictims", 
-                    "1witnesses"
-                ]
             }
         }
     ]

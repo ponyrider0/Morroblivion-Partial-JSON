@@ -7,17 +7,32 @@
     "EDID - Editor ID": "mwBMColonyAproniaScript", 
     "SCHR - Basic Script Data": {
         "Unused": "00 00 00 00", 
-        "RefCount": 4, 
-        "CompiledSize": 95, 
-        "VariableCount": 0, 
+        "RefCount": 7, 
+        "CompiledSize": 507, 
+        "VariableCount": 1, 
         "Type": 0
     }, 
-    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 51 00 00 00 16 00 2B 00 02 00 27 00 20 58 01 10 05 00 01 00 72 01 00 20 31 30 32 34 20 3C 3D 20 58 3A 10 05 00 01 00 72 02 00 20 31 30 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 56 10 08 00 02 00 72 03 00 72 04 00 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "scn mwBMColonyAproniaScript\n\nbegin gamemode\n\tif GetDistance fbmwFalcoREF <= 1024 && GetStage fbmwCO3b == 10\n\t\tSetStage fbmwCO3b 20\n\t\tStartConversation Player GREETING\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 ED 01 00 00 16 00 0F 00 01 00 0B 00 20 58 23 10 00 00 20 31 20 3D 3D 1E 00 00 00 19 00 00 00 16 00 22 00 02 00 1E 00 20 58 23 10 00 00 20 30 20 3D 3D 20 58 3A 10 05 00 01 00 72 01 00 20 35 30 20 3C 20 26 26 22 10 00 00 1E 00 00 00 19 00 00 00 16 00 15 00 1D 00 11 00 20 58 3A 10 05 00 01 00 72 01 00 20 35 30 20 3D 3D 16 00 0F 00 01 00 0B 00 20 58 23 10 00 00 20 31 20 3D 3D 21 10 00 00 19 00 00 00 16 00 13 00 06 00 0F 00 20 58 54 10 05 00 01 00 72 02 00 20 33 20 3C 16 00 0D 00 04 00 09 00 20 73 01 00 20 30 20 3D 3D 03 10 0A 00 02 00 72 03 00 6E 01 00 00 00 0F 10 09 00 02 00 22 00 6E 64 00 00 00 15 00 07 00 73 01 00 02 00 20 31 1E 00 00 00 19 00 00 00 19 00 00 00 16 00 14 00 10 00 10 00 20 58 54 10 05 00 01 00 72 02 00 20 33 20 3E 3D 16 00 0D 00 04 00 09 00 20 73 01 00 20 31 20 3D 3D 0F 10 09 00 02 00 22 00 6E 32 00 00 00 68 14 09 00 02 00 08 00 6E C8 00 00 00 15 00 07 00 73 01 00 02 00 20 32 1E 00 00 00 19 00 00 00 16 00 0D 00 03 00 09 00 20 73 01 00 20 32 20 3D 3D 56 10 05 00 01 00 72 04 00 15 00 07 00 73 01 00 02 00 20 33 1E 00 00 00 19 00 00 00 16 00 0D 00 03 00 09 00 20 73 01 00 20 33 20 3D 3D 03 10 0A 00 02 00 72 03 00 6E 00 00 00 00 15 00 07 00 73 01 00 02 00 20 34 1E 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 16 00 2B 00 03 00 27 00 20 58 01 10 05 00 01 00 72 05 00 20 31 30 32 34 20 3C 3D 20 58 3A 10 05 00 01 00 72 06 00 20 31 30 20 3D 3D 20 26 26 39 10 0A 00 02 00 72 06 00 6E 14 00 00 00 5E 10 00 00 56 10 08 00 02 00 72 04 00 72 07 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwBMColonyAproniaScript\n\nshort state\n\nbegin gamemode\n\n\tif (GetDisabled == 1)\n\t\treturn\n\tendif\n\n\tif (GetDisabled == 0) && (GetStage fbmwCO3 < 50)\n\t\tDisable\n\t\treturn\n\tendif\n\n\tif (GetStage fbmwCO3 == 50)\n\t\tif (GetDisabled == 1)\n\t\t\tEnable\n\t\tendif\n\t\t\n\t\tif (GetDeadCount fbmwCo3Draugr < 3)\n\t\t\tif (state == 0)\n\t\t\t\tSetEssential 0AproniaSAlfena 1\n\t\t\t\tSetAV confidence 100\n\t\t\t\tset state to 1\n\t\t\t\treturn\n\t\t\tendif\n\t\tendif\n\n\t\tif (GetDeadCount fbmwCo3Draugr >= 3)\n\t\t\tif (state == 1)\n\t\t\t\tSetAV confidence 50\n\t\t\t\tModAV2 health 200\n\t\t\t\tset state to 2\n\t\t\t\treturn\n\t\t\tendif\n\t\t\tif (state == 2)\n\t\t\t\tStartConversation Player\n\t\t\t\tset state to 3\n\t\t\t\treturn\n\t\t\tendif\n\t\t\tif (state == 3)\n\t\t\t\tSetEssential 0AproniaSAlfena 0\n\t\t\t\tset state to 4\n\t\t\t\treturn\n\t\t\tendif\n\t\tendif\n\t\t\n\tendif\n\t\n\tif (GetDistance fbmwFalcoREF <= 1024) && (GetStage fbmwCO3b == 10)\n\t\tSetStage fbmwCO3b 20\n\t\tEVP\n\t\tStartConversation Player GREETING\n\tendif\n\t\nend\n\n;<CSEBlock>\n;<CSECaretPos> 717 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "state"
+        }
+    ], 
     "References": [
+        "fbmwCO3", 
+        "fbmwCo3Draugr", 
+        "0AproniaSAlfena", 
+        20, 
         "fbmwFalcoREF", 
         "fbmwCO3b", 
-        20, 
         "GREETING"
     ]
 }

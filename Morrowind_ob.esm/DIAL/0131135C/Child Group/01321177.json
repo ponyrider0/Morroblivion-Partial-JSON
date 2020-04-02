@@ -8,10 +8,12 @@
     "DATA - ": {
         "Type": 0, 
         "Next Speaker": 0, 
-        "Flags": {}
+        "Flags": {
+            "Goodbye": true
+        }
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
-    "PNAM - Previous INFO": "01321176", 
+    "QSTI - Quest": "fbmwBMFurArmor", 
+    "PNAM - Previous INFO": "01321175", 
     "Add topics": [
         "1snow"
     ], 
@@ -23,11 +25,27 @@
                 "Unused": "CD CD CD", 
                 "Response number": 1
             }, 
-            "NAM1 - Response Text": "Your custom Snow Bear Greaves aren't ready yet, outlander.  Come back later.", 
+            "NAM1 - Response Text": "Your custom Snow Bear Greaves aren't ready yet,&sUActnQuick1;.  Come back later.", 
             "NAM2 - Actor notes": ""
         }
     ], 
     "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 79, 
+            "Parameter #1": "fbmwBMFurArmor", 
+            "Parameter #2": 2
+        }, 
+        {
+            "Type": 4, 
+            "Unused": 0, 
+            "Comparison Value": "GameDaysPassed", 
+            "Function": 79, 
+            "Parameter #1": "fbmwBMFurArmor", 
+            "Parameter #2": 6
+        }, 
         {
             "Type": 0, 
             "Unused": 0, 

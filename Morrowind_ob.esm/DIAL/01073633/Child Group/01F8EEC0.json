@@ -1,0 +1,75 @@
+{
+    "Topic": "1snowSwolfSarmor1", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "01F8EEC0"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {
+            "Goodbye": true
+        }
+    }, 
+    "QSTI - Quest": "fbmwBMFurArmor", 
+    "PNAM - Previous INFO": "01F8EEC9", 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Aha!  I knew you'd come through,&sUActnQuick1;!", 
+            "NAM2 - Actor notes": ""
+        }, 
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "20 30 66", 
+                "Response number": 2
+            }, 
+            "NAM1 - Response Text": "Come back tomorrow, same time, and I'll have your custom Snow Wolf Cuirass ready.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0brynjolfr", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 71, 
+            "Parameter #1": "0factMorrowind", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 5, 
+            "CompiledSize": 66, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 05 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 70 17 00 00 15 00 0A 00 72 04 00 73 08 00 02 00 20 31 15 00 0C 00 72 04 00 73 06 00 04 00 20 47 05 00", 
+        "SCTX - Result script source": "player.removeitem 0ingredusnowwolfupeltuunique 5\r\nplayer.removeitem gold001 6000\r\nset fbmwBmFurArmor.WolfCuirass to 1\r\nset FbmwBmFurarmor.StartDay to GameDaysPassed", 
+        "References": [
+            20, 
+            "0ingredUsnowwolfUpeltUunique", 
+            "Gold001", 
+            "fbmwBMFurArmor", 
+            "GameDaysPassed"
+        ]
+    }
+}

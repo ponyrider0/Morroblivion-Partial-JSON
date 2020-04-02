@@ -21,82 +21,48 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100410E"
+                "FormID": "010037E5"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
+                "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQRedoranVenim", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231B2", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "77 48 52", 
+                        "Unused": "69 73 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You have played your tricks with the other Councilors, but they will not work on me. This has gone far enough.", 
+                    "NAM1 - Response Text": "I spoke with Athyn Sarethi. I like what he told me about you. You get things done, and show good judgement. Your story is crazy.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "77 4D 51", 
+                        "Unused": "69 73 61", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "If you are not a coward, as well as a fraud, I will put a stop to your ambitions at the Arena in Vivec.", 
+                    "NAM1 - Response Text": "But your story doesn't matter to me, as long as you can do something about Dagoth Ur and his servants.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "77 4D 51", 
+                        "Unused": "69 73 61", 
                         "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "I will meet you there if you dare face me in a duel to the death.", 
+                    "NAM1 - Response Text": "I'm making you my choice for Hortator of House Redoran.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRamoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranArobar", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranLlethri", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranMorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
@@ -110,6 +76,69 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
+                    "Parameter #1": "0garisaSllethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 50", 
+                "References": [
+                    "fbmwMQRedoranLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100410C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "01004A76", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You are a fool. An ignorant, ill-mannered, outlander fool. I'd rather make a guar Hortator.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "As long as I am head of this House, you will never be Hortator.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
                     "Parameter #1": "0bolvynSvenim", 
                     "Parameter #2": "00 00 00 00"
                 }
@@ -117,17 +146,1249 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 64, 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31 9E 10 05 00 01 00 72 02 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 03 00 6E 9C FF FF FF", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranVenim 30\r\nSET fbmwMQRedoranVenim.BolvynDuelPlayer TO 1\r\nMoveTo fbmwArenaMarker\r\nSetAV Aggression 100\r\nModDisposition Player -100", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 53 10 0A 00 02 00 72 02 00 6E F6 FF FF FF", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranVenim 20\r\nModDisposition Player -10", 
                 "References": [
                     "fbmwMQRedoranVenim", 
-                    "fbmwarenamarker", 
                     20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01004A76"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Are you trying to manipulate me? Do you take me for a fool? Do you think I can be so easily won over?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 51", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You are a fraud. Cunning, for an outlander, but a complete fraud.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 4D 51", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "No, you will never be Hortator. I will not permit it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolvynSvenim", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 74.9999998106432, 
+                    "Function": 76, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 53 10 0A 00 02 00 72 02 00 6E E7 FF FF FF", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranVenim 20\r\nModDisposition Player -25", 
+                "References": [
+                    "fbmwMQRedoranVenim", 
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01025B13"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231C9", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Athyn Sarethi says he believes your story, and believes you can be trusted.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I still have my doubts, especially with these rumors that you are a spy for the Empire, but life cannot be lived without risks.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I agree we need a Hortator, and I see no better candidate than you. So let the record show that Councilor Morvayn confirms you as Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0braraSmorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 50", 
+                "References": [
+                    "fbmwMQRedoranMorvayn"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01025B14"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CD", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from the Temple. I believe your story. Your ring is genuine.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And you have the manner of a hero. I've heard the rumors that you are a spy for the Empire, but you recovered the cursed ash statue from Morvayn Manoor, so I know you can fight the Sixth House. And I trust you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "For these reasons, I name you as Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRMorvaynManor", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0braraSmorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 60", 
+                "References": [
+                    "fbmwMQRedoranMorvayn"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01025B1C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231B6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Athyn Sarethi has spoken of your good judgement, and I trust him. I will vote for you as Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hlarenSramoran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRamoran 50", 
+                "References": [
+                    "fbmwMQRamoran"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231B2"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231C8", 
+            "Add topics": [
+                "1HouseSRedoran", 
+                "1AthynSSarethi", 
+                "1Hortator", 
+                "1HouseSRedoran"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I don't believe your story. I will tell you honestly that it sounds like superstitious nonsense.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "However, despite what Berel Sala may say about you, I know that you have the best interests of House Redoran at heart.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "You are a fellow councilor and a friend of Athyn Sarethi. I will name you Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 7.99999997980194, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0garisaSllethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 60", 
+                "References": [
+                    "fbmwMQRedoranLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231B3"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "010037E5", 
+            "Add topics": [
+                "1DaedraSLords", 
+                "1Imperial", 
+                "1Talk", 
+                "1Hortator", 
+                "1HouseSRedoran"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "How do you expect anyone to believe such a story? All this about prophecies and reincarnated heroes and Daedra Lords appearing in caves...", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And Berel Sala claims you are an Imperial spy. But enough talk. I judge a man by his actions.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "From what I've heard, you might make a good Hortator of House Redoran. I will speak with the other councilors, but that is all that I will promise.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 7.99999997980194, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0garisaSllethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 20", 
+                "References": [
+                    "fbmwMQRedoranLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231B4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231B3", 
+            "Add topics": [
+                "1DaedraSLords", 
+                "1Imperial", 
+                "1Talk"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "How do you expect anyone to believe such a story? All this about prophecies and reincarnated heroes and Daedra Lords appearing in caves...", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I've also heard that you are an Imperial spy. But enough talk. I judge a man by his actions, and I don't know much about yours.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I will speak with the other councilors, but that is all that I will promise.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 76, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0garisaSllethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 20", 
+                "References": [
+                    "fbmwMQRedoranLlethri"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231B5"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Info Refusal": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231B4", 
+            "Add topics": [
+                "1mySfriend", 
+                "1Imperial"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "That's ridiculous. If you were my friend or someone important I might listen to your nonsense.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "But Berel Sala says you're just an Imperial spy and a pretender.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0garisaSllethri", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231B6"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231BB", 
+            "Add topics": [
+                "1ring", 
+                "1theSEmpire", 
+                "1Hortator", 
+                "1HouseSRedoran"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I believe your story. Your ring is genuine. You look like a hero to me. You are a member of our House, and, as far as I know, a good one.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Berel Sala must be mistaken about you spying for the Empire, as anyone who knows you as I do knows where your true loyalties lie.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "You are my choice for Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hlarenSramoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRamoran 60", 
+                "References": [
+                    "fbmwMQRamoran"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231BB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Info Refusal": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CA", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "If I had any reason to trust you, your story would worry me. But right now, you worry me more than your story. I don't think I can help you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0braraSmorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231C1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoranArobar", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Nerevar", 
+                "1Nerevar", 
+                "1Hortator", 
+                "1GreatSHouses", 
+                "1Tribunal", 
+                "1Dwemer", 
+                "1DagothSUr", 
+                "1Morrowind"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You came to tell me that you are the reincarnation of Indoril Nerevar. Azura spoke with you. In a cave.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And told you that because you are the reincarnation of Nerevar, that you must become the Hortator of all three Great Houses.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "And that is why you are standing here now, telling me this story of the Tribunal stealing power from a god's heart with Dwemer tools.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "And that Dagoth Ur is not dead, but even now plots to conquer Morrowind with the power of this alleged heart. Is that correct?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0minerSarobar", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1RedoranSHortator3"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231C7"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "01025B1C", 
+            "Add topics": [
+                "1ring", 
+                "1Imperial", 
+                "1Talk"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "That's a good story. And an impressive ring. You look like a hero. But you're an outsider, and I don't know if I can trust you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Especially when the honorable Berel Sala claims you are an Imperial spy. Let me talk to the others.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I will consider what you have said, but that is all I can promise.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hlarenSramoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 76, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRamoran 20", 
+                "References": [
+                    "fbmwMQRamoran"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231C8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Info Refusal": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231C7", 
+            "Add topics": [
+                "1Imperial"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm not interested in listening to a long story. I don't like long stories or Imperial spies.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hlarenSramoran", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231C9"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "01025B14", 
+            "Add topics": [
+                "1Temple", 
+                "1ring", 
+                "1theSEmpire", 
+                "1Hortator", 
+                "1HouseSRedoran"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from my Temple. I believe your story. Your ring is genuine.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And you have the manner of a hero.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I've heard the rumors that you are a spy for the Empire, but you are a member of our House, and what I know of you inclines me to trust you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "For these reasons, I name you as Hortator of House Redoran.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 3.99999998990097, 
+                    "Function": 73, 
+                    "Parameter #1": "0Redoran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0braraSmorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 60", 
+                "References": [
+                    "fbmwMQRedoranMorvayn"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231CA"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "01025B13", 
+            "Add topics": [
+                "1Temple", 
+                "1ring", 
+                "1knowSyou"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from my Temple. I believe your story. Your ring is genuine.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And you have the makings of a hero about you. But I do not know you, and I cannot trust blindly.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I must consider your request, and share my concerns with the other councilors. That's all I can say for now.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0braraSmorvayn", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 76, 
+                    "Parameter #1": 0, 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 20", 
+                "References": [
+                    "fbmwMQRedoranMorvayn"
                 ]
             }
         }, 
@@ -143,8 +1404,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQRedoranSarethi", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "0100410C", 
             "Add topics": [
                 "1Nerevarine", 
                 "1strength", 
@@ -252,98 +1513,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01025B09"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranSarethi", 
-            "PNAM - Previous INFO": "013231CC", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "68 79 6E", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You rescued my son. Words cannot express my gratitude. Therefore, I name you Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "68 79 6E", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I also promise that I will use my influence with the other councilors of House Redoran. Alas, there is one obstacle.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "68 79 6E", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Bolvyn Venim will never name an outlander Hortator. But if you have the full support of the council, he may agree to an honorable duel.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 132, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRRescueSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0athynSsarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1HlaaluScouncilors"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 31, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwMQRedoranSarethi 50\r\nmodfactionreaction 0redoran 0nerevarine 20", 
-                "References": [
-                    "fbmwMQRedoranSarethi", 
-                    "0Redoran", 
-                    "0Nerevarine"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "013231CD"
             }, 
             "DATA - ": {
@@ -351,8 +1520,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQRedoranSarethi", 
-            "PNAM - Previous INFO": "01025B09", 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CC", 
             "Add topics": [
                 "1ring", 
                 "1Favor", 
@@ -431,1263 +1600,6 @@
                     "fbmwHRRescueSarethi", 
                     "1VarvurSSarethi"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231BB"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranMorvayn", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "If I had any reason to trust you, your story would worry me. But right now, you worry me more than your story. I don't think I can help you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braraSmorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01025B14"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranMorvayn", 
-            "PNAM - Previous INFO": "013231BB", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from the Temple. I believe your story. Your ring is genuine.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And you have the manner of a hero. I've heard the rumors that you are a spy for the Empire, but you recovered the cursed ash statue from Morvayn Manoor, so I know you can fight the Sixth House. And I trust you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "For these reasons, I name you as Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRMorvaynManor", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braraSmorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 60", 
-                "References": [
-                    "fbmwMQRedoranMorvayn"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231C9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranMorvayn", 
-            "PNAM - Previous INFO": "01025B14", 
-            "Add topics": [
-                "1Temple", 
-                "1ring", 
-                "1theSEmpire", 
-                "1Hortator", 
-                "1HouseSRedoran"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from my Temple. I believe your story. Your ring is genuine.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And you have the manner of a hero.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I've heard the rumors that you are a spy for the Empire, but you are a member of our House, and what I know of you inclines me to trust you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "For these reasons, I name you as Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braraSmorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 60", 
-                "References": [
-                    "fbmwMQRedoranMorvayn"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01025B13"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranMorvayn", 
-            "PNAM - Previous INFO": "013231C9", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Athyn Sarethi says he believes your story, and believes you can be trusted.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I still have my doubts, especially with these rumors that you are a spy for the Empire, but life cannot be lived without risks.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I agree we need a Hortator, and I see no better candidate than you. So let the record show that Councilor Morvayn confirms you as Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braraSmorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 50", 
-                "References": [
-                    "fbmwMQRedoranMorvayn"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231CA"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranMorvayn", 
-            "PNAM - Previous INFO": "01025B13", 
-            "Add topics": [
-                "1Temple", 
-                "1ring", 
-                "1knowSyou"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm troubled. In politics, I expect subtlety and deceit. But not from my Temple. I believe your story. Your ring is genuine.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And you have the makings of a hero about you. But I do not know you, and I cannot trust blindly.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I must consider your request, and share my concerns with the other councilors. That's all I can say for now.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braraSmorvayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranMorvayn 20", 
-                "References": [
-                    "fbmwMQRedoranMorvayn"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231B6"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRamoran", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1ring", 
-                "1theSEmpire", 
-                "1Hortator", 
-                "1HouseSRedoran"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I believe your story. Your ring is genuine. You look like a hero to me. You are a member of our House, and, as far as I know, a good one.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Berel Sala must be mistaken about you spying for the Empire, as anyone who knows you as I do knows where your true loyalties lie.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "You are my choice for Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hlarenSramoran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRamoran 60", 
-                "References": [
-                    "fbmwMQRamoran"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01025B1C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRamoran", 
-            "PNAM - Previous INFO": "013231B6", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Athyn Sarethi has spoken of your good judgement, and I trust him. I will vote for you as Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hlarenSramoran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRamoran 50", 
-                "References": [
-                    "fbmwMQRamoran"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231C7"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRamoran", 
-            "PNAM - Previous INFO": "01025B1C", 
-            "Add topics": [
-                "1ring", 
-                "1Imperial", 
-                "1Talk"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "That's a good story. And an impressive ring. You look like a hero. But you're an outsider, and I don't know if I can trust you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Especially when the honorable Berel Sala claims you are an Imperial spy. Let me talk to the others.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I will consider what you have said, but that is all I can promise.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hlarenSramoran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRamoran 20", 
-                "References": [
-                    "fbmwMQRamoran"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231C8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRamoran", 
-            "PNAM - Previous INFO": "013231C7", 
-            "Add topics": [
-                "1Imperial"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm not interested in listening to a long story. I don't like long stories or Imperial spies.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hlarenSramoran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231B2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranLlethri", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1HouseSRedoran", 
-                "1AthynSSarethi", 
-                "1Hortator", 
-                "1HouseSRedoran"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I don't believe your story. I will tell you honestly that it sounds like superstitious nonsense.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "However, despite what Berel Sala may say about you, I know that you have the best interests of House Redoran at heart.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "You are a fellow councilor and a friend of Athyn Sarethi. I will name you Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 7.99999997980194, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0garisaSllethri", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 60", 
-                "References": [
-                    "fbmwMQRedoranLlethri"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231B3"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranLlethri", 
-            "PNAM - Previous INFO": "013231B2", 
-            "Add topics": [
-                "1DaedraSLords", 
-                "1Imperial", 
-                "1Talk", 
-                "1Hortator", 
-                "1HouseSRedoran"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "How do you expect anyone to believe such a story? All this about prophecies and reincarnated heroes and Daedra Lords appearing in caves...", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And Berel Sala claims you are an Imperial spy. But enough talk. I judge a man by his actions.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "From what I've heard, you might make a good Hortator of House Redoran. I will speak with the other councilors, but that is all that I will promise.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 132, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 130, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0garisaSllethri", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 20", 
-                "References": [
-                    "fbmwMQRedoranLlethri"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231B4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranLlethri", 
-            "PNAM - Previous INFO": "013231B3", 
-            "Add topics": [
-                "1DaedraSLords", 
-                "1Imperial", 
-                "1Talk"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "How do you expect anyone to believe such a story? All this about prophecies and reincarnated heroes and Daedra Lords appearing in caves...", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I've also heard that you are an Imperial spy. But enough talk. I judge a man by his actions, and I don't know much about yours.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I will speak with the other councilors, but that is all that I will promise.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0garisaSllethri", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 20", 
-                "References": [
-                    "fbmwMQRedoranLlethri"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231B5"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranLlethri", 
-            "PNAM - Previous INFO": "013231B4", 
-            "Add topics": [
-                "1mySfriend", 
-                "1Imperial"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "That's ridiculous. If you were my friend or someone important I might listen to your nonsense.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "But Berel Sala says you're just an Imperial spy and a pretender.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0garisaSllethri", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010037E5"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranLlethri", 
-            "PNAM - Previous INFO": "013231B5", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 73 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I spoke with Athyn Sarethi. I like what he told me about you. You get things done, and show good judgement. Your story is crazy.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 73 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "But your story doesn't matter to me, as long as you can do something about Dagoth Ur and his servants.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 73 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I'm making you my choice for Hortator of House Redoran.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQRedoranSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0garisaSllethri", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranLlethri 50", 
-                "References": [
-                    "fbmwMQRedoranLlethri"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013231C1"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranArobar", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Nerevar", 
-                "1Nerevar", 
-                "1Hortator", 
-                "1GreatSHouses", 
-                "1Tribunal", 
-                "1Dwemer", 
-                "1DagothSUr", 
-                "1plot", 
-                "1Morrowind"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You came to tell me that you are the reincarnation of Indoril Nerevar. Azura spoke with you. In a cave.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And told you that because you are the reincarnation of Nerevar, that you must become the Hortator of all three Great Houses.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "And that is why you are standing here now, telling me this story of the Tribunal stealing power from a god's heart with Dwemer tools.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "And that Dagoth Ur is not dead, but even now plots to conquer Morrowind with the power of this alleged heart. Is that correct?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0minerSarobar", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1RedoranSHortator3"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }
     ]

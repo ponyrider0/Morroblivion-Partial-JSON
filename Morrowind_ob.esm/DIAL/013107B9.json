@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01023529"
+                "FormID": "0101EC0B"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,16 +24,26 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "0101EC0C", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "61 62 69", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I am here. Skink and I have much to learn from each other.", 
+                    "NAM1 - Response Text": "Speak with the Wise Women of the Ashlander tribes. From what I've heard, I doubt the Erabenimsun or the Urshilaku would agree.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The Zainab might agree, but I would speak with the Ahemmusa first.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -41,7 +51,66 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 109.999999722277, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGVampVol2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWMGWiseWoman 10", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101EC0C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "0101EC0D", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6B 69", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Ah, thank you,&sUActnQuick1. Minabibi has already answered many of my questions.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMGWiseWoman", 
                     "Parameter #2": "00 00 00 00"
@@ -51,7 +120,67 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0minabibiSassardarainat", 
+                    "Parameter #1": "0skinkintreesshade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWMGWiseWoman 100\r\nmoddisposition player 10", 
+                "References": [
+                    "fbmwMGWiseWoman", 
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101EC0D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01320C8A", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6B 69", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, Minabibi will stay here with me for a time.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -70,7 +199,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01023528"
+                "FormID": "01023519"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -78,107 +207,20 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023529", 
+            "PNAM - Previous INFO": "0102351A", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "61 62 69", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "As I promised, I am here. I did not promise any reward, but Skink asked me to give this to you.", 
+                    "NAM1 - Response Text": "The Urshilaku will never meet with an Argonian Sorcerer.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0minabibiSassardarainat", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 110\r\nplayer.additem fbmwancestorsring 1", 
-                "References": [
-                    20, 
-                    "fbmwMGWiseWoman", 
-                    "fbmwAncestorsRing"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01023527"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023528", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 62 69", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The spirit of Kanit Ashurnisammis is resting. I have more duties here to prevent Kanit's spirit from returning.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Speak once more with Wise Woman Sinnammu Mirpal. Tell her that Kanit Ashurnisammis is at rest. Perhaps then she will allow me to meet Skink-in-Tree's Shade.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "fbmwMGWiseWomanGhost", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 84, 
-                    "Parameter #1": "fbmwMGWiseWomanGhost", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
@@ -188,11 +230,19 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0minabibiSassardarainat", 
+                    "Parameter #1": "0nibaniSmaesa", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -204,8 +254,8 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 70", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 19 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 25", 
                 "References": [
                     "fbmwMGWiseWoman"
                 ]
@@ -216,7 +266,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01023524"
+                "FormID": "0102351A"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -224,16 +274,26 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023527", 
+            "PNAM - Previous INFO": "0102351B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "61 62 69", 
+                        "Unused": "57 4D 47", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Send the spirit of Kanit Ashurnisammis to its final rest, and then we can talk of meetings.", 
+                    "NAM1 - Response Text": "The Urshilaku will never meet with an Argonian Sorcerer.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You may be Nerevarine, but your judgement is clouded by your Outlander past, or you would not ask such questions.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -241,7 +301,15 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ10", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMGWiseWoman", 
                     "Parameter #2": "00 00 00 00"
@@ -259,7 +327,583 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0minabibiSassardarainat", 
+                    "Parameter #1": "0nibaniSmaesa", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 19 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 25", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102351B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "0102351C", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am too busy to meet with animals.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0manirai", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 26", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102351C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "0102351D", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am too busy to meet this Argonian.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 69, 
+                    "Parameter #1": "Argonian", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0manirai", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 26", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102351D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "0102351E", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Speak with Ashkhan Kaushad. I will meet with this Argonian only if the Ashkhan speaks it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sonummuSzabamat", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1B 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 27", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102351E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "0102351F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "75 6D 6D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Will this Argonian make the Telvanni deal with us fairly? Will this Argonian make the Empire give us better prices so that we can feed our people?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "75 6D 6D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Will this Argonian give us a place on the Council? Will this Argonian kill the blighted creatures and the outlaws that plague out village?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "75 6D 6D", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Then we have no time for this Argonian.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0kaushad", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1C 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 28", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102351F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01023520", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I will not meet with this Argonian. I might send my apprentice, Minabibi, for it is time she saw how you foreigners live and left her childish notions behind her.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "She is in the Favel Tomb.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sinnammuSmirpal", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 30", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01023520"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01023521", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 61 6D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I know the spirit of Kanit Ashurnisammis is at rest. Before I send my apprentice to this Skink, I will ask a question.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Did you pacify the spirit, or did Minabibi pacify the spirit?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sinnammuSmirpal", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1arrangeSaSmeeting1", 
+                "1arrangeSaSmeeting2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 13, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 9E 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "mwMinabibiAssardarainatREF.MoveTo cccsadrithmoratravelmarker", 
+                "References": [
+                    "mwMinabibiAssardarainatREF", 
+                    "CCCSadrithMoraTravelMarker"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01023521"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01023522", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 6B 69", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I will send my apprentice, Minabibi, to speak with this Argonian.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sinnammuSmirpal", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01023522"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01023523", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6E 61 6D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "No, I have sent my apprentice. That is all I will do for your Argonian.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sinnammuSmirpal", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -365,7 +1009,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01023522"
+                "FormID": "01023524"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -373,22 +1017,30 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023523", 
+            "PNAM - Previous INFO": "01023527", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "6E 61 6D", 
+                        "Unused": "61 62 69", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "No, I have sent my apprentice. That is all I will do for your Argonian.", 
+                    "NAM1 - Response Text": "Send the spirit of Kanit Ashurnisammis to its final rest, and then we can talk of meetings.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
                     "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
                     "Unused": 0, 
                     "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
@@ -400,7 +1052,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0sinnammuSmirpal", 
+                    "Parameter #1": "0minabibiSassardarainat", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -419,7 +1071,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01023521"
+                "FormID": "01023527"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -427,30 +1079,107 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023522", 
+            "PNAM - Previous INFO": "01023528", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "6E 6B 69", 
+                        "Unused": "61 62 69", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I will send my apprentice, Minabibi, to speak with this Argonian.", 
+                    "NAM1 - Response Text": "The spirit of Kanit Ashurnisammis is resting. I have more duties here to prevent Kanit's spirit from returning.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 47", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Speak once more with Wise Woman Sinnammu Mirpal. Tell her that Kanit Ashurnisammis is at rest. Perhaps then she will allow me to meet Skink-in-Tree's Shade.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "fbmwMGWiseWomanGhost", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 84, 
+                    "Parameter #1": "fbmwMGWiseWomanGhost", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0minabibiSassardarainat", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 70", 
+                "References": [
+                    "fbmwMGWiseWoman"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01023528"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": "01023529", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 62 69", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "As I promised, I am here,&sUActnQuick1;. I did not promise any reward, but Skink asked me to give this to you.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
                     "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 79.9999997980194, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
                     "Unused": 0, 
                     "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
@@ -462,7 +1191,68 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0sinnammuSmirpal", 
+                    "Parameter #1": "0minabibiSassardarainat", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 6E 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgwisewoman 110\r\nplayer.additem fbmwancestorsring 1", 
+                "References": [
+                    20, 
+                    "fbmwMGWiseWoman", 
+                    "fbmwAncestorsRing"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1arrangeSaSmeeting", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01023529"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGWiseWoman", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 62 69", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am here,&sUActnQuick1;. Skink and I have much to learn from each other.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 109.999999722277, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0minabibiSassardarainat", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -474,613 +1264,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01023520"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023521", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6E 61 6D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I know the spirit of Kanit Ashurnisammis is at rest. Before I send my apprentice to this Skink, I will ask a question.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Did you pacify the spirit, or did Minabibi pacify the spirit?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sinnammuSmirpal", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1arrangeSaSmeeting1", 
-                "1arrangeSaSmeeting2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 13, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 9E 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "mwMinabibiAssardarainatREF.MoveTo cccsadrithmoratravelmarker", 
-                "References": [
-                    "mwMinabibiAssardarainatREF", 
-                    "CCCSadrithMoraTravelMarker"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01023520", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I will not meet with this Argonian. I might send my apprentice, Minabibi, for it is time she saw how you foreigners live and left her childish notions behind her.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "She is in the Favel Tomb.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sinnammuSmirpal", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 30", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351F", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "75 6D 6D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Will this Argonian make the Telvanni deal with us fairly? Will this Argonian make the Empire give us better prices so that we can feed our people?", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "75 6D 6D", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Will this Argonian give us a place on the Council? Will this Argonian kill the blighted creatures and the outlaws that plague out village?", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "75 6D 6D", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Then we have no time for this Argonian.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0kaushad", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1C 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 28", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351E", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Speak with Ashkhan Kaushad. I will meet with this Argonian only if the Ashkhan speaks it.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sonummuSzabamat", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1B 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 27", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I am too busy to meet this Argonian.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 69, 
-                    "Parameter #1": "Argonian", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0manirai", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 26", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I am too busy to meet with animals.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0manirai", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 26", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102351A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Urshilaku will never meet with an Argonian Sorcerer.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 47", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "You may be Nerevarine, but your judgement is clouded by your Outlander past, or you would not ask such questions.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0nibaniSmaesa", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 19 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 25", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01023519"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0102351A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Urshilaku will never meet with an Argonian Sorcerer.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0nibaniSmaesa", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 19 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwisewoman 25", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
             }
         }, 
         {
@@ -1285,189 +1468,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101EC0D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "01320C8A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6E 6B 69", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, Minabibi will stay here with me for a time.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101EC0C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0101EC0D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6E 6B 69", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Ah, thank you. Minabibi has already answered many of my questions.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 79.9999997980194, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 28, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWMGWiseWoman 100\r\nmoddisposition player 10", 
-                "References": [
-                    "fbmwMGWiseWoman", 
-                    20
-                ]
-            }
-        }, 
-        {
-            "Topic": "1arrangeSaSmeeting", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101EC0B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGWiseWoman", 
-            "PNAM - Previous INFO": "0101EC0C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Speak with the Wise Women of the Ashlander tribes. From what I've heard, I doubt the Erabenimsun or the Urshilaku would agree.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "The Zainab might agree, but I would speak with the Ahemmusa first.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGVampVol2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWMGWiseWoman 10", 
-                "References": [
-                    "fbmwMGWiseWoman"
-                ]
             }
         }
     ]

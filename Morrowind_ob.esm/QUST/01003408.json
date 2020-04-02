@@ -150,11 +150,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 1, 
+                            "CompiledSize": 14, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
+                        "SCTX - Result script source": "set fbmwMVMissingCompanion.follownow to 1", 
+                        "References": [
+                            "fbmwMVMissingCompanion"
+                        ]
                     }
                 }
             ]
@@ -263,7 +268,7 @@
             "QSTA - Target": {
                 "Target": "fbmwfalanuref", 
                 "Flags": {}, 
-                "Unused": "00 4C 21"
+                "Unused": "00 15 25"
             }, 
             "Conditions": [
                 {
@@ -296,7 +301,7 @@
             "QSTA - Target": {
                 "Target": "mwDrerelIndarenREF", 
                 "Flags": {}, 
-                "Unused": "00 4C 21"
+                "Unused": "00 15 25"
             }, 
             "Conditions": [
                 {

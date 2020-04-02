@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010100D9"
+                "FormID": "010100D7"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,7 +24,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHLiteracyCampaign", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "013209C7", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -33,7 +33,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Thank you for bringing me the books, outlander.", 
+                    "NAM1 - Response Text": "You have done a good deed for Vala Catraso's students. You have my gratitude.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -51,18 +51,23 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0valaScatraso", 
+                    "Parameter #1": "0ilmeniSdren", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHHLiteracyCampaign 100", 
+                "References": [
+                    "fbmwHHLiteracyCampaign"
+                ]
             }
         }, 
         {
@@ -120,6 +125,60 @@
             "Choices": [
                 "1peopleScannotSread1", 
                 "1peopleScannotSread2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1peopleScannotSread", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010100D9"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHHLiteracyCampaign", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you for bringing me the books, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHLiteracyCampaign", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0valaScatraso", 
+                    "Parameter #2": "00 00 00 00"
+                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -194,65 +253,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010100D7"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHLiteracyCampaign", 
-            "PNAM - Previous INFO": "013209C7", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You have done a good deed for Vala Catraso's students. You have my gratitude.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHLiteracyCampaign", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ilmeniSdren", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHHLiteracyCampaign 100", 
-                "References": [
-                    "fbmwHHLiteracyCampaign"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1peopleScannotSread", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "013209C8"
             }, 
             "DATA - ": {
@@ -299,14 +299,6 @@
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0Hlaalu", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 

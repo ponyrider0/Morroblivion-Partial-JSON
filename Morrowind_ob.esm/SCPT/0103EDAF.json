@@ -7,18 +7,18 @@
     "EDID - Editor ID": "fbmwCo13aQScript", 
     "SCHR - Basic Script Data": {
         "Unused": "00 00 00 00", 
-        "RefCount": 8, 
-        "CompiledSize": 443, 
-        "VariableCount": 5, 
+        "RefCount": 10, 
+        "CompiledSize": 684, 
+        "VariableCount": 10, 
         "Type": 1
     }, 
-    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 AD 01 00 00 16 00 0D 00 09 00 09 00 20 73 01 00 20 31 20 3D 3D 16 00 0D 00 07 00 09 00 20 73 02 00 20 31 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 03 00 20 31 20 3D 3D 16 00 0D 00 03 00 09 00 20 73 04 00 20 31 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 05 00 20 31 20 3D 3D 39 10 0A 00 02 00 72 07 00 6E 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 16 00 15 00 06 00 11 00 20 58 3A 10 05 00 01 00 72 07 00 20 33 30 20 3D 3D 1C 00 01 00 16 10 05 00 01 00 72 08 00 1C 00 02 00 16 10 05 00 01 00 72 08 00 1C 00 03 00 16 10 05 00 01 00 72 08 00 1C 00 04 00 16 10 05 00 01 00 72 08 00 1C 00 05 00 16 10 05 00 01 00 72 08 00 1C 00 06 00 16 10 05 00 01 00 72 08 00 19 00 00 00 16 00 15 00 0D 00 11 00 20 58 3A 10 05 00 01 00 72 07 00 20 33 30 20 3D 3D 16 00 12 00 0B 00 0E 00 20 72 01 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 09 00 0E 00 20 72 02 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 07 00 0E 00 20 72 03 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 05 00 0E 00 20 72 04 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 03 00 0E 00 20 72 05 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 01 00 0E 00 20 72 06 00 58 2E 10 00 00 20 31 20 3D 3D 39 10 0A 00 02 00 72 07 00 6E 28 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "Scn fbmwCo13aQScript\n\nshort ormvardequip\nshort bryngrimequip\nshort audmundequip\nshort alfbrandequip\nshort valgeirequip\n\nbegin gamemode\n\tif ormvardequip == 1\n\t\tif bryngrimequip == 1\n\t\t\tif audmundequip == 1\n\t\t\t\tif alfbrandequip == 1\n\t\t\t\t\tif valgeirequip == 1\n\t\t\t\t\t\tSetStage fbmwCO13a 25\n\t\t\t\t\tendif\n\t\t\t\tendif\n\t\t\tendif\n\t\tendif\n\tendif\n\n\tif GetStage fbmwCO13a == 30\n\t\tAlfbrandCREF.StartCombat Player\n\t\tAudmundCREF.StartCombat Player\n\t\tBryngrimCREF.StartCombat Player\n\t\tOrmvardCREF.StartCombat Player\n\t\tValgeirCREF.StartCombat Player\n\t\tToralfCREF.StartCombat Player\n\tendif\n\n\tif GetStage fbmwCO13a == 30\n\t\tif AlfbrandCREF.GetDead == 1\n\t\t\tif AudmundCREF.GetDead == 1\n\t\t\t\tif BryngrimCREF.GetDead == 1\n\t\t\t\t\tif OrmvardCREF.GetDead == 1\n\t\t\t\t\t\tif ValgeirCREF.GetDead == 1\n\t\t\t\t\t\t\tif ToralfCREF.GetDead == 1\n\t\t\t\t\t\t\t\tSetStage fbmwCO13a 40\n\t\t\t\t\t\t\tendif\n\t\t\t\t\t\tendif\n\t\t\t\t\tendif\n\t\t\t\tendif\n\t\t\tendif\n\t\tendif\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 892 </CSECaretPos>\n;</CSEBlock>", 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 9E 02 00 00 16 00 15 00 0E 00 11 00 20 58 3A 10 05 00 01 00 72 07 00 20 31 30 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 09 00 20 30 20 3D 3D 65 17 13 00 01 12 00 56 03 00 00 07 00 58 08 00 5F 18 04 00 00 00 00 65 17 1A 00 01 19 00 56 01 00 00 08 00 58 00 00 67 17 0B 00 01 08 00 56 03 00 00 07 00 00 16 00 0D 00 01 00 09 00 20 73 08 00 20 30 20 3D 3D 15 00 07 00 73 09 00 02 00 20 31 19 00 00 00 19 00 00 00 16 00 0D 00 05 00 09 00 20 73 0A 00 20 30 20 3D 3D 65 17 13 00 01 12 00 56 03 00 00 07 00 58 09 00 5F 18 04 00 00 00 00 65 17 1A 00 01 19 00 56 01 00 00 08 00 58 00 00 67 17 0B 00 01 08 00 56 03 00 00 07 00 00 16 00 0D 00 01 00 09 00 20 73 08 00 20 30 20 3D 3D 15 00 07 00 73 0A 00 02 00 20 31 19 00 00 00 19 00 00 00 19 00 00 00 16 00 0D 00 09 00 09 00 20 73 01 00 20 31 20 3D 3D 16 00 0D 00 07 00 09 00 20 73 02 00 20 31 20 3D 3D 16 00 0D 00 05 00 09 00 20 73 03 00 20 31 20 3D 3D 16 00 0D 00 03 00 09 00 20 73 04 00 20 31 20 3D 3D 16 00 0D 00 01 00 09 00 20 73 05 00 20 31 20 3D 3D 39 10 0A 00 02 00 72 07 00 6E 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 16 00 15 00 06 00 11 00 20 58 3A 10 05 00 01 00 72 07 00 20 33 30 20 3D 3D 1C 00 01 00 16 10 05 00 01 00 72 0A 00 1C 00 02 00 16 10 05 00 01 00 72 0A 00 1C 00 03 00 16 10 05 00 01 00 72 0A 00 1C 00 04 00 16 10 05 00 01 00 72 0A 00 1C 00 05 00 16 10 05 00 01 00 72 0A 00 1C 00 06 00 16 10 05 00 01 00 72 0A 00 19 00 00 00 16 00 15 00 0D 00 11 00 20 58 3A 10 05 00 01 00 72 07 00 20 33 30 20 3D 3D 16 00 12 00 0B 00 0E 00 20 72 01 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 09 00 0E 00 20 72 02 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 07 00 0E 00 20 72 03 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 05 00 0E 00 20 72 04 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 03 00 0E 00 20 72 05 00 58 2E 10 00 00 20 31 20 3D 3D 16 00 12 00 01 00 0E 00 20 72 06 00 58 2E 10 00 00 20 31 20 3D 3D 39 10 0A 00 02 00 72 07 00 6E 28 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "Scn fbmwCo13aQScript\n\nshort ormvardequip\nshort bryngrimequip\nshort audmundequip\nshort alfbrandequip\nshort valgeirequip\n\nshort bag1looted\nshort bag2looted\narray_var bagcontents\nshort numItemsLeft\n\nbegin gamemode\n\tif (GetStage fbmwCO13a == 10)\n\t\tif (bag1looted == 0)\n\t\t\t; \"all or none\", keep performing check until both bags are fully looted\n\t\t\tlet bagcontents := mwColonySack1REF.GetItems\n\t\t\tlet numItemsLeft := ar_Size bagcontents\n\t\t\tif (numItemsLeft == 0)\n\t\t\t\tset bag1looted to 1\n\t\t\tendif\n\t\tendif\n\t\tif (bag2looted == 0)\n\t\t\tlet bagcontents := mwColonySack2REF.GetItems\n\t\t\tlet numItemsLeft := ar_Size bagcontents\n\t\t\tif (numItemsLeft == 0)\n\t\t\t\tset bag2looted to 1\n\t\t\tendif\n\t\tendif\t\t\n\tendif\n\n\tif ormvardequip == 1\n\t\tif bryngrimequip == 1\n\t\t\tif audmundequip == 1\n\t\t\t\tif alfbrandequip == 1\n\t\t\t\t\tif valgeirequip == 1\n\t\t\t\t\t\tSetStage fbmwCO13a 25\n\t\t\t\t\tendif\n\t\t\t\tendif\n\t\t\tendif\n\t\tendif\n\tendif\n\n\tif GetStage fbmwCO13a == 30\n\t\tAlfbrandCREF.StartCombat Player\n\t\tAudmundCREF.StartCombat Player\n\t\tBryngrimCREF.StartCombat Player\n\t\tOrmvardCREF.StartCombat Player\n\t\tValgeirCREF.StartCombat Player\n\t\tToralfCREF.StartCombat Player\n\tendif\n\n\tif GetStage fbmwCO13a == 30\n\t\tif AlfbrandCREF.GetDead == 1\n\t\t\tif AudmundCREF.GetDead == 1\n\t\t\t\tif BryngrimCREF.GetDead == 1\n\t\t\t\t\tif OrmvardCREF.GetDead == 1\n\t\t\t\t\t\tif ValgeirCREF.GetDead == 1\n\t\t\t\t\t\t\tif ToralfCREF.GetDead == 1\n\t\t\t\t\t\t\t\tSetStage fbmwCO13a 40\n\t\t\t\t\t\t\tendif\n\t\t\t\t\t\tendif\n\t\t\t\t\tendif\n\t\t\t\tendif\n\t\t\tendif\n\t\tendif\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 636 </CSECaretPos>\n;</CSEBlock>", 
     "Local Variables": [
         {
             "SLSD - Local Variable Data": {
                 "Index": 1, 
-                "Unused": "6F 64 0D 48 B4 EB 9C", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
@@ -28,7 +28,7 @@
         {
             "SLSD - Local Variable Data": {
                 "Index": 2, 
-                "Unused": "00 00 00 00 00 00 00", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
@@ -38,7 +38,7 @@
         {
             "SLSD - Local Variable Data": {
                 "Index": 3, 
-                "Unused": "6A 63 7F 74 6B 65 7F", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
@@ -48,7 +48,7 @@
         {
             "SLSD - Local Variable Data": {
                 "Index": 4, 
-                "Unused": "6B 65 7F 74 6B 64 7F", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
@@ -58,12 +58,50 @@
         {
             "SLSD - Local Variable Data": {
                 "Index": 5, 
-                "Unused": "6D 63 7F 80 6C 63 7F", 
+                "Unused": "CD CD CD CD CD CD CD", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
             }, 
             "SCVR - Name": "valgeirequip"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "bagcontents"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 8, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "numItemsLeft"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "bag1looted"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 10, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "bag2looted"
         }
     ], 
     "References": [
@@ -74,6 +112,8 @@
         "ValgeirCREF", 
         "ToralfCREF", 
         "fbmwCO13a", 
+        "mwColonySack1REF", 
+        "mwColonySack2REF", 
         20
     ]
 }

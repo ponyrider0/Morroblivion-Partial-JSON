@@ -11,7 +11,10 @@
         "Flags": {}
     }, 
     "QSTI - Quest": "fbmwVAShashev", 
-    "PNAM - Previous INFO": "01F8A51B", 
+    "PNAM - Previous INFO": "01F8A51A", 
+    "Add topics": [
+        "1VampireSdust"
+    ], 
     "Responses": [
         {
             "TRDT - Response Data": {
@@ -36,19 +39,19 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
+            "Type": 2, 
             "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwVAShashev", 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 47, 
+            "Parameter #1": "0keyUshashev", 
             "Parameter #2": "00 00 00 00"
         }, 
         {
             "Type": 0, 
             "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0sirilonwe", 
+            "Comparison Value": 9.99999997475243, 
+            "Function": 58, 
+            "Parameter #1": "fbmwVAShashev", 
             "Parameter #2": "00 00 00 00"
         }, 
         {
@@ -60,28 +63,29 @@
             "Parameter #2": "00 00 00 00"
         }, 
         {
-            "Type": 2, 
+            "Type": 0, 
             "Unused": 0, 
             "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0keyUshashev", 
+            "Function": 72, 
+            "Parameter #1": "0sirilonwe", 
             "Parameter #2": "00 00 00 00"
         }
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
             "Unused": "00 00 00 00", 
-            "RefCount": 3, 
-            "CompiledSize": 46, 
+            "RefCount": 4, 
+            "CompiledSize": 55, 
             "VariableCount": 0, 
             "Type": 0
         }, 
-        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-        "SCTX - Result script source": "setstage fbmwvashashev 100\r\nplayer.removeitem 0keyushashev 1\r\nadditem 0keyushashev 1", 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 36 10 05 00 01 00 72 04 00", 
+        "SCTX - Result script source": "setstage fbmwvashashev 100\r\nplayer.removeitem 0keyushashev 1\r\nadditem 0keyushashev 1\r\nstartquest fbmwVAVampDust", 
         "References": [
             20, 
             "fbmwVAShashev", 
-            "0keyUshashev"
+            "0keyUshashev", 
+            "fbmwVAVampDust"
         ]
     }
 }

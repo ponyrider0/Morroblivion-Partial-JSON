@@ -17,60 +17,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01007A99"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTStronghold", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You have alreadsy brought me the book. I hope your stronghold is satisfactory.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 250.000000368811, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHTStronghold", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0llunelaShleran", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1DwemerSAnimunculi", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01007A96"
             }, 
             "DATA - ": {
@@ -113,6 +59,60 @@
             "Choices": [
                 "1DwemerSAnimunculi3", 
                 "1DwemerSAnimunculi4"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1DwemerSAnimunculi", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01007A99"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTStronghold", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have alreadsy brought me the book. I hope your stronghold is satisfactory.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 250.000000368811, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHTStronghold", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0llunelaShleran", 
+                    "Parameter #2": "00 00 00 00"
+                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -259,14 +259,6 @@
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
                     "Function": 132, 
                     "Parameter #1": "fbmwMagesGuild", 
                     "Parameter #2": "00 00 00 00"
@@ -275,8 +267,8 @@
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0edwinnaSelbert", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -318,22 +310,6 @@
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 132, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 66, 
                     "Unused": 0, 
                     "Comparison Value": 0, 
@@ -345,8 +321,16 @@
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 132, 
+                    "Parameter #1": "fbmwMagesGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0edwinnaSelbert", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

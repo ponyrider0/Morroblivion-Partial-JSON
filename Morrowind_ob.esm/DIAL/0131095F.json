@@ -112,14 +112,14 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013217D1"
+                "FormID": "0101BE94"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQ01", 
+            "QSTI - Quest": "MorroDefaultQuest", 
             "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
@@ -129,7 +129,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Old Caius rents a little bed-and-basket just up the hill on the north edge of town.", 
+                    "NAM1 - Response Text": "Caius has gone back to the Imperial City? He says he's been recalled? I wonder. I never know what he's thinking.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -139,115 +139,25 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "Go out the front door -- NOT the upper door to the terrace -- then right up the stairs, then left at the top of the stairs and down to the end of the street.", 
+                    "NAM1 - Response Text": " I think he's involved in something secret, something dangerous. I was hoping he might help us. Now he's gone. I don't know what to think.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bacolaScloscius", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 160, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwMQ01", 
+                    "Parameter #1": "fbmwMQ09", 
                     "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "SetStage FBMWMQ01 10", 
-                "References": [
-                    "fbmwMQ01"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1CaiusSCosades", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217CD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "013217D1", 
-            "Add topics": [
-                "1ReportStoSCaiusSCosades", 
-                "1Balmora", 
-                "1SouthSWall"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Report to Caius Cosades in Balmora. I can't tell you where to find him, but you are to go to the South Wall Cornerclub and ask for him.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Someone there can direct you to him.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0chargenScaptain", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #1": "0mehraSmilo", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -259,76 +169,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1CaiusSCosades", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217D4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "013217CD", 
-            "Add topics": [
-                "1BacolaSCloscius"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "That old sugar tooth? I'm not sure where he's living now. But ask Bacola Closcius, the owner... he'll know.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "BalmoraVSSouthSWallSCornerclub", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
-                "SCTX - Result script source": "SetStage FBMWMQ01 5", 
-                "References": [
-                    "fbmwMQ01"
-                ]
             }
         }, 
         {
@@ -444,7 +284,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013217D0"
+                "FormID": "013217CD"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -452,149 +292,10 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "0101FAA0", 
+            "PNAM - Previous INFO": "013217D1", 
             "Add topics": [
-                "1business", 
-                "1CaiusSCosades"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I don't know what your business with him is, but be careful. Caius Cosades may appear to be a pathetic old man, but don't judge by appearances.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Some people made that mistake a while ago, and now they're not with us anymore.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0onlyhestandsthere", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1CaiusSCosades", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217D7"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "013217D0", 
-            "Add topics": [
-                "1skooma"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "No idea where he is. In trouble. Or in the skooma, most likely.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "Balmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 68, 
-                    "Parameter #1": "Thief", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1CaiusSCosades", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217D6"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "013217D7", 
-            "Add topics": [
+                "1ReportStoSCaiusSCosades", 
+                "1Balmora", 
                 "1SouthSWall"
             ], 
             "Responses": [
@@ -605,7 +306,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "The old fellow in trouble again, eh? He has a number of bad habits -- like forgetting to pay the Man in a timely manner. I don't know where he is.", 
+                    "NAM1 - Response Text": "Report to Caius Cosades in Balmora. I can't tell you where to find him, but you are to go to the South Wall Cornerclub and ask for him.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -615,77 +316,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "But he hangs out at the South Wall Cornerclub. Ask for him there.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "Balmora", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 68, 
-                    "Parameter #1": "Rogue", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1CaiusSCosades", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013217D2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "013217D6", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "What? Do I look like his mother? That I should know where he is?  I might know, yes. I might tell my pals, yes. But you are not my pal.", 
+                    "NAM1 - Response Text": "Someone there can direct you to him.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -695,7 +326,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0bacolaScloscius", 
+                    "Parameter #1": "0chargenScaptain", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -704,14 +335,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ01", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -865,6 +488,361 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "013217D0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "0101FAA0", 
+            "Add topics": [
+                "1business", 
+                "1CaiusSCosades"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I don't know what your business with him is, but be careful. Caius Cosades may appear to be a pathetic old man, but don't judge by appearances.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Some people made that mistake a while ago, and now they're not with us anymore.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0onlyhestandsthere", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1CaiusSCosades", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013217D1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Old Caius rents a little bed-and-basket just up the hill on the north edge of town.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Go out the front door -- NOT the upper door to the terrace -- then right up the stairs, then left at the top of the stairs and down to the end of the street.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bacolaScloscius", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 160, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ01", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "SetStage FBMWMQ01 10", 
+                "References": [
+                    "fbmwMQ01"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1CaiusSCosades", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013217D2"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "013217D6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "What? Do I look like his mother? That I should know where he is?  I might know, yes. I might tell my pals, yes. But you are not my pal.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bacolaScloscius", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ01", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1CaiusSCosades", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013217D3"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "0101BE94", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "He's okay. Sour. A worrier. But he knows his job, and leaves us alone to do ours.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 72, 
+                    "Parameter #1": "0caiusScosades", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0Blades", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 133, 
+                    "Parameter #1": "00 00 00 00", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1CaiusSCosades", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013217D4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "013217CD", 
+            "Add topics": [
+                "1BacolaSCloscius"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "That old sugar tooth? I'm not sure where he's living now. But ask Bacola Closcius, the owner... he'll know.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "BalmoraVSSouthSWallSCornerclub", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
+                "SCTX - Result script source": "SetStage FBMWMQ01 5", 
+                "References": [
+                    "fbmwMQ01"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1CaiusSCosades", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "013217D5"
             }, 
             "DATA - ": {
@@ -932,15 +910,18 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101BE94"
+                "FormID": "013217D6"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "013217D7", 
+            "Add topics": [
+                "1SouthSWall"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -949,7 +930,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Caius has gone back to the Imperial City? He says he's been recalled? I wonder. I never know what he's thinking.", 
+                    "NAM1 - Response Text": "The old fellow in trouble again, eh? He has a number of bad habits -- like forgetting to pay the Man in a timely manner. I don't know where he is.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -959,25 +940,41 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": " I think he's involved in something secret, something dangerous. I was hoping he might help us. Now he's gone. I don't know what to think.", 
+                    "NAM1 - Response Text": "But he hangs out at the South Wall Cornerclub. Ask for him there.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
+                    "Function": 67, 
+                    "Parameter #1": "Balmora", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mehraSmilo", 
+                    "Function": 68, 
+                    "Parameter #1": "Rogue", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -996,15 +993,18 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013217D3"
+                "FormID": "013217D7"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "0101BE94", 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "013217D0", 
+            "Add topics": [
+                "1skooma"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1013,7 +1013,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "He's okay. Sour. A worrier. But he knows his job, and leaves us alone to do ours.", 
+                    "NAM1 - Response Text": "No idea where he is. In trouble. Or in the skooma, most likely.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1021,25 +1021,25 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 72, 
-                    "Parameter #1": "0caiusScosades", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "Balmora", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0Blades", 
+                    "Function": 68, 
+                    "Parameter #1": "Thief", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 0, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 133, 
-                    "Parameter #1": "00 00 00 00", 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {

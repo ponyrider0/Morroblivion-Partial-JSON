@@ -61,15 +61,16 @@
     "Result Script": {
         "SCHR - Basic Script Data": {
             "Unused": "00 00 00 00", 
-            "RefCount": 1, 
-            "CompiledSize": 49, 
+            "RefCount": 2, 
+            "CompiledSize": 60, 
             "VariableCount": 0, 
             "Type": 0
         }, 
-        "SCDA - Compiled result script": "59 10 1F 00 01 00 15 00 50 72 6F 6D 6F 74 69 6F 6E 20 41 63 63 65 70 74 65 64 2E 2E 2E 00 00 00 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 34", 
-        "SCTX - Result script source": "Message \"Promotion Accepted...\"\r\nSET fbmwMGAdvancement.MageAdvancement TO 4", 
+        "SCDA - Compiled result script": "59 10 1F 00 01 00 15 00 50 72 6F 6D 6F 74 69 6F 6E 20 41 63 63 65 70 74 65 64 2E 2E 2E 00 00 00 00 00 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 34 83 18 07 00 01 05 00 52 02 00 00", 
+        "SCTX - Result script source": "Message \"Promotion Accepted...\"\r\nSET fbmwMGAdvancement.MageAdvancement TO 4\r\ncall fbmwMGAdvancementUpdateNow", 
         "References": [
-            "fbmwMGAdvancement"
+            "fbmwMGAdvancement", 
+            "fbmwMGAdvancementUpdateNow"
         ]
     }
 }

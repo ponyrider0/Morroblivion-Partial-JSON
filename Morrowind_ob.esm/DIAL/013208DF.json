@@ -27,14 +27,11 @@
             }, 
             "QSTI - Quest": "fbmwMVFakeSlave", 
             "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1need"
-            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
+                        "Emotion Type": 1, 
+                        "Emotion Value": 100, 
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
@@ -68,8 +65,8 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "moddisposition player -20\r\nsetstage FBMWMVFakeSlave 50", 
+                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 02 00 6E 1E 00 00 00", 
+                "SCTX - Result script source": "moddisposition player -20\r\nsetstage fbmwMVFakeSlave 30", 
                 "References": [
                     20, 
                     "fbmwMVFakeSlave"
@@ -80,7 +77,9 @@
             "Topic": "1aidSaSpoorSArgonian3", 
             "Record Header": {
                 "Signature": "INFO", 
-                "Record Flags": {}, 
+                "Record Flags": {
+                    "Initially disabled": true
+                }, 
                 "FormID": "01323071"
             }, 
             "DATA - ": {

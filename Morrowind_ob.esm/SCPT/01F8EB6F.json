@@ -8,17 +8,17 @@
     "SCHR - Basic Script Data": {
         "Unused": "00 00 00 00", 
         "RefCount": 5, 
-        "CompiledSize": 301, 
+        "CompiledSize": 287, 
         "VariableCount": 15, 
         "Type": 1
     }, 
-    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 1F 01 00 00 16 00 1E 00 03 00 1A 00 20 72 01 00 58 62 14 05 00 01 00 72 02 00 20 73 0C 00 20 30 20 3D 3D 20 26 26 1C 00 01 00 1D 10 05 00 01 00 72 02 00 15 00 07 00 73 0C 00 02 00 20 31 15 00 09 00 66 0E 00 04 00 20 30 2E 34 18 00 0D 00 02 00 09 00 20 73 0C 00 20 31 20 3D 3D 1C 00 01 00 1C 10 05 00 01 00 72 02 00 15 00 07 00 73 0C 00 02 00 20 32 19 00 00 00 16 00 1E 00 02 00 1A 00 20 72 01 00 58 62 14 05 00 01 00 72 03 00 20 73 0D 00 20 30 20 3D 3D 20 26 26 1C 00 01 00 1D 10 05 00 01 00 72 03 00 15 00 07 00 73 0D 00 02 00 20 31 18 00 0D 00 02 00 09 00 20 73 0D 00 20 31 20 3D 3D 1C 00 01 00 1C 10 05 00 01 00 72 03 00 15 00 07 00 73 0D 00 02 00 20 32 19 00 00 00 16 00 0D 00 02 00 09 00 20 73 0F 00 20 30 20 3D 3D 75 19 1C 00 03 0A 00 53 05 00 4F 6E 48 69 74 05 00 52 04 00 0C 00 53 03 00 72 65 66 52 05 00 24 15 00 07 00 73 0F 00 02 00 20 31 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "scn mwBlightControlScript\n\nshort corprusimmunityupdated\nshort corprusupdated\nfloat fQuestDelayTime\nshort DoOnce\n\nBegin GameMode\n\n\tif (Player.HasSpell 0corprusSimmunity) && (corprusimmunityupdated == 0)\t\n\t\tPlayer.RemoveSpell 0corprusSimmunity\n\t\tset corprusimmunityupdated to 1\n\t\tset fQuestDelayTime to 0.4\n\telseif (corprusimmunityupdated == 1)\n\t\tPlayer.AddSpell 0corprusSimmunity\n\t\tset corprusimmunityupdated to 2\n\tendif\n\t\n\tif (Player.HasSpell 0corprus) && (corprusupdated == 0)\n\t\tPlayer.RemoveSpell 0corprus\n\t\tset corprusupdated to 1\n\telseif (corprusupdated == 1)\n\t\tPlayer.AddSpell 0corprus\n\t\tset corprusupdated to 2\n\tendif\n\t\n\tif (DoOnce == 0)\t\t\n\t\tSetEventHandler \"OnHit\", mwBlightTransmissionFunc, \"ref\"::playerRef\n\t\tset DoOnce to 1\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 27 </CSECaretPos>\n;</CSEBlock>", 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 11 01 00 00 16 00 0A 00 10 00 06 00 20 58 E7 14 00 00 75 19 1C 00 03 0A 00 53 05 00 4F 6E 48 69 74 05 00 52 02 00 0C 00 53 03 00 72 65 66 52 03 00 24 16 00 1E 00 03 00 1A 00 20 72 01 00 58 62 14 05 00 01 00 72 04 00 20 73 0C 00 20 30 20 3D 3D 20 26 26 1C 00 01 00 1D 10 05 00 01 00 72 04 00 15 00 07 00 73 0C 00 02 00 20 31 15 00 09 00 66 0E 00 04 00 20 30 2E 34 18 00 0D 00 02 00 09 00 20 73 0C 00 20 31 20 3D 3D 1C 00 01 00 1C 10 05 00 01 00 72 04 00 15 00 07 00 73 0C 00 02 00 20 32 19 00 00 00 16 00 1E 00 02 00 1A 00 20 72 01 00 58 62 14 05 00 01 00 72 05 00 20 73 0D 00 20 30 20 3D 3D 20 26 26 1C 00 01 00 1D 10 05 00 01 00 72 05 00 15 00 07 00 73 0D 00 02 00 20 31 18 00 0D 00 02 00 09 00 20 73 0D 00 20 31 20 3D 3D 1C 00 01 00 1C 10 05 00 01 00 72 05 00 15 00 07 00 73 0D 00 02 00 20 32 19 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwBlightControlScript\n\nshort corprusimmunityupdated\nshort corprusupdated\nfloat fQuestDelayTime\n\nBegin GameMode\n\tif(GetGameLoaded)\n\t\tSetEventHandler \"OnHit\", mwBlightTransmissionFunc, \"ref\"::playerRef\n\t\tif (Player.HasSpell 0corprusSimmunity) && (corprusimmunityupdated == 0)\t\n\t\t\tPlayer.RemoveSpell 0corprusSimmunity\n\t\t\tset corprusimmunityupdated to 1\n\t\t\tset fQuestDelayTime to 0.4\n\t\telseif (corprusimmunityupdated == 1)\n\t\t\tPlayer.AddSpell 0corprusSimmunity\n\t\t\tset corprusimmunityupdated to 2\n\t\tendif\n\n\t\tif (Player.HasSpell 0corprus) && (corprusupdated == 0)\n\t\t\tPlayer.RemoveSpell 0corprus\n\t\t\tset corprusupdated to 1\n\t\telseif (corprusupdated == 1)\n\t\t\tPlayer.AddSpell 0corprus\n\t\t\tset corprusupdated to 2\n\t\tendif\n\tendif\nEnd\n;<CSEBlock>\n;<CSECaretPos> 0 </CSECaretPos>\n;</CSEBlock>", 
     "Local Variables": [
         {
             "SLSD - Local Variable Data": {
                 "Index": 12, 
-                "Unused": "00 00 00 00 00 00 00", 
+                "Unused": "00 00 00 4C 52 F1 10", 
                 "Flags": {
                     "IsLongOrShort": true
                 }
@@ -38,27 +38,17 @@
         {
             "SLSD - Local Variable Data": {
                 "Index": 14, 
-                "Unused": "8E C1 10 BC 00 00 00", 
+                "Unused": "00 00 00 4C 52 F1 10", 
                 "Flags": {}
             }, 
             "SCVR - Name": "fQuestDelayTime"
-        }, 
-        {
-            "SLSD - Local Variable Data": {
-                "Index": 15, 
-                "Unused": "8E C1 10 10 00 00 00", 
-                "Flags": {
-                    "IsLongOrShort": true
-                }
-            }, 
-            "SCVR - Name": "DoOnce"
         }
     ], 
     "References": [
         20, 
-        "0corprusSimmunity", 
-        "0corprus", 
         "mwBlightTransmissionFunc", 
-        20
+        20, 
+        "0corprusSimmunity", 
+        "0corprus"
     ]
 }

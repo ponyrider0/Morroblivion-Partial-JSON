@@ -25,16 +25,10 @@
             }, 
             "QSTI - Quest": "fbmwMVFakeSlave", 
             "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1guard", 
-                "1DrenSPlantation", 
-                "1OrvasSDren", 
-                "1Ienith"
-            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
+                        "Emotion Type": 3, 
                         "Emotion Value": 50, 
                         "Unused": "CD CD CD", 
                         "Response number": 1
@@ -44,7 +38,7 @@
                 }, 
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
+                        "Emotion Type": 3, 
                         "Emotion Value": 50, 
                         "Unused": "CD CD CD", 
                         "Response number": 2
@@ -55,11 +49,11 @@
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tul", 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHTwinLamps1", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -68,6 +62,14 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tul", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -102,17 +104,11 @@
             }, 
             "QSTI - Quest": "fbmwMVFakeSlave", 
             "PNAM - Previous INFO": "01323060", 
-            "Add topics": [
-                "1guard", 
-                "1DrenSPlantation", 
-                "1OrvasSDren", 
-                "1Ienith"
-            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
+                        "Emotion Type": 5, 
+                        "Emotion Value": 75, 
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
@@ -121,8 +117,8 @@
                 }, 
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
+                        "Emotion Type": 5, 
+                        "Emotion Value": 75, 
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
@@ -132,11 +128,11 @@
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 128, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tul", 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHTwinLamps1", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -146,21 +142,29 @@
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tul", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
                     "RefCount": 2, 
-                    "CompiledSize": 23, 
+                    "CompiledSize": 37, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 2D 00 00 00 58 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "setstage FBMWMVFakeSlave 45\r\naddtopic 1twinSlamps", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 2D 00 00 00 58 10 05 00 01 00 72 02 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
+                "SCTX - Result script source": "setstage FBMWMVFakeSlave 45\r\naddtopic 1travelstogether\r\nset fbmwmvfakeslave.follownow to 1\r\n", 
                 "References": [
                     "fbmwMVFakeSlave", 
-                    "1TwinSLamps"
+                    "1travelStogether"
                 ]
             }
         }

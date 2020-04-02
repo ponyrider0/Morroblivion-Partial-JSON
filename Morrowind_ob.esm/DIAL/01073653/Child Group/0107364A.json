@@ -1,0 +1,83 @@
+{
+    "Topic": "mwSkillTrain1Conjuration", 
+    "Record Header": {
+        "Signature": "INFO", 
+        "Record Flags": {}, 
+        "FormID": "0107364A"
+    }, 
+    "DATA - ": {
+        "Type": 0, 
+        "Next Speaker": 0, 
+        "Flags": {}
+    }, 
+    "QSTI - Quest": "mwSkillTrain", 
+    "PNAM - Previous INFO": 0, 
+    "Responses": [
+        {
+            "TRDT - Response Data": {
+                "Emotion Type": 0, 
+                "Emotion Value": 50, 
+                "Unused": "CD CD CD", 
+                "Response number": 1
+            }, 
+            "NAM1 - Response Text": "Very well. I shall train you in Conjuration.", 
+            "NAM2 - Actor notes": ""
+        }
+    ], 
+    "Conditions": [
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0ajira", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0methalSseran", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0abelleSchriditte", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0AvusSBelvilo", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 1, 
+            "Unused": 0, 
+            "Comparison Value": 0.999999997475243, 
+            "Function": 72, 
+            "Parameter #1": "0anarenen", 
+            "Parameter #2": "00 00 00 00"
+        }
+    ], 
+    "Result Script": {
+        "SCHR - Basic Script Data": {
+            "Unused": "00 00 00 00", 
+            "RefCount": 1, 
+            "CompiledSize": 42, 
+            "VariableCount": 0, 
+            "Type": 0
+        }, 
+        "SCDA - Compiled result script": "A8 16 04 00 01 00 15 00 15 00 12 00 72 01 00 73 11 00 0A 00 20 58 0E 10 04 00 01 00 15 00 A9 16 08 00 01 00 72 01 00 73 11 00", 
+        "SCTX - Result script source": "SetTrainerSkill conjuration\r\nset mwSkillTrain.tempval to GetAV conjuration\r\nSetTrainerLevel mwSkillTrain.tempval", 
+        "References": [
+            "mwSkillTrain"
+        ]
+    }
+}

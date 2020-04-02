@@ -76,7 +76,7 @@
                     "QSDT - Stage Flags": {
                         "Complete quest": true
                     }, 
-                    "CNAM - Log Entry": "I have purchased a Wizard's Staff and I may now advance to the rank of Wizard.", 
+                    "CNAM - Log Entry": "I have obtained a Wizard's Staff and I may now advance to the rank of Wizard.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
@@ -116,6 +116,41 @@
                             "fbmwMGAdvancement"
                         ]
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "01847584", 
+                "Flags": {}, 
+                "Unused": "00 15 10"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWizardsStaff", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0ebonySwizardAsSstaff", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ]
         }

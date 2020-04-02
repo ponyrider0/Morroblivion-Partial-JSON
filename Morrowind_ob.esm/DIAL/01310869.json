@@ -16,6 +16,80 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0101FAB4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "013210A4", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, this book is written in both Aldmeris and in Dwemer.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Many books were written in both languages in the days of Resdayn when Dunmer and Dwemer ruled together peacefully.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "I'd offer to translate, but this is really just a boring travel guide. If you find any other books in Dwemer, I could translate them for you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUhanginggardenswasten", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "FBMWTempDwemer", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1HangingSGardens", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "013210A0"
             }, 
             "DATA - ": {
@@ -448,80 +522,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1HangingSGardens", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101FAB4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "013210A4", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, this book is written in both Aldmeris and in Dwemer.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Many books were written in both languages in the days of Resdayn when Dunmer and Dwemer ruled together peacefully.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "I'd offer to translate, but this is really just a boring travel guide. If you find any other books in Dwemer, I could translate them for you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUhanginggardenswasten", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "FBMWTempDwemer", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

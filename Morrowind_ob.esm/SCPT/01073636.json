@@ -1,0 +1,67 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01073636"
+    }, 
+    "EDID - Editor ID": "mwSetStartingSpells", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 26, 
+        "CompiledSize": 581, 
+        "VariableCount": 2, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 0C 00 07 00 31 02 00 00 01 01 01 00 01 00 16 00 0D 00 05 00 09 00 20 73 01 00 20 31 20 3D 3D 16 00 10 00 02 00 0C 00 20 72 02 00 73 06 00 20 31 20 3D 3D 1C 00 01 00 6B 16 05 00 01 00 72 03 00 1C 00 01 00 6B 16 05 00 01 00 72 04 00 19 00 00 00 1C 00 01 00 67 16 0A 00 02 00 72 05 00 6E 01 00 00 00 17 00 02 00 06 00 1C 00 01 00 6A 16 05 00 01 00 72 03 00 1C 00 01 00 6A 16 05 00 01 00 72 04 00 16 00 17 00 02 00 13 00 20 72 01 00 58 2F 10 05 00 01 00 72 05 00 20 30 20 3D 3D 1C 00 01 00 66 16 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 14 19 05 00 01 00 72 05 00 19 00 00 00 19 00 00 00 15 00 09 00 73 02 00 04 00 20 73 01 00 23 19 08 00 02 00 73 02 00 72 06 00 23 19 08 00 02 00 73 02 00 72 07 00 23 19 08 00 02 00 73 02 00 72 08 00 23 19 08 00 02 00 73 02 00 72 09 00 23 19 08 00 02 00 73 02 00 72 0A 00 23 19 08 00 02 00 73 02 00 72 0B 00 23 19 08 00 02 00 73 02 00 72 0C 00 16 00 10 00 02 00 0C 00 20 72 02 00 73 06 00 20 31 20 3D 3D 23 19 08 00 02 00 73 02 00 72 0D 00 23 19 08 00 02 00 73 02 00 72 0E 00 17 00 02 00 02 00 23 19 0A 00 02 00 6E 00 00 00 00 72 0D 00 23 19 0A 00 02 00 6E 00 00 00 00 72 0E 00 19 00 00 00 23 19 0A 00 02 00 6E 00 00 00 00 72 0F 00 16 00 0D 00 01 00 09 00 20 73 02 00 20 31 20 3D 3D 15 00 07 00 73 02 00 02 00 20 30 17 00 02 00 01 00 15 00 07 00 73 02 00 02 00 20 31 19 00 00 00 23 19 08 00 02 00 73 02 00 72 10 00 23 19 08 00 02 00 73 02 00 72 11 00 23 19 08 00 02 00 73 02 00 72 12 00 23 19 08 00 02 00 73 02 00 72 13 00 23 19 08 00 02 00 73 02 00 72 14 00 23 19 08 00 02 00 73 02 00 72 15 00 23 19 08 00 02 00 73 02 00 72 16 00 23 19 08 00 02 00 73 02 00 72 17 00 23 19 08 00 02 00 73 02 00 72 18 00 23 19 08 00 02 00 73 02 00 72 19 00 23 19 08 00 02 00 73 02 00 72 1A 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwSetStartingSpells\n\nshort bMorrowindSpells\nshort bOnOff\n\nBegin Function { bMorrowindSpells }\n\n\tif (bMorrowindSpells == 1)\n\t\t; if \"StrictMorrowind\" then disable the default spells\n\t\tif (mwFixes.StrictMWSpells == 1)\n\t\t\tPlayer.RemoveSpellNS DefaultPlayerSpell\n\t\t\tPlayer.RemoveSpellNS StandardFireDamageTarget1Novice\n\t\tendif\n\t\tPlayer.RemoveItemNS WristIrons 1\n\telse\n\t\tPlayer.AddSpellNS DefaultPlayerSpell\n\t\tPlayer.AddSpellNS StandardFireDamageTarget1Novice\n\t\tif (Player.GetItemCount WristIrons == 0)\n\t\t\tPlayer.AddItemNS WristIrons 1\n\t\t\tPlayer.EquipItem2NS WristIrons\n\t\tendif\n\tendif\n\t\n\tset bOnOff to bMorrowindSpells\n\t; Set Morrowind Starting Spells On or Off\n\tSetSpellPCStart bOnOff 0summonSancestralSghost\n\tSetSpellPCStart bOnOff 0shield\n\tSetSpellPCStart bOnOff 0detectUcreature\n\tSetSpellPCStart bOnOff 0chameleon\n\tSetSpellPCStart bOnOff 0sanctuary\n\tSetSpellPCStart bOnOff 0waterSwalking\n\tSetSpellPCStart bOnOff 0boundSdagger\n\tif (mwFixes.StrictMWSpells == 1)\n\t\tSetSpellPCStart bOnOff 0hearthSheal\n\t\tSetSpellPCStart bOnOff 0fireSbite\n\telse\n\t\tSetSpellPCStart 0 0hearthSheal\n\t\tSetSpellPCStart 0 0fireSbite\t\t\n\tendif\n;\tSetSpellPCStart bOnOff 0exhaustingStouch\n\tSetSpellPCStart 0 0exhaustingStouch\n\n\t; Reverse value of bOnOff\n\tif bOnOff == 1\n\t\tset bOnOff to 0\n\telse\n\t\tset bOnOff to 1\n\tendif\n\t; Set Oblivion Starting Spells\n\tSetSpellPCStart bOnOff StandardDispelSelf1Novice\n\tSetSpellPCStart bOnOff StandardAbsorbHealth1Novice\n\tSetSpellPCStart bOnOff StandardShield1Novice\n\tSetSpellPCStart bOnOff StandardCalmTouch1Novice\n\tSetSpellPCStart bOnOff StandardDetectLife1Novice\n\tSetSpellPCStart bOnOff StandardFrostDamageTouch1Novice\n\tSetSpellPCStart bOnOff StandardShockDamageTouch1Novice\n\tSetSpellPCStart bOnOff StandardOpen1Novice\n\tSetSpellPCStart bOnOff StandardLight1Novice\n\tSetSpellPCStart bOnOff StandardSummonSkeletonApprentice\n\tSetSpellPCStart bOnOff StandardTurnUndead1Novice\n\t\nEnd\n", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "bMorrowindSpells"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "bOnOff"
+        }
+    ], 
+    "References": [
+        20, 
+        "mwFixes", 
+        "DefaultPlayerSpell", 
+        "StandardFireDamageTarget1Novice", 
+        "WristIrons", 
+        "0summonSancestralSghost", 
+        "0shield", 
+        "0detectUcreature", 
+        "0chameleon", 
+        "0sanctuary", 
+        "0waterSwalking", 
+        "0boundSdagger", 
+        "0hearthSheal", 
+        "0fireSbite", 
+        "0exhaustingStouch", 
+        "StandardDispelSelf1Novice", 
+        "StandardAbsorbHealth1Novice", 
+        "StandardShield1Novice", 
+        "StandardCalmTouch1Novice", 
+        "StandardDetectLife1Novice", 
+        "StandardFrostDamageTouch1Novice", 
+        "StandardShockDamageTouch1Novice", 
+        "StandardOpen1Novice", 
+        "StandardLight1Novice", 
+        "StandardSummonSkeletonApprentice", 
+        "StandardTurnUndead1Novice"
+    ]
+}

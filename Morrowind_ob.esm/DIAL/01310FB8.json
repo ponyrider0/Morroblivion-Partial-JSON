@@ -20,144 +20,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8BA3E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTRKillGoblins", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 54 52", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Hmmm...I have nothing for you at this time. Speak with Gavas Drin, the Lord Archcanon. He was in consultation with the Lady Almalexia this very morning. Perhaps he has something for you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTRKillGoblins", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0fedrisShler", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtrshrinedead 10", 
-                "References": [
-                    "fbmwTRShrineDead"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1serviceStoSourSLady", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8EA06"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTRKillGoblins", 
-            "PNAM - Previous INFO": "01F8BA3E", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 54 52", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I am always aware of those who might be able to serve our Lady Almalexia. Few are worthy to do so.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 54 52", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "The Temple and the city is guarded by the High Ordinators, and the Hands fulfill other duties for the Lady. I am her Chief Steward, Fedris Hler.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 54 52", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Now, if you wish to be of use, we have some matters to discuss.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 59, 
-                    "Parameter #1": "fbmwTRKillGoblins", 
-                    "Parameter #2": 10
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0fedrisShler", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 9, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "addtopic 1mattersSToSdiscuss", 
-                "References": [
-                    "1mattersStoSdiscuss"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1serviceStoSourSLady", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01F8BA38"
             }, 
             "DATA - ": {
@@ -517,6 +379,144 @@
                 "References": [
                     "1BarilzarAsSMazedSBand", 
                     "fbmwTRMazedBand"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1serviceStoSourSLady", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8BA3E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRKillGoblins", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 54 52", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Hmmm...I have nothing for you at this time. Speak with Gavas Drin, the Lord Archcanon. He was in consultation with the Lady Almalexia this very morning. Perhaps he has something for you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTRKillGoblins", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0fedrisShler", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtrshrinedead 10", 
+                "References": [
+                    "fbmwTRShrineDead"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1serviceStoSourSLady", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EA06"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTRKillGoblins", 
+            "PNAM - Previous INFO": "01F8BA3E", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 54 52", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am always aware of those who might be able to serve our Lady Almalexia. Few are worthy to do so.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 54 52", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The Temple and the city is guarded by the High Ordinators, and the Hands fulfill other duties for the Lady. I am her Chief Steward, Fedris Hler.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "77 54 52", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Now, if you wish to be of use, we have some matters to discuss.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwTRKillGoblins", 
+                    "Parameter #2": 10
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0fedrisShler", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1mattersSToSdiscuss", 
+                "References": [
+                    "1mattersStoSdiscuss"
                 ]
             }
         }

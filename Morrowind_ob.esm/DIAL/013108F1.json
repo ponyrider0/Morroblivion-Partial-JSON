@@ -16,195 +16,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102EF9F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "65 6E 53", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thank you outlander. This pilgrimage has taught me a lesson in humility.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I will ponder this lesson for awhile and then continue the pilgrimage.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bedenSgiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 5A 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 90\r\n", 
-                "References": [
-                    "fbmwHRFindGiladren"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF9E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0102EF9F", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "64 65 6E", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I thought the Ashlanders would kill me so I told them that I was a famous noble. I knew it was wrong, but what else could I do?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bedenSgiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 60", 
-                "References": [
-                    "fbmwHRFindGiladren"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132151E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0102EF9E", 
-            "Add topics": [
-                "1BedenSGiladren", 
-                "1Ashlanders", 
-                "1getSmeSout"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I'm Beden Giladren. These ashlanders have me trapped here. Can you get me out?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bedenSgiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01004AEB"
             }, 
             "DATA - ": {
@@ -313,6 +124,290 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0102EF97"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0102EF98", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "A missing pilgrim? Tralas Rendas at the shrine might know something about it.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "MaarSGan", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF98"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0102EF99", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 48 52", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Beden Giladren was on his way from Ald'ruhn to Maar Gan. I do not know what happened to him. Go to Maar Gan and see if you can find him.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindTharen", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0llorosSsarano", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 55 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 10\r\nShowMap mvMaarGanMapMarker", 
+                "References": [
+                    "fbmwHRFindGiladren", 
+                    "mvMaarGanMapMarker"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF99"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0102EF9A", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 48 52", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, I heard that you rescued Beden Giladren from the Ashlander camp. I will make sure House Redoran hears of your deeds.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0llorosSsarano", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 45, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 100\r\nmodfactionreaction 0redoran playerfaction 5\r\nmoddisposition player 10", 
+                "References": [
+                    "fbmwHRFindGiladren", 
+                    "0Redoran", 
+                    "PlayerFaction", 
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF9A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0132152C", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 48 52", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I wonder if Beden Giladren has finished the pilgrimages.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0llorosSsarano", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF9B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "01321529", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 6C 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I heard you rescued the pilgrim. I guess the Ashlander that came here demanding ransom for a famous noble was confused.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tralasSrendas", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "0102EF9C"
             }, 
             "DATA - ": {
@@ -363,6 +458,195 @@
             "Choices": [
                 "1BedenSGiladren2", 
                 "1BedenSGiladren5"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF9E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0102EF9F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "64 65 6E", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I thought the Ashlanders would kill me so I told them that I was a famous noble. I knew it was wrong, but what else could I do?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bedenSgiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 60", 
+                "References": [
+                    "fbmwHRFindGiladren"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102EF9F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "65 6E 53", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Thank you outlander. This pilgrimage has taught me a lesson in humility.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I will ponder this lesson for awhile and then continue the pilgrimage.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHRFindGiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bedenSgiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 5A 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 90\r\n", 
+                "References": [
+                    "fbmwHRFindGiladren"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1BedenSGiladren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132151E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHRFindGiladren", 
+            "PNAM - Previous INFO": "0102EF9E", 
+            "Add topics": [
+                "1BedenSGiladren", 
+                "1Ashlanders", 
+                "1getSmeSout"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, I'm Beden Giladren. These ashlanders have me trapped here. Can you get me out?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bedenSgiladren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -433,60 +717,6 @@
                 "1BedenSGiladren1", 
                 "1BedenSGiladren2", 
                 "1BedenSGiladren3"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF9B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "01321529", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 6C 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I heard you rescued the pilgrim. I guess the Ashlander that came here demanding ransom for a famous noble was confused.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tralasSrendas", 
-                    "Parameter #2": "00 00 00 00"
-                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -643,236 +873,6 @@
                 "References": [
                     20
                 ]
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF9A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0132152C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 48 52", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I wonder if Beden Giladren has finished the pilgrimages.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0llorosSsarano", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF99"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0102EF9A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 48 52", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I heard that you rescued Beden Giladren from the Ashlander camp. I will make sure House Redoran hears of your deeds.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0llorosSsarano", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 45, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 100\r\nmodfactionreaction 0redoran playerfaction 5\r\nmoddisposition player 10", 
-                "References": [
-                    "fbmwHRFindGiladren", 
-                    "0Redoran", 
-                    "PlayerFaction", 
-                    20
-                ]
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF98"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0102EF99", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 48 52", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Beden Giladren was on his way from Ald'ruhn to Maar Gan. I do not know what happened to him. Go to Maar Gan and see if you can find him.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindTharen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0llorosSsarano", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 23, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 55 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "SetStage fbmwHRFindGiladren 10\r\nShowMap mvMaarGanMapMarker", 
-                "References": [
-                    "fbmwHRFindGiladren", 
-                    "mvMaarGanMapMarker"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1BedenSGiladren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102EF97"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHRFindGiladren", 
-            "PNAM - Previous INFO": "0102EF98", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "A missing pilgrim? Tralas Rendas at the shrine might know something about it.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRFindGiladren", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "MaarSGan", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }
     ]

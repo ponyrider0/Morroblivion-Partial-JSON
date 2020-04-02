@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013208A4"
+                "FormID": "01034FE4"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,73 +24,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGMasterHelm", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1makeSamends", 
-                "1Talk"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You've been kicked out of the Guild, outlander. Better make amends, or no one's going to talk to you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0aengoth", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1RedoranSMasterSHelm", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01034FE6"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGMasterHelm", 
-            "PNAM - Previous INFO": "013208A4", 
+            "PNAM - Previous INFO": "01034FE5", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -99,7 +33,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You already brought me a Redoran Master Helm.", 
+                    "NAM1 - Response Text": "Did you get a Redoran Master Helm?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -107,9 +41,17 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
+                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwTGMasterHelm", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0redoranUmasterUhelm", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -120,6 +62,10 @@
                     "Parameter #1": "0aengoth", 
                     "Parameter #2": "00 00 00 00"
                 }
+            ], 
+            "Choices": [
+                "1RedoranSMasterSHelm1", 
+                "1RedoranSMasterSHelm2"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -202,7 +148,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01034FE4"
+                "FormID": "01034FE6"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -210,7 +156,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGMasterHelm", 
-            "PNAM - Previous INFO": "01034FE5", 
+            "PNAM - Previous INFO": "013208A4", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -219,7 +165,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Did you get a Redoran Master Helm?", 
+                    "NAM1 - Response Text": "You already brought me a Redoran Master Helm.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -227,17 +173,9 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
+                    "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwTGMasterHelm", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0redoranUmasterUhelm", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -249,9 +187,71 @@
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
-            "Choices": [
-                "1RedoranSMasterSHelm1", 
-                "1RedoranSMasterSHelm2"
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSMasterSHelm", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013208A4"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGMasterHelm", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1makeSamends", 
+                "1Talk"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You've been kicked out of the Guild, outlander. Better make amends, or no one's going to talk to you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0aengoth", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0ThievesSGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {

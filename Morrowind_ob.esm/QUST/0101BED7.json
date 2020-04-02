@@ -40,15 +40,16 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 1, 
-                            "CompiledSize": 8, 
+                            "RefCount": 2, 
+                            "CompiledSize": 17, 
                             "VariableCount": 0, 
                             "Type": 1
                         }, 
-                        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00", 
-                        "SCTX - Result script source": "fbmwCoventinaScelataREF.enable", 
+                        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 55 10 05 00 01 00 72 02 00", 
+                        "SCTX - Result script source": "fbmwCoventinaScelataREF.enable\r\nshowmap mwGraringsHouseMapMarker", 
                         "References": [
-                            "fbmwCoventinaScelataREF"
+                            "fbmwCoventinaScelataREF", 
+                            "mwGraringsHouseMapMarker"
                         ]
                     }
                 }
@@ -188,6 +189,42 @@
                             "Type": 1
                         }
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "01F07D8E", 
+                "Flags": {}, 
+                "Unused": "00 18 23"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwCO8", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "mwGraringsHouseMapMarker", 
+                "Flags": {}, 
+                "Unused": "00 18 23"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwCO8", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ]
         }

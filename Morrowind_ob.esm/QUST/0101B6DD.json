@@ -54,9 +54,7 @@
             "INDX - Stage index": 20, 
             "Log Entries": [
                 {
-                    "QSDT - Stage Flags": {
-                        "Complete quest": true
-                    }, 
+                    "QSDT - Stage Flags": {}, 
                     "CNAM - Log Entry": "I refused Kjolver's request that I murder her husband's mistress, Erna the Quiet. I don't want a stranger's blood on my hands.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
@@ -97,11 +95,17 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 2, 
+                            "CompiledSize": 16, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00", 
+                        "SCTX - Result script source": "mwErnaTheQuietREF.enable\r\nmwBrandrREF.enable", 
+                        "References": [
+                            "mwErnaTheQuietREF", 
+                            "mwBrandrREF"
+                        ]
                     }
                 }
             ]
@@ -170,7 +174,7 @@
             "QSTA - Target": {
                 "Target": "01F0965F", 
                 "Flags": {}, 
-                "Unused": "00 58 21"
+                "Unused": "00 F0 22"
             }, 
             "Conditions": [
                 {
@@ -193,9 +197,9 @@
         }, 
         {
             "QSTA - Target": {
-                "Target": "01F021AD", 
+                "Target": "mwErnaTheQuietREF", 
                 "Flags": {}, 
-                "Unused": "00 58 21"
+                "Unused": "00 F0 22"
             }, 
             "Conditions": [
                 {
@@ -226,9 +230,9 @@
         }, 
         {
             "QSTA - Target": {
-                "Target": "SkaalSVillageMapMarker73", 
+                "Target": "mwSkaalVillageMapMarker", 
                 "Flags": {}, 
-                "Unused": "00 58 21"
+                "Unused": "00 F0 22"
             }, 
             "Conditions": [
                 {

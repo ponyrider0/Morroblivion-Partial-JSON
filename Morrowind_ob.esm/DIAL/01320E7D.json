@@ -6,6 +6,7 @@
     }, 
     "EDID - Editor ID": "1RedoranSHortator3", 
     "Quests": [
+        "fbmwMQRedoran", 
         "fbmwMQRedoranArobar", 
         "fbmwMQRedoranSarethi"
     ], 
@@ -17,21 +18,17 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013231D1"
+                "FormID": "0100B643"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Info Refusal": true
+                }
             }, 
-            "QSTI - Quest": "fbmwMQRedoranSarethi", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Temple", 
-                "1Temple", 
-                "1NerevarineSprophecies", 
-                "1Imperial"
-            ], 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CF", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -40,7 +37,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I also have a sealed package for you. I do not know what it contains, but I received it from a contact in the highest ranks of the Temple.", 
+                    "NAM1 - Response Text": "I am a patient man and I have heard many stories such as this in the past. There is nothing worse than being forced", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -50,7 +47,27 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "My guess is that it has something to do with the Temple's position on your claim to fulfill the Nerevarine prophecies.", 
+                    "NAM1 - Response Text": "to listen to someone who enjoys the sound of their own voice more than the content and relevance of their words.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Perhaps I could lend you a copy of Saryoni's sermon against evil speaking and the dangers of loose tongues...", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But that is something I would do only for a friend, and you are just an Imperial spy and an imposter.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -60,37 +77,106 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0athynSsarethi", 
+                    "Parameter #1": "0minerSarobar", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator3", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01025B2A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CE", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I have spoken with Athyn Sarethi. He believes your story and says you can be trusted.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I have known Athyn Sarethi since he was a child, and I have absolute faith his judgement.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Please accept my apologies for not seeking you out and accepting you at once.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Forgive me also for believing these rumors about you being an Imperial spy. You have my vote. Miner Arobar hereby confirms you as Hortator of House Redoran. Tell the other councilors that I have given you my blessings.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranSarethi", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0minerSarobar", 
                     "Parameter #2": "00 00 00 00"
                 }
-            ], 
-            "Choices": [
-                "1RedoranSHortator4"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 66, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 04 00 00 00 58 10 05 00 01 00 72 05 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoran 60\r\nplayer.additem 0bkusaryoniunote 1\r\nSetStage fbmwMQ12 1\r\nmodpcfame 4\r\nAddTopic 1meetStheSarchcanon", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoranArobar 50", 
                 "References": [
-                    20, 
-                    "fbmwMQRedoran", 
-                    "0bkUsaryoniUnote", 
-                    "fbmwMQ12", 
-                    "1meetStheSarchcanon"
+                    "fbmwMQRedoranArobar"
                 ]
             }
         }, 
@@ -106,8 +192,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQRedoranArobar", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231D1", 
             "Add topics": [
                 "1theSmoonTandTstar", 
                 "1Nerevar", 
@@ -213,95 +299,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01025B2A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranArobar", 
-            "PNAM - Previous INFO": "013231CE", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I have spoken with Athyn Sarethi. He believes your story and says you can be trusted.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I have known Athyn Sarethi since he was a child, and I have absolute faith his judgement.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Please accept my apologies for not seeking you out and accepting you at once.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Forgive me also for believing these rumors about you being an Imperial spy. You have my vote. Miner Arobar hereby confirms you as Hortator of House Redoran. Tell the other councilors that I have given you my blessings.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 76, 
-                    "Parameter #1": 0, 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0minerSarobar", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQRedoranArobar 50", 
-                "References": [
-                    "fbmwMQRedoranArobar"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranSHortator3", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "013231CF"
             }, 
             "DATA - ": {
@@ -309,7 +306,7 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQRedoranArobar", 
+            "QSTI - Quest": "fbmwMQRedoran", 
             "PNAM - Previous INFO": "01025B2A", 
             "Add topics": [
                 "1faith", 
@@ -372,7 +369,7 @@
             ], 
             "Conditions": [
                 {
-                    "Type": 160, 
+                    "Type": 64, 
                     "Unused": 0, 
                     "Comparison Value": 49.9999998737621, 
                     "Function": 76, 
@@ -401,6 +398,166 @@
                 "References": [
                     "fbmwMQRedoranArobar"
                 ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator3", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013231D1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Temple", 
+                "1Temple", 
+                "1NerevarineSprophecies", 
+                "1Imperial"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I also have a sealed package for you. I do not know what it contains, but I received it from a contact in the highest ranks of the Temple.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "My guess is that it has something to do with the Temple's position on your claim to fulfill the Nerevarine prophecies.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0athynSsarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1RedoranSHortator4"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 66, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 39 10 0A 00 02 00 72 04 00 6E 01 00 00 00 F8 10 07 00 01 00 6E 04 00 00 00 58 10 05 00 01 00 72 05 00", 
+                "SCTX - Result script source": "SetStage fbmwMQRedoran 60\r\nplayer.additem 0bkusaryoniunote 1\r\nSetStage fbmwMQ12 1\r\nmodpcfame 4\r\nAddTopic 1meetStheSarchcanon", 
+                "References": [
+                    20, 
+                    "fbmwMQRedoran", 
+                    "0bkUsaryoniUnote", 
+                    "fbmwMQ12", 
+                    "1meetStheSarchcanon"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RedoranSHortator3", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EF2C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Info Refusal": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMQRedoran", 
+            "PNAM - Previous INFO": "013231CF", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am a patient man and I have heard many stories such as this in the past. There is nothing worse than being forced", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "to listen to someone who enjoys the sound of their own voice more than the content and relevance of their words.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Perhaps I could lend you a copy of Saryoni's sermon against evil speaking and the dangers of loose tongues...", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "But that is something I would do only for a friend, and you are just an Imperial spy and an imposter.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0minerSarobar", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
             }
         }
     ]

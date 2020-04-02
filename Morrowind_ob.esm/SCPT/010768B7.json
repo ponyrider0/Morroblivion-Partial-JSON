@@ -1,0 +1,41 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "010768B7"
+    }, 
+    "EDID - Editor ID": "mwLanternHavocOnScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 12, 
+        "CompiledSize": 210, 
+        "VariableCount": 5, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 02 00 BF 00 00 00 01 00 72 03 00 15 00 0B 00 66 02 00 06 00 20 58 50 14 00 00 16 00 2D 00 02 00 29 00 20 58 69 17 23 00 01 22 00 56 04 00 00 02 00 52 04 00 04 56 04 00 00 02 00 52 05 00 04 01 56 04 00 00 02 00 52 06 00 04 01 1C 00 01 00 66 16 0A 00 02 00 72 07 00 6E 01 00 00 00 22 10 00 00 18 00 38 00 02 00 34 00 20 58 69 17 2E 00 01 2D 00 56 04 00 00 02 00 52 08 00 04 56 04 00 00 02 00 52 09 00 04 01 56 04 00 00 02 00 52 0A 00 04 01 56 04 00 00 02 00 52 0B 00 04 01 1C 00 01 00 66 16 0A 00 02 00 72 0C 00 6E 01 00 00 00 22 10 00 00 17 00 02 00 01 00 0D 10 05 00 01 00 72 03 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "; change static/no havok lanterns into havok-enabled lantern on pickup\nScriptName mwLanternHavocOnScript\n\nref me\n\nBegin OnActivate Player\n\n\tset me to GetBaseObject\n\t\n\tif eval(me == 0lightUdeUlanternU07 || me == 0lightUdeUlanternU07U128 || me == 0lightUdeUlanternU07Uwarm)\n\t\tPlayerRef.AddItemNS 0lightUdeUlanternU07havoc 1\n\t\tDisable\n\telseif eval(me == 0lightUdeUlanternU05 || me == 0lightUdeUlanternU05U128UCarry || me == 0lightUdeUlanternU05U200 || me == 0lightUdeUlanternU05UCarry )\n\t\tPlayerRef.AddItemNS 0lightUdeUlanternU05havoc 1\n\t\tDisable\n\telse\n\t\tActivate player\n\tendif\n\n\t\nEnd\n\n;<CSEBlock>\n;<CSECaretPos> 577 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "me"
+        }
+    ], 
+    "References": [
+        20, 
+        2, 
+        20, 
+        "0lightUdeUlanternU07", 
+        "0lightUdeUlanternU07U128", 
+        "0lightUdeUlanternU07Uwarm", 
+        "0lightUdeUlanternU07havoc", 
+        "0lightUdeUlanternU05", 
+        "0lightUdeUlanternU05U128UCarry", 
+        "0lightUdeUlanternU05U200", 
+        "0lightUdeUlanternU05UCarry", 
+        "0lightUdeUlanternU05havoc"
+    ]
+}

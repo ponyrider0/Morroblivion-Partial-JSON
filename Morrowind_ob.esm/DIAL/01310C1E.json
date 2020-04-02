@@ -81,97 +81,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01322AAA"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ01", 
-            "PNAM - Previous INFO": "01024BAC", 
-            "Add topics": [
-                "1HouseSHlaalu", 
-                "1Vvardenfell", 
-                "1Vivec", 
-                "1Pelagiad", 
-                "1AldAruhn", 
-                "1Caldera"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Balmora is the district seat of House Hlaalu, and the largest settlement on Vvardenfell after Vivec City.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Good roads lead north from here to Balmora, passing through Fort Pelagiad and Pelagiad village.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "From Balmora, roads lead north to Ald'ruhn through the town of Caldera. Maybe I'd better write down the directions to Balmora for you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "It's a long walk, and a little confusing.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0elone", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 02 00 00 00", 
-                "SCTX - Result script source": "player.additem 0bkua1u1ueloneutoubalmora 1\r\nsetstage fbmwmq01 2", 
-                "References": [
-                    20, 
-                    "0bkUa1U1UeloneUtoUBalmora", 
-                    "fbmwMQ01"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1Balmora", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01322A9E"
             }, 
             "DATA - ": {
@@ -256,11 +165,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker\r\n", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -276,7 +190,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01322A9E", 
+            "PNAM - Previous INFO": 0, 
             "Add topics": [
                 "1HouseSHlaalu", 
                 "1Vvardenfell", 
@@ -332,11 +246,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -409,7 +328,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01322AA1", 
+            "PNAM - Previous INFO": "01322AB0", 
             "Add topics": [
                 "1Balmora", 
                 "1HouseSTelvanni"
@@ -559,11 +478,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -654,11 +578,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -737,11 +666,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -820,11 +754,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -903,11 +842,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -987,11 +931,107 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1Balmora", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322AAA"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ01", 
+            "PNAM - Previous INFO": "01024BAC", 
+            "Add topics": [
+                "1HouseSHlaalu", 
+                "1Vvardenfell", 
+                "1Vivec", 
+                "1Pelagiad", 
+                "1AldAruhn", 
+                "1Caldera"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Balmora is the district seat of House Hlaalu, and the largest settlement on Vvardenfell after Vivec City.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Good roads lead north from here to Balmora, passing through Fort Pelagiad and Pelagiad village.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "From Balmora, roads lead north to Ald'ruhn through the town of Caldera. Maybe I'd better write down the directions to Balmora for you.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "It's a long walk, and a little confusing.", 
+                    "NAM2 - Actor notes": ""
                 }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0elone", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 02 00 00 00", 
+                "SCTX - Result script source": "player.additem 0bkua1u1ueloneutoubalmora 1\r\nsetstage fbmwmq01 2", 
+                "References": [
+                    20, 
+                    "0bkUa1U1UeloneUtoUBalmora", 
+                    "fbmwMQ01"
+                ]
             }
         }, 
         {
@@ -1007,7 +1047,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01322AAA", 
+            "PNAM - Previous INFO": "01322AA1", 
             "Add topics": [
                 "1Balmora", 
                 "1HouseSHlaalu", 
@@ -1071,11 +1111,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -1155,11 +1200,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -1239,11 +1289,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -1351,11 +1406,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -1428,11 +1488,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }, 
         {
@@ -1505,11 +1570,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwBalmoraMapMarker", 
+                "References": [
+                    "mwBalmoraMapMarker"
+                ]
             }
         }
     ]

@@ -17,6 +17,189 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "010054DE"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTDwemerLaw", 
+            "PNAM - Previous INFO": "013205C6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "\"Chronicles of Nchuleft\" is very rare. There are probably still copies of the book in the Dwemer ruin of Nchuleft.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Otherwise, you could try asking booksellers where one might find a copy.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0Telvanni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1ChroniclesSofSNchuleft", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013205C0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGNchuleftBook", 
+            "PNAM - Previous INFO": "013205D1", 
+            "Add topics": [
+                "1JobashaAsSRareSBooks", 
+                "1Vivec"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, I might have one I could sell you. I have been trying to make copies of this rare book.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "If I don't have one at the moment, try Jobasha's Rare Books in Vivec.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0dorisaSdarvel", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1ChroniclesSofSNchuleft", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013205C6"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTDwemerLaw", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1ChroniclesSofSNchuleft", 
+                "1theSDwemer", 
+                "1Nchuleft"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You have already brought me a copy of \"Chronicles of Nchuleft\" outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHTDwemerLaw", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1ChroniclesSofSNchuleft", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "013205C7"
             }, 
             "DATA - ": {
@@ -201,126 +384,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A24B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGNchuleftBook", 
-            "PNAM - Previous INFO": "013205C9", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 6E 6E", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Chronicles of Nchuleft has been invaluable in my research.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGNchuleftBook", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1ChroniclesSofSNchuleft", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A24C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGNchuleftBook", 
-            "PNAM - Previous INFO": "01F8A24B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 6E 6E", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "What? You already have a copy of Chronicles of Nchuleft? I am impressed with your scholarship. Are you willing to part with the book?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUChroniclesNchuleft", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGNchuleftBook", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1ChroniclesSofSNchuleft3", 
-                "1ChroniclesSofSNchuleft4"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1ChroniclesSofSNchuleft", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "013205CE"
             }, 
             "DATA - ": {
@@ -371,60 +434,6 @@
             "Choices": [
                 "1ChroniclesSofSNchuleft3", 
                 "1ChroniclesSofSNchuleft4"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1ChroniclesSofSNchuleft", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A24F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGNchuleftBook", 
-            "PNAM - Previous INFO": "013205CE", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "69 6E 6E", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I simply *must* have this book for my research. Use the gold I gave you to find a copy. Maybe one of the booksellers has one.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGNchuleftBook", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -505,66 +514,6 @@
             "Choices": [
                 "1ChroniclesSofSNchuleft1", 
                 "1ChroniclesSofSNchuleft2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1ChroniclesSofSNchuleft", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013205C0"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGNchuleftBook", 
-            "PNAM - Previous INFO": "013205D1", 
-            "Add topics": [
-                "1JobashaAsSRareSBooks", 
-                "1Vivec"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I might have one I could sell you. I have been trying to make copies of this rare book.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "If I don't have one at the moment, try Jobasha's Rare Books in Vivec.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0dorisaSdarvel", 
-                    "Parameter #2": "00 00 00 00"
-                }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -956,29 +905,24 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013205C6"
+                "FormID": "01F8A24B"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwHTDwemerLaw", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1ChroniclesSofSNchuleft", 
-                "1theSDwemer", 
-                "1Nchuleft"
-            ], 
+            "QSTI - Quest": "fbmwMGNchuleftBook", 
+            "PNAM - Previous INFO": "013205C9", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
+                        "Unused": "69 6E 6E", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You have already brought me a copy of \"Chronicles of Nchuleft\" outlander.", 
+                    "NAM1 - Response Text": "Chronicles of Nchuleft has been invaluable in my research.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -988,7 +932,7 @@
                     "Unused": 0, 
                     "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwHTDwemerLaw", 
+                    "Parameter #1": "fbmwMGNchuleftBook", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -996,7 +940,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #1": "0edwinnaSelbert", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1015,44 +959,42 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010054DE"
+                "FormID": "01F8A24C"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwHTDwemerLaw", 
-            "PNAM - Previous INFO": "013205C6", 
+            "QSTI - Quest": "fbmwMGNchuleftBook", 
+            "PNAM - Previous INFO": "01F8A24B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
+                        "Unused": "69 6E 6E", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "\"Chronicles of Nchuleft\" is very rare. There are probably still copies of the book in the Dwemer ruin of Nchuleft.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Otherwise, you could try asking booksellers where one might find a copy.", 
+                    "NAM1 - Response Text": "What? You already have a copy of Chronicles of Nchuleft? I am impressed with your scholarship. Are you willing to part with the book?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 2, 
+                    "Type": 66, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0Telvanni", 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUChroniclesNchuleft", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGNchuleftBook", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -1060,7 +1002,65 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #1": "0edwinnaSelbert", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1ChroniclesSofSNchuleft3", 
+                "1ChroniclesSofSNchuleft4"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1ChroniclesSofSNchuleft", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A24F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGNchuleftBook", 
+            "PNAM - Previous INFO": "013205CE", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "69 6E 6E", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I simply *must* have this book for my research. Use the gold I gave you to find a copy. Maybe one of the booksellers has one.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGNchuleftBook", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0edwinnaSelbert", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

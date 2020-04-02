@@ -15,8 +15,8 @@
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
-                "Emotion Value": 50, 
+                "Emotion Type": 3, 
+                "Emotion Value": 75, 
                 "Unused": "20 66 61", 
                 "Response number": 1
             }, 
@@ -25,8 +25,8 @@
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
-                "Emotion Value": 50, 
+                "Emotion Type": 3, 
+                "Emotion Value": 75, 
                 "Unused": "20 66 61", 
                 "Response number": 2
             }, 
@@ -35,8 +35,8 @@
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
-                "Emotion Value": 50, 
+                "Emotion Type": 3, 
+                "Emotion Value": 75, 
                 "Unused": "20 66 61", 
                 "Response number": 3
             }, 
@@ -48,15 +48,23 @@
         {
             "Type": 96, 
             "Unused": 0, 
+            "Comparison Value": 29.9999999242573, 
+            "Function": 76, 
+            "Parameter #1": 0, 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 96, 
+            "Unused": 0, 
             "Comparison Value": 9.99999997475243, 
             "Function": 58, 
             "Parameter #1": "fbmwHHTwinLamps1", 
             "Parameter #2": "00 00 00 00"
         }, 
         {
-            "Type": 128, 
+            "Type": 160, 
             "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
+            "Comparison Value": 29.9999999242573, 
             "Function": 58, 
             "Parameter #1": "fbmwMVFakeSlave", 
             "Parameter #2": "00 00 00 00"
@@ -71,21 +79,22 @@
         }
     ], 
     "Choices": [
-        "1aidSaSpoorSArgonian3", 
-        "fbmwMVFakeSlaveKnows"
+        "1aidSaSpoorSArgonian2", 
+        "1aidSaSpoorSArgonian3"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
             "Unused": "00 00 00 00", 
-            "RefCount": 1, 
-            "CompiledSize": 14, 
+            "RefCount": 2, 
+            "CompiledSize": 51, 
             "VariableCount": 0, 
             "Type": 0
         }, 
-        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-        "SCTX - Result script source": "setstage FBMWMVFakeSlave 20", 
+        "SCDA - Compiled result script": "16 00 14 00 01 00 10 00 20 58 3A 10 05 00 01 00 72 01 00 20 32 35 20 3C 39 10 0A 00 02 00 72 01 00 6E 19 00 00 00 19 00 00 00 58 10 05 00 01 00 72 02 00", 
+        "SCTX - Result script source": "if GetStage fbmwMVFakeSlave < 25\r\n  setstage FBMWMVFakeSlave 25\r\nendif\r\naddtopic 1kindlySRedguard\r\n;Note: The dependency on fbmwHHTwinLamps1 is NOT used here but\r\n;within the response, 1aidSaSpoorSArgonian2, just leave this here for now.\r\n;We can still remove this Topic Text later.", 
         "References": [
-            "fbmwMVFakeSlave"
+            "fbmwMVFakeSlave", 
+            "1kindlySRedguard"
         ]
     }
 }

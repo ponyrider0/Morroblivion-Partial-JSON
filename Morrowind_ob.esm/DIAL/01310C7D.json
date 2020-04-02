@@ -16,56 +16,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01322C0D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Ashlanders", 
-                "1Grazelands"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Ashlanders of the Zainab tribe are sly and crafty. Their camp is in the interior of the Grazelands.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0nibaniSmaesa", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1Zainab", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "0101D5F0"
             }, 
             "DATA - ": {
@@ -128,11 +78,71 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1zainabScamp", 
+                "References": [
+                    "1ZainabScamp"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1Zainab", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322C0D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Ashlanders", 
+                "1Grazelands"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "The Ashlanders of the Zainab tribe are sly and crafty. Their camp is in the interior of the Grazelands.", 
+                    "NAM2 - Actor notes": ""
                 }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0nibaniSmaesa", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "addtopic 1zainabScamp", 
+                "References": [
+                    "1ZainabScamp"
+                ]
             }
         }
     ]

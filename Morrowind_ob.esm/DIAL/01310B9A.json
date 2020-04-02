@@ -17,7 +17,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01322576"
+                "FormID": "0101C683"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -25,92 +25,44 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMTAdvancement", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1MoragSTong", 
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "0101C685", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You have been expelled from the Morag Tong. In this dangerous times, I am not sure if you can make amends and regain my trust.", 
+                    "NAM1 - Response Text": "Ald Sotha is northeast of Vivec. Somewhere in Ald Sotha you will find Severa Magia, the Night Mother of the Dark Brotherhood in Vvardenfell.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Slay her and return to me.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0enoShlaalu", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0MoragSTong", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1AldSSotha", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101C686"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMTAdvancement", 
-            "PNAM - Previous INFO": "01322576", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 54", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Dark Brotherhood can no longer hide from us in Ald Sotha.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -118,26 +70,23 @@
                     "Unused": 0, 
                     "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwMTDBAldSotha", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #1": "fbmwMTDBAssernerairan", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWMTDBAldSotha 10", 
+                "References": [
+                    "fbmwMTDBAldSotha"
+                ]
             }
         }, 
         {
@@ -162,7 +111,7 @@
                         "Unused": "57 4D 54", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "The Night Mother is already dead? You have done well. This ritual dagger has been passed from one Grandmaster to another for years.", 
+                    "NAM1 - Response Text": "The Night Mother is already dead? You have done well,&sUActnQuick1;. This ritual dagger has been passed from one Grandmaster to another for years.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -249,7 +198,7 @@
                         "Unused": "57 4D 54", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "The Night Mother is no more. You have done well. This ritual dagger has been passed from one Grandmaster to another for years.", 
+                    "NAM1 - Response Text": "The Night Mother is no more. You have done well,&sUActnQuick1;. This ritual dagger has been passed from one Grandmaster to another for years.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -319,7 +268,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101C683"
+                "FormID": "0101C686"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -327,26 +276,16 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMTAdvancement", 
-            "PNAM - Previous INFO": "0101C685", 
+            "PNAM - Previous INFO": "01322576", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
+                        "Unused": "57 4D 54", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Ald Sotha is northeast of Vivec. Somewhere in Ald Sotha you will find Severa Magia, the Night Mother of the Dark Brotherhood in Vvardenfell.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Slay her and return to me.", 
+                    "NAM1 - Response Text": "The Dark Brotherhood can no longer hide from us in Ald Sotha.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -360,35 +299,30 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMTDBAldSotha", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0enoShlaalu", 
                     "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMTDBAssernerairan", 
-                    "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWMTDBAldSotha 10", 
-                "References": [
-                    "fbmwMTDBAldSotha"
-                ]
+                }
             }
         }, 
         {
@@ -462,11 +396,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -540,11 +479,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -626,11 +570,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -716,11 +665,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -806,11 +760,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -890,11 +849,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
             }
         }, 
         {
@@ -960,6 +924,77 @@
                     "Comparison Value": 0, 
                     "Function": 71, 
                     "Parameter #1": "noLore", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "showmap mwAldSothaShrineMapMarker", 
+                "References": [
+                    "mwAldSothaShrineMapMarker"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1AldSSotha", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322576"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMTAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1MoragSTong", 
+                "1makeSamends"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have been expelled from the Morag Tong. In this dangerous times, I am not sure if you can make amends and regain my trust.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0enoShlaalu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0MoragSTong", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {

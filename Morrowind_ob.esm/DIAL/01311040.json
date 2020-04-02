@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102E018"
+                "FormID": "0102E016"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,24 +24,32 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMSWarlords", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "0102E017", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "57 4D 53", 
+                        "Unused": "76 79 6E", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Ah, took care of that for Olvyne, did you?  Good job.", 
+                    "NAM1 - Response Text": "I don want to talk about this a whole lot, okay? Just give me the stuff if you have it.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 84, 
+                    "Parameter #1": "0BelsSUvenim", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 89.9999997727718, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMSWarlords", 
                     "Parameter #2": "00 00 00 00"
@@ -51,9 +59,13 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0DovorSOren", 
+                    "Parameter #1": "0OlvyneSDobar", 
                     "Parameter #2": "00 00 00 00"
                 }
+            ], 
+            "Choices": [
+                "1BelsSUvenim1", 
+                "1BelsSUvenim2"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -124,7 +136,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102E016"
+                "FormID": "0102E018"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -132,32 +144,24 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMSWarlords", 
-            "PNAM - Previous INFO": "0102E017", 
+            "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "76 79 6E", 
+                        "Unused": "57 4D 53", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I don want to talk about this a whole lot, okay? Just give me the stuff if you have it.", 
+                    "NAM1 - Response Text": "Ah, took care of that for Olvyne, did you?  Good job.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 84, 
-                    "Parameter #1": "0BelsSUvenim", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 89.9999997727718, 
+                    "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMSWarlords", 
                     "Parameter #2": "00 00 00 00"
@@ -167,13 +171,9 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0OlvyneSDobar", 
+                    "Parameter #1": "0DovorSOren", 
                     "Parameter #2": "00 00 00 00"
                 }
-            ], 
-            "Choices": [
-                "1BelsSUvenim1", 
-                "1BelsSUvenim2"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {

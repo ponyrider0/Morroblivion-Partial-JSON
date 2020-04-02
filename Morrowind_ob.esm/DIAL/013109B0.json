@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013216B8"
+                "FormID": "01014BE7"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,20 +24,16 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Talk", 
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "0103413B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
+                        "Emotion Type": 1, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "77 54 47", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I can't talk to you about this until you make amends.", 
+                    "NAM1 - Response Text": "I wouldn't give out my potion recipes to anyone, no matter who they were!", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -47,23 +43,15 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0bigShelende", 
+                    "Parameter #1": "0anisSseloth", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -82,7 +70,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01034141"
+                "FormID": "0103413B"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -90,7 +78,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "013216B8", 
+            "PNAM - Previous INFO": "0103413C", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -99,17 +87,25 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "What do you mean Tusamircil is dead? If I find out you're involved in this, we'll have words. For now, though, I'll continue to give you jobs.", 
+                    "NAM1 - Response Text": "Yes, I made an agreement with the Guild to bring me a potion recipe. Why are you standing here talking to me instead of looking for this recipe?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 64, 
+                    "Type": 2, 
                     "Unused": 0, 
                     "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0tusamircil", 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUdispelrecipeUtgca", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -125,26 +121,18 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0bigShelende", 
+                    "Parameter #1": "0tusamircil", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 45, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 6E 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E FB FF FF FF 53 10 0A 00 02 00 72 04 00 6E F6 FF FF FF", 
-                "SCTX - Result script source": "setstage fbmwtgcookbookalchemy 110\r\nmodfactionreaction 0thievessguild playerfaction -5\r\nmoddisposition player -10", 
-                "References": [
-                    "fbmwTGCookbookAlchemy", 
-                    "0ThievesSGuild", 
-                    "PlayerFaction", 
-                    20
-                ]
+                }
             }
         }, 
         {
@@ -152,7 +140,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01034140"
+                "FormID": "0103413C"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -160,7 +148,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "01034141", 
+            "PNAM - Previous INFO": "0103413D", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -169,7 +157,81 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You already delivered the potion recipe.", 
+                    "NAM1 - Response Text": "So do you have a recipe for a potion of dispel magic?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUdispelrecipeUtgca", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tusamircil", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1potionSrecipe1", 
+                "1potionSrecipe2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1potionSrecipe", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0103413D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
+            "PNAM - Previous INFO": "013216B9", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You already brought me the recipe. I have it here somewhere...", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -177,7 +239,69 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tusamircil", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1potionSrecipe", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0103413E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
+            "PNAM - Previous INFO": "0103413F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So do you have the potion recipe? Good. Deliver it to Tusamircil at Wolverine Hall.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUdispelrecipeUtgca", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwTGCookbookAlchemy", 
                     "Parameter #2": "00 00 00 00"
@@ -248,19 +372,17 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 63, 
+                    "RefCount": 3, 
+                    "CompiledSize": 46, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E F4 01 00 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtgcookbookalchemy 100\r\nplayer.additem gold001 500\r\nmodfactionreaction 0thievessguild playerfaction 5\r\nmoddisposition player 10", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E F4 01 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwtgcookbookalchemy 100\r\nplayer.additem gold001 500\r\nmoddisposition player 10", 
                 "References": [
                     20, 
                     "fbmwTGCookbookAlchemy", 
-                    "Gold001", 
-                    "0ThievesSGuild", 
-                    "PlayerFaction"
+                    "Gold001"
                 ]
             }
         }, 
@@ -269,7 +391,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0103413E"
+                "FormID": "01034140"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -277,7 +399,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "0103413F", 
+            "PNAM - Previous INFO": "01034141", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -286,17 +408,71 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "So do you have the potion recipe? Good. Deliver it to Tusamircil at Wolverine Hall.", 
+                    "NAM1 - Response Text": "You already delivered the potion recipe.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 66, 
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwTGCookbookAlchemy", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bigShelende", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1potionSrecipe", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01034141"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
+            "PNAM - Previous INFO": "013216B8", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "What do you mean Tusamircil is dead? If I find out you're involved in this, we'll have words. For now, though, I'll continue to give you jobs.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
                     "Unused": 0, 
                     "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUdispelrecipeUtgca", 
+                    "Function": 84, 
+                    "Parameter #1": "0tusamircil", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -313,6 +489,79 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0bigShelende", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 51, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 6E 00 00 00 15 00 13 00 72 02 00 73 02 00 0B 00 20 72 02 00 73 02 00 20 35 20 2D 53 10 0A 00 02 00 72 03 00 6E F6 FF FF FF", 
+                "SCTX - Result script source": "setstage fbmwtgcookbookalchemy 110\r\nset fbmwTGAdvancement.ThiefReputation to fbmwTGAdvancement.ThiefReputation - 5\r\nmoddisposition player -10", 
+                "References": [
+                    "fbmwTGCookbookAlchemy", 
+                    "fbmwTGAdvancement", 
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1potionSrecipe", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013216B8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1Talk", 
+                "1makeSamends"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I can't talk to you about this until you make amends.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bigShelende", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0ThievesSGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -425,7 +674,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0103413D"
+                "FormID": "01F8EE42"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -433,178 +682,34 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "013216B9", 
+            "PNAM - Previous INFO": "0103413B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
-                        "Emotion Type": 0, 
+                        "Emotion Type": 1, 
                         "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
+                        "Unused": "77 54 47", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You already brought me the recipe. I have it here somewhere...", 
+                    "NAM1 - Response Text": "I wouldn't give out my potion recipes to anyone, no matter who they were!", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGCookbookAlchemy", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0tusamircil", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1potionSrecipe", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0103413C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "0103413D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "So do you have a recipe for a potion of dispel magic?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGCookbookAlchemy", 
+                    "Parameter #1": "0anisSseloth", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUdispelrecipeUtgca", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwTGCookbookAlchemy", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tusamircil", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1potionSrecipe1", 
-                "1potionSrecipe2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1potionSrecipe", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0103413B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGCookbookAlchemy", 
-            "PNAM - Previous INFO": "0103413C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I made an agreement with the Guild to bring me a potion recipe. Why are you standing here talking to me instead of looking for this recipe?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUdispelrecipeUtgca", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGCookbookAlchemy", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGCookbookAlchemy", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tusamircil", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

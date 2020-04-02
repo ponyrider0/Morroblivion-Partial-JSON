@@ -16,111 +16,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013235AB"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTArchmagister", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1ArchmagisterSGothren", 
-                "1TelSAruhn"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Good. I have long waited to see who the next Archmagister would be", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": " I can think of no better qualified candidates.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "You have my support and that of the surviving councilors.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Now you must dispose of Archmagister Gothren.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 5
-                    }, 
-                    "NAM1 - Response Text": "You will find him in his tower in Tel Aruhn.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 5.99999998485146, 
-                    "Function": 73, 
-                    "Parameter #1": "0Telvanni", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0aryon", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 51, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0B 00 00 00 55 10 05 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 51 00 00 00 15 00 0A 00 72 03 00 73 05 00 02 00 20 30", 
-                "SCTX - Result script source": "SetStage fbmwHTArchmagister 11\r\nShowMap mwTelAruhnMapMarker\r\nSetStage fbmwHTAdvancement 81\r\nSET fbmwHTAdvancement.TelvanniAdvancement TO 0", 
-                "References": [
-                    "fbmwHTArchmagister", 
-                    "mwTelAruhnMapMarker", 
-                    "fbmwHTAdvancement"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1Magister2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01007240"
             }, 
             "DATA - ": {
@@ -214,6 +109,111 @@
                 }, 
                 "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 55 10 05 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 51 00 00 00 15 00 0A 00 72 03 00 73 05 00 02 00 20 30", 
                 "SCTX - Result script source": "SetStage fbmwHTArchmagister 10\r\nShowMap mwTelAruhnMapMarker\r\nSetStage fbmwHTAdvancement 81\r\nSET fbmwHTAdvancement.TelvanniAdvancement TO 0", 
+                "References": [
+                    "fbmwHTArchmagister", 
+                    "mwTelAruhnMapMarker", 
+                    "fbmwHTAdvancement"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1Magister2", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013235AB"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTArchmagister", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1ArchmagisterSGothren", 
+                "1TelSAruhn"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Good. I have long waited to see who the next Archmagister would be", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": " I can think of no better qualified candidates.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "You have my support and that of the surviving councilors.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Now you must dispose of Archmagister Gothren.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 5
+                    }, 
+                    "NAM1 - Response Text": "You will find him in his tower in Tel Aruhn.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 5.99999998485146, 
+                    "Function": 73, 
+                    "Parameter #1": "0Telvanni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0aryon", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 51, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0B 00 00 00 55 10 05 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 51 00 00 00 15 00 0A 00 72 03 00 73 05 00 02 00 20 30", 
+                "SCTX - Result script source": "SetStage fbmwHTArchmagister 11\r\nShowMap mwTelAruhnMapMarker\r\nSetStage fbmwHTAdvancement 81\r\nSET fbmwHTAdvancement.TelvanniAdvancement TO 0", 
                 "References": [
                     "fbmwHTArchmagister", 
                     "mwTelAruhnMapMarker", 

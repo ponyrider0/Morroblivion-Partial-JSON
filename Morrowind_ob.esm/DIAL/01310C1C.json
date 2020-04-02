@@ -6,6 +6,7 @@
     }, 
     "EDID - Editor ID": "1Rimintil", 
     "Quests": [
+        "fbmwVARimintil", 
         "MorroDefaultQuest"
     ], 
     "FULL - Name": "Rimintil", 
@@ -23,8 +24,8 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwVARimintil", 
+            "PNAM - Previous INFO": "01F8EC51", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -67,14 +68,6 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 74, 
-                    "Parameter #1": "fbmwPCVampire", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0, 
@@ -110,8 +103,99 @@
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01F8AD89", 
+            "QSTI - Quest": "fbmwVARimintil", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I understand you've taken care of the troublesome Rimintil. Your kind does have its uses. There are many of us who would like to learn more about your...inner workings, but that is unimportant now.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You have done well. Take this for your own use. I think your kind will find it valuable.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "There is one thing further Mistress Dratha requires from you: the Quarra Blood Potion.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ravenSomayn", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwVARimintil", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0rimintil", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 50, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 36 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+                "SCTX - Result script source": "setstage fbmwVARimintil 100\r\nplayer.additem 0flamemirrorSrobe 1\r\nstartquest fbmwVAVampBlood2\r\naddtopic 1QuarraSbloodSpotion", 
+                "References": [
+                    20, 
+                    "fbmwVARimintil", 
+                    "0flamemirrorSrobe", 
+                    "fbmwVAVampBlood2", 
+                    "1QuarraSBloodSPotion"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1Rimintil", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8EC51"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwVARimintil", 
+            "PNAM - Previous INFO": "01F8AD8A", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -164,17 +248,9 @@
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 74, 
-                    "Parameter #1": "fbmwPCVampire", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
+                    "Comparison Value": 0, 
                     "Function": 58, 
                     "Parameter #1": "fbmwVARimintil", 
                     "Parameter #2": "00 00 00 00"
@@ -191,17 +267,18 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 41, 
+                    "RefCount": 5, 
+                    "CompiledSize": 50, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00", 
-                "SCTX - Result script source": "setstage fbmwVARimintil 100\r\nplayer.additem 0flamemirrorSrobe 1\r\naddtopic 1QuarraSbloodSpotion", 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 36 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+                "SCTX - Result script source": "setstage fbmwVARimintil 100\r\nplayer.additem 0flamemirrorSrobe 1\r\nstartquest fbmwVAVampBlood2\r\naddtopic 1QuarraSbloodSpotion", 
                 "References": [
                     20, 
                     "fbmwVARimintil", 
                     "0flamemirrorSrobe", 
+                    "fbmwVAVampBlood2", 
                     "1QuarraSBloodSPotion"
                 ]
             }

@@ -1,0 +1,94 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01009D68"
+    }, 
+    "EDID - Editor ID": "mwNerevarineOblivionQuestScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 15, 
+        "CompiledSize": 711, 
+        "VariableCount": 17, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 B9 02 00 00 16 00 0D 00 11 00 09 00 20 73 01 00 20 35 20 3D 3D 16 00 0C 00 02 00 08 00 20 73 11 00 20 30 20 3E 15 00 11 00 73 11 00 0C 00 20 73 11 00 20 58 0C 10 00 00 20 2D 1E 00 00 00 17 00 02 00 0B 00 16 00 0D 00 04 00 09 00 20 73 0F 00 20 31 20 3D 3D 1C 00 01 00 70 11 00 00 1C 00 01 00 72 10 02 00 00 00 15 00 07 00 73 0F 00 02 00 20 30 1E 00 00 00 19 00 00 00 16 00 0C 00 03 00 08 00 20 73 0D 00 20 30 20 3E 39 10 08 00 02 00 72 07 00 73 0D 00 15 00 07 00 73 0D 00 02 00 20 30 1E 00 00 00 19 00 00 00 19 00 00 00 1E 00 00 00 19 00 00 00 16 00 0D 00 04 00 09 00 20 73 01 00 20 31 20 3D 3D 15 00 07 00 73 01 00 02 00 20 32 61 10 00 00 15 00 09 00 66 03 00 04 00 20 30 2E 31 1E 00 00 00 19 00 00 00 16 00 0D 00 0D 00 09 00 20 73 01 00 20 32 20 3D 3D 15 00 07 00 73 01 00 02 00 20 33 1C 00 02 00 AD 10 05 00 01 00 72 01 00 1C 00 02 00 66 16 0A 00 02 00 72 08 00 6E 01 00 00 00 1C 00 02 00 C3 19 05 00 01 00 72 08 00 1C 00 02 00 66 16 0A 00 02 00 72 09 00 6E 01 00 00 00 1C 00 02 00 C3 19 05 00 01 00 72 09 00 1C 00 02 00 66 16 0A 00 02 00 72 0A 00 6E 01 00 00 00 1C 00 02 00 C3 19 05 00 01 00 72 0A 00 1C 00 02 00 66 16 0A 00 02 00 72 0B 00 6E 01 00 00 00 1C 00 02 00 C3 19 05 00 01 00 72 0B 00 1C 00 02 00 9E 10 05 00 01 00 72 0C 00 15 00 09 00 47 0D 00 04 00 20 34 33 33 1E 00 00 00 19 00 00 00 16 00 0D 00 10 00 09 00 20 73 01 00 20 33 20 3D 3D 15 00 07 00 73 01 00 02 00 20 34 E7 10 07 00 01 00 6E 01 00 00 00 15 00 0D 00 72 0E 00 66 1D 00 05 00 20 2E 30 30 31 15 00 0B 00 72 0F 00 66 18 00 03 00 20 2E 31 36 10 05 00 01 00 72 0E 00 36 10 05 00 01 00 72 0F 00 15 00 0A 00 72 0F 00 73 05 00 02 00 20 31 15 00 0A 00 72 0F 00 66 02 00 02 00 20 30 15 00 0A 00 72 0F 00 73 03 00 02 00 20 35 1C 00 03 00 51 11 07 00 01 00 6E 01 00 00 00 1C 00 04 00 51 11 07 00 01 00 6E 01 00 00 00 1C 00 05 00 51 11 07 00 01 00 6E 01 00 00 00 1C 00 06 00 51 11 07 00 01 00 6E 01 00 00 00 39 10 0A 00 02 00 72 07 00 6E 0A 00 00 00 60 10 00 00 1E 00 00 00 19 00 00 00 16 00 0D 00 03 00 09 00 20 73 01 00 20 34 20 3D 3D 15 00 07 00 73 01 00 02 00 20 35 15 00 07 00 66 03 00 02 00 20 35 1E 00 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwNerevarineOblivionQuestScript\n\nfloat fQuestDelayTime\nshort StartMission\nshort isStuffRegained\nshort fTimer\nshort gotoStage\nshort ResetChest\n\nBegin GameMode\n\n\tif (StartMission == 5) ; this is the main loop after Oblivion Chargen quest is started\n\t\tif (fTimer > 0)\n\t\t\tset fTimer to fTimer - GetSecondsPassed\n;\t\t\tPrintC \"NerevarineOblivion: timer running (%.0f)\", fTimer\n\t\t\treturn\n\t\telse\n\n\t\t\t; chest is temporarily unlocked and ownership set to player in dialog with prison guard\n\t\t\t; when timer expires, reset ownership of chest back to prison and relock it\n\t\t\tif (ResetChest == 1)\n\t\t\t\tmwStolenGoodsNerevarine.ClearOwnership\n\t\t\t\tmwStolenGoodsNerevarine.lock\n\t\t\t\tset ResetChest to 0\n;\t\t\t\tPrintC \"NerevarineOblivion: chest locked\"\n\t\t\t\treturn\n\t\t\tendif\n\n\t\t\tif (gotoStage > 0)\t\t\t\n\t\t\t\tSetStage mwNerevarineOblivion gotoStage\n\t\t\t\tset gotoStage to 0\n\t\t\t\treturn\n\t\t\tendif\n\n\t\t\t\n\t\tendif\n\t\treturn\n\tendif\n\t\n\tif (StartMission == 1)\n\t\tset StartMission to 2\n\t\tDisablePlayerControls\t\t\t\t\t\n\t\tset fQuestDelayTime to 0.1\n\t\treturn\n\t\t\n\tendif\t\n\n\tif (StartMission == 2)\n\t\tset StartMission to 3\n\t\tPlayer.RemoveAllItems mwStolenGoodsNerevarine\n\n\t\tPlayer.AddItemNS LowerPants05 1\n\t\tPlayer.EquipItemSilent LowerPants05\n\t\tPlayer.AddItemNS LowerShirt05 1\n\t\tPlayer.EquipItemSilent LowerShirt05\n\t\tPlayer.AddItemNS LowerShoes05 1\n\t\tPlayer.EquipItemSilent LowerShoes05\n\t\tPlayer.AddItemNS WristIrons 1\n\t\tPlayer.EquipItemSilent WristIrons\n\n\t\tPlayer.MoveTo CGPlayerStartMarker\n\t\tset GameYear to 433\n\n\t\treturn\n\tendif\n\n\tif (StartMission == 3)\n\t\tset StartMission to 4\n\t\tSetInChargen 1\n\t\tset Charactergen.fQuestDelayTime to .001\n\t\tset MQ01.fQuestDelayTime to .1\n\t\tStartQuest Charactergen\n\t\tStartQuest MQ01\n\t\tset MQ01.tutorialOff to 1\n\t\tset MQ01.Timer to 0\n\t\tset MQ01.stage to 5\n\t\t; Emperor, Blades ignore friend hits in combat\n\t\tUrielSeptimRef.SetIgnoreFriendlyHits 1\n\t\tRenoteRef.SetIgnoreFriendlyHits 1\n\t\tGlenroyRef.SetIgnoreFriendlyHits 1\n\t\tBaurusRef.SetIgnoreFriendlyHits 1\n\n;\t\tMessageBoxEx \"Double-crossed! %r%rInstead of an expedition to Akavir, I was ambushed and placed in chains! They transported me, first by boat and then by carriage, back to the Imperial City... back to the Imperial Prison. %rThey've taken my equipment, but I think it's being held in a chest somewhere nearby. %r%rFirst, I need to find a way out...\"\n\t\tSetStage mwNerevarineOblivion 10\n\t\tEnablePlayerControls\n\t\treturn\n\tendif\n\n\tif (StartMission == 4)\n\t\tset StartMission to 5\n\t\tset fQuestDelayTime to 5\n\t\treturn\n\tendif\n\t\n\t\nEnd", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "StartMission"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "fQuestDelayTime"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 9, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "isStuffRegained"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 13, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "gotoStage"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 15, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "ResetChest"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 17, 
+                "Unused": "CD CD CD CD CD CD CD", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "fTimer"
+        }
+    ], 
+    "References": [
+        "mwStolenGoodsNerevarine", 
+        20, 
+        "UrielSeptimRef", 
+        "RenoteRef", 
+        "GlenroyRef", 
+        "BaurusRef", 
+        "mwNerevarineOblivion", 
+        "LowerPants05", 
+        "LowerShirt05", 
+        "LowerShoes05", 
+        "WristIrons", 
+        "CGPlayerStartMarker", 
+        "GameYear", 
+        "Charactergen", 
+        "MQ01"
+    ]
+}

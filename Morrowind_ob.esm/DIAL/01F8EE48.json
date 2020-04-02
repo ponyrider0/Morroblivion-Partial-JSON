@@ -1,0 +1,101 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8EE48"
+    }, 
+    "EDID - Editor ID": "1ThirdStrial1", 
+    "Quests": [
+        "fbmwMQ10"
+    ], 
+    "FULL - Name": "Warrior's Test", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "1ThirdStrial1", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132345C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ10", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Nearby lies Kogoruhn, the ancient halls of the forgotten house, House Dagoth. In recent time, creatures of the blight have come to dwell there.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I myself went there, with some brave hunters, and came back again, but it was a bad place, and I am not ashamed to say I was afraid, for myself and my men.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "If you would have from me the secret of the Third Trial, the 'caverns dark' where Azura's eye sees, you will first bring to me three tokens from dark Kogoruhn.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sulTmatuul", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1ThirdStrial2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 45, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
+                "SCTX - Result script source": "addtopic 1thirdStrial\r\naddtopic 1houseSdagoth\r\naddtopic 1kogoruhn\r\naddtopic 1theSblight\r\naddtopic 1tokens\r\n", 
+                "References": [
+                    "1ThirdStrial", 
+                    "1HouseSDagoth", 
+                    "1Kogoruhn", 
+                    "1theSBlight", 
+                    "1tokens"
+                ]
+            }
+        }
+    ]
+}

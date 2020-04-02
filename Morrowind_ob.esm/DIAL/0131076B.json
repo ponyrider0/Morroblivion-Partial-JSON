@@ -18,6 +18,65 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "013209DC"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQRedoranVenim", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1rat", 
+                "1HouseSRedoran", 
+                "1outlander"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Even if you get the councilors on your side, I will veto them. I would rather die than see House Redoran dishonored by an outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQRedoranVenim", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolvynSvenim", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1RedoranScouncilors", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "013209DD"
             }, 
             "DATA - ": {
@@ -69,16 +128,21 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 18, 
+                    "RefCount": 7, 
+                    "CompiledSize": 127, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "Player.AddItem 0bkUredbook426 1", 
+                "SCDA - Compiled result script": "16 00 17 00 04 00 13 00 20 72 01 00 58 2F 10 05 00 01 00 72 02 00 20 30 20 3D 3D 1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 16 00 14 00 01 00 10 00 20 58 38 10 05 00 01 00 72 03 00 20 31 20 3D 3D 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 19 00 00 00 19 00 00 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00", 
+                "SCTX - Result script source": "if (player.getitemcount 0bkUredbook426 == 0)\r\n    Player.AddItem 0bkUredbook426 1\r\n    if (GetQuestRunning fbmwMQRedoran == 1)\r\n        SetStage fbmwMQRedoran 1\r\n    endif\r\nendif\r\naddtopic 1redoranScouncilors\r\naddtopic 1dunmer\r\naddtopic 1houseSredoran\r\naddtopic 1morrowind\r\n", 
                 "References": [
                     20, 
-                    "0bkUredbook426"
+                    "0bkUredbook426", 
+                    "fbmwMQRedoran", 
+                    "1RedoranScouncilors", 
+                    "1Dunmer", 
+                    "1HouseSRedoran", 
+                    "1Morrowind"
                 ]
             }
         }, 
@@ -157,7 +221,9 @@
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Say Once": true
+                }
             }, 
             "QSTI - Quest": "fbmwMQRedoranSarethi", 
             "PNAM - Previous INFO": "013209DE", 
@@ -213,17 +279,24 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
+                    "RefCount": 10, 
+                    "CompiledSize": 95, 
                     "VariableCount": 0, 
                     "Type": 0
                 }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "Player.Additem 0bkUredbook426 1\r\nSetStage fbmwMQRedoran 1", 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 58 10 05 00 01 00 72 08 00 58 10 05 00 01 00 72 09 00 58 10 05 00 01 00 72 0A 00", 
+                "SCTX - Result script source": "Player.Additem 0bkUredbook426 1\r\nSetStage fbmwMQRedoran 1\r\naddtopic 1redoranScouncilors\r\naddtopic 1athynSsarethi\r\naddtopic 1bolvynSvenim\r\naddtopic 1braraSmorvayn\r\naddtopic 1garisaSllethri\r\naddtopic 1hlarenSramoran\r\naddtopic 1minerSarobar\r\n", 
                 "References": [
                     20, 
                     "0bkUredbook426", 
-                    "fbmwMQRedoran"
+                    "fbmwMQRedoran", 
+                    "1RedoranScouncilors", 
+                    "1AthynSSarethi", 
+                    "1BolvynSVenim", 
+                    "1BraraSMorvayn", 
+                    "1GarisaSLlethri", 
+                    "1HlarenSRamoran", 
+                    "1MinerSArobar"
                 ]
             }
         }, 
@@ -298,57 +371,6 @@
                     "0bkUredbook426", 
                     "fbmwMQRedoran"
                 ]
-            }
-        }, 
-        {
-            "Topic": "1RedoranScouncilors", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013209DC"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQRedoranVenim", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1rat", 
-                "1HouseSRedoran", 
-                "1outlander"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Even if you get the councilors on your side, I will veto them. I would rather die than see House Redoran dishonored by an outlander.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bolvynSvenim", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
             }
         }
     ]

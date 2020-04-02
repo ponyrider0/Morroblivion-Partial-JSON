@@ -1,0 +1,114 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01F8EEFD"
+    }, 
+    "EDID - Editor ID": "mwSkillTrain1Illusion", 
+    "Quests": [
+        "mwSkillTrain"
+    ], 
+    "FULL - Name": "Illusion", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "mwSkillTrain1Illusion", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01073648"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "mwSkillTrain", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Very well. Next time, I shall train you in Illusion.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0nineUtoes", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0gildan", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0estirdalin", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ererSdarothril", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0procyonSnigilius", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0anTzaw", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 42, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "A8 16 04 00 01 00 17 00 15 00 12 00 72 01 00 73 11 00 0A 00 20 58 0E 10 04 00 01 00 17 00 A9 16 08 00 01 00 72 01 00 73 11 00", 
+                "SCTX - Result script source": "SetTrainerSkill illusion\r\nset mwSkillTrain.tempval to GetAV illusion\r\nSetTrainerLevel mwSkillTrain.tempval", 
+                "References": [
+                    "mwSkillTrain"
+                ]
+            }
+        }
+    ]
+}

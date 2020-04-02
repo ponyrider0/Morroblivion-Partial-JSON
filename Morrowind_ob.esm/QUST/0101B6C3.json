@@ -186,7 +186,8 @@
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCTX - Result script source": ""
                     }
                 }
             ]
@@ -200,11 +201,17 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 2, 
+                            "CompiledSize": 24, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "1C 00 01 00 73 10 02 00 00 00 03 10 0A 00 02 00 72 02 00 6E 00 00 00 00", 
+                        "SCTX - Result script source": "fbmwbmKrishDoorREF.UnLock\r\nSetEssential fbmwbmKrish 0\r\n", 
+                        "References": [
+                            "fbmwbmKrishDoorREF", 
+                            "fbmwbmKrish"
+                        ]
                     }
                 }
             ]
@@ -231,9 +238,7 @@
             "INDX - Stage index": 90, 
             "Log Entries": [
                 {
-                    "QSDT - Stage Flags": {
-                        "Complete quest": true
-                    }, 
+                    "QSDT - Stage Flags": {}, 
                     "CNAM - Log Entry": "Dulk knows nothing about the dead horkers. He tells me that his master Karstaag disappeared days ago, after werewolves appeared at his door. The rest of the giant's minions have been involved in the rebellion at the castle, and could not have caused the deaths of the horkers. I should report these findings to Wind-Eye.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
@@ -272,6 +277,25 @@
                             "1threeSsigns"
                         ]
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "01F0118F", 
+                "Flags": {}, 
+                "Unused": "00 D1 21"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMFrostGiant1", 
+                    "Parameter #2": "00 00 00 00"
                 }
             ]
         }

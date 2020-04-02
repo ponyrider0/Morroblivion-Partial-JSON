@@ -1,0 +1,51 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01005C94"
+    }, 
+    "EDID - Editor ID": "mwLostMagicTestScript", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 20, 
+        "CompiledSize": 432, 
+        "VariableCount": 2, 
+        "Type": 1
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 A2 01 00 00 16 00 0D 00 1B 00 09 00 20 73 02 00 20 30 20 3D 3D 1C 00 01 00 0F 10 09 00 02 00 01 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 14 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 15 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 16 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 17 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 18 00 6E 64 00 00 00 1C 00 01 00 0F 10 09 00 02 00 19 00 6E 64 00 00 00 1C 00 01 00 6A 16 05 00 01 00 72 02 00 1C 00 01 00 6A 16 05 00 01 00 72 03 00 1C 00 01 00 6A 16 05 00 01 00 72 04 00 1C 00 01 00 6A 16 05 00 01 00 72 05 00 1C 00 01 00 6A 16 05 00 01 00 72 06 00 1C 00 01 00 6A 16 05 00 01 00 72 07 00 1C 00 01 00 6A 16 05 00 01 00 72 08 00 1C 00 01 00 6A 16 05 00 01 00 72 09 00 1C 00 01 00 6A 16 05 00 01 00 72 0A 00 1C 00 01 00 6A 16 05 00 01 00 72 0B 00 1C 00 01 00 6A 16 05 00 01 00 72 0C 00 1C 00 01 00 6A 16 05 00 01 00 72 0D 00 1C 00 01 00 6A 16 05 00 01 00 72 0E 00 1C 00 01 00 6A 16 05 00 01 00 72 0F 00 1C 00 01 00 66 16 0A 00 02 00 72 10 00 6E 14 00 00 00 1C 00 01 00 66 16 0A 00 02 00 72 11 00 6E 14 00 00 00 1C 00 01 00 66 16 0A 00 02 00 72 12 00 6E 01 00 00 00 1C 00 01 00 66 16 0A 00 02 00 72 13 00 6E 01 00 00 00 15 00 07 00 73 02 00 02 00 20 31 37 10 05 00 01 00 72 14 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwLostMagicTestScript\n\nshort doonce\n\nBegin GameMode\n\n\tif doonce == 0\n\t\tplayer.setav intelligence 100\n\t\tplayer.setav alteration 100\n\t\tplayer.setav conjuration 100\n\t\tplayer.setav destruction 100\n\t\tplayer.setav illusion 100\n\t\tplayer.setav mysticism 100\n\t\tplayer.setav restoration 100\n\t\t\n\t\tplayer.AddSpellNS 0boundSspear\n\t\tplayer.AddSpellNS 0slowfall\n\t\tplayer.AddSpellNS 0strongSlevitate\n\t\tplayer.AddSpellNS 0summonSancestralSghost\n\t\tplayer.AddSpellNS 0summonSbonelord\n\t\tplayer.AddSpellNS 0summonSgreaterSbonewalker\n\t\tplayer.AddSpellNS 0summonSleastSbonewalker\n\t\tplayer.AddSpellNS 0summonSwingedStwilight\n\t\tplayer.AddSpellNS 0summonUcenturionUunique\n\t\tplayer.AddSpellNS 0SwimmerAsUBlessing\n\t\tplayer.AddSpellNS 0tinurAsShoptoad\n\t\tplayer.AddSpellNS 0detectSenchantment\n\t\tplayer.AddSpellNS 0skillmephalaUsp\n\t\tplayer.AddSpellNS 0orcUbeserk\n\t\t\n\t\tplayer.additemNS 0scUwindwalker 20\n\t\tplayer.additemNS 0scUmageseye 20\n\t\tplayer.additemNS 0steelSjinkbladeSofStheSaegis 1\n\t\tplayer.additemNS fbmwBMamulstr1 1\n\n\t\tset doonce to 1\n\n\t\tstopquest mwlostmagictest\n\tendif\n\nend\n;<CSEBlock>\n;<CSECaretPos> 995 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "6F 66 53 74 68 65 53", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "doonce"
+        }
+    ], 
+    "References": [
+        20, 
+        "0boundSspear", 
+        "0slowfall", 
+        "0strongSlevitate", 
+        "0summonSancestralSghost", 
+        "0summonSbonelord", 
+        "0summonSgreaterSbonewalker", 
+        "0summonSleastSbonewalker", 
+        "0summonSwingedStwilight", 
+        "0summonUcenturionUunique", 
+        "0SwimmerAsUBlessing", 
+        "0tinurAsShoptoad", 
+        "0detectSenchantment", 
+        "0skillmephalaUsp", 
+        "0orcUbeserk", 
+        "0scUwindwalker", 
+        "0scUmageseye", 
+        "0steelSjinkbladeSofStheSaegis", 
+        "fbmwBMamulstr1", 
+        "mwLostMagicTest"
+    ]
+}

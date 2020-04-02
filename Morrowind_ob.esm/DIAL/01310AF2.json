@@ -18,20 +18,17 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013222AE"
+                "FormID": "0132229D"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {
-                    "Random": true
-                }
+                "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "013222A2", 
             "Add topics": [
-                "1ArchTMage", 
-                "1Trebonius"
+                "1theSEmpire"
             ], 
             "Responses": [
                 {
@@ -41,7 +38,73 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I have not had word that you were in good standing again.", 
+                    "NAM1 - Response Text": "No matter what the locals say, the practice is not outlawed by the Empire, you should know that. They have nothing to fear of me.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sorkvildStheSraven", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132229E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "0132229D", 
+            "Add topics": [
+                "1theSEmpire", 
+                "1necromancy", 
+                "1Morrowind", 
+                "1Dunmer", 
+                "1necromancers", 
+                "1Dunmer", 
+                "1guard", 
+                "1sacred", 
+                "1necromancy", 
+                "1necromancy"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "In the Empire, necromancy is a legitimate discipline, though body and spirit are protected property, and may not be used without permission of the owner.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -51,140 +114,45 @@
                         "Unused": "CD CD CD", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "If you persist in this behavior, I will be forced to make a formal complaint to Arch-Mage Trebonius.", 
+                    "NAM1 - Response Text": "But in Morrowind, the Dunmer loathe necromancers, and put them to death.", 
                     "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 193, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
                 }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013222AF"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Random": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "013222AE", 
-            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
                         "Unused": "CD CD CD", 
-                        "Response number": 1
+                        "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "You were expelled some time ago. Do not expect me to help you now.", 
+                    "NAM1 - Response Text": "That's absurd, of course, since the Dunmer summon their OWN dead to guard tombs and defend the family.", 
                     "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
                 }, 
-                {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 193, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013222B0"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Random": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "013222AF", 
-            "Add topics": [
-                "1Vvardenfell"
-            ], 
-            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
                         "Unused": "CD CD CD", 
-                        "Response number": 1
+                        "Response number": 4
                     }, 
-                    "NAM1 - Response Text": "You have been expelled. I can't say I am surprised. There are so few truly dedicated to our cause here in Vvardenfell.", 
+                    "NAM1 - Response Text": "Sacred necromancy is righteous, while philosophical necromancy is evil. It's primitive superstition, that's all.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 32, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 193, 
-                    "Parameter #1": "fbmwMagesGuild", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -380,643 +348,50 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A687"
+                "FormID": "013222A2"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMGKillNecro1", 
-            "PNAM - Previous INFO": "013222A1", 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "013222CD", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "It is always a shame when any wizard turns to necromancy.", 
+                    "NAM1 - Response Text": "Yes, I am a Necromancer. What of it? Are you foolish enough to think you can punish me?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro1", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A688"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro1", 
-            "PNAM - Previous INFO": "01F8A687", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "While killing is never pleasant, it is sometimes necessary. Telura Ulver is dead. You have proven yourself to the Guild.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
                     "Parameter #1": "0teluraSulver", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro1", 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 28, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgkillnecro1 100\r\nmoddisposition player 10", 
-                "References": [
-                    "fbmwMGKillNecro1", 
-                    20
-                ]
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A689"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro1", 
-            "PNAM - Previous INFO": "01F8A688", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Kill the necromancer Telura Ulver and report back to me.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro1", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro1", 
-            "PNAM - Previous INFO": "01F8A689", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Necromancer is Telura Ulver, a former Mages Guild member. She may be found in Shal.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGWiseWoman", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0skinkintreesshade", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgkillnecro1 10", 
-                "References": [
-                    "fbmwMGKillNecro1"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "013222B0", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "There is one less necromancer here in Vvardenfell thanks to you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A68B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Wait... You already killed Tashpi? I wish you had told me sooner.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0tashpiSashibael", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 02 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgkillnecro2 100\r\nplayer.additem 0scuelementalburstfire 2\r\nplayer.additem 0scufourthbarrier 2\r\nmoddisposition player 20", 
-                "References": [
-                    20, 
-                    "fbmwMGKillNecro2", 
-                    "0scUelementalburstfire", 
-                    "0scUfourthbarrier"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A68C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You've killed Tashpi? Good work. These scrolls should help you deal with any other necromancers you find.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0tashpiSashibael", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 64, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 02 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgkillnecro2 100\r\nplayer.additem 0scuelementalburstfire 2\r\nplayer.additem 0scufourthbarrier 2\r\nmoddisposition player 20", 
-                "References": [
-                    20, 
-                    "fbmwMGKillNecro2", 
-                    "0scUelementalburstfire", 
-                    "0scUfourthbarrier"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A68D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Did you kill the necromancer?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "fbmwmgkillnecrolie", 
-                "fbmwmgkillnecrono"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A68F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A68E", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It's not a difficult assignment. Go to Maar Gan. Find Tashpi Ashibael. Kill her.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A690"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A68F", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Find Tashpi Ashibael in Maar Gan and kill her. The Mages Guild cannot tolerate necromancers.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGEscortScholar2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ranisSathrys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 23, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "setstage fbmwmgkillnecro2 10\r\naddtopic 1tashpisashibael", 
-                "References": [
-                    "fbmwMGKillNecro2", 
-                    "1TashpiSAshibael"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1necromancy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A691"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A690", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'll leave for the mainland as soon as I get a few things together. There are many other towns in need of a healer. Tell Ranis Athrys that I am dead.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tashpiSashibael", 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1098,66 +473,58 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A692"
+                "FormID": "013222AE"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Random": true
+                }
             }, 
             "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "013222AD", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1ArchTMage", 
+                "1Trebonius"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Tashpi is not a necromancer. Who have you been talking to?", 
+                    "NAM1 - Response Text": "I have not had word that you were in good standing again.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "If you persist in this behavior, I will be forced to make a formal complaint to Arch-Mage Trebonius.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 32, 
                     "Unused": 0, 
                     "Comparison Value": 0, 
-                    "Function": 71, 
-                    "Parameter #1": "noLore", 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwMagesGuild", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 69, 
-                    "Parameter #1": "DarkElf", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "MaarSGan", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1176,24 +543,26 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A693"
+                "FormID": "013222AF"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Random": true
+                }
             }, 
             "QSTI - Quest": "fbmwMGKillNecro2", 
-            "PNAM - Previous INFO": "01F8A692", 
+            "PNAM - Previous INFO": "013222AE", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "30 44 72", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Tashpi? The healer? She's no necromancer.", 
+                    "NAM1 - Response Text": "You were expelled some time ago. Do not expect me to help you now.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1201,33 +570,76 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
                     "Comparison Value": 0, 
-                    "Function": 71, 
-                    "Parameter #1": "noLore", 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwMagesGuild", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "013222B0"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Random": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "013222AF", 
+            "Add topics": [
+                "1Vvardenfell"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You have been expelled. I can't say I am surprised. There are so few truly dedicated to our cause here in Vvardenfell.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 32, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 193, 
+                    "Parameter #1": "fbmwMagesGuild", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "MaarSGan", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -3624,50 +3036,164 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "013222A2"
+                "FormID": "01F8A687"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "013222CD", 
+            "QSTI - Quest": "fbmwMGKillNecro1", 
+            "PNAM - Previous INFO": "013222A1", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Yes, I am a Necromancer. What of it? Are you foolish enough to think you can punish me?", 
+                    "NAM1 - Response Text": "It is always a shame when any wizard turns to necromancy.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro1", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A688"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro1", 
+            "PNAM - Previous INFO": "01F8A687", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "While killing is never pleasant, it is sometimes necessary. Telura Ulver is dead. You have proven yourself to the Guild.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
                     "Parameter #1": "0teluraSulver", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 79.9999997980194, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro1", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 28, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgkillnecro1 100\r\nmoddisposition player 10", 
+                "References": [
+                    "fbmwMGKillNecro1", 
+                    20
+                ]
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A689"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro1", 
+            "PNAM - Previous INFO": "01F8A688", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Kill the necromancer Telura Ulver and report back to me.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro1", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -3686,45 +3212,101 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0132229D"
+                "FormID": "01F8A68A"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "013222A2", 
-            "Add topics": [
-                "1theSEmpire"
-            ], 
+            "QSTI - Quest": "fbmwMGKillNecro1", 
+            "PNAM - Previous INFO": "01F8A689", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "No matter what the locals say, the practice is not outlawed by the Empire, you should know that. They have nothing to fear of me.", 
+                    "NAM1 - Response Text": "The Necromancer is Telura Ulver, a former Mages Guild member. She may be found in Shal.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sorkvildStheSraven", 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGWiseWoman", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0skinkintreesshade", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgkillnecro1 10", 
+                "References": [
+                    "fbmwMGKillNecro1"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A68B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "013222B0", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "30 44 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "There is one less necromancer here in Vvardenfell thanks to you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -3743,66 +3325,390 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0132229E"
+                "FormID": "01F8A68C"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "0132229D", 
-            "Add topics": [
-                "1theSEmpire", 
-                "1necromancy", 
-                "1Morrowind", 
-                "1Dunmer", 
-                "1necromancers", 
-                "1Dunmer", 
-                "1guard", 
-                "1sacred", 
-                "1necromancy", 
-                "1necromancy"
-            ], 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A68B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "30 44 72", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "In the Empire, necromancy is a legitimate discipline, though body and spirit are protected property, and may not be used without permission of the owner.", 
+                    "NAM1 - Response Text": "Wait... You already killed Tashpi? I wish you had told me sooner.", 
                     "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0tashpiSashibael", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 02 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgkillnecro2 100\r\nplayer.additem 0scuelementalburstfire 2\r\nplayer.additem 0scufourthbarrier 2\r\nmoddisposition player 20", 
+                "References": [
+                    20, 
+                    "fbmwMGKillNecro2", 
+                    "0scUelementalburstfire", 
+                    "0scUfourthbarrier"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A68D"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A68C", 
+            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
+                        "Unused": "30 44 72", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "But in Morrowind, the Dunmer loathe necromancers, and put them to death.", 
+                    "NAM1 - Response Text": "You've killed Tashpi? Good work. These scrolls should help you deal with any other necromancers you find.", 
                     "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0tashpiSashibael", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 4, 
+                    "CompiledSize": 64, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 02 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 02 00 00 00 53 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgkillnecro2 100\r\nplayer.additem 0scuelementalburstfire 2\r\nplayer.additem 0scufourthbarrier 2\r\nmoddisposition player 20", 
+                "References": [
+                    20, 
+                    "fbmwMGKillNecro2", 
+                    "0scUelementalburstfire", 
+                    "0scUfourthbarrier"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A68E"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A68D", 
+            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
+                        "Unused": "30 44 72", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "That's absurd, of course, since the Dunmer summon their OWN dead to guard tombs and defend the family.", 
+                    "NAM1 - Response Text": "Did you kill the necromancer?", 
                     "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "fbmwmgkillnecrolie", 
+                "fbmwmgkillnecrono"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A68F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A68E", 
+            "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
+                        "Unused": "30 44 72", 
+                        "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Sacred necromancy is righteous, while philosophical necromancy is evil. It's primitive superstition, that's all.", 
+                    "NAM1 - Response Text": "It's not a difficult assignment. Go to Maar Gan. Find Tashpi Ashibael. Kill her.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A690"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A68F", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "30 44 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Find Tashpi Ashibael in Maar Gan and kill her. The Mages Guild cannot tolerate necromancers.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGEscortScholar2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ranisSathrys", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage fbmwmgkillnecro2 10\r\naddtopic 1tashpisashibael", 
+                "References": [
+                    "fbmwMGKillNecro2", 
+                    "1TashpiSAshibael"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A691"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A690", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I'll leave for the mainland as soon as I get a few things together. There are many other towns in need of a healer. Tell Ranis Athrys that I am dead.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0tashpiSashibael", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A692"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "013222AD", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "30 44 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Tashpi is not a necromancer. Who have you been talking to?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -3810,17 +3716,111 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sharnSgraTmuzgob", 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "noLore", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
+                    "Function": 69, 
+                    "Parameter #1": "DarkElf", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "MaarSGan", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1necromancy", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A693"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGKillNecro2", 
+            "PNAM - Previous INFO": "01F8A692", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "30 44 72", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Tashpi? The healer? She's no necromancer.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
                     "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #1": "noLore", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 67, 
+                    "Parameter #1": "MaarSGan", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGKillNecro2", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102531E"
+                "FormID": "01014047"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,28 +24,20 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "0102530B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
+                        "Unused": "77 4D 51", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Falura Llervu is yours now. do with her as you will.", 
+                    "NAM1 - Response Text": "I'm sorry, but all we have at the moment are standard household slaves. Would you like me to tell you about them?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ11z", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -70,7 +62,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102530F"
+                "FormID": "0102530B"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -78,7 +70,97 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": "0102531E", 
+            "PNAM - Previous INFO": "0102530C", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "76 69 6C", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You need a slave to pose as a high-born Telvanni lady? Sweet Alma, that Sonummu Zabamat and her cunning plans....", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "76 69 6C", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I do have the slave you want, Falura Llervu, a pretty Dunmer girl.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "76 69 6C", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "But first you must get an exquisite shirt, an exquisite skirt, and exquisite shoes, to dress her in.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "76 69 6C", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Go get these exquisite clothes and bring them to me, and then we will discuss a price for her.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 24.9999999368811, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ11z", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0savileSimayn", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage fbmwmq11z 30\r\nAddTopic 1exquisiteSclothes", 
+                "References": [
+                    "fbmwMQ11z", 
+                    "1exquisiteSclothes"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1somethingSspecial", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0102530C"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ11z", 
+            "PNAM - Previous INFO": "0102530D", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -87,7 +169,7 @@
                         "Unused": "57 4D 51", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You have the Telvanni Bug Musk? Excellent. No, don't give it to me. You'll give it to her when you have bought her. Now. Let me tell you my price.", 
+                    "NAM1 - Response Text": "No. This will not work unless we do it my way. You cannot change my mind on this.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -97,33 +179,15 @@
                         "Unused": "57 4D 51", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "For this superb specimen, skillfully coached to play her part in your little scheme, I am pleased to accept from you the modest sum of 1200 drakes.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "And I only offer you this special price out of my friendship for Sonummu Zabamat.", 
+                    "NAM1 - Response Text": "When you have an exquisite shirt, an exquisite skirt, and exquisite shoes to dress Falura Llervu in, then we will discuss her price.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0potionUtUbugUmuskU01", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 34.9999999116335, 
+                    "Comparison Value": 29.9999999242573, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMQ11z", 
                     "Parameter #2": "00 00 00 00"
@@ -138,77 +202,7 @@
                 }
             ], 
             "Choices": [
-                "fbmwMQ11zsavileconsider", 
-                "fbmwMQ11zsaviledonthavethatmuch", 
-                "fbmwMQ11zsavilehaggle1000", 
-                "fbmwMQ11zsavilehaggle1100", 
-                "fbmwMQ11zsavilehaggle600", 
-                "fbmwMQ11zsavilehaggle800", 
-                "fbmwMQ11zsavilenohaggle"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1somethingSspecial", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102530E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": "0102530F", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 65", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "No. This will not work unless we do it my way. You cannot change my mind on this.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 65", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "When you have brought me the Telvanni Bug Musk perfume I asked you for, then Falura Llervu will be ready, and then, and only then, we will discuss her price.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 34.9999999116335, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ11z", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0savileSimayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
+                "1exquisiteSclothes"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -338,7 +332,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102530C"
+                "FormID": "0102530E"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -346,13 +340,13 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": "0102530D", 
+            "PNAM - Previous INFO": "0102530F", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
+                        "Unused": "20 30 65", 
                         "Response number": 1
                     }, 
                     "NAM1 - Response Text": "No. This will not work unless we do it my way. You cannot change my mind on this.", 
@@ -362,10 +356,10 @@
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
+                        "Unused": "20 30 65", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "When you have an exquisite shirt, an exquisite skirt, and exquisite shoes to dress Falura Llervu in, then we will discuss her price.", 
+                    "NAM1 - Response Text": "When you have brought me the Telvanni Bug Musk perfume I asked you for, then Falura Llervu will be ready, and then, and only then, we will discuss her price.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -373,7 +367,7 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
+                    "Comparison Value": 34.9999999116335, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMQ11z", 
                     "Parameter #2": "00 00 00 00"
@@ -386,9 +380,6 @@
                     "Parameter #1": "0savileSimayn", 
                     "Parameter #2": "00 00 00 00"
                 }
-            ], 
-            "Choices": [
-                "1exquisiteSclothes"
             ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
@@ -405,7 +396,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0102530B"
+                "FormID": "0102530F"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -413,54 +404,52 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": "0102530C", 
+            "PNAM - Previous INFO": "0102531E", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "76 69 6C", 
+                        "Unused": "57 4D 51", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You need a slave to pose as a high-born Telvanni lady? Sweet Alma, that Sonummu Zabamat and her cunning plans....", 
+                    "NAM1 - Response Text": "You have the Telvanni Bug Musk? Excellent. No, don't give it to me. You'll give it to her when you have bought her. Now. Let me tell you my price.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "76 69 6C", 
+                        "Unused": "57 4D 51", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "I do have the slave you want, Falura Llervu, a pretty Dunmer girl.", 
+                    "NAM1 - Response Text": "For this superb specimen, skillfully coached to play her part in your little scheme, I am pleased to accept from you the modest sum of 1200 drakes.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "76 69 6C", 
+                        "Unused": "57 4D 51", 
                         "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "But first you must get an exquisite shirt, an exquisite skirt, and exquisite shoes, to dress her in.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "76 69 6C", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Go get these exquisite clothes and bring them to me, and then we will discuss a price for her.", 
+                    "NAM1 - Response Text": "And I only offer you this special price out of my friendship for Sonummu Zabamat.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0potionUtUbugUmuskU01", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 24.9999999368811, 
+                    "Comparison Value": 34.9999999116335, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMQ11z", 
                     "Parameter #2": "00 00 00 00"
@@ -474,20 +463,23 @@
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
+            "Choices": [
+                "fbmwMQ11zsavileconsider", 
+                "fbmwMQ11zsaviledonthavethatmuch", 
+                "fbmwMQ11zsavilehaggle1000", 
+                "fbmwMQ11zsavilehaggle1100", 
+                "fbmwMQ11zsavilehaggle600", 
+                "fbmwMQ11zsavilehaggle800", 
+                "fbmwMQ11zsavilenohaggle"
+            ], 
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 23, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 58 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "setstage fbmwmq11z 30\r\nAddTopic 1exquisiteSclothes", 
-                "References": [
-                    "fbmwMQ11z", 
-                    "1exquisiteSclothes"
-                ]
+                }
             }
         }, 
         {
@@ -495,7 +487,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01014047"
+                "FormID": "0102531E"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -503,20 +495,28 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ11z", 
-            "PNAM - Previous INFO": "0102530B", 
+            "PNAM - Previous INFO": 0, 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "77 4D 51", 
+                        "Unused": "57 4D 51", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I'm sorry, but all we have at the moment are standard household slaves. Would you like me to tell you about them?", 
+                    "NAM1 - Response Text": "Falura Llervu is yours now. do with her as you will.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 39.9999998990097, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ11z", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 

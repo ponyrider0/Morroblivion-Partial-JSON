@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01321D32"
+                "FormID": "010060E9"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,32 +24,20 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1work", 
-                "1YagrumSBagarn"
-            ], 
+            "PNAM - Previous INFO": "010060EA", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "6D 77 4D", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "This is an interesting work. Yagrum Bagarn might be able to tell you more.", 
+                    "NAM1 - Response Text": "I cannot read and write the Dwemer language.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0divaythSfyr", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 66, 
                     "Unused": 0, 
@@ -62,8 +50,90 @@
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1EggSofSTime", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010060EA"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGDwarves", 
+            "PNAM - Previous INFO": "01F8A61A", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 64 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, with the help of \"Hanging Gardens,\" I can translate some of this. This is Bthuand Mzahnch's refutation of a popular theory from Nerevar's time.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 64 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "A few tones of Dwemer believed that using the power Lorkhan's Heart involved unjustifiable risks.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "61 64 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "\"The Egg of Time\" summarized many of Bthuand's arguments against this idea, many of which are quite compelling.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUhanginggardenswasten", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUEggOfTime", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0baladasSdemnevanni", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -317,188 +387,6 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01F8A61B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": "01321D2C", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "This is certainly an interesting book. I know many things about the Dwemer ruins here in Vvardenfell, but I'm afraid I can't confirm what this book says.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 30 66", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Perhaps this is what destroyed the Dwarves, and perhaps not. The author certainly didn't seem to think so.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hasphatSantabolis", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMGDwarves", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1EggSofSTime", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321D2F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": "01F8A61B", 
-            "Add topics": [
-                "1Bthuand", 
-                "1Nerevar", 
-                "1Dwemer", 
-                "1EggSofSTime", 
-                "1Bthuand", 
-                "1DivineSMetaphysics", 
-                "1explanation", 
-                "1theSDwemer", 
-                "1Anumidium", 
-                "1KagrenacAsSTools", 
-                "1sacred"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I can now translate these books. This first one is Bthuand Mzahnch's refutation of a popular theory from Nerevar's time.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "A few tones of Dwemer believed that using the power Lorkhan's Heart was an unjustifiable risk.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "\"The Egg of Time\" contains Bthuand's arguments against this idea, many of which are quite compelling.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "The next book, \"Divine Metaphysics,\" is an explanation of how the Dwemer tried to make a new god, Anumidium, using Kagrenac's tools and the sacred tones on Lorkhan's heart.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUEggOfTime", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUDivineMetaphysics", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUhanginggardenswasten", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0baladasSdemnevanni", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgdwarves 70", 
-                "References": [
-                    "fbmwMGDwarves"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1EggSofSTime", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
                 "FormID": "01321D2D"
             }, 
             "DATA - ": {
@@ -665,6 +553,244 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01321D2F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGDwarves", 
+            "PNAM - Previous INFO": "01F8A61B", 
+            "Add topics": [
+                "1Bthuand", 
+                "1Nerevar", 
+                "1Dwemer", 
+                "1EggSofSTime", 
+                "1Bthuand", 
+                "1DivineSMetaphysics", 
+                "1explanation", 
+                "1theSDwemer", 
+                "1Anumidium", 
+                "1KagrenacAsSTools", 
+                "1sacred"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, I can now translate these books. This first one is Bthuand Mzahnch's refutation of a popular theory from Nerevar's time.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "A few tones of Dwemer believed that using the power Lorkhan's Heart was an unjustifiable risk.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "\"The Egg of Time\" contains Bthuand's arguments against this idea, many of which are quite compelling.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "The next book, \"Divine Metaphysics,\" is an explanation of how the Dwemer tried to make a new god, Anumidium, using Kagrenac's tools and the sacred tones on Lorkhan's heart.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUEggOfTime", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUDivineMetaphysics", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUhanginggardenswasten", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0baladasSdemnevanni", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 46 00 00 00", 
+                "SCTX - Result script source": "setstage fbmwmgdwarves 70", 
+                "References": [
+                    "fbmwMGDwarves"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1EggSofSTime", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01321D32"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGDwarves", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1work", 
+                "1YagrumSBagarn"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "This is an interesting work. Yagrum Bagarn might be able to tell you more.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0divaythSfyr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 66, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 47, 
+                    "Parameter #1": "0bkUEggOfTime", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1EggSofSTime", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01F8A619"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMGDwarves", 
+            "PNAM - Previous INFO": "010060E9", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So you translated this book and it says the Dwarves were destroyed by Lorkhan's heart? That's a very interesting theory, but I don't believe it. In any case, it is not going to help me in my own research.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMGDwarves", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0edwinnaSelbert", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1EggSofSTime", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8A61A"
             }, 
             "DATA - ": {
@@ -729,7 +855,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010060EA"
+                "FormID": "01F8A61B"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -737,143 +863,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": "01F8A61A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 64 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, with the help of \"Hanging Gardens,\" I can translate some of this. This is Bthuand Mzahnch's refutation of a popular theory from Nerevar's time.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 64 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "A few tones of Dwemer believed that using the power Lorkhan's Heart involved unjustifiable risks.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "61 64 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "\"The Egg of Time\" summarized many of Bthuand's arguments against this idea, many of which are quite compelling.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUhanginggardenswasten", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUEggOfTime", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0baladasSdemnevanni", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1EggSofSTime", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010060E9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": "010060EA", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6D 77 4D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I cannot read and write the Dwemer language.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0bkUEggOfTime", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0baladasSdemnevanni", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1EggSofSTime", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A619"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGDwarves", 
-            "PNAM - Previous INFO": "010060E9", 
+            "PNAM - Previous INFO": "01321D2C", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -882,25 +872,35 @@
                         "Unused": "20 30 66", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "So you translated this book and it says the Dwarves were destroyed by Lorkhan's heart? That's a very interesting theory, but I don't believe it. In any case, it is not going to help me in my own research.", 
+                    "NAM1 - Response Text": "This is certainly an interesting book. I know many things about the Dwemer ruins here in Vvardenfell, but I'm afraid I can't confirm what this book says.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 30 66", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Perhaps this is what destroyed the Dwarves, and perhaps not. The author certainly didn't seem to think so.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hasphatSantabolis", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
                 {
                     "Type": 96, 
                     "Unused": 0, 
                     "Comparison Value": 69.999999823267, 
                     "Function": 58, 
                     "Parameter #1": "fbmwMGDwarves", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

@@ -81,7 +81,7 @@
             "Log Entries": [
                 {
                     "QSDT - Stage Flags": {}, 
-                    "CNAM - Log Entry": "I agree to guide Sondaale of Shimmerene back to the entrance of Telasero.", 
+                    "CNAM - Log Entry": "I agreed to guide Sondaale of Shimmerene out of Telasero.", 
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
@@ -180,9 +180,42 @@
     "Targets": [
         {
             "QSTA - Target": {
+                "Target": "mwTelaseroMapMarker", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 79, 
+                    "Parameter #1": "MorroDefaultQuest", 
+                    "Parameter #2": 1
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGTelasero", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 69.999999823267, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwFGTelasero", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
                 "Target": "mwHrundiREF", 
                 "Flags": {}, 
-                "Unused": "00 46 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {
@@ -207,7 +240,7 @@
             "QSTA - Target": {
                 "Target": "mwSondaaleREF", 
                 "Flags": {}, 
-                "Unused": "00 46 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {
@@ -232,7 +265,7 @@
             "QSTA - Target": {
                 "Target": "mwTelaseroMapMarker", 
                 "Flags": {}, 
-                "Unused": "00 46 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {
@@ -257,7 +290,7 @@
             "QSTA - Target": {
                 "Target": "mwSondaaleREF", 
                 "Flags": {}, 
-                "Unused": "00 46 21"
+                "Unused": "00 2E 26"
             }, 
             "Conditions": [
                 {

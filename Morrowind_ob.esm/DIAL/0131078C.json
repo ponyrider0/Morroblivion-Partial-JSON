@@ -16,6 +16,87 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01320A7B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMVSlaveMule", 
+            "PNAM - Previous INFO": "01F8A2EC", 
+            "Add topics": [
+                "1business", 
+                "1VorarSHelas", 
+                "1Rabinna", 
+                "1slaves", 
+                "1work"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yeah, just a little unfinished business between Vorar Helas and me. I owe him big for a deal we made a while ago.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Rabinna here ought to pay for my side of the bargain, and more. There's a lot of money in some of these slaves. You interested in the work?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0RelamSArinith", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1deliverSthisSslave1", 
+                "1deliverSthisSslave2"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 2, 
+                    "CompiledSize": 23, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 58 10 05 00 01 00 72 02 00", 
+                "SCTX - Result script source": "setstage fbmwmvslavemule 20\r\naddtopic 1travelstogether", 
+                "References": [
+                    "fbmwMVSlaveMule", 
+                    "1travelStogether"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1deliverSthisSslave", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8A2E7"
             }, 
             "DATA - ": {
@@ -395,87 +476,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1deliverSthisSslave", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01320A7B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMVSlaveMule", 
-            "PNAM - Previous INFO": "01F8A2EC", 
-            "Add topics": [
-                "1business", 
-                "1VorarSHelas", 
-                "1Rabinna", 
-                "1slaves", 
-                "1work"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yeah, just a little unfinished business between Vorar Helas and me. I owe him big for a deal we made a while ago.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Rabinna here ought to pay for my side of the bargain, and more. There's a lot of money in some of these slaves. You interested in the work?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0RelamSArinith", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1deliverSthisSslave1", 
-                "1deliverSthisSslave2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 23, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00 58 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "setstage fbmwmvslavemule 20\r\naddtopic 1travelstogether", 
-                "References": [
-                    "fbmwMVSlaveMule", 
-                    "1travelStogether"
-                ]
             }
         }
     ]

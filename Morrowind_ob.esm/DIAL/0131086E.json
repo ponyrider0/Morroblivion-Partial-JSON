@@ -19,6 +19,215 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0100CE3F"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ03", 
+            "PNAM - Previous INFO": "0100CE40", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "This Ashlander cult believes the long-dead hero Nerevar will be reborn to honor ancient promises to the tribes.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "According to legend, the prophesied Nerevarine will cast down the false gods of the Tribunal Temple,", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "restore the traditional ancestor worship practiced by the Ashlanders, and drive all outlanders from Morrowind.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "Both Temple and Empire outlaw the cult, but it persists among the Ashlanders, who care little for Imperial or Temple law. Here.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 5
+                    }, 
+                    "NAM1 - Response Text": "Take this copy of my notes on the topic for Caius.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ03", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "setstage FBMWMQ03 20\r\nplayer.additem 0bkUA1U4USharnsNotes 1", 
+                "References": [
+                    20, 
+                    "fbmwMQ03", 
+                    "0bkUa1U4Usharnsnotes"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100CE40"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ03", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "4D 57 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I gave you a copy of my notes for Caius. Read them.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 19.9999999495049, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ03", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100CE41"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "01014232", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "4D 57 4D", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Now YOU are the expert on the Nerevarine cult, eh, Nerevarine?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 56, 
+                    "Parameter #1": "fbmwMQCompletedDialogues", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "0100CE42"
             }, 
             "DATA - ": {
@@ -103,18 +312,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01014231"
+                "FormID": "0101422F"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1ProgressSofSTruth"
-            ], 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "01321108", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -123,25 +329,33 @@
                         "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "As I said, the Dissident priests have a book called 'Progress of Truth' which gives their views on the beliefs of the Nerevarine cult.", 
+                    "NAM1 - Response Text": "Well, you're a hero, and people worship heroes. It must be strange, having a cult to worship you.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04a", 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "noLore", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mehraSmilo", 
+                    "Function": 56, 
+                    "Parameter #1": "fbmwMQCompletedDialogues", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 68, 
+                    "Parameter #1": "Scout", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -260,7 +474,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101AF7A"
+                "FormID": "01014231"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -268,7 +482,64 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "01014230", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1ProgressSofSTruth"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "As I said, the Dissident priests have a book called 'Progress of Truth' which gives their views on the beliefs of the Nerevarine cult.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04a", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0mehraSmilo", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01014232"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "01321109", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -277,17 +548,17 @@
                         "Unused": "57 4D 51", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Just like Addhiranirr said... silly superstition. Maybe you got lucky? Maybe this Dagoth, poor old fellow, and tired, so he falls down?", 
+                    "NAM1 - Response Text": "It is strange. Now that you have fulfilled the Nerevarine prophecies, will there continue to be a Nerevarine cult?", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
+                        "Unused": "57 4D 51", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "All the stories Addhiranirr hears? Make you sound like some kind of hero or something.", 
+                    "NAM1 - Response Text": " I wonder -- are there other Nerevarine prophecies? We must search the libraries at Holamayan.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -305,7 +576,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #1": "0mehraSmilo", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -324,410 +595,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101AF78"
+                "FormID": "01014233"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF7A", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101AF7B"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF78", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense. Prophecies and ancient heroes reborn and other silliness.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 59.9999998485146, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101AF79"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF7B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense. Prophecies and ancient heroes reborn and other silliness.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101AF77"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF79", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you, because Addhiranirr is very angry with you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 55.9999998586136, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101AF76"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF77", 
-            "Add topics": [
-                "1CensusSandSExciseSagent"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "73 6F 75", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you, because Addhiranirr is very distracted by an annoying taxman.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 14.9999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0101AF75"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF76", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0addhiranirr", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01014236"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ04", 
-            "PNAM - Previous INFO": "0101AF75", 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "0132110B", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -736,17 +612,27 @@
                         "Unused": "4D 57 4D", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I gave you a summary for Caius. Feel free to read it, of course.", 
+                    "NAM1 - Response Text": "I suspect the Nerevarine cult will continue to look for the other prophesied blessings. Will you drive the foreigners from Morrowind, I wonder.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "4D 57 4D", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "And renew the ancient promises of the Dunmer to honor the lands and ancient rights of the Ashlanders?", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04c", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 56, 
+                    "Parameter #1": "fbmwMQCompletedDialogues", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -754,7 +640,85 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0huleeya", 
+                    "Parameter #1": "0hassourSzainsubani", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01014234"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "MorroDefaultQuest", 
+            "PNAM - Previous INFO": "01014237", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So how does it feel to have a cult worshipping you?", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 56, 
+                    "Parameter #1": "fbmwMQCompletedDialogues", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 4.99999998737621, 
+                    "Function": 73, 
+                    "Parameter #1": "0ImperialSLegion", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 76, 
+                    "Parameter #1": 20, 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "noLore", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -874,15 +838,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100CE40"
+                "FormID": "01014236"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMQ03", 
-            "PNAM - Previous INFO": 0, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF75", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -891,7 +855,7 @@
                         "Unused": "4D 57 4D", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I gave you a copy of my notes for Caius. Read them.", 
+                    "NAM1 - Response Text": "I gave you a summary for Caius. Feel free to read it, of course.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -899,9 +863,9 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
+                    "Comparison Value": 49.9999998737621, 
                     "Function": 58, 
-                    "Parameter #1": "fbmwMQ03", 
+                    "Parameter #1": "fbmwMQ04c", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -909,167 +873,7 @@
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
-                    "Parameter #1": "0sharnSgraTmuzgob", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0100CE3F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ03", 
-            "PNAM - Previous INFO": "0100CE40", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "This Ashlander cult believes the long-dead hero Nerevar will be reborn to honor ancient promises to the tribes.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "According to legend, the prophesied Nerevarine will cast down the false gods of the Tribunal Temple,", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "restore the traditional ancestor worship practiced by the Ashlanders, and drive all outlanders from Morrowind.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Both Temple and Empire outlaw the cult, but it persists among the Ashlanders, who care little for Imperial or Temple law. Here.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 5
-                    }, 
-                    "NAM1 - Response Text": "Take this copy of my notes on the topic for Caius.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 14.9999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ03", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sharnSgraTmuzgob", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWMQ03 20\r\nplayer.additem 0bkUA1U4USharnsNotes 1", 
-                "References": [
-                    20, 
-                    "fbmwMQ03", 
-                    "0bkUa1U4Usharnsnotes"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132110A"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQ03", 
-            "PNAM - Previous INFO": "0100CE3F", 
-            "Add topics": [
-                "1Errand", 
-                "1discuss", 
-                "1NerevarineScult"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "When you've taken care of the errand, we can discuss the Nerevarine cult.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sharnSgraTmuzgob", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #1": "0huleeya", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1162,15 +966,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01014234"
+                "FormID": "0101AF75"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01014237", 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF76", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -1179,7 +983,338 @@
                         "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "So how does it feel to have a cult worshipping you?", 
+                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF76"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF77", 
+            "Add topics": [
+                "1CensusSandSExciseSagent"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you, because Addhiranirr is very distracted by an annoying taxman.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 14.9999999621286, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF77"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF79", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "No. Addhiranirr is not talking about this with you, because Addhiranirr is very angry with you.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 55.9999998586136, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF78"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF7A", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 44.9999998863859, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF79"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF7B", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense. Prophecies and ancient heroes reborn and other silliness.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF7A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "01014230", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Just like Addhiranirr said... silly superstition. Maybe you got lucky? Maybe this Dagoth, poor old fellow, and tired, so he falls down?", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "All the stories Addhiranirr hears? Make you sound like some kind of hero or something.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1195,33 +1330,83 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 4.99999998737621, 
-                    "Function": 73, 
-                    "Parameter #1": "0ImperialSLegion", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
                     "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0101AF7B"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ04", 
+            "PNAM - Previous INFO": "0101AF78", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 4D 51", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Yes, Addhiranirr knows nothing about this Nerevarine cult, because it is just silly superstition. So you tell Caius this.", 
+                    "NAM2 - Actor notes": ""
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 76, 
-                    "Parameter #1": 20, 
-                    "Parameter #2": "00 00 00 00"
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Nobody in her right mind pays any attention to this nonsense. Prophecies and ancient heroes reborn and other silliness.", 
+                    "NAM2 - Actor notes": ""
                 }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "73 6F 75", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Prophecies and ancient heroes reborn and other silliness. Fuzzy tales for little kitties.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 71, 
-                    "Parameter #1": "noLore", 
+                    "Comparison Value": 59.9999998485146, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMQ04b", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
+                    "Function": 72, 
+                    "Parameter #1": "0addhiranirr", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1331,7 +1516,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0101422F"
+                "FormID": "01321109"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -1339,16 +1524,16 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321108", 
+            "PNAM - Previous INFO": "01014233", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Well, you're a hero, and people worship heroes. It must be strange, having a cult to worship you.", 
+                    "NAM1 - Response Text": "That is not a subject for idle conversation.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1356,25 +1541,76 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0hassourSzainsubani", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
-                    "Parameter #1": "noLore", 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1NerevarineScult", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0132110A"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQ03", 
+            "PNAM - Previous INFO": "0100CE3F", 
+            "Add topics": [
+                "1Errand", 
+                "1discuss", 
+                "1NerevarineScult"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "When you've taken care of the errand, we can discuss the Nerevarine cult.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0sharnSgraTmuzgob", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 56, 
-                    "Parameter #1": "fbmwMQCompletedDialogues", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 68, 
-                    "Parameter #1": "Scout", 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -1443,242 +1679,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 71, 
                     "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01014233"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "0132110B", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "4D 57 4D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I suspect the Nerevarine cult will continue to look for the other prophesied blessings. Will you drive the foreigners from Morrowind, I wonder.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "4D 57 4D", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And renew the ancient promises of the Dunmer to honor the lands and ancient rights of the Ashlanders?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 56, 
-                    "Parameter #1": "fbmwMQCompletedDialogues", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hassourSzainsubani", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321109"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01014233", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "That is not a subject for idle conversation.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0hassourSzainsubani", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01014232"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01321109", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It is strange. Now that you have fulfilled the Nerevarine prophecies, will there continue to be a Nerevarine cult?", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "57 4D 51", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": " I wonder -- are there other Nerevarine prophecies? We must search the libraries at Holamayan.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 56, 
-                    "Parameter #1": "fbmwMQCompletedDialogues", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mehraSmilo", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1NerevarineScult", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0100CE41"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": "01014232", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "4D 57 4D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Now YOU are the expert on the Nerevarine cult, eh, Nerevarine?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 56, 
-                    "Parameter #1": "fbmwMQCompletedDialogues", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0sharnSgraTmuzgob", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

@@ -112,11 +112,21 @@
                     "Result Script": {
                         "SCHR - Basic Script Data": {
                             "Unused": "00 00 00 00", 
-                            "RefCount": 0, 
-                            "CompiledSize": 0, 
+                            "RefCount": 6, 
+                            "CompiledSize": 54, 
                             "VariableCount": 0, 
                             "Type": 1
-                        }
+                        }, 
+                        "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00 55 10 05 00 01 00 72 02 00 55 10 05 00 01 00 72 03 00 55 10 05 00 01 00 72 04 00 55 10 05 00 01 00 72 05 00 55 10 05 00 01 00 72 06 00", 
+                        "SCTX - Result script source": "ShowMap mwBeastStoneMapMarker\r\nShowMap mwEarthStoneMapMarker\r\nShowMap mwSunStoneMapMarker\r\nShowMap mwTreeStoneMapMarker\r\nShowMap mwWaterStoneMapMarker\r\nShowMap mwWindStoneMapMarker", 
+                        "References": [
+                            "mwBeastStoneMapMarker", 
+                            "mwEarthStoneMapMarker", 
+                            "mwSunStoneMapMarker", 
+                            "mwTreeStoneMapMarker", 
+                            "mwWaterStoneMapMarker", 
+                            "mwWindStoneMapMarker"
+                        ]
                     }
                 }
             ]
@@ -266,6 +276,218 @@
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 53 6B 61 61 6C 20 54 65 73 74 20 6F 66 20 4C 6F 79 61 6C 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
                         "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Skaal Test of Loyalty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif\r\n"
                     }
+                }
+            ]
+        }
+    ], 
+    "Targets": [
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmkorstRef", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 128, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmWindShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 50
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 70
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmwaterShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 50
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 60
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmTreeShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 50
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 64
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmSunShinyREF", 
+                "Flags": {
+                    "Compass marker ignores locks": true
+                }, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 50
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 68
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmEarthShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 50
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 62
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmHeartFangREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 129, 
+                    "Unused": 0, 
+                    "Comparison Value": 29.9999999242573, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 79.9999997980194, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ]
+        }, 
+        {
+            "QSTA - Target": {
+                "Target": "fbmwbmBeastShinyREF", 
+                "Flags": {}, 
+                "Unused": "00 2E 26"
+            }, 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMBeasts", 
+                    "Parameter #2": 105
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 59, 
+                    "Parameter #1": "fbmwBMStones", 
+                    "Parameter #2": 66
                 }
             ]
         }

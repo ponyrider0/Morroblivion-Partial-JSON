@@ -13,7 +13,7 @@
         "Type": 0
     }, 
     "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 10 00 28 00 00 00 01 00 72 02 00 39 10 0A 00 02 00 72 03 00 6E 46 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 11 00 00 00 10 00 06 00 00 00 66 00 00 00 16 00 29 00 04 00 25 00 20 58 01 10 05 00 01 00 72 04 00 20 32 35 36 20 3C 3D 20 58 3A 10 05 00 01 00 72 03 00 20 37 30 20 3C 20 26 26 39 10 0A 00 02 00 72 03 00 6E 46 00 00 00 15 00 0A 00 72 03 00 73 01 00 02 00 20 30 1C 00 01 00 5E 10 00 00 1C 00 01 00 56 10 05 00 01 00 72 05 00 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "ScriptName fbmwSondaaleScript\n\nBegin OnPackageEnd fbmwFGSondaalFollow\n\tSetStage fbmwFGTelasero 70\n\tSET fbmwFGTelasero.FollowNow TO 0\n\tmwSondaaleREF.EvaluatePackage\nEND\n\nBegin GameMode\n\tIF GetDistance mwTelaseroMapMarker <= 256 && GetStage fbmwFGTelasero < 70\n\t\tSetStage fbmwFGTelasero 70\n\t\tSET fbmwFGTelasero.FollowNow TO 0\n\t\tmwSondaaleREF.EvaluatePackage\n\t\tmwSondaaleREF.StartConversation Player\n\tENDIF\nEND\n;<CSEBlock>\n;<CSECaretPos> 403 </CSECaretPos>\n;</CSEBlock>", 
+    "SCTX - Script Source": "ScriptName fbmwSondaaleScript\n\nBegin OnPackageEnd fbmwFGSondaalFollow\n\tSetStage fbmwFGTelasero 70\n\tSET fbmwFGTelasero.FollowNow TO 0\n\tmwSondaaleREF.EvaluatePackage\nEND\n\nBegin GameMode\n\tIF GetDistance mwTelaseroMapMarker <= 256 && GetStage fbmwFGTelasero < 70\n\t\tSetStage fbmwFGTelasero 70\n\t\tSET fbmwFGTelasero.FollowNow TO 0\n\t\tmwSondaaleREF.EvaluatePackage\n\t\tmwSondaaleREF.StartConversation Player\n\tENDIF\nEND", 
     "References": [
         "mwSondaaleREF", 
         "fbmwfgsondaalfollow", 

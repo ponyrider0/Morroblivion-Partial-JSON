@@ -7,16 +7,19 @@
     "EDID - Editor ID": "mwCGGuard01Script", 
     "SCHR - Basic Script Data": {
         "Unused": "00 00 00 00", 
-        "RefCount": 3, 
-        "CompiledSize": 124, 
+        "RefCount": 6, 
+        "CompiledSize": 197, 
         "VariableCount": 1, 
         "Type": 0
     }, 
-    "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 10 00 2D 00 00 00 01 00 72 01 00 16 00 0F 00 02 00 0B 00 20 72 02 00 73 08 00 20 32 20 3C 15 00 0A 00 72 02 00 73 08 00 02 00 20 32 64 10 00 00 19 00 00 00 11 00 00 00 10 00 0B 00 10 00 2D 00 00 00 01 00 72 03 00 16 00 0F 00 02 00 0B 00 20 72 02 00 73 08 00 20 35 20 3C 15 00 0A 00 72 02 00 73 08 00 02 00 20 35 64 10 00 00 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "scn mwCGGuard01Script\n\n; Applied the the first guard on the ship.\n\nBegin OnPackageDone mwCGGuard01MovePackage\n\t\n\tif fbmwChargen.Guard01Stage < 2\n\t\tset fbmwChargen.Guard01Stage to 2\n\t\tPickIdle\n\tendif\n\nEnd\n\nBegin OnPackageDone mwCGGuard01EscortPackage\n\n\tif fbmwChargen.Guard01Stage < 5\n\t\tset fbmwChargen.Guard01Stage to 5\n\t\tPickIdle\n\tendif\n\nEnd\t\n;<CSEBlock>\n;<CSECaretPos> 319 </CSECaretPos>\n;</CSEBlock>", 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 0B 00 10 00 2D 00 00 00 01 00 72 02 00 16 00 0F 00 02 00 0B 00 20 72 03 00 73 08 00 20 32 20 3C 15 00 0A 00 72 03 00 73 08 00 02 00 20 32 64 10 00 00 19 00 00 00 11 00 00 00 10 00 0B 00 10 00 2D 00 00 00 01 00 72 04 00 16 00 0F 00 02 00 0B 00 20 72 03 00 73 08 00 20 35 20 3C 15 00 0A 00 72 03 00 73 08 00 02 00 20 35 5E 10 00 00 19 00 00 00 11 00 00 00 10 00 0B 00 10 00 3A 00 00 00 01 00 72 05 00 16 00 0F 00 03 00 0B 00 20 72 03 00 73 08 00 20 36 20 3C 15 00 0A 00 72 03 00 73 08 00 02 00 20 36 64 10 00 00 1C 00 01 00 5C 10 05 00 01 00 72 06 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwCGGuard01Script\n\n; Applied the the first guard on the ship.\n\nBegin OnPackageDone mwCGGuard01MovePackage\n\t\n\tif fbmwChargen.Guard01Stage < 2\n\t\tset fbmwChargen.Guard01Stage to 2\n\t\tPickIdle\n\tendif\n\nEnd\n\n\nBegin OnPackageDone mwCGGuard01EscortPackage1\n\n\tif fbmwChargen.Guard01Stage < 5\n\t\tset fbmwChargen.Guard01Stage to 5\n\t\tevp\n\tendif\n\nEnd\t\n\t\t\n\nBegin OnPackageDone mwCGGuard01EscortPackage2\n\t\n\tif fbmwChargen.Guard01Stage < 6\n\t\tset fbmwChargen.Guard01Stage to 6\n\t\tPickIdle\n\t\tmwCGGuard1REF.Look Player\n\tendif\n\nEnd\t\n\n;<CSEBlock>\n;<CSECaretPos> 322 </CSECaretPos>\n;</CSEBlock>", 
     "References": [
+        "mwCGGuard1REF", 
         "mwCGGuard01MovePackage", 
         "fbmwChargen", 
-        "mwCGGuard01EscortPackage"
+        "mwCGGuard01EscortPackage1", 
+        "mwCGGuard01EscortPackage2", 
+        20
     ]
 }

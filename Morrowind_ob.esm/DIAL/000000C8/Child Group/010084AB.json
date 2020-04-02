@@ -15,8 +15,8 @@
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
-                "Emotion Value": 50, 
+                "Emotion Type": 5, 
+                "Emotion Value": 75, 
                 "Unused": "20 30 73", 
                 "Response number": 1
             }, 
@@ -25,7 +25,7 @@
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": 2, 
                 "Emotion Value": 50, 
                 "Unused": "20 30 73", 
                 "Response number": 2
@@ -35,7 +35,7 @@
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": 2, 
                 "Emotion Value": 50, 
                 "Unused": "20 30 73", 
                 "Response number": 3
@@ -48,9 +48,17 @@
         {
             "Type": 0, 
             "Unused": 0, 
-            "Comparison Value": 59.9999998485146, 
+            "Comparison Value": 58.9999998510393, 
             "Function": 58, 
             "Parameter #1": "fbmwMVFakeSlave", 
+            "Parameter #2": "00 00 00 00"
+        }, 
+        {
+            "Type": 0, 
+            "Unused": 0, 
+            "Comparison Value": 0, 
+            "Function": 84, 
+            "Parameter #1": "0sterdecan", 
             "Parameter #2": "00 00 00 00"
         }, 
         {
@@ -62,18 +70,21 @@
             "Parameter #2": "00 00 00 00"
         }
     ], 
+    "Choices": [
+        "1theSchoiceSISgiveSyou"
+    ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
             "Unused": "00 00 00 00", 
             "RefCount": 1, 
-            "CompiledSize": 9, 
+            "CompiledSize": 14, 
             "VariableCount": 0, 
             "Type": 0
         }, 
-        "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
-        "SCTX - Result script source": "addtopic 1theschoicesisgivesyou", 
+        "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00", 
+        "SCTX - Result script source": "setstage fbmwMVFakeSlave 60\r\n", 
         "References": [
-            "1theSchoiceSISgiveSyou"
+            "fbmwMVFakeSlave"
         ]
     }
 }

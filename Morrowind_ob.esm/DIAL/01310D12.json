@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01025334"
+                "FormID": "01025332"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,16 +24,26 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwICImperialVeteran", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "01322EB5", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "57 49 43", 
+                        "Unused": "20 66 61", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I think you have been visited by an aspect of Tiber Septim. Surely this is a sign of a great doom laid upon you by the gods.", 
+                    "NAM1 - Response Text": "Old Imperial fellow? Legion veteran? Named Wulf? No. Nobody like that up here that I remember. Don't remember any old legion veterans here at all.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "20 66 61", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Not in a VERY long time. I could be wrong, but I don't think so.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -41,7 +51,7 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
+                    "Comparison Value": 0.999999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwICImperialVeteran", 
                     "Parameter #2": "00 00 00 00"
@@ -50,8 +60,8 @@
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0LalatiaSVarian", 
+                    "Function": 67, 
+                    "Parameter #1": "Ghostgate", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -149,6 +159,60 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01025334"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwICImperialVeteran", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "57 49 43", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I think you have been visited by an aspect of Tiber Septim. Surely this is a sign of a great doom laid upon you by the gods.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwICImperialVeteran", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0LalatiaSVarian", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1Wulf", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01322EB5"
             }, 
             "DATA - ": {
@@ -177,70 +241,6 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0wulf", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1Wulf", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01025332"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwICImperialVeteran", 
-            "PNAM - Previous INFO": "01322EB5", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Old Imperial fellow? Legion veteran? Named Wulf? No. Nobody like that up here that I remember. Don't remember any old legion veterans here at all.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 66 61", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Not in a VERY long time. I could be wrong, but I don't think so.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwICImperialVeteran", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "Ghostgate", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

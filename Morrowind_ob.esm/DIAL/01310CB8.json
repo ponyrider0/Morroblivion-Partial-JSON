@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01004BE1"
+                "FormID": "01004BD1"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,7 +24,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHTAdvancement", 
-            "PNAM - Previous INFO": 0, 
+            "PNAM - Previous INFO": "01004BD2", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -33,7 +33,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You cannot have a patron if you do not belong to House Telvanni, outlander.", 
+                    "NAM1 - Response Text": "Yes, I will be your patron, but first you must convince Baladas Demnevanni to join the Council.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -41,63 +41,25 @@
                 {
                     "Type": 2, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 71, 
+                    "Comparison Value": 2.99999999242573, 
+                    "Function": 73, 
                     "Parameter #1": "0Telvanni", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0Telvanni", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1patron", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01004BD3"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTAdvancement", 
-            "PNAM - Previous INFO": "01004BE1", 
-            "Responses": [
+                    "Comparison Value": 2.99999999242573, 
+                    "Function": 79, 
+                    "Parameter #1": "fbmwHTAdvancement", 
+                    "Parameter #2": 5
+                }, 
                 {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You do not need a patron anymore, outlander.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 98, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 6.9999999823267, 
-                    "Function": 73, 
-                    "Parameter #1": "0Telvanni", 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHTDaedraSkin", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -178,7 +140,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01004BD1"
+                "FormID": "01004BD3"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -186,7 +148,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHTAdvancement", 
-            "PNAM - Previous INFO": "01004BD2", 
+            "PNAM - Previous INFO": "01004BE1", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -195,33 +157,17 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Yes, I will be your patron, but first you must convince Baladas Demnevanni to join the Council.", 
+                    "NAM1 - Response Text": "You do not need a patron anymore, outlander.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 2, 
+                    "Type": 98, 
                     "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
+                    "Comparison Value": 6.9999999823267, 
                     "Function": 73, 
                     "Parameter #1": "0Telvanni", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwHTAdvancement", 
-                    "Parameter #2": 5
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHTDaedraSkin", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -230,6 +176,60 @@
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0aryon", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1patron", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01004BE1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHTAdvancement", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You cannot have a patron if you do not belong to House Telvanni, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 2, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 71, 
+                    "Parameter #1": "0Telvanni", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0Telvanni", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 

@@ -17,18 +17,97 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01320DF7"
+                "FormID": "010084B0"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
                 "Flags": {}
             }, 
-            "QSTI - Quest": "fbmwMSGreetings", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1adamantiumSore"
+            "QSTI - Quest": "fbmwMSArmorCrafter", 
+            "PNAM - Previous INFO": "01F8E8AF", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You supply the adamantium ore and pay for my work, and I provide you with custom adamantium armor.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6C 73 53", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You've got my list of armor requirements and prices. Which piece of armor were you interested in?", 
+                    "NAM2 - Actor notes": ""
+                }
             ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSArmorCrafter", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolsSindalen", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Choices": [
+                "1adamantiumSarmor1", 
+                "1adamantiumSarmor2", 
+                "1adamantiumSarmor3", 
+                "1adamantiumSarmor4", 
+                "1adamantiumSarmor5", 
+                "1adamantiumSarmor9"
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "1adamantiumSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010084B1"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwMSArmorCrafter", 
+            "PNAM - Previous INFO": "010084B0", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -44,7 +123,7 @@
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "6C 73 53", 
                         "Response number": 2
                     }, 
                     "NAM1 - Response Text": "I've had a list of armor requirements and prices printed up.", 
@@ -54,10 +133,20 @@
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "6C 73 53", 
                         "Response number": 3
                     }, 
-                    "NAM1 - Response Text": "Look it over, and if you're interested, and you have the adamantium ore and the gold, speak to me again, we'll write up an order, and you'll have your new armor a day later.", 
+                    "NAM1 - Response Text": "Look it over, and if you're interested, and you have the adamantium ore and the gold, speak to me again.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "6C 73 53", 
+                        "Response number": 4
+                    }, 
+                    "NAM1 - Response Text": "We'll write up an order, and you'll have your new armor a day later.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -65,17 +154,17 @@
                 {
                     "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMSArmorCrafter", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolsSindalen", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bolsSindalen", 
+                    "Function": 71, 
+                    "Parameter #1": "0factMorrowind", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -120,7 +209,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Here's your Custom Adamantium Helm, hand-crafted by yours truly.", 
+                    "NAM1 - Response Text": "Here's your Custom Adamantium Shield, hand-crafted by yours truly.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -209,7 +298,7 @@
                         "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Your Custom Adamantium Helm isn't ready yet. Be patient.", 
+                    "NAM1 - Response Text": "Your Custom Adamantium Shield isn't ready yet. Be patient.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -1518,6 +1607,90 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "01320DF7"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSGreetings", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1adamantiumSore"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "You supply the adamantium ore and pay for my work, and I provide you with custom adamantium armor. Here.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I've had a list of armor requirements and prices printed up.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Look it over, and if you're interested, and you have the adamantium ore and the gold, speak to me again, we'll write up an order, and you'll have your new armor a day later.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwMSArmorCrafter", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolsSindalen", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
+                "SCTX - Result script source": "player.additem 0bkucustomuarmor 1\r\nsetstage fbmwMSArmorCrafter 1", 
+                "References": [
+                    20, 
+                    "0bkUcustomUarmor", 
+                    "fbmwMSArmorCrafter"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1adamantiumSarmor", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "01F8E8AF"
             }, 
             "DATA - ": {
@@ -1573,179 +1746,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1adamantiumSarmor", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010084B0"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSArmorCrafter", 
-            "PNAM - Previous INFO": "01F8E8AF", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You supply the adamantium ore and pay for my work, and I provide you with custom adamantium armor.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6C 73 53", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "You've got my list of armor requirements and prices. Which piece of armor were you interested in?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMSArmorCrafter", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bolsSindalen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1adamantiumSarmor1", 
-                "1adamantiumSarmor2", 
-                "1adamantiumSarmor3", 
-                "1adamantiumSarmor4", 
-                "1adamantiumSarmor5", 
-                "1adamantiumSarmor9"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1adamantiumSarmor", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010084B1"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSArmorCrafter", 
-            "PNAM - Previous INFO": "010084B0", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You supply the adamantium ore and pay for my work, and I provide you with custom adamantium armor. Here.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6C 73 53", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I've had a list of armor requirements and prices printed up.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6C 73 53", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Look it over, and if you're interested, and you have the adamantium ore and the gold, speak to me again.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6C 73 53", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "We'll write up an order, and you'll have your new armor a day later.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bolsSindalen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "player.additem 0bkucustomuarmor 1\r\nsetstage fbmwMSArmorCrafter 1", 
-                "References": [
-                    20, 
-                    "0bkUcustomUarmor", 
-                    "fbmwMSArmorCrafter"
-                ]
             }
         }
     ]

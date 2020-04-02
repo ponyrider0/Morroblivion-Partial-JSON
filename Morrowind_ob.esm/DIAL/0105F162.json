@@ -363,6 +363,75 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
+                "FormID": "0105F190"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMSMasterIndex", 
+            "PNAM - Previous INFO": "010623A2", 
+            "Add topics": [
+                "1Dunmer", 
+                "1stronghold", 
+                "1Vvardenfell", 
+                "1enchant", 
+                "1stronghold", 
+                "1Caldera", 
+                "1Dunmer", 
+                "1stronghold", 
+                "1Andasreth", 
+                "1Falensarano", 
+                "1Rotheran"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Each Dunmer stronghold on Vvardenfell has a propylon chamber with enchanted artifacts called 'propylons' which can instantly transport you to other strongholds -- but only if you possess the propylon index which is the key to a given propylon.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "The Master Index I would give you would let you travel between Caldera and the ten Dunmer strongholds: Andasreth, Berandas, Falasmaryon, Falensarano, Hlormaren, Indoranyon, Marandus, Rotheran, Telasero, and Valenvaryon.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0folmsSmirel", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }
+            }
+        }, 
+        {
+            "Topic": "fbmwMasterIndex1propylonSindex", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
                 "FormID": "010623A2"
             }, 
             "DATA - ": {
@@ -423,75 +492,6 @@
                     "Parameter #1": "fbmwMSMasterIndex", 
                     "Parameter #2": "00 00 00 00"
                 }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0folmsSmirel", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "fbmwMasterIndex1propylonSindex", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0105F190"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSMasterIndex", 
-            "PNAM - Previous INFO": "010623A2", 
-            "Add topics": [
-                "1Dunmer", 
-                "1stronghold", 
-                "1Vvardenfell", 
-                "1enchant", 
-                "1stronghold", 
-                "1Caldera", 
-                "1Dunmer", 
-                "1stronghold", 
-                "1Andasreth", 
-                "1Falensarano", 
-                "1Rotheran"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Each Dunmer stronghold on Vvardenfell has a propylon chamber with enchanted artifacts called 'propylons' which can instantly transport you to other strongholds -- but only if you possess the propylon index which is the key to a given propylon.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "The Master Index I would give you would let you travel between Caldera and the ten Dunmer strongholds: Andasreth, Berandas, Falasmaryon, Falensarano, Hlormaren, Indoranyon, Marandus, Rotheran, Telasero, and Valenvaryon.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
                 {
                     "Type": 0, 
                     "Unused": 0, 

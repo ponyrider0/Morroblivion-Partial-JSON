@@ -18,7 +18,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0132236D"
+                "FormID": "010112B9"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -26,24 +26,48 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHWinCamonna", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1HouseSHlaalu", 
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "010112BA", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Alas, you seem to have been expelled from House Hlaalu. When you make amends, speak with me again.", 
+                    "NAM1 - Response Text": "He is my brother and the head of the Camonna Tong.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "You may find him on the Dren Plantation between Pelagiad and Suran.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Spare his life if you can.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHWinCamonna", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
@@ -51,13 +75,64 @@
                     "Function": 72, 
                     "Parameter #1": "0VedamSDren", 
                     "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 9, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
+                "SCTX - Result script source": "ShowMap mwDrenPlantationMapMarker", 
+                "References": [
+                    "mwDrenPlantationMapMarker"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1OrvasSDren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010112BA"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwHHWinCamonna", 
+            "PNAM - Previous INFO": "010112BB", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I am glad you were able to spare his life, outlander.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHWinCamonna", 
+                    "Parameter #2": "00 00 00 00"
                 }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0Hlaalu", 
+                    "Function": 72, 
+                    "Parameter #1": "0VedamSDren", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -138,7 +213,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "010112BA"
+                "FormID": "0132236D"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -146,34 +221,38 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHWinCamonna", 
-            "PNAM - Previous INFO": "010112BB", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1HouseSHlaalu", 
+                "1makeSamends"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I am glad you were able to spare his life, outlander.", 
+                    "NAM1 - Response Text": "Alas, you seem to have been expelled from House Hlaalu. When you make amends, speak with me again.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHWinCamonna", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
                 {
                     "Type": 0, 
                     "Unused": 0, 
                     "Comparison Value": 0.999999997475243, 
                     "Function": 72, 
                     "Parameter #1": "0VedamSDren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0Hlaalu", 
                     "Parameter #2": "00 00 00 00"
                 }
             ], 
@@ -185,147 +264,6 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
-            }
-        }, 
-        {
-            "Topic": "1OrvasSDren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010112B9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHWinCamonna", 
-            "PNAM - Previous INFO": "010112BA", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "He is my brother and the head of the Camonna Tong.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "You may find him on the Dren Plantation between Pelagiad and Suran.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Spare his life if you can.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHWinCamonna", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0VedamSDren", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 9, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "ShowMap mwDrenPlantationMapMarker", 
-                "References": [
-                    "mwDrenPlantationMapMarker"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1OrvasSDren", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322372"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMQHlaaluCurio", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1OrvasSDren"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "So Orvas Dren is dead. I hope you will not make his mistakes.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0crassiusScurio", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0OrvasSDrenSDruglord", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 02 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwMQHlaaluDren 2", 
-                "References": [
-                    "fbmwMQHlaaluDren"
-                ]
             }
         }, 
         {
@@ -569,6 +507,68 @@
                     "VariableCount": 0, 
                     "Type": 0
                 }
+            }
+        }, 
+        {
+            "Topic": "1OrvasSDren", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01322372"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "fbmwMQHlaaluCurio", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1OrvasSDren"
+            ], 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "CD CD CD", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "So Orvas Dren is dead. I hope you will not make his mistakes.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0crassiusScurio", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0OrvasSDrenSDruglord", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 02 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwMQHlaaluDren 2", 
+                "References": [
+                    "fbmwMQHlaaluDren"
+                ]
             }
         }, 
         {

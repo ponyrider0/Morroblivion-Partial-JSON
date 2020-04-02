@@ -16,7 +16,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "01321BD6"
+                "FormID": "0100B9D2"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -24,31 +24,46 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1discuss", 
-                "1business", 
-                "1makeSamends"
-            ], 
+            "PNAM - Previous INFO": "0100B9D3", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
+                        "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "You've been expelled. I cannot discuss business with you unless you make amends.", 
+                    "NAM1 - Response Text": "As I said, thieves have broken into his shop three nights in a row.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I suspect they will try again tonight. His shop is in the Plaza of the Foreign Quarter here in Vivec.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 3
+                    }, 
+                    "NAM1 - Response Text": "Go there and kill any thieves that arrive.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 0, 
+                    "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 193, 
-                    "Parameter #1": "0Hlaalu", 
+                    "Comparison Value": 99.9999997475243, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHSunkenTreasure", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -63,11 +78,16 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 1, 
+                    "CompiledSize": 14, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHHGuardMerchant 10", 
+                "References": [
+                    "fbmwHHGuardMerchant"
+                ]
             }
         }, 
         {
@@ -75,15 +95,17 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100B9D8"
+                "FormID": "0100B9D3"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {}
+                "Flags": {
+                    "Goodbye": true
+                }
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "01321BD6", 
+            "PNAM - Previous INFO": "0100B9D4", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -92,7 +114,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "There's been alot of merchants around here killed recently.", 
+                    "NAM1 - Response Text": "Ralen Tilvur told me that you let the thief escape.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -102,7 +124,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "I hope the guards catch whoever is responsible.", 
+                    "NAM1 - Response Text": "Perhaps you are not as loyal to House Hlaalu as I thought.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
@@ -110,7 +132,7 @@
                 {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 200.000000495049, 
+                    "Comparison Value": 49.9999998737621, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHHGuardMerchant", 
                     "Parameter #2": "00 00 00 00"
@@ -127,11 +149,17 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
+                    "RefCount": 2, 
+                    "CompiledSize": 22, 
                     "VariableCount": 0, 
                     "Type": 0
-                }
+                }, 
+                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 02 00 6E F6 FF FF FF 1C 00 01 00 22 10 00 00", 
+                "SCTX - Result script source": "ModDisposition Player -10\r\nmwDrarelAndusREF.Disable", 
+                "References": [
+                    "mwDrarelAndusREF", 
+                    20
+                ]
             }
         }, 
         {
@@ -139,7 +167,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100B9D7"
+                "FormID": "0100B9D4"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -147,7 +175,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "0100B9D8", 
+            "PNAM - Previous INFO": "0100B9D5", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -156,15 +184,114 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I doubt the thieves will return soon.", 
+                    "NAM1 - Response Text": "Thank you for protecting Ralen Tilvur.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "Take these 1000 drakes as a reward from House Hlaalu.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0drarelSandus", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
+                    "Comparison Value": 49.9999998737621, 
+                    "Function": 58, 
+                    "Parameter #1": "fbmwHHGuardMerchant", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 0, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0edrynoSarethi", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 3, 
+                    "CompiledSize": 32, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E E8 03 00 00", 
+                "SCTX - Result script source": "SetStage fbmwHHGuardMerchant 100\r\nPlayer.AddItem Gold001 1000", 
+                "References": [
+                    20, 
+                    "fbmwHHGuardMerchant", 
+                    "Gold001"
+                ]
+            }
+        }, 
+        {
+            "Topic": "1RalenSTilvur", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "0100B9D5"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true
+                }
+            }, 
+            "QSTI - Quest": "fbmwHHGuardMerchant", 
+            "PNAM - Previous INFO": "0100B9D6", 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "I heard of Ralen Tilvur's death. I believe you are the one that killed him.", 
+                    "NAM2 - Actor notes": ""
+                }, 
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 2
+                    }, 
+                    "NAM1 - Response Text": "I do not believe we have any more business to discuss.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 64, 
+                    "Unused": 0, 
+                    "Comparison Value": 0, 
+                    "Function": 84, 
+                    "Parameter #1": "0ralenStilvur", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 96, 
+                    "Unused": 0, 
+                    "Comparison Value": 9.99999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHHGuardMerchant", 
                     "Parameter #2": "00 00 00 00"
@@ -260,17 +387,15 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100B9D5"
+                "FormID": "0100B9D7"
             }, 
             "DATA - ": {
                 "Type": 0, 
                 "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
+                "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "0100B9D6", 
+            "PNAM - Previous INFO": "0100B9D8", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -279,33 +404,15 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "I heard of Ralen Tilvur's death. I believe you are the one that killed him.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I do not believe we have any more business to discuss.", 
+                    "NAM1 - Response Text": "I doubt the thieves will return soon.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0ralenStilvur", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
+                    "Comparison Value": 99.9999997475243, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHHGuardMerchant", 
                     "Parameter #2": "00 00 00 00"
@@ -334,7 +441,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100B9D4"
+                "FormID": "0100B9D8"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -342,7 +449,7 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "0100B9D5", 
+            "PNAM - Previous INFO": "01321BD6", 
             "Responses": [
                 {
                     "TRDT - Response Data": {
@@ -351,7 +458,7 @@
                         "Unused": "00 00 00", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "Thank you for protecting Ralen Tilvur.", 
+                    "NAM1 - Response Text": "There's been alot of merchants around here killed recently.", 
                     "NAM2 - Actor notes": ""
                 }, 
                 {
@@ -361,23 +468,15 @@
                         "Unused": "00 00 00", 
                         "Response number": 2
                     }, 
-                    "NAM1 - Response Text": "Take these 1000 drakes as a reward from House Hlaalu.", 
+                    "NAM1 - Response Text": "I hope the guards catch whoever is responsible.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0drarelSandus", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
                     "Type": 96, 
                     "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
+                    "Comparison Value": 200.000000495049, 
                     "Function": 58, 
                     "Parameter #1": "fbmwHHGuardMerchant", 
                     "Parameter #2": "00 00 00 00"
@@ -394,18 +493,11 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E E8 03 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHHGuardMerchant 100\r\nPlayer.AddItem Gold001 1000", 
-                "References": [
-                    20, 
-                    "fbmwHHGuardMerchant", 
-                    "Gold001"
-                ]
+                }
             }
         }, 
         {
@@ -413,79 +505,7 @@
             "Record Header": {
                 "Signature": "INFO", 
                 "Record Flags": {}, 
-                "FormID": "0100B9D3"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "0100B9D4", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Ralen Tilvur told me that you let the thief escape.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Perhaps you are not as loyal to House Hlaalu as I thought.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHGuardMerchant", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edrynoSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 22, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 02 00 6E F6 FF FF FF 1C 00 01 00 22 10 00 00", 
-                "SCTX - Result script source": "ModDisposition Player -10\r\nmwDrarelAndusREF.Disable", 
-                "References": [
-                    "mwDrarelAndusREF", 
-                    20
-                ]
-            }
-        }, 
-        {
-            "Topic": "1RalenSTilvur", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0100B9D2"
+                "FormID": "01321BD6"
             }, 
             "DATA - ": {
                 "Type": 0, 
@@ -493,46 +513,31 @@
                 "Flags": {}
             }, 
             "QSTI - Quest": "fbmwHHGuardMerchant", 
-            "PNAM - Previous INFO": "0100B9D3", 
+            "PNAM - Previous INFO": 0, 
+            "Add topics": [
+                "1discuss", 
+                "1business", 
+                "1makeSamends"
+            ], 
             "Responses": [
                 {
                     "TRDT - Response Data": {
                         "Emotion Type": 0, 
                         "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
+                        "Unused": "CD CD CD", 
                         "Response number": 1
                     }, 
-                    "NAM1 - Response Text": "As I said, thieves have broken into his shop three nights in a row.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I suspect they will try again tonight. His shop is in the Plaza of the Foreign Quarter here in Vivec.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Go there and kill any thieves that arrive.", 
+                    "NAM1 - Response Text": "You've been expelled. I cannot discuss business with you unless you make amends.", 
                     "NAM2 - Actor notes": ""
                 }
             ], 
             "Conditions": [
                 {
-                    "Type": 96, 
+                    "Type": 0, 
                     "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHHSunkenTreasure", 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 193, 
+                    "Parameter #1": "0Hlaalu", 
                     "Parameter #2": "00 00 00 00"
                 }, 
                 {
@@ -547,16 +552,11 @@
             "Result Script": {
                 "SCHR - Basic Script Data": {
                     "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
+                    "RefCount": 0, 
+                    "CompiledSize": 0, 
                     "VariableCount": 0, 
                     "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHHGuardMerchant 10", 
-                "References": [
-                    "fbmwHHGuardMerchant"
-                ]
+                }
             }
         }, 
         {

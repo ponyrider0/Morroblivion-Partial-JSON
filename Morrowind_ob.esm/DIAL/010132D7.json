@@ -1,0 +1,73 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "010132D7"
+    }, 
+    "EDID - Editor ID": "mwBelongings2Pay500", 
+    "Quests": [
+        "mwNerevarineOblivion"
+    ], 
+    "FULL - Name": "Okay, fine.  Just give me my stuff.", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "mwBelongings2Pay500", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "010132D8"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {
+                    "Goodbye": true, 
+                    "Say Once": true
+                }
+            }, 
+            "QSTI - Quest": "mwNerevarineOblivion", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Excellent!  And don't you dare try to sell this story to someone else!  It's all mine!  I wrote it!", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 98, 
+                    "Unused": 0, 
+                    "Comparison Value": 499.999999737621, 
+                    "Function": 48, 
+                    "Parameter #1": "00 00 00 00", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 5, 
+                    "CompiledSize": 70, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "15 00 0A 00 72 03 00 73 09 00 02 00 20 31 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E F4 01 00 00 1C 00 02 00 73 10 02 00 00 00 1C 00 02 00 AA 19 05 00 01 00 72 05 00 15 00 0B 00 72 03 00 73 0D 00 03 00 20 33 30", 
+                "SCTX - Result script source": "set mwNerevarineOblivion.isStuffRegained to 1\r\nplayer.removeitem Gold001 500\r\nmwStolenGoodsNerevarine.unlock\r\nmwStolenGoodsNerevarine.SetOwnership_T PlayerFaction\r\nset mwNerevarineOblivion.gotoStage to 30\r\n", 
+                "References": [
+                    20, 
+                    "mwStolenGoodsNerevarine", 
+                    "mwNerevarineOblivion", 
+                    "Gold001", 
+                    "PlayerFaction"
+                ]
+            }
+        }
+    ]
+}

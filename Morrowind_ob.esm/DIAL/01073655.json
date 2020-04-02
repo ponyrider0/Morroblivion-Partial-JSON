@@ -1,0 +1,146 @@
+{
+    "Record Header": {
+        "Signature": "DIAL", 
+        "Record Flags": {}, 
+        "FormID": "01073655"
+    }, 
+    "EDID - Editor ID": "mwSkillTrain1Marksman", 
+    "Quests": [
+        "mwSkillTrain"
+    ], 
+    "FULL - Name": "Marksman", 
+    "DATA - Type": 0, 
+    "Child Group": [
+        {
+            "Topic": "mwSkillTrain1Marksman", 
+            "Record Header": {
+                "Signature": "INFO", 
+                "Record Flags": {}, 
+                "FormID": "01073646"
+            }, 
+            "DATA - ": {
+                "Type": 0, 
+                "Next Speaker": 0, 
+                "Flags": {}
+            }, 
+            "QSTI - Quest": "mwSkillTrain", 
+            "PNAM - Previous INFO": 0, 
+            "Responses": [
+                {
+                    "TRDT - Response Data": {
+                        "Emotion Type": 0, 
+                        "Emotion Value": 50, 
+                        "Unused": "00 00 00", 
+                        "Response number": 1
+                    }, 
+                    "NAM1 - Response Text": "Very good.  I'm ready to train you in Marksman.", 
+                    "NAM2 - Actor notes": ""
+                }
+            ], 
+            "Conditions": [
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0missunSakin", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0aradraen", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0dunsalipalSdunTahhe", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0gilyanSsedas", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0bolnorSandrani", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0LassourSZenammu", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0fovesSarenim", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0vedranSbalen", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0alveleg", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0ridenaSothren", 
+                    "Parameter #2": "00 00 00 00"
+                }, 
+                {
+                    "Type": 1, 
+                    "Unused": 0, 
+                    "Comparison Value": 0.999999997475243, 
+                    "Function": 72, 
+                    "Parameter #1": "0VinnusSLaecinnius", 
+                    "Parameter #2": "00 00 00 00"
+                }
+            ], 
+            "Result Script": {
+                "SCHR - Basic Script Data": {
+                    "Unused": "00 00 00 00", 
+                    "RefCount": 1, 
+                    "CompiledSize": 42, 
+                    "VariableCount": 0, 
+                    "Type": 0
+                }, 
+                "SCDA - Compiled result script": "A8 16 04 00 01 00 1C 00 15 00 12 00 72 01 00 73 11 00 0A 00 20 58 0E 10 04 00 01 00 1C 00 A9 16 08 00 01 00 72 01 00 73 11 00", 
+                "SCTX - Result script source": "SetTrainerSkill marksman\r\nset mwSkillTrain.tempval to GetAV marksman\r\nSetTrainerLevel mwSkillTrain.tempval", 
+                "References": [
+                    "mwSkillTrain"
+                ]
+            }
+        }
+    ]
+}

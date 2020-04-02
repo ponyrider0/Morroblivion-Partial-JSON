@@ -1,0 +1,87 @@
+{
+    "Record Header": {
+        "Signature": "SCPT", 
+        "Record Flags": {}, 
+        "FormID": "01047679"
+    }, 
+    "EDID - Editor ID": "mwCWUVarlaStoneHandler", 
+    "SCHR - Basic Script Data": {
+        "Unused": "00 00 00 00", 
+        "RefCount": 8, 
+        "CompiledSize": 313, 
+        "VariableCount": 7, 
+        "Type": 0
+    }, 
+    "SCDA - Compiled Script": "1D 00 00 00 10 00 13 00 07 00 1E 01 00 00 01 02 01 00 04 02 00 04 02 03 00 04 00 72 17 20 00 01 1F 00 53 1A 00 56 61 72 6C 61 20 53 74 6F 6E 65 20 48 61 6E 64 6C 65 72 20 66 69 72 65 64 21 65 17 1A 00 01 19 00 56 01 00 00 07 00 58 00 00 67 17 0B 00 01 08 00 56 03 05 00 0B 00 00 16 00 08 00 0A 00 04 00 20 73 07 00 6D 17 14 00 31 01 00 00 01 0F 00 56 03 00 00 03 00 56 03 05 00 0B 00 1A 65 17 19 00 01 18 00 56 04 00 00 06 00 56 03 00 00 03 00 53 05 00 76 61 6C 75 65 18 00 65 17 16 00 01 15 00 56 03 00 00 04 00 58 06 00 80 19 07 00 01 00 72 04 00 00 65 17 13 00 01 12 00 56 04 00 00 05 00 56 03 00 00 04 00 42 00 18 00 1C 00 01 00 48 19 05 00 01 00 72 07 00 65 17 16 00 01 15 00 56 03 00 00 04 00 58 08 00 80 19 07 00 01 00 72 04 00 00 65 17 13 00 01 12 00 56 04 00 00 05 00 56 03 00 00 04 00 42 00 18 00 1C 00 01 00 DF 18 0B 00 01 00 7A 00 00 00 00 00 88 C3 40 1C 00 01 00 48 19 05 00 01 00 72 06 00 6C 17 00 00 19 00 00 00 11 00 00 00", 
+    "SCTX - Script Source": "scn mwCWUVarlaStoneHandler\n\nref target\nref itemEquipped\n\narray_var iter\narray_var ar\nref ir\nref item\nshort size\n\nbegin Function { target, itemEquipped }\n\n\tPrint \"Varla Stone Handler fired!\"\n\n\tLet size := ar_Size mwCWUInit.Inventory\n\n\tif size\n\n\t\tForEach iter <- mwCWUInit.Inventory\n\t\t\tLet item := iter[\"value\"]\n\n\t\t\tLet ar := mwCWUHolderREF.GetInvRefsForItem item\n\t\t\tLet ir := ar[0]\n\t\t\tir.RemoveMeIR Player\n\n\t\t\tLet ar := Player.GetInvRefsForItem item\n\t\t\tLet ir := ar[0]\n\n\t\t\tir.ModCurrentCharge 10000\n\n\t\t\tir.RemoveMeIR mwCWUHolderREF\n\t\tloop\n\n;\t\tCloseAllMenus\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 497 </CSECaretPos>\n;</CSEBlock>", 
+    "Local Variables": [
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 1, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "target"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 2, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "itemEquipped"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 3, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "iter"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 4, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "ar"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 5, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "ir"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 6, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {}
+            }, 
+            "SCVR - Name": "item"
+        }, 
+        {
+            "SLSD - Local Variable Data": {
+                "Index": 7, 
+                "Unused": "00 00 00 00 00 00 00", 
+                "Flags": {
+                    "IsLongOrShort": true
+                }
+            }, 
+            "SCVR - Name": "size"
+        }
+    ], 
+    "References": [
+        5, 
+        1, 
+        2, 
+        6, 
+        "mwCWUInit", 
+        "mwCWUHolderREF", 
+        20, 
+        20
+    ]
+}
