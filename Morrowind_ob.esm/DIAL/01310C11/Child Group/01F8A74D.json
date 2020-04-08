@@ -1,24 +1,27 @@
 {
-    "Topic": "1Mossanon", 
+    "Topic": "1Mossanon [DIAL:01310C11]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 287, 
         "Record Flags": {}, 
-        "FormID": "01F8A74D"
+        "FormID": "01F8A74D", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICMossanon", 
+    "QSTI - Quest": "fbmwICMossanon [QUST:0100B81C]", 
     "PNAM - Previous INFO": "01F8A74C", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "63 74 75", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "63 74 75"
             }, 
             "NAM1 - Response Text": "Have you found Mossanon?  Or have you come to report your failure?", 
             "NAM2 - Actor notes": ""
@@ -26,35 +29,41 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwICMossanon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwICMossanon "Imperial Cult: Pledge from Canctunian Ponius" [QUST:0100B81C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwICMossanon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwICMossanon "Imperial Cult: Pledge from Canctunian Ponius" [QUST:0100B81C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0CanctunianSPonius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0CanctunianSPonius "Canctunian Ponius" [NPC_:01260223]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwicdonttell", 
-        "fbmwictellwhere", 
-        "fbmwicrecoveredno", 
-        "fbmwicrecoverednot"
+        "TCLT - Choice": "fbmwicdonttell [DIAL:01F8AA0D]", 
+        "TCLT - Choice": "fbmwictellwhere [DIAL:01F8AA0F]", 
+        "TCLT - Choice": "fbmwicrecoveredno [DIAL:01F8AA09]", 
+        "TCLT - Choice": "fbmwicrecoverednot [DIAL:01F8AA0B]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -62,7 +71,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

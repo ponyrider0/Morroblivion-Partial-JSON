@@ -1,29 +1,32 @@
 {
-    "Topic": "fbmwRagruzgobyes", 
+    "Topic": "fbmwRagruzgobyes [DIAL:01F8ACDC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 490, 
         "Record Flags": {}, 
-        "FormID": "013233CF"
+        "FormID": "013233CF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSGreetings", 
-    "TPIC - Topic": "1littleSsecret1", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMSGreetings [QUST:01F2A564]", 
+    "TPIC - Topic": "013219D2", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1RaAGruzgob", 
-        "1RaAGruzgob"
+        "NAME - Topic": "01310B31", 
+        "NAME - Topic": "01310B31"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Ra'Gruzgob knows something you'd like. Ra'Gruzgob put it under his pillow. For the sugar-fairy.", 
             "NAM2 - Actor notes": ""
@@ -31,28 +34,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0raAgruzgob", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0raAgruzgob "Ra'Gruzgob" [NPC_:0126066F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -61,14 +70,14 @@
             "RefCount": 3, 
             "CompiledSize": 46, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 1E 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
         "SCTX - Result script source": "setstage fbmwmsragruzgob 30\r\nplayer.removeitem 0ingredumoonusugaru01 1\r\nmoddisposition player 10", 
         "References": [
-            20, 
-            "fbmwMSRaGruzgob", 
-            "0ingredUmoonUsugarU01"
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+            "SCRO - Global Reference": "fbmwMSRaGruzgob [QUST:0101C630]", 
+            "SCRO - Global Reference": "0ingredUmoonUsugarU01 [INGR:010A0028]"
         ]
     }
 }

@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 151, 
         "Record Flags": {}, 
-        "FormID": "0100AED1"
+        "FormID": "0100AED1", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwHRKoalCaveFollow", 
     "PKDT - General": {
@@ -12,43 +14,47 @@
                 "Always run": true, 
                 "Defensive combat": true
             }, 
-            "Type": 1, 
+            "Type": "01", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 0, 
-        "Location": "mwKoalCaveShrine", 
+        "Location": "01873188", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "PTDT - Target": {
         "Type": 1, 
-        "Target": "Player", 
+        "Target": "00000007", 
         "Count": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwHRKoalCave", 
-            "Parameter #2": 1
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRKoalCave "House Redoran: Escort to Koal Cave" [QUST:01004A5B]", 
+            "Parameter #2": "FollowNow", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0devalSbeleth", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0devalSbeleth "Deval Beleth" [NPC_:012600C4]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

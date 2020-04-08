@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 112, 
         "Record Flags": {}, 
-        "FormID": "01F8E7F3"
+        "FormID": "01F8E7F3", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwCenturionShockFollowPackage", 
     "PKDT - General": {
@@ -11,30 +13,32 @@
                 "Allow swimming": true, 
                 "Allow falls": true
             }, 
-            "Type": 1, 
+            "Type": "01", 
             "Unused": "00 00 00"
         }
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "PTDT - Target": {
         "Type": 0, 
-        "Target": 20, 
+        "Target": "00000014", 
         "Count": 512
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 74, 
-            "Parameter #1": "mwShockCenturionFollow", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetGlobalValue:74", 
+            "Unused": "00 00", 
+            "Parameter #1": "mwShockCenturionFollow [GLOB:01F8E7F2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

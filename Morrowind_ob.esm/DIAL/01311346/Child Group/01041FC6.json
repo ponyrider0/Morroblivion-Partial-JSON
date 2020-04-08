@@ -1,24 +1,27 @@
 {
-    "Topic": "1stockScertificate", 
+    "Topic": "1stockScertificate [DIAL:01311346]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 293, 
         "Record Flags": {}, 
-        "FormID": "01041FC6"
+        "FormID": "01041FC6", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwCO1", 
+    "QSTI - Quest": "fbmwCO1 [QUST:0101BE3C]", 
     "PNAM - Previous INFO": "01041FC5", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "Ah. Yes, well, Carnius handles stock certificates, being the local Factor and all.", 
             "NAM2 - Actor notes": ""
@@ -26,36 +29,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 59, 
-            "Parameter #1": "fbmwCOChoice", 
-            "Parameter #2": 50
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetStageDone:59", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCOChoice "East Empire Company: Making a Choice" [QUST:0101BEDB]", 
+            "Parameter #2": "050 I have agreed to help Carnius. I should report to him for assignments from now on.", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwCO13a", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCO13a "East Empire Company: Drastic Measures" [QUST:0101BE42]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0ConstansSAtrius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ConstansSAtrius "Constans Atrius" [NPC_:01260B64]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -64,7 +75,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

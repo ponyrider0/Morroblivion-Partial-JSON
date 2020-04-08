@@ -1,27 +1,30 @@
 {
-    "Topic": "1women", 
+    "Topic": "1women [DIAL:01311091]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 218, 
         "Record Flags": {}, 
-        "FormID": "01322DDF"
+        "FormID": "01322DDF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSMatchMaker", 
+    "QSTI - Quest": "fbmwMSMatchMaker [QUST:0101C628]", 
     "PNAM - Previous INFO": "01322DDE", 
     "Add topics": [
-        "1MarenaSGilnith"
+        "NAME - Topic": "01311002"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Well, now you've got me all interested in Marena Gilnith.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 1.99999999495049, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMSMatchMaker", 
-            "Parameter #2": 2
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 2.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSMatchMaker "The MatchMaker" [QUST:0101C628]", 
+            "Parameter #2": "MatchMakeGoval", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0GovalSRalen", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0GovalSRalen "Goval Ralen" [NPC_:01260A95]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,7 +58,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

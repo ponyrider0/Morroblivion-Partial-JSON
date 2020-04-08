@@ -1,27 +1,30 @@
 {
-    "Topic": "1TelvanniSHortator3", 
+    "Topic": "1TelvanniSHortator3 [DIAL:01320B3F]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 265, 
         "Record Flags": {}, 
-        "FormID": "01323100"
+        "FormID": "01323100", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQTelvanniTherana", 
+    "QSTI - Quest": "fbmwMQTelvanniTherana [QUST:01002C50]", 
     "PNAM - Previous INFO": "013230E9", 
     "Add topics": [
-        "1Therana"
+        "NAME - Topic": "01310C6D"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "[Mistress Therana continues to chatter amiably, with no sign of stopping. She looks like she could go on forever.]", 
             "NAM2 - Actor notes": ""
@@ -29,17 +32,19 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0therana", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0therana "Therana" [NPC_:01260412]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1TelvanniSHortator4", 
-        "1TelvanniSHortator2"
+        "TCLT - Choice": "1TelvanniSHortator4 [DIAL:01320B41]", 
+        "TCLT - Choice": "1TelvanniSHortator2 [DIAL:01320B31]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -47,7 +52,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

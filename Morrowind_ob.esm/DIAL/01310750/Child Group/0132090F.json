@@ -1,39 +1,43 @@
 {
-    "Topic": "1erroneousSdocuments", 
+    "Topic": "1erroneousSdocuments [DIAL:01310750]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 372, 
         "Record Flags": {}, 
-        "FormID": "0132090F"
+        "FormID": "0132090F", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHReplaceDocs", 
+    "QSTI - Quest": "fbmwHHReplaceDocs [QUST:0100346B]", 
     "PNAM - Previous INFO": "0100CB8D", 
     "Add topics": [
-        "1landSdeed", 
-        "1author", 
-        "1landSdeed"
+        "NAME - Topic": "01310BB7", 
+        "NAME - Topic": "0131108C", 
+        "NAME - Topic": "01310BB7"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "A land deed from Odral? He does not have the authority to issue land deeds or make corrections.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Stay out of the Hlaalu Records and let me take care of this.", 
             "NAM2 - Actor notes": ""
@@ -41,20 +45,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0barenSalen", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0barenSalen "Baren Alen" [NPC_:01260391]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -63,7 +71,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

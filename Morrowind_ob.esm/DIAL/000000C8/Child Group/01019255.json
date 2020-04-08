@@ -1,24 +1,27 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 202, 
         "Record Flags": {}, 
-        "FormID": "01019255"
+        "FormID": "01019255", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01019256", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "76 69 6C", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "76 69 6C"
             }, 
             "NAM1 - Response Text": "People like you cause nothing but trouble. Why don't you just get out of Caldera?", 
             "NAM2 - Actor notes": ""
@@ -26,12 +29,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "Caldera", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "Caldera "Caldera" [CELL:0148003D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -40,7 +45,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 217, 
         "Record Flags": {}, 
-        "FormID": "01F8B93F"
+        "FormID": "01F8B93F", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwCO5", 
+    "QSTI - Quest": "fbmwCO5 [QUST:0101BED3]", 
     "PNAM - Previous INFO": "01F8B93E", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6E 69 75", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6E 69 75"
             }, 
             "NAM1 - Response Text": "I have business with your superiors, not with you. Run along, now.", 
             "NAM2 - Actor notes": ""
@@ -28,20 +31,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 79, 
-            "Parameter #1": "fbmwCOAdvancement", 
-            "Parameter #2": 2
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCOAdvancement "East Empire Company" [QUST:01004AD9]", 
+            "Parameter #2": "CompanyReputation", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0BaroSEgnatius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0BaroSEgnatius "Baro Egnatius" [NPC_:01260B2C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -50,7 +57,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

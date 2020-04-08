@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 132, 
         "Record Flags": {}, 
-        "FormID": "0101AF74"
+        "FormID": "0101AF74", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMQ04HuleeyaStay", 
     "PKDT - General": {
@@ -10,38 +12,42 @@
             "Flags": {
                 "Continue if PC near": true
             }, 
-            "Type": 5, 
+            "Type": "05", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 2, 
-        "Location": 0, 
+        "Location": "00000000", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0huleeya", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0huleeya "Huleeya" [NPC_:012601E2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 32, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMQ04c", 
-            "Parameter #2": 1
+            "Type": "20", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQ04c "Huleeya Informant" [QUST:01001DBC]", 
+            "Parameter #2": "FollowNow", 
+            "Unused": "00000000"
         }
     ]
 }

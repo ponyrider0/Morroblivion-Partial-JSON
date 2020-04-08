@@ -1,34 +1,38 @@
 {
-    "Topic": "1littleSsecret", 
+    "Topic": "1littleSsecret [DIAL:01310997]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 437, 
         "Record Flags": {}, 
-        "FormID": "01017E27"
+        "FormID": "01017E27", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01017E26", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "I've heard that a fellow named Dovor Oren has deep pockets. He is looking for weapons and armor -- special items -- and he pays well.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 20", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "6F 6E 20"
             }, 
             "NAM1 - Response Text": "I can't tell you where to find him. Just keep your eyes out for him and his associates.", 
             "NAM2 - Actor notes": ""
@@ -36,28 +40,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "Mournhold", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "Mournhold "Mournhold" [CELL:014804C8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 0, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "TARGET - Target Reference [00000000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -66,7 +76,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

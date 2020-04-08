@@ -1,80 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 69, 
         "Record Flags": {}, 
-        "FormID": "01321E11"
+        "FormID": "01321E11", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1DaedraSSkin3", 
     "Quests": [
-        "fbmwHTDaedraSkin"
+        "QSTI - Quest": "fbmwHTDaedraSkin [QUST:01003438]"
     ], 
     "FULL - Name": "Teach me how to paralyze.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1DaedraSSkin3", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323486"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTDaedraSkin", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1rat"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It is rather simple, actually. [Aryon teaches you the spell Paralyze.] This is a simple version of the spell.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "It is far more useful if you can cast it at a distance.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0aryon", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 13, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 1C 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "Player.AddSpell 0paralysis", 
-                "References": [
-                    20, 
-                    "0paralysis"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

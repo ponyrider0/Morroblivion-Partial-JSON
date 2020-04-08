@@ -1,12 +1,14 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 3540, 
         "Record Flags": {}, 
-        "FormID": "0101B6D1"
+        "FormID": "0101B6D1", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwBMSadSeer", 
     "FULL - Name": "The Sad Seer", 
-    "ICON - Icon filename": "darthsouth\\Quests\\miscquest-wild.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\miscquest-wild.dds", 
     "DATA - General": {
         "Flags": {
             "Start game enabled": true
@@ -15,20 +17,24 @@
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -44,7 +50,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -62,7 +68,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -80,7 +86,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -98,7 +104,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -116,7 +122,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -134,7 +140,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -154,10 +160,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 170, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 56 00 01 00 52 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 53 61 64 20 53 65 65 72 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
                     }
                 }
             ]
@@ -176,10 +182,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 170, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 56 00 01 00 52 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 53 61 64 20 53 65 65 72 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
                     }
                 }
             ]
@@ -198,10 +204,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 170, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 56 00 01 00 52 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 53 61 64 20 53 65 65 72 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Sad Seer quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif\r\n"
                     }
                 }
             ]
@@ -216,20 +222,24 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 36.999999906584, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwBMSadSeer", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 37.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwBMSadSeer "The Sad Seer" [QUST:0101B6D1]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -241,28 +251,34 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwBMSadSeer", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 30.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwBMSadSeer "The Sad Seer" [QUST:0101B6D1]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 34.9999999116335, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwBMSadSeer", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 35.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwBMSadSeer "The Sad Seer" [QUST:0101B6D1]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

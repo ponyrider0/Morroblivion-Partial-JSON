@@ -1,15 +1,17 @@
 {
     "Record Header": {
         "Signature": "SPEL", 
+        "Data Size": 111, 
         "Record Flags": {}, 
-        "FormID": "01060281"
+        "FormID": "01060281", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0olmsASbenediction", 
     "FULL - Name": "Olms' Benediction", 
-    "SPIT - ": {
-        "Type": 0, 
-        "Cost": 1, 
-        "Level": 0, 
+    "SPIT - SPIT": {
+        "Type": "00000000", 
+        "Cost": "00000001", 
+        "Level": "00000000", 
         "Flags": {
             "Manual Spell Cost": true, 
             "Area Effect Ignores LOS": true
@@ -18,14 +20,14 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1229214546, 
-            "EFIT - ": {
-                "Magic effect name": 1229214546, 
+            "EFID - Magic effect name": "RSDI", 
+            "EFIT - EFIT": {
+                "Magic effect name": "RSDI", 
                 "Magnitude": 20, 
                 "Area": 15, 
                 "Duration": 2880, 
-                "Type": 1, 
-                "Actor Value": 63
+                "Type": "Touch:1", 
+                "Actor Value": "Resist Disease:63"
             }
         }
     ]

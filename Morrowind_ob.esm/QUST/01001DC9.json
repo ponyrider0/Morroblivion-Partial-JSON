@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 12321, 
         "Record Flags": {}, 
-        "FormID": "01001DC9"
+        "FormID": "01001DC9", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMQ10", 
-    "SCRI - Script": "fbmwMQ10QuestScript", 
+    "SCRI - Script": "fbmwMQ10QuestScript [SCPT:01002DED]", 
     "FULL - Name": "The Path of the Incarnate", 
-    "ICON - Icon filename": "darthsouth\\Quests\\morrowindmainquest.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\morrowindmainquest.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 90
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -43,7 +49,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -61,12 +67,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 9, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
                         "SCTX - Result script source": "AddTopic fbmwMQ10corprus", 
                         "References": [
-                            "fbmwMQ10corprus"
+                            "SCRO - Global Reference": "fbmwMQ10corprus [DIAL:01022DCD]"
                         ]
                     }
                 }
@@ -84,7 +90,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -102,14 +108,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 24, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00 1C 00 03 00 21 10 00 00", 
                         "SCTX - Result script source": "mwMQ10CorprusWeepingsREF.Enable\r\nmwMQ10DagothGoblet.Enable\r\nmwShadowShieldREF.Enable", 
                         "References": [
-                            "mwMQ10CorprusWeepingsREF", 
-                            "mwMQ10DagothGoblet", 
-                            "mwShadowShieldREF"
+                            "SCRO - Global Reference": "mwMQ10CorprusWeepingsREF [REFR:0185D2F1]", 
+                            "SCRO - Global Reference": "mwMQ10DagothGoblet [REFR:0185D2F2]", 
+                            "SCRO - Global Reference": "mwShadowShieldREF [REFR:01022DE3]"
                         ]
                     }
                 }
@@ -127,25 +133,25 @@
                             "RefCount": 14, 
                             "CompiledSize": 126, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 58 10 05 00 01 00 72 08 00 58 10 05 00 01 00 72 09 00 58 10 05 00 01 00 72 0A 00 58 10 05 00 01 00 72 0B 00 58 10 05 00 01 00 72 0C 00 58 10 05 00 01 00 72 0D 00 58 10 05 00 01 00 72 0E 00", 
                         "SCTX - Result script source": "addtopic 1eyesofsthesneedle\r\naddtopic 1teethsofstheswind\r\naddtopic 1skinsofsthespearl\r\naddtopic 1mouthSofStheScave\r\naddtopic 1mysstory\r\naddtopic 1notsthesone\r\naddtopic 1falsesgods\r\naddtopic 1hortator\r\naddtopic 1hortatorsandsnerevarine\r\naddtopic 1moontandtstar\r\naddtopic 1profanestools\r\naddtopic 1tribesunmourned\r\naddtopic 1warsleader\r\naddtopic 1wisdomsguidessme", 
                         "References": [
-                            "1eyeSofStheSneedle", 
-                            "1teethSofStheSwind", 
-                            "1skinSofStheSpearl", 
-                            "1mouthSofStheScave", 
-                            "1mySstory", 
-                            "1notStheSone", 
-                            "1FalseSGods", 
-                            "1Hortator", 
-                            "1HortatorSandSNerevarine", 
-                            "1MoonTandTStar", 
-                            "1profaneStools", 
-                            "1TribeSUnmourned", 
-                            "1WarSLeader", 
-                            "1wisdomSguidesSme"
+                            "SCRO - Global Reference": "1eyeSofStheSneedle [DIAL:013107C9]", 
+                            "SCRO - Global Reference": "1teethSofStheSwind [DIAL:013107CA]", 
+                            "SCRO - Global Reference": "1skinSofStheSpearl [DIAL:013107CB]", 
+                            "SCRO - Global Reference": "1mouthSofStheScave [DIAL:013107CC]", 
+                            "SCRO - Global Reference": "1mySstory [DIAL:01310BDB]", 
+                            "SCRO - Global Reference": "1notStheSone [DIAL:01310A79]", 
+                            "SCRO - Global Reference": "1FalseSGods [DIAL:01310B0E]", 
+                            "SCRO - Global Reference": "1Hortator [DIAL:01310BDA]", 
+                            "SCRO - Global Reference": "1HortatorSandSNerevarine [DIAL:01310692]", 
+                            "SCRO - Global Reference": "1MoonTandTStar [DIAL:01310977]", 
+                            "SCRO - Global Reference": "1profaneStools [DIAL:01310978]", 
+                            "SCRO - Global Reference": "1TribeSUnmourned [DIAL:01310885]", 
+                            "SCRO - Global Reference": "1WarSLeader [DIAL:01310B0D]", 
+                            "SCRO - Global Reference": "1wisdomSguidesSme [DIAL:0131081B]"
                         ]
                     }
                 }
@@ -163,7 +169,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -181,7 +187,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -199,7 +205,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -217,7 +223,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -235,7 +241,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -253,7 +259,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -271,22 +277,22 @@
                             "RefCount": 11, 
                             "CompiledSize": 99, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 58 10 05 00 01 00 72 08 00 58 10 05 00 01 00 72 09 00 58 10 05 00 01 00 72 0A 00 58 10 05 00 01 00 72 0B 00", 
                         "SCTX - Result script source": "addtopic 1counselsofssultmatuul\r\naddtopic 1cursesofsdagothsur\r\naddtopic 1duty\r\naddtopic 1falsesgods\r\naddtopic 1moontandtstar\r\naddtopic 1namingsthesnerevarine\r\naddtopic 1need\r\naddtopic 1urshilakusnerevarine\r\naddtopic 1namesyousnerevarine\r\naddtopic 1whatsmaniraissays\r\naddtopic 1wantstosbesashkhan", 
                         "References": [
-                            "1counselSofSSulTMatuul", 
-                            "1curseSofSDagothSUr", 
-                            "1duty", 
-                            "1FalseSGods", 
-                            "1MoonTandTStar", 
-                            "1namingStheSNerevarine", 
-                            "1need", 
-                            "1UrshilakuSNerevarine", 
-                            "1nameSyouSNerevarine", 
-                            "1whatSManiraiSsays", 
-                            "1wantStoSbeSashkhan"
+                            "SCRO - Global Reference": "1counselSofSSulTMatuul [DIAL:013106D7]", 
+                            "SCRO - Global Reference": "1curseSofSDagothSUr [DIAL:0131076D]", 
+                            "SCRO - Global Reference": "1duty [DIAL:01310CFD]", 
+                            "SCRO - Global Reference": "1FalseSGods [DIAL:01310B0E]", 
+                            "SCRO - Global Reference": "1MoonTandTStar [DIAL:01310977]", 
+                            "SCRO - Global Reference": "1namingStheSNerevarine [DIAL:013106D8]", 
+                            "SCRO - Global Reference": "1need [DIAL:01310CFC]", 
+                            "SCRO - Global Reference": "1UrshilakuSNerevarine [DIAL:01310700]", 
+                            "SCRO - Global Reference": "1nameSyouSNerevarine [DIAL:0131072E]", 
+                            "SCRO - Global Reference": "1whatSManiraiSsays [DIAL:013107CF]", 
+                            "SCRO - Global Reference": "1wantStoSbeSashkhan [DIAL:0131076F]"
                         ]
                     }
                 }
@@ -304,7 +310,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -322,7 +328,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -340,17 +346,17 @@
                             "RefCount": 6, 
                             "CompiledSize": 69, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 01 00 00 00 39 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 01 00 00 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00", 
                         "SCTX - Result script source": "SetStage fbmwMQHlaaluCurio 1\r\nSetStage fbmwMQRedoranSarethi 1\r\nSetStage fbmwMQTelvanniAryon 1\r\n\r\nAddTopic 1HlaaluSHortator\r\nAddTopic 1RedoranSHortator\r\nAddTopic 1TelvanniSHortator", 
                         "References": [
-                            "fbmwMQHlaaluCurio", 
-                            "fbmwMQRedoranSarethi", 
-                            "fbmwMQTelvanniAryon", 
-                            "1HlaaluSHortator", 
-                            "1RedoranSHortator", 
-                            "1TelvanniSHortator"
+                            "SCRO - Global Reference": "fbmwMQHlaaluCurio [QUST:01001DD6]", 
+                            "SCRO - Global Reference": "fbmwMQRedoranSarethi [QUST:01001DE1]", 
+                            "SCRO - Global Reference": "fbmwMQTelvanniAryon [QUST:01002C4B]", 
+                            "SCRO - Global Reference": "1HlaaluSHortator [DIAL:01310881]", 
+                            "SCRO - Global Reference": "1RedoranSHortator [DIAL:01310819]", 
+                            "SCRO - Global Reference": "1TelvanniSHortator [DIAL:013107C6]"
                         ]
                     }
                 }
@@ -368,7 +374,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -386,7 +392,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -404,7 +410,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -424,10 +430,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -446,10 +452,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -468,10 +474,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -490,10 +496,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -512,10 +518,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -534,10 +540,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 183, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 63 00 01 00 5F 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 65 20 50 61 74 68 20 6F 66 20 74 68 65 20 49 6E 63 61 72 6E 61 74 65 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted The Path of the Incarnate quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -546,215 +552,255 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwSulMatuulREF", 
+                "Target": "01823CAF", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0ingredUcorprusUweepingsU01", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "40", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0ingredUcorprusUweepingsU01 "Corprus weepings" [INGR:010A000C]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0miscUgobletUdagoth", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "40", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0miscUgobletUdagoth "House Dagoth cup" [MISC:01160212]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmwshadowshield", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "40", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwshadowshield "Shadow Shield" [ARMO:0101D5E1]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwShadowShieldREF", 
+                "Target": "01022DE3", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmwshadowshield", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwshadowshield "Shadow Shield" [ARMO:0101D5E1]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwMQ10DagothGoblet", 
+                "Target": "0185D2F2", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0miscUgobletUdagoth", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0miscUgobletUdagoth "House Dagoth cup" [MISC:01160212]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwMQ10CorprusWeepingsREF", 
+                "Target": "0185D2F1", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0ingredUcorprusUweepingsU01", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0ingredUcorprusUweepingsU01 "Corprus weepings" [INGR:010A000C]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwCavernIncarnateDoor", 
+                "Target": "01838CA2", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 27.9999999293068, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 28.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 50.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 67, 
-                    "Parameter #1": "CavernSofStheSIncarnate", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "20", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetInCell:67", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "CavernSofStheSIncarnate "Cavern of the Incarnate" [CELL:0148015F]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwSulMatuulREF", 
+                "Target": "01823CAF", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 4.99999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ10", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 5.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ10 "The Path of the Incarnate" [QUST:01001DC9]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

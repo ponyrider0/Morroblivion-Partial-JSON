@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 7953, 
         "Record Flags": {}, 
-        "FormID": "01001DC4"
+        "FormID": "01001DC4", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMQ09", 
-    "SCRI - Script": "fbmwMQ09MiloGo", 
+    "SCRI - Script": "fbmwMQ09MiloGo [SCPT:0101D5AC]", 
     "FULL - Name": "Mehra Milo and the Lost Prophecies", 
-    "ICON - Icon filename": "darthsouth\\Quests\\morrowindmainquest.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\morrowindmainquest.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 90
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -43,31 +49,31 @@
                             "RefCount": 20, 
                             "CompiledSize": 174, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00 1C 00 02 00 9E 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00 58 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 58 10 05 00 01 00 72 08 00 58 10 05 00 01 00 72 09 00 58 10 05 00 01 00 72 0A 00 58 10 05 00 01 00 72 0B 00 58 10 05 00 01 00 72 0C 00 58 10 05 00 01 00 72 0D 00 58 10 05 00 01 00 72 0E 00 58 10 05 00 01 00 72 0F 00 58 10 05 00 01 00 72 10 00 58 10 05 00 01 00 72 11 00 58 10 05 00 01 00 72 12 00 58 10 05 00 01 00 72 13 00 58 10 05 00 01 00 72 14 00", 
                         "SCTX - Result script source": "mwNoteToAmaya.Enable\r\nfbMehraMiloREF.moveto fbmwMQ09miloJailmarker\r\nAddTopic 1divinesinterventionsscrolls\r\nAddTopic 1recalled\r\nAddTopic 1promotedstosoperative\r\nAddTopic 1dagothsur\r\nAddTopic 1corprussdisease\r\nAddTopic 1dissidentspriests\r\nAddTopic 1lostsprophecies\r\nAddTopic 1mehrasmilo\r\nAddTopic 1nerevar\r\nAddTopic 1nerevarine\r\nAddTopic 1returnstosvivec\r\nAddTopic 1secretsorder\r\nAddTopic 1servicessandshospitality\r\nAddTopic 1sixthshouse\r\nAddTopic 1theslostsprophecy\r\nAddTopic 1thessevenscurses\r\nAddTopic 1VisitSAnyone", 
                         "References": [
-                            "mwNoteToAmaya", 
-                            "fbmehramiloref", 
-                            "fbmwmq09milojailmarker", 
-                            "1DivineSInterventionSscrolls", 
-                            "1recalled", 
-                            "1promotedStoSOperative", 
-                            "1DagothSUr", 
-                            "1corprusSdisease", 
-                            "1DissidentSPriests", 
-                            "1lostSprophecies", 
-                            "1MehraSMilo", 
-                            "1Nerevar", 
-                            "1Nerevarine", 
-                            "1returnStoSVivec", 
-                            "1secretSorder", 
-                            "1servicesSandShospitality", 
-                            "1SixthSHouse", 
-                            "1TheSLostSProphecy", 
-                            "1TheSSevenSCurses", 
-                            "1visitSanyone"
+                            "SCRO - Global Reference": "mwNoteToAmaya [REFR:01872F01]", 
+                            "SCRO - Global Reference": "fbmehramiloref [ACHR:0184800B]", 
+                            "SCRO - Global Reference": "fbmwmq09milojailmarker [REFR:0101FAD7]", 
+                            "SCRO - Global Reference": "1DivineSInterventionSscrolls [DIAL:0131066B]", 
+                            "SCRO - Global Reference": "1recalled [DIAL:01310BD7]", 
+                            "SCRO - Global Reference": "1promotedStoSOperative [DIAL:013106D5]", 
+                            "SCRO - Global Reference": "1DagothSUr [DIAL:01310B5E]", 
+                            "SCRO - Global Reference": "1corprusSdisease [DIAL:01310876]", 
+                            "SCRO - Global Reference": "1DissidentSPriests [DIAL:013107B5]", 
+                            "SCRO - Global Reference": "1lostSprophecies [DIAL:01310875]", 
+                            "SCRO - Global Reference": "1MehraSMilo [DIAL:01310AF7]", 
+                            "SCRO - Global Reference": "1Nerevar [DIAL:01310C21]", 
+                            "SCRO - Global Reference": "1Nerevarine [DIAL:01310AEC]", 
+                            "SCRO - Global Reference": "1returnStoSVivec [DIAL:01310883]", 
+                            "SCRO - Global Reference": "1secretSorder [DIAL:013109FF]", 
+                            "SCRO - Global Reference": "1servicesSandShospitality [DIAL:0131067E]", 
+                            "SCRO - Global Reference": "1SixthSHouse [DIAL:01310A61]", 
+                            "SCRO - Global Reference": "1TheSLostSProphecy [DIAL:013107C8]", 
+                            "SCRO - Global Reference": "1TheSSevenSCurses [DIAL:0131081A]", 
+                            "SCRO - Global Reference": "1visitSanyone [DIAL:013109FE]"
                         ]
                     }
                 }
@@ -85,13 +91,13 @@
                             "RefCount": 2, 
                             "CompiledSize": 17, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 22 10 00 00 19 11 05 00 01 00 72 02 00", 
                         "SCTX - Result script source": "mwCaiusCosadesREF.Disable\r\nSetCellOwnership BalmoraVSCaiusSCosadesASHouse", 
                         "References": [
-                            "mwCaiusCosadesREF", 
-                            "BalmoraVSCaiusSCosadesASHouse"
+                            "SCRO - Global Reference": "mwCaiusCosadesREF [ACHR:0181083F]", 
+                            "SCRO - Global Reference": "BalmoraVSCaiusSCosadesASHouse [CELL:0148010C]"
                         ]
                     }
                 }
@@ -109,7 +115,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -127,7 +133,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -145,7 +151,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -163,7 +169,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -181,7 +187,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -199,7 +205,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -217,7 +223,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -235,7 +241,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -253,7 +259,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -271,7 +277,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -289,7 +295,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -309,10 +315,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 192, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 6C 00 01 00 68 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4D 65 68 72 61 20 4D 69 6C 6F 20 61 6E 64 20 74 68 65 20 4C 6F 73 74 20 50 72 6F 70 68 65 63 69 65 73 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Mehra Milo and the Lost Prophecies quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Mehra Milo and the Lost Prophecies quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -321,167 +327,195 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "fbmwmq09milojailmarker", 
+                "Target": "0101FAD7", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 14.9999999621286, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 15.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwBlattaHateriaREF", 
+                "Target": "01847FFB", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "fbmehramiloref", 
+                "Target": "0184800B", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 21.9999999444553, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 22.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwJanandMaulinieREF", 
+                "Target": "018347BD", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0scUdivineintervention", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0scUdivineintervention "Scroll of Divine Intervention" [BOOK:011801D6]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwAlvelaSaramREF", 
+                "Target": "0184843A", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 64, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0scUdivineintervention", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "40", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0scUdivineintervention "Scroll of Divine Intervention" [BOOK:011801D6]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwNoteToAmaya", 
+                "Target": "01872F01", 
                 "Flags": {}, 
                 "Unused": "00 46 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ09", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ09 "Mehra Milo and the Lost Prophecies" [QUST:01001DC4]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

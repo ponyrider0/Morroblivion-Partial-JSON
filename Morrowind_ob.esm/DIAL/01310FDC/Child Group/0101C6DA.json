@@ -1,44 +1,49 @@
 {
-    "Topic": "1anonymousSwriter", 
+    "Topic": "1anonymousSwriter [DIAL:01310FDC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 593, 
         "Record Flags": {}, 
-        "FormID": "0101C6DA"
+        "FormID": "0101C6DA", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTR09", 
+    "QSTI - Quest": "fbmwTR09 [QUST:0101C64E]", 
     "PNAM - Previous INFO": "0101C6DB", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6E 69 75", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6E 69 75"
             }, 
             "NAM1 - Response Text": "So Trels Varis is the anonymous writer of 'The Common Tongue'. And you threatened the lives of his aged parents.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 54", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "4D 57 54"
             }, 
             "NAM1 - Response Text": "And Trels Varis gave you his word that he would not discuss King Helseth in 'The Common Tongue'. You show fine judgement, and a light touch.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 54", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "4D 57 54"
             }, 
             "NAM1 - Response Text": "We are very satisfied with your service, and are pleased to give you a rich reward, and great honor besides.", 
             "NAM2 - Actor notes": ""
@@ -46,24 +51,28 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 69.999999823267, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTR09", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 70.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTR09 "Muckraking Journalist" [QUST:0101C64E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0TieniusSDelitian", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0TieniusSDelitian "Tienius Delitian" [NPC_:01260A79]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1anonymousSwriter7"
+        "TCLT - Choice": "1anonymousSwriter7 [DIAL:01320DCA]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -71,7 +80,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

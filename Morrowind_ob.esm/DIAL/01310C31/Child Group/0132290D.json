@@ -1,26 +1,29 @@
 {
-    "Topic": "1present", 
+    "Topic": "1present [DIAL:01310C31]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 185, 
         "Record Flags": {}, 
-        "FormID": "0132290D"
+        "FormID": "0132290D", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwMVBugrol", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMVBugrol [QUST:01003402]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You got your present! Now go away!", 
             "NAM2 - Actor notes": ""
@@ -28,20 +31,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0bugrolSgroTbagul", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bugrolSgroTbagul "Bugrol gro-Bagul" [NPC_:01260590]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMVBugrol", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMVBugrol "Favors for Orcs" [QUST:01003402]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -50,7 +57,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

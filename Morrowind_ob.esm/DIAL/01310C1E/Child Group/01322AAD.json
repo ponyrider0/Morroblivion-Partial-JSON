@@ -1,30 +1,33 @@
 {
-    "Topic": "1Balmora", 
+    "Topic": "1Balmora [DIAL:01310C1E]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 386, 
         "Record Flags": {}, 
-        "FormID": "01322AAD"
+        "FormID": "01322AAD", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01322AAC", 
     "Add topics": [
-        "1Balmora", 
-        "1HouseSHlaalu", 
-        "1Vvardenfell", 
-        "1Vivec"
+        "NAME - Topic": "01310C1E", 
+        "NAME - Topic": "013109F6", 
+        "NAME - Topic": "01310A9D", 
+        "NAME - Topic": "01310CD9"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Balmora is the district seat of House Hlaalu, and the largest settlement on Vvardenfell after Vivec City.", 
             "NAM2 - Actor notes": ""
@@ -32,44 +35,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "AldSVelothi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "AldSVelothi "Ald Velothi" [CELL:01480050]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Scout", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Scout "Scout" [CLAS:0002378A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 74.9999998106432, 
-            "Function": 77, 
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 75.000000000000000, 
+            "Function": "GetRandomPercent:77", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -78,7 +91,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

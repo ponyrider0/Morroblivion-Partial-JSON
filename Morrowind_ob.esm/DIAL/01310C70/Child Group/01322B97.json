@@ -1,28 +1,31 @@
 {
-    "Topic": "1Orders", 
+    "Topic": "1Orders [DIAL:01310C70]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 422, 
         "Record Flags": {}, 
-        "FormID": "01322B97"
+        "FormID": "01322B97", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGAdvancement", 
+    "QSTI - Quest": "fbmwFGAdvancement [QUST:01010566]", 
     "PNAM - Previous INFO": "0101339F", 
     "Add topics": [
-        "1contract", 
-        "1caveSrat"
+        "NAME - Topic": "0131107A", 
+        "NAME - Topic": "01310BCD"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I have a very simple contract to end an infestation of cave rats. You might be able to handle it.", 
             "NAM2 - Actor notes": ""
@@ -30,36 +33,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0eydisSfireTeye", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0eydisSfireTeye "Eydis Fire-Eye" [NPC_:0126011B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 132, 
-            "Parameter #1": "fbmwFightersGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCInFaction:132", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFightersGuild "Fighters Guild" [FACT:0100761A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,13 +79,13 @@
             "RefCount": 2, 
             "CompiledSize": 18, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
         "SCTX - Result script source": "addtopic 1cavesrat\r\nstartquest fbmwfgrathunt", 
         "References": [
-            "1caveSrat", 
-            "fbmwFGRatHunt"
+            "SCRO - Global Reference": "1caveSrat [DIAL:01310BCD]", 
+            "SCRO - Global Reference": "fbmwFGRatHunt [QUST:010033E4]"
         ]
     }
 }

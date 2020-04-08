@@ -1,27 +1,30 @@
 {
-    "Topic": "1armorSrepairSdebts", 
+    "Topic": "1armorSrepairSdebts [DIAL:01310763]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 224, 
         "Record Flags": {}, 
-        "FormID": "013209B1"
+        "FormID": "013209B1", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRBillCollect", 
+    "QSTI - Quest": "fbmwHRBillCollect [QUST:01003479]", 
     "PNAM - Previous INFO": "0101EC05", 
     "Add topics": [
-        "1Talk"
+        "NAME - Topic": "01310CF8"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Giras Indaram is right over there if you want to talk with him.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 84, 
-            "Parameter #1": "0girasSindaram", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetDeadCount:84", 
+            "Unused": "00 00", 
+            "Parameter #1": "0girasSindaram "Giras Indaram" [NPC_:0126021A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0llevenaSsendas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0llevenaSsendas "Llevena Sendas" [NPC_:01260704]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,7 +58,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "1futureSrewards", 
+    "Topic": "1futureSrewards [DIAL:0131094A]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 271, 
         "Record Flags": {}, 
-        "FormID": "01F8AD66"
+        "FormID": "01F8AD66", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwVAVampContess", 
+    "QSTI - Quest": "fbmwVAVampContess [QUST:01003BCB]", 
     "PNAM - Previous INFO": "01F8AD65", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 56 41", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 56 41"
             }, 
             "NAM1 - Response Text": "Kill more of the Aundae and Quarra, and perhaps I will have something more to give to you.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 160, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwVAVampContess", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "A0", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwVAVampContess "The Vampire Merta" [QUST:01003BCB]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0raxleSberne", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0raxleSberne "Raxle Berne" [NPC_:01260183]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 11.9999999697029, 
-            "Function": 74, 
-            "Parameter #1": "VampKills", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 12.000000000000000, 
+            "Function": "GetGlobalValue:74", 
+            "Unused": "00 00", 
+            "Parameter #1": "VampKills [GLOB:01F8ACE9]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "ServiceRefusal", 
+    "Topic": "ServiceRefusal [DIAL:0000010E]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 922, 
         "Record Flags": {}, 
-        "FormID": "01F8CEB5"
+        "FormID": "01F8CEB5", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 5, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "05", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01F8D085", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "61 63 74", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "61 63 74"
             }, 
             "NAM1 - Response Text": "Excuse me, sera. You need Hospitality papers before I can offer you any services. Nothing personal, but it's the rules. You can purchase Hospitality papers in Gateway Inn.", 
             "NAM2 - Actor notes": ""
@@ -26,180 +29,224 @@
     ], 
     "Conditions": [
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0bkUhospitalityUpapers", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUhospitalityUpapers "Hospitality Papers" [BOOK:01180157]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "0Telvanni", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Telvanni "Great House Telvanni" [FACT:01220006]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0anisSseloth", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0anisSseloth "Anis Seloth" [NPC_:01260154]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0anruin", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0anruin "Anruin" [NPC_:01260A25]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0manicky", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0manicky "Manicky" [NPC_:01260A26]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0mirasoSseran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0mirasoSseran "Miraso Seran" [NPC_:012609ED]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0ancola", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ancola "Ancola" [NPC_:01260A29]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0arangaer", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0arangaer "Arangaer" [NPC_:01260A27]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0elegal", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0elegal "Elegal" [NPC_:01260A28]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0pierletteSrostorard", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0pierletteSrostorard "Pierlette Rostorard" [NPC_:01260155]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0tendrisSvedran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0tendrisSvedran "Tendris Vedran" [NPC_:012609EE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0llaalamSmadalas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0llaalamSmadalas "Llaalam Madalas" [NPC_:01260152]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0namanianSfacian", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0namanianSfacian "Namanian Facian" [NPC_:012601B2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0galeroSandaram", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0galeroSandaram "Galero Andaram" [NPC_:012609EB]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0thervulSserethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0thervulSserethi "Threvul Serethi" [NPC_:01260153]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nelsoSsalenim", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nelsoSsalenim "Nelso Salenim" [NPC_:0126014C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0urtisoSfaryon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0urtisoSfaryon "Urtiso Faryon" [NPC_:0126014F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nirasSfarys", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nirasSfarys "Niras Farys" [NPC_:0126014E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0fara", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0fara "Fara" [NPC_:01260157]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0galarSrothan", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0galarSrothan "Galar Rothan" [NPC_:0126014D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0balenSvendu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0balenSvendu "Balen Vendu" [NPC_:01260156]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hlorisSfarano", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hlorisSfarano "Hloris Farano" [NPC_:012609EC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -208,7 +255,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

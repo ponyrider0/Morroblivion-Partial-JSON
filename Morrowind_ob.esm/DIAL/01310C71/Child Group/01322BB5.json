@@ -1,31 +1,34 @@
 {
-    "Topic": "1duties", 
+    "Topic": "1duties [DIAL:01310C71]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 328, 
         "Record Flags": {}, 
-        "FormID": "01322BB5"
+        "FormID": "01322BB5", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRAdvancement", 
+    "QSTI - Quest": "fbmwHRAdvancement [QUST:010037E7]", 
     "PNAM - Previous INFO": "01322BB3", 
     "Add topics": [
-        "1joinSHouseSRedoran", 
-        "1duties", 
-        "1Temple", 
-        "1duties", 
-        "1Temple"
+        "NAME - Topic": "0131075C", 
+        "NAME - Topic": "01310C71", 
+        "NAME - Topic": "01310C9C", 
+        "NAME - Topic": "01310C71", 
+        "NAME - Topic": "01310C9C"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You must join House Redoran before I can give you duties. If you want Temple duties, speak with the Temple Steward, Tuls Valen.", 
             "NAM2 - Actor notes": ""
@@ -33,20 +36,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "0Redoran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Redoran "Great House Redoran" [FACT:01220000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0llorosSsarano", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0llorosSsarano "Lloros Sarano" [NPC_:01260230]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -55,7 +62,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

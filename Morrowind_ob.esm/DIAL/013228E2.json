@@ -1,79 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 61, 
         "Record Flags": {}, 
-        "FormID": "013228E2"
+        "FormID": "013228E2", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1decision1", 
     "Quests": [
-        "fbmwCO4", 
-        "MorroDefaultQuest"
+        "QSTI - Quest": "fbmwCO4 [QUST:0101BED2]", 
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "The Smith.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1decision1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8BC61"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwCO4", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6D 77 43", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Indeed, a smith would be useful to us. Are you certain that's how we should invest? Once we've started construction, you can't afford to change your mind.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "6D 77 43", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Very well. I'll make sure the work starts promptly. Carnius needs to be informed, regardless of whether or not he cares. We can't do anything without the utmost regard for procedure; we don't want to give him an edge.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0FalcoSGalenus", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 56, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 15 00 0A 00 72 02 00 73 04 00 02 00 20 30 15 00 0A 00 72 02 00 73 05 00 02 00 20 31 15 00 0A 00 72 03 00 73 06 00 02 00 20 31", 
-                "SCTX - Result script source": "setstage fbmwco4 30\r\nset fbmwcoupdate.servday to 0\r\nset fbmwcoupdate.colonyservice to 1\r\nset fbmwcoadvancement.colonyservice to 1", 
-                "References": [
-                    "fbmwCO4", 
-                    "fbmwCOUpdate", 
-                    "fbmwCOAdvancement"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

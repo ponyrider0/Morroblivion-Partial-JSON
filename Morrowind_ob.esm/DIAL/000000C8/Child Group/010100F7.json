@@ -1,44 +1,49 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 545, 
         "Record Flags": {}, 
-        "FormID": "010100F7"
+        "FormID": "010100F7", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGNchurdamz", 
+    "QSTI - Quest": "fbmwFGNchurdamz [QUST:010033E2]", 
     "PNAM - Previous INFO": "010100F8", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "66 69 6D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "66 69 6D"
             }, 
             "NAM1 - Response Text": "Ho there! Your one of Hrundi's band, aren't you? I can spot you a mile off.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "66 69 6D", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "66 69 6D"
             }, 
             "NAM1 - Response Text": "I've been waiting for some time now for assistance, but I suppose you will have to do.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "66 69 6D", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "66 69 6D"
             }, 
             "NAM1 - Response Text": "I'm on a quest to root out a \"great beast\" dwelling within these ruins. You and I will explore together.", 
             "NAM2 - Actor notes": ""
@@ -46,20 +51,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGNchurdamz", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGNchurdamz "Fighters Guild: Battle at Nchurdamz" [QUST:010033E2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0LariennaSMacrina", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0LariennaSMacrina "Larienna Macrina" [NPC_:012609BA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,12 +77,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "addtopic 1explorestogether", 
         "References": [
-            "1exploreStogether"
+            "SCRO - Global Reference": "1exploreStogether [DIAL:01310853]"
         ]
     }
 }

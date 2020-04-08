@@ -1,14 +1,16 @@
 {
     "Record Header": {
         "Signature": "ENCH", 
+        "Data Size": 80, 
         "Record Flags": {}, 
-        "FormID": "01040060"
+        "FormID": "01040060", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0staminaUen", 
-    "ENIT - ": {
-        "Type": 3, 
-        "Charge Amount": 900, 
-        "Enchant Cost": 80, 
+    "ENIT - ENIT": {
+        "Type": "00000003", 
+        "Charge Amount": "00000384", 
+        "Enchant Cost": "00000050", 
         "Flags": {
             "Manual Enchant Cost (Autocalc Off)": true
         }, 
@@ -16,14 +18,14 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1095124306, 
-            "EFIT - ": {
-                "Magic effect name": 1095124306, 
+            "EFID - Magic effect name": "REFA", 
+            "EFIT - EFIT": {
+                "Magic effect name": "REFA", 
                 "Magnitude": 20, 
                 "Area": 0, 
                 "Duration": 0, 
-                "Type": 0, 
-                "Actor Value": 10
+                "Type": "Self:0", 
+                "Actor Value": "Fatigue:10"
             }
         }
     ]

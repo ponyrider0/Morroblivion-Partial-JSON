@@ -1,24 +1,27 @@
 {
-    "Topic": "1LostSKogoruhn", 
+    "Topic": "1LostSKogoruhn [DIAL:01310983]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 416, 
         "Record Flags": {}, 
-        "FormID": "01F8A528"
+        "FormID": "01F8A528", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTTHairShirt", 
+    "QSTI - Quest": "fbmwTTHairShirt [QUST:01002C7A]", 
     "PNAM - Previous INFO": "01321870", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6F 53", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 6F 53"
             }, 
             "NAM1 - Response Text": "Kogoruhn used to lie north of the northern boundary of the Ghostfence. It was northeast of Maar Gan and west of the present-day Vos. It was near the stronghold of Falasmaryon, which I can mark on your map.", 
             "NAM2 - Actor notes": ""
@@ -26,36 +29,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 32, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "20", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Scout", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Scout "Scout" [CLAS:0002378A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTTHairShirt", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTTHairShirt "Temple: Hair Shirt of St. Aralor" [QUST:01002C7A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTTHairShirt", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTTHairShirt "Temple: Hair Shirt of St. Aralor" [QUST:01002C7A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -64,7 +75,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

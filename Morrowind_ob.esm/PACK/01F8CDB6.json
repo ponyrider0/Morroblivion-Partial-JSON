@@ -1,14 +1,16 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 115, 
         "Record Flags": {}, 
-        "FormID": "01F8CDB6"
+        "FormID": "01F8CDB6", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwAlofFarmWork", 
     "PKDT - General": {
         "General": {
             "Flags": {}, 
-            "Type": 8, 
+            "Type": "08", 
             "Unused": "00 00 00"
         }
     }, 
@@ -18,25 +20,27 @@
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "9", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": 9, 
         "Duration": 5
     }, 
     "PTDT - Target": {
         "Type": 1, 
-        "Target": "Hoe01", 
+        "Target": "00025101", 
         "Count": 300
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 62, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "IsRaining:62", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

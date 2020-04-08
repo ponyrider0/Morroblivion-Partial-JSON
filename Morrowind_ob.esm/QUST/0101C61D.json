@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 3745, 
         "Record Flags": {}, 
-        "FormID": "0101C61D"
+        "FormID": "0101C61D", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMSCrimsonPlague", 
-    "SCRI - Script": "fbmwTRmsPlagueScript", 
+    "SCRI - Script": "fbmwTRmsPlagueScript [SCPT:0102E022]", 
     "FULL - Name": "Crimson Plague", 
-    "ICON - Icon filename": "darthsouth\\Quests\\miscquest-town.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\miscquest-town.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 70
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -43,7 +49,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -61,7 +67,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -79,7 +85,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -97,7 +103,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -115,7 +121,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -133,12 +139,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 8, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00", 
                         "SCTX - Result script source": "fbmwPlagueOrdinatorREF.enable", 
                         "References": [
-                            "fbmwPlagueOrdinatorREF"
+                            "SCRO - Global Reference": "fbmwPlagueOrdinatorREF [ACHR:01F03A15]"
                         ]
                     }
                 }
@@ -156,7 +162,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -174,12 +180,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 8, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 21 10 00 00", 
                         "SCTX - Result script source": "fbmwShunariREF.enable", 
                         "References": [
-                            "fbmwShunariREF"
+                            "SCRO - Global Reference": "fbmwShunariREF [ACHR:01F03A14]"
                         ]
                     }
                 }
@@ -197,7 +203,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -218,7 +224,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -236,7 +242,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -254,7 +260,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -272,7 +278,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -290,7 +296,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -308,12 +314,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 8, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 22 10 00 00", 
                         "SCTX - Result script source": "fbmwPlagueOrdinatorREF.disable", 
                         "References": [
-                            "fbmwPlagueOrdinatorREF"
+                            "SCRO - Global Reference": "fbmwPlagueOrdinatorREF [ACHR:01F03A15]"
                         ]
                     }
                 }
@@ -333,12 +339,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 176, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 22 10 00 00 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 54 00 01 00 50 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 53 74 6F 70 70 65 64 20 74 68 65 20 43 72 69 6D 73 6F 6E 20 50 6C 61 67 75 65 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 32 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "fbmwShunariREF.disable\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qStopped the Crimson Plague%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 250\"\r\nendif", 
+                        "SCTX - Result script source": "fbmwShunariREF.disable\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qStopped the Crimson Plague%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 250\"\r\nendif", 
                         "References": [
-                            "fbmwShunariREF"
+                            "SCRO - Global Reference": "fbmwShunariREF [ACHR:01F03A14]"
                         ]
                     }
                 }
@@ -358,7 +364,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }

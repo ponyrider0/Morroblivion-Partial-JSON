@@ -1,87 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 97, 
         "Record Flags": {}, 
-        "FormID": "01321A0C"
+        "FormID": "01321A0C", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1doSmeSaSfavor1", 
     "Quests": [
-        "fbmwMVThiefTrader"
+        "QSTI - Quest": "fbmwMVThiefTrader [QUST:01003414]"
     ], 
     "FULL - Name": "I swear by Zenithar that I will deliver your goods.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1doSmeSaSfavor1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013233D2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMVThiefTrader", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Zenithar", 
-                "1luck", 
-                "1LucanAsSshipment"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You will? Excellent. And may, uh, Zenithar's divine provincial light shine on all of your...um...merchantly activities. Good luck!", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Just tell gro-Skandar that you have Lucan's shipment. He'll know what to do.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0lucanSostorius", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 7, 
-                    "CompiledSize": 151, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 52 10 0A 00 02 00 72 05 00 6E 01 00 00 00 52 10 0A 00 02 00 72 06 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 06 00 6E 01 00 00 00 58 10 05 00 01 00 72 07 00", 
-                "SCTX - Result script source": "setstage fbmwmvthieftrader 20\r\nremoveitem 0steelsshortsword 1\r\nremoveitem 0silversflameblade 1\r\nremoveitem 0steelsstaff 1\r\nremoveitem 0silverSwaraxe 1\r\nplayer.additem 0steelsshortsword 1\r\nplayer.additem 0silversflameblade 1\r\nplayer.additem 0steelsstaff 1\r\nplayer.additem 0silverSwaraxe 1\r\naddtopic 1lucanassshipment", 
-                "References": [
-                    20, 
-                    "fbmwMVThiefTrader", 
-                    "0steelSshortsword", 
-                    "0silverSflameblade", 
-                    "0steelSstaff", 
-                    "0silverSwaraxe", 
-                    "1LucanAsSshipment"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

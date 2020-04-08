@@ -1,57 +1,62 @@
 {
-    "Topic": "1Vvardenfell", 
+    "Topic": "1Vvardenfell [DIAL:01310A9D]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 710, 
         "Record Flags": {}, 
-        "FormID": "01321EBA"
+        "FormID": "01321EBA", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1Vvardenfell", 
-        "1Imperial", 
-        "1Morrowind", 
-        "1VvardenfellSDistrict", 
-        "1Vvardenfell", 
-        "1RedSMountain", 
-        "1Morrowind", 
-        "1InnerSSea", 
-        "1PadomaicSOcean", 
-        "1Vvardenfell", 
-        "1SeaSofSGhosts"
+        "NAME - Topic": "01310A9D", 
+        "NAME - Topic": "01310C02", 
+        "NAME - Topic": "01310B72", 
+        "NAME - Topic": "013106F2", 
+        "NAME - Topic": "01310A9D", 
+        "NAME - Topic": "013109E5", 
+        "NAME - Topic": "01310B72", 
+        "NAME - Topic": "01310B9F", 
+        "NAME - Topic": "0131091A", 
+        "NAME - Topic": "01310A9D", 
+        "NAME - Topic": "01310994"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Vvardenfell is one of the six Imperial administrative districts of Morrowind.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Vvardenfell district encompasses Vvardenfell Island, a great land mass dominated by the giant volcano Red Mountain and cut off from mainland Morrowind by the surrounding Inner Sea.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The portion of the Padomaic Ocean lying north of Vvardenfell is know as the Sea of Ghosts.", 
             "NAM2 - Actor notes": ""
@@ -59,28 +64,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Savant", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Savant "Savant" [CLAS:00023E6B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -89,7 +100,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

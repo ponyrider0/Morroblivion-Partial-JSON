@@ -1,28 +1,30 @@
 {
     "Record Header": {
         "Signature": "SPEL", 
+        "Data Size": 113, 
         "Record Flags": {}, 
-        "FormID": "01060042"
+        "FormID": "01060042", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0ondusiAsSopenSdoor", 
     "FULL - Name": "Ondusi's Open Door", 
-    "SPIT - ": {
-        "Type": 0, 
-        "Cost": 15, 
-        "Level": 1, 
+    "SPIT - SPIT": {
+        "Type": "00000000", 
+        "Cost": "0000000F", 
+        "Level": "00000001", 
         "Flags": {}, 
         "Unused": "CD CD CD"
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1313165391, 
-            "EFIT - ": {
-                "Magic effect name": 1313165391, 
+            "EFID - Magic effect name": "OPEN", 
+            "EFIT - EFIT": {
+                "Magic effect name": "OPEN", 
                 "Magnitude": 50, 
                 "Area": 0, 
                 "Duration": 1, 
-                "Type": 1, 
-                "Actor Value": 8
+                "Type": "Touch:1", 
+                "Actor Value": "Health:8"
             }
         }
     ]

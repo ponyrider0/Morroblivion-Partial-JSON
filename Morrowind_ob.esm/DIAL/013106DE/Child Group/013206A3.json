@@ -1,52 +1,57 @@
 {
-    "Topic": "1someoneSinSparticular", 
+    "Topic": "1someoneSinSparticular [DIAL:013106DE]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 861, 
         "Record Flags": {}, 
-        "FormID": "013206A3"
+        "FormID": "013206A3", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "013206A2", 
     "Add topics": [
-        "1armorer", 
-        "1trader", 
-        "1MistressSTherana", 
-        "1Altmer", 
-        "1guard", 
-        "1MistressSTherana"
+        "NAME - Topic": "01310C52", 
+        "NAME - Topic": "01310C7F", 
+        "NAME - Topic": "01310823", 
+        "NAME - Topic": "01310CA2", 
+        "NAME - Topic": "01310CED", 
+        "NAME - Topic": "01310823"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "In the village, Llorayna Sethan runs Sethan's Tradehouse. Galen Berer is a smith and armorer. Fadase Selvayn is a trader.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "In the tower, Mistress Therana is our lady sorceress. Darvasa Vedas is her second-in-command, and the Altmer Mollimo of Cloudrest is her guard captain.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "And Trerayna Dalen, Mistress Therana's Telvanni challenger, has a camp just outside the village.", 
             "NAM2 - Actor notes": ""
@@ -54,76 +59,94 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "TelSBranora", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "TelSBranora "Tel Branora" [CELL:01480006]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 72, 
-            "Parameter #1": "0lloraynaSsethan", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0lloraynaSsethan "Llorayna Sethan" [NPC_:012604D8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 72, 
-            "Parameter #1": "0galenSberer", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0galenSberer "Galen Berer" [NPC_:012604DA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 72, 
-            "Parameter #1": "0fadaseSselvayn", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0fadaseSselvayn "Fadase Selvayn" [NPC_:012604DB]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 72, 
-            "Parameter #1": "0darvasaSvedas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0darvasaSvedas "Darvasa Vedas" [NPC_:012604E2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 72, 
-            "Parameter #1": "0mollimoSofScloudrest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0mollimoSofScloudrest "Mollimo of Cloudrest" [NPC_:012604ED]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -132,7 +155,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

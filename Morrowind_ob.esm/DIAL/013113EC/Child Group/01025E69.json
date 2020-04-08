@@ -1,24 +1,27 @@
 {
-    "Topic": "1roots", 
+    "Topic": "1roots [DIAL:013113EC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 261, 
         "Record Flags": {}, 
-        "FormID": "01025E69"
+        "FormID": "01025E69", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwCO10", 
+    "QSTI - Quest": "fbmwCO10 [QUST:0101BE3D]", 
     "PNAM - Previous INFO": "01025E68", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 43 4F", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 43 4F"
             }, 
             "NAM1 - Response Text": "Yep, that whole shaft was full of them, so we just left it alone. Too much work.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwCO10", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCO10 "East Empire Company: Razing the Forest" [QUST:0101BE3D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "RavenSRockVSMine", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "RavenSRockVSMine "Raven Rock, Mine" [CELL:0148053E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

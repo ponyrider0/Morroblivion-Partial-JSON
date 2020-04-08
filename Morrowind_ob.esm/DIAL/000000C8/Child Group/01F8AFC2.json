@@ -1,24 +1,27 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 344, 
         "Record Flags": {}, 
-        "FormID": "01F8AFC2"
+        "FormID": "01F8AFC2", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMMorale", 
+    "QSTI - Quest": "fbmwBMMorale [QUST:0101B6CE]", 
     "PNAM - Previous INFO": "01F8AFC1", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 69", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 6E 69"
             }, 
             "NAM1 - Response Text": "What is it you want? I heard you might be able to get hold of some booze.", 
             "NAM2 - Actor notes": ""
@@ -26,52 +29,64 @@
     ], 
     "Conditions": [
         {
-            "Type": 32, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0falxScarius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "20", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0falxScarius "Captain Falx Carius" [NPC_:01260B17]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Guard", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Guard "Guard" [CLAS:00034E6E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "FortSFrostmoth", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "FortSFrostmoth "Fort Frostmoth" [CELL:01480524]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "fbmwgenericflag", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwgenericflag "Flag" [BOOK:01F2A520]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -80,7 +95,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

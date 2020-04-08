@@ -1,44 +1,49 @@
 {
-    "Topic": "1submitSmyself", 
+    "Topic": "1submitSmyself [DIAL:013109C5]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 487, 
         "Record Flags": {}, 
-        "FormID": "01F8AD72"
+        "FormID": "01F8AD72", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwVAVampRich", 
+    "QSTI - Quest": "fbmwVAVampRich [QUST:01003BD1]", 
     "PNAM - Previous INFO": "01F8AB01", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Yes, that is what I wish to do. To taste the blood of the living.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "To walk the night at will, feeling the power coursing through my veins. I wish to join you, to become truly powerful and respected.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I wish to kill mortals and bathe in their blood.", 
             "NAM2 - Actor notes": ""
@@ -46,25 +51,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0sanvynSllethri", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0sanvynSllethri "Sanvyn Llethri" [NPC_:01260A06]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 74, 
-            "Parameter #1": "fbmwPCVampire", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetGlobalValue:74", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwPCVampire [GLOB:01F8ACE1]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1submitSmyself1", 
-        "1submitSmyself2"
+        "TCLT - Choice": "1submitSmyself1 [DIAL:0132171D]", 
+        "TCLT - Choice": "1submitSmyself2 [DIAL:0132171B]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -72,7 +81,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

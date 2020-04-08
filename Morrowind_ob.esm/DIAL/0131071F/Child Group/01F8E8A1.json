@@ -1,24 +1,27 @@
 {
-    "Topic": "1CureSDiseaseSpotion", 
+    "Topic": "1CureSDiseaseSpotion [DIAL:0131071F]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 206, 
         "Record Flags": {}, 
-        "FormID": "01F8E8A1"
+        "FormID": "01F8E8A1", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSCrimsonPlague", 
+    "QSTI - Quest": "fbmwMSCrimsonPlague [QUST:0101C61D]", 
     "PNAM - Previous INFO": "01F8E8A0", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "68 65 6C", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "68 65 6C"
             }, 
             "NAM1 - Response Text": "Are you here to deliver the potion?", 
             "NAM2 - Actor notes": ""
@@ -26,25 +29,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0GeonSAuline", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0GeonSAuline "Geon Auline" [NPC_:01260A7F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMSCrimsonPlague", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSCrimsonPlague "Crimson Plague" [QUST:0101C61D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1CureSDiseaseSpotion3", 
-        "1CureSDiseaseSpotion4"
+        "TCLT - Choice": "1CureSDiseaseSpotion3 [DIAL:0132082B]", 
+        "TCLT - Choice": "1CureSDiseaseSpotion4 [DIAL:0132082E]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -52,7 +59,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

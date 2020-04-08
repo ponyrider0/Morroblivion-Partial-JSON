@@ -1,122 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 81, 
         "Record Flags": {}, 
-        "FormID": "0105F167"
+        "FormID": "0105F167", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMasterIndex1Telasero1", 
     "Quests": [
-        "fbmwMSMasterIndex"
+        "QSTI - Quest": "fbmwMSMasterIndex [QUST:01060A96]"
     ], 
     "FULL - Name": "Yes, send me to Telasero.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "fbmwMasterIndex1Telasero1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0105F195"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSMasterIndex", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Then off you go....", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0folmsSmirel", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "0indexUmaster", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 0A 00 02 00 20 31", 
-                "SCTX - Result script source": "set fbmwMSMasterindex.Telasero to 1", 
-                "References": [
-                    "fbmwMSMasterIndex"
-                ]
-            }
-        }, 
-        {
-            "Topic": "fbmwMasterIndex1Telasero1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0105F196"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSMasterIndex", 
-            "PNAM - Previous INFO": "0105F195", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Unless you have a master index, I can't send you to Telasero.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0folmsSmirel", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

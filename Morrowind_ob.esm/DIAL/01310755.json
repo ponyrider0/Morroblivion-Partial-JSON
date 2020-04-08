@@ -1,148 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 70, 
         "Record Flags": {}, 
-        "FormID": "01310755"
+        "FormID": "01310755", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1apologySfromSGadayn", 
     "Quests": [
-        "fbmwEBUnrequited"
+        "QSTI - Quest": "fbmwEBUnrequited [QUST:01003427]"
     ], 
     "FULL - Name": "Apology from Gadayn", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1apologySfromSGadayn", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01AABE46"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBUnrequited", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "72 65 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "He wishes to apologize? How very noble. But, at least he sent a gift along, which is certainly appropriate.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "72 65 72", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Well, I'm sure I'll have use for it sometime, although it's probably not even of good quality.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 69.999999823267, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwEBUnrequited", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0pUlovepotionUunique", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0eraldil", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage FBMWEBUnrequited 90\r\nplayer.removeitem 0pulovepotionuunique 1\r\nadditem 0pulovepotionuunique 1", 
-                "References": [
-                    20, 
-                    "fbmwEBUnrequited", 
-                    "0pUlovepotionUunique"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1apologySfromSGadayn", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01AABE47"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBUnrequited", 
-            "PNAM - Previous INFO": "01AABE46", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "72 65 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I'm sure she'll accept my apologies...and the potion of course.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 89.9999997727718, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwEBUnrequited", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0gadaynSandarys", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

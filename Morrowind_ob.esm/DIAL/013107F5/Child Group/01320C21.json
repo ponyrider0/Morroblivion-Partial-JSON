@@ -1,24 +1,27 @@
 {
-    "Topic": "1OrphanSofSArnesia", 
+    "Topic": "1OrphanSofSArnesia [DIAL:013107F5]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 293, 
         "Record Flags": {}, 
-        "FormID": "01320C21"
+        "FormID": "01320C21", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHDisguisedArmor", 
+    "QSTI - Quest": "fbmwHHDisguisedArmor [QUST:0100345E]", 
     "PNAM - Previous INFO": "0100418A", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Yes, that is the code phrase you should use when you speak with Neminda. Make sure you wear the helm I gave you.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHDisguisedArmor", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHDisguisedArmor "House Hlaalu: Disguise" [QUST:0100345E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHDisguisedArmor", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHDisguisedArmor "House Hlaalu: Disguise" [QUST:0100345E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nilenoSdorvayn", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nilenoSdorvayn "Nileno Dorvayn" [NPC_:01260109]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

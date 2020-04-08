@@ -1,24 +1,27 @@
 {
-    "Topic": "1TelvanniSHortator", 
+    "Topic": "1TelvanniSHortator [DIAL:013107C6]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 301, 
         "Record Flags": {}, 
-        "FormID": "01025AE5"
+        "FormID": "01025AE5", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQTelvanniAryon", 
+    "QSTI - Quest": "fbmwMQTelvanniAryon [QUST:01002C4B]", 
     "PNAM - Previous INFO": "01025AE6", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "I have given you my own vote for Hortator of House Telvanni. But you must get the votes of all the surviving councilors.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQTelvanniAryon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQTelvanniAryon "Convincing Master Aryon" [QUST:01002C4B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQTelvanni", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQTelvanni "Telvanni Hortator" [QUST:01002C4A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0aryon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0aryon "Aryon" [NPC_:0126040A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

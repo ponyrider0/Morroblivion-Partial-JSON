@@ -1,38 +1,42 @@
 {
-    "Topic": "1erroneousSdocuments", 
+    "Topic": "1erroneousSdocuments [DIAL:01310750]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 437, 
         "Record Flags": {}, 
-        "FormID": "01320907"
+        "FormID": "01320907", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHReplaceDocs", 
+    "QSTI - Quest": "fbmwHHReplaceDocs [QUST:0100346B]", 
     "PNAM - Previous INFO": "01320904", 
     "Add topics": [
-        "1forgedSlandSdeed", 
-        "1proof"
+        "NAME - Topic": "0131083A", 
+        "NAME - Topic": "01310CE5"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I cannot believe that Odral still interferes with my affairs.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Will you give me the forged land deed you hold so that I may use it as proof against him?", 
             "NAM2 - Actor notes": ""
@@ -40,41 +44,49 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0bkUlanddeedfakeUhhrd", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUlanddeedfakeUhhrd "Odral's Land Deed" [BOOK:01180210]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHReplaceDocs", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHReplaceDocs "House Hlaalu: Erroneous Documents" [QUST:0100346B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHReplaceDocs", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHReplaceDocs "House Hlaalu: Erroneous Documents" [QUST:0100346B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0rovoneSarvel", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0rovoneSarvel "Rovone Arvel" [NPC_:0126039C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1erroneousSdocuments1", 
-        "1erroneousSdocuments2"
+        "TCLT - Choice": "1erroneousSdocuments1 [DIAL:013208FF]", 
+        "TCLT - Choice": "1erroneousSdocuments2 [DIAL:01320903]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -82,7 +94,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,48 +1,53 @@
 {
-    "Topic": "1ErabenimsunScamp", 
+    "Topic": "1ErabenimsunScamp [DIAL:0131081C]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 685, 
         "Record Flags": {}, 
-        "FormID": "01320E9B"
+        "FormID": "01320E9B", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01320E9A", 
     "Add topics": [
-        "1ErabenimsunScamp", 
-        "1need"
+        "NAME - Topic": "0131081C", 
+        "NAME - Topic": "01310CFC"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Erabenimsun camp lies north as the racer flies, between Mt. Kand and Mt. Assarnibibi and beyond. The camp itself lies north-northwest of Mt.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Assarnibibi. There is no track, and the going is difficult. You'll need to turn and backtrack to avoid obstacles like lava lakes.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The camp itself is a group of five or six yurts.", 
             "NAM2 - Actor notes": ""
@@ -50,36 +55,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "MolagSMar", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "MolagSMar "Molag Mar" [CELL:0148000A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Scout", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Scout "Scout" [CLAS:0002378A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -88,12 +101,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "showmap mwErabenimsunCampMapMarker", 
         "References": [
-            "mwErabenimsunCampMapMarker"
+            "SCRO - Global Reference": "mwErabenimsunCampMapMarker [REFR:01003AF7]"
         ]
     }
 }

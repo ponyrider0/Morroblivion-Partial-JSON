@@ -1,34 +1,38 @@
 {
-    "Topic": "1recruitSsomeSminers", 
+    "Topic": "1recruitSsomeSminers [DIAL:01310753]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 359, 
         "Record Flags": {}, 
-        "FormID": "01006802"
+        "FormID": "01006802", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHStronghold", 
+    "QSTI - Quest": "fbmwHHStronghold [QUST:0100346D]", 
     "PNAM - Previous INFO": "01006801", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "I do not know about any free miners here, but I have a slave, Llaals Ores, who says he used to be a miner.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "He is rebellious and lazy. I will sell him to you for 200 drakes. A bargain.", 
             "NAM2 - Actor notes": ""
@@ -36,17 +40,19 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0savileSimayn", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0savileSimayn "Savile Imayn" [NPC_:01260480]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1recruitSsomeSminers1", 
-        "1recruitSsomeSminers2"
+        "TCLT - Choice": "1recruitSsomeSminers1 [DIAL:01320911]", 
+        "TCLT - Choice": "1recruitSsomeSminers2 [DIAL:01320913]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -54,7 +60,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

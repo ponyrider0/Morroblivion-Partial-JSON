@@ -1,44 +1,49 @@
 {
-    "Topic": "1FelenSMaryonAsSstaff", 
+    "Topic": "1FelenSMaryonAsSstaff [DIAL:0131071D]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 554, 
         "Record Flags": {}, 
-        "FormID": "01AA4175"
+        "FormID": "01AA4175", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTGEbonyStaff", 
+    "QSTI - Quest": "fbmwTGEbonyStaff [QUST:0100932D]", 
     "PNAM - Previous INFO": "01AA4174", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "You've got the staff. Excellent. Tell you what -- I'll give you a choice. I really didn't expect you to be able to get that thing.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "I didn't expect anyone would be able to, honestly. It's yours if you want it, but I can also sell it and give you a cut of the profits.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "What do you say?", 
             "NAM2 - Actor notes": ""
@@ -46,33 +51,39 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0ebonySstaffScaper", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ebonySstaffScaper "Felen's Ebony Staff" [WEAP:0110017A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0bigShelende", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bigShelende "Big Helende" [NPC_:012601B6]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTGEbonyStaff", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTGEbonyStaff "Thieves Guild: Felen's Ebony Staff" [QUST:0100932D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1FelenSMaryonAsSstaff5", 
-        "1FelenSMaryonAsSstaff6"
+        "TCLT - Choice": "1FelenSMaryonAsSstaff5 [DIAL:0132073A]", 
+        "TCLT - Choice": "1FelenSMaryonAsSstaff6 [DIAL:01320738]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -80,7 +91,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

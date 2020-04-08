@@ -1,24 +1,27 @@
 {
-    "Topic": "1gameSofSshells", 
+    "Topic": "1gameSofSshells [DIAL:01311006]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 377, 
         "Record Flags": {}, 
-        "FormID": "01F8BA62"
+        "FormID": "01F8BA62", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSBouncer", 
+    "QSTI - Quest": "fbmwMSBouncer [QUST:0101C61B]", 
     "PNAM - Previous INFO": "01321419", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "Shells, yes. I'll put this coin under one of these three mudcrab shell pieces I have here, and then mix them up. All you have to do is tell me where the coin is when I'm done, and you'll win double your money. What do you say?", 
             "NAM2 - Actor notes": ""
@@ -26,18 +29,20 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0galmsSseles", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0galmsSseles "Galms Seles" [NPC_:01260AAC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1gameSofSshells1", 
-        "1gameSofSshells2", 
-        "1gameSofSshells3"
+        "TCLT - Choice": "1gameSofSshells1 [DIAL:01321415]", 
+        "TCLT - Choice": "1gameSofSshells2 [DIAL:01321413]", 
+        "TCLT - Choice": "1gameSofSshells3 [DIAL:01321417]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -45,7 +50,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

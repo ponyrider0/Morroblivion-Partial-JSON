@@ -1,84 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 70, 
         "Record Flags": {}, 
-        "FormID": "01321FD4"
+        "FormID": "01321FD4", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1debtStoSpay1", 
     "Quests": [
-        "fbmwEBInvisible"
+        "QSTI - Quest": "fbmwEBInvisible [QUST:01003423]"
     ], 
     "FULL - Name": "I'll pay the debt for him.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1debtStoSpay1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013234C0"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBInvisible", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You want to pay the debt? Fine with me. I'll remove the spell. But I don't want to see the little fool back here again any time soon.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0fevynSralen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 399.999999990097, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 46 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 90 01 00 00 02 10 0A 00 02 00 72 03 00 6E 90 01 00 00", 
-                "SCTX - Result script source": "setstage fbmwebinvisible 70\r\nplayer.removeitem gold001 400\r\nadditem gold001 400", 
-                "References": [
-                    20, 
-                    "fbmwEBInvisible", 
-                    "Gold001"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

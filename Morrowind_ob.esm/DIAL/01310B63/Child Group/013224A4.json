@@ -1,28 +1,31 @@
 {
-    "Topic": "1KoalSCave", 
+    "Topic": "1KoalSCave [DIAL:01310B63]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 370, 
         "Record Flags": {}, 
-        "FormID": "013224A4"
+        "FormID": "013224A4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMVPoorPilgrim", 
+    "QSTI - Quest": "fbmwMVPoorPilgrim [QUST:0100340C]", 
     "PNAM - Previous INFO": "01F8A6F2", 
     "Add topics": [
-        "1KoalSCave", 
-        "1Gnisis"
+        "NAME - Topic": "01310B63", 
+        "NAME - Topic": "01310C93"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The Koal Cave is south of Gnisis. If we travel west and a bit south, we can arrive there. If you have a map, I can mark the location for you.", 
             "NAM2 - Actor notes": ""
@@ -30,20 +33,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0fonusSrathryon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0fonusSrathryon "Fonus Rathryon" [NPC_:012606C3]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -52,12 +59,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "ShowMap mwKoalCaveMapMarker", 
         "References": [
-            "mwKoalCaveMapMarker"
+            "SCRO - Global Reference": "mwKoalCaveMapMarker [REFR:01451003]"
         ]
     }
 }

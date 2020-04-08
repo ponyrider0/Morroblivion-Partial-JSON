@@ -1,24 +1,27 @@
 {
-    "Topic": "1taxesSfromSGnisis", 
+    "Topic": "1taxesSfromSGnisis [DIAL:013107BD]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 233, 
         "Record Flags": {}, 
-        "FormID": "01004AF4"
+        "FormID": "01004AF4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRTaxCollector", 
+    "QSTI - Quest": "fbmwHRTaxCollector [QUST:0100519C]", 
     "PNAM - Previous INFO": "01004AF3", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Do you have the taxes?", 
             "NAM2 - Actor notes": ""
@@ -26,34 +29,40 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRTaxCollector", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRTaxCollector "House Redoran: Taxes from Gnisis" [QUST:0100519C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 69.999999823267, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRTaxCollector", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 70.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRTaxCollector "House Redoran: Taxes from Gnisis" [QUST:0100519C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hlarenSramoran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hlarenSramoran "Hlaren Ramoran" [NPC_:012600AE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1taxesSfromSGnisis1", 
-        "1taxesSfromSGnisis2", 
-        "1taxesSfromSGnisis3"
+        "TCLT - Choice": "1taxesSfromSGnisis1 [DIAL:01320B07]", 
+        "TCLT - Choice": "1taxesSfromSGnisis2 [DIAL:01320B0A]", 
+        "TCLT - Choice": "1taxesSfromSGnisis3 [DIAL:01320B0D]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -61,7 +70,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

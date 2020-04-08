@@ -1,79 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 92, 
         "Record Flags": {}, 
-        "FormID": "0100D1B1"
+        "FormID": "0100D1B1", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "BBBNevosiHlanSadrithMora", 
     "Quests": [
-        "aaaBoatTransport"
+        "QSTI - Quest": "aaaBoatTransport [QUST:01F0A330]"
     ], 
     "FULL - Name": "Sadrith Mora [11 hours trip, 52 gold]", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "BBBNevosiHlanSadrithMora", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0100D1B2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "aaaBoatTransport", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I dislike the Telvanni; always trying to inspect my ship.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 51.9999998687126, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0NevosiSHlan", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 48, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 34 00 00 00 15 00 08 00 47 03 00 03 00 20 32 39 15 00 0E 00 47 04 00 09 00 20 47 04 00 20 31 31 20 2B", 
-                "SCTX - Result script source": "Player.RemoveItem Gold001 52\r\nSet MWDestinationCode to 29\r\nSet GameHour to GameHour + 11", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "MWDestinationCode", 
-                    "GameHour"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

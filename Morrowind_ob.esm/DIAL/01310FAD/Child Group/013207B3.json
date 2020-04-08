@@ -1,38 +1,42 @@
 {
-    "Topic": "1KingSLlethanAsSdeath", 
+    "Topic": "1KingSLlethanAsSdeath [DIAL:01310FAD]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 587, 
         "Record Flags": {}, 
-        "FormID": "013207B3"
+        "FormID": "013207B3", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTR05People", 
+    "QSTI - Quest": "fbmwTR05People [QUST:0101C64A]", 
     "PNAM - Previous INFO": "013207B2", 
     "Add topics": [
-        "1TheSCommonSTongue", 
-        "1Helseth"
+        "NAME - Topic": "01310FD0", 
+        "NAME - Topic": "01311084"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "All right. I'll tell you what I think. He was old. But not that old. Maybe he just died, like they said. But maybe someone helped him along.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "There's a broadside sheet called \"The Common Tongue\". In there it says Helseth poisoned hundreds of people when he was in the West, so why not here?", 
             "NAM2 - Actor notes": ""
@@ -40,28 +44,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0Anrel", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Anrel "Anrel" [NPC_:01260A7B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 69.999999823267, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 70.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -70,12 +80,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
         "SCTX - Result script source": "setstage fbmwTR05people 50", 
         "References": [
-            "fbmwTR05People"
+            "SCRO - Global Reference": "fbmwTR05People [QUST:0101C64A]"
         ]
     }
 }

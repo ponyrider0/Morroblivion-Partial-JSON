@@ -1,24 +1,27 @@
 {
-    "Topic": "1Nerevarine", 
+    "Topic": "1Nerevarine [DIAL:01310AEC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 241, 
         "Record Flags": {}, 
-        "FormID": "01023C9C"
+        "FormID": "01023C9C", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ11e", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMQ11e [QUST:01001DCE]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "You wished to be named Nerevarine, and I have named you Nerevarine. Are you not satisfied?", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQ11e", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQ11e "Erabenimsum Nereverine" [QUST:01001DCE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hanTammu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hanTammu "Han-Ammu" [NPC_:0126032B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,7 +55,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

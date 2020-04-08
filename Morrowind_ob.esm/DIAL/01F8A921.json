@@ -1,66 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 64, 
         "Record Flags": {}, 
-        "FormID": "01F8A921"
+        "FormID": "01F8A921", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwebshipmentno", 
     "Quests": [
-        "fbmwEBShipment"
+        "QSTI - Quest": "fbmwEBShipment [QUST:01003425]"
     ], 
     "FULL - Name": "I can't help you.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "fbmwebshipmentno", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A922"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBShipment", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 45 42", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Well, I suppose I shouldn't have expected your help.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0alarvyneSindalas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwebshipment 30", 
-                "References": [
-                    "fbmwEBShipment"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "ServiceRefusal", 
+    "Topic": "ServiceRefusal [DIAL:0000010E]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 320, 
         "Record Flags": {}, 
-        "FormID": "01F8D084"
+        "FormID": "01F8D084", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 5, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "05", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01F8D083", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 1, 
+                "Emotion Type": "00000001", 
                 "Emotion Value": 80, 
-                "Unused": "61 6A 69", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "61 6A 69"
             }, 
             "NAM1 - Response Text": "I'm not going to buy that Skooma from you. Get rid of it and then we can trade.", 
             "NAM2 - Actor notes": ""
@@ -26,44 +29,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 323, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "WhichServiceMenu:323", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "0CamonnaSTong", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0CamonnaSTong "Camonna Tong" [FACT:0122000E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 69, 
-            "Parameter #1": "Khajiit", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetIsRace:69", 
+            "Unused": "00 00", 
+            "Parameter #1": "Khajiit "Khajiit" [RACE:000223C7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 99, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0potionUskoomaU01", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "63", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0potionUskoomaU01 "Skooma" [ALCH:01080000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "PotionSkooma", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "PotionSkooma "Skooma" [ALCH:0004E0A9]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -72,7 +85,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

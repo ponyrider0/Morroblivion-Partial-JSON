@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 107, 
         "Record Flags": {}, 
-        "FormID": "01006BA4"
+        "FormID": "01006BA4", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwPostQuestMarcelMaurard", 
     "PKDT - General": {
@@ -11,30 +13,32 @@
                 "Must reach location": true, 
                 "Defensive combat": true
             }, 
-            "Type": 1, 
+            "Type": "01", 
             "Unused": "00 00 00"
         }
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "PTDT - Target": {
         "Type": 0, 
-        "Target": "mwCrassiusCurioREF", 
+        "Target": "0183115F", 
         "Count": 256
     }, 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 69.999999823267, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBActor", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 70.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBActor "The Bad Actor" [QUST:0100341C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

@@ -1,27 +1,30 @@
 {
-    "Topic": "1SanguineSTransfiguring", 
+    "Topic": "1SanguineSTransfiguring [DIAL:013106B6]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 372, 
         "Record Flags": {}, 
-        "FormID": "01320525"
+        "FormID": "01320525", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMTSanguineItems", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMTSanguineItems [QUST:01F8CE65]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1MoragSTong"
+        "NAME - Topic": "01310AF8"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You have been expelled from the Morag Tong... But I see you have one of the Threads of the Webspinner. Will you return this Thread?", 
             "NAM2 - Actor notes": ""
@@ -29,41 +32,49 @@
     ], 
     "Conditions": [
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "fbmwSanguineRingTransfiguringWisdom", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwSanguineRingTransfiguringWisdom "Ring of Sanguine Transfiguring" [CLOT:0102BB2C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0enoShlaalu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0enoShlaalu "Eno Hlaalu" [NPC_:0126058D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 193, 
-            "Parameter #1": "0MoragSTong", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCExpelled:193", 
+            "Unused": "00 00", 
+            "Parameter #1": "0MoragSTong "Morag Tong" [FACT:01220008]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1SanguineSTransfiguring1", 
-        "1SanguineSTransfiguring2"
+        "TCLT - Choice": "1SanguineSTransfiguring1 [DIAL:01320521]", 
+        "TCLT - Choice": "1SanguineSTransfiguring2 [DIAL:01320524]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -71,7 +82,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

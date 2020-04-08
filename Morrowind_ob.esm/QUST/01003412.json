@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 6117, 
         "Record Flags": {}, 
-        "FormID": "01003412"
+        "FormID": "01003412", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMVSlaveMule", 
-    "SCRI - Script": "fbmwMVslaveMuleScript", 
+    "SCRI - Script": "fbmwMVslaveMuleScript [SCPT:0102FE2B]", 
     "FULL - Name": "Rabinna's Inner Beauty", 
-    "ICON - Icon filename": "darthsouth\\Quests\\miscquest-town.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\miscquest-town.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 80
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -43,7 +49,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -61,7 +67,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -79,7 +85,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -97,7 +103,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -115,7 +121,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -133,7 +139,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -151,7 +157,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -169,12 +175,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 9, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
                         "SCTX - Result script source": "addtopic 1relamSarinith", 
                         "References": [
-                            "1RelamSArinith"
+                            "SCRO - Global Reference": "1RelamSArinith [DIAL:0131099D]"
                         ]
                     }
                 }
@@ -192,7 +198,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -210,7 +216,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -228,7 +234,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -248,10 +254,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 180, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 60 00 01 00 5C 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 52 61 62 69 6E 6E 61 27 73 20 49 6E 6E 65 72 20 42 65 61 75 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
                     }
                 }
             ]
@@ -270,10 +276,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 180, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 60 00 01 00 5C 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 52 61 62 69 6E 6E 61 27 73 20 49 6E 6E 65 72 20 42 65 61 75 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
                     }
                 }
             ]
@@ -292,10 +298,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 180, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 60 00 01 00 5C 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 52 61 62 69 6E 6E 61 27 73 20 49 6E 6E 65 72 20 42 65 61 75 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
                     }
                 }
             ]
@@ -312,7 +318,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -330,7 +336,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -350,10 +356,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 180, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 60 00 01 00 5C 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 52 61 62 69 6E 6E 61 27 73 20 49 6E 6E 65 72 20 42 65 61 75 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 32 35 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif"
                     }
                 }
             ]
@@ -370,12 +376,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 14, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 01 00 02 00 20 30", 
                         "SCTX - Result script source": "set fbmwmvslavemule.follownow to 0\r\n", 
                         "References": [
-                            "fbmwMVSlaveMule"
+                            "SCRO - Global Reference": "fbmwMVSlaveMule [QUST:01003412]"
                         ]
                     }
                 }
@@ -395,10 +401,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 180, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 60 00 01 00 5C 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 52 61 62 69 6E 6E 61 27 73 20 49 6E 6E 65 72 20 42 65 61 75 74 79 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 32 35 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Rabinna's Inner Beauty quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 125\"\r\nendif"
                     }
                 }
             ]
@@ -407,83 +413,99 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwImKilayaREF", 
+                "Target": "018241D0", 
                 "Flags": {}, 
                 "Unused": "00 4C 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 94.9999997601481, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 95.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 111.999999717227, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 112.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 113.999999712178, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 114.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwVorarREF", 
+                "Target": "0183FECF", 
                 "Flags": {}, 
                 "Unused": "00 4C 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 30.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 160, 
-                    "Unused": 0, 
-                    "Comparison Value": 74.9999998106432, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "A0", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 75.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 1, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMVSlaveMule", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "01", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMVSlaveMule "Rabinna's Inner Beauty" [QUST:01003412]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

@@ -1,172 +1,174 @@
 {
     "Record Header": {
         "Signature": "REGN", 
+        "Data Size": 336, 
         "Record Flags": {}, 
-        "FormID": "012E0007"
+        "FormID": "012E0007", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "GrazelandsRegion", 
     "RCLR - Map Color": {
-        "Red": 255, 
-        "Green": 177, 
-        "Blue": 32, 
+        "Red": "FF", 
+        "Green": "B1", 
+        "Blue": "20", 
         "Unused": "00"
     }, 
-    "WNAM - Worldspace": "WrldMorrowind", 
+    "WNAM - Worldspace": "01380000", 
     "Region Areas": [
         {
-            "RPLI - Edge Fall-off": 1024, 
-            "RPLD - Region Point List Data": [
-                {
-                    "X": 65535.9999995375, 
-                    "Y": 40959.9999995859
+            "RPLI - Edge Fall-off": "00000400", 
+            "RPLD - Region Point List Data": {
+                "Point #0": {
+                    "X": 106496.000000000000000, 
+                    "Y": 40960.000000000000000
                 }, 
-                {
-                    "X": 65535.9999995375, 
-                    "Y": 139264.000000392
+                "Point #1": {
+                    "X": 106496.000000000000000, 
+                    "Y": 49152.000000000000000
                 }, 
-                {
-                    "X": 81920.0000001719, 
-                    "Y": 139264.000000392
+                "Point #2": {
+                    "X": 114688.000000000000000, 
+                    "Y": 49152.000000000000000
                 }, 
-                {
-                    "X": 81920.0000001719, 
-                    "Y": 131072.000000075
+                "Point #3": {
+                    "X": 114688.000000000000000, 
+                    "Y": 73728.000000000000000
                 }, 
-                {
-                    "X": 98303.9999998063, 
-                    "Y": 131072.000000075
+                "Point #4": {
+                    "X": 106496.000000000000000, 
+                    "Y": 73728.000000000000000
                 }, 
-                {
-                    "X": 98303.9999998063, 
-                    "Y": 106496.000000123
+                "Point #5": {
+                    "X": 106496.000000000000000, 
+                    "Y": 106496.000000000000000
                 }, 
-                {
-                    "X": 106496.000000123, 
-                    "Y": 106496.000000123
+                "Point #6": {
+                    "X": 98304.000000000000000, 
+                    "Y": 106496.000000000000000
                 }, 
-                {
-                    "X": 106496.000000123, 
-                    "Y": 73727.9999998547
+                "Point #7": {
+                    "X": 98304.000000000000000, 
+                    "Y": 131072.000000000000000
                 }, 
-                {
-                    "X": 114688.000000441, 
-                    "Y": 73727.9999998547
+                "Point #8": {
+                    "X": 81920.000000000000000, 
+                    "Y": 131072.000000000000000
                 }, 
-                {
-                    "X": 114688.000000441, 
-                    "Y": 49151.9999999031
+                "Point #9": {
+                    "X": 81920.000000000000000, 
+                    "Y": 139264.000000000000000
                 }, 
-                {
-                    "X": 106496.000000123, 
-                    "Y": 49151.9999999031
+                "Point #10": {
+                    "X": 65536.000000000000000, 
+                    "Y": 139264.000000000000000
                 }, 
-                {
-                    "X": 106496.000000123, 
-                    "Y": 40959.9999995859
+                "Point #11": {
+                    "X": 65536.000000000000000, 
+                    "Y": 40960.000000000000000
                 }
-            ]
+            }
         }
     ], 
     "Region Data Entries": [
         {
             "RDAT - Data Header": {
-                "Type": 3, 
+                "Type": "00000003", 
                 "Flags": {}, 
-                "Priority": 50, 
+                "Priority": "32", 
                 "Unused": "00 00"
             }, 
-            "RDWT - Weather Types": [
-                {
-                    "Weather": "mwWeatherRain", 
-                    "Chance": 10
+            "RDWT - Weather Types": {
+                "Weather Type": {
+                    "Weather": "01008487", 
+                    "Chance": "0000000A"
                 }, 
-                {
-                    "Weather": "mwWeatherCloudy", 
-                    "Chance": 5
+                "Weather Type": {
+                    "Weather": "01008488", 
+                    "Chance": "00000005"
                 }, 
-                {
-                    "Weather": "mwWeatherStorm", 
-                    "Chance": 10
+                "Weather Type": {
+                    "Weather": "0100848A", 
+                    "Chance": "0000000A"
                 }, 
-                {
-                    "Weather": "mwWeatherFog", 
-                    "Chance": 5
+                "Weather Type": {
+                    "Weather": "0100CF40", 
+                    "Chance": "00000005"
                 }, 
-                {
-                    "Weather": "mwWeatherClear", 
-                    "Chance": 60
+                "Weather Type": {
+                    "Weather": "01F8EB77", 
+                    "Chance": "0000003C"
                 }
-            ]
+            }
         }, 
         {
             "RDAT - Data Header": {
-                "Type": 4, 
+                "Type": "00000004", 
                 "Flags": {}, 
-                "Priority": 50, 
+                "Priority": "32", 
                 "Unused": "00 00"
             }, 
             "RDMP - Map Name": "Grazelands"
         }, 
         {
             "RDAT - Data Header": {
-                "Type": 7, 
+                "Type": "00000007", 
                 "Flags": {}, 
-                "Priority": 50, 
+                "Priority": "32", 
                 "Unused": "00 00"
             }, 
-            "RDMD - Music Type": 0, 
-            "RDSD - Sounds": [
-                {
-                    "Sound": "0windScalm1", 
+            "RDMD - Music Type": "00000000", 
+            "RDSD - Sounds": {
+                "Sound": {
+                    "Sound": "01300178", 
                     "Flags": {
                         "Pleasant": true, 
                         "Cloudy": true, 
                         "Rainy": true, 
                         "Snowy": true
                     }, 
-                    "Chance": 100000
+                    "Chance": "000186A0"
                 }, 
-                {
-                    "Sound": "0windScalm2", 
+                "Sound": {
+                    "Sound": "01300179", 
                     "Flags": {
                         "Pleasant": true, 
                         "Cloudy": true, 
                         "Rainy": true, 
                         "Snowy": true
                     }, 
-                    "Chance": 100000
+                    "Chance": "000186A0"
                 }, 
-                {
-                    "Sound": "0windScalm3", 
+                "Sound": {
+                    "Sound": "0130017A", 
                     "Flags": {
                         "Pleasant": true, 
                         "Cloudy": true, 
                         "Rainy": true, 
                         "Snowy": true
                     }, 
-                    "Chance": 100000
+                    "Chance": "000186A0"
                 }, 
-                {
-                    "Sound": "0windScalm4", 
+                "Sound": {
+                    "Sound": "0130017B", 
                     "Flags": {
                         "Pleasant": true, 
                         "Cloudy": true, 
                         "Rainy": true, 
                         "Snowy": true
                     }, 
-                    "Chance": 100000
+                    "Chance": "000186A0"
                 }, 
-                {
-                    "Sound": "0windScalm5", 
+                "Sound": {
+                    "Sound": "0130017C", 
                     "Flags": {
                         "Pleasant": true, 
                         "Cloudy": true, 
                         "Rainy": true, 
                         "Snowy": true
                     }, 
-                    "Chance": 100000
+                    "Chance": "000186A0"
                 }
-            ]
+            }
         }
     ]
 }

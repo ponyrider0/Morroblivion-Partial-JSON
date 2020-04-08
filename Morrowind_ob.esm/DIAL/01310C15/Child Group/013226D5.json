@@ -1,43 +1,47 @@
 {
-    "Topic": "1Caryarel", 
+    "Topic": "1Caryarel [DIAL:01310C15]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 658, 
         "Record Flags": {}, 
-        "FormID": "013226D5"
+        "FormID": "013226D5", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICMissingLimeware", 
+    "QSTI - Quest": "fbmwICMissingLimeware [QUST:0100B81D]", 
     "PNAM - Previous INFO": "013226D4", 
     "Add topics": [
-        "1Caryarel", 
-        "1Caryarel", 
-        "1GnaarSMok", 
-        "1BitterSCoast", 
-        "1Ebonheart", 
-        "1HlaSOad", 
-        "1GnaarSMok"
+        "NAME - Topic": "01310C15", 
+        "NAME - Topic": "01310C15", 
+        "NAME - Topic": "01310B68", 
+        "NAME - Topic": "01310A23", 
+        "NAME - Topic": "01310B99", 
+        "NAME - Topic": "01310C43", 
+        "NAME - Topic": "01310B68"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "So. Someone is looking for Caryarel again. Why am I not surprised. Caryarel lives in Gnaar Mok, a village on the Bitter Coast.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Speak to Nevosi Hlan, the shipmaster of the 'Chun-Ook' here at Ebonheart docks. He can take you to Hla Oad, where you can get a boat to Gnaar Mok.", 
             "NAM2 - Actor notes": ""
@@ -45,36 +49,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 69, 
-            "Parameter #1": "HighElf", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsRace:69", 
+            "Unused": "00 00", 
+            "Parameter #1": "HighElf "High Elf" [RACE:00019204]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "Ebonheart", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "Ebonheart "Ebonheart" [CELL:01480031]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 70, 
-            "Parameter #1": 1, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsSex:70", 
+            "Unused": "00 00", 
+            "Parameter #1": "Female", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -83,12 +95,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0F 00 00 00", 
         "SCTX - Result script source": "setstage fbmwicmissinglimeware 15", 
         "References": [
-            "fbmwICMissingLimeware"
+            "SCRO - Global Reference": "fbmwICMissingLimeware [QUST:0100B81D]"
         ]
     }
 }

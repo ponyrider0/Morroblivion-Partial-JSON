@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "SCPT", 
+        "Data Size": 370, 
         "Record Flags": {}, 
-        "FormID": "0147043D"
+        "FormID": "0147043D", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwBMPenumbraScript", 
     "SCHR - Basic Script Data": {
@@ -10,24 +12,25 @@
         "RefCount": 2, 
         "CompiledSize": 62, 
         "VariableCount": 1, 
-        "Type": 0
+        "Type": "Object:0"
     }, 
     "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 30 00 00 00 16 00 16 00 01 00 12 00 20 58 01 10 05 00 01 00 72 01 00 20 32 35 36 20 3C 3D 39 10 0A 00 02 00 72 02 00 6E 14 00 00 00 19 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "scriptName mwBMPenumbraScript\n\nshort doOnce\n\nbegin gamemode\n\tif GetDistance Player <= 256\n\t\tSetStage fbmwBMSun 20\n\tendif\nend\n;<CSEBlock>\n;<CSECaretPos> 16 </CSECaretPos>\n;</CSEBlock>", 
+    "SCTX - Script Source": "scriptName mwBMPenumbraScript\n\nshort doOnce\n\nbegin gamemode\n	if GetDistance Player <= 256\n		SetStage fbmwBMSun 20\n	endif\nend\n;<CSEBlock>\n;<CSECaretPos> 16 </CSECaretPos>\n;</CSEBlock>", 
     "Local Variables": [
         {
             "SLSD - Local Variable Data": {
-                "Index": 1, 
-                "Unused": "00 00 00 00 00 00 00", 
+                "Index": "00000001", 
+                "Unused": "00 00 00 00 00 00 00 00 00 00 00 00", 
                 "Flags": {
                     "IsLongOrShort": true
-                }
+                }, 
+                "Unused": "00 00 00 00 00 00 00"
             }, 
             "SCVR - Name": "doOnce"
         }
     ], 
     "References": [
-        20, 
-        "fbmwBMSun"
+        "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+        "SCRO - Global Reference": "fbmwBMSun [QUST:0101B6D5]"
     ]
 }

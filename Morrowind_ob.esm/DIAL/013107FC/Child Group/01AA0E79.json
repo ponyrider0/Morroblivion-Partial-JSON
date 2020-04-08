@@ -1,44 +1,49 @@
 {
-    "Topic": "11000TdrakeSpledge", 
+    "Topic": "11000TdrakeSpledge [DIAL:013107FC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 529, 
         "Record Flags": {}, 
-        "FormID": "01AA0E79"
+        "FormID": "01AA0E79", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICMossanon", 
+    "QSTI - Quest": "fbmwICMossanon [QUST:0100B81C]", 
     "PNAM - Previous INFO": "01AA0E7A", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 54 47", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "57 54 47"
             }, 
             "NAM1 - Response Text": "When I spoke with him some time ago, Canctunian Ponius promised us a donation of 1000 drakes for a mission to the Ashlanders.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 54 47", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "57 54 47"
             }, 
             "NAM1 - Response Text": "Canctunian Ponius is an important and prominent member of our community, and his word is widely respected.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 54 47", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "57 54 47"
             }, 
             "NAM1 - Response Text": "That is why it is strange that he has not been forthcoming with his pledge.", 
             "NAM2 - Actor notes": ""
@@ -46,20 +51,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwICMossanon", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwICMossanon "Imperial Cult: Pledge from Canctunian Ponius" [QUST:0100B81C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0IulusSTruptor", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0IulusSTruptor "Iulus Truptor" [NPC_:012602E7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,7 +77,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

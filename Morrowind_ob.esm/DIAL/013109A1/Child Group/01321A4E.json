@@ -1,27 +1,30 @@
 {
-    "Topic": "1historySbooks", 
+    "Topic": "1historySbooks [DIAL:013109A1]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 384, 
         "Record Flags": {}, 
-        "FormID": "01321A4E"
+        "FormID": "01321A4E", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTGssPlutocrats", 
+    "QSTI - Quest": "fbmwTGssPlutocrats [QUST:0100933F]", 
     "PNAM - Previous INFO": "01F8A55E", 
     "Add topics": [
-        "1theSEmpire"
+        "NAME - Topic": "01310B44"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You have a complete set of \"A Brief History of the Empire\" to donate to the school?", 
             "NAM2 - Actor notes": ""
@@ -29,57 +32,69 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0valaScatraso", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0valaScatraso "Vala Catraso" [NPC_:01260076]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0bkUBriefHistoryEmpire1Uoh", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUBriefHistoryEmpire1Uoh "Odral's History of the Empire 1" [BOOK:0118013B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0bkUBriefHistoryEmpire2Uoh", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUBriefHistoryEmpire2Uoh "Odral's History of the Empire 2" [BOOK:0118013C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0bkUBriefHistoryEmpire3Uoh", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUBriefHistoryEmpire3Uoh "Odral's History of the Empire 3" [BOOK:0118013D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0bkUBriefHistoryEmpire4Uoh", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUBriefHistoryEmpire4Uoh "Odral's History of the Empire 4" [BOOK:0118013E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1historySbooks1", 
-        "1historySbooks3"
+        "TCLT - Choice": "1historySbooks1 [DIAL:01321A49]", 
+        "TCLT - Choice": "1historySbooks3 [DIAL:01321A4D]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -87,7 +102,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

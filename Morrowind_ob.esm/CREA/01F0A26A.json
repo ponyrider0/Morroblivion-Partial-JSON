@@ -1,33 +1,35 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 647, 
         "Record Flags": {}, 
-        "FormID": "01F0A26A"
+        "FormID": "01F0A26A", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0MudCrabDiseased", 
     "FULL - Name": "Diseased Mud Crab", 
     "Model": {
-        "MODL - Model Filename": "Creatures\\MudCrab\\skeleton.NIF", 
-        "MODB - Bound Radius": 56.2191958580602
+        "MODL - Model FileName": "Creatures\\MudCrab\\skeleton.NIF", 
+        "MODB - Bound Radius": 56.219196000000000
     }, 
     "Items": [
         {
-            "Item": "CrabMeat", 
+            "Item": "CrabMeat [INGR:0003366C]", 
             "Count": 1
         }
     ], 
     "Spells": [
-        "AbMudcrabSwim", 
-        "0swampSfever"
+        "SPLO - Spell": "AbMudcrabSwim [SPEL:0004897C]", 
+        "SPLO - Spell": "0swampSfever [SPEL:010602DE]"
     ], 
-    "NIFZ - Models": [
-        "mud crbeye l00.nif", 
-        "mud crbeye r00.nif", 
-        "mudcrabjawl.nif", 
-        "mudcrabjawr.nif", 
-        "skincrab.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "mud crbeye l00.nif", 
+        "Model": "mud crbeye r00.nif", 
+        "Model": "mudcrabjawl.nif", 
+        "Model": "mudcrabjawr.nif", 
+        "Model": "skincrab.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -36,147 +38,148 @@
             "Walks": true, 
             "No Low Level Processing": true
         }, 
-        "Base spell points": 5, 
-        "Fatigue": 400, 
-        "Barter gold": 0, 
+        "Base spell points": "00000005", 
+        "Fatigue": "00000190", 
+        "Barter gold": "00000000", 
         "Level (offset)": 1, 
-        "Calc min": 0, 
-        "Calc max": 0
+        "Calc min": "00000000", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "CreatureFaction", 
-            "Rank": 0, 
+            "Faction": "00000013", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "VampireFaction", 
-            "Rank": 0, 
+            "Faction": "00033F53", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "DremoraFaction", 
-            "Rank": 0, 
+            "Faction": "0003E9A6", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "DaedraFaction", 
-            "Rank": 0, 
+            "Faction": "00053FED", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "UndeadFaction", 
-            "Rank": 0, 
+            "Faction": "0009DB1F", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
     "AIDT - AI Data": {
-        "Aggression": 100, 
-        "Confidence": 100, 
-        "Energy Level": 40, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "64", 
+        "Confidence": "64", 
+        "Energy Level": "28", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureInteriorSwims512", 
-        "aaaCreatureExteriorSwims1500"
+        "PKID - AI Package": "aaaCreatureInteriorSwims512 [PACK:000C47BE]", 
+        "PKID - AI Package": "aaaCreatureExteriorSwims1500 [PACK:000C47BF]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 30, 
-        "Magic Skill": 90, 
-        "Stealth Skill": 20, 
-        "Soul": 1, 
+        "Type": "00", 
+        "Combat Skill": "1E", 
+        "Magic Skill": "5A", 
+        "Stealth Skill": "14", 
+        "Soul": "01", 
+        "Unused": "00", 
+        "Health": "0000000A", 
         "Unused": "00 00", 
-        "Health": 10, 
-        "Attack Damage": 3, 
-        "Strength": 15, 
-        "Intelligence": 15, 
-        "Willpower": 10, 
-        "Agility": 15, 
-        "Speed": 6, 
-        "Endurance": 15, 
-        "Personality": 75, 
-        "Luck": 30
+        "Attack Damage": "00000003", 
+        "Strength": "0F", 
+        "Intelligence": "0F", 
+        "Willpower": "0A", 
+        "Agility": "0F", 
+        "Speed": "06", 
+        "Endurance": "0F", 
+        "Personality": "4B", 
+        "Luck": "1E"
     }, 
-    "RNAM - Attack reach": 32, 
-    "ZNAM - Combat Style": "DefaultMudCrab", 
-    "TNAM - Turning Speed": 44.9999998863859, 
-    "BNAM - Base Scale": 0.499999998737621, 
-    "WNAM - Foot Weight": 5.99999998485146, 
+    "RNAM - Attack reach": "20", 
+    "ZNAM - Combat Style": "DefaultMudCrab [CSTY:0002C557]", 
+    "TNAM - Turning Speed": 45.000000000000000, 
+    "BNAM - Base Scale": 0.500000000000000, 
+    "WNAM - Foot Weight": 6.000000000000000, 
     "Sound Types": [
         {
-            "CSDT - Type": 0, 
+            "CSDT - Type": "00000000", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabFoot", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E3", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 1, 
+            "CSDT - Type": "00000001", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabFoot", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E3", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 2, 
+            "CSDT - Type": "00000002", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabFoot", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E3", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 3, 
+            "CSDT - Type": "00000003", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabFoot", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E3", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 4, 
+            "CSDT - Type": "00000004", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabIdle", 
-                    "CSDC - Sound Chance": 75
+                    "CSDI - Sound": "001882E4", 
+                    "CSDC - Sound Chance": "4B"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 5, 
+            "CSDT - Type": "00000005", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabAware", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E1", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 6, 
+            "CSDT - Type": "00000006", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabAttack", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "001882E0", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 7, 
+            "CSDT - Type": "00000007", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "NPCMudcrabInjured", 
-                    "CSDC - Sound Chance": 70
+                    "CSDI - Sound": "001882E5", 
+                    "CSDC - Sound Chance": "46"
                 }
             ]
         }

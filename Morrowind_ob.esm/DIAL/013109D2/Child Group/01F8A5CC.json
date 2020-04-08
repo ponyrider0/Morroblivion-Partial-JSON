@@ -1,24 +1,27 @@
 {
-    "Topic": "1SkullTCrusher", 
+    "Topic": "1SkullTCrusher [DIAL:013109D2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 264, 
         "Record Flags": {}, 
-        "FormID": "01F8A5CC"
+        "FormID": "01F8A5CC", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICCrusher", 
+    "QSTI - Quest": "fbmwICCrusher [QUST:0100B82B]", 
     "PNAM - Previous INFO": "01321792", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6D 77 49", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6D 77 49"
             }, 
             "NAM1 - Response Text": "I pray that, through the power of Stendarr, this weapon will serve you as faithfully as you have served the Nine.", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwICCrusher", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwICCrusher "Imperial Cult: Skull-Crusher" [QUST:0100B82B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0LalatiaSVarian", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0LalatiaSVarian "Lalatia Varian" [NPC_:012602E1]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,7 +55,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,64 +1,71 @@
 {
-    "Topic": "1Advancement", 
+    "Topic": "1Advancement [DIAL:01310A5F]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 811, 
         "Record Flags": {}, 
-        "FormID": "01004170"
+        "FormID": "01004170", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHAdvancement", 
+    "QSTI - Quest": "fbmwHHAdvancement [QUST:0100EB55]", 
     "PNAM - Previous INFO": "0100416F", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "You've done everything you need to do for promotion, dumpling... Except build a stronghold.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Go talk with Dondos Driler at the Hlaalu Council Manor in Balmora. He'll tell you what you need...", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "What? What did you say? You killed Dondos Driler?", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 4
+                "Unused": "00 00 00 00", 
+                "Response number": "04", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Without him, you'll never complete your stronghold, and never advance in House Hlaalu.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 5
+                "Unused": "00 00 00 00", 
+                "Response number": "05", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Poor dear. You'll just have to be content with your current rank... AND my undying love and affection.", 
             "NAM2 - Actor notes": ""
@@ -66,44 +73,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 5.99999998485146, 
-            "Function": 73, 
-            "Parameter #1": "0Hlaalu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 6.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Hlaalu "Great House Hlaalu" [FACT:01220005]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 2.99999999242573, 
-            "Function": 79, 
-            "Parameter #1": "fbmwHHAdvancement", 
-            "Parameter #2": 1
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 3.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHAdvancement "Great House Hlaalu" [QUST:0100EB55]", 
+            "Parameter #2": "HlaaluAdvancement", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 84, 
-            "Parameter #1": "0dondosSdriler", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetDeadCount:84", 
+            "Unused": "00 00", 
+            "Parameter #1": "0dondosSdriler "Dondos Driler" [NPC_:012609E5]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHStronghold", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHStronghold "House Hlaalu: Stronghold" [QUST:0100346D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0crassiusScurio", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0crassiusScurio "Crassius Curio" [NPC_:0126038C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -112,7 +129,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

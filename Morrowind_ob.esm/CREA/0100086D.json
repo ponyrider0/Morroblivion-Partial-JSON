@@ -1,30 +1,32 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 319, 
         "Record Flags": {}, 
-        "FormID": "0100086D"
+        "FormID": "0100086D", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0BMsnowbear", 
     "FULL - Name": "Snow Bear", 
     "Model": {
-        "MODL - Model Filename": "Creatures\\Aa_Blood\\BlondBear\\skeleton.nif", 
-        "MODB - Bound Radius": 149.464385622639
+        "MODL - Model FileName": "Creatures\\Aa_Blood\\BlondBear\\skeleton.nif", 
+        "MODB - Bound Radius": 149.464386000000000
     }, 
     "Items": [
         {
-            "Item": "0ingredUsnowbearUpeltUunique", 
+            "Item": "0ingredUsnowbearUpeltUunique [INGR:010A006E]", 
             "Count": 2
         }
     ], 
     "Spells": [
-        "0weaknessSfireU50", 
-        "0frostbite", 
-        "0snowshield"
+        "SPLO - Spell": "0weaknessSfireU50 [SPEL:01060010]", 
+        "SPLO - Spell": "0frostbite [SPEL:0106011B]", 
+        "SPLO - Spell": "0snowshield [SPEL:01060410]"
     ], 
-    "NIFZ - Models": [
-        "body.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "body.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -32,56 +34,57 @@
             "Walks": true, 
             "No Low Level Processing": true
         }, 
-        "Base spell points": 50, 
-        "Fatigue": 200, 
-        "Barter gold": 0, 
+        "Base spell points": "00000032", 
+        "Fatigue": "000000C8", 
+        "Barter gold": "00000000", 
         "Level (offset)": 14, 
-        "Calc min": 1, 
-        "Calc max": 0
+        "Calc min": "00000001", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "CreatureFaction", 
-            "Rank": 0, 
+            "Faction": "00000013", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
     "AIDT - AI Data": {
-        "Aggression": 100, 
-        "Confidence": 70, 
-        "Energy Level": 45, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "64", 
+        "Confidence": "46", 
+        "Energy Level": "2D", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureInterior512AllowFalls", 
-        "aaaCreatureExterior1500AllowFalls"
+        "PKID - AI Package": "aaaCreatureInterior512AllowFalls [PACK:000CD3EF]", 
+        "PKID - AI Package": "aaaCreatureExterior1500AllowFalls [PACK:001896AE]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 50, 
-        "Magic Skill": 50, 
-        "Stealth Skill": 50, 
-        "Soul": 4, 
+        "Type": "00", 
+        "Combat Skill": "32", 
+        "Magic Skill": "32", 
+        "Stealth Skill": "32", 
+        "Soul": "04", 
+        "Unused": "00", 
+        "Health": "0000012C", 
         "Unused": "00 00", 
-        "Health": 300, 
-        "Attack Damage": 35, 
-        "Strength": 110, 
-        "Intelligence": 50, 
-        "Willpower": 50, 
-        "Agility": 50, 
-        "Speed": 15, 
-        "Endurance": 50, 
-        "Personality": 10, 
-        "Luck": 50
+        "Attack Damage": "00000023", 
+        "Strength": "6E", 
+        "Intelligence": "32", 
+        "Willpower": "32", 
+        "Agility": "32", 
+        "Speed": "0F", 
+        "Endurance": "32", 
+        "Personality": "0A", 
+        "Luck": "32"
     }, 
-    "RNAM - Attack reach": 62, 
-    "ZNAM - Combat Style": "DefaultBearBrown", 
-    "TNAM - Turning Speed": 0, 
-    "BNAM - Base Scale": 1.69999999570791, 
-    "WNAM - Foot Weight": 2.99999999242573, 
-    "CSCR - Inherits Sounds from": "0bmbearblack"
+    "RNAM - Attack reach": "3E", 
+    "ZNAM - Combat Style": "DefaultBearBrown [CSTY:000228A1]", 
+    "TNAM - Turning Speed": 0.000000000000000, 
+    "BNAM - Base Scale": 1.700000000000000, 
+    "WNAM - Foot Weight": 3.000000000000000, 
+    "CSCR - Inherits Sounds from": "0bmbearblack [CREA:01000859]"
 }

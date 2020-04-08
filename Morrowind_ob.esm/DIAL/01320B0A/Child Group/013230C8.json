@@ -1,27 +1,30 @@
 {
-    "Topic": "1taxesSfromSGnisis2", 
+    "Topic": "1taxesSfromSGnisis2 [DIAL:01320B0A]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 304, 
         "Record Flags": {}, 
-        "FormID": "013230C8"
+        "FormID": "013230C8", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRTaxCollector", 
+    "QSTI - Quest": "fbmwHRTaxCollector [QUST:0100519C]", 
     "PNAM - Previous INFO": "013230C7", 
     "Add topics": [
-        "1HouseSRedoran"
+        "NAME - Topic": "0131095D"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Not only are you lying to me about how much taxes were due, you didn't even bring 50 drakes with you. House Redoran has no use for such as you.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRTaxCollector", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRTaxCollector "House Redoran: Taxes from Gnisis" [QUST:0100519C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hlarenSramoran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hlarenSramoran "Hlaren Ramoran" [NPC_:012600AE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,7 +58,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

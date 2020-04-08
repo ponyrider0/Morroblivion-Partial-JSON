@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 492, 
         "Record Flags": {}, 
-        "FormID": "01F8B951"
+        "FormID": "01F8B951", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwMSBattleBots1", 
+    "QSTI - Quest": "fbmwMSBattleBots1 [QUST:0101C618]", 
     "PNAM - Previous INFO": "01F8B950", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "Looks like you got lucky this time. Here is your wager, doubled as promised. Thank you for all your help. Thanks to you, the Robot Arena can continue.", 
             "NAM2 - Actor notes": ""
@@ -28,36 +31,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMSBattleBots1", 
-            "Parameter #2": 4
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSBattleBots1 "Dwemer Warbots" [QUST:0101C618]", 
+            "Parameter #2": "Win", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMSBattleBots1", 
-            "Parameter #2": 2
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSBattleBots1 "Dwemer Warbots" [QUST:0101C618]", 
+            "Parameter #2": "betAmount", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMSBattleBots1", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSBattleBots1 "Dwemer Warbots" [QUST:0101C618]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0ignatiusUflaccus", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ignatiusUflaccus "Ignatius Flaccus" [NPC_:01260AA7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -66,14 +77,14 @@
             "RefCount": 3, 
             "CompiledSize": 32, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 50 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 64 00 00 00", 
         "SCTX - Result script source": "setstage fbmwmsbattlebots1 80\r\nplayer.additem gold001 100", 
         "References": [
-            20, 
-            "fbmwMSBattleBots1", 
-            "Gold001"
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+            "SCRO - Global Reference": "fbmwMSBattleBots1 [QUST:0101C618]", 
+            "SCRO - Global Reference": "Gold001 [MISC:0000000F]"
         ]
     }
 }

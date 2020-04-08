@@ -1,77 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 63, 
         "Record Flags": {}, 
-        "FormID": "01F2A3DC"
+        "FormID": "01F2A3DC", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwCrimeResistArrest", 
     "Quests": [
-        "CrimeMorrow"
+        "QSTI - Quest": "CrimeMorrow [QUST:01F2A3E6]"
     ], 
     "FULL - Name": "Resist Arrest", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "mwCrimeResistArrest", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F2A3DD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "CrimeMorrow", 
-            "TPIC - Topic": "GREETING", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 1, 
-                        "Emotion Value": 100, 
-                        "Unused": "72 69 6D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Then pay with your blood, outlaw!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 125, 
-                    "Parameter #1": "00 00 00 00", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 23, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E F6 FF FF FF 16 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "ModDisposition Player -10\r\nStartCombat Player", 
-                "References": [
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

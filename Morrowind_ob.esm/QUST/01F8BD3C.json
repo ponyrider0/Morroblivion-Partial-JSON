@@ -1,13 +1,15 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 190, 
         "Record Flags": {}, 
-        "FormID": "01F8BD3C"
+        "FormID": "01F8BD3C", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwTGCrimeGoldDiscount", 
-    "SCRI - Script": "fbmwTGCrimeGoldScript", 
+    "SCRI - Script": "fbmwTGCrimeGoldScript [SCPT:01F8BD36]", 
     "FULL - Name": "Thieves' Guild: Price On Your Head", 
-    "ICON - Icon filename": "darthsouth\\Quests\\thievesguild.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\thievesguild.dds", 
     "DATA - General": {
         "Flags": {
             "Start game enabled": true, 
@@ -18,20 +20,24 @@
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

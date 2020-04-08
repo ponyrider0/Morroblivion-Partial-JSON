@@ -1,77 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 65, 
         "Record Flags": {}, 
-        "FormID": "0132108F"
+        "FormID": "0132108F", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1fatherAsSamulet2", 
     "Quests": [
-        "fbmwMSArenimTomb"
+        "QSTI - Quest": "fbmwMSArenimTomb [QUST:0101C612]"
     ], 
     "FULL - Name": "Find it yourself.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1fatherAsSamulet2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323259"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSArenimTomb", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm sorry, but I can't let anyone stand in my way.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0Satyana", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 6E 00 00 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 16 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "setstage fbmwmsarenimtomb 110\r\nSetAV Aggression 100\r\nModDisposition Player -100\r\nstartcombat player", 
-                "References": [
-                    "fbmwMSArenimTomb", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

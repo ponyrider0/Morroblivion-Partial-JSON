@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 147, 
         "Record Flags": {}, 
-        "FormID": "01F8EA18"
+        "FormID": "01F8EA18", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwMVSlaveMuleVorarHelasWaitPackage", 
     "PKDT - General": {
@@ -11,38 +13,42 @@
                 "Unlock doors at package start": true, 
                 "Unlock doors at location": true
             }, 
-            "Type": 6, 
+            "Type": "06", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 3, 
-        "Location": 0, 
+        "Location": "00000000", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritNavil", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritNavil "Morag Tong: Writ for Navil and Ranes Ienith" [QUST:0100B83D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 107.999999727326, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritNavil", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 108.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritNavil "Morag Tong: Writ for Navil and Ranes Ienith" [QUST:0100B83D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

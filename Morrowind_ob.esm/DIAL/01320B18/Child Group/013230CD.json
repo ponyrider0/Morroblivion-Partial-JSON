@@ -1,28 +1,31 @@
 {
-    "Topic": "1shipmentSofSebony2", 
+    "Topic": "1shipmentSofSebony2 [DIAL:01320B18]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 258, 
         "Record Flags": {}, 
-        "FormID": "013230CD"
+        "FormID": "013230CD", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHEbonyDelivery", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwHHEbonyDelivery [QUST:0100345F]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1ebony", 
-        "1Imperial"
+        "NAME - Topic": "01310CCB", 
+        "NAME - Topic": "01310C02"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "If you keep the ebony, I will be forced to have you arrested for failing to cooperate with an Imperial investigation.", 
             "NAM2 - Actor notes": ""
@@ -30,12 +33,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0segunivusSmantedius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0segunivusSmantedius "Segunivus Mantedius" [NPC_:012601C7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -44,7 +49,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

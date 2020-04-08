@@ -1,79 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 88, 
         "Record Flags": {}, 
-        "FormID": "010017EA"
+        "FormID": "010017EA", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "AAAFolsiThendasMolagMar", 
     "Quests": [
-        "aaaStriderTransport"
+        "QSTI - Quest": "aaaStriderTransport [QUST:01000D46]"
     ], 
     "FULL - Name": "Molag Mar. [3 hours trip, 13 gold]", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "AAAFolsiThendasMolagMar", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "010017EB"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "aaaStriderTransport", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 5, 
-                        "Emotion Value": 20, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Certainly, please board the Strider.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0folsiSthendas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 12.9999999671782, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 47, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 0D 00 00 00 15 00 08 00 47 03 00 03 00 20 31 35 15 00 0D 00 47 04 00 08 00 20 47 04 00 20 33 20 2B", 
-                "SCTX - Result script source": "Player.RemoveItem Gold001 13\r\nSet MWDestinationCode to 15\r\nSet GameHour to GameHour + 3", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "MWDestinationCode", 
-                    "GameHour"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

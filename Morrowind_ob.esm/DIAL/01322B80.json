@@ -1,133 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 63, 
         "Record Flags": {}, 
-        "FormID": "01322B80"
+        "FormID": "01322B80", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1Davina1", 
     "Quests": [
-        "MorroDefaultQuest", 
-        "mwBuySlavesQuest"
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+        "QSTI - Quest": "mwBuySlavesQuest [QUST:01F8E376]"
     ], 
     "FULL - Name": "Buy the slave.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1Davina1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323622"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "mwBuySlavesQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Davina", 
-                "1slave"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Davina is now yours. I will have her brought forth from the slavepit. She should be waiting just inside.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0savileSimayn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 1000.00000047524, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 6, 
-                    "CompiledSize": 77, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E E8 03 00 00 02 10 0A 00 02 00 72 03 00 6E E8 03 00 00 15 00 0A 00 72 04 00 73 07 00 02 00 20 31 1C 00 02 00 9E 10 05 00 01 00 72 05 00 1C 00 02 00 89 10 0A 00 02 00 72 06 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "player.removeitem Gold001 1000\r\nadditem Gold001 1000\r\nset mwBuySlavesQuest.DavinaBought to 1\r\nmwDavinaRef.moveto mwTelAruhnBoughtSlaveMarker\r\nmwDavinaRef.SetFactionRank mwPlayerSlavesFaction, 1", 
-                "References": [
-                    20, 
-                    "mwDavinaREF", 
-                    "Gold001", 
-                    "mwBuySlavesQuest", 
-                    "mwTelAruhnBoughtSlaveMarker", 
-                    "mwPlayerSlavesFaction"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1Davina1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323623"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "mwBuySlavesQuest", 
-            "PNAM - Previous INFO": "01323622", 
-            "Add topics": [
-                "1slaves"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I'm sorry but you don't have enough gold to afford my fine slaves.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0savileSimayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

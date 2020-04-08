@@ -1,98 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 68, 
         "Record Flags": {}, 
-        "FormID": "01320C55"
+        "FormID": "01320C55", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1DwemerSAnimunculi1", 
     "Quests": [
-        "MorroDefaultQuest"
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "Give her the book.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1DwemerSAnimunculi1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132312D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1need"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes! This is what I've been looking for. I suppose you wouldn't be willing to part with it... Let me just make a few notes, then... There.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I now have most of what I need to make my own centurions. You've made me... that is, us, famous. Wait until I tell Ocato.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edwinnaSelbert", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 132, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 45, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "A9 10 0D 00 03 00 72 01 00 72 02 00 6E 14 00 00 00 53 10 0A 00 02 00 72 03 00 6E 19 00 00 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "modfactionreaction fbmwmagesguild playerfaction 20\r\nmoddisposition player 25\r\nadditem fbmwmgedwinnanotes 1", 
-                "References": [
-                    "fbmwMagesGuild", 
-                    "PlayerFaction", 
-                    20, 
-                    "fbmwmgedwinnanotes"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

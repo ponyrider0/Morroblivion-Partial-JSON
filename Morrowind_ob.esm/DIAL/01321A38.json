@@ -1,145 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 81, 
         "Record Flags": {}, 
-        "FormID": "01321A38"
+        "FormID": "01321A38", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1HlervuSLocket2", 
     "Quests": [
-        "fbmwTGssGenerosity1"
+        "QSTI - Quest": "fbmwTGssGenerosity1 [QUST:0100933C]"
     ], 
     "FULL - Name": "The Bal Molagmer returns it to you.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1HlervuSLocket2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013233E1"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGssGenerosity1", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I don't know what that means, but thank you.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 182, 
-                    "Parameter #1": "fbmwGlovesOftheBalMolagmer", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0braynasShlervu", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 37 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwtgssgenerosity1 55\r\nplayer.removeitem fbmwexquisiteamulethlervu 1\r\nadditem fbmwexquisiteamulethlervu 1", 
-                "References": [
-                    20, 
-                    "fbmwTGssGenerosity1", 
-                    "fbmwExquisiteAmuletHlervu"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1HlervuSLocket2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013233E2"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwTGssGenerosity1", 
-            "PNAM - Previous INFO": "013233E1", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You are nothing but a common thief. I will prove your guilt upon your body.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0bolvynSvenim", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 9, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "16 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "startcombat player", 
-                "References": [
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,28 +1,30 @@
 {
     "Record Header": {
         "Signature": "SPEL", 
+        "Data Size": 101, 
         "Record Flags": {}, 
-        "FormID": "01060179"
+        "FormID": "01060179", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0touchSdispel", 
     "FULL - Name": "Touch Dispel", 
-    "SPIT - ": {
-        "Type": 0, 
-        "Cost": 2, 
-        "Level": 0, 
+    "SPIT - SPIT": {
+        "Type": "00000000", 
+        "Cost": "00000002", 
+        "Level": "00000000", 
         "Flags": {}, 
         "Unused": "CD CD CD"
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1280332612, 
-            "EFIT - ": {
-                "Magic effect name": 1280332612, 
+            "EFID - Magic effect name": "DSPL", 
+            "EFIT - EFIT": {
+                "Magic effect name": "DSPL", 
                 "Magnitude": 5, 
                 "Area": 0, 
                 "Duration": 0, 
-                "Type": 1, 
-                "Actor Value": 8
+                "Type": "Touch:1", 
+                "Actor Value": "Health:8"
             }
         }
     ]

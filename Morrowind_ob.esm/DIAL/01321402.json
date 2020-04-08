@@ -1,79 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 71, 
         "Record Flags": {}, 
-        "FormID": "01321402"
+        "FormID": "01321402", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1friendlySwager2", 
     "Quests": [
-        "fbmwMSBattleBots1", 
-        "MorroDefaultQuest"
+        "QSTI - Quest": "fbmwMSBattleBots1 [QUST:0101C618]", 
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "No, thank you.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1friendlySwager2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013232EE"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMSBattleBots1", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Oh, that's too bad. Well, the fight is starting. Let's watch.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ignatiusUflaccus", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 54, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 5A 00 00 00 15 00 0A 00 72 03 00 73 03 00 02 00 20 31 1C 00 01 00 16 10 05 00 01 00 72 02 00 1C 00 02 00 16 10 05 00 01 00 72 01 00", 
-                "SCTX - Result script source": "setstage fbmwMSBattleBots1 90\r\nset fbmwMSBattleBots1.battleOn to 1\r\nfbmwBattleBot2.startcombat fbmwBattleBot1\r\nfbmwBattleBot1.startcombat fbmwBattleBot2", 
-                "References": [
-                    "fbmwBattleBot2", 
-                    "fbmwBattleBot1", 
-                    "fbmwMSBattleBots1"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

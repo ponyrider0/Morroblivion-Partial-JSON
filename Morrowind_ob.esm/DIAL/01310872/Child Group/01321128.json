@@ -1,31 +1,34 @@
 {
-    "Topic": "1RufinusSAlleius", 
+    "Topic": "1RufinusSAlleius [DIAL:01310872]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 298, 
         "Record Flags": {}, 
-        "FormID": "01321128"
+        "FormID": "01321128", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Say Once": true
         }
     }, 
-    "QSTI - Quest": "fbmwFGSilenceMagistrate", 
+    "QSTI - Quest": "fbmwFGSilenceMagistrate [QUST:010033E6]", 
     "PNAM - Previous INFO": "01321127", 
     "Add topics": [
-        "1Imperial", 
-        "1Orders", 
-        "1contract"
+        "NAME - Topic": "01310C02", 
+        "NAME - Topic": "01310C70", 
+        "NAME - Topic": "0131107A"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Killing an Imperial Magistrate is a serious offense. All I can suggest is to disobey orders and refuse this contract.", 
             "NAM2 - Actor notes": ""
@@ -33,20 +36,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0persiusSmercius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0persiusSmercius "Percius Mercius" [NPC_:01260268]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGSilenceMagistrate", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGSilenceMagistrate "Fighters Guild: Alleius's Bounty" [QUST:010033E6]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -55,7 +62,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,90 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 71, 
         "Record Flags": {}, 
-        "FormID": "01320911"
+        "FormID": "01320911", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1recruitSsomeSminers1", 
     "Quests": [
-        "fbmwHHStronghold"
+        "QSTI - Quest": "fbmwHHStronghold [QUST:0100346D]"
     ], 
     "FULL - Name": "Agreed. 200 drakes.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1recruitSsomeSminers1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323073"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHStronghold", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Orders", 
-                "1slave"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Good. I will give orders to have Llaals taken from the slave pit.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Go on inside. He's your problem now.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0savileSimayn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 32, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E C8 00 00 00 15 00 0A 00 72 03 00 73 03 00 02 00 20 31", 
-                "SCTX - Result script source": "Player.RemoveItem Gold001 200\r\nSET fbmwHHStronghold.BuyMiner TO 1", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmwHHStronghold"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

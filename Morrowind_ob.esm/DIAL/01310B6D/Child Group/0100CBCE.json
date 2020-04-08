@@ -1,44 +1,49 @@
 {
-    "Topic": "1DramSBero", 
+    "Topic": "1DramSBero [DIAL:01310B6D]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 388, 
         "Record Flags": {}, 
-        "FormID": "0100CBCE"
+        "FormID": "0100CBCE", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHBeroSupport", 
+    "QSTI - Quest": "fbmwHHBeroSupport [QUST:01003458]", 
     "PNAM - Previous INFO": "013224D8", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "It's unfortunate that you weren't able to win his support, pudding.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": " I was so certain he'd fall for you the way I did. Well, nevermind.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "There is always other business.", 
             "NAM2 - Actor notes": ""
@@ -46,20 +51,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 200.000000495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHBeroSupport", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 200.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHBeroSupport "House Hlaalu: Bero's Support" [QUST:01003458]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0crassiusScurio", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0crassiusScurio "Crassius Curio" [NPC_:0126038C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,7 +77,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

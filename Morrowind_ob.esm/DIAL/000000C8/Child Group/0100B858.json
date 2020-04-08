@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 215, 
         "Record Flags": {}, 
-        "FormID": "0100B858"
+        "FormID": "0100B858", 
+        "Version Control Info": "1D 16 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwMTWritBermis", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMTWritBermis [QUST:0100B837]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "61 73 53", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "61 73 53"
             }, 
             "NAM1 - Response Text": "Don't give me a reason, outlander.", 
             "NAM2 - Actor notes": ""
@@ -28,28 +31,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritBermis", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritBermis "Morag Tong: Writ for Mathyn Bemis" [QUST:0100B837]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritBermis", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritBermis "Morag Tong: Writ for Mathyn Bemis" [QUST:0100B837]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nuriseaSselarys", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nuriseaSselarys "Nurisea Selarys" [NPC_:01260618]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -58,7 +67,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

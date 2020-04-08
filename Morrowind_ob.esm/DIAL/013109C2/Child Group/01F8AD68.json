@@ -1,44 +1,49 @@
 {
-    "Topic": "1wayStoSescape", 
+    "Topic": "1wayStoSescape [DIAL:013109C2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 442, 
         "Record Flags": {}, 
-        "FormID": "01F8AD68"
+        "FormID": "01F8AD68", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwVAVampCurse", 
+    "QSTI - Quest": "fbmwVAVampCurse [QUST:01003BCD]", 
     "PNAM - Previous INFO": "01AA536C", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "74 65 6D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "74 65 6D"
             }, 
             "NAM1 - Response Text": "Why have you not brought me the items I desire? Make haste!", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 1, 
+                "Emotion Type": "00000001", 
                 "Emotion Value": 80, 
-                "Unused": "74 65 6D", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "74 65 6D"
             }, 
             "NAM1 - Response Text": "I will be free of this prison, and I...", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 6, 
+                "Emotion Type": "00000006", 
                 "Emotion Value": 50, 
-                "Unused": "74 65 6D", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "74 65 6D"
             }, 
             "NAM1 - Response Text": "we...will rule the world above.", 
             "NAM2 - Actor notes": ""
@@ -46,44 +51,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0mastrius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0mastrius "Mastrius" [NPC_:01260A04]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 58, 
-            "Parameter #1": "fbmwVAVampCurse", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwVAVampCurse "The Imprisonment of Mastrius" [QUST:01003BCD]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 59.9999998485146, 
-            "Function": 58, 
-            "Parameter #1": "fbmwVAVampCurse", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 60.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwVAVampCurse "The Imprisonment of Mastrius" [QUST:01003BCD]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "fbmwspellbreaker", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwspellbreaker "Spell Breaker" [ARMO:0101D5A8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "DaedraHeart", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "DaedraHeart "Daedra Heart" [INGR:0001EC8F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -92,7 +107,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

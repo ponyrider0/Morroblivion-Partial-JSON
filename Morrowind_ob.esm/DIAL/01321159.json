@@ -1,112 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 76, 
         "Record Flags": {}, 
-        "FormID": "01321159"
+        "FormID": "01321159", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1ImperialSmatter3", 
     "Quests": [
-        "fbmwBMMoonSugar"
+        "QSTI - Quest": "fbmwBMMoonSugar [QUST:0101B6CD]"
     ], 
     "FULL - Name": "I would be honored to serve.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1ImperialSmatter3", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132329D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwBMMoonSugar", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1ImperialSLegion", 
-                "1moonSsugar", 
-                "1justice"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Excellent. You are a credit to the Imperial Legion, outlander. I hereby order you to kill the man responsible for the moon sugar poisonings.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Jeleen, our Cult priest, was the most recent victim, and he actually caught a glimpse of the culprit.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "It was a man wearing, oddly enough, a unique white Colovian fur helm. Bring me this white helm, and I'll know justice has been served.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "Be sure to question Jeleen at the Cult shrine before you depart. He may have some more information.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0severiaSgratius", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 45, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 A9 10 0D 00 03 00 72 02 00 72 03 00 6E 05 00 00 00 53 10 0A 00 02 00 72 04 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwbmmoonsugar 30\r\nmodfactionreaction 0imperialslegion playerfaction 5\r\nmoddisposition player 10", 
-                "References": [
-                    "fbmwBMMoonSugar", 
-                    "0ImperialSLegion", 
-                    "PlayerFaction", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "1business", 
+    "Topic": "1business [DIAL:01310BCB]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 214, 
         "Record Flags": {}, 
-        "FormID": "0100416A"
+        "FormID": "0100416A", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHAdvancement", 
+    "QSTI - Quest": "fbmwHHAdvancement [QUST:0100EB55]", 
     "PNAM - Previous INFO": "01322716", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "What can I do for you, outlander?", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "0Hlaalu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Hlaalu "Great House Hlaalu" [FACT:01220005]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHIndEsp4", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHIndEsp4 "House Hlaalu: Ebony Trade" [QUST:01003466]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nilenoSdorvayn", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nilenoSdorvayn "Nileno Dorvayn" [NPC_:01260109]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

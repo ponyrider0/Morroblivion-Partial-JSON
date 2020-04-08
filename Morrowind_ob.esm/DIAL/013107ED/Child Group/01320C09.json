@@ -1,38 +1,42 @@
 {
-    "Topic": "1disturbingSdreams", 
+    "Topic": "1disturbingSdreams [DIAL:013107ED]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 476, 
         "Record Flags": {}, 
-        "FormID": "01320C09"
+        "FormID": "01320C09", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwA1Dreams", 
+    "QSTI - Quest": "fbmwA1Dreams [QUST:0101C65D]", 
     "PNAM - Previous INFO": "0101EC10", 
     "Add topics": [
-        "1DagothSUr", 
-        "1DagothSUr"
+        "NAME - Topic": "01310B5E", 
+        "NAME - Topic": "01310B5E"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "These dreams are the black lies of the Sharmat Dagoth Ur. Dagoth Ur himself is mad. He is dead, but he dreams he lives.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "He hears laughter and love, but he makes monsters and ghouls. He woos as a lover, but he reeks with fear and disgust. Do not listen. Do not go to him.", 
             "NAM2 - Actor notes": ""
@@ -40,20 +44,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 160, 
-            "Unused": 0, 
-            "Comparison Value": 14.9999999621286, 
-            "Function": 58, 
-            "Parameter #1": "fbmwA1Dreams", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "A0", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 15.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwA1Dreams "Dreams of a Lost House" [QUST:0101C65D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nibaniSmaesa", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nibaniSmaesa "Nibani Maesa" [NPC_:0126018B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -62,7 +70,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

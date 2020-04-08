@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 106, 
         "Record Flags": {}, 
-        "FormID": "01F8CDC1"
+        "FormID": "01F8CDC1", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwAldVelothiLledseaRain", 
     "PKDT - General": {
@@ -14,30 +16,32 @@
                 "Skip fallout behavior": true, 
                 "Always run": true
             }, 
-            "Type": 5, 
+            "Type": "05", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 1, 
-        "Location": "AldSVelothiVSLledseaSRelasAsSShack", 
+        "Location": "01480081", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 62, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsRaining:62", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

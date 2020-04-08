@@ -1,24 +1,27 @@
 {
-    "Topic": "fbmwMSpiernettewas", 
+    "Topic": "fbmwMSpiernettewas [DIAL:0102EEBC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 295, 
         "Record Flags": {}, 
-        "FormID": "0102EEC4"
+        "FormID": "0102EEC4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSPiernette", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMSPiernette [QUST:0101C62E]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 6E 65", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 6E 65"
             }, 
             "NAM1 - Response Text": "I'm sorry. I'm a poor farmer. I have nothing to offer as a reward. And, as I am a defenseless woman, and my husband is away, I am at your mercy.", 
             "NAM2 - Actor notes": ""
@@ -26,18 +29,20 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0piernetteSbeluelle", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0piernetteSbeluelle "Piernette Beluelle" [NPC_:012604CA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwMSpiernetteherethebowl", 
-        "fbmwMSpiernettekeepingit", 
-        "fbmwMSpiernettelostit"
+        "TCLT - Choice": "fbmwMSpiernetteherethebowl [DIAL:0102EEBB]", 
+        "TCLT - Choice": "fbmwMSpiernettekeepingit [DIAL:0102EEBE]", 
+        "TCLT - Choice": "fbmwMSpiernettelostit [DIAL:0102EEBD]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -45,7 +50,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,37 +1,41 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 437, 
         "Record Flags": {}, 
-        "FormID": "01003AEE"
+        "FormID": "01003AEE", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ02", 
+    "QSTI - Quest": "fbmwMQ02 [QUST:01F0A28E]", 
     "PNAM - Previous INFO": "01003AF1", 
     "Add topics": [
-        "1Favor"
+        "NAME - Topic": "01310CC0"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 6, 
+                "Emotion Type": "00000006", 
                 "Emotion Value": 60, 
-                "Unused": "61 72 6E", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "61 72 6E"
             }, 
             "NAM1 - Response Text": "Good day. I am Hasphat Antabolis, Drillmaster for the Balmora Fighters Guild. So you're with Caius, eh? And Caius wants some information?", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "61 72 6E", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "61 72 6E"
             }, 
             "NAM1 - Response Text": " I'd be happy to help... though I will require a favor first. Then I'll tell you what you want to know.", 
             "NAM2 - Actor notes": ""
@@ -39,20 +43,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQ02", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQ02 "Antabolis Informant" [QUST:01F0A28E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hasphatSantabolis", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hasphatSantabolis "Hasphat Antabolis" [NPC_:0126011F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -61,7 +69,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,89 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 75, 
         "Record Flags": {}, 
-        "FormID": "01321A1A"
+        "FormID": "01321A1A", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1mustSgetShome1", 
     "Quests": [
-        "fbmwMVRunawaySlave"
+        "QSTI - Quest": "fbmwMVRunawaySlave [QUST:01003410]"
     ], 
     "FULL - Name": "I'll help you to the Mission.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1mustSgetShome1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013233D8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMVRunawaySlave", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1helpSme", 
-                "1rat"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You want to help me? That a rare thing in these parts, I tell you what.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Maybe you get us there, maybe not, but I rather be on my way than have them find me here.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0reehUjah", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 37, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 1E 00 00 00 58 10 05 00 01 00 72 02 00 15 00 0A 00 72 01 00 73 01 00 02 00 20 31", 
-                "SCTX - Result script source": "setstage fbmwmvrunawayslave 30\r\naddtopic 1reehtjah\r\nset fbmwmvrunawayslave.follownow to 1", 
-                "References": [
-                    "fbmwMVRunawaySlave", 
-                    "1ReehTJah"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

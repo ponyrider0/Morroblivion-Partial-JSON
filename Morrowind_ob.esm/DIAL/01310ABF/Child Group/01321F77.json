@@ -1,44 +1,49 @@
 {
-    "Topic": "1makeSamends", 
+    "Topic": "1makeSamends [DIAL:01310ABF]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 480, 
         "Record Flags": {}, 
-        "FormID": "01321F77"
+        "FormID": "01321F77", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMTAdvancement", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMTAdvancement [QUST:01010565]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Your actions of late have not gone unnoticed. There is currently a writ against you.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I can have it rescinded, but I must have your word that this was an isolated incident and nothing of the sort will ever happen again.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Do I have your word?", 
             "NAM2 - Actor notes": ""
@@ -46,25 +51,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 193, 
-            "Parameter #1": "0MoragSTong", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCExpelled:193", 
+            "Unused": "00 00", 
+            "Parameter #1": "0MoragSTong "Morag Tong" [FACT:01220008]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "0MoragSTong", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "0MoragSTong "Morag Tong" [FACT:01220008]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1makeSamends1", 
-        "1makeSamends2"
+        "TCLT - Choice": "1makeSamends1 [DIAL:01321F69]", 
+        "TCLT - Choice": "1makeSamends2 [DIAL:01321F6D]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -72,7 +81,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

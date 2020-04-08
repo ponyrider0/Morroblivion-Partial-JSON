@@ -1,24 +1,27 @@
 {
-    "Topic": "FBMWTauntTopic", 
+    "Topic": "FBMWTauntTopic [DIAL:01F8ACD7]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 281, 
         "Record Flags": {}, 
-        "FormID": "01F8ACD9"
+        "FormID": "01F8ACD9", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01F8ACD8", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 69 73", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6C 69 73"
             }, 
             "NAM1 - Response Text": "How rude!", 
             "NAM2 - Actor notes": ""
@@ -26,36 +29,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 32, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 354, 
+            "Type": "20", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsEssential:354", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 76, 
-            "Parameter #1": 0, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "TARGET - Target Reference [00000000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": 4
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "TauntEnabled", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -64,12 +75,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E F6 FF FF FF", 
         "SCTX - Result script source": "moddisposition player -10", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

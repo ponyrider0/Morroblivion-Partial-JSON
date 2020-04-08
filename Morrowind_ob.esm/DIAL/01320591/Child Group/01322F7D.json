@@ -1,65 +1,71 @@
 {
-    "Topic": "1joinStheSImperialSCult2", 
+    "Topic": "1joinStheSImperialSCult2 [DIAL:01320591]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 744, 
         "Record Flags": {}, 
-        "FormID": "01322F7D"
+        "FormID": "01322F7D", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICAdvancement", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwICAdvancement [QUST:01010564]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1toSserve", 
-        "1NineSDivines", 
-        "1personality", 
-        "1restoration", 
-        "1mysticism", 
-        "1conjuration", 
-        "1unarmored", 
-        "1bluntSweapons", 
-        "1enchantments"
+        "NAME - Topic": "01310BE1", 
+        "NAME - Topic": "01310A58", 
+        "NAME - Topic": "01310AA8", 
+        "NAME - Topic": "01310AAB", 
+        "NAME - Topic": "01310BAA", 
+        "NAME - Topic": "01310AAA", 
+        "NAME - Topic": "01310B7F", 
+        "NAME - Topic": "01310987", 
+        "NAME - Topic": "01310A33"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "To serve and glorify the Nine Divines, you must cultivate a noble personality and a strong will.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Respect the magical arts, especially the colleges of Restoration, Mysticism, and Conjuration.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Those who swear to avoid bloodshed, to take the field unarmored, to fight only with blunt weapons, are especially praiseworthy.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 4
+                "Unused": "00 00 00 00", 
+                "Response number": "04", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Knowledge of enchantments and the gift of diplomatic speech are other qualities we look for in our initiates.", 
             "NAM2 - Actor notes": ""
@@ -67,12 +73,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 3.99999998990097, 
-            "Function": 73, 
-            "Parameter #1": "0ImperialSCult", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 4.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ImperialSCult "Imperial Cult" [FACT:01220003]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -81,7 +89,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

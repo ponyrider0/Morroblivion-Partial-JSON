@@ -1,28 +1,31 @@
 {
-    "Topic": "1TelvanniSHortator", 
+    "Topic": "1TelvanniSHortator [DIAL:013107C6]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 258, 
         "Record Flags": {}, 
-        "FormID": "01320B63"
+        "FormID": "01320B63", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQTelvanni", 
+    "QSTI - Quest": "fbmwMQTelvanni [QUST:01002C4A]", 
     "PNAM - Previous INFO": "01022DDC", 
     "Add topics": [
-        "1MasterSAryon", 
-        "1TelSVos"
+        "NAME - Topic": "01310A5C", 
+        "NAME - Topic": "01310C45"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Master Aryon in Tel Vos is the one most open to new ideas. He may give you some advice.", 
             "NAM2 - Actor notes": ""
@@ -30,20 +33,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0crassiusScurio", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0crassiusScurio "Crassius Curio" [NPC_:0126038C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 133, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "SameFactionAsPC:133", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -52,7 +59,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

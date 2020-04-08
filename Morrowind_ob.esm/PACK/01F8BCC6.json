@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 108, 
         "Record Flags": {}, 
-        "FormID": "01F8BCC6"
+        "FormID": "01F8BCC6", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwbmIngmarFollowPackage", 
     "PKDT - General": {
@@ -10,30 +12,32 @@
             "Flags": {
                 "Defensive combat": true
             }, 
-            "Type": 1, 
+            "Type": "01", 
             "Unused": "00 00 00"
         }
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "PTDT - Target": {
         "Type": 1, 
-        "Target": "Player", 
+        "Target": "00000007", 
         "Count": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwBMIngmar", 
-            "Parameter #2": 1
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMIngmar "Ingmar in a Bind" [QUST:0101B6C6]", 
+            "Parameter #2": "gonow", 
+            "Unused": "00000000"
         }
     ]
 }

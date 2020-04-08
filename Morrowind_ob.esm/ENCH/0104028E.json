@@ -1,14 +1,16 @@
 {
     "Record Header": {
         "Signature": "ENCH", 
+        "Data Size": 89, 
         "Record Flags": {}, 
-        "FormID": "0104028E"
+        "FormID": "0104028E", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0resistSparalysisUEN", 
-    "ENIT - ": {
-        "Type": 3, 
-        "Charge Amount": 300, 
-        "Enchant Cost": 300, 
+    "ENIT - ENIT": {
+        "Type": "00000003", 
+        "Charge Amount": "0000012C", 
+        "Enchant Cost": "0000012C", 
         "Flags": {
             "Manual Enchant Cost (Autocalc Off)": true
         }, 
@@ -16,14 +18,14 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1095783250, 
-            "EFIT - ": {
-                "Magic effect name": 1095783250, 
+            "EFID - Magic effect name": "RSPA", 
+            "EFIT - EFIT": {
+                "Magic effect name": "RSPA", 
                 "Magnitude": 50, 
                 "Area": 0, 
                 "Duration": 30, 
-                "Type": 0, 
-                "Actor Value": 66
+                "Type": "Self:0", 
+                "Actor Value": "Resist Paralysis:66"
             }
         }
     ]

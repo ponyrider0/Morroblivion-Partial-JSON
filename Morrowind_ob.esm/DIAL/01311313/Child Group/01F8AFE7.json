@@ -1,29 +1,32 @@
 {
-    "Topic": "1shipmentsSstoppedSarriving", 
+    "Topic": "1shipmentsSstoppedSarriving [DIAL:01311313]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 231, 
         "Record Flags": {}, 
-        "FormID": "01F8AFE7"
+        "FormID": "01F8AFE7", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMMorale", 
+    "QSTI - Quest": "fbmwBMMorale [QUST:0101B6CE]", 
     "PNAM - Previous INFO": "0132043C", 
     "Add topics": [
-        "1toSserve", 
-        "1proof", 
-        "1questions"
+        "NAME - Topic": "01310BE1", 
+        "NAME - Topic": "01310CE5", 
+        "NAME - Topic": "01310B7D"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I think we've said all there is to say about that.", 
             "NAM2 - Actor notes": ""
@@ -31,20 +34,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 89.9999997727718, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 90.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0antoniusSnuncius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0antoniusSnuncius "Antonius Nuncius" [NPC_:01260B1A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -53,7 +60,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

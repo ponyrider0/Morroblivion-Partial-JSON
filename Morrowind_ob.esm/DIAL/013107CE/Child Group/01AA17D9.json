@@ -1,44 +1,49 @@
 {
-    "Topic": "1ZainabSNerevarine", 
+    "Topic": "1ZainabSNerevarine [DIAL:013107CE]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 637, 
         "Record Flags": {}, 
-        "FormID": "01AA17D9"
+        "FormID": "01AA17D9", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ11z", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMQ11z [QUST:01001DD3]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 61 32", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 61 32"
             }, 
             "NAM1 - Response Text": "Since you have killed one of the leaders of the Ashlander tribes, there is no possibility that you could be considered the Nerevarine of prophecy.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 61 32", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "77 61 32"
             }, 
             "NAM1 - Response Text": "If it had been part of the traditional struggles for tribal leadership, it would not have been dishonorable.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 61 32", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "77 61 32"
             }, 
             "NAM1 - Response Text": "But you slew a tribal leader for your own interests, not for the good of the tribe, and the Ashlanders will not accept such a foul murderer as their Nerevarine.", 
             "NAM2 - Actor notes": ""
@@ -46,20 +51,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 64, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQAshKill", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "40", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQAshKill "Cutting the Thread of Prophecy" [QUST:01002C52]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nibaniSmaesa", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nibaniSmaesa "Nibani Maesa" [NPC_:0126018B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,7 +77,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

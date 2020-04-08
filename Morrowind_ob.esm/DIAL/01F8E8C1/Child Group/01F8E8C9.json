@@ -1,24 +1,27 @@
 {
-    "Topic": "fbmwMSPerformersTalk", 
+    "Topic": "fbmwMSPerformersTalk [DIAL:01F8E8C1]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 320, 
         "Record Flags": {}, 
-        "FormID": "01F8E8C9"
+        "FormID": "01F8E8C9", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSPerformers", 
+    "QSTI - Quest": "fbmwMSPerformers [QUST:0101C62D]", 
     "PNAM - Previous INFO": "01F8E8C8", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "65 72 79", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "65 72 79"
             }, 
             "NAM1 - Response Text": "Please, serjo, go wherever you want. We have nothing to hide. We're loyal Imperial subjects.", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 13.9999999646534, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMSPerformers", 
-            "Parameter #2": 3
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 14.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSPerformers "A Star is Born" [QUST:0101C62D]", 
+            "Parameter #2": "questionAsked", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0gureryneSselvilo", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0gureryneSselvilo "Gureryne Selvilo" [NPC_:01260A9A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,12 +55,12 @@
             "RefCount": 1, 
             "CompiledSize": 15, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "15 00 0B 00 72 01 00 73 03 00 03 00 20 31 35", 
         "SCTX - Result script source": "set fbmwMSPerformers.questionAsked to 15", 
         "References": [
-            "fbmwMSPerformers"
+            "SCRO - Global Reference": "fbmwMSPerformers [QUST:0101C62D]"
         ]
     }
 }

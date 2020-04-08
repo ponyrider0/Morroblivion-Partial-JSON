@@ -1,26 +1,29 @@
 {
-    "Topic": "fbmwMQ14defendyourself", 
+    "Topic": "fbmwMQ14defendyourself [DIAL:01026A08]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 279, 
         "Record Flags": {}, 
-        "FormID": "01026A0D"
+        "FormID": "01026A0D", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwMQ14", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMQ14 [QUST:01002C56]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "54 65 6D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "54 65 6D"
             }, 
             "NAM1 - Response Text": "Very well. If you are impatient to begin. Go ahead. You are the challenger. To you goes the first blow.", 
             "NAM2 - Actor notes": ""
@@ -28,12 +31,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "fbmwDagothUr", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwDagothUr "Dagoth Ur" [NPC_:0100A1E7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -42,12 +47,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 05 00 00 00", 
         "SCTX - Result script source": "SetStage fbmwMQ14 5", 
         "References": [
-            "fbmwMQ14"
+            "SCRO - Global Reference": "fbmwMQ14 [QUST:01002C56]"
         ]
     }
 }

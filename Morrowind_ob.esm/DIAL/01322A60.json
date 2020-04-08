@@ -1,126 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 63, 
         "Record Flags": {}, 
-        "FormID": "01322A60"
+        "FormID": "01322A60", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1Prelude1", 
     "Quests": [
-        "fbmwHHSunkenTreasure"
+        "QSTI - Quest": "fbmwHHSunkenTreasure [QUST:0100346E]"
     ], 
     "FULL - Name": "Give her the Wakizashi.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1Prelude1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013235F8"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHSunkenTreasure", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, this is the one. Here, take these 500 drakes as a finders fee.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0daedricSwakizashiUhhst", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edrynoSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E F4 01 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHHSunkenTreasure 100\r\nPlayer.AddItem Gold001 500\r\nPlayer.RemoveItem 0daedricSwakizashiUhhst 1", 
-                "References": [
-                    20, 
-                    "fbmwHHSunkenTreasure", 
-                    "Gold001", 
-                    "0daedricSwakizashiUhhst"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1Prelude1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013235F9"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHHSunkenTreasure", 
-            "PNAM - Previous INFO": "013235F8", 
-            "Add topics": [
-                "1wakizashi"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You found the Wakizashi? What did you do with it? Bring it here.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0edrynoSarethi", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

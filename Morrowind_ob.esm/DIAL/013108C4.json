@@ -1,81 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 62, 
         "Record Flags": {}, 
-        "FormID": "013108C4"
+        "FormID": "013108C4", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1provideScomfort", 
     "Quests": [
-        "MorroDefaultQuest"
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "Provide Comfort", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1provideScomfort", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01321061"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Food", 
-                "1materialSgains"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes. They supply me with food, shelter, and other material gains. They are my children, protecting me from those who would hunt our kind.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And, if they earn it, perhaps I will one day bring them into my Dark Embrace to walk the night with me as vampire.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0Irarak", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 18, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "addtopic 1food\r\naddtopic 1materialSgains", 
-                "References": [
-                    "1Food", 
-                    "1materialSgains"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

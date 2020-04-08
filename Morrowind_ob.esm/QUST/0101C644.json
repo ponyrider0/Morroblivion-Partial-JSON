@@ -1,12 +1,14 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 2245, 
         "Record Flags": {}, 
-        "FormID": "0101C644"
+        "FormID": "0101C644", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwTownAldLlethri", 
     "FULL - Name": "Llether Vari and Ienas Sarandas", 
-    "ICON - Icon filename": "quest\\icon_weynon_priory.dds", 
+    "ICON - Icon FileName": "quest\\icon_weynon_priory.dds", 
     "DATA - General": {
         "Flags": {
             "Start game enabled": true
@@ -15,12 +17,14 @@
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -36,7 +40,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -56,10 +60,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 188, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 69 00 01 00 65 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4C 6C 65 74 68 65 72 20 56 61 72 69 20 61 6E 64 20 49 65 6E 61 73 20 53 61 72 61 6E 64 75 73 20 71 75 65 73 74 22 F9 16 26 00 01 00 22 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
                     }
                 }
             ]
@@ -78,10 +82,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 188, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 69 00 01 00 65 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4C 6C 65 74 68 65 72 20 56 61 72 69 20 61 6E 64 20 49 65 6E 61 73 20 53 61 72 61 6E 64 75 73 20 71 75 65 73 74 22 F9 16 26 00 01 00 22 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
                     }
                 }
             ]
@@ -100,10 +104,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 188, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 69 00 01 00 65 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4C 6C 65 74 68 65 72 20 56 61 72 69 20 61 6E 64 20 49 65 6E 61 73 20 53 61 72 61 6E 64 75 73 20 71 75 65 73 74 22 F9 16 26 00 01 00 22 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Llether Vari and Ienas Sarandus quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 50\"\r\nendif"
                     }
                 }
             ]

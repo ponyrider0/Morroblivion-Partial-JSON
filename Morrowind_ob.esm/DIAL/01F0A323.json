@@ -1,79 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 86, 
         "Record Flags": {}, 
-        "FormID": "01F0A323"
+        "FormID": "01F0A323", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "BBBHaemaFarseerTelMora", 
     "Quests": [
-        "aaaBoatTransport"
+        "QSTI - Quest": "aaaBoatTransport [QUST:01F0A330]"
     ], 
     "FULL - Name": "Tel Mora. [5 hours trip, 24 gold]", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "BBBHaemaFarseerTelMora", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01004281"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "aaaBoatTransport", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "98 75 47", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Don't close your eyes or you'll miss the trip!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 23.9999999394058, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0haemaSfarseer", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 47, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 18 00 00 00 15 00 08 00 47 03 00 03 00 20 33 32 15 00 0D 00 47 04 00 08 00 20 47 04 00 20 35 20 2B", 
-                "SCTX - Result script source": "Player.RemoveItem Gold001 24\r\nSet MWDestinationCode to 32\r\nSet GameHour to GameHour + 5", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "MWDestinationCode", 
-                    "GameHour"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

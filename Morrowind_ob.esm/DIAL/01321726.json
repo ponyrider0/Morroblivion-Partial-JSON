@@ -1,70 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 62, 
         "Record Flags": {}, 
-        "FormID": "01321726"
+        "FormID": "01321726", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1DrinarSVaryon1", 
     "Quests": [
-        "fbmwILSmuggler"
+        "QSTI - Quest": "fbmwILSmuggler [QUST:01006029]"
     ], 
     "FULL - Name": "Yes, here it is.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1DrinarSVaryon1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132337C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwILSmuggler", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "This along with the word of a member of the Legions should be enough to convict him. I will let you know when we catch him.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0imsinStheSdreamer", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 63, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 A9 10 0D 00 03 00 72 04 00 72 05 00 6E 05 00 00 00 53 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwilsmuggler 100\r\nplayer.removeitem 0miscudwrvuartifactuils 1\r\nmodfactionreaction 0imperialslegion playerfaction 5\r\nmoddisposition player 10", 
-                "References": [
-                    20, 
-                    "fbmwILSmuggler", 
-                    "0miscUdwrvUartifactUils", 
-                    "0ImperialSLegion", 
-                    "PlayerFaction"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

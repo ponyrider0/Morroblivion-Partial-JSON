@@ -1,24 +1,27 @@
 {
-    "Topic": "1latestSrumors", 
+    "Topic": "1latestSrumors [DIAL:013109A8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 436, 
         "Record Flags": {}, 
-        "FormID": "0102E023"
+        "FormID": "0102E023", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "0102E020", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "74 68 61", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "74 68 61"
             }, 
             "NAM1 - Response Text": "Whatever you do, don't play cards with Galms Seles. He's a hustler just moved here from Vvardenfell. He thinks he can out-distance his reputation, but a friend in Sadrith Mora tipped me off. I wish he would leave. He's put a damper on the action.", 
             "NAM2 - Actor notes": ""
@@ -26,12 +29,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0raAtesh", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0raAtesh "Ra'Tesh" [NPC_:01260AD6]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -40,12 +45,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 03 00 02 00 20 31", 
         "SCTX - Result script source": "set fbmwmsBouncer.galmsknown to 1", 
         "References": [
-            "fbmwMSBouncer"
+            "SCRO - Global Reference": "fbmwMSBouncer [QUST:0101C61B]"
         ]
     }
 }

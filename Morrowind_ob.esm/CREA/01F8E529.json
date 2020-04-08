@@ -1,46 +1,48 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 437, 
         "Record Flags": {}, 
-        "FormID": "01F8E529"
+        "FormID": "01F8E529", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwGoblinGrunt", 
     "FULL - Name": "Goblin Grunt", 
     "Model": {
-        "MODL - Model Filename": "Creatures\\Goblin\\Skeleton.NIF", 
-        "MODB - Bound Radius": 94.6268847610901
+        "MODL - Model FileName": "Creatures\\Goblin\\Skeleton.NIF", 
+        "MODB - Bound Radius": 94.626884000000000
     }, 
     "Items": [
         {
-            "Item": "0randomUbanditU6T10", 
+            "Item": "0randomUbanditU6T10 [LVLI:011A00E0]", 
             "Count": 1
         }, 
         {
-            "Item": "0goblinUhealth", 
+            "Item": "0goblinUhealth [LVLI:011A00E5]", 
             "Count": 1
         }, 
         {
-            "Item": "0goblinSshield", 
+            "Item": "0goblinSshield [ARMO:01F8E527]", 
             "Count": 1
         }, 
         {
-            "Item": "0goblinUweaponsUrandom", 
+            "Item": "0goblinUweaponsUrandom [LVLI:01F8E52E]", 
             "Count": 1
         }
     ], 
     "Spells": [
-        "0rapidSregenerate", 
-        "0resistSfireU100"
+        "SPLO - Spell": "0rapidSregenerate [SPEL:010602AA]", 
+        "SPLO - Spell": "0resistSfireU100 [SPEL:010603E2]"
     ], 
-    "NIFZ - Models": [
-        "goblegs01.nif", 
-        "goblinhandl.nif", 
-        "goblinhandr.nif", 
-        "goblinhead.nif", 
-        "leathercap01.nif", 
-        "skirmisherchest01.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "goblegs01.nif", 
+        "Model": "goblinhandl.nif", 
+        "Model": "goblinhandr.nif", 
+        "Model": "goblinhead.nif", 
+        "Model": "leathercap01.nif", 
+        "Model": "skirmisherchest01.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -48,56 +50,57 @@
             "Walks": true, 
             "No Low Level Processing": true
         }, 
-        "Base spell points": 10, 
-        "Fatigue": 500, 
-        "Barter gold": 0, 
+        "Base spell points": "0000000A", 
+        "Fatigue": "000001F4", 
+        "Barter gold": "00000000", 
         "Level (offset)": 7, 
-        "Calc min": 1, 
-        "Calc max": 0
+        "Calc min": "00000001", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "CreatureFaction", 
-            "Rank": 0, 
+            "Faction": "00000013", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
     "AIDT - AI Data": {
-        "Aggression": 100, 
-        "Confidence": 70, 
-        "Energy Level": 80, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "64", 
+        "Confidence": "46", 
+        "Energy Level": "50", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureExterior1500", 
-        "aaaCreatureInterior512"
+        "PKID - AI Package": "aaaCreatureExterior1500 [PACK:000AA01D]", 
+        "PKID - AI Package": "aaaCreatureInterior512 [PACK:000AA01C]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 90, 
-        "Magic Skill": 50, 
-        "Stealth Skill": 10, 
-        "Soul": 1, 
+        "Type": "00", 
+        "Combat Skill": "5A", 
+        "Magic Skill": "32", 
+        "Stealth Skill": "0A", 
+        "Soul": "01", 
+        "Unused": "00", 
+        "Health": "00000050", 
         "Unused": "00 00", 
-        "Health": 80, 
-        "Attack Damage": 10, 
-        "Strength": 100, 
-        "Intelligence": 20, 
-        "Willpower": 70, 
-        "Agility": 70, 
-        "Speed": 18, 
-        "Endurance": 255, 
-        "Personality": 10, 
-        "Luck": 20
+        "Attack Damage": "0000000A", 
+        "Strength": "64", 
+        "Intelligence": "14", 
+        "Willpower": "46", 
+        "Agility": "46", 
+        "Speed": "12", 
+        "Endurance": "FF", 
+        "Personality": "0A", 
+        "Luck": "14"
     }, 
-    "RNAM - Attack reach": 52, 
-    "ZNAM - Combat Style": "DefaultGoblinSkirmisher", 
-    "TNAM - Turning Speed": 0, 
-    "BNAM - Base Scale": 1.19999999697029, 
-    "WNAM - Foot Weight": 5.99999998485146, 
-    "CSCR - Inherits Sounds from": "fbmwGoblinBruiser"
+    "RNAM - Attack reach": "34", 
+    "ZNAM - Combat Style": "DefaultGoblinSkirmisher [CSTY:0002F244]", 
+    "TNAM - Turning Speed": 0.000000000000000, 
+    "BNAM - Base Scale": 1.200000000000000, 
+    "WNAM - Foot Weight": 6.000000000000000, 
+    "CSCR - Inherits Sounds from": "fbmwGoblinBruiser [CREA:01F8E52C]"
 }

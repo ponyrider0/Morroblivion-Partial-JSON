@@ -1,30 +1,33 @@
 {
-    "Topic": "1work", 
+    "Topic": "1work [DIAL:01310D0E]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 295, 
         "Record Flags": {}, 
-        "FormID": "01322EA4"
+        "FormID": "01322EA4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTownVivec", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwTownVivec [QUST:0101C649]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1report", 
-        "1Dunmer", 
-        "1Ordinators", 
-        "1reward"
+        "NAME - Topic": "013113E0", 
+        "NAME - Topic": "01310CA1", 
+        "NAME - Topic": "01310B0A", 
+        "NAME - Topic": "01310C97"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I am grateful for the work you did for us. But I'm afraid I have no more work for you. Thank you anyway.", 
             "NAM2 - Actor notes": ""
@@ -32,20 +35,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTownVivec", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTownVivec "Mysterious Killings in Vivec" [QUST:0101C649]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0elamSandas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0elamSandas "Elam Andas" [NPC_:012605B8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -54,7 +61,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

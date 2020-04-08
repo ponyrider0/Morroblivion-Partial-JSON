@@ -1,46 +1,51 @@
 {
-    "Topic": "1erroneousSdocuments", 
+    "Topic": "1erroneousSdocuments [DIAL:01310750]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 512, 
         "Record Flags": {}, 
-        "FormID": "0100CB8A"
+        "FormID": "0100CB8A", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwHHReplaceDocs", 
+    "QSTI - Quest": "fbmwHHReplaceDocs [QUST:0100346B]", 
     "PNAM - Previous INFO": "0132090F", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "I don't care what Odral told you.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Our records are accurate, our integrity is unquestionable, and I resent your implications.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "I suggest you leave before I call the guards.", 
             "NAM2 - Actor notes": ""
@@ -48,36 +53,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHReplaceDocs", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHReplaceDocs "House Hlaalu: Erroneous Documents" [QUST:0100346B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHReplaceDocs", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHReplaceDocs "House Hlaalu: Erroneous Documents" [QUST:0100346B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "VivecVSHlaaluSRecords", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "VivecVSHlaaluSRecords "Vivec, Hlaalu Records" [CELL:0148042B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "VivecVSHlaaluSTreasury", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "VivecVSHlaaluSTreasury "Vivec, Hlaalu Treasury" [CELL:0148042D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -86,12 +99,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E F6 FF FF FF", 
         "SCTX - Result script source": "ModDisposition Player -10", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

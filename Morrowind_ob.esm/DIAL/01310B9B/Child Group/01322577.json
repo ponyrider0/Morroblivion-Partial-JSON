@@ -1,42 +1,46 @@
 {
-    "Topic": "1MolagSMar", 
+    "Topic": "1MolagSMar [DIAL:01310B9B]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 604, 
         "Record Flags": {}, 
-        "FormID": "01322577"
+        "FormID": "01322577", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1MolagSMar", 
-        "1stronghold", 
-        "1MolagSAmur", 
-        "1pilgrimage", 
-        "1MountSKand", 
-        "1stronghold"
+        "NAME - Topic": "01310B9B", 
+        "NAME - Topic": "01310B01", 
+        "NAME - Topic": "01310B2D", 
+        "NAME - Topic": "01310B5B", 
+        "NAME - Topic": "01310B17", 
+        "NAME - Topic": "01310B01"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The outpost at Molag Mar is a fortified stronghold on the southeastern edge of the desolate Molag Amur region.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Pilgrims bound for the nearby pilgrimage sites at Mount Assarnibibi  and Mount Kand take refuge at the outpost's hostels, comforted by the garrison of Redoran and Buoyant Armiger crusaders stationed at the stronghold.", 
             "NAM2 - Actor notes": ""
@@ -44,28 +48,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Savant", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Savant "Savant" [CLAS:00023E6B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "noLore", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "noLore "noLore" [FACT:0122001C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -74,7 +84,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

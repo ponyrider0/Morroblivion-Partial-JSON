@@ -1,28 +1,31 @@
 {
-    "Topic": "1MeetSsomeoneSnew", 
+    "Topic": "1MeetSsomeoneSnew [DIAL:01310FD9]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 314, 
         "Record Flags": {}, 
-        "FormID": "01320DA2"
+        "FormID": "01320DA2", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSMatchMaker", 
+    "QSTI - Quest": "fbmwMSMatchMaker [QUST:0101C628]", 
     "PNAM - Previous INFO": "01320DA1", 
     "Add topics": [
-        "1need", 
-        "1need"
+        "NAME - Topic": "01310CFC", 
+        "NAME - Topic": "01310CFC"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Oh, outlander. There's no need to worry about that now. I doubt I'll ever need to think about such a thing again!", 
             "NAM2 - Actor notes": ""
@@ -30,28 +33,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 8.99999997727718, 
-            "Function": 79, 
-            "Parameter #1": "fbmwMSMatchMaker", 
-            "Parameter #2": 2
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 9.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMSMatchMaker "The MatchMaker" [QUST:0101C628]", 
+            "Parameter #2": "MatchMakeGoval", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0MarenaSGilnith", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0MarenaSGilnith "Marena Gilnith" [NPC_:01260A94]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -60,7 +69,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

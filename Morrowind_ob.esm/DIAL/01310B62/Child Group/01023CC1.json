@@ -1,24 +1,27 @@
 {
-    "Topic": "1ashSstorm", 
+    "Topic": "1ashSstorm [DIAL:01310B62]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 327, 
         "Record Flags": {}, 
-        "FormID": "01023CC1"
+        "FormID": "01023CC1", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRFindDalobar", 
+    "QSTI - Quest": "fbmwHRFindDalobar [QUST:0100431F]", 
     "PNAM - Previous INFO": "01023CC0", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 48 52", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "57 48 52"
             }, 
             "NAM1 - Response Text": "The ash storm caught alot of people by surprise. When a storm hits like that, you take shelter in whatever's nearby.", 
             "NAM2 - Actor notes": ""
@@ -26,36 +29,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRFindDalobar", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRFindDalobar "House Redoran: Find Mathis Dalobar" [QUST:0100431F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRFindDalobar", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRFindDalobar "House Redoran: Find Mathis Dalobar" [QUST:0100431F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "MaarSGan", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "MaarSGan "Maar Gan" [CELL:01480040]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 69, 
-            "Parameter #1": "DarkElf", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsRace:69", 
+            "Unused": "00 00", 
+            "Parameter #1": "DarkElf "Dark Elf" [RACE:000191C1]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -64,7 +75,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

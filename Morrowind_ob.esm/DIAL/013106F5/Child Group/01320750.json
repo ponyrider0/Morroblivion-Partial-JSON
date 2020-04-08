@@ -1,27 +1,30 @@
 {
-    "Topic": "1joinStheSMagesSGuild", 
+    "Topic": "1joinStheSMagesSGuild [DIAL:013106F5]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 368, 
         "Record Flags": {}, 
-        "FormID": "01320750"
+        "FormID": "01320750", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGAdvancement", 
+    "QSTI - Quest": "fbmwMGAdvancement [QUST:0100676E]", 
     "PNAM - Previous INFO": "01004D3C", 
     "Add topics": [
-        "1MagesSGuild"
+        "NAME - Topic": "01310A62"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Hmm... Yes, you look like the sort we could use in the Mages Guild. Will you take The Mage's Oath and join the Guild?", 
             "NAM2 - Actor notes": ""
@@ -29,42 +32,50 @@
     ], 
     "Conditions": [
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 71, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 14, 
-            "Parameter #1": 1, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetActorValue:14", 
+            "Unused": "00 00", 
+            "Parameter #1": "Intelligence [ACVA:00000001]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 14, 
-            "Parameter #1": 2, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetActorValue:14", 
+            "Unused": "00 00", 
+            "Parameter #1": "Willpower [ACVA:00000002]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1joinStheSMagesSGuild1", 
-        "1joinStheSMagesSGuild2", 
-        "1joinStheSMagesSGuild3"
+        "TCLT - Choice": "1joinStheSMagesSGuild1 [DIAL:01320749]", 
+        "TCLT - Choice": "1joinStheSMagesSGuild2 [DIAL:0132074B]", 
+        "TCLT - Choice": "1joinStheSMagesSGuild3 [DIAL:0132074D]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -72,7 +83,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

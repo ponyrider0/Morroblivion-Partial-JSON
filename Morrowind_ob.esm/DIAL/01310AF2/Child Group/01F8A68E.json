@@ -1,24 +1,27 @@
 {
-    "Topic": "1necromancy", 
+    "Topic": "1necromancy [DIAL:01310AF2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 200, 
         "Record Flags": {}, 
-        "FormID": "01F8A68E"
+        "FormID": "01F8A68E", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGKillNecro2", 
+    "QSTI - Quest": "fbmwMGKillNecro2 [QUST:0100677B]", 
     "PNAM - Previous INFO": "01F8A68D", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "30 44 72", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "30 44 72"
             }, 
             "NAM1 - Response Text": "Did you kill the necromancer?", 
             "NAM2 - Actor notes": ""
@@ -26,25 +29,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMGKillNecro2", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMGKillNecro2 "Mages Guild: Kill Necromancer Tashpi Ashibael" [QUST:0100677B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0ranisSathrys", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ranisSathrys "Ranis Athrys" [NPC_:01260125]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwmgkillnecrolie", 
-        "fbmwmgkillnecrono"
+        "TCLT - Choice": "fbmwmgkillnecrolie [DIAL:01F8A9A5]", 
+        "TCLT - Choice": "fbmwmgkillnecrono [DIAL:01F8A9A7]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -52,7 +59,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

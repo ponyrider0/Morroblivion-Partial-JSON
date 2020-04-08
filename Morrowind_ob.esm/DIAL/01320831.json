@@ -1,141 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 72, 
         "Record Flags": {}, 
-        "FormID": "01320831"
+        "FormID": "01320831", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1CureSDiseaseSpotion5", 
     "Quests": [
-        "fbmwMSCrimsonPlague"
+        "QSTI - Quest": "fbmwMSCrimsonPlague [QUST:0101C61D]"
     ], 
     "FULL - Name": "Give him the potion.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1CureSDiseaseSpotion5", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132302C"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSCrimsonPlague", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Well, at least someone around here isn't determined to let an old man die. I'll just take this and go home. No sense in hanging around here.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0athelynSmalas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0pUcureUcommonUs", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 3C 00 00 00", 
-                "SCTX - Result script source": "player.removeitem 0pucureucommonus 1\r\nadditem 0pucureucommonus 1\r\nsetstage fbmwMSCrimsonPlague 60", 
-                "References": [
-                    20, 
-                    "0pUcureUcommonUs", 
-                    "fbmwMSCrimsonPlague"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1CureSDiseaseSpotion5", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132302D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSCrimsonPlague", 
-            "PNAM - Previous INFO": "0132302C", 
-            "Add topics": [
-                "1Hands"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It's not enough that an old man can't get help, but he has to suffer mocking at the hands of someone like you? Get away from me, outlander!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0athelynSmalas", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

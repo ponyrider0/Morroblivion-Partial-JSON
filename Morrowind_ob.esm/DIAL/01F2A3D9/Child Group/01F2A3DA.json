@@ -1,27 +1,30 @@
 {
-    "Topic": "mwCrimePayGold", 
+    "Topic": "mwCrimePayGold [DIAL:01F2A3D9]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 344, 
         "Record Flags": {}, 
-        "FormID": "01F2A3DA"
+        "FormID": "01F2A3DA", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "CrimeMorrow", 
-    "TPIC - Topic": "GREETING", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "CrimeMorrow [QUST:01F2A3E6]", 
+    "TPIC - Topic": "000000C8", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 69 6D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 69 6D"
             }, 
             "NAM1 - Response Text": "I accept this gold in payment of the fines and compensation ordered by the court. And now you are free to go.", 
             "NAM2 - Actor notes": ""
@@ -29,28 +32,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 130, 
-            "Unused": 0, 
-            "Comparison Value": 5000.00000037621, 
-            "Function": 116, 
+            "Type": "82", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5000.000000000000000, 
+            "Function": "GetCrimeGold:116", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 125, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsGuard:125", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -59,12 +68,12 @@
             "RefCount": 1, 
             "CompiledSize": 8, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "1C 00 01 00 7B 10 00 00", 
         "SCTX - Result script source": "Player.PayFine", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

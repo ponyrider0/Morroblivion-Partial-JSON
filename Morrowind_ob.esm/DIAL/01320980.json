@@ -1,139 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 81, 
         "Record Flags": {}, 
-        "FormID": "01320980"
+        "FormID": "01320980", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1priceSonSyourShead1", 
     "Quests": [
-        "MorroDefaultQuest", 
-        "fbmwTGCrimeGoldDiscount"
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+        "QSTI - Quest": "fbmwTGCrimeGoldDiscount [QUST:01F8BD3C]"
     ], 
     "FULL - Name": "Thanks. I'll pay it.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1priceSonSyourShead1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132308D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGCrimeGoldDiscount", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Smart thinking, outlander. I'll take care of everything.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwTGCrimeGoldDiscount", 
-                    "Parameter #2": 2
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 34, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0B 00 02 00 72 02 00 72 03 00 73 04 00 1C 00 01 00 75 10 07 00 01 00 6E 00 00 00 00", 
-                "SCTX - Result script source": "Player.RemoveItem Gold001 \"fbmwTGCrimeGoldDiscount\".discount\r\nPlayer.SetCrimeGold 0", 
-                "References": [
-                    20, 
-                    "Gold001", 
-                    "fbmwTGCrimeGoldDiscount"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1priceSonSyourShead1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132308E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTGCrimeGoldDiscount", 
-            "PNAM - Previous INFO": "0132308D", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Smart thinking, outlander, but you don't have the gold to cover that. Come back to me when you do.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0ThievesSGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

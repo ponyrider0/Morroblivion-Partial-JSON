@@ -1,26 +1,29 @@
 {
-    "Topic": "1anonymousSwriter", 
+    "Topic": "1anonymousSwriter [DIAL:01310FDC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 283, 
         "Record Flags": {}, 
-        "FormID": "0101C6D4"
+        "FormID": "0101C6D4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwTR09", 
+    "QSTI - Quest": "fbmwTR09 [QUST:0101C64E]", 
     "PNAM - Previous INFO": "0101C6D3", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 54", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "4D 57 54"
             }, 
             "NAM1 - Response Text": "I know no anonymous writers. I know this broadsheet thing -- this 'The Common Tongue'. Ask some other.", 
             "NAM2 - Actor notes": ""
@@ -28,28 +31,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTR09", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTR09 "Muckraking Journalist" [QUST:0101C64E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTR09", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTR09 "Muckraking Journalist" [QUST:0101C64E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 69, 
-            "Parameter #1": "Argonian", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsRace:69", 
+            "Unused": "00 00", 
+            "Parameter #1": "Argonian "Argonian" [RACE:00023FE9]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -58,7 +67,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,51 +1,56 @@
 {
-    "Topic": "1DivineSMetaphysics", 
+    "Topic": "1DivineSMetaphysics [DIAL:0131075F]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 627, 
         "Record Flags": {}, 
-        "FormID": "0132099E"
+        "FormID": "0132099E", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGDwarves", 
+    "QSTI - Quest": "fbmwMGDwarves [QUST:01006773]", 
     "PNAM - Previous INFO": "010060E7", 
     "Add topics": [
-        "1HangingSGardens", 
-        "1theories", 
-        "1sacred", 
-        "1theories", 
-        "1work"
+        "NAME - Topic": "01310869", 
+        "NAME - Topic": "01310BD3", 
+        "NAME - Topic": "013113DE", 
+        "NAME - Topic": "01310BD3", 
+        "NAME - Topic": "01310D0E"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Yes, with the help of \"Hanging Gardens\" I can read some of this book.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "It is the essence of Kagrenac's theories on how one might create a new god through the \"obedience\" of the Ehlnofey and using the sacred tones on the Heart of Lorkhan.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Whatever its value to scholars, his theories did not appear to work quite as he intended.", 
             "NAM2 - Actor notes": ""
@@ -53,28 +58,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0bkUDivineMetaphysics", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUDivineMetaphysics "Divine Metaphysics" [BOOK:011801E8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0bkUhanginggardenswasten", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUhanginggardenswasten "Hanging Gardens..." [BOOK:011800BB]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0baladasSdemnevanni", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0baladasSdemnevanni "Baladas Demnevanni" [NPC_:01260409]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -83,7 +94,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

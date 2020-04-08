@@ -1,24 +1,27 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 444, 
         "Record Flags": {}, 
-        "FormID": "010100FF"
+        "FormID": "010100FF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSGreetings", 
+    "QSTI - Quest": "fbmwMSGreetings [QUST:01F2A564]", 
     "PNAM - Previous INFO": "01010100", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 45", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "4D 57 45"
             }, 
             "NAM1 - Response Text": "Greetings, friend. I understand you've had some dealings with the Company before. Perhaps you'd like to be of further assistance?", 
             "NAM2 - Actor notes": ""
@@ -26,36 +29,44 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBClients", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBClients "The Client List" [QUST:0100341E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBExpress", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBExpress "Dredil's Delivery" [QUST:01003421]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBPest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBPest "The Enchanter's Rats" [QUST:01003424]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0Bolrin", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Bolrin "Bolrin" [NPC_:012602F0]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -64,13 +75,13 @@
             "RefCount": 2, 
             "CompiledSize": 18, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00", 
         "SCTX - Result script source": "startquest fbmwebclients\r\naddtopic 1furthersassistance", 
         "References": [
-            "fbmwEBClients", 
-            "1furtherSassistance"
+            "SCRO - Global Reference": "fbmwEBClients [QUST:0100341E]", 
+            "SCRO - Global Reference": "1furtherSassistance [DIAL:013107AC]"
         ]
     }
 }

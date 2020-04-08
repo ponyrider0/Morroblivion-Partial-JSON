@@ -1,76 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 78, 
         "Record Flags": {}, 
-        "FormID": "01003A05"
+        "FormID": "01003A05", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1Firemoth1", 
     "Quests": [
-        "fbmwMSFiremoth"
+        "QSTI - Quest": "fbmwMSFiremoth [QUST:010039FF]"
     ], 
     "FULL - Name": "I can lead this group.Show me the way", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1Firemoth1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01003A10"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSFiremoth", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 4D 53", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Excellent. Head out back to the dock. You'll meet your crew there. Talk to the boat captain about the trip to Firemoth.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 4D 53", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "May the Divines go with you, and with our blessings.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0chargenScaptain", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 0A 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwMSFiremoth 10", 
-                "References": [
-                    "fbmwMSFiremoth"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

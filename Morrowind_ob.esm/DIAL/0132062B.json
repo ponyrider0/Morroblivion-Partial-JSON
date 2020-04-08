@@ -1,124 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 100, 
         "Record Flags": {}, 
-        "FormID": "0132062B"
+        "FormID": "0132062B", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1transportStoSMournhold1", 
     "Quests": [
-        "fbmwTRAssassins", 
-        "fbmwTRDBAttack"
+        "QSTI - Quest": "fbmwTRAssassins [QUST:0101C64F]", 
+        "QSTI - Quest": "fbmwTRDBAttack [QUST:0101C653]"
     ], 
     "FULL - Name": "I'm hunted by the Dark Brotherhood.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1transportStoSMournhold1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322FAC"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true, 
-                    "Say Once": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwTRDBAttack", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1business", 
-                "1Errand", 
-                "1need", 
-                "1Vvardenfell"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Oh, my! I can see why you'd want to get that cleared up. That's dangerous business, though.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I can't say I'd be happy to send you off on that sort of fool's errand. If you're sure, though, I suppose I can oblige you.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "If you need to return to Vvardenfell, speak with Effe-Tei in the Royal Palace. Take care, friend. Those people are not to be taken lightly.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 4
-                    }, 
-                    "NAM1 - Response Text": "I'll send you there when we've finished speaking.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 59.9999998485146, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTRDBAttack", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ascieneSrane", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 35, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00 58 10 05 00 01 00 72 02 00 15 00 08 00 47 03 00 03 00 20 37 30", 
-                "SCTX - Result script source": "setstage fbmwtrdbattack 60\r\naddtopic 1TransportStoSVvardenfell\r\nset MWDestinationCode to 70", 
-                "References": [
-                    "fbmwTRDBAttack", 
-                    "1transportStoSVvardenfell", 
-                    "MWDestinationCode"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

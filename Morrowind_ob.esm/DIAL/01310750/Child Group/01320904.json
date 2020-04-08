@@ -1,29 +1,32 @@
 {
-    "Topic": "1erroneousSdocuments", 
+    "Topic": "1erroneousSdocuments [DIAL:01310750]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 285, 
         "Record Flags": {}, 
-        "FormID": "01320904"
+        "FormID": "01320904", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHReplaceDocs", 
+    "QSTI - Quest": "fbmwHHReplaceDocs [QUST:0100346B]", 
     "PNAM - Previous INFO": "0100CB91", 
     "Add topics": [
-        "1forgedSlandSdeed", 
-        "1Ordinators", 
-        "1thisSmatter"
+        "NAME - Topic": "0131083A", 
+        "NAME - Topic": "01310B0A", 
+        "NAME - Topic": "0131104D"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You have already given me the forged land deed. I will make sure the Ordinators investigate this matter.", 
             "NAM2 - Actor notes": ""
@@ -31,20 +34,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 54.9999998611383, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHReplaceDocs", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 55.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHReplaceDocs "House Hlaalu: Erroneous Documents" [QUST:0100346B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0rovoneSarvel", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0rovoneSarvel "Rovone Arvel" [NPC_:0126039C]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -53,7 +60,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

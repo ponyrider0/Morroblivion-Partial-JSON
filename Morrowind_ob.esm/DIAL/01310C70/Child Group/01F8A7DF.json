@@ -1,24 +1,27 @@
 {
-    "Topic": "1Orders", 
+    "Topic": "1Orders [DIAL:01310C70]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 351, 
         "Record Flags": {}, 
-        "FormID": "01F8A7DF"
+        "FormID": "01F8A7DF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGAdvancement", 
+    "QSTI - Quest": "fbmwFGAdvancement [QUST:01010566]", 
     "PNAM - Previous INFO": "01F8A7DE", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 46 47", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 46 47"
             }, 
             "NAM1 - Response Text": "I need someone to get a load of sujamma to the Dunirai Caverns.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGCorprusStalker", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGCorprusStalker "Fighters Guild: Berwen's Stalker" [QUST:010033D3]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGTenimBounty", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGTenimBounty "Fighters Guild: Tenim's Bounty" [QUST:010033EB]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hrundi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hrundi "Hrundi" [NPC_:012601BA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,13 +65,13 @@
             "RefCount": 2, 
             "CompiledSize": 18, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
         "SCTX - Result script source": "addtopic 1duniraiscaverns\r\nstartquest fbmwfgduniraisupply", 
         "References": [
-            "1DuniraiSCaverns", 
-            "fbmwFGDuniraiSupply"
+            "SCRO - Global Reference": "1DuniraiSCaverns [DIAL:0131089D]", 
+            "SCRO - Global Reference": "fbmwFGDuniraiSupply [QUST:010033D8]"
         ]
     }
 }

@@ -1,15 +1,17 @@
 {
     "Record Header": {
         "Signature": "SPEL", 
+        "Data Size": 109, 
         "Record Flags": {}, 
-        "FormID": "01060004"
+        "FormID": "01060004", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0immuneStoSpoison", 
     "FULL - Name": "Immune to Poison", 
-    "SPIT - ": {
-        "Type": 4, 
-        "Cost": 0, 
-        "Level": 0, 
+    "SPIT - SPIT": {
+        "Type": "00000004", 
+        "Cost": "00000000", 
+        "Level": "00000000", 
         "Flags": {
             "Manual Spell Cost": true
         }, 
@@ -17,14 +19,14 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1330664274, 
-            "EFIT - ": {
-                "Magic effect name": 1330664274, 
+            "EFID - Magic effect name": "RSPO", 
+            "EFIT - EFIT": {
+                "Magic effect name": "RSPO", 
                 "Magnitude": 100, 
                 "Area": 0, 
                 "Duration": 1, 
-                "Type": 0, 
-                "Actor Value": 67
+                "Type": "Self:0", 
+                "Actor Value": "Resist Poison:67"
             }
         }
     ]

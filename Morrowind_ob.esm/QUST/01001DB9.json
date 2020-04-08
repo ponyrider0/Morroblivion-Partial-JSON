@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 2750, 
         "Record Flags": {}, 
-        "FormID": "01001DB9"
+        "FormID": "01001DB9", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMQ04", 
-    "SCRI - Script": "fbmwMQ04DayTimer", 
+    "SCRI - Script": "fbmwMQ04DayTimer [SCPT:0101DD25]", 
     "FULL - Name": "Vivec Informants", 
-    "ICON - Icon filename": "darthsouth\\Quests\\morrowindmainquest.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\morrowindmainquest.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 90
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -43,16 +49,16 @@
                             "RefCount": 5, 
                             "CompiledSize": 45, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 58 10 05 00 01 00 72 04 00 58 10 05 00 01 00 72 05 00", 
                         "SCTX - Result script source": "addtopic 1addhiranirr\r\naddtopic 1watchedsbysordinators\r\naddtopic 1argonians\r\naddtopic 1persecutionsofsthesnerevarine\r\naddtopic 1ashlanders", 
                         "References": [
-                            "1Addhiranirr", 
-                            "1watchedSbySOrdinators", 
-                            "1Argonians", 
-                            "1persecutionSofStheSNerevarine", 
-                            "1Ashlanders"
+                            "SCRO - Global Reference": "1Addhiranirr [DIAL:01310A66]", 
+                            "SCRO - Global Reference": "1watchedSbySOrdinators [DIAL:013106D4]", 
+                            "SCRO - Global Reference": "1Argonians [DIAL:01310B60]", 
+                            "SCRO - Global Reference": "1persecutionSofStheSNerevarine [DIAL:01310663]", 
+                            "SCRO - Global Reference": "1Ashlanders [DIAL:01310AED]"
                         ]
                     }
                 }
@@ -72,14 +78,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 210, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 5A 00 01 00 56 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 56 69 76 65 63 20 49 6E 66 6F 72 6D 61 6E 74 73 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "Player.RemoveItem 0bkUA1U7UHuleeyaInformant 1\r\nPlayer.RemoveItem 0bkUprogressoftruth 1\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
+                        "SCTX - Result script source": "Player.RemoveItem 0bkUA1U7UHuleeyaInformant 1\r\nPlayer.RemoveItem 0bkUprogressoftruth 1\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
                         "References": [
-                            20, 
-                            "0bkUA1U7UHuleeyaInformant", 
-                            "0bkUprogressoftruth"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0bkUA1U7UHuleeyaInformant [BOOK:011800F2]", 
+                            "SCRO - Global Reference": "0bkUprogressoftruth [BOOK:011800AE]"
                         ]
                     }
                 }
@@ -99,10 +105,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 174, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 5A 00 01 00 56 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 56 69 76 65 63 20 49 6E 66 6F 72 6D 61 6E 74 73 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Vivec Informants quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
                     }
                 }
             ]
@@ -111,26 +117,30 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwJobashaREF", 
+                "Target": "0183541A", 
                 "Flags": {}, 
                 "Unused": "00 0C 11"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 17.9999999545544, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04c", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 18.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04c "Huleeya Informant" [QUST:01001DBC]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -142,86 +152,102 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 59.9999998485146, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 60.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04b "Addhiranirr Informant" [QUST:01001DBB]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04b", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "20", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 45.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04b "Addhiranirr Informant" [QUST:01001DBB]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "fbmehramiloref", 
+                "Target": "0184800B", 
                 "Flags": {}, 
                 "Unused": "00 0C 11"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04a", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 50.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04a "Milo Informant" [QUST:01F0A290]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwHuleeyaREF", 
+                "Target": "01835300", 
                 "Flags": {}, 
                 "Unused": "00 0C 11"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 49.9999998737621, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04c", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 50.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04c "Huleeya Informant" [QUST:01001DBC]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 32, 
-                    "Unused": 0, 
-                    "Comparison Value": 17.9999999545544, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ04c", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "20", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 18.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ04c "Huleeya Informant" [QUST:01001DBC]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

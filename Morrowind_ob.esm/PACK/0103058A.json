@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 129, 
         "Record Flags": {}, 
-        "FormID": "0103058A"
+        "FormID": "0103058A", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwbmmissionarymirisafollow", 
     "PKDT - General": {
@@ -15,7 +17,7 @@
                 "Always run": true, 
                 "Defensive combat": true
             }, 
-            "Type": 1, 
+            "Type": "01", 
             "Unused": "00 00 00"
         }
     }, 
@@ -25,25 +27,27 @@
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "PTDT - Target": {
         "Type": 1, 
-        "Target": "Player", 
+        "Target": "00000007", 
         "Count": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwBMMissionary", 
-            "Parameter #2": 1
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMissionary "The Missing Missionary" [QUST:0101B6CC]", 
+            "Parameter #2": "follownow", 
+            "Unused": "00000000"
         }
     ]
 }

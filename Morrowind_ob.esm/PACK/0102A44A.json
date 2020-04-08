@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 131, 
         "Record Flags": {}, 
-        "FormID": "0102A44A"
+        "FormID": "0102A44A", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwvarvurgotoroom", 
     "PKDT - General": {
@@ -13,38 +15,42 @@
                 "Continue if PC near": true, 
                 "Skip fallout behavior": true
             }, 
-            "Type": 6, 
+            "Type": "06", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 0, 
-        "Location": "fbmwHRRescueSarethiFinishMarker", 
+        "Location": "0100542A", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRRescueSarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRRescueSarethi "House Redoran: Rescue Varvur Sarethi" [QUST:01005198]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 109.999999722277, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRClearSarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 110.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRClearSarethi "House Redoran: Clear Varvur Sarethi's Name" [QUST:0100431A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

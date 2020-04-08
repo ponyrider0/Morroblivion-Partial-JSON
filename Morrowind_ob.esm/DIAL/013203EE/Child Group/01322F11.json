@@ -1,27 +1,30 @@
 {
-    "Topic": "1murderSofSProcessusSVitellius3", 
+    "Topic": "1murderSofSProcessusSVitellius3 [DIAL:013203EE]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 372, 
         "Record Flags": {}, 
-        "FormID": "01322F11"
+        "FormID": "01322F11", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMVDeadTaxman", 
+    "QSTI - Quest": "fbmwMVDeadTaxman [QUST:01003404]", 
     "PNAM - Previous INFO": "01322F01", 
     "Add topics": [
-        "1Imperial"
+        "NAME - Topic": "01310C02"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You've already spent it? That's not good to hear. That was Imperial tax money, after all. You'd do well to get that money back and return it to me.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0chargenSclass", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0chargenSclass "Socucius Ergalla" [NPC_:01260465]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,12 +58,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 2D 00 00 00", 
         "SCTX - Result script source": "setstage FBMWMVDeadTaxman 45", 
         "References": [
-            "fbmwMVDeadTaxman"
+            "SCRO - Global Reference": "fbmwMVDeadTaxman [QUST:01003404]"
         ]
     }
 }

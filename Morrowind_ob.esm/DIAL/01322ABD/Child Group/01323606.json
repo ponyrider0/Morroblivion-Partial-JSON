@@ -1,56 +1,61 @@
 {
-    "Topic": "1Nerevar1", 
+    "Topic": "1Nerevar1 [DIAL:01322ABD]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 859, 
         "Record Flags": {}, 
-        "FormID": "01323606"
+        "FormID": "01323606", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01323605", 
     "Add topics": [
-        "1Dunmer", 
-        "1RedSMountain", 
-        "1theSDwemer", 
-        "1outlander", 
-        "1GreatSHouses", 
-        "1Nerevar", 
-        "1Nerevar", 
-        "1Nerevar", 
-        "1FalseSGods", 
-        "1ring"
+        "NAME - Topic": "01310CA1", 
+        "NAME - Topic": "013109E5", 
+        "NAME - Topic": "01310B13", 
+        "NAME - Topic": "01310B78", 
+        "NAME - Topic": "013109E3", 
+        "NAME - Topic": "01310C21", 
+        "NAME - Topic": "01310C21", 
+        "NAME - Topic": "01310C21", 
+        "NAME - Topic": "01310B0E", 
+        "NAME - Topic": "01310D13"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Though many Dunmer, Tribesman and Houseman, died at Red Mountain, the Dwemer were defeated and their evil magicks destroyed, and the outlanders driven from the land.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "But after this great victory, the power-hungry khans of the Great Houses slew Nerevar in secret, set themselves up as gods, and forgot Nerevar's promises to the Tribes.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "But Nerevar will come again and cast down the false gods, and by the power of his ring will make good his promises, honor the Spirits, and drive the outsiders from the land.", 
             "NAM2 - Actor notes": ""
@@ -58,28 +63,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0Ashlanders", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Ashlanders "Ashlanders" [FACT:01220009]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -88,7 +99,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,14 +1,16 @@
 {
     "Record Header": {
         "Signature": "ENCH", 
+        "Data Size": 126, 
         "Record Flags": {}, 
-        "FormID": "01040252"
+        "FormID": "01040252", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0weUstormforgeUen", 
-    "ENIT - ": {
-        "Type": 2, 
-        "Charge Amount": 107, 
-        "Enchant Cost": 50, 
+    "ENIT - ENIT": {
+        "Type": "00000002", 
+        "Charge Amount": "0000006B", 
+        "Enchant Cost": "00000032", 
         "Flags": {
             "Manual Enchant Cost (Autocalc Off)": true
         }, 
@@ -16,25 +18,25 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1195657299, 
-            "EFIT - ": {
-                "Magic effect name": 1195657299, 
+            "EFID - Magic effect name": "SHDG", 
+            "EFIT - EFIT": {
+                "Magic effect name": "SHDG", 
                 "Magnitude": 20, 
                 "Area": 0, 
                 "Duration": 1, 
-                "Type": 1, 
-                "Actor Value": 8
+                "Type": "Touch:1", 
+                "Actor Value": "Health:8"
             }
         }, 
         {
-            "EFID - Magic effect name": 1213417804, 
-            "EFIT - ": {
-                "Magic effect name": 1213417804, 
+            "EFID - Magic effect name": "LISH", 
+            "EFIT - EFIT": {
+                "Magic effect name": "LISH", 
                 "Magnitude": 50, 
                 "Area": 0, 
                 "Duration": 5, 
-                "Type": 0, 
-                "Actor Value": 68
+                "Type": "Self:0", 
+                "Actor Value": "Resist Shock:68"
             }
         }
     ]

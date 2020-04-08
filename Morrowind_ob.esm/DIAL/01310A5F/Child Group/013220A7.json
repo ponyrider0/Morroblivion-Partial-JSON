@@ -1,27 +1,30 @@
 {
-    "Topic": "1Advancement", 
+    "Topic": "1Advancement [DIAL:01310A5F]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 225, 
         "Record Flags": {}, 
-        "FormID": "013220A7"
+        "FormID": "013220A7", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGAdvancement", 
+    "QSTI - Quest": "fbmwFGAdvancement [QUST:01010566]", 
     "PNAM - Previous INFO": "013220A6", 
     "Add topics": [
-        "1Guildmaster"
+        "NAME - Topic": "01310A6A"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You are the Guildmaster. There are none higher in rank than you.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 8.99999997727718, 
-            "Function": 73, 
-            "Parameter #1": "fbmwFightersGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 9.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFightersGuild "Fighters Guild" [FACT:0100761A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "fbmwFightersGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFightersGuild "Fighters Guild" [FACT:0100761A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,7 +58,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

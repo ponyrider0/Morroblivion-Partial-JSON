@@ -1,24 +1,27 @@
 {
-    "Topic": "1Writ", 
+    "Topic": "1Writ [DIAL:01310D00]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 513, 
         "Record Flags": {}, 
-        "FormID": "01F2A492"
+        "FormID": "01F2A492", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMTAdvancement", 
+    "QSTI - Quest": "fbmwMTAdvancement [QUST:01010565]", 
     "PNAM - Previous INFO": "01F2A491", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "61 6C 65", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "61 6C 65"
             }, 
             "NAM1 - Response Text": "There are two outstanding Writs. One on Guril Retheran and one on Galasa Uvayn.", 
             "NAM2 - Actor notes": ""
@@ -26,44 +29,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritVendu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritVendu "Morag Tong: Writ for Ethal Seloth and Idroso Vendu" [QUST:0100B844]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritSadus", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritSadus "Morag Tong: Writ for Sarayn Sadus" [QUST:0100B840]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "0MoragSTong", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "0MoragSTong "Morag Tong" [FACT:01220008]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritYasalmibaal", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritYasalmibaal "Morag Tong: Writ for Odaishah Yasalmibaal" [QUST:0100B845]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMTWritSaren", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMTWritSaren "Morag Tong: Writ for Toris Saren" [QUST:0100B841]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -72,15 +85,15 @@
             "RefCount": 4, 
             "CompiledSize": 36, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00 36 10 05 00 01 00 72 04 00", 
         "SCTX - Result script source": "addtopic 1GurilSRetheran\r\nstartquest fbmwMTWritGuril\r\naddtopic 1GalasaSUvayn\r\nstartquest fbmwMTWritGalasa", 
         "References": [
-            "1GurilSRetheran", 
-            "fbmwMTWritGuril", 
-            "1GalasaSUvayn", 
-            "fbmwMTWritGalasa"
+            "SCRO - Global Reference": "1GurilSRetheran [DIAL:0131090A]", 
+            "SCRO - Global Reference": "fbmwMTWritGuril [QUST:0100B83B]", 
+            "SCRO - Global Reference": "1GalasaSUvayn [DIAL:01310A0D]", 
+            "SCRO - Global Reference": "fbmwMTWritGalasa [QUST:0100B83A]"
         ]
     }
 }

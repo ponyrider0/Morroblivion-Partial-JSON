@@ -1,24 +1,27 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 323, 
         "Record Flags": {}, 
-        "FormID": "01F88769"
+        "FormID": "01F88769", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSGreetings", 
+    "QSTI - Quest": "fbmwMSGreetings [QUST:01F2A564]", 
     "PNAM - Previous INFO": "01F88768", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 69 6D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 69 6D"
             }, 
             "NAM1 - Response Text": "Hello, my dear. Nels Llendo at your service.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMVCharming", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMVCharming "Nels Llendo" [QUST:010033FC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 131, 
-            "Parameter #1": 0, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetPCIsSex:131", 
+            "Unused": "00 00", 
+            "Parameter #1": "Male", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0nelsSllendo", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0nelsSllendo "Nels Llendo" [NPC_:0126058E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,13 +65,13 @@
             "RefCount": 2, 
             "CompiledSize": 18, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 36 10 05 00 01 00 72 02 00", 
         "SCTX - Result script source": "addtopic 1nelssllendo\r\nstartquest fbmwmvcharming", 
         "References": [
-            "1NelsSLlendo", 
-            "fbmwMVCharming"
+            "SCRO - Global Reference": "1NelsSLlendo [DIAL:01310A83]", 
+            "SCRO - Global Reference": "fbmwMVCharming [QUST:010033FC]"
         ]
     }
 }

@@ -1,68 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 68, 
         "Record Flags": {}, 
-        "FormID": "0132238F"
+        "FormID": "0132238F", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1BlackSJinx3", 
     "Quests": [
-        "fbmwHTBlackJinx"
+        "QSTI - Quest": "fbmwHTBlackJinx [QUST:01003435]"
     ], 
     "FULL - Name": "Yes, teach me the spells.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1BlackSJinx3", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323558"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTBlackJinx", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Very well. [Raven teaches you how to demoralize your opponents.] If you want more chores, speak with the other Mouths.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ravenSomayn", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 26, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 1C 10 05 00 01 00 72 02 00 1C 00 01 00 1C 10 05 00 01 00 72 03 00", 
-                "SCTX - Result script source": "Player.AddSpell 0DemoralizeSCreature\r\nPlayer.AddSpell 0DemoralizeSHumanoid", 
-                "References": [
-                    20, 
-                    "0demoralizeScreature", 
-                    "0demoralizeShumanoid"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

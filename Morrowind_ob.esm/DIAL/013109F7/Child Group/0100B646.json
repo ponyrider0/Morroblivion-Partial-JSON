@@ -1,24 +1,27 @@
 {
-    "Topic": "1RovoneSArvel", 
+    "Topic": "1RovoneSArvel [DIAL:013109F7]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 272, 
         "Record Flags": {}, 
-        "FormID": "0100B646"
+        "FormID": "0100B646", 
+        "Version Control Info": "18 12 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHRentCollector", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwHHRentCollector [QUST:0100346A]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Rovone Arvel owns this land. Odral's just the caretaker. Not even Rovone Arvel would expect a farmer to pay fifty drakes.", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHHRentCollector", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHRentCollector "House Hlaalu: Rent and Taxes" [QUST:0100346A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0manatSvarnanTadda", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0manatSvarnanTadda "Manat Varnan-Adda" [NPC_:0126039A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,7 +55,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

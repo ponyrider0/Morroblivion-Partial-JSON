@@ -1,34 +1,38 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 447, 
         "Record Flags": {}, 
-        "FormID": "01F819AF"
+        "FormID": "01F819AF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICAdvancement", 
+    "QSTI - Quest": "fbmwICAdvancement [QUST:01010564]", 
     "PNAM - Previous INFO": "01F82B13", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "65 73 55", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "65 73 55"
             }, 
             "NAM1 - Response Text": "Hello, outlander. My name is Kaye, and I'm in charge of the volunteer shrine sergeants for the cult.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "65 73 55", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "65 73 55"
             }, 
             "NAM1 - Response Text": "Are you ready for a shrine sergeant assignment?", 
             "NAM2 - Actor notes": ""
@@ -36,33 +40,39 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwICMissingLimeware", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwICMissingLimeware "Imperial Cult: Missing Limeware" [QUST:0100B81D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 132, 
-            "Parameter #1": "0ImperialSCult", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCInFaction:132", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ImperialSCult "Imperial Cult" [FACT:01220003]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0Kaye", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Kaye "Kaye" [NPC_:012602E6]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwickayeworkno", 
-        "fbmwickayeworkyes"
+        "TCLT - Choice": "fbmwickayeworkno [DIAL:01F8A931]", 
+        "TCLT - Choice": "fbmwickayeworkyes [DIAL:01F8A92F]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -70,12 +80,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "startquest fbmwicmissinglimeware", 
         "References": [
-            "fbmwICMissingLimeware"
+            "SCRO - Global Reference": "fbmwICMissingLimeware [QUST:0100B81D]"
         ]
     }
 }

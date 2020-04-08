@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 103, 
         "Record Flags": {}, 
-        "FormID": "010054FA"
+        "FormID": "010054FA", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwHHOdirniranLeave", 
     "PKDT - General": {
@@ -12,30 +14,32 @@
                 "Must complete": true, 
                 "Skip fallout behavior": true
             }, 
-            "Type": 6, 
+            "Type": "06", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 0, 
-        "Location": "mwOdirniranMapMarker", 
+        "Location": "01005F92", 
         "Radius": 0
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwHHOdirniran", 
-            "Parameter #2": 3
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHHOdirniran "House Hlaalu: Telvanni at Odirniran" [QUST:01003469]", 
+            "Parameter #2": "LeaveOdirniran", 
+            "Unused": "00000000"
         }
     ]
 }

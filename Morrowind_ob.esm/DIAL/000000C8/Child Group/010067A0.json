@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 211, 
         "Record Flags": {}, 
-        "FormID": "010067A0"
+        "FormID": "010067A0", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwFGBigBosses", 
+    "QSTI - Quest": "fbmwFGBigBosses [QUST:010033D2]", 
     "PNAM - Previous INFO": "0100CE5A", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 1, 
+                "Emotion Type": "00000001", 
                 "Emotion Value": 50, 
-                "Unused": "6F 53 56", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 53 56"
             }, 
             "NAM1 - Response Text": "Die, thief!", 
             "NAM2 - Actor notes": ""
@@ -28,20 +31,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 109.999999722277, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGBigBosses", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 110.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGBigBosses "Fighters Guild: Kill the Master Thief" [QUST:010033D2]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0sjoringShardTheart", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0sjoringShardTheart "Sjoring Hard-Heart" [NPC_:0126026A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -50,12 +57,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "16 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "startcombat player", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

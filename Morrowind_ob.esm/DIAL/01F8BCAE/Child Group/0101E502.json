@@ -1,36 +1,40 @@
 {
-    "Topic": "fbmwtr09SirRobinApproach", 
+    "Topic": "fbmwtr09SirRobinApproach [DIAL:01F8BCAE]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 484, 
         "Record Flags": {}, 
-        "FormID": "0101E502"
+        "FormID": "0101E502", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwTRDBAttack", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwTRDBAttack [QUST:0101C653]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "'Honest.' So you expect me to trust you? My experiences with trusting adventurers like you have been disappointing in the past.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "But... this time, you may go. I'd like to preserve our secret office... but I won't kill you to do it. Just go... and keep your mouth shut.", 
             "NAM2 - Actor notes": ""
@@ -38,12 +42,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0TrelsSVaris", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0TrelsSVaris "Trels Varis" [NPC_:01260AC5]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -52,12 +58,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E EC FF FF FF", 
         "SCTX - Result script source": "moddisposition player -20", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

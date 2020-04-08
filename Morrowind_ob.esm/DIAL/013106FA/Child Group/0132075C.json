@@ -1,27 +1,30 @@
 {
-    "Topic": "1respectSHouseSHlaalu", 
+    "Topic": "1respectSHouseSHlaalu [DIAL:013106FA]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 327, 
         "Record Flags": {}, 
-        "FormID": "0132075C"
+        "FormID": "0132075C", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHHNordSmugglers", 
+    "QSTI - Quest": "fbmwHHNordSmugglers [QUST:01003468]", 
     "PNAM - Previous INFO": "0100CBBE", 
     "Add topics": [
-        "1HouseSHlaalu"
+        "NAME - Topic": "013109F6"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Alright. I'll pay House Hlaalu the proper respects. But you better carry out your side of the deal.", 
             "NAM2 - Actor notes": ""
@@ -29,20 +32,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 74.9999998106432, 
-            "Function": 76, 
-            "Parameter #1": 0, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 75.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "TARGET - Target Reference [00000000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0velfred", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0velfred "Velfred the Outlaw" [NPC_:012602A1]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -51,12 +58,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00", 
         "SCTX - Result script source": "SetStage fbmwHHNordSmugglers 50", 
         "References": [
-            "fbmwHHNordSmugglers"
+            "SCRO - Global Reference": "fbmwHHNordSmugglers [QUST:01003468]"
         ]
     }
 }

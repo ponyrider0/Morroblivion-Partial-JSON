@@ -1,32 +1,38 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 7255, 
         "Record Flags": {}, 
-        "FormID": "01001DBE"
+        "FormID": "01001DBE", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMQ06", 
     "FULL - Name": "Meet Sul-Matuul", 
-    "ICON - Icon filename": "darthsouth\\Quests\\morrowindmainquest.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\morrowindmainquest.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 90
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -42,33 +48,33 @@
                             "RefCount": 22, 
                             "CompiledSize": 221, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E C8 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 8A 10 0A 00 02 00 72 04 00 6E 01 00 00 00 0D 11 0A 00 02 00 72 05 00 6E 00 00 00 00 55 10 05 00 01 00 72 06 00 58 10 05 00 01 00 72 07 00 58 10 05 00 01 00 72 08 00 58 10 05 00 01 00 72 09 00 58 10 05 00 01 00 72 0A 00 58 10 05 00 01 00 72 0B 00 58 10 05 00 01 00 72 0C 00 58 10 05 00 01 00 72 0D 00 58 10 05 00 01 00 72 0E 00 58 10 05 00 01 00 72 0F 00 58 10 05 00 01 00 72 10 00 58 10 05 00 01 00 72 11 00 58 10 05 00 01 00 72 12 00 58 10 05 00 01 00 72 13 00 58 10 05 00 01 00 72 14 00 58 10 05 00 01 00 72 15 00 58 10 05 00 01 00 72 16 00", 
                         "SCTX - Result script source": "player.additem gold001 200\r\nplayer.additem 0bkua1u1upackagedecoded 1\r\nPlayer.modFactionRank 0blades, 1\r\nSetQuestObject 0bkUa1U11Uzainsubaninotes 0\r\nShowMap mwUrshilakuCampMapMarker\r\n\r\nAddTopic 1firststrial\r\nAddTopic 1secondstrial\r\nAddTopic 1thirdstrial\r\nAddTopic 1fourthstrial\r\nAddTopic 1fifthstrial\r\nAddTopic 1sixthstrial\r\nAddTopic 1seventhstrial\r\nAddTopic 1talk\r\nAddTopic 1nerevarinesprophecies\r\nAddTopic 1aspectSandSuncertainSparents\r\nAddTopic 1lostSprophecies\r\nAddTopic 1passStheStest\r\nAddTopic 1Sleepers\r\nAddTopic 1theSmoonTandTstar\r\nAddTopic 1theSSevenSVisions\r\nAddTopic 1theSStranger", 
                         "References": [
-                            20, 
-                            "Gold001", 
-                            "0bkUa1U1Upackagedecoded", 
-                            "0Blades", 
-                            "0bkUa1U11Uzainsubaninotes", 
-                            "mwUrshilakuCampMapMarker", 
-                            "1FirstStrial", 
-                            "1SecondStrial", 
-                            "1ThirdStrial", 
-                            "1FourthStrial", 
-                            "1FifthStrial", 
-                            "1SixthStrial", 
-                            "1SeventhStrial", 
-                            "1Talk", 
-                            "1NerevarineSprophecies", 
-                            "1aspectSandSuncertainSparents", 
-                            "1lostSprophecies", 
-                            "1passStheStest", 
-                            "1Sleepers", 
-                            "1theSmoonTandTstar", 
-                            "1theSSevenSVisions", 
-                            "1theSStranger"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "Gold001 [MISC:0000000F]", 
+                            "SCRO - Global Reference": "0bkUa1U1Upackagedecoded [BOOK:01180162]", 
+                            "SCRO - Global Reference": "0Blades [FACT:0122000A]", 
+                            "SCRO - Global Reference": "0bkUa1U11Uzainsubaninotes [BOOK:01180100]", 
+                            "SCRO - Global Reference": "mwUrshilakuCampMapMarker [REFR:0100DC88]", 
+                            "SCRO - Global Reference": "1FirstStrial [DIAL:01310A6E]", 
+                            "SCRO - Global Reference": "1SecondStrial [DIAL:013109F0]", 
+                            "SCRO - Global Reference": "1ThirdStrial [DIAL:01310A6F]", 
+                            "SCRO - Global Reference": "1FourthStrial [DIAL:013109F1]", 
+                            "SCRO - Global Reference": "1FifthStrial [DIAL:01310A70]", 
+                            "SCRO - Global Reference": "1SixthStrial [DIAL:01310A71]", 
+                            "SCRO - Global Reference": "1SeventhStrial [DIAL:0131096E]", 
+                            "SCRO - Global Reference": "1Talk [DIAL:01310CF8]", 
+                            "SCRO - Global Reference": "1NerevarineSprophecies [DIAL:013106D3]", 
+                            "SCRO - Global Reference": "1aspectSandSuncertainSparents [DIAL:01310667]", 
+                            "SCRO - Global Reference": "1lostSprophecies [DIAL:01310875]", 
+                            "SCRO - Global Reference": "1passStheStest [DIAL:013109BB]", 
+                            "SCRO - Global Reference": "1Sleepers [DIAL:01310BD0]", 
+                            "SCRO - Global Reference": "1theSmoonTandTstar [DIAL:013107BE]", 
+                            "SCRO - Global Reference": "1theSSevenSVisions [DIAL:013107BF]", 
+                            "SCRO - Global Reference": "1theSStranger [DIAL:013109EE]"
                         ]
                     }
                 }
@@ -86,7 +92,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -104,7 +110,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -122,7 +128,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -140,7 +146,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -158,7 +164,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -176,7 +182,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -194,7 +200,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -212,13 +218,13 @@
                             "RefCount": 2, 
                             "CompiledSize": 18, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 00 00 00 00", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Ashlanders 0", 
                         "References": [
-                            20, 
-                            "0Ashlanders"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Ashlanders [FACT:01220009]"
                         ]
                     }
                 }
@@ -236,7 +242,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -254,7 +260,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -272,7 +278,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -290,7 +296,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -308,7 +314,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -326,7 +332,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -346,10 +352,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 173, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 59 00 01 00 55 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 4D 65 65 74 20 53 75 6C 2D 4D 61 74 75 75 6C 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 35 30 19 00 00 00", 
-                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Meet Sul-Matuul quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
+                        "SCTX - Result script source": "if ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Meet Sul-Matuul quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 150\"\r\nendif"
                     }
                 }
             ]
@@ -358,158 +364,186 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwSulMatuulREF", 
+                "Target": "01823CAF", 
                 "Flags": {}, 
                 "Unused": "00 41 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 40.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 45.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmwMQ06Bonebiter", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06Bonebiter "Bonebiter Bow of Sul-Senipul" [WEAP:0101D5D3]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwNibaniMaesaREF", 
+                "Target": "0181FC17", 
                 "Flags": {}, 
                 "Unused": "00 41 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 45.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwSulSenipulWraithRef", 
+                "Target": "0101E4C3", 
                 "Flags": {}, 
                 "Unused": "00 41 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 40.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 44.9999998863859, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 45.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmwMQ06Bonebiter", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06Bonebiter "Bonebiter Bow of Sul-Senipul" [WEAP:0101D5D3]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwSulMatuulREF", 
+                "Target": "01823CAF", 
                 "Flags": {}, 
                 "Unused": "00 41 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 34.9999999116335, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 35.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwwZabamundREF", 
+                "Target": "0181FCDC", 
                 "Flags": {}, 
                 "Unused": "00 41 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -521,20 +555,24 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -546,20 +584,24 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -571,20 +613,24 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -596,20 +642,24 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwMQ06", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMQ06 "Meet Sul-Matuul" [QUST:01001DBE]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

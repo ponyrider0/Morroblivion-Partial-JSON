@@ -1,68 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 65, 
         "Record Flags": {}, 
-        "FormID": "01F8A98E"
+        "FormID": "01F8A98E", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwvachildyes", 
     "Quests": [
-        "fbmwVAVampChild"
+        "QSTI - Quest": "fbmwVAVampChild [QUST:01003BCA]"
     ], 
     "FULL - Name": "I'll take it to him.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "fbmwvachildyes", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A98F"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwVAVampChild", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 56 41", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Here you go. Don't know where you'd find him, though. He wandered in here last week and said he'd be back soon. Who knows, though? Could be months before he returns. Better you find him yourself.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tusamircil", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 42 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 03 00 6E 01 00 00 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwvavampchild 66\r\nplayer.additem 0pusinyaramenuunique 1\r\nremoveitem 0pusinyaramenuunique 1", 
-                "References": [
-                    20, 
-                    "fbmwVAVampChild", 
-                    "0pUsinyaramenUUNIQUE"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

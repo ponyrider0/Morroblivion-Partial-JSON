@@ -1,150 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 54, 
         "Record Flags": {}, 
-        "FormID": "01310ACF"
+        "FormID": "01310ACF", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1bureaucracy", 
     "Quests": [
-        "fbmwEBTradeSpy"
+        "QSTI - Quest": "fbmwEBTradeSpy [QUST:01003426]"
     ], 
     "FULL - Name": "Bureaucracy", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1bureaucracy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8AB22"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBTradeSpy", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "76 75 72", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "I really want to learn more about how they're setting the prices.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mevureShlen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 29.9999999242573, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwEBTradeSpy", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 160, 
-                    "Unused": 0, 
-                    "Comparison Value": 39.9999998990097, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwEBTradeSpy", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }, 
-        {
-            "Topic": "1bureaucracy", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8AB23"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwEBTradeSpy", 
-            "PNAM - Previous INFO": "01F8AB22", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 45 42", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "It's ridiculous. Their ships are searched by the Duke's men, and are often held in customs for weeks at a time. Of course, the Company's boats aren't subject to the same scrutiny.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "77 45 42", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "I don't know what part the Duke is playing in this, but I'd certainly like to find out.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0mevureShlen", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwEBTradeSpy", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1bureaucracy1", 
-                "1bureaucracy2"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 1, 
-                    "CompiledSize": 14, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 14 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwebtradespy 20", 
-                "References": [
-                    "fbmwEBTradeSpy"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,77 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 66, 
         "Record Flags": {}, 
-        "FormID": "01322171"
+        "FormID": "01322171", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1NordSwoman2", 
     "Quests": [
-        "fbmwMVBanditVictim"
+        "QSTI - Quest": "fbmwMVBanditVictim [QUST:010033FF]"
     ], 
     "FULL - Name": "I just want the jewels.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1NordSwoman2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "013234FD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMVBanditVictim", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Nothing else to say? Then as far as I'm concerned, you're just another victim, trespassing on my property. You'd better leave. Now.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0droAzhirr", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 3C 00 00 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 0F 10 09 00 02 00 21 00 6E 64 00 00 00 16 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "SetStage fbmwMVBanditVictim 60\r\nModDisposition Player -100\r\nSetAV Aggression 100\r\nStartCombat Player", 
-                "References": [
-                    "fbmwMVBanditVictim", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

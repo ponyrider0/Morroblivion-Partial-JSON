@@ -1,39 +1,43 @@
 {
-    "Topic": "1KingSLlethanAsSdeath", 
+    "Topic": "1KingSLlethanAsSdeath [DIAL:01310FAD]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 637, 
         "Record Flags": {}, 
-        "FormID": "013207C0"
+        "FormID": "013207C0", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTR05People", 
+    "QSTI - Quest": "fbmwTR05People [QUST:0101C64A]", 
     "PNAM - Previous INFO": "013207BF", 
     "Add topics": [
-        "1ancestors", 
-        "1Dunmer", 
-        "1theSEmpire"
+        "NAME - Topic": "01310BAC", 
+        "NAME - Topic": "01310CA1", 
+        "NAME - Topic": "01310B44"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "May his spirit rest among his ancestors. But he was king in name only.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The Dunmer do not, and never have, submitted to kings like the Westerners, regardless of what the Empire says.", 
             "NAM2 - Actor notes": ""
@@ -41,84 +45,104 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 77, 
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetRandomPercent:77", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 69, 
-            "Parameter #1": "DarkElf", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsRace:69", 
+            "Unused": "00 00", 
+            "Parameter #1": "DarkElf "Dark Elf" [RACE:000191C1]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 70, 
-            "Parameter #1": 1, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsSex:70", 
+            "Unused": "00 00", 
+            "Parameter #1": "Female", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "Mournhold", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "Mournhold "Mournhold" [CELL:014804C8]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 310, 
-            "Parameter #1": "WChildMournholdVSTempleSCourtyard", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInWorldspace:310", 
+            "Unused": "00 00", 
+            "Parameter #1": "WChildMournholdVSTempleSCourtyard "Mournhold, Temple Courtyard" [WRLD:01380060]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 310, 
-            "Parameter #1": "WChildMournholdVSGreatSBazaar", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInWorldspace:310", 
+            "Unused": "00 00", 
+            "Parameter #1": "WChildMournholdVSGreatSBazaar "Mournhold, Great Bazaar" [WRLD:01380030]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 310, 
-            "Parameter #1": "WChildMournholdVSGodsreach", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInWorldspace:310", 
+            "Unused": "00 00", 
+            "Parameter #1": "WChildMournholdVSGodsreach "Mournhold, Godsreach" [WRLD:01380020]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 310, 
-            "Parameter #1": "WChildMournholdVSRoyalSPalaceXSCourtyard", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInWorldspace:310", 
+            "Unused": "00 00", 
+            "Parameter #1": "WChildMournholdVSRoyalSPalaceXSCourtyard "Mournhold, Royal Palace: Courtyard" [WRLD:01380050]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 310, 
-            "Parameter #1": "WChildMournholdVSPlazaSBrindisiSDorom", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInWorldspace:310", 
+            "Unused": "00 00", 
+            "Parameter #1": "WChildMournholdVSPlazaSBrindisiSDorom "Mournhold, Plaza Brindisi Dorom" [WRLD:01380040]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -127,7 +151,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

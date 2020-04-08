@@ -1,54 +1,59 @@
 {
-    "Topic": "1DisappearanceSofStheSDwarves", 
+    "Topic": "1DisappearanceSofStheSDwarves [DIAL:01310666]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 697, 
         "Record Flags": {}, 
-        "FormID": "01320407"
+        "FormID": "01320407", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1DisappearanceSofStheSDwarves", 
-        "1Imperial", 
-        "1Writ", 
-        "1Dunmer", 
-        "1theSDwemer", 
-        "1Dwarven", 
-        "1Dwemer", 
-        "1DisappearanceSofStheSDwarves"
+        "NAME - Topic": "01310666", 
+        "NAME - Topic": "01310C02", 
+        "NAME - Topic": "01310D00", 
+        "NAME - Topic": "01310CA1", 
+        "NAME - Topic": "01310B13", 
+        "NAME - Topic": "01310C33", 
+        "NAME - Topic": "01310C72", 
+        "NAME - Topic": "01310666"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "The disappearance of the Dwarves predates Imperial written records;", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Dunmer oral accounts record that the Dwemer were utterly destroyed by the gods for profane practices and impiety.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Dwarven ruins are scattered across Tamriel, and weapons, armor, housewares, coins, and other items of Dwemer design are often found, but the circumstances surrounding the disappearance of the Dwarves remains one of Tamriel's greatest mysteries.", 
             "NAM2 - Actor notes": ""
@@ -56,12 +61,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hasphatSantabolis", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hasphatSantabolis "Hasphat Antabolis" [NPC_:0126011F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -70,7 +77,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

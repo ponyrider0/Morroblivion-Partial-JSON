@@ -1,60 +1,62 @@
 {
     "Record Header": {
         "Signature": "REGN", 
+        "Data Size": 153, 
         "Record Flags": {}, 
-        "FormID": "012E0010"
+        "FormID": "012E0010", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "FiremothRegion", 
     "RCLR - Map Color": {
-        "Red": 253, 
-        "Green": 102, 
-        "Blue": 102, 
+        "Red": "FD", 
+        "Green": "66", 
+        "Blue": "66", 
         "Unused": "00"
     }, 
-    "WNAM - Worldspace": "WrldMorrowind", 
+    "WNAM - Worldspace": "01380000", 
     "Region Areas": [
         {
-            "RPLI - Edge Fall-off": 1024, 
-            "RPLD - Region Point List Data": [
-                {
-                    "X": -73727.9999998547, 
-                    "Y": -98303.9999998063
+            "RPLI - Edge Fall-off": "00000400", 
+            "RPLD - Region Point List Data": {
+                "Point #0": {
+                    "X": -49152.000000000000000, 
+                    "Y": -98304.000000000000000
                 }, 
-                {
-                    "X": -73727.9999998547, 
-                    "Y": -65535.9999995375
+                "Point #1": {
+                    "X": -49152.000000000000000, 
+                    "Y": -65536.000000000000000
                 }, 
-                {
-                    "X": -49151.9999999031, 
-                    "Y": -65535.9999995375
+                "Point #2": {
+                    "X": -73728.000000000000000, 
+                    "Y": -65536.000000000000000
                 }, 
-                {
-                    "X": -49151.9999999031, 
-                    "Y": -98303.9999998063
+                "Point #3": {
+                    "X": -73728.000000000000000, 
+                    "Y": -98304.000000000000000
                 }
-            ]
+            }
         }
     ], 
     "Region Data Entries": [
         {
             "RDAT - Data Header": {
-                "Type": 3, 
+                "Type": "00000003", 
                 "Flags": {}, 
-                "Priority": 50, 
+                "Priority": "32", 
                 "Unused": "00 00"
             }, 
-            "RDWT - Weather Types": [
-                {
-                    "Weather": "mwWeatherStorm", 
-                    "Chance": 100
+            "RDWT - Weather Types": {
+                "Weather Type": {
+                    "Weather": "0100848A", 
+                    "Chance": "00000064"
                 }
-            ]
+            }
         }, 
         {
             "RDAT - Data Header": {
-                "Type": 4, 
+                "Type": "00000004", 
                 "Flags": {}, 
-                "Priority": 50, 
+                "Priority": "32", 
                 "Unused": "00 00"
             }, 
             "RDMP - Map Name": "Firemoth Region"

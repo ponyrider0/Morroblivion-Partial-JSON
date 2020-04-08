@@ -1,13 +1,15 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 5418, 
         "Record Flags": {}, 
-        "FormID": "010037E7"
+        "FormID": "010037E7", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwHRAdvancement", 
-    "SCRI - Script": "fbmwHRAdvancementQuestScript", 
+    "SCRI - Script": "fbmwHRAdvancementQuestScript [SCPT:010037E8]", 
     "FULL - Name": "Great House Redoran", 
-    "ICON - Icon filename": "darthsouth\\Quests\\houseredoran.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\houseredoran.dds", 
     "DATA - General": {
         "Flags": {
             "Start game enabled": true, 
@@ -17,20 +19,24 @@
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -46,15 +52,15 @@
                             "RefCount": 4, 
                             "CompiledSize": 41, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 00 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30 58 10 05 00 01 00 72 04 00", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 0\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0\r\n\r\nAddTopic 1Stronghold", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement", 
-                            "1stronghold"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]", 
+                            "SCRO - Global Reference": "1stronghold [DIAL:01310B01]"
                         ]
                     }
                 }
@@ -72,7 +78,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -90,14 +96,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 01 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 1\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -115,7 +121,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -133,14 +139,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 02 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 2\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -158,7 +164,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -176,14 +182,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 03 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 3\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -201,12 +207,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 9, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00", 
                         "SCTX - Result script source": "AddTopic 1Stronghold", 
                         "References": [
-                            "1stronghold"
+                            "SCRO - Global Reference": "1stronghold [DIAL:01310B01]"
                         ]
                     }
                 }
@@ -224,14 +230,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 04 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 4\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -249,7 +255,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -267,14 +273,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 05 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 5\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -292,7 +298,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -310,14 +316,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 06 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 6\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -335,7 +341,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -353,7 +359,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -371,14 +377,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 07 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 7\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -396,7 +402,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -414,7 +420,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -432,14 +438,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 08 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 30", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 8\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 0", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -457,7 +463,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -477,14 +483,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 32, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 89 10 0A 00 02 00 72 02 00 6E 09 00 00 00 15 00 0A 00 72 03 00 73 04 00 02 00 20 35", 
                         "SCTX - Result script source": "Player.SetFactionRank 0Redoran, 9\r\nSET fbmwHRAdvancement.RedoranAdvancement TO 5", 
                         "References": [
-                            20, 
-                            "0Redoran", 
-                            "fbmwHRAdvancement"
+                            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+                            "SCRO - Global Reference": "0Redoran [FACT:01220000]", 
+                            "SCRO - Global Reference": "fbmwHRAdvancement [QUST:010037E7]"
                         ]
                     }
                 }
@@ -494,232 +500,274 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwGalsaGinduREF", 
+                "Target": "018204AA", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 68.9999998257917, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 69.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRStronghold", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRStronghold "House Redoran: Stronghold" [QUST:0100347A]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwHlarenRamoranREF", 
+                "Target": "01813B03", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 68.9999998257917, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 69.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHROldFlame", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHROldFlame "House Redoran: Nalvilie Saren" [QUST:01004A61]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwBraraMorvaynREF", 
+                "Target": "018204C8", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 68.9999998257917, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 69.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRMorvaynManor", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRMorvaynManor "House Redoran: Mission to Morvayn Manor" [QUST:01004A5E]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwMinerArobarREF", 
+                "Target": "0184B318", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 78.9999998005442, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 79.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRArobarKidnap", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRArobarKidnap "House Redoran: Miner Arobar's Support" [QUST:01003475]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwGarisaLlethriREF", 
+                "Target": "018139A4", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 78.9999998005442, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 79.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHRCalderaDisrupt", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 100.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRCalderaDisrupt "House Redoran: Shut the Mines Down" [QUST:01004319]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwAthynSarethiREF", 
+                "Target": "018076E3", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": 4
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 3.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "RedoranAdvancement", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 4.000000000000000, 
+                    "Function": "GetFactionRank:73", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0Redoran "Great House Redoran" [FACT:01220000]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwNemindaREF", 
+                "Target": "0181358D", 
                 "Flags": {}, 
                 "Unused": "00 50 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 2.99999999242573, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwHRAdvancement", 
-                    "Parameter #2": 4
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 3.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHRAdvancement "Great House Redoran" [QUST:010037E7]", 
+                    "Parameter #2": "RedoranAdvancement", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 73, 
-                    "Parameter #1": "0Redoran", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 4.000000000000000, 
+                    "Function": "GetFactionRank:73", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0Redoran "Great House Redoran" [FACT:01220000]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

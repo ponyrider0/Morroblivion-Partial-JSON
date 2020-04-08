@@ -1,64 +1,71 @@
 {
-    "Topic": "1FourthStrial", 
+    "Topic": "1FourthStrial [DIAL:013109F1]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 784, 
         "Record Flags": {}, 
-        "FormID": "01AAD5CD"
+        "FormID": "01AAD5CD", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ11u", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMQ11u [QUST:01001DCA]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "The Fourth Trial is to join the three Great Houses of Vvardenfell under one Hortator.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "You must be named Hortator in turn by House Redoran, House Hlaalu, and House Telvanni. I know little of the ways of the Great Houses.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "But first I would try the Redoran, for they are warriors, hard-willed, but straightforward.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 4
+                "Unused": "00 00 00 00", 
+                "Response number": "04", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "Then I'd try the Hlaalu, for though they are weak and spoiled, they are cunning and crafty. Save the Telvanni for last.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "57 4D 51", 
-                "Response number": 5
+                "Unused": "00 00 00 00", 
+                "Response number": "05", 
+                "Unused": "57 4D 51"
             }, 
             "NAM1 - Response Text": "Anyone who is not afraid of a 2000-year-old wizard is a fool.", 
             "NAM2 - Actor notes": ""
@@ -66,20 +73,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQ11u", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQ11u "Urshilaku Nereverine" [QUST:01001DCA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0sulTmatuul", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0sulTmatuul "Sul-Matuul" [NPC_:01260350]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -88,7 +99,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "1codeSbook2", 
+    "Topic": "1codeSbook2 [DIAL:013224AC]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 248, 
         "Record Flags": {}, 
-        "FormID": "01F8ABAB"
+        "FormID": "01F8ABAB", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGSottilde", 
+    "QSTI - Quest": "fbmwFGSottilde [QUST:010033E8]", 
     "PNAM - Previous INFO": "01F8ABAA", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 46 47", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 46 47"
             }, 
             "NAM1 - Response Text": "I'm not paying any more than 50 septims. Don't make this difficult.", 
             "NAM2 - Actor notes": ""
@@ -26,12 +29,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0eydisSfireTeye", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0eydisSfireTeye "Eydis Fire-Eye" [NPC_:0126011B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -40,12 +45,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E FB FF FF FF", 
         "SCTX - Result script source": "moddisposition player -5", 
         "References": [
-            20
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]"
         ]
     }
 }

@@ -1,88 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 70, 
         "Record Flags": {}, 
-        "FormID": "01321037"
+        "FormID": "01321037", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1joinStheSTemple3", 
     "Quests": [
-        "fbmwTTAdvancement"
+        "QSTI - Quest": "fbmwTTAdvancement [QUST:01010561]"
     ], 
     "FULL - Name": "Yes, please forgive me", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1joinStheSTemple3", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323249"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTTAdvancement", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Temple"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "The Temple understands the failings in all of us. But your will to repent is admirable.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Do not forget the four again.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 7.99999997980194, 
-                    "Function": 73, 
-                    "Parameter #1": "0Temple", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 70, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "C2 10 0A 00 02 00 72 01 00 6E 00 00 00 00 C6 10 0A 00 02 00 72 01 00 6E 00 00 00 00 C4 10 0A 00 02 00 72 01 00 6E 00 00 00 00 C8 10 0A 00 02 00 72 01 00 6E 00 00 00 00 15 00 0A 00 72 02 00 73 05 00 02 00 20 31", 
-                "SCTX - Result script source": "SetPCExpelled 0Temple 0\r\nSetPCFactionSteal 0Temple 0\r\nSetPCFactionMurder 0Temple 0\r\nSetPCFactionAttack 0Temple 0\r\nSet fbmwTTAdvancement.ExpelledOnce to 1", 
-                "References": [
-                    "0Temple", 
-                    "fbmwTTAdvancement"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,24 +1,27 @@
 {
-    "Topic": "1VarvurSSarethi", 
+    "Topic": "1VarvurSSarethi [DIAL:013108E8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 390, 
         "Record Flags": {}, 
-        "FormID": "013214E4"
+        "FormID": "013214E4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRRescueSarethi", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwHRRescueSarethi [QUST:01005198]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I'm Varvur. Did my father send you? Can we get out of here and travel together to Sarethi Manor?", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 9.99999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRRescueSarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 10.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRRescueSarethi "House Redoran: Rescue Varvur Sarethi" [QUST:01005198]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 69.999999823267, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRRescueSarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 70.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRRescueSarethi "House Redoran: Rescue Varvur Sarethi" [QUST:01005198]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0varvurSsarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0varvurSsarethi "Varvur Sarethi" [NPC_:012600B5]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,13 +65,13 @@
             "RefCount": 2, 
             "CompiledSize": 23, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00", 
         "SCTX - Result script source": "AddTopic 1TravelSTogether\r\nSetStage fbmwHRRescueSarethi 50", 
         "References": [
-            "1travelStogether", 
-            "fbmwHRRescueSarethi"
+            "SCRO - Global Reference": "1travelStogether [DIAL:0131086A]", 
+            "SCRO - Global Reference": "fbmwHRRescueSarethi [QUST:01005198]"
         ]
     }
 }

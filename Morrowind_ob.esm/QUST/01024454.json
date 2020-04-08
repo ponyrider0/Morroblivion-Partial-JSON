@@ -1,13 +1,15 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 1500, 
         "Record Flags": {}, 
-        "FormID": "01024454"
+        "FormID": "01024454", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMercCalvusQuest", 
-    "SCRI - Script": "fbmwMercCalvusScript", 
+    "SCRI - Script": "fbmwMercCalvusScript [SCPT:01024455]", 
     "FULL - Name": "Calvus Horatius", 
-    "ICON - Icon filename": "quest\\icon_fighters_guild.dds", 
+    "ICON - Icon FileName": "quest\\icon_fighters_guild.dds", 
     "DATA - General": {
         "Flags": {
             "Start game enabled": true, 
@@ -28,7 +30,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -46,7 +48,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -64,7 +66,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -82,7 +84,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -100,7 +102,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -110,26 +112,30 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "fbmwCalvusMercREF", 
+                "Target": "01F0493A", 
                 "Flags": {}, 
                 "Unused": "00 54 46"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "fbmwMercCalvusQuest", 
-                    "Parameter #2": 10
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwMercCalvusQuest "Calvus Horatius" [QUST:01024454]", 
+                    "Parameter #2": "ContractCalvusDaysLeft", 
+                    "Unused": "00000000"
                 }
             ]
         }

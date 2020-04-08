@@ -1,34 +1,38 @@
 {
-    "Topic": "1evidenceSofSconspiracy", 
+    "Topic": "1evidenceSofSconspiracy [DIAL:01310F99]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 696, 
         "Record Flags": {}, 
-        "FormID": "01F8BA11"
+        "FormID": "01F8BA11", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTR08Hlaalu", 
+    "QSTI - Quest": "fbmwTR08Hlaalu [QUST:0101C64D]", 
     "PNAM - Previous INFO": "0132060E", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "This letter you've found is very interesting. Forven Berano, Hloggar the Bloody, and Bedal Alen are obviously conspiring to assassinate King Helseth.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "This is treason, punishable by death. I will immediately draw up writs for their execution. You would do the king a great service if you would execute these traitors.", 
             "NAM2 - Actor notes": ""
@@ -36,33 +40,39 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0bkUAlenUnote", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0bkUAlenUnote "Handwritten Letter" [BOOK:01180241]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTR08Hlaalu", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTR08Hlaalu "Evidence of Conspiracy" [QUST:0101C64D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0TieniusSDelitian", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0TieniusSDelitian "Tienius Delitian" [NPC_:01260A79]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1evidenceSofSconspiracy1", 
-        "1evidenceSofSconspiracy2"
+        "TCLT - Choice": "1evidenceSofSconspiracy1 [DIAL:0132060D]", 
+        "TCLT - Choice": "1evidenceSofSconspiracy2 [DIAL:0132060B]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -70,14 +80,14 @@
             "RefCount": 3, 
             "CompiledSize": 27, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "58 10 05 00 01 00 72 01 00 58 10 05 00 01 00 72 02 00 58 10 05 00 01 00 72 03 00", 
         "SCTX - Result script source": "addtopic 1BedalSalen\r\naddtopic 1HloggarStheSBloody\r\naddtopic 1ForvenSBerano", 
         "References": [
-            "1BedalSAlen", 
-            "1HloggarStheSBloody", 
-            "1ForvenSBerano"
+            "SCRO - Global Reference": "1BedalSAlen [DIAL:0131105E]", 
+            "SCRO - Global Reference": "1HloggarStheSBloody [DIAL:01310FBC]", 
+            "SCRO - Global Reference": "1ForvenSBerano [DIAL:01311019]"
         ]
     }
 }

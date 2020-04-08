@@ -1,34 +1,38 @@
 {
-    "Topic": "1dwarvenSlimeware", 
+    "Topic": "1dwarvenSlimeware [DIAL:01310858]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 795, 
         "Record Flags": {}, 
-        "FormID": "01F8AA97"
+        "FormID": "01F8AA97", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwEBShipment", 
+    "QSTI - Quest": "fbmwEBShipment [QUST:01003425]", 
     "PNAM - Previous INFO": "01F8AA96", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 76 79", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 76 79"
             }, 
             "NAM1 - Response Text": "You've gotten it! Well done, outlander. I was beginning to think we'd never see this kind of merchandise again. As promised, here is your reward.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 76 79", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "72 76 79"
             }, 
             "NAM1 - Response Text": "I hope it wasn't too much trouble for you.", 
             "NAM2 - Actor notes": ""
@@ -36,44 +40,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 47, 
-            "Parameter #1": "0miscUlwUcup", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0miscUlwUcup "Limeware Cup" [MISC:0116012A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 47, 
-            "Parameter #1": "0miscUlwUbowl", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0miscUlwUbowl "Limeware Bowl" [MISC:01160129]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBShipment", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBShipment "Liberate the Limeware" [QUST:01003425]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBShipment", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBShipment "Liberate the Limeware" [QUST:01003425]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0alarvyneSindalas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0alarvyneSindalas "Alarvyne Indalas" [NPC_:012604AC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -82,16 +96,16 @@
             "RefCount": 5, 
             "CompiledSize": 96, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 28 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 05 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 05 00 00 00 02 10 0A 00 02 00 72 03 00 6E 05 00 00 00 02 10 0A 00 02 00 72 04 00 6E 05 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E DC 05 00 00", 
         "SCTX - Result script source": "setstage fbmwebshipment 40\r\nplayer.removeitem 0misculwubowl 5\r\nplayer.removeitem 0misculwucup 5\r\nadditem 0misculwubowl 5\r\nadditem 0misculwucup 5\r\nplayer.additem gold001 1500", 
         "References": [
-            20, 
-            "fbmwEBShipment", 
-            "0miscUlwUbowl", 
-            "0miscUlwUcup", 
-            "Gold001"
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+            "SCRO - Global Reference": "fbmwEBShipment [QUST:01003425]", 
+            "SCRO - Global Reference": "0miscUlwUbowl [MISC:01160129]", 
+            "SCRO - Global Reference": "0miscUlwUcup [MISC:0116012A]", 
+            "SCRO - Global Reference": "Gold001 [MISC:0000000F]"
         ]
     }
 }

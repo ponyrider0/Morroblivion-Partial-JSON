@@ -1,53 +1,58 @@
 {
-    "Topic": "1DivineSIntervention", 
+    "Topic": "1DivineSIntervention [DIAL:01310758]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 567, 
         "Record Flags": {}, 
-        "FormID": "01320810"
+        "FormID": "01320810", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwICJonHawker", 
+    "QSTI - Quest": "fbmwICJonHawker [QUST:0100B824]", 
     "PNAM - Previous INFO": "01F8A2BC", 
     "Add topics": [
-        "1DivineSIntervention", 
-        "1scroll", 
-        "1luck", 
-        "1DivineSIntervention", 
-        "1scroll", 
-        "1DivineSIntervention", 
-        "1scroll"
+        "NAME - Topic": "01310758", 
+        "NAME - Topic": "01310C77", 
+        "NAME - Topic": "01310D0B", 
+        "NAME - Topic": "01310758", 
+        "NAME - Topic": "01310C77", 
+        "NAME - Topic": "01310758", 
+        "NAME - Topic": "01310C77"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You haven't GOT a Divine Intervention scroll? My bad luck, to ALMOST be rescued.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "I had some Divine Interventions scrolls when I was captured, but they took all my possessions.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Maybe you can find a Divine Intervention scroll around here somewhere.", 
             "NAM2 - Actor notes": ""
@@ -55,28 +60,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0JonSHawker", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0JonSHawker "Jon Hawker" [NPC_:012609BF]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 130, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 47, 
-            "Parameter #1": "0scUdivineintervention", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "82", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0scUdivineintervention "Scroll of Divine Intervention" [BOOK:011801D6]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -85,7 +96,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

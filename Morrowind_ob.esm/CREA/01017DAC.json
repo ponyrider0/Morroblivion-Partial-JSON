@@ -1,29 +1,31 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 490, 
         "Record Flags": {}, 
-        "FormID": "01017DAC"
+        "FormID": "01017DAC", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0bmHorkerlarge", 
     "FULL - Name": "Horker", 
     "Model": {
-        "MODL - Model Filename": "Creatures\\Horker\\skeleton.nif", 
-        "MODB - Bound Radius": 91.4817657690307
+        "MODL - Model FileName": "Creatures\\Horker\\skeleton.nif", 
+        "MODB - Bound Radius": 91.481766000000000
     }, 
     "Items": [
         {
-            "Item": "0ingredUhorkerUtuskU01", 
+            "Item": "0ingredUhorkerUtuskU01 [INGR:010A007A]", 
             "Count": 1
         }
     ], 
     "Spells": [
-        "AbSlaughterfishSwim", 
-        "LL0DiseaseSlaughterfish10"
+        "SPLO - Spell": "AbSlaughterfishSwim [SPEL:0004897B]", 
+        "SPLO - Spell": "LL0DiseaseSlaughterfish10 [LVSP:00181D19]"
     ], 
-    "NIFZ - Models": [
-        "body.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "body.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -32,123 +34,124 @@
             "Walks": true, 
             "No Low Level Processing": true
         }, 
-        "Base spell points": 50, 
-        "Fatigue": 500, 
-        "Barter gold": 0, 
+        "Base spell points": "00000032", 
+        "Fatigue": "000001F4", 
+        "Barter gold": "00000000", 
         "Level (offset)": 5, 
-        "Calc min": 1, 
-        "Calc max": 0
+        "Calc min": "00000001", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "CreatureFaction", 
-            "Rank": 0, 
+            "Faction": "00000013", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "0AgressiveCreatureFaction", 
-            "Rank": 0, 
+            "Faction": "01F0A299", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
-    "SCRI - Script": "fbmwbmHorkerDieing", 
+    "SCRI - Script": "fbmwbmHorkerDieing [SCPT:0107ED19]", 
     "AIDT - AI Data": {
-        "Aggression": 0, 
-        "Confidence": 100, 
-        "Energy Level": 100, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "00", 
+        "Confidence": "64", 
+        "Energy Level": "64", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureExteriorSwims1500", 
-        "aaaCreatureInteriorSwims512"
+        "PKID - AI Package": "aaaCreatureExteriorSwims1500 [PACK:000C47BF]", 
+        "PKID - AI Package": "aaaCreatureInteriorSwims512 [PACK:000C47BE]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 90, 
-        "Magic Skill": 50, 
-        "Stealth Skill": 50, 
-        "Soul": 1, 
+        "Type": "00", 
+        "Combat Skill": "5A", 
+        "Magic Skill": "32", 
+        "Stealth Skill": "32", 
+        "Soul": "01", 
+        "Unused": "00", 
+        "Health": "00000064", 
         "Unused": "00 00", 
-        "Health": 100, 
-        "Attack Damage": 15, 
-        "Strength": 90, 
-        "Intelligence": 50, 
-        "Willpower": 50, 
-        "Agility": 50, 
-        "Speed": 16, 
-        "Endurance": 50, 
-        "Personality": 10, 
-        "Luck": 50
+        "Attack Damage": "0000000F", 
+        "Strength": "5A", 
+        "Intelligence": "32", 
+        "Willpower": "32", 
+        "Agility": "32", 
+        "Speed": "10", 
+        "Endurance": "32", 
+        "Personality": "0A", 
+        "Luck": "32"
     }, 
-    "RNAM - Attack reach": 16, 
-    "TNAM - Turning Speed": 0, 
-    "BNAM - Base Scale": 0.999999997475243, 
-    "WNAM - Foot Weight": 0, 
+    "RNAM - Attack reach": "10", 
+    "TNAM - Turning Speed": 0.000000000000000, 
+    "BNAM - Base Scale": 1.000000000000000, 
+    "WNAM - Foot Weight": 0.000000000000000, 
     "Sound Types": [
         {
-            "CSDT - Type": 0, 
+            "CSDT - Type": "00000000", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkLeft", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "01300253", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 1, 
+            "CSDT - Type": "00000001", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkRight", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "01300254", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 4, 
+            "CSDT - Type": "00000004", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkrbellow", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "01300227", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 5, 
+            "CSDT - Type": "00000005", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkrSroar", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001FA", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 6, 
+            "CSDT - Type": "00000006", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkrSroar", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001FA", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 7, 
+            "CSDT - Type": "00000007", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkrSscream", 
-                    "CSDC - Sound Chance": 80
+                    "CSDI - Sound": "013001FB", 
+                    "CSDC - Sound Chance": "50"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 8, 
+            "CSDT - Type": "00000008", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0hrkrSmoan", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001F9", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }

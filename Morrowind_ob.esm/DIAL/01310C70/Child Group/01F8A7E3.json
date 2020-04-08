@@ -1,28 +1,31 @@
 {
-    "Topic": "1Orders", 
+    "Topic": "1Orders [DIAL:01310C70]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 579, 
         "Record Flags": {}, 
-        "FormID": "01F8A7E3"
+        "FormID": "01F8A7E3", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwFGAdvancement", 
+    "QSTI - Quest": "fbmwFGAdvancement [QUST:01010566]", 
     "PNAM - Previous INFO": "01F8A7E2", 
     "Add topics": [
-        "1LorbumolSgroTAglakh", 
-        "1EydisSFireTEye"
+        "NAME - Topic": "01310723", 
+        "NAME - Topic": "013108EA"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 46 47", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 46 47"
             }, 
             "NAM1 - Response Text": "The only way to save the Fighters Guild from the corruption of the Camonna Tong is to get rid of Sjoring Hard-Heart and those loyal to him. I heard Eydis Fire-Eye was no longer one of his chief supporters, but Lorbumol gro-Aglakh still needs to be dealt with.", 
             "NAM2 - Actor notes": ""
@@ -30,44 +33,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0persiusSmercius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0persiusSmercius "Percius Mercius" [NPC_:01260268]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 98, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "fbmwFightersGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "62", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFightersGuild "Fighters Guild" [FACT:0100761A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 76, 
-            "Parameter #1": 20, 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetDisposition:76", 
+            "Unused": "00 00", 
+            "Parameter #1": "PlayerRef [PLYR:00000014]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwFGElithPalSupply", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwFGElithPalSupply "Fighters Guild: Flin for Elith-Pal" [QUST:010033DA]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTGBitterBribe", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTGBitterBribe "Thieves Guild: The Bitter Cup" [QUST:01009327]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -76,12 +89,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "36 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "StartQuest fbmwFGKillCronies", 
         "References": [
-            "fbmwFGKillCronies"
+            "SCRO - Global Reference": "fbmwFGKillCronies [QUST:010033E0]"
         ]
     }
 }

@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 96, 
         "Record Flags": {}, 
-        "FormID": "010628FB"
+        "FormID": "010628FB", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Random": true
         }
     }, 
-    "QSTI - Quest": "mwGenericRieklingGreeting", 
+    "QSTI - Quest": "mwGenericRieklingGreeting [QUST:010628F9]", 
     "PNAM - Previous INFO": "010628FA", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 1, 
+                "Emotion Type": "00000001", 
                 "Emotion Value": 50, 
-                "Unused": "41 75 72", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "41 75 72"
             }, 
             "NAM1 - Response Text": "What?", 
             "NAM2 - Actor notes": ""
@@ -32,7 +35,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

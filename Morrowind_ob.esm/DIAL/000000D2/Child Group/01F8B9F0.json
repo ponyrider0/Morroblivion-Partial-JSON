@@ -1,24 +1,27 @@
 {
-    "Topic": "HELLO", 
+    "Topic": "HELLO [DIAL:000000D2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 166, 
         "Record Flags": {}, 
-        "FormID": "01F8B9F0"
+        "FormID": "01F8B9F0", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 1, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "01", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMWereStart", 
+    "QSTI - Quest": "fbmwBMWereStart [QUST:01F8BCBE]", 
     "PNAM - Previous INFO": "01F8B9EF", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "Kill the beast!", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "fbmwWereBodyNPC", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwWereBodyNPC "Werewolf Body" [CLOT:01F8AF95]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "fbmwWereBodyPC", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwWereBodyPC "Werewolf Body" [CLOT:01F8AF93]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,7 +55,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

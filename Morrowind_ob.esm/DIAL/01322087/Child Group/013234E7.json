@@ -1,28 +1,31 @@
 {
-    "Topic": "1Advancement2", 
+    "Topic": "1Advancement2 [DIAL:01322087]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 278, 
         "Record Flags": {}, 
-        "FormID": "013234E7"
+        "FormID": "013234E7", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGAdvancement", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMGAdvancement [QUST:0100676E]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1MagesSGuild", 
-        "1Imperial"
+        "NAME - Topic": "01310A62", 
+        "NAME - Topic": "01310C02"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "You cannot advance until you pay your dues. The Mages Guild Charter only allows us to accept Imperial coin.", 
             "NAM2 - Actor notes": ""
@@ -30,20 +33,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 2.99999999242573, 
-            "Function": 73, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 3.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 6.9999999823267, 
-            "Function": 73, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 7.000000000000000, 
+            "Function": "GetFactionRank:73", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -52,7 +59,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

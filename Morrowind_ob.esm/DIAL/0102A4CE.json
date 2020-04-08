@@ -1,68 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 84, 
         "Record Flags": {}, 
-        "FormID": "0102A4CE"
+        "FormID": "0102A4CE", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwMShatandskirttakeskirt", 
     "Quests": [
-        "fbmwMSHatandSkirt"
+        "QSTI - Quest": "fbmwMSHatandSkirt [QUST:0101C622]"
     ], 
     "FULL - Name": "Take skirt, but refuse hat.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "fbmwMShatandskirttakeskirt", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0102A4CF"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSHatandSkirt", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "54 65 6D", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thank you. Thank you again. The skirt is probably worth a lot. And I understand about the hat. One has to draw the line somewhere. But I'm really, really grateful for your help. And I'll never get mixed up with smugglers -- or scamps -- again.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0Ingwold", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 46, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 02 10 0A 00 02 00 72 02 00 6E 01 00 00 00 52 10 0A 00 02 00 72 02 00 6E 01 00 00 00 39 10 0A 00 02 00 72 03 00 6E 37 00 00 00", 
-                "SCTX - Result script source": "player.additem 0extravagantuskirtu02 1\r\nremoveitem 0extravagantuskirtu02 1\r\nsetstage fbmwmshatandskirt 55", 
-                "References": [
-                    20, 
-                    "0extravagantUskirtU02", 
-                    "fbmwMSHatandSkirt"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

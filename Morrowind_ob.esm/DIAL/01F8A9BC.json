@@ -1,139 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 60, 
         "Record Flags": {}, 
-        "FormID": "01F8A9BC"
+        "FormID": "01F8A9BC", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwttpuzzlegive", 
     "Quests": [
-        "fbmwTTSevenGraces"
+        "QSTI - Quest": "fbmwTTSevenGraces [QUST:01002C79]"
     ], 
     "FULL - Name": "Yes, take it.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "fbmwttpuzzlegive", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8A9BD"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTTSevenGraces", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "A8 AB 3F", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I accept this sword. Thank you. You have the grace of courtesy. You should read the inscription on the shrine to complete your pilgrimage.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "WeapSilverLongsword", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "mwKratz", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 10 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 02 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwttsevengraces 16\r\nplayer.removeitem weapsilverlongsword 1\r\nfbmwpuzzlecanalchestref.additem weapsilverlongsword 1", 
-                "References": [
-                    20, 
-                    "fbmwpuzzlecanalchestref", 
-                    "fbmwTTSevenGraces", 
-                    "WeapSilverLongsword"
-                ]
-            }
-        }, 
-        {
-            "Topic": "fbmwttpuzzlegive", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8E984"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwTTSevenGraces", 
-            "PNAM - Previous INFO": "01F8A9BD", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "A8 AB 3F", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Yes, I accept this sword. Thank you. You have the grace of courtesy. You should read the inscription on the shrine to complete your pilgrimage.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0silverSlongsword", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "mwKratz", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 03 00 6E 10 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 04 00 6E 01 00 00 00 1C 00 02 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwttsevengraces 16\r\nplayer.removeitem 0silverSlongsword 1\r\nfbmwpuzzlecanalchestref.additem 0silverslongsword 1", 
-                "References": [
-                    20, 
-                    "fbmwpuzzlecanalchestref", 
-                    "fbmwTTSevenGraces", 
-                    "0silverSlongsword"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

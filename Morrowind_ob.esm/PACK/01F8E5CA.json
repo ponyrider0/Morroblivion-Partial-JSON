@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 104, 
         "Record Flags": {}, 
-        "FormID": "01F8E5CA"
+        "FormID": "01F8E5CA", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwPostQuestNelsLlendo", 
     "PKDT - General": {
@@ -10,30 +12,32 @@
             "Flags": {
                 "Must reach location": true
             }, 
-            "Type": 5, 
+            "Type": "05", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 0, 
-        "Location": "fbmwmgescorthalfwaymarker", 
+        "Location": "01F2A549", 
         "Radius": 512
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMVCharming", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMVCharming "Nels Llendo" [QUST:010033FC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

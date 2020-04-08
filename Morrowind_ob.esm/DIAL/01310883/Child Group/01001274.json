@@ -1,54 +1,60 @@
 {
-    "Topic": "1returnStoSVivec", 
+    "Topic": "1returnStoSVivec [DIAL:01310883]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 670, 
         "Record Flags": {}, 
-        "FormID": "01001274"
+        "FormID": "01001274", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ09", 
+    "QSTI - Quest": "fbmwMQ09 [QUST:01001DC4]", 
     "PNAM - Previous INFO": "01001273", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 61 6E", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 61 6E"
             }, 
             "NAM1 - Response Text": "Vevrana Aryon, a monk at the docks outside, can arrange for travel back to Vivec.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 61 6E", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "72 61 6E"
             }, 
             "NAM1 - Response Text": "You can only enter or leave Holamayan at dusk and dawn; the entrance is sealed at all other hours.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 61 6D", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "6C 61 6D"
             }, 
             "NAM1 - Response Text": "But please make yourself comfortable here. Rest in our beds, and make good use of our services. You may read our books, but don't take them.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 61 6D", 
-                "Response number": 4
+                "Unused": "00 00 00 00", 
+                "Response number": "04", 
+                "Unused": "6C 61 6D"
             }, 
             "NAM1 - Response Text": "Do not abuse our hospitality. Do not take personal items or alchemical apparatus or ingredients or other private property.", 
             "NAM2 - Actor notes": ""
@@ -56,12 +62,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "HolamayanSMonastery", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "HolamayanSMonastery "Holamayan Monastery" [CELL:0148021D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -70,7 +78,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

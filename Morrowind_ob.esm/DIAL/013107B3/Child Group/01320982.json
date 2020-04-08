@@ -1,37 +1,41 @@
 {
-    "Topic": "1priceSonSyourShead", 
+    "Topic": "1priceSonSyourShead [DIAL:013107B3]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 600, 
         "Record Flags": {}, 
-        "FormID": "01320982"
+        "FormID": "01320982", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTGCrimeGoldDiscount", 
+    "QSTI - Quest": "fbmwTGCrimeGoldDiscount [QUST:01F8BD3C]", 
     "PNAM - Previous INFO": "01320979", 
     "Add topics": [
-        "1ThievesSGuild"
+        "NAME - Topic": "01310963"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Well, word on the street is that you've got a price on your head.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "As you're a Thieves Guild member in good standing, I should be able to fix that for a consideration. Sound fair to you?", 
             "NAM2 - Actor notes": ""
@@ -39,57 +43,69 @@
     ], 
     "Conditions": [
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0arantamo", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0arantamo "Crazy-Legs Arantamo" [NPC_:0126026B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0phaneSrielle", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0phaneSrielle "Phane Rielle" [NPC_:01260134]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0rissinia", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0rissinia "Rissinia" [NPC_:012601B7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0tongueUtoad", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0tongueUtoad "Tongue-Toad" [NPC_:01260652]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 132, 
-            "Parameter #1": "0ThievesSGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCInFaction:132", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ThievesSGuild "Thieves Guild" [FACT:01220001]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 116, 
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetCrimeGold:116", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1priceSonSyourShead1", 
-        "1priceSonSyourShead2"
+        "TCLT - Choice": "1priceSonSyourShead1 [DIAL:01320980]", 
+        "TCLT - Choice": "1priceSonSyourShead2 [DIAL:0132097E]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -97,12 +113,12 @@
             "RefCount": 1, 
             "CompiledSize": 14, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 03 00 02 00 20 31", 
         "SCTX - Result script source": "set \"fbmwTGCrimeGoldDiscount\".checkNow to 1", 
         "References": [
-            "fbmwTGCrimeGoldDiscount"
+            "SCRO - Global Reference": "fbmwTGCrimeGoldDiscount [QUST:01F8BD3C]"
         ]
     }
 }

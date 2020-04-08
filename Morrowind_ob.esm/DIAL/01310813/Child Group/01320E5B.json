@@ -1,27 +1,30 @@
 {
-    "Topic": "1NalvynaSSarinith", 
+    "Topic": "1NalvynaSSarinith [DIAL:01310813]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 283, 
         "Record Flags": {}, 
-        "FormID": "01320E5B"
+        "FormID": "01320E5B", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHROldFlame", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwHROldFlame [QUST:01004A61]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1faith"
+        "NAME - Topic": "01310CC6"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "She is an excellent warrior with an unblemished record who has served me faithfully for several years.", 
             "NAM2 - Actor notes": ""
@@ -29,25 +32,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 109.999999722277, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHROldFlame", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 110.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHROldFlame "House Redoran: Nalvilie Saren" [QUST:01004A61]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0hlarenSramoran", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0hlarenSramoran "Hlaren Ramoran" [NPC_:012600AE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1NalvynaSSarinith3", 
-        "1NalvynaSSarinith4"
+        "TCLT - Choice": "1NalvynaSSarinith3 [DIAL:01320E58]", 
+        "TCLT - Choice": "1NalvynaSSarinith4 [DIAL:01320E5A]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -55,7 +62,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

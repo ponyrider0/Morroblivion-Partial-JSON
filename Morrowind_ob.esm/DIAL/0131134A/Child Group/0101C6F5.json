@@ -1,34 +1,38 @@
 {
-    "Topic": "1AntoniusSNuncius", 
+    "Topic": "1AntoniusSNuncius [DIAL:0131134A]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 346, 
         "Record Flags": {}, 
-        "FormID": "0101C6F5"
+        "FormID": "0101C6F5", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMMorale", 
+    "QSTI - Quest": "fbmwBMMorale [QUST:0101B6CE]", 
     "PNAM - Previous INFO": "0101E4C4", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 42", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "4D 57 42"
             }, 
             "NAM1 - Response Text": "I'm sure I'll be able to find a great number of duties for Nuncius to perform. He'll be quite busy now. What was he thinking? Well...", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "4D 57 42", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "4D 57 42"
             }, 
             "NAM1 - Response Text": "we'll whip him into shape.", 
             "NAM2 - Actor notes": ""
@@ -36,20 +40,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0falxScarius", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0falxScarius "Captain Falx Carius" [NPC_:01260B17]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -58,7 +66,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

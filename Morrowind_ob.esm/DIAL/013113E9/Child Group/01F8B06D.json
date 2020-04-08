@@ -1,24 +1,27 @@
 {
-    "Topic": "1booze", 
+    "Topic": "1booze [DIAL:013113E9]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 369, 
         "Record Flags": {}, 
-        "FormID": "01F8B06D"
+        "FormID": "01F8B06D", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMMorale", 
+    "QSTI - Quest": "fbmwBMMorale [QUST:0101B6CE]", 
     "PNAM - Previous INFO": "01F8B06C", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 66 62", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 66 62"
             }, 
             "NAM1 - Response Text": "Smells like flin to me. I'd know the smell anywhere. How about giving a thirsty soldier a little pick-me-up?", 
             "NAM2 - Actor notes": ""
@@ -26,49 +29,59 @@
     ], 
     "Conditions": [
         {
-            "Type": 66, 
-            "Unused": 0, 
-            "Comparison Value": 0, 
-            "Function": 47, 
-            "Parameter #1": "0PotionUCyroUWhiskeyU01", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "42", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 0.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0PotionUCyroUWhiskeyU01 "Flin" [ALCH:01080001]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 67, 
-            "Parameter #1": "FortSFrostmoth", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInCell:67", 
+            "Unused": "00 00", 
+            "Parameter #1": "FortSFrostmoth "Fort Frostmoth" [CELL:01480524]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 68, 
-            "Parameter #1": "Guard", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsClass:68", 
+            "Unused": "00 00", 
+            "Parameter #1": "Guard "Guard" [CLAS:00034E6E]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 160, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "A0", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMMorale", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMMorale "Rebellion at Frostmoth" [QUST:0101B6CE]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwbmmoraleGive", 
-        "fbmwbmmoraleKeep"
+        "TCLT - Choice": "fbmwbmmoraleGive [DIAL:01F8B077]", 
+        "TCLT - Choice": "fbmwbmmoraleKeep [DIAL:01F8B086]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -76,7 +89,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

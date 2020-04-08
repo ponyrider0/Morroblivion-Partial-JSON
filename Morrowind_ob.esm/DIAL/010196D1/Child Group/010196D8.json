@@ -1,24 +1,27 @@
 {
-    "Topic": "1Stalhrimarmor1", 
+    "Topic": "1Stalhrimarmor1 [DIAL:010196D1]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 357, 
         "Record Flags": {}, 
-        "FormID": "010196D8"
+        "FormID": "010196D8", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwCO8", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwCO8 [QUST:0101BED7]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 63 6F", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6C 63 6F"
             }, 
             "NAM1 - Response Text": "I can craft any piece of armor, provided you have the raw materials. What do you need?", 
             "NAM2 - Actor notes": ""
@@ -26,45 +29,53 @@
     ], 
     "Conditions": [
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 79, 
-            "Parameter #1": "fbmwCO8", 
-            "Parameter #2": 7
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestVariable:79", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCO8 "East Empire Company: Discovery in the Mine" [QUST:0101BED7]", 
+            "Parameter #2": "busy", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwCO8", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCO8 "East Empire Company: Discovery in the Mine" [QUST:0101BED7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 99.9999997475243, 
-            "Function": 58, 
-            "Parameter #1": "fbmwCO8", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 100.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwCO8 "East Empire Company: Discovery in the Mine" [QUST:0101BED7]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0aenar", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0aenar "Aenar" [NPC_:01260B55]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "1Stalhrimarmor7", 
-        "1Stalhrimarmor2", 
-        "1Stalhrimarmor3", 
-        "1Stalhrimarmor4", 
-        "1Stalhrimarmor5", 
-        "1Stalhrimarmor6"
+        "TCLT - Choice": "1Stalhrimarmor7 [DIAL:010196D7]", 
+        "TCLT - Choice": "1Stalhrimarmor2 [DIAL:010196D2]", 
+        "TCLT - Choice": "1Stalhrimarmor3 [DIAL:010196D3]", 
+        "TCLT - Choice": "1Stalhrimarmor4 [DIAL:010196D4]", 
+        "TCLT - Choice": "1Stalhrimarmor5 [DIAL:010196D5]", 
+        "TCLT - Choice": "1Stalhrimarmor6 [DIAL:010196D6]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -72,7 +83,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

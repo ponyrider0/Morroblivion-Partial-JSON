@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "SCPT", 
+        "Data Size": 278, 
         "Record Flags": {}, 
-        "FormID": "01022DE0"
+        "FormID": "01022DE0", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwRedoranQuestScript", 
     "SCHR - Basic Script Data": {
@@ -10,28 +12,30 @@
         "RefCount": 0, 
         "CompiledSize": 22, 
         "VariableCount": 2, 
-        "Type": 1
+        "Type": "Quest:1"
     }, 
     "SCDA - Compiled Script": "1D 00 00 00 10 00 06 00 00 00 08 00 00 00 1E 00 00 00 11 00 00 00", 
-    "SCTX - Script Source": "ScriptName fbmwRedoranQuestScript\r\n\r\nSHORT hortvotes\r\nSHORT deadred\r\n\r\nBEGIN GameMode\r\n\tRETURN\r\nEND", 
+    "SCTX - Script Source": "ScriptName fbmwRedoranQuestScript\r\n\r\nSHORT hortvotes\r\nSHORT deadred\r\n\r\nBEGIN GameMode\r\n	RETURN\r\nEND", 
     "Local Variables": [
         {
             "SLSD - Local Variable Data": {
-                "Index": 1, 
-                "Unused": "CD CD CD CD CD CD CD", 
+                "Index": "00000001", 
+                "Unused": "00 00 00 00 00 00 00 00 00 00 00 00", 
                 "Flags": {
                     "IsLongOrShort": true
-                }
+                }, 
+                "Unused": "CD CD CD CD CD CD CD"
             }, 
             "SCVR - Name": "hortvotes"
         }, 
         {
             "SLSD - Local Variable Data": {
-                "Index": 2, 
-                "Unused": "CD CD CD CD CD CD CD", 
+                "Index": "00000002", 
+                "Unused": "00 00 00 00 00 00 00 00 00 00 00 00", 
                 "Flags": {
                     "IsLongOrShort": true
-                }
+                }, 
+                "Unused": "CD CD CD CD CD CD CD"
             }, 
             "SCVR - Name": "deadred"
         }

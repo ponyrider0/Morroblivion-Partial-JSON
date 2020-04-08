@@ -1,125 +1,16 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 73, 
         "Record Flags": {}, 
-        "FormID": "01321BFD"
+        "FormID": "01321BFD", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1AurielAsSBowSell", 
     "Quests": [
-        "fbmwMSMuseum", 
-        "MorroDefaultQuest"
+        "QSTI - Quest": "fbmwMSMuseum [QUST:0101C629]", 
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "[Sell the item]", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1AurielAsSBowSell", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323425"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSMuseum", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Thank you, outlander. It's rare to find an item for our collection with such a distinctive aroma.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 66, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "fbmwAurielsBow", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0TorasaSAram", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 5, 
-                    "CompiledSize": 58, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 15 00 0A 00 72 04 00 73 0E 00 02 00 20 31 1C 00 02 00 21 10 00 00 1C 00 01 00 02 10 0A 00 02 00 72 05 00 6E 98 3A 00 00", 
-                "SCTX - Result script source": "player.removeitem fbmwAurielsBow 1\r\nset fbmwMSMuseum.aurielbow to 1\r\nmwAurielsBowMuseumREF.enable\r\nplayer.additem Gold001 15000", 
-                "References": [
-                    20, 
-                    "mwAurielsBowMuseumREF", 
-                    "fbmwAurielsBow", 
-                    "fbmwMSMuseum", 
-                    "Gold001"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1AurielAsSBowSell", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323426"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMSMuseum", 
-            "PNAM - Previous INFO": "01323425", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You don't have Auriel's Bow with you? Then come back with it, and we'll settle the deal.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0TorasaSAram", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

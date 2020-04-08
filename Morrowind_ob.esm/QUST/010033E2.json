@@ -1,33 +1,39 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 2585, 
         "Record Flags": {}, 
-        "FormID": "010033E2"
+        "FormID": "010033E2", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwFGNchurdamz", 
-    "SCRI - Script": "fbmwFGNchurdamzScript", 
+    "SCRI - Script": "fbmwFGNchurdamzScript [SCPT:01F2A503]", 
     "FULL - Name": "Fighters Guild: Battle at Nchurdamz", 
-    "ICON - Icon filename": "darthsouth\\Quests\\fightersguild.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\fightersguild.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 90
     }, 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 254, 
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsPlayableRace:254", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 56, 
-            "Parameter #1": "MorroDefaultQuest", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetQuestRunning:56", 
+            "Unused": "00 00", 
+            "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Stages": [
@@ -46,14 +52,14 @@
                             "RefCount": 3, 
                             "CompiledSize": 25, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "55 10 05 00 01 00 72 03 00 1C 00 01 00 21 10 00 00 1C 00 02 00 21 10 00 00", 
                         "SCTX - Result script source": "ShowMap mwNchurdamzMapMarker\r\nmwLariennaMacrinaREF.Enable\r\nmwHrelvesuuREF.Enable", 
                         "References": [
-                            "mwLariennaMacrinaREF", 
-                            "mwHrelvesuuREF", 
-                            "mwNchurdamzMapMarker"
+                            "SCRO - Global Reference": "mwLariennaMacrinaREF [ACHR:0185A1D6]", 
+                            "SCRO - Global Reference": "mwHrelvesuuREF [ACRE:0101CE6F]", 
+                            "SCRO - Global Reference": "mwNchurdamzMapMarker [REFR:0100511E]"
                         ]
                     }
                 }
@@ -71,7 +77,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -89,7 +95,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -107,7 +113,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -125,7 +131,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -143,7 +149,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -161,12 +167,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 14, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 01 00 02 00 20 30", 
                         "SCTX - Result script source": "set fbmwfgnchurdamz.follownow to 0", 
                         "References": [
-                            "fbmwFGNchurdamz"
+                            "SCRO - Global Reference": "fbmwFGNchurdamz [QUST:010033E2]"
                         ]
                     }
                 }
@@ -186,13 +192,13 @@
                             "RefCount": 2, 
                             "CompiledSize": 224, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "15 00 13 00 72 02 00 73 02 00 0B 00 20 72 02 00 73 02 00 20 35 20 2B 1C 00 01 00 22 10 00 00 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 6D 00 01 00 69 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 46 69 67 68 74 65 72 73 20 47 75 69 6C 64 3A 20 42 61 74 74 6C 65 20 61 74 20 4E 63 68 75 72 64 61 6D 7A 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "Set fbmwFGAdvancement.FighterReputation TO fbmwFGAdvancement.FighterReputation + 5\r\nmwLariennaMacrinaREF.Disable\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Fighters Guild: Battle at Nchurdamz quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
+                        "SCTX - Result script source": "Set fbmwFGAdvancement.FighterReputation TO fbmwFGAdvancement.FighterReputation + 5\r\nmwLariennaMacrinaREF.Disable\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Fighters Guild: Battle at Nchurdamz quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
                         "References": [
-                            "mwLariennaMacrinaREF", 
-                            "fbmwFGAdvancement"
+                            "SCRO - Global Reference": "mwLariennaMacrinaREF [ACHR:0185A1D6]", 
+                            "SCRO - Global Reference": "fbmwFGAdvancement [QUST:01010566]"
                         ]
                     }
                 }
@@ -212,12 +218,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 8, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "1C 00 01 00 22 10 00 00", 
                         "SCTX - Result script source": "mwLariennaMacrinaREF.Disable", 
                         "References": [
-                            "mwLariennaMacrinaREF"
+                            "SCRO - Global Reference": "mwLariennaMacrinaREF [ACHR:0185A1D6]"
                         ]
                     }
                 }
@@ -227,108 +233,128 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwHrundiREF", 
+                "Target": "018750DC", 
                 "Flags": {}, 
                 "Unused": "00 47 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGNchurdamz", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwFGNchurdamz "Fighters Guild: Battle at Nchurdamz" [QUST:010033E2]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 65, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "fbmwHrelvesuu", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "41", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetDeadCount:84", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHrelvesuu "Hrelvesuu" [CREA:0101CE6E]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 65, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0LariennaSMacrina", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "41", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetDeadCount:84", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0LariennaSMacrina "Larienna Macrina" [NPC_:012609BA]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwHrelvesuuREF", 
+                "Target": "0101CE6F", 
                 "Flags": {}, 
                 "Unused": "00 47 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "0LariennaSMacrina", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetDeadCount:84", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0LariennaSMacrina "Larienna Macrina" [NPC_:012609BA]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 84, 
-                    "Parameter #1": "fbmwHrelvesuu", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetDeadCount:84", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwHrelvesuu "Hrelvesuu" [CREA:0101CE6E]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 19.9999999495049, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGNchurdamz", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 20.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwFGNchurdamz "Fighters Guild: Battle at Nchurdamz" [QUST:010033E2]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
         {
             "QSTA - Target": {
-                "Target": "mwLariennaMacrinaREF", 
+                "Target": "0185A1D6", 
                 "Flags": {}, 
                 "Unused": "00 47 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwFGNchurdamz", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwFGNchurdamz "Fighters Guild: Battle at Nchurdamz" [QUST:010033E2]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

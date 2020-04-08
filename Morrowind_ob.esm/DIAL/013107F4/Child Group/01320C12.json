@@ -1,48 +1,53 @@
 {
-    "Topic": "1betSwithSGalbedir", 
+    "Topic": "1betSwithSGalbedir [DIAL:013107F4]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 515, 
         "Record Flags": {}, 
-        "FormID": "01320C12"
+        "FormID": "01320C12", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGAdvancement", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMGAdvancement [QUST:0100676E]", 
+    "PNAM - Previous INFO": "00000000", 
     "Add topics": [
-        "1makeSamends", 
-        "1ArchTMage"
+        "NAME - Topic": "01310ABF", 
+        "NAME - Topic": "01310BBA"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Ajira hears you are expelled.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Ajira was told to say you should make amends with the Arch-Mage, but Ajira tells you that the wizards here have many things to do and many things on their minds.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Soon Ranis Athrys will forget you are expelled and Ajira can speak with you again.", 
             "NAM2 - Actor notes": ""
@@ -50,20 +55,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 193, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCExpelled:193", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0ajira", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0ajira "Ajira" [NPC_:01260123]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -72,7 +81,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

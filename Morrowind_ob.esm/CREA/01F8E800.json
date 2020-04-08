@@ -1,30 +1,32 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 627, 
         "Record Flags": {}, 
-        "FormID": "01F8E800"
+        "FormID": "01F8E800", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwImperfect", 
     "FULL - Name": "Imperfect", 
     "Model": {
-        "MODL - Model Filename": "Morroblivion\\Creatures\\FabricantImperfect\\skeleton.nif", 
-        "MODB - Bound Radius": 212.526962463421
+        "MODL - Model FileName": "Morroblivion\\Creatures\\FabricantImperfect\\skeleton.nif", 
+        "MODB - Bound Radius": 212.526962000000000
     }, 
     "Spells": [
-        "0immuneStoSpoison", 
-        "0immuneStoSdisease", 
-        "0resistSshockU50", 
-        "0resistSfireU50", 
-        "0immuneStoSnormalSweapons", 
-        "0resistSfrostU50", 
-        "0resistSparalysisU100", 
-        "0shockimperfect", 
-        "0regenUimperfect"
+        "SPLO - Spell": "0immuneStoSpoison [SPEL:01060004]", 
+        "SPLO - Spell": "0immuneStoSdisease [SPEL:01060005]", 
+        "SPLO - Spell": "0resistSshockU50 [SPEL:0106000F]", 
+        "SPLO - Spell": "0resistSfireU50 [SPEL:01060016]", 
+        "SPLO - Spell": "0immuneStoSnormalSweapons [SPEL:01060364]", 
+        "SPLO - Spell": "0resistSfrostU50 [SPEL:0106036D]", 
+        "SPLO - Spell": "0resistSparalysisU100 [SPEL:010603ED]", 
+        "SPLO - Spell": "0shockimperfect [SPEL:010603FC]", 
+        "SPLO - Spell": "0regenUimperfect [SPEL:01060406]"
     ], 
-    "NIFZ - Models": [
-        "imperfect_body.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "imperfect_body.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -32,129 +34,130 @@
             "No Low Level Processing": true, 
             "No Blood Decal": true
         }, 
-        "Base spell points": 100, 
-        "Fatigue": 5000, 
-        "Barter gold": 0, 
+        "Base spell points": "00000064", 
+        "Fatigue": "00001388", 
+        "Barter gold": "00000000", 
         "Level (offset)": 80, 
-        "Calc min": 1, 
-        "Calc max": 0
+        "Calc min": "00000001", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "CreatureFaction", 
-            "Rank": 0, 
+            "Faction": "00000013", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "DremoraFaction", 
-            "Rank": 0, 
+            "Faction": "0003E9A6", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }, 
         {
-            "Faction": "DaedraFaction", 
-            "Rank": 0, 
+            "Faction": "00053FED", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
-    "INAM - Death item": "mwLLDeathImperfectPotion", 
+    "INAM - Death item": "01F8E802", 
     "AIDT - AI Data": {
-        "Aggression": 100, 
-        "Confidence": 100, 
-        "Energy Level": 50, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "64", 
+        "Confidence": "64", 
+        "Energy Level": "32", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureInterior512", 
-        "aaaCreatureExterior1500"
+        "PKID - AI Package": "aaaCreatureInterior512 [PACK:000AA01C]", 
+        "PKID - AI Package": "aaaCreatureExterior1500 [PACK:000AA01D]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 100, 
-        "Magic Skill": 100, 
-        "Stealth Skill": 100, 
-        "Soul": 3, 
+        "Type": "00", 
+        "Combat Skill": "64", 
+        "Magic Skill": "64", 
+        "Stealth Skill": "64", 
+        "Soul": "03", 
+        "Unused": "00", 
+        "Health": "000007D0", 
         "Unused": "00 00", 
-        "Health": 2000, 
-        "Attack Damage": 60, 
-        "Strength": 100, 
-        "Intelligence": 80, 
-        "Willpower": 80, 
-        "Agility": 100, 
-        "Speed": 13, 
-        "Endurance": 100, 
-        "Personality": 25, 
-        "Luck": 100
+        "Attack Damage": "0000003C", 
+        "Strength": "64", 
+        "Intelligence": "50", 
+        "Willpower": "50", 
+        "Agility": "64", 
+        "Speed": "0D", 
+        "Endurance": "64", 
+        "Personality": "19", 
+        "Luck": "64"
     }, 
-    "RNAM - Attack reach": 90, 
-    "TNAM - Turning Speed": 0, 
-    "BNAM - Base Scale": 1.99999999495049, 
-    "WNAM - Foot Weight": 2.99999999242573, 
+    "RNAM - Attack reach": "5A", 
+    "TNAM - Turning Speed": 0.000000000000000, 
+    "BNAM - Base Scale": 2.000000000000000, 
+    "WNAM - Foot Weight": 3.000000000000000, 
     "NAM0 - Blood Spray": "effects\\metalsparks.nif", 
     "Sound Types": [
         {
-            "CSDT - Type": 0, 
+            "CSDT - Type": "00000000", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0fabBossLeft", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001D6", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 1, 
+            "CSDT - Type": "00000001", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0fabBossRight", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001D7", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 4, 
+            "CSDT - Type": "00000004", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0FabBossClank", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001EA", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 5, 
+            "CSDT - Type": "00000005", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0FabBossAlive", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001DF", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 6, 
+            "CSDT - Type": "00000006", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0FabBossRoar", 
-                    "CSDC - Sound Chance": 80
+                    "CSDI - Sound": "013001DE", 
+                    "CSDC - Sound Chance": "50"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 7, 
+            "CSDT - Type": "00000007", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0FabBossHit", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001DD", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 8, 
+            "CSDT - Type": "00000008", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0fabBossDead", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013001DC", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }

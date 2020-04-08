@@ -1,52 +1,54 @@
 {
     "Record Header": {
         "Signature": "REGN", 
+        "Data Size": 128, 
         "Record Flags": {}, 
-        "FormID": "01F8CCF4"
+        "FormID": "01F8CCF4", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "HlormarenRegion", 
     "RCLR - Map Color": {
-        "Red": 10, 
-        "Green": 15, 
-        "Blue": 200, 
+        "Red": "0A", 
+        "Green": "0F", 
+        "Blue": "C8", 
         "Unused": "00"
     }, 
-    "WNAM - Worldspace": "WrldMorrowind", 
+    "WNAM - Worldspace": "01380000", 
     "Region Areas": [
         {
-            "RPLI - Edge Fall-off": 1024, 
-            "RPLD - Region Point List Data": [
-                {
-                    "X": -48240.8359372036, 
-                    "Y": -7352.69531243623
+            "RPLI - Edge Fall-off": "00000400", 
+            "RPLD - Region Point List Data": {
+                "Point #0": {
+                    "X": -48040.531250000000000, 
+                    "Y": -7753.292969000000000
                 }, 
-                {
-                    "X": -48240.8359372036, 
-                    "Y": -542.578124630122
+                "Point #1": {
+                    "X": -41430.718750000000000, 
+                    "Y": -7552.992187000000000
                 }, 
-                {
-                    "X": -41430.7187503975, 
-                    "Y": -742.875000124421
+                "Point #2": {
+                    "X": -41430.718750000000000, 
+                    "Y": -742.875000000000000
                 }, 
-                {
-                    "X": -41430.7187503975, 
-                    "Y": -7552.99218793053
+                "Point #3": {
+                    "X": -48240.835938000000000, 
+                    "Y": -542.578125000000000
                 }, 
-                {
-                    "X": -48040.5312497093, 
-                    "Y": -7753.29296842482
+                "Point #4": {
+                    "X": -48240.835938000000000, 
+                    "Y": -7352.695312000000000
                 }
-            ]
+            }
         }
     ], 
     "Region Data Entries": [
         {
             "RDAT - Data Header": {
-                "Type": 4, 
+                "Type": "00000004", 
                 "Flags": {
                     "Override": true
                 }, 
-                "Priority": 75, 
+                "Priority": "4B", 
                 "Unused": "00 00"
             }, 
             "RDMP - Map Name": "Hlormaren"

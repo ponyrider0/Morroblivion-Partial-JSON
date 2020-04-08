@@ -1,105 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 62, 
         "Record Flags": {}, 
-        "FormID": "013108B5"
+        "FormID": "013108B5", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1KharagSgroTKhar", 
     "Quests": [
-        "fbmwDAMalacath"
+        "QSTI - Quest": "fbmwDAMalacath [QUST:01002C88]"
     ], 
     "FULL - Name": "Kharag gro-Khar", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1KharagSgroTKhar", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01320FDF"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwDAMalacath", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Orc", 
-                "1Imperial"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Who? Oh, the orc. I'm sure I don't know...all right, stranger. It's all true. Do you think it's easy carrying on this kind of family name?", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "Everyone expects a lot, you know. Of course, it does have its benefits--the adoration of everyone, the Imperial stipend.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 3
-                    }, 
-                    "NAM1 - Response Text": "Why have you sought me out, then?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0farvynSoreyn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "fbmwdamala", 
-                "fbmwdamalanice"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 62, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "1C 00 01 00 16 10 05 00 01 00 72 03 00 1C 00 02 00 16 10 05 00 01 00 72 03 00 16 10 05 00 01 00 72 03 00 0F 10 09 00 02 00 22 00 6E 00 00 00 00 39 10 0A 00 02 00 72 04 00 6E 32 00 00 00", 
-                "SCTX - Result script source": "mwValaHerenniusREF.startcombat player\r\nmwDreynisNothroREF.startcombat player\r\nstartcombat player\r\nsetav confidence 0\r\nsetstage fbmwdamalacath 50", 
-                "References": [
-                    "mwValaHerenniusREF", 
-                    "mwDreynisNothroREF", 
-                    20, 
-                    "fbmwDAMalacath"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

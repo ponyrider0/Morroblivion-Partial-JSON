@@ -1,34 +1,38 @@
 {
-    "Topic": "fbmwtr09SirRobinApproach", 
+    "Topic": "fbmwtr09SirRobinApproach [DIAL:01F8BCAE]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 651, 
         "Record Flags": {}, 
-        "FormID": "01F8BCAF"
+        "FormID": "01F8BCAF", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTR09", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwTR09 [QUST:0101C64E]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "55 5A 54", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "55 5A 54"
             }, 
             "NAM1 - Response Text": "I know you by reputation. You've done some remarkable things. Very well. You may go. I'd like to preserve our secret office... but I won't kill you to do it.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "55 5A 54", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "55 5A 54"
             }, 
             "NAM1 - Response Text": "Oh, well. Since our offices are no longer secret, we'll have to relocate immediately. But don't touch anything here, and don't interfere with myself or my colleagues, or you will not leave here alive.", 
             "NAM2 - Actor notes": ""
@@ -36,20 +40,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 39.9999998990097, 
-            "Function": 249, 
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 40.000000000000000, 
+            "Function": "GetPCFame:249", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0TrelsSVaris", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0TrelsSVaris "Trels Varis" [NPC_:01260AC5]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -58,13 +66,13 @@
             "RefCount": 2, 
             "CompiledSize": 28, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 02 00 6E 32 00 00 00", 
         "SCTX - Result script source": "moddisposition player -20\r\nsetstage fbmwtr09 50", 
         "References": [
-            20, 
-            "fbmwTR09"
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+            "SCRO - Global Reference": "fbmwTR09 [QUST:0101C64E]"
         ]
     }
 }

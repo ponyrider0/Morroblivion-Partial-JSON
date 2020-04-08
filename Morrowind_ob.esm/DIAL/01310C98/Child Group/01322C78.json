@@ -1,28 +1,31 @@
 {
-    "Topic": "1Enamor", 
+    "Topic": "1Enamor [DIAL:01310C98]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 274, 
         "Record Flags": {}, 
-        "FormID": "01322C78"
+        "FormID": "01322C78", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTGssEnamor", 
+    "QSTI - Quest": "fbmwTGssEnamor [QUST:0100933B]", 
     "PNAM - Previous INFO": "01F8A840", 
     "Add topics": [
-        "1Vivec", 
-        "1report"
+        "NAME - Topic": "01310CD9", 
+        "NAME - Topic": "013113E0"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Yes, it was stolen. I did not know anyone else knew. It was a priceless blade, a gift from Vivec himself. I was ashamed to report it.", 
             "NAM2 - Actor notes": ""
@@ -30,12 +33,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0salynSsarethi", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0salynSsarethi "Salyn Sarethi" [NPC_:01260779]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -44,7 +49,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

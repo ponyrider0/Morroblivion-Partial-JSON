@@ -1,24 +1,27 @@
 {
-    "Topic": "1dwarvenSlimeware", 
+    "Topic": "1dwarvenSlimeware [DIAL:01310858]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 327, 
         "Record Flags": {}, 
-        "FormID": "01F8AA98"
+        "FormID": "01F8AA98", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwEBShipment", 
+    "QSTI - Quest": "fbmwEBShipment [QUST:01003425]", 
     "PNAM - Previous INFO": "01F8AA97", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "72 76 79", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "72 76 79"
             }, 
             "NAM1 - Response Text": "I would be good to get my hands on that shipment. Let me know when you get the pieces.", 
             "NAM2 - Actor notes": ""
@@ -26,44 +29,54 @@
     ], 
     "Conditions": [
         {
-            "Type": 130, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 47, 
-            "Parameter #1": "0miscUlwUcup", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "82", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0miscUlwUcup "Limeware Cup" [MISC:0116012A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 130, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 47, 
-            "Parameter #1": "0miscUlwUbowl", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "82", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0miscUlwUbowl "Limeware Bowl" [MISC:01160129]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 19.9999999495049, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBShipment", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 20.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBShipment "Liberate the Limeware" [QUST:01003425]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 160, 
-            "Unused": 0, 
-            "Comparison Value": 29.9999999242573, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBShipment", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "A0", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 30.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBShipment "Liberate the Limeware" [QUST:01003425]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0alarvyneSindalas", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0alarvyneSindalas "Alarvyne Indalas" [NPC_:012604AC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -72,7 +85,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

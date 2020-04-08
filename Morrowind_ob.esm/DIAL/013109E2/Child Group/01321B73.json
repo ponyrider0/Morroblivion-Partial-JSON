@@ -1,27 +1,30 @@
 {
-    "Topic": "1allSmySfault", 
+    "Topic": "1allSmySfault [DIAL:013109E2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 191, 
         "Record Flags": {}, 
-        "FormID": "01321B73"
+        "FormID": "01321B73", 
+        "Version Control Info": "01 12 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGApprentice", 
+    "QSTI - Quest": "fbmwMGApprentice [QUST:0100676F]", 
     "PNAM - Previous INFO": "01321B76", 
     "Add topics": [
-        "1Scamp"
+        "NAME - Topic": "01310CC1"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Please, kill the scamp! I didn't know I couldn't control it!", 
             "NAM2 - Actor notes": ""
@@ -29,12 +32,14 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0listienSbierles", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0listienSbierles "Listien Bierles" [NPC_:0126018A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -43,7 +48,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

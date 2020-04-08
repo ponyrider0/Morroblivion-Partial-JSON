@@ -1,88 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 68, 
         "Record Flags": {}, 
-        "FormID": "0131133A"
+        "FormID": "0131133A", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1meadShallSbusiness", 
     "Quests": [
-        "MorroDefaultQuest"
+        "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]"
     ], 
     "FULL - Name": "Mead Hall Business", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1meadShallSbusiness", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01320B01"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "MorroDefaultQuest", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1Thirsk", 
-                "1Orders"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "As chieftain of Thirsk, there are certain things you may order the clan to do. As your second-in-command, I will make sure your orders are carried out.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "So, what is your command, my lord?", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0svenjaSsnowTsong", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "fbmwbmMeadhallCollectProfit", 
-                "fbmwbmMeadHallBusinessMead", 
-                "fbmwBMMeadHallHunter"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

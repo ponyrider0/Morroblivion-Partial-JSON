@@ -1,78 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 88, 
         "Record Flags": {}, 
-        "FormID": "01007242"
+        "FormID": "01007242", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1ArchmagisterSGothren1", 
     "Quests": [
-        "fbmwHTArchmagister"
+        "QSTI - Quest": "fbmwHTArchmagister [QUST:01003430]"
     ], 
     "FULL - Name": "Yes, I challenge you for the Title.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1ArchmagisterSGothren1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01007244"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwHTArchmagister", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "00 00 00", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Then prepare for your Doom!", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 2, 
-                    "Unused": 0, 
-                    "Comparison Value": 7.99999997980194, 
-                    "Function": 73, 
-                    "Parameter #1": "0Telvanni", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0gothren", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 3, 
-                    "CompiledSize": 132, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 03 00 6E 9C FF FF FF 16 10 05 00 01 00 72 03 00 1C 00 01 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 1C 00 01 00 53 10 0A 00 02 00 72 03 00 6E 9C FF FF FF 1C 00 01 00 16 10 05 00 01 00 72 03 00 1C 00 02 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 1C 00 02 00 53 10 0A 00 02 00 72 03 00 6E 9C FF FF FF 1C 00 02 00 16 10 05 00 01 00 72 03 00", 
-                "SCTX - Result script source": "SetAV Aggression 100\r\nModDisposition Player -100\r\nStartCombat Player\r\nmwGothredDremoraGuard1.SetAV Aggression 100\r\nmwGothredDremoraGuard1.ModDisposition Player -100\r\nmwGothredDremoraGuard1.StartCombat Player\r\nmwGothredDremoraGuard2.SetAV Aggression 100\r\nmwGothredDremoraGuard2.ModDisposition Player -100\r\nmwGothredDremoraGuard2.StartCombat Player", 
-                "References": [
-                    "mwGothredDremoraGuard1", 
-                    "mwGothredDremoraGuard2", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

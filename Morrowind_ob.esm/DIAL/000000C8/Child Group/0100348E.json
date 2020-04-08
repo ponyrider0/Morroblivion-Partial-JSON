@@ -1,26 +1,29 @@
 {
-    "Topic": "GREETING", 
+    "Topic": "GREETING [DIAL:000000C8]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 318, 
         "Record Flags": {}, 
-        "FormID": "0100348E"
+        "FormID": "0100348E", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {
             "Goodbye": true
         }
     }, 
-    "QSTI - Quest": "fbmwMVThiefTrader", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwMVThiefTrader [QUST:01003414]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 1, 
+                "Emotion Type": "00000001", 
                 "Emotion Value": 80, 
-                "Unused": "65 6D 61", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "65 6D 61"
             }, 
             "NAM1 - Response Text": "You'd try to steal my weapons, n'wah? Nobody cheats Lucan! Die!", 
             "NAM2 - Actor notes": ""
@@ -28,20 +31,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0lucanSostorius2", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0lucanSostorius2 "Lucan Ostorius" [NPC_:012609D9]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 89.9999997727718, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMVThiefTrader", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 90.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMVThiefTrader "The Weapon Delivery" [QUST:01003414]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -50,13 +57,13 @@
             "RefCount": 2, 
             "CompiledSize": 23, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "16 10 05 00 01 00 72 01 00 39 10 0A 00 02 00 72 02 00 6E 5A 00 00 00", 
         "SCTX - Result script source": "startcombat player\r\nsetstage FBMWMVThiefTrader 90", 
         "References": [
-            20, 
-            "fbmwMVThiefTrader"
+            "SCRO - Global Reference": "PlayerRef [PLYR:00000014]", 
+            "SCRO - Global Reference": "fbmwMVThiefTrader [QUST:01003414]"
         ]
     }
 }

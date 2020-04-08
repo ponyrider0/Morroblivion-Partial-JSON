@@ -1,12 +1,14 @@
 {
     "Record Header": {
         "Signature": "QUST", 
+        "Data Size": 1883, 
         "Record Flags": {}, 
-        "FormID": "0100932B"
+        "FormID": "0100932B", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "fbmwTGDartsJudgement", 
     "FULL - Name": "Thieves Guild: The Daggers of Judgement", 
-    "ICON - Icon filename": "darthsouth\\Quests\\thievesguild.dds", 
+    "ICON - Icon FileName": "darthsouth\\Quests\\thievesguild.dds", 
     "DATA - General": {
         "Flags": {}, 
         "Priority": 85
@@ -27,7 +29,7 @@
                             "RefCount": 0, 
                             "CompiledSize": 0, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }
                     }
                 }
@@ -47,12 +49,12 @@
                             "RefCount": 1, 
                             "CompiledSize": 218, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "15 00 13 00 72 01 00 73 02 00 0B 00 20 72 01 00 73 02 00 20 35 20 2B 16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 6F 00 01 00 6B 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 69 65 76 65 73 20 47 75 69 6C 64 3A 20 54 68 65 20 44 61 72 74 73 20 6F 66 20 4A 75 64 67 65 6D 65 6E 74 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "Set fbmwTGAdvancement.ThiefReputation TO fbmwTGAdvancement.ThiefReputation + 5\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Thieves Guild: The Darts of Judgement quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
+                        "SCTX - Result script source": "Set fbmwTGAdvancement.ThiefReputation TO fbmwTGAdvancement.ThiefReputation + 5\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Thieves Guild: The Darts of Judgement quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif", 
                         "References": [
-                            "fbmwTGAdvancement"
+                            "SCRO - Global Reference": "fbmwTGAdvancement [QUST:01010562]"
                         ]
                     }
                 }
@@ -72,10 +74,10 @@
                             "RefCount": 0, 
                             "CompiledSize": 195, 
                             "VariableCount": 0, 
-                            "Type": 1
+                            "Type": "Quest:1"
                         }, 
                         "SCDA - Compiled result script": "16 00 1D 00 02 00 19 00 20 58 51 16 13 00 01 00 0F 00 4F 62 6C 69 76 69 6F 6E 20 58 50 2E 65 73 70 F9 16 6F 00 01 00 6B 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 4D 65 73 73 61 67 65 20 74 6F 20 73 76 5F 43 6F 6E 73 74 72 75 63 74 20 22 43 6F 6D 70 6C 65 74 65 64 20 54 68 69 65 76 65 73 20 47 75 69 6C 64 3A 20 54 68 65 20 44 61 72 74 73 20 6F 66 20 4A 75 64 67 65 6D 65 6E 74 20 71 75 65 73 74 22 F9 16 27 00 01 00 23 00 73 65 74 20 4F 62 58 50 4D 61 69 6E 2E 69 6E 74 65 72 4F 70 47 61 69 6E 65 64 58 50 20 74 6F 20 31 30 30 19 00 00 00", 
-                        "SCTX - Result script source": "; Variable--This needs to be Set Via Script\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n\trunScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Thieves Guild: The Darts of Judgement quest%q\"\r\n\trunScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
+                        "SCTX - Result script source": "; Variable--This needs to be Set Via Script\r\n\r\nif ( isModLoaded \"Oblivion XP.esp\" )\r\n	runScriptLine \"set ObXPMain.interOpGainedXPMessage to sv_Construct %qCompleted Thieves Guild: The Darts of Judgement quest%q\"\r\n	runScriptLine \"set ObXPMain.interOpGainedXP to 100\"\r\nendif"
                     }
                 }
             ]
@@ -84,34 +86,40 @@
     "Targets": [
         {
             "QSTA - Target": {
-                "Target": "mwAengoththeJewelerREF", 
+                "Target": "018024E2", 
                 "Flags": {}, 
                 "Unused": "00 53 21"
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 47, 
-                    "Parameter #1": "0dartUuniqUjudgement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "60", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 4.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0dartUuniqUjudgement "Dagger of Judgment" [WEAP:011001DA]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGDartsJudgement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwTGDartsJudgement "Thieves Guild: The Daggers of Judgement" [QUST:0100932B]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }, 
@@ -123,36 +131,44 @@
             }, 
             "Conditions": [
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 79, 
-                    "Parameter #1": "MorroDefaultQuest", 
-                    "Parameter #2": 1
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 1.000000000000000, 
+                    "Function": "GetQuestVariable:79", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "MorroDefaultQuest "Morrowind Default Quest" [QUST:013A0000]", 
+                    "Parameter #2": "QuestMarkersEnabled", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 3.99999998990097, 
-                    "Function": 47, 
-                    "Parameter #1": "0dartUuniqUjudgement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "80", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 4.000000000000000, 
+                    "Function": "GetItemCount:47", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "0dartUuniqUjudgement "Dagger of Judgment" [WEAP:011001DA]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 67, 
-                    "Parameter #1": "AldTruhnVSLlethriSGuardSQuarters", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 0.000000000000000, 
+                    "Function": "GetInCell:67", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "AldTruhnVSLlethriSGuardSQuarters "Ald-ruhn, Llethri Guard Quarters" [CELL:014800A6]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }, 
                 {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwTGDartsJudgement", 
-                    "Parameter #2": "00 00 00 00"
+                    "Type": "00", 
+                    "Unused": "00 00 00", 
+                    "Comparison Value": 10.000000000000000, 
+                    "Function": "GetStage:58", 
+                    "Unused": "00 00", 
+                    "Parameter #1": "fbmwTGDartsJudgement "Thieves Guild: The Daggers of Judgement" [QUST:0100932B]", 
+                    "Parameter #2": "00 00 00 00", 
+                    "Unused": "00000000"
                 }
             ]
         }

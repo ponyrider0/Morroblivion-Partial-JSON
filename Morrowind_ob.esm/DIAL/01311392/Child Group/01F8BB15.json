@@ -1,24 +1,27 @@
 {
-    "Topic": "1getSupstairs", 
+    "Topic": "1getSupstairs [DIAL:01311392]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 291, 
         "Record Flags": {}, 
-        "FormID": "01F8BB15"
+        "FormID": "01F8BB15", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwBMFrostGiant1", 
+    "QSTI - Quest": "fbmwBMFrostGiant1 [QUST:0101B6C3]", 
     "PNAM - Previous INFO": "01F8BB14", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "77 42 4D", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "77 42 4D"
             }, 
             "NAM1 - Response Text": "Figure we can get up there now. I'll stick with you until you talk to that little weasel Dulk. What a suck-up.", 
             "NAM2 - Actor notes": ""
@@ -26,28 +29,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 79.9999997980194, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMFrostGiant1", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 80.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMFrostGiant1 "The Castle Karstaag" [QUST:0101B6C3]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 160, 
-            "Unused": 0, 
-            "Comparison Value": 80.9999997954947, 
-            "Function": 58, 
-            "Parameter #1": "fbmwBMFrostGiant1", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "A0", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 81.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwBMFrostGiant1 "The Castle Karstaag" [QUST:0101B6C3]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "fbmwbmKrish", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwbmKrish "Krish" [NPC_:01F8B878]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -56,7 +65,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

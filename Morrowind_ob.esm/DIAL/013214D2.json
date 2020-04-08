@@ -1,123 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 67, 
         "Record Flags": {}, 
-        "FormID": "013214D2"
+        "FormID": "013214D2", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1WizardAsSStaff1", 
     "Quests": [
-        "fbmwMGAdvancement"
+        "QSTI - Quest": "fbmwMGAdvancement [QUST:0100676E]"
     ], 
     "FULL - Name": "Buy a Wizard's Staff", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1WizardAsSStaff1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323328"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGAdvancement", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Very well, I will take your gold... I assume it's all there. And give you this Wizard's Staff. You are now ready for advancement.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 98, 
-                    "Unused": 0, 
-                    "Comparison Value": 5000.00000037621, 
-                    "Function": 47, 
-                    "Parameter #1": "Gold001", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 6.9999999823267, 
-                    "Function": 73, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 3C 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 88 13 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "setstage fbmwmgwizardsstaff 60\r\nplayer.removeitem gold001 5000\r\nplayer.additem 0ebonyswizardassstaff 1", 
-                "References": [
-                    20, 
-                    "fbmwMGWizardsStaff", 
-                    "Gold001", 
-                    "0ebonySwizardAsSstaff"
-                ]
-            }
-        }, 
-        {
-            "Topic": "1WizardAsSStaff1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01323329"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwMGAdvancement", 
-            "PNAM - Previous INFO": "01323328", 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "You do not have enough gold.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 6.9999999823267, 
-                    "Function": 73, 
-                    "Parameter #1": "fbmwMagesGuild", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 0, 
-                    "CompiledSize": 0, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

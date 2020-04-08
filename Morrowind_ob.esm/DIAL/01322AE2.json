@@ -1,72 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 64, 
         "Record Flags": {}, 
-        "FormID": "01322AE2"
+        "FormID": "01322AE2", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1slander1", 
     "Quests": [
-        "fbmwHRHonorChallenge"
+        "QSTI - Quest": "fbmwHRHonorChallenge [QUST:01004A59]"
     ], 
     "FULL - Name": "Challenge him to a duel.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1slander1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "0132360D"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwHRHonorChallenge", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1duel"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Alright, we'll duel right here, right now. When you're ready, outlander.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0ondresSnerano", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 01 00 6E 32 00 00 00 0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 16 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "SetStage fbmwHRHonorChallenge 50\r\nSetAV Aggression 100\r\nModDisposition Player -100\r\nStartCombat Player\r\n", 
-                "References": [
-                    "fbmwHRHonorChallenge", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,28 +1,30 @@
 {
     "Record Header": {
         "Signature": "CREA", 
+        "Data Size": 514, 
         "Record Flags": {}, 
-        "FormID": "01F8E39D"
+        "FormID": "01F8E39D", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0CenturionSphereUvirith", 
     "FULL - Name": "Centurion Sphere", 
     "Model": {
-        "MODL - Model Filename": "Creatures\\SphereCenturion\\skeleton.nif", 
-        "MODB - Bound Radius": 103.454757738802
+        "MODL - Model FileName": "Creatures\\SphereCenturion\\skeleton.nif", 
+        "MODB - Bound Radius": 103.454758000000000
     }, 
     "Items": [
         {
-            "Item": "0ingredUscrapUmetalU01", 
+            "Item": "0ingredUscrapUmetalU01 [INGR:010A0033]", 
             "Count": 1
         }
     ], 
     "Spells": [
-        "0shockSshield"
+        "SPLO - Spell": "0shockSshield [SPEL:0106004B]"
     ], 
-    "NIFZ - Models": [
-        "body.nif", 
-        ""
-    ], 
+    "NIFZ - Models": {
+        "Model": "body.nif", 
+        "Terminator": 
+    }, 
     "NIFT - Texture Files Hashes": "00 00 00 00", 
     "ACBS - Configuration": {
         "Flags": {
@@ -31,118 +33,119 @@
             "No Low Level Processing": true, 
             "No Blood Decal": true
         }, 
-        "Base spell points": 7, 
-        "Fatigue": 800, 
-        "Barter gold": 0, 
+        "Base spell points": "00000007", 
+        "Fatigue": "00000320", 
+        "Barter gold": "00000000", 
         "Level (offset)": 5, 
-        "Calc min": 1, 
-        "Calc max": 0
+        "Calc min": "00000001", 
+        "Calc max": "00000000"
     }, 
     "Factions": [
         {
-            "Faction": "PlayerFaction", 
-            "Rank": 0, 
+            "Faction": "0001DBCD", 
+            "Rank": "00", 
             "Unused": "49 46 5A"
         }
     ], 
     "AIDT - AI Data": {
-        "Aggression": 5, 
-        "Confidence": 100, 
-        "Energy Level": 50, 
-        "Responsibility": 0, 
-        "Buys/Sells and Services": {}, 
-        "Teaches": "Armorer", 
-        "Maximum training level": 0, 
+        "Aggression": "05", 
+        "Confidence": "64", 
+        "Energy Level": "32", 
+        "Responsibility": "00", 
+        "Buys/Sells and Services": "00000000", 
+        "Teaches": "Armorer:0", 
+        "Maximum training level": "00", 
         "Unused": "00 00"
     }, 
     "AI Packages": [
-        "aaaCreatureExterior1500AllowFalls", 
-        "aaaCreatureInterior512"
+        "PKID - AI Package": "aaaCreatureExterior1500AllowFalls [PACK:001896AE]", 
+        "PKID - AI Package": "aaaCreatureInterior512 [PACK:000AA01C]"
     ], 
     "DATA - Creature Data": {
-        "Type": 0, 
-        "Combat Skill": 50, 
-        "Magic Skill": 90, 
-        "Stealth Skill": 20, 
-        "Soul": 0, 
+        "Type": "00", 
+        "Combat Skill": "32", 
+        "Magic Skill": "5A", 
+        "Stealth Skill": "14", 
+        "Soul": "00", 
+        "Unused": "00", 
+        "Health": "0000004B", 
         "Unused": "00 00", 
-        "Health": 75, 
-        "Attack Damage": 15, 
-        "Strength": 75, 
-        "Intelligence": 25, 
-        "Willpower": 70, 
-        "Agility": 75, 
-        "Speed": 70, 
-        "Endurance": 75, 
-        "Personality": 10, 
-        "Luck": 50
+        "Attack Damage": "0000000F", 
+        "Strength": "4B", 
+        "Intelligence": "19", 
+        "Willpower": "46", 
+        "Agility": "4B", 
+        "Speed": "46", 
+        "Endurance": "4B", 
+        "Personality": "0A", 
+        "Luck": "32"
     }, 
-    "RNAM - Attack reach": 75, 
-    "TNAM - Turning Speed": 0, 
-    "BNAM - Base Scale": 0.999999997475243, 
-    "WNAM - Foot Weight": 2.99999999242573, 
+    "RNAM - Attack reach": "4B", 
+    "TNAM - Turning Speed": 0.000000000000000, 
+    "BNAM - Base Scale": 1.000000000000000, 
+    "WNAM - Foot Weight": 3.000000000000000, 
     "NAM0 - Blood Spray": "effects\\metalsparks.nif", 
     "Sound Types": [
         {
-            "CSDT - Type": 0, 
+            "CSDT - Type": "00000000", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0steamROLL", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "01300143", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 1, 
+            "CSDT - Type": "00000001", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0steamROLL", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "01300143", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 4, 
+            "CSDT - Type": "00000004", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0centSsphereSmoan", 
-                    "CSDC - Sound Chance": 25
+                    "CSDI - Sound": "013000B2", 
+                    "CSDC - Sound Chance": "19"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 5, 
+            "CSDT - Type": "00000005", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0centSsphereSroar", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013000B3", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 6, 
+            "CSDT - Type": "00000006", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0centSsphereSmoan", 
-                    "CSDC - Sound Chance": 75
+                    "CSDI - Sound": "013000B2", 
+                    "CSDC - Sound Chance": "4B"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 7, 
+            "CSDT - Type": "00000007", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0centSsphereSroar", 
-                    "CSDC - Sound Chance": 75
+                    "CSDI - Sound": "013000B3", 
+                    "CSDC - Sound Chance": "4B"
                 }
             ]
         }, 
         {
-            "CSDT - Type": 8, 
+            "CSDT - Type": "00000008", 
             "Sounds": [
                 {
-                    "CSDI - Sound": "0centSsphereSscream", 
-                    "CSDC - Sound Chance": 100
+                    "CSDI - Sound": "013000B4", 
+                    "CSDC - Sound Chance": "64"
                 }
             ]
         }

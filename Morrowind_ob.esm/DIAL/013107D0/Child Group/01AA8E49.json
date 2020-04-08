@@ -1,54 +1,60 @@
 {
-    "Topic": "1TempleAsSdoctrine", 
+    "Topic": "1TempleAsSdoctrine [DIAL:013107D0]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 944, 
         "Record Flags": {}, 
-        "FormID": "01AA8E49"
+        "FormID": "01AA8E49", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMQ12", 
+    "QSTI - Quest": "fbmwMQ12 [QUST:01002C51]", 
     "PNAM - Previous INFO": "01AA8E3F", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 65 72", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6C 65 72"
             }, 
             "NAM1 - Response Text": "The Temple must protect the people from false doctrines. And your association with Imperial intelligence makes your motivations and integrity suspect. But you have been chosen Hortator and Nerevarine by the Dunmer people.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 65 72", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "6C 65 72"
             }, 
             "NAM1 - Response Text": "And we have reached a crisis with Dagoth Ur. We can no longer defend the people against the awakened Sixth House. You and your prophecies may represeent our last hope.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 65 72", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "6C 65 72"
             }, 
             "NAM1 - Response Text": "Our situation is desperate. But I would rather have you hear the details of our situation, and the circumstances leading up to that situation, from Lord Vivec himself. He has asked to see you.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6C 65 72", 
-                "Response number": 4
+                "Unused": "00 00 00 00", 
+                "Response number": "04", 
+                "Unused": "6C 65 72"
             }, 
             "NAM1 - Response Text": "Would you agree to a private meeting with him, and hear in person what he has to say?", 
             "NAM2 - Actor notes": ""
@@ -56,25 +62,29 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQAllHortandNer", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQAllHortandNer "The Fourth and Fifth Trials" [QUST:01002C53]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0tholerSsaryoni", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0tholerSsaryoni "Tholer Saryoni" [NPC_:012603A0]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Choices": [
-        "fbmwMQ12trust", 
-        "fbmwMQ12notrust"
+        "TCLT - Choice": "fbmwMQ12trust [DIAL:01028E45]", 
+        "TCLT - Choice": "fbmwMQ12notrust [DIAL:01028E47]"
     ], 
     "Result Script": {
         "SCHR - Basic Script Data": {
@@ -82,7 +92,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

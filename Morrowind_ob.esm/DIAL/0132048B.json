@@ -1,112 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 73, 
         "Record Flags": {}, 
-        "FormID": "0132048B"
+        "FormID": "0132048B", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1StaffSofStheSSilverSDawn1", 
     "Quests": [
-        "fbmwHTSilverDawn"
+        "QSTI - Quest": "fbmwHTSilverDawn [QUST:01003449]"
     ], 
     "FULL - Name": "Yes, here it is.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1StaffSofStheSSilverSDawn1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322F2E"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {}
-            }, 
-            "QSTI - Quest": "fbmwHTSilverDawn", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1MasterSNeloth", 
-                "1dagger", 
-                "1staff"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Good. I hope Master Neloth will be pleased with it. I have this old dagger I no longer use.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "And I can teach you to blind your enemies as the staff does.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0, 
-                    "Function": 47, 
-                    "Parameter #1": "0silverUstaffUdawnUuniq", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 96, 
-                    "Unused": 0, 
-                    "Comparison Value": 9.99999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHTSilverDawn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 128, 
-                    "Unused": 0, 
-                    "Comparison Value": 99.9999997475243, 
-                    "Function": 58, 
-                    "Parameter #1": "fbmwHTSilverDawn", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0araraSuvulas", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Choices": [
-                "1StaffSofStheSSilverSDawn3", 
-                "1StaffSofStheSSilverSDawn4"
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 4, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "39 10 0A 00 02 00 72 02 00 6E 64 00 00 00 1C 00 01 00 52 10 0A 00 02 00 72 03 00 6E 01 00 00 00 1C 00 01 00 02 10 0A 00 02 00 72 04 00 6E 01 00 00 00", 
-                "SCTX - Result script source": "SetStage fbmwHTSilverDawn 100\r\nPlayer.RemoveItem 0silverUstaffUdawnUuniq 1\r\nPlayer.AddItem 0glassSjinkblade 1", 
-                "References": [
-                    20, 
-                    "fbmwHTSilverDawn", 
-                    "0silverUstaffUdawnUuniq", 
-                    "0glassSjinkblade"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

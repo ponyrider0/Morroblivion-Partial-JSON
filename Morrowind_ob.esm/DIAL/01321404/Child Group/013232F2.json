@@ -1,29 +1,32 @@
 {
-    "Topic": "1gameSofSshells7", 
+    "Topic": "1gameSofSshells7 [DIAL:01321404]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 310, 
         "Record Flags": {}, 
-        "FormID": "013232F2"
+        "FormID": "013232F2", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMSBouncer", 
+    "QSTI - Quest": "fbmwMSBouncer [QUST:0101C61B]", 
     "PNAM - Previous INFO": "013232F1", 
     "Add topics": [
-        "1notStheSone", 
-        "1luck", 
-        "1gameSofSshells"
+        "NAME - Topic": "01310A79", 
+        "NAME - Topic": "01310D0B", 
+        "NAME - Topic": "01311006"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Oh, too bad, outlander. That's not the one. Sorry, better luck next time. Let me know if you want to play another game of shells.", 
             "NAM2 - Actor notes": ""
@@ -31,20 +34,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0galmsSseles", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0galmsSseles "Galms Seles" [NPC_:01260AAC]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "0factMorrowind", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "0factMorrowind "factMorrowind" [FACT:0122001B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -53,7 +60,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

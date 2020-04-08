@@ -1,69 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 70, 
         "Record Flags": {}, 
-        "FormID": "01320EBE"
+        "FormID": "01320EBE", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1hireSanSexplorer2", 
     "Quests": [
-        "fbmwBMFalmer"
+        "QSTI - Quest": "fbmwBMFalmer [QUST:0101B6C2]"
     ], 
     "FULL - Name": "Afraid not, Athellor.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1hireSanSexplorer2", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01F8AC95"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwBMFalmer", 
-            "PNAM - Previous INFO": 0, 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 4, 
-                        "Emotion Value": 80, 
-                        "Unused": "1C 31 FF", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "Well, that IS disappointing.  You listened so intently to my tale, I thought for sure you'd want to help me.  Oh well.", 
-                    "NAM2 - Actor notes": ""
-                }, 
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "20 39 FF", 
-                        "Response number": 2
-                    }, 
-                    "NAM1 - Response Text": "If you change your mind, the job is open.  Unless, of course, I find another interested party.  Good day.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 28, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "53 10 0A 00 02 00 72 01 00 6E EC FF FF FF 39 10 0A 00 02 00 72 02 00 6E 28 00 00 00", 
-                "SCTX - Result script source": "moddisposition player -20\r\nsetstage fbmwBMFalmer 40", 
-                "References": [
-                    20, 
-                    "fbmwBMFalmer"
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

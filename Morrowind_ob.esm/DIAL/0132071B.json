@@ -1,81 +1,15 @@
 {
     "Record Header": {
         "Signature": "DIAL", 
+        "Data Size": 85, 
         "Record Flags": {}, 
-        "FormID": "0132071B"
+        "FormID": "0132071B", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "1theSchoiceSISgiveSyou1", 
     "Quests": [
-        "fbmwMVFakeSlave"
+        "QSTI - Quest": "fbmwMVFakeSlave [QUST:01003405]"
     ], 
     "FULL - Name": "I cannot let you kill this man.", 
-    "DATA - Type": 0, 
-    "Child Group": [
-        {
-            "Topic": "1theSchoiceSISgiveSyou1", 
-            "Record Header": {
-                "Signature": "INFO", 
-                "Record Flags": {}, 
-                "FormID": "01322FF4"
-            }, 
-            "DATA - ": {
-                "Type": 0, 
-                "Next Speaker": 0, 
-                "Flags": {
-                    "Goodbye": true
-                }
-            }, 
-            "QSTI - Quest": "fbmwMVFakeSlave", 
-            "PNAM - Previous INFO": 0, 
-            "Add topics": [
-                "1CamonnaSTong", 
-                "1speed"
-            ], 
-            "Responses": [
-                {
-                    "TRDT - Response Data": {
-                        "Emotion Type": 0, 
-                        "Emotion Value": 50, 
-                        "Unused": "CD CD CD", 
-                        "Response number": 1
-                    }, 
-                    "NAM1 - Response Text": "As you wish. The hand of the Camonna Tong will speed you to your final rest.", 
-                    "NAM2 - Actor notes": ""
-                }
-            ], 
-            "Conditions": [
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 72, 
-                    "Parameter #1": "0tul", 
-                    "Parameter #2": "00 00 00 00"
-                }, 
-                {
-                    "Type": 0, 
-                    "Unused": 0, 
-                    "Comparison Value": 0.999999997475243, 
-                    "Function": 71, 
-                    "Parameter #1": "0factMorrowind", 
-                    "Parameter #2": "00 00 00 00"
-                }
-            ], 
-            "Result Script": {
-                "SCHR - Basic Script Data": {
-                    "Unused": "00 00 00 00", 
-                    "RefCount": 2, 
-                    "CompiledSize": 50, 
-                    "VariableCount": 0, 
-                    "Type": 0
-                }, 
-                "SCDA - Compiled result script": "15 00 0A 00 72 01 00 73 01 00 02 00 20 30 0F 10 09 00 02 00 21 00 6E 64 00 00 00 53 10 0A 00 02 00 72 02 00 6E 9C FF FF FF 16 10 05 00 01 00 72 02 00", 
-                "SCTX - Result script source": "SET fbmwMVFakeSlave.FollowNow TO 0\r\nSetAV Aggression 100\r\nModDisposition Player -100\r\nStartCombat Player", 
-                "References": [
-                    "fbmwMVFakeSlave", 
-                    20
-                ]
-            }
-        }
-    ]
+    "DATA - Type": "00"
 }

@@ -1,28 +1,31 @@
 {
-    "Topic": "1makeSamends", 
+    "Topic": "1makeSamends [DIAL:01310ABF]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 298, 
         "Record Flags": {}, 
-        "FormID": "01321F7C"
+        "FormID": "01321F7C", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwMGAdvancement", 
+    "QSTI - Quest": "fbmwMGAdvancement [QUST:0100676E]", 
     "PNAM - Previous INFO": "01321F7B", 
     "Add topics": [
-        "1Trebonius", 
-        "1Vivec"
+        "NAME - Topic": "01310B5D", 
+        "NAME - Topic": "01310CD9"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "CD CD CD", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "CD CD CD"
             }, 
             "NAM1 - Response Text": "Oh, yes, there was some trouble with you and a member of the Guild... You might want to speak with Archmage Trebonius in Vivec.", 
             "NAM2 - Actor notes": ""
@@ -30,20 +33,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 193, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetPCExpelled:193", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 71, 
-            "Parameter #1": "fbmwMagesGuild", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetInFaction:71", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMagesGuild "Mages Guild" [FACT:0100761B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -52,7 +59,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

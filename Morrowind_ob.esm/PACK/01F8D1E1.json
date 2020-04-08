@@ -1,8 +1,10 @@
 {
     "Record Header": {
         "Signature": "PACK", 
+        "Data Size": 212, 
         "Record Flags": {}, 
-        "FormID": "01F8D1E1"
+        "FormID": "01F8D1E1", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "mwSeydaNeenEldafireWanderingInterior512", 
     "PKDT - General": {
@@ -11,54 +13,62 @@
                 "Unlock doors at location": true, 
                 "Weapons unequipped": true
             }, 
-            "Type": 5, 
+            "Type": "05", 
             "Unused": "00 00 00"
         }
     }, 
     "PLDT - Location": {
         "Type": 3, 
-        "Location": 0, 
+        "Location": "00000000", 
         "Radius": 512
     }, 
     "PSDT - Schedule": {
-        "Month": "-1", 
-        "Day of week": "Any", 
-        "Date": 0, 
-        "Time": "-1", 
+        "Month": -1, 
+        "Day of week": -1, 
+        "Date": "00", 
+        "Time": -1, 
         "Duration": 0
     }, 
     "Conditions": [
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 149, 
-            "Parameter #1": "mwWeatherAshstormBlight", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsCurrentWeather:149", 
+            "Unused": "00 00", 
+            "Parameter #1": "mwWeatherAshstormBlight [WTHR:01F8B26B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 149, 
-            "Parameter #1": "mwWeatherAshstorm", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsCurrentWeather:149", 
+            "Unused": "00 00", 
+            "Parameter #1": "mwWeatherAshstorm [WTHR:01460000]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 75, 
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsSnowing:75", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 1, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 62, 
+            "Type": "01", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsRaining:62", 
+            "Unused": "00 00", 
             "Parameter #1": "00 00 00 00", 
-            "Parameter #2": "00 00 00 00"
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ]
 }

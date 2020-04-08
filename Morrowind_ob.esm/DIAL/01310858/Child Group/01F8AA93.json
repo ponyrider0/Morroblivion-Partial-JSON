@@ -1,34 +1,38 @@
 {
-    "Topic": "1dwarvenSlimeware", 
+    "Topic": "1dwarvenSlimeware [DIAL:01310858]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 397, 
         "Record Flags": {}, 
-        "FormID": "01F8AA93"
+        "FormID": "01F8AA93", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwEBShipment", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "fbmwEBShipment [QUST:01003425]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 53", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 6E 53"
             }, 
             "NAM1 - Response Text": "A shipment of limeware? I know nothing about it. There are strict regulations on that kind of material entering Vvardenfell.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 53", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "6F 6E 53"
             }, 
             "NAM1 - Response Text": "You'd have to show me some proof for me to believe that.", 
             "NAM2 - Actor notes": ""
@@ -36,28 +40,34 @@
     ], 
     "Conditions": [
         {
-            "Type": 130, 
-            "Unused": 0, 
-            "Comparison Value": 4.99999998737621, 
-            "Function": 47, 
-            "Parameter #1": "0miscUlwUcup", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "82", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 5.000000000000000, 
+            "Function": "GetItemCount:47", 
+            "Unused": "00 00", 
+            "Parameter #1": "0miscUlwUcup "Limeware Cup" [MISC:0116012A]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 128, 
-            "Unused": 0, 
-            "Comparison Value": 34.9999999116335, 
-            "Function": 58, 
-            "Parameter #1": "fbmwEBShipment", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "80", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 35.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwEBShipment "Liberate the Limeware" [QUST:01003425]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0Bolrin", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0Bolrin "Bolrin" [NPC_:012602F0]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -66,7 +76,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

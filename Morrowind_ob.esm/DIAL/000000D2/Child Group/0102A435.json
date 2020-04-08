@@ -1,26 +1,29 @@
 {
-    "Topic": "HELLO", 
+    "Topic": "HELLO [DIAL:000000D2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 193, 
         "Record Flags": {}, 
-        "FormID": "0102A435"
+        "FormID": "0102A435", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 1, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "01", 
+        "Next Speaker": "00", 
         "Flags": {
             "Random": true
         }
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
-    "PNAM - Previous INFO": 0, 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
+    "PNAM - Previous INFO": "00000000", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 3, 
+                "Emotion Type": "00000003", 
                 "Emotion Value": 100, 
-                "Unused": "6F 6E 20", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 6E 20"
             }, 
             "NAM1 - Response Text": "You've got the corprus! Stay away from me!", 
             "NAM2 - Actor notes": ""
@@ -28,20 +31,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 32, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0caiusScosades", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "20", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0caiusScosades "Caius Cosades" [NPC_:01260135]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 2, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 223, 
-            "Parameter #1": "0corprus", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "02", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "IsSpellTarget:223", 
+            "Unused": "00 00", 
+            "Parameter #1": "0corprus "Corprus" [SPEL:010602FD]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -50,7 +57,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

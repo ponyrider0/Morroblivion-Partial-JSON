@@ -1,15 +1,17 @@
 {
     "Record Header": {
         "Signature": "SPEL", 
+        "Data Size": 194, 
         "Record Flags": {}, 
-        "FormID": "01F2A4D9"
+        "FormID": "01F2A4D9", 
+        "Version Control Info": "00 00 00 00"
     }, 
     "EDID - Editor ID": "0MBwizardAsSstaffen", 
     "FULL - Name": "Wizard's Flight", 
-    "SPIT - ": {
-        "Type": 0, 
-        "Cost": 0, 
-        "Level": 1, 
+    "SPIT - SPIT": {
+        "Type": "00000000", 
+        "Cost": "00000000", 
+        "Level": "00000001", 
         "Flags": {
             "Manual Spell Cost": true
         }, 
@@ -17,20 +19,20 @@
     }, 
     "Effects": [
         {
-            "EFID - Magic effect name": 1179010387, 
-            "EFIT - ": {
-                "Magic effect name": 1179010387, 
+            "EFID - Magic effect name": "SEFF", 
+            "EFIT - EFIT": {
+                "Magic effect name": "SEFF", 
                 "Magnitude": 0, 
                 "Area": 0, 
                 "Duration": 120, 
-                "Type": 0, 
-                "Actor Value": 10
+                "Type": "Self:0", 
+                "Actor Value": "Fatigue:10"
             }, 
             "Script effect": {
                 "SCIT - Script effect data": {
-                    "Script effect": "JDLevitationWeakScript", 
-                    "Magic school": 4, 
-                    "Visual effect name": 0, 
+                    "Script effect": "01F8CCD1", 
+                    "Magic school": "00000004", 
+                    "Visual effect name": "00000000", 
                     "Flags": {}, 
                     "Unused": "50 56 00"
                 }, 
@@ -38,14 +40,14 @@
             }
         }, 
         {
-            "EFID - Magic effect name": 1263750982, 
-            "EFIT - ": {
-                "Magic effect name": 1263750982, 
+            "EFID - Magic effect name": "FOSK", 
+            "EFIT - EFIT": {
+                "Magic effect name": "FOSK", 
                 "Magnitude": 10, 
                 "Area": 0, 
                 "Duration": 120, 
-                "Type": 0, 
-                "Actor Value": 27
+                "Type": "Self:0", 
+                "Actor Value": "Light Armor:27"
             }
         }
     ]

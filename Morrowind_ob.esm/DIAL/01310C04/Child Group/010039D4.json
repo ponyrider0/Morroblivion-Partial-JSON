@@ -1,37 +1,41 @@
 {
-    "Topic": "1Services", 
+    "Topic": "1Services [DIAL:01310C04]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 567, 
         "Record Flags": {}, 
-        "FormID": "010039D4"
+        "FormID": "010039D4", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "MorroDefaultQuest", 
+    "QSTI - Quest": "MorroDefaultQuest [QUST:013A0000]", 
     "PNAM - Previous INFO": "01322896", 
     "Add topics": [
-        "1BladesSTrainers"
+        "NAME - Topic": "01310868"
     ], 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "20 30 66", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "20 30 66"
             }, 
             "NAM1 - Response Text": "We have our own Blades Trainers, of course. And there're many public services available in Balmora. Members get better prices from Guild Services. The Balmora Fighters Guild and Balmora Mages Guild are across the river.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "75 73 53", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "75 73 53"
             }, 
             "NAM1 - Response Text": "You'll find contacts for the Balmora Thieves Guild in the South Wall up the street. And there's an Imperial Cult shrine at nearby Moonmoth Legion Fort.", 
             "NAM2 - Actor notes": ""
@@ -39,20 +43,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0caiusScosades", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0caiusScosades "Caius Cosades" [NPC_:01260135]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 13.9999999646534, 
-            "Function": 58, 
-            "Parameter #1": "fbmwMQ01", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 14.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwMQ01 "Report to Caius Cosades" [QUST:01F0A28D]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -61,7 +69,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }

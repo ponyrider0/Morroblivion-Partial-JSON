@@ -1,24 +1,27 @@
 {
-    "Topic": "1KoalSCave", 
+    "Topic": "1KoalSCave [DIAL:01310B63]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 314, 
         "Record Flags": {}, 
-        "FormID": "01004B35"
+        "FormID": "01004B35", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwHRKoalCave", 
+    "QSTI - Quest": "fbmwHRKoalCave [QUST:01004A5B]", 
     "PNAM - Previous INFO": "01004B34", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "00 00 00", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "00 00 00"
             }, 
             "NAM1 - Response Text": "The Koal Cave is south of Gnisis. Cross the river, the Ouada Samsi, and head southwest towards the coast.", 
             "NAM2 - Actor notes": ""
@@ -26,20 +29,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 96, 
-            "Unused": 0, 
-            "Comparison Value": 49.9999998737621, 
-            "Function": 58, 
-            "Parameter #1": "fbmwHRKoalCave", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "60", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 50.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwHRKoalCave "House Redoran: Escort to Koal Cave" [QUST:01004A5B]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0devalSbeleth", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0devalSbeleth "Deval Beleth" [NPC_:012600C4]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -48,12 +55,12 @@
             "RefCount": 1, 
             "CompiledSize": 9, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }, 
         "SCDA - Compiled result script": "55 10 05 00 01 00 72 01 00", 
         "SCTX - Result script source": "ShowMap mwKoalCaveMapMarker", 
         "References": [
-            "mwKoalCaveMapMarker"
+            "SCRO - Global Reference": "mwKoalCaveMapMarker [REFR:01451003]"
         ]
     }
 }

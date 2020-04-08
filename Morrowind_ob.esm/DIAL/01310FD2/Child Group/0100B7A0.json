@@ -1,44 +1,49 @@
 {
-    "Topic": "1protectSBarenziah", 
+    "Topic": "1protectSBarenziah [DIAL:01310FD2]", 
     "Record Header": {
         "Signature": "INFO", 
+        "Data Size": 561, 
         "Record Flags": {}, 
-        "FormID": "0100B7A0"
+        "FormID": "0100B7A0", 
+        "Version Control Info": "00 00 00 00"
     }, 
-    "DATA - ": {
-        "Type": 0, 
-        "Next Speaker": 0, 
+    "DATA - DATA": {
+        "Type": "00", 
+        "Next Speaker": "00", 
         "Flags": {}
     }, 
-    "QSTI - Quest": "fbmwTRAssassins", 
+    "QSTI - Quest": "fbmwTRAssassins [QUST:0101C64F]", 
     "PNAM - Previous INFO": "0100B79F", 
     "Responses": [
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 20", 
-                "Response number": 1
+                "Unused": "00 00 00 00", 
+                "Response number": "01", 
+                "Unused": "6F 6E 20"
             }, 
             "NAM1 - Response Text": "Protect her? Ha! My sympathies lie with the assassins, friend. The Lady is far from helpless, as many have come to find out the hard way.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 20", 
-                "Response number": 2
+                "Unused": "00 00 00 00", 
+                "Response number": "02", 
+                "Unused": "6F 6E 20"
             }, 
             "NAM1 - Response Text": "Still, it is odd that someone would even attempt it. Why kill her? Her son lives only down the hall, and he bears the burden of rule.", 
             "NAM2 - Actor notes": ""
         }, 
         {
             "TRDT - Response Data": {
-                "Emotion Type": 0, 
+                "Emotion Type": "00000000", 
                 "Emotion Value": 50, 
-                "Unused": "6F 6E 20", 
-                "Response number": 3
+                "Unused": "00 00 00 00", 
+                "Response number": "03", 
+                "Unused": "6F 6E 20"
             }, 
             "NAM1 - Response Text": "There is no understanding the machinations of madmen or politicians.", 
             "NAM2 - Actor notes": ""
@@ -46,20 +51,24 @@
     ], 
     "Conditions": [
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 79.9999997980194, 
-            "Function": 58, 
-            "Parameter #1": "fbmwTRAssassins", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 80.000000000000000, 
+            "Function": "GetStage:58", 
+            "Unused": "00 00", 
+            "Parameter #1": "fbmwTRAssassins "An Assassination Attempt" [QUST:0101C64F]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }, 
         {
-            "Type": 0, 
-            "Unused": 0, 
-            "Comparison Value": 0.999999997475243, 
-            "Function": 72, 
-            "Parameter #1": "0plitiniusSmero", 
-            "Parameter #2": "00 00 00 00"
+            "Type": "00", 
+            "Unused": "00 00 00", 
+            "Comparison Value": 1.000000000000000, 
+            "Function": "GetIsID:72", 
+            "Unused": "00 00", 
+            "Parameter #1": "0plitiniusSmero "Plitinius Mero" [NPC_:01260AD0]", 
+            "Parameter #2": "00 00 00 00", 
+            "Unused": "00000000"
         }
     ], 
     "Result Script": {
@@ -68,7 +77,7 @@
             "RefCount": 0, 
             "CompiledSize": 0, 
             "VariableCount": 0, 
-            "Type": 0
+            "Type": "Object:0"
         }
     }
 }
